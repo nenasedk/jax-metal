@@ -45,7 +45,10 @@ jax-metal 0.1.1 predates that attribute, so jaxlib falls back to a version the p
 
 ## Phases
 
-### Phase 0: make Ghidra workable on 8 GB (½–1 day)
+### Phase 0: make Ghidra workable on 8 GB (½–1 day) — done, see `re/FINDINGS.md`
+
+Lean analyzer profile, 3 GB heap, 60-minute REA startup timeout: 37 minutes to first answer,
+1.8 GB peak RSS. `GetPjrtApi` decompiled; StableHLO version is 0.19.4.
 
 A default full auto-analysis of the dylib through REA with a 5 GB heap ran for 40+ minutes and
 pushed swap to 12.7/13.3 GB before it was stopped. Options, in order:
