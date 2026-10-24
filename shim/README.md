@@ -43,8 +43,9 @@ Environment variables:
   (`cholesky`, `solve`, `inv`), FFT, `reduce_precision`, bfloat16 and the `rbg` PRNG.
 - `tests/accuracy_sweep.py`: every float32 elementwise op is within 18 ulps of the CPU (most
   within 1–4), with matching NaN/inf behavior.
-- complex64 works inside jitted functions (arithmetic, transcendental functions, FFT), but a
-  jitted function cannot take or return complex arrays, so keep complex values internal.
+- complex64 works throughout: inside jitted functions (arithmetic, transcendental functions,
+  FFT) and as inputs/outputs of jitted functions and eager ops. A function returning complex
+  values waits for completion before returning.
 - float64 is not supported (no float64 in MPS or Apple GPU hardware). Double-float emulation
   measures ~1e-14 relative error on the M3 (`experimental/double_float.py`); see DESIGN.md.
 

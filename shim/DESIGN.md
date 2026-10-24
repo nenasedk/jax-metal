@@ -69,7 +69,11 @@ changes.
      manufactures `PJRT_Error`s.
    - `PJRT_Memory_Kind_Id` stays null; for a 0.47 plugin jaxlib derives the kind id from the kind
      string.
-6. **Tracing (opt-in).** `JAX_METAL_SHIM_TRACE=1` logs shim initialization and attribute queries
+6. **complex64 program inputs and outputs.** See "Complex values at the program boundary"
+   below. The shim wraps `PJRT_Client_Compile` (substitutes the pair program),
+   `PJRT_Executable_DeserializeAndLoad`, `PJRT_LoadedExecutable_Execute` (buffer views) and
+   `PJRT_LoadedExecutable_Destroy`, and exports `JaxMetalShim_SetComplexIo` for the package.
+7. **Tracing (opt-in).** `JAX_METAL_SHIM_TRACE=1` logs shim initialization and attribute queries
    to stderr.
 
 Everything else is forwarded untouched: the remaining entries are the plugin's own function
@@ -122,7 +126,7 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     XLA's CPU results (most within 1–4) with matching NaN/inf behavior.
   - Multi-key sorts (`lexsort`, complex sorts): the plugin's sort takes one key, so n keys become
     n stable passes.
-- **Registers complex support** (`_complex.py`), see "Complex numbers" below.
+- **Registers complex support** (`_complex.py`, `_complex_io.py`), see "Complex numbers" below.
 
 ### Complex numbers and FFT
 
@@ -140,14 +144,41 @@ functions into raw `real`/`imag` ops. `_complex.py`:
 - implements `fft`/`ifft`/`rfft`/`irfft` (any rank) as a radix-2 transform with a direct DFT for
   odd lengths, with twiddle factors computed on the GPU from exact integer angles.
 
-Limitation: the plugin rejects any compiled function whose inputs or outputs are complex, and
-eager complex ops are such functions. Complex values work inside a jitted function whose inputs and
-outputs are real (spectral losses, power spectra, FFT convolution, phase rotations). Lifting this
-would need JAX's function signatures rewritten to float pairs plus buffer relabeling in the shim.
+### Complex values at the program boundary
 
-Apple's dylib is not redistributed. `shim/install.sh` downloads the `jax-metal==0.1.1` wheel from
-PyPI, verifies the dylib's sha256 (`e8e0656f…61bf`), and places it next to the shim in the
-installed package.
+The plugin rejects any compiled function whose signature mentions complex types, including
+the small programs behind eager complex ops. `_complex_io.py` and the shim lift this without
+copies:
+
+1. **Two programs.** For a METAL program with complex64 inputs or outputs, the package hooks
+   `mlir.lower_jaxpr_to_module` and lowers the original (complex signature) plus a pair version
+   in which each complex64 input/output is a float32[..., 2] (real, imag) pair, converted
+   inside the program. The pair version is serialized as a StableHLO 0.19.4 portable artifact
+   with XLA's own serializer (`_jax.mlir.serialize_portable_artifact`) and attached to the
+   original module.
+2. **jaxlib compiles the original.** IFRT takes output dtypes, shapes and layouts from the MLIR
+   module it is given (`ResultShapesOfModule`), not from the executable, so jaxlib must see the
+   complex signature.
+3. **The plugin compiles the pair program.** A `compiler.compile_or_get_cached` hook strips the
+   attachment and calls `JaxMetalShim_SetComplexIo` (thread-local) with the pair program and the
+   complex positions; the shim's `PJRT_Client_Compile` compiles the pair program instead.
+4. **Buffers are relabeled at execution.** The plugin checks argument shapes strictly, so
+   complex64 inputs are passed as float32[..., 2] views of the same device memory
+   (`PJRT_Client_CreateViewOfDeviceBuffer`; views are released when execution completes).
+   Pair outputs are returned as complex64 views that own the pair buffers (deleting the view
+   destroys the original). Buffers then always match jaxlib's metadata, so every JAX path
+   (host transfer, device_put to CPU, `addressable_data`, indexing, chaining) sees ordinary
+   complex64 arrays.
+
+Costs and limits:
+
+- A program with complex outputs waits for completion before returning: a view counts as
+  ready as soon as it exists, so the shim awaits the pair output first.
+- Complex inputs are never donated (donation is optional in JAX).
+- Each such program is lowered and serialized twice at compile time.
+- Rejected approaches, for the record: relabeling buffers alone (jaxlib's metadata then
+  contradicts the buffers), pair-backed arrays with patched host fetches (leaks float32 pairs
+  through `addressable_data`), and DLPack import (jaxlib refuses DLPack for METAL devices).
 
 ### float64
 
@@ -202,8 +233,8 @@ for transcendental functions and gradients.
    pattern for an op. The op inventory is in `re/findings/mps-op-coverage.md`.
 3. **Data types.** float64 is not available: MPS has no float64 type (not even for constants
    inside a program) and Apple GPUs have no float64 hardware; see "float64" below. complex64
-   works inside programs but not at their boundary (see above). int64 works; uint64 cannot be a
-   program input or output.
+   works inside programs and at their boundary (see above); complex128 needs float64. int64
+   works; uint64 cannot be a program input or output.
 4. **Shardy.** Handled by turning the Shardy partitioner off (see the Python package section).
    If a future JAX removes the GSPMD path, the shim would have to strip `sdy` attributes, which
    needs MLIR in the shim.
@@ -218,7 +249,6 @@ for transcendental functions and gradients.
    (see `third_party/*/SOURCE`). Apple's binary is fetched from PyPI at install time.
 
 9. **Remaining gaps** (`re/findings/jax-op-probe.md`: 88 of 88 probed JAX ops pass):
-   - complex values at a program's inputs/outputs, and eager complex ops (see above);
    - float64 (see below);
    - float32→bfloat16 casts done by the plugin itself, outside these rules (none known), would
      still flush bfloat16 subnormals.
@@ -236,6 +266,8 @@ for transcendental functions and gradients.
 - `tests/test_phase3.py`: linear algebra (every `triangular_solve` flag combination, batched),
   bit-exact `reduce_precision` and bfloat16 conversions, the `rbg` PRNG.
 - `tests/test_complex.py`: complex arithmetic and transcendental functions, FFT family at lengths
-  7–4096, multi-dimensional FFTs, FFT convolution, gradients through `rfft`.
+  7–4096, multi-dimensional FFTs, FFT convolution, gradients through `rfft`; complex64 arrays
+  in and out of programs (pytrees, scalars, loops, gradients, empty arrays, chaining, eager ops,
+  transfer to CPU, donation, no buffer leak over 500 calls).
 - `tests/accuracy_sweep.py --strict`: every float32 elementwise op against the CPU across
   magnitudes 1e-12…1e4 and special values.
