@@ -1,0 +1,151 @@
+# jax-metal shim: design
+
+Goal: run current JAX (jax/jaxlib 0.12, PJRT C API 0.116) on Apple GPUs using Apple's
+unmodified `jax-metal` 0.1.1 plugin (`pjrt_plugin_metal_14.dylib`, PJRT 0.47, StableHLO 0.19.4).
+
+## Evidence this works
+
+`shim/tests/direct_load.cc` loads the plugin with no shim, compiles a program lowered by
+jax 0.12 and serialized as a StableHLO 0.19.4 portable artifact, runs it on the M3 GPU and
+matches the CPU result (max abs error 4.8e-7). The same program serialized at StableHLO 1.16.3
+fails in `PJRT_Client_Compile` with `unknown vhlo attribute code: 20`. The StableHLO version is the
+only thing blocking compilation.
+
+## How jaxlib 0.12 treats an old plugin
+
+From `xla/pjrt/pjrt_api.cc` and `xla/pjrt/c_api_client/pjrt_c_api_client.cc` at XLA `0bfeeb47`
+(PJRT 0.116):
+
+1. **Version gate.** With `ENABLE_PJRT_COMPATIBILITY` unset, compatibility mode is on: any plugin
+   with major 0 and minor ≥ 29 is accepted. Setting the variable to `0` forces an exact match.
+2. **StableHLO target.** jaxlib serializes programs at the plugin's `stablehlo_current_version`
+   attribute and falls back to `xla::GetDefaultStablehloVersion()` (far newer than 0.19.4) when the
+   attribute is missing. The plugin reports no attributes.
+3. **Newer entry points.** Most calls to functions newer than the plugin are guarded by
+   `minor_version` checks, so a 0.47 plugin gets the older code paths. Some are guarded only by a
+   null check on the function pointer: `PJRT_Client_Load`, `PJRT_Event_Create`/`Set`,
+   `PJRT_Buffer_Bitcast`, `PJRT_Device_ClearMemoryStats`,
+   `PJRT_LoadedExecutable_AddressableDeviceLogicalIds` (read when every loaded executable is
+   created) and `PJRT_TopologyDescription_GetMemorySpaceKindIds`. jaxlib reads those pointers past
+   the end of the plugin's 808-byte table, so with the raw plugin it calls whatever bytes follow.
+4. **Argument structs.** All 97 functions the plugin implements take argument structs that are
+   unchanged or append-only between 0.47 and 0.116 (`re/findings/pjrt-0.47-vs-0.116.md`). The
+   plugin accepts larger `struct_size` values and ignores trailing fields, and jaxlib
+   zero-initializes the structs, so new output fields stay zero.
+
+## Design
+
+`pjrt_plugin_metal_shim.dylib` exports `GetPjrtApi` and presents the plugin's own table with two
+changes.
+
+1. **Zero-padded table.** The shim owns a `PJRT_Api` laid out per the 0.116 header, embedded in a
+   larger zero-filled block (room for 512 entries) so frameworks newer than 0.116 also read null
+   past the end. It copies the plugin's 808 bytes (header plus 97 entries) into it. Every slot
+   the plugin lacks stays null, so null-guarded call sites take their fallbacks.
+2. **Truthful version.** It reports PJRT 0.47 and `struct_size` 808, the plugin's real
+   capabilities, so jaxlib's `minor_version` guards keep choosing the old paths.
+3. **Attributes.** `PJRT_Plugin_Attributes` is replaced with a function that returns:
+   - `stablehlo_current_version` = `[0, 19, 4]`
+   - `stablehlo_minimum_version` = `[0, 9, 0]`
+   - `jax_metal_shim_version` = shim version string
+   jaxlib then downgrades every program to StableHLO 0.19.4 before handing it to the plugin.
+4. **Loading the plugin.** On first `GetPjrtApi` call the shim `dlopen`s the plugin from
+   `JAX_METAL_SHIM_PLUGIN_PATH` if set, else `pjrt_plugin_metal_14.dylib` next to the shim. It
+   checks that the plugin reports PJRT 0.47 with `struct_size` 808 and refuses to load anything
+   else, since the table copy is only valid for that layout.
+5. **Synthetic memory spaces.** The plugin's device reports no memory spaces and
+   `PJRT_Device_DefaultMemory` returns UNIMPLEMENTED. jaxlib 0.12 routes every host-to-device
+   transfer (`device_put`, every jitted argument) through the device's default memory space, so
+   without this every program with inputs fails with `default_memory_space is not supported`.
+   The shim gives each device one memory of kind `device`:
+   - It answers `PJRT_Client_AddressableMemories`, `PJRT_Device_AddressableMemories`,
+     `PJRT_Device_DefaultMemory`, `PJRT_Memory_{Id,Kind,DebugString,ToString,AddressableByDevices}`
+     and `PJRT_Buffer_Memory` itself.
+   - It rewrites memory-addressed calls to the device form before forwarding:
+     `PJRT_Client_BufferFromHostBuffer` (memory → device), `PJRT_Buffer_CopyToMemory` (→
+     `PJRT_Buffer_CopyToDevice`) and `PJRT_Client_CreateViewOfDeviceBuffer`.
+   - Shim memories start with a null `vtable`, since jaxlib reads `memory->vtable`.
+   - Memory pointers the shim did not create go to the plugin unchanged, so the shim never
+     manufactures `PJRT_Error`s.
+   - `PJRT_Memory_Kind_Id` stays null; for a 0.47 plugin jaxlib derives the kind id from the kind
+     string.
+6. **Tracing (opt-in).** `JAX_METAL_SHIM_TRACE=1` logs shim initialization and attribute queries
+   to stderr.
+
+Everything else is forwarded untouched: the remaining entries are the plugin's own function
+pointers, and PJRT errors, events, buffers and executables stay plugin objects.
+
+### Python package
+
+`jax-metal-shim` installs `jax_plugins/metal_shim/__init__.py`, whose `initialize()` registers
+platform `METAL` with the shim's library path, at the same priority Apple used (500).
+
+JAX imports every module under `jax_plugins` and calls each `initialize()` in no fixed order, so
+Apple's own `jax_plugins.metal_plugin` must not be installed alongside the shim, or `METAL` is
+registered twice. The shim's `initialize()` detects that case and raises an error that says to run
+`pip uninstall jax-metal`.
+
+`initialize()` also:
+
+- **Disables Shardy by default.** jax 0.12 lowers with the Shardy partitioner, whose `sdy` dialect
+  appears on every jitted function with committed inputs (`sdy.mesh`, `sdy.sharding`); the plugin
+  fails with `dialect 'sdy' is unknown`. Setting `jax_use_shardy_partitioner = False` makes JAX
+  emit the classic `mhlo.sharding` attributes instead. An explicit `JAX_USE_SHARDY_PARTITIONER`
+  in the environment wins. The setting is process-wide, which only matters for multi-device
+  sharding on other backends in the same process.
+- **Registers METAL lowering rules** (`_lowerings.py`) for JAX primitives the plugin rejects,
+  each rewritten into ops the plugin lowers:
+  - Cumulative reductions (`cumsum`, `cumprod`, `cummax`, `cummin`, `cumlogsumexp`): jax 0.12 emits
+    a full-length `reduce_window` the plugin cannot legalize; a parallel prefix scan works.
+  - CHLO ops that XLA's serializer always wraps in `stablehlo.composite`
+    (`ChloPreserveHighLevelOpsPass`): `acos`, `acosh`, `asinh`, `atanh`, `sinh`, `cosh`, `erf`
+    (Eigen/XLA float32 rational approximation), `erfc`, `top_k` (stable sort).
+  - Ops without an MPS pattern: `cbrt`, `population_count`, `clz` (which also fixes `lgamma`).
+
+Apple's dylib is not redistributed. `shim/install.sh` downloads the `jax-metal==0.1.1` wheel from
+PyPI, verifies the dylib's sha256 (`e8e0656f…61bf`), and places it next to the shim in the
+installed package.
+
+## Additional considerations
+
+1. **Ops newer than StableHLO 0.19.4.** jaxlib fails to serialize a program that uses an op or
+   attribute introduced after 0.19.4 (for example `stablehlo.tan` 1.4.0, `dot_general` with
+   algorithm 1.6.0, `exponential` with `result_accuracy` 1.9.0, variadic `all_reduce` 1.5.0). The error
+   is raised in jaxlib before the plugin sees the program. Fixing these needs a rewrite step
+   (Phase 3), either in JAX lowering rules registered for platform `METAL` or inside the shim.
+2. **What the plugin can lower.** Even valid 0.19.4 programs fail if Apple's HLO→MPS lowering has no
+   pattern for an op. The op inventory is in `re/findings/mps-op-coverage.md`.
+3. **Data types.** The plugin does not support `float64` or complex types. JAX keeps x64 disabled
+   by default.
+4. **Shardy.** Handled by turning the Shardy partitioner off (see the Python package section).
+   If a future JAX removes the GSPMD path, the shim would have to strip `sdy` attributes, which
+   needs MLIR in the shim.
+5. **Compile options.** jax 0.12 serializes a newer `CompileOptionsProto`. Unknown proto fields are
+   skipped by the plugin's parser (the direct-load test passes the jax 0.12 options).
+6. **Framework drift.** The design relies on the PJRT append-only rule and on jaxlib's version and
+   null guards. A newer jaxlib that adds unguarded calls past 0.47 would need a shim update; the
+   padded table makes such calls hit null rather than garbage.
+7. **Single process, single device.** The plugin exposes one device. Multi-process or collective
+   APIs are out of scope.
+8. **Licensing.** The shim and its tools are new code; the vendored PJRT headers are Apache-2.0
+   (see `third_party/*/SOURCE`). Apple's binary is fetched from PyPI at install time.
+
+9. **Remaining gaps** (`re/findings/jax-op-probe.md`, 79 of 88 probed JAX ops pass):
+   - No MPS lowering: `cholesky`, `triangular_solve` (so `linalg.solve`/`inv`), `fft`,
+     `reduce_precision`, complex numbers (`mhlo.real`). Candidates for further lowering rules
+     (blocked algorithms with loops) or host fallback.
+   - `jax.random` with the `rbg` implementation aborts inside MPS (`rng_bit_generator`); the
+     default `threefry` works.
+   - `bfloat16` round-trips come back unrounded: an f32→bf16→f32 conversion keeps float32 precision
+     on METAL, so results are slightly more precise than on CPU.
+
+## Tests
+
+- `tests/direct_load.cc`: plugin alone, StableHLO 0.19.4 artifact, GPU vs CPU result.
+- `tests/shim_load.cc`: same flow through the shim; also checks the attributes and that slots past
+  the plugin's table are null.
+- `tests/test_jax_e2e.py`: current JAX with the shim installed as the `METAL` plugin. Runs
+  jit, grad, matmul, conv, sort, scatter, control flow, PRNG and an MLP training step on the GPU
+  and compares with CPU (16 of 16 pass).
+- `tests/probe_jax_ops.py`: 88 individual JAX ops, each in its own process, recorded in
+  `re/findings/jax-op-probe.md`.

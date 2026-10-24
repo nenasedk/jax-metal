@@ -126,7 +126,10 @@ def serve():
             except Exception as error:  # report, keep serving
                 response = {"error": {"message": str(error)}}
             log("done: " + call["tool"])
-            connection.sendall(json.dumps(response).encode() + b"\n")
+            try:
+                connection.sendall(json.dumps(response).encode() + b"\n")
+            except OSError as error:  # client gave up; keep the analyzed session alive
+                log(f"reply dropped for {call['tool']}: {error}")
 
 
 def call(tool, args_json):

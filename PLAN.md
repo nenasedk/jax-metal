@@ -59,7 +59,11 @@ pushed swap to 12.7/13.3 GB before it was stopped. Options, in order:
 3. If it still thrashes, analyze on a machine with 32 GB or more, or rely on targeted REA queries
    plus `nm`/`otool`/`lldb` for everything else.
 
-### Phase 1: map the boundaries (2–4 days, REA-heavy)
+### Phase 1: map the boundaries (2–4 days, REA-heavy) — done, see `re/FINDINGS.md`
+
+PJRT 0.47 table recovered; StableHLO 0.19.4; 82 HLO ops with MPS patterns (79 of 88 probed JAX
+ops work through the shim); 94.5% upstream (XLA `3c8260f6`, StableHLO `271e8634`), 4.7% Apple.
+
 
 - Decompile `GetPjrtApi` and recover the PJRT 0.47 function table.
 - Find the exact StableHLO/VHLO version the plugin can read.
@@ -67,7 +71,13 @@ pushed swap to 12.7/13.3 GB before it was stopped. Options, in order:
 - Tag regions of the binary as upstream (pinned to a commit) or Apple-proprietary, so effort goes
   to the Apple part.
 
-### Phase 2: PJRT shim plugin (1–3 weeks, most likely path to a working result)
+### Phase 2: PJRT shim plugin (1–3 weeks, most likely path to a working result) — done, see `shim/`
+
+Working shim with current JAX 0.12 on the M3 (16 of 16 end-to-end cases). The final design differs
+from the sketch below: the shim keeps reporting PJRT 0.47 (jaxlib 0.12 accepts it in its default
+compatibility mode), pads the table with nulls instead of `UNIMPLEMENTED` stubs, and adds synthetic
+memory spaces. See `shim/DESIGN.md`.
+
 
 A small C/C++ `pjrt_plugin_metal_shim.dylib` that:
 
@@ -79,7 +89,11 @@ Main risk: StableHLO's forward-compatibility window is about two years, and the 
 edge. If current StableHLO cannot target the plugin's version, the shim must also rewrite the
 module itself (+1–2 weeks).
 
-### Phase 3: fill op gaps (ongoing)
+### Phase 3: fill op gaps (ongoing) — started
+
+METAL lowering rules for cumulative reductions, composite-wrapped CHLO ops, `cbrt`, `popcnt`, `clz`.
+Remaining: `cholesky`, `triangular_solve`, `fft`, `reduce_precision`, complex numbers, `rbg` PRNG.
+
 
 Run the JAX test suite against the shim, and use REA to explain each lowering failure. Fix gaps by
 rewriting ops in the shim into forms the plugin already legalizes, without patching Apple's binary.

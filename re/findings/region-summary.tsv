@@ -1,0 +1,25 @@
+tag	functions	bytes	percent_of_text
+upstream:llvm	66788	26795504	33.32
+upstream:mlir	122225	21444312	26.66
+upstream:xla	24193	9682416	12.04
+upstream:eigen	10081	4296436	5.34
+upstream:llvm (by locality)	5692	3649800	4.54
+upstream:stablehlo	12999	2611560	3.25
+upstream:xla/mlir-hlo	10419	2569000	3.19
+apple	11382	2413264	3.00
+upstream:libc++	16706	1873508	2.33
+upstream:protobuf	5659	1417284	1.76
+apple-instantiation	10202	1366204	1.70
+upstream:abseil	3893	766324	0.95
+unattributed	1462	613792	0.76
+upstream:libc++ (by locality)	915	524048	0.65
+upstream:mlir (by locality)	1807	307420	0.38
+upstream:xla (by locality)	629	64580	0.08
+upstream:xla/mlir-hlo (by locality)	59	19672	0.02
+upstream:eigen (by locality)	14	3384	0.00
+upstream:abseil (by locality)	42	3320	0.00
+upstream:mlir-runtime	31	2824	0.00
+apple (by locality)	4	944	0.00
+upstream:protobuf (by locality)	22	488	0.00
+upstream:mlir-runtime (by locality)	5	324	0.00
+upstream:stablehlo (by locality)	2	20	0.00

@@ -2,3 +2,7 @@
 re/targets/*.dylib
 re/work/
 __pycache__/
+shim/build/
+shim/python/jax_plugins/metal_shim/*.dylib
+shim/python/build/
+shim/python/*.egg-info/
