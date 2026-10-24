@@ -243,17 +243,25 @@ def _batch_matvec(matrix, vector):
 
 
 def _cholesky(a, **_):
-    # Column-by-column Cholesky-Banachiewicz on the lower triangle. Columns not yet
-    # computed are zero, so l @ l[j] only sums over k < j.
+    # Column-by-column Cholesky-Banachiewicz on the lower triangle (Hermitian for complex:
+    # l[i, j] = (a[i, j] - sum_k l[i, k] conj(l[j, k])) / l[j, j], with a real diagonal).
+    # Columns not yet computed are zero, so l @ conj(l[j]) only sums over k < j.
     n = a.shape[-1]
     row_axis, col_axis = a.ndim - 2, a.ndim - 1
     rows = lax.broadcasted_iota(np.int32, a.shape[:-1], a.ndim - 2)
+    complex_input = np.issubdtype(a.dtype, np.complexfloating)
 
     def column(j, l):
         a_col = lax.dynamic_index_in_dim(a, j, axis=col_axis, keepdims=False)
         l_row = lax.dynamic_index_in_dim(l, j, axis=row_axis, keepdims=False)
+        if complex_input:
+            l_row = lax.conj(l_row)
         v = a_col - _batch_matvec(lax.transpose(l, (*range(a.ndim - 2), col_axis, row_axis)), l_row)
-        d = lax.sqrt(lax.dynamic_index_in_dim(v, j, axis=v.ndim - 1, keepdims=True))
+        pivot = lax.dynamic_index_in_dim(v, j, axis=v.ndim - 1, keepdims=True)
+        if complex_input:
+            d = lax.complex(lax.sqrt(lax.real(pivot)), lax.full_like(lax.real(pivot), 0))
+        else:
+            d = lax.sqrt(pivot)
         col = lax.select(rows > j, v / d, lax.select(rows == j, lax.broadcast_in_dim(
             d, v.shape, tuple(range(v.ndim))), lax.full_like(v, 0)))
         return lax.dynamic_update_index_in_dim(l, col[..., None], j, axis=col_axis)
@@ -285,7 +293,8 @@ def _forward_substitution(a, b, unit_diagonal):
 
 
 def _triangular_solve(a, b, *, left_side, lower, transpose_a, conjugate_a, unit_diagonal, **_):
-    del conjugate_a  # real dtypes only; the plugin has no complex support
+    if conjugate_a and np.issubdtype(a.dtype, np.complexfloating):
+        a = lax.conj(a)
     if transpose_a:
         a, lower = _swap_last(a), not lower
     if not left_side:  # x a = b  <=>  a^T x^T = b^T
@@ -299,6 +308,311 @@ def _triangular_solve(a, b, *, left_side, lower, transpose_a, conjugate_a, unit_
     if not left_side:
         x = _swap_last(x)
     return x
+
+
+def _is_complex(x):
+    return np.issubdtype(x.dtype, np.complexfloating)
+
+
+def _conj(x):
+    return lax.conj(x) if _is_complex(x) else x
+
+
+def _householder(col, j):
+    """LAPACK larfg for column `col` [..., m] at row j: reflector v (v[j] = 1), tau, beta.
+
+    H = I - tau v v^H maps col[j:] to (beta, 0, ..., 0); beta is real.
+    """
+    rows = lax.broadcasted_iota(np.int32, col.shape, col.ndim - 1)
+    alpha = lax.dynamic_index_in_dim(col, j, axis=col.ndim - 1, keepdims=False)
+    below = rows > j
+    x = lax.select(below, col, lax.full_like(col, 0))
+    xnorm2 = lax.reduce_sum(lax.real(x * _conj(x)) if _is_complex(x) else x * x, (x.ndim - 1,))
+    alpha_re = lax.real(alpha) if _is_complex(alpha) else alpha
+    alpha_im = lax.imag(alpha) if _is_complex(alpha) else lax.full_like(alpha, 0)
+    norm = lax.sqrt(alpha_re * alpha_re + alpha_im * alpha_im + xnorm2)
+    beta = lax.select(alpha_re >= 0, -norm, norm)
+    trivial = (xnorm2 == 0) & (alpha_im == 0)  # already reduced: H = I
+    safe_beta = lax.select(trivial, lax.full_like(beta, 1), beta)
+    beta_c = lax.convert_element_type(safe_beta, col.dtype)
+    tau = lax.select(trivial, lax.full_like(alpha, 0), (beta_c - alpha) / beta_c)
+    denominator = lax.select(trivial, lax.full_like(alpha, 1), alpha - beta_c)
+    v = lax.select(below, x / denominator[..., None],
+                   lax.select(rows == j, lax.full_like(col, 1), lax.full_like(col, 0)))
+    beta_out = lax.select(trivial, alpha, lax.convert_element_type(beta, col.dtype))
+    return v, tau, beta_out
+
+
+def _geqrf(a, **_):
+    # Householder QR in LAPACK's packed form: R on and above the diagonal, reflectors below,
+    # taus separately. The generic lowering emits XLA's "Qr" custom call, which aborts the
+    # plugin (its CustomCallConverter only knows LU).
+    m, n = a.shape[-2:]
+    k = min(m, n)
+    rows = lax.broadcasted_iota(np.int32, a.shape[:-1], a.ndim - 2)
+    cols = lax.broadcasted_iota(np.int32, (*a.shape[:-2], n), a.ndim - 2)
+    taus = lax.full(a.shape[:-2] + (k,), 0, a.dtype)
+
+    def step(j, carry):
+        a, taus = carry
+        col = lax.dynamic_index_in_dim(a, j, axis=a.ndim - 1, keepdims=False)
+        v, tau, beta = _householder(col, j)
+        w = _batch_matvec(a, _conj(v))  # v^H a, one entry per column
+        update = (_conj(tau)[..., None, None] * v[..., :, None]) * w[..., None, :]
+        a = lax.select(lax.broadcast_in_dim(cols > j, a.shape, (*range(a.ndim - 2), a.ndim - 1)),
+                       a - update, a)
+        new_col = lax.select(rows < j, col, lax.select(rows == j, lax.broadcast_in_dim(
+            beta, col.shape, tuple(range(beta.ndim))), v))
+        a = lax.dynamic_update_index_in_dim(a, new_col[..., None], j, axis=a.ndim - 1)
+        taus = lax.dynamic_update_index_in_dim(taus, tau[..., None], j, axis=taus.ndim - 1)
+        return a, taus
+
+    return list(lax.fori_loop(0, k, step, (a, taus)))
+
+
+def _householder_product(a, taus, **_):
+    # Q = H_0 H_1 ... H_{k-1} applied to the first n columns of the identity.
+    m, n = a.shape[-2:]
+    k = taus.shape[-1]
+    rows = lax.broadcasted_iota(np.int32, a.shape[:-1], a.ndim - 2)
+    q = lax.broadcast_in_dim(lax_internal._eye(a.dtype, (m, n)), a.shape,  # pylint: disable=protected-access
+                             (a.ndim - 2, a.ndim - 1))
+
+    def step(i, q):
+        j = k - 1 - i
+        col = lax.dynamic_index_in_dim(a, j, axis=a.ndim - 1, keepdims=False)
+        v = lax.select(rows > j, col, lax.select(rows == j, lax.full_like(col, 1), lax.full_like(col, 0)))
+        tau = lax.dynamic_index_in_dim(taus, j, axis=taus.ndim - 1, keepdims=False)
+        w = _batch_matvec(q, _conj(v))  # v^H q
+        return q - (tau[..., None, None] * v[..., :, None]) * w[..., None, :]
+
+    return lax.fori_loop(0, k, step, q)
+
+
+def _round_robin(n):
+    """Tournament schedule for n (even) indices: n - 1 rounds of n/2 disjoint pairs.
+
+    Returns, per round, the permutation [p_0..p_{n/2-1}, q_0..q_{n/2-1}] and its inverse.
+    """
+    others = list(range(1, n))
+    perms, inverses = [], []
+    for _ in range(n - 1):
+        order = [0] + others
+        pairs = [tuple(sorted((order[i], order[n - 1 - i]))) for i in range(n // 2)]
+        perm = [p for p, _ in pairs] + [q for _, q in pairs]
+        perms.append(perm)
+        inverses.append(list(np.argsort(perm)))
+        others = others[-1:] + others[:-1]
+    return np.array(perms, np.int32), np.array(inverses, np.int32)
+
+
+def _jacobi_eigh(a, sort_eigenvalues):
+    """Parallel cyclic Jacobi for a Hermitian matrix [..., n, n]: (eigenvectors, eigenvalues).
+
+    Each round applies n/2 disjoint 2x2 rotations at once (round-robin pairing), as row and
+    column gathers, so a sweep is O(n^3). Indices with no coupling get identity rotations,
+    so padded identity blocks keep their positions (the QDWH base case relies on this).
+    """
+    n = a.shape[-1]
+    complex_input = _is_complex(a)
+    real_dtype = np.finfo(a.dtype).dtype
+    padded = n + (n % 2)
+    if padded != n:  # an uncoupled extra index makes the size even
+        widths = [(0, 0, 0)] * (a.ndim - 2) + [(0, 1, 0), (0, 1, 0)]
+        a = lax.pad(a, lax_internal._zero(a), widths)  # pylint: disable=protected-access
+    half = padded // 2
+    perms, inverses = _round_robin(padded)
+    perms, inverses = lax.convert_element_type(perms, np.int32), lax.convert_element_type(inverses, np.int32)
+    batch = a.shape[:-2]
+    v = lax.broadcast_in_dim(lax_internal._eye(a.dtype, (padded, padded)), a.shape,  # pylint: disable=protected-access
+                             (a.ndim - 2, a.ndim - 1))
+    eps = np.finfo(real_dtype).eps
+
+    def magnitude2(x):
+        return lax.real(x * lax.conj(x)) if complex_input else x * x
+
+    def off_norm2(a):
+        mask = 1 - lax_internal._eye(real_dtype, (padded, padded))  # pylint: disable=protected-access
+        return lax.reduce_sum(magnitude2(a) * mask, (a.ndim - 2, a.ndim - 1))
+
+    def rotate(r, carry):
+        a, v = carry
+        perm = lax.dynamic_index_in_dim(perms, r, keepdims=False)
+        inverse = lax.dynamic_index_in_dim(inverses, r, keepdims=False)
+        p, q = perm[:half], perm[half:]
+        diag = jnp_diagonal(a)
+        app, aqq = lax.real(diag[..., p]) if complex_input else diag[..., p], \
+            lax.real(diag[..., q]) if complex_input else diag[..., q]
+        apq = a[..., p, q]
+        # |apq| without squaring (squares of tiny couplings underflow and break the unit
+        # phase below); couplings negligible next to the diagonal are left alone.
+        abs_pq = lax.abs(apq)
+        coupled = abs_pq > eps * 1e-2 * (lax.abs(app) + lax.abs(aqq)) + np.finfo(real_dtype).tiny
+        safe = lax.select(coupled, abs_pq, lax.full_like(abs_pq, 1))
+        tau = (aqq - app) / (2 * safe)
+        sign = lax.select(tau >= 0, lax.full_like(tau, 1), lax.full_like(tau, -1))
+        t = sign / (lax.abs(tau) + lax.sqrt(1 + tau * tau))
+        t = lax.select(coupled, t, lax.full_like(t, 0))
+        c = lax.rsqrt(1 + t * t)
+        s = t * c
+        # J = diag(1, conj(phase)) R with R = [[c, s], [-s, c]] and phase = apq / |apq|
+        # (a unit complex number, or the sign for real matrices).
+        phase = apq / lax.convert_element_type(safe, a.dtype)
+        phase = lax.select(coupled, phase, lax.full_like(phase, 1))
+        cc, ss = lax.convert_element_type(c, a.dtype), lax.convert_element_type(s, a.dtype)
+        jpp, jpq = cc, ss
+        jqp, jqq = -ss * _conj(phase), cc * _conj(phase)
+
+        def columns(x):  # x J on the paired columns
+            xp, xq = x[..., :, p], x[..., :, q]
+            new_p = xp * jpp[..., None, :] + xq * jqp[..., None, :]
+            new_q = xp * jpq[..., None, :] + xq * jqq[..., None, :]
+            return lax.concatenate([new_p, new_q], x.ndim - 1)[..., :, inverse]
+
+        def rows(x):  # J^H x on the paired rows
+            xp, xq = x[..., p, :], x[..., q, :]
+            new_p = _conj(jpp)[..., :, None] * xp + _conj(jqp)[..., :, None] * xq
+            new_q = _conj(jpq)[..., :, None] * xp + _conj(jqq)[..., :, None] * xq
+            return lax.concatenate([new_p, new_q], x.ndim - 2)[..., inverse, :]
+
+        return rows(columns(a)), columns(v)
+
+    def sweep(carry):
+        a, v, count = carry
+        a, v = lax.fori_loop(0, padded - 1, rotate, (a, v))
+        return a, v, count + 1
+
+    def not_converged(carry):
+        a, _, count = carry
+        total = lax.reduce_sum(magnitude2(a), (a.ndim - 2, a.ndim - 1))
+        return (count < 20) & lax.reduce_or(off_norm2(a) > (eps * eps) * total, tuple(range(len(batch))))
+
+    a, v, _ = lax.while_loop(not_converged, sweep, (a, v, 0))
+    w = jnp_diagonal(a)
+    w = lax.real(w) if complex_input else w
+    w, v = w[..., :n], v[..., :n, :n]
+    if sort_eigenvalues:
+        order = lax.broadcasted_iota(np.int32, w.shape, w.ndim - 1)
+        w, order = lax.sort((w, order), dimension=w.ndim - 1, num_keys=1)
+        v = jnp_take_columns(v, order)
+    return v, w
+
+
+def jnp_diagonal(a):
+    """Diagonal of [..., n, n] as [..., n] (gather on an iota index)."""
+    idx = np.arange(a.shape[-1])
+    return a[..., idx, idx]
+
+
+def jnp_take_columns(v, order):
+    """v[..., :, order[...]] for a batch of column orders."""
+    import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
+    return jnp.take_along_axis(v, order[..., None, :], axis=-1)
+
+
+def _complex_svd(a, *, full_matrices, compute_uv, subset_by_index, **_):
+    """Complex SVD from the Jacobi eigendecomposition of [[0, A], [A^H, 0]].
+
+    Its eigenvalues are +-sigma_i with eigenvectors [u_i; v_i] / sqrt(2), so the largest
+    min(m, n) eigenpairs give the SVD without squaring the condition number (unlike A^H A).
+    JAX's QDWH SVD crashes MPSGraph at run time for complex inputs.
+    """
+    import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
+    m, n = a.shape[-2:]
+    k = min(m, n)
+    zeros_m = lax.full(a.shape[:-1] + (m,), 0, a.dtype)
+    zeros_n = lax.full(a.shape[:-2] + (n, n), 0, a.dtype)
+    ah = _conj(jnp.swapaxes(a, -1, -2))
+    b = lax.concatenate([lax.concatenate([zeros_m, a], a.ndim - 1),
+                         lax.concatenate([ah, zeros_n], a.ndim - 1)], a.ndim - 2)
+    vectors, values = _jacobi_eigh(b, sort_eigenvalues=True)
+    s = lax.max(lax.rev(values[..., m + n - k:], (values.ndim - 1,)), lax.full_like(values[..., :k], 0))
+    if subset_by_index is not None:
+        lo, hi = subset_by_index
+        s = s[..., lo:hi]
+    if not compute_uv:
+        return [s]
+    top = lax.rev(vectors[..., m + n - k:], (vectors.ndim - 1,))
+    u, v = top[..., :m, :], top[..., m:, :]
+    # Columns for sigma ~ 0 mix the u and v halves; re-orthonormalize with Householder QR.
+    # Columns come in descending sigma, so QR keeps the well-defined ones (up to the phase
+    # restored from R's diagonal) and replaces the rest with an orthonormal completion.
+    def orthonormalize(x):
+        q, r = jnp.linalg.qr(x)
+        d = jnp.diagonal(r, axis1=-2, axis2=-1)
+        magnitude = lax.abs(d)
+        phase = lax.select(magnitude > 0, d / lax.convert_element_type(magnitude + 1e-30, d.dtype),
+                           lax.full_like(d, 1))
+        return q * phase[..., None, :]
+
+    u, v = orthonormalize(u), orthonormalize(v)
+    if full_matrices and m > k:  # complete U to a unitary m x m with QR
+        u = lax.concatenate([u, jnp.linalg.qr(u, mode="complete")[0][..., :, k:]], u.ndim - 1)
+    if full_matrices and n > k:
+        v = lax.concatenate([v, jnp.linalg.qr(v, mode="complete")[0][..., :, k:]], v.ndim - 1)
+    if subset_by_index is not None:
+        lo, hi = subset_by_index
+        u, v = u[..., lo:hi], v[..., lo:hi]
+    return [s, u, _conj(jnp.swapaxes(v, -1, -2))]
+
+
+def _svd_rule():
+    """SVD for METAL.
+
+    Real inputs: JAX's generic SVD (QDWH polar + eigh), always run with a batch dimension;
+    unbatched, its QDWH while loop keeps lax.cond branches, which crash MPSGraph at run time
+    (GPU::WhileOpHandler); with a batch dimension vmap turns them into selects.
+    Complex inputs: _complex_svd (complex QDWH also crashes MPSGraph).
+    """
+    default = _default_rule(linalg.svd_p)
+
+    def batch_of_one(a, **params):
+        outs = linalg.svd_p.bind(a[None], **params)
+        return [out[0] for out in outs]
+
+    batched = mlir.lower_fun(batch_of_one, multiple_results=True)
+    complex_rule = mlir.lower_fun(_complex_svd, multiple_results=True)
+
+    def rule(ctx, a, **params):
+        shape = ctx.avals_in[0].shape
+        if 0 in shape[-2:]:
+            return default(ctx, a, **params)
+        if np.issubdtype(ctx.avals_in[0].dtype, np.complexfloating):
+            return complex_rule(ctx, a, **params)
+        if len(shape) > 2:
+            return default(ctx, a, **params)
+        return batched(ctx, a, **params)
+
+    return rule
+
+
+def _eigh(x, *, lower, sort_eigenvalues, subset_by_index, algorithm=None, **_):
+    n = x.shape[-1]
+    if n == 0:
+        return [x, lax.real(x[..., 0]) if _is_complex(x) else x[..., 0]]
+    # Rebuild the Hermitian matrix from the referenced triangle.
+    import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
+    tri = jnp.tril(x) if lower else jnp.triu(x)
+    strict = jnp.tril(x, -1) if lower else jnp.triu(x, 1)
+    h = tri + _conj(jnp.swapaxes(strict, -1, -2))
+    full_range = subset_by_index is None or tuple(subset_by_index) == (0, n)
+    # Jacobi for small matrices and for complex ones (complex QDWH crashes MPSGraph).
+    if n <= 256 or algorithm == linalg.EighImplementation.JACOBI or _is_complex(h):
+        v, w = _jacobi_eigh(h, sort_eigenvalues or not full_range)
+    else:
+        # JAX's QDWH spectral divide-and-conquer (used on TPU) is pure JAX; it needs QR
+        # (rules above) and calls eigh with JACOBI on blocks of at most 256.
+        # Always batched: unbatched QDWH keeps lax.cond inside its while loop, which crashes
+        # MPSGraph at run time (GPU::WhileOpHandler); vmap turns those conds into selects.
+        from jax._src.tpu.linalg import eigh as tpu_eigh  # pylint: disable=import-outside-toplevel
+        batched = h if h.ndim > 2 else h[None]
+        v, w = tpu_eigh._eigh_qdwh_impl(  # pylint: disable=protected-access
+            batched, lower=lower, sort_eigenvalues=sort_eigenvalues, subset_by_index=subset_by_index)
+        return [v, w] if h.ndim > 2 else [v[0], w[0]]
+    if not full_range:
+        lo, hi = subset_by_index
+        v, w = v[..., lo:hi], w[..., lo:hi]
+    return [v, w]
 
 
 # --- Floating-point precision ----------------------------------------------------
@@ -381,6 +695,10 @@ def _convert_element_type(ctx, operand, *, new_dtype, **params):
     if source == _BFLOAT16 and target != _BFLOAT16 and real(target):
         return mlir.lower_fun(partial(_from_bfloat16, dtype=target), multiple_results=False)(
             ctx, operand)
+    if source.kind == "c" and real(target):
+        # JAX's own rule emits mhlo.real, which the plugin cannot lower; use the METAL real_p.
+        return mlir.lower_fun(lambda z: lax.convert_element_type(lax.real(z), target),
+                              multiple_results=False)(ctx, operand)
     return _default_rule(lax_internal.convert_element_type_p)(ctx, operand, new_dtype=new_dtype,
                                                               **params)
 
@@ -460,6 +778,10 @@ def register():
     _register(lax_internal.top_k_p, _top_k, multiple_results=True)
     _register(linalg.cholesky_p, _cholesky)
     _register(linalg.triangular_solve_p, _triangular_solve)
+    _register(linalg.geqrf_p, _geqrf, multiple_results=True)
+    _register(linalg.householder_product_p, _householder_product)
+    _register(linalg.eigh_p, _eigh, multiple_results=True)
+    mlir.register_lowering(linalg.svd_p, _svd_rule(), platform=PLATFORM)
     _register(lax_internal.reduce_precision_p, _reduce_precision)
     mlir.register_lowering(lax_internal.convert_element_type_p, _convert_element_type,
                            platform=PLATFORM)

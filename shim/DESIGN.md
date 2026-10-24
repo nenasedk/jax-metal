@@ -222,6 +222,26 @@ Transcendental functions need double-float algorithms (range reduction plus seri
 library). Rough effort: 1-2 weeks for arithmetic, linear algebra and reductions; another 1-2 weeks
 for transcendental functions and gradients.
 
+**`philipturner/metal-float64` was evaluated and is not usable here** (checked 2026-10-24):
+
+- It contains no float64 arithmetic. The repository is archived (last push 2023-05), its README
+  says "still in the planning stage - this is not a finished library", `float64_t` is an empty
+  class wrapping a `ulong`, `Vector.h` is vector/swizzle scaffolding, and its performance and
+  precision tables are empty. The finished part is `MetalAtomic64` (64-bit atomics), which
+  float64 math does not need.
+- Even a finished version could not be called from JAX on METAL. It is Metal Shading Language
+  code for hand-written compute kernels, and the plugin offers no way to run custom kernels inside
+  its MPSGraph programs: its `CustomCallConverter` (`0x50e70`) recognizes a single target, which it
+  maps to MPS's LU decomposition (`mps.MatrixDecompositionLUOp`).
+- Its design notes are still useful. It plans two representations: `float32x2_t` (double-single,
+  8-bit exponent, 48-bit significand), which is what `experimental/double_float.py` implements in
+  JAX ops, and `float64_t` (IEEE binary64 emulated with integer arithmetic: full exponent range,
+  subnormals, NaN/inf, estimated at 1/32-1/64 of float32 throughput). The second could be a
+  later "exact IEEE" mode of `df64.jit`, built from uint32 operations, which the plugin supports.
+
+Recommendation: implement `df64.jit` as a JAX-level transform on float32 pairs (no fork); revisit
+an integer-based IEEE mode only if users need the float64 exponent range.
+
 ## Additional considerations
 
 1. **Ops newer than StableHLO 0.19.4.** jaxlib fails to serialize a program that uses an op or

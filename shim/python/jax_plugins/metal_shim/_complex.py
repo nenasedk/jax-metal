@@ -18,7 +18,9 @@ from functools import partial
 
 import numpy as np
 from jax import lax
+from jax._src import core
 from jax._src.interpreters import mlir
+from jax._src.lax import convolution
 from jax._src.lax import fft as lax_fft
 from jax._src.lax import lax as lax_internal
 from jax._src.lax import slicing
@@ -223,6 +225,93 @@ def _sort_rule():
     return rule
 
 
+def _bilinear(primitive):
+    """A bilinear primitive (dot_general, conv) on complex operands as real products.
+
+    The plugin's compiler segfaults on batched complex dot_general, so complex contractions
+    never reach MPS: (a + ib)(c + id) = (ac - bd) + i(ad + bc).
+    """
+
+    def apply(lhs, rhs, **params):
+        preferred = params.get("preferred_element_type")
+        if preferred is not None and np.issubdtype(preferred, np.complexfloating):
+            params["preferred_element_type"] = np.finfo(preferred).dtype
+        product = lambda x, y: primitive.bind(x, y, **params)
+        if is_complex(lhs) and is_complex(rhs):
+            a, b, c, d = lax.real(lhs), lax.imag(lhs), lax.real(rhs), lax.imag(rhs)
+            return lax.complex(product(a, c) - product(b, d), product(a, d) + product(b, c))
+        if is_complex(lhs):
+            return lax.complex(product(lax.real(lhs), rhs), product(lax.imag(lhs), rhs))
+        return lax.complex(product(lhs, lax.real(rhs)), product(lhs, lax.imag(rhs)))
+
+    return apply
+
+
+def _while_rule():
+    """while_loop with complex carries, carried as (real, imag) pairs.
+
+    MPSGraph crashes at run time (GPU::WhileOpHandler) on some while loops that carry
+    complex values (for example complex QDWH, used by complex SVD). Complex arithmetic inside
+    the body is fine, so only the carried state is split.
+    """
+    from jax._src.lax.control_flow import loops  # pylint: disable=import-outside-toplevel
+    default = mlir._lowerings[loops.while_p].rule  # pylint: disable=protected-access
+
+    def split_loop(*args, cond_jaxpr, body_jaxpr, cond_nconsts, body_nconsts):
+        cond_consts = args[:cond_nconsts]
+        body_consts = args[cond_nconsts:cond_nconsts + body_nconsts]
+        init = args[cond_nconsts + body_nconsts:]
+        flags = [is_complex(x) for x in init]
+
+        def to_pairs(values):
+            out = []
+            for value, flag in zip(values, flags):
+                out += [lax.real(value), lax.imag(value)] if flag else [value]
+            return out
+
+        def from_pairs(values):
+            out, position = [], 0
+            for flag in flags:
+                if flag:
+                    out.append(lax.complex(values[position], values[position + 1]))
+                    position += 2
+                else:
+                    out.append(values[position])
+                    position += 1
+            return out
+
+        def predicate(carry):
+            return core.jaxpr_as_fun(cond_jaxpr)(*cond_consts, *from_pairs(carry))[0]
+
+        def cond(carry):
+            # After vmap the predicate can be batched: loop while any element is true.
+            pred = predicate(carry)
+            return lax.reduce_or(pred, tuple(range(pred.ndim))) if pred.ndim else pred
+
+        def body(carry):
+            new = to_pairs(core.jaxpr_as_fun(body_jaxpr)(*body_consts, *from_pairs(carry)))
+            pred = predicate(carry)
+            if not pred.ndim:
+                return new
+            # Batched predicate: only elements still running take the new value (as JAX does).
+            return [lax.select(lax.broadcast_in_dim(pred, n.shape, tuple(range(pred.ndim))), n, o)
+                    for n, o in zip(new, carry)]
+
+        return from_pairs(lax.while_loop(cond, body, to_pairs(init)))
+
+    split = mlir.lower_fun(split_loop, multiple_results=True)
+
+    def rule(ctx, *args, cond_nconsts, body_nconsts, **params):
+        carries = ctx.avals_in[cond_nconsts + body_nconsts:]
+        if any(np.issubdtype(aval.dtype, np.complexfloating) for aval in carries
+               if hasattr(aval, "dtype") and isinstance(aval.dtype, np.dtype)):
+            return split(ctx, *args, cond_nconsts=cond_nconsts, body_nconsts=body_nconsts,
+                         cond_jaxpr=params["cond_jaxpr"], body_jaxpr=params["body_jaxpr"])
+        return default(ctx, *args, cond_nconsts=cond_nconsts, body_nconsts=body_nconsts, **params)
+
+    return rule
+
+
 def _when_complex(primitive, complex_fn, multiple_results=False):
     """Use complex_fn when any input is complex, JAX's default lowering otherwise."""
     default = mlir._lowerings[primitive].rule  # pylint: disable=protected-access
@@ -264,6 +353,8 @@ def _dft(x, inverse):
 def _fft_last_axis(x, inverse):
     """Unnormalized FFT along the last axis: radix-2 while the length is even, DFT below."""
     n = x.shape[-1]
+    if n == 0:
+        return x
     if n % 2 or n <= 16:
         return _dft(x, inverse)
     # Split even/odd samples into a new axis and transform both halves in one call.
@@ -326,11 +417,15 @@ def register():
         (slicing.scatter_p, partial(_scatter, lax.scatter), False),
         (slicing.scatter_add_p, partial(_scatter, lax.scatter_add), False),
         (slicing.scatter_sub_p, partial(_scatter, lax.scatter_sub), False),
+        (lax_internal.dot_general_p, _bilinear(lax_internal.dot_general_p), False),
+        (convolution.conv_general_dilated_p, _bilinear(convolution.conv_general_dilated_p), False),
     ]
     for primitive, fn, multiple_results in splits:
         mlir.register_lowering(primitive, _when_complex(primitive, fn, multiple_results),
                                platform=PLATFORM)
     mlir.register_lowering(lax_internal.sort_p, _sort_rule(), platform=PLATFORM)
+    from jax._src.lax.control_flow import loops  # pylint: disable=import-outside-toplevel
+    mlir.register_lowering(loops.while_p, _while_rule(), platform=PLATFORM)
 
 
 # Complex implementations for primitives that _lowerings.py also handles for real dtypes.
