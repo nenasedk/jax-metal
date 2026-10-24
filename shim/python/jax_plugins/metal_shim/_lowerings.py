@@ -180,6 +180,29 @@ def _cbrt(x, **_):
     return lax.sign(x) * lax.exp(lax.log(lax.abs(x)) / 3)
 
 
+# --- mulhi ------------------------------------------------------------------------------
+# chlo.mulhi (used by the philox PRNG) is serialized as a composite the plugin cannot lower.
+# High 32 bits of a 32x32-bit product from 16-bit halves, exact in uint32 arithmetic.
+
+def _mulhi(x, y, **_):
+    dtype = np.dtype(x.dtype)
+    if dtype.itemsize != 4:
+        raise NotImplementedError(f"METAL mulhi supports 32-bit integers, got {dtype}")
+    u32 = np.uint32
+    a, b = lax.bitcast_convert_type(x, u32), lax.bitcast_convert_type(y, u32)
+    mask, shift = u32(0xFFFF), u32(16)
+    al, ah = lax.bitwise_and(a, mask), lax.shift_right_logical(a, shift)
+    bl, bh = lax.bitwise_and(b, mask), lax.shift_right_logical(b, shift)
+    t = al * bl
+    u = ah * bl + lax.shift_right_logical(t, shift)
+    v = al * bh + lax.bitwise_and(u, mask)
+    high = ah * bh + lax.shift_right_logical(u, shift) + lax.shift_right_logical(v, shift)
+    if dtype.kind == "i":  # signed: subtract the other operand for each negative input
+        zero = lax.full_like(high, 0)
+        high = high - lax.select(x < 0, b, zero) - lax.select(y < 0, a, zero)
+    return lax.bitcast_convert_type(high, dtype)
+
+
 # --- Integer bit counting --------------------------------------------------------
 # mhlo.popcnt and mhlo.count_leading_zeros have no MPS pattern; shifts and masks do.
 
@@ -406,6 +429,13 @@ def _round_robin(n):
     return np.array(perms, np.int32), np.array(inverses, np.int32)
 
 
+# Largest matrix _jacobi_eigh accepts. A 1008 x 1008 Jacobi (complex pinv of 7 x 1000 via
+# Jordan-Wielandt) tied up the GPU and the Metal compiler service, which WindowServer shares,
+# until its watchdog killed WindowServer; killing the process did not free them in time.
+# Refusing at trace time is harmless; 2 x 307 ran in seconds without stalling the GPU.
+JACOBI_MAX_SIZE = 256
+
+
 def _jacobi_eigh(a, sort_eigenvalues):
     """Parallel cyclic Jacobi for a Hermitian matrix [..., n, n]: (eigenvectors, eigenvalues).
 
@@ -414,6 +444,10 @@ def _jacobi_eigh(a, sort_eigenvalues):
     so padded identity blocks keep their positions (the QDWH base case relies on this).
     """
     n = a.shape[-1]
+    if n > JACOBI_MAX_SIZE:
+        raise NotImplementedError(
+            f"METAL: Jacobi eigendecomposition of size {n} exceeds {JACOBI_MAX_SIZE} (larger "
+            "ones can stall the GPU and WindowServer); complex eigh/SVD is limited to this size")
     complex_input = _is_complex(a)
     real_dtype = np.finfo(a.dtype).dtype
     padded = n + (n % 2)
@@ -511,29 +545,60 @@ def jnp_take_columns(v, order):
 
 
 def _complex_svd(a, *, full_matrices, compute_uv, subset_by_index, **_):
-    """Complex SVD from the Jacobi eigendecomposition of [[0, A], [A^H, 0]].
+    """Complex SVD: QR down to a k x k core (k = min(m, n)), then _square_complex_svd.
 
-    Its eigenvalues are +-sigma_i with eigenvectors [u_i; v_i] / sqrt(2), so the largest
-    min(m, n) eigenpairs give the SVD without squaring the condition number (unlike A^H A).
+    Without the QR step Jacobi would run on m + n instead of 2k; for a 7 x 1000 matrix that
+    kept the GPU busy long enough to stall WindowServer.
     JAX's QDWH SVD crashes MPSGraph at run time for complex inputs.
     """
     import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
     m, n = a.shape[-2:]
     k = min(m, n)
-    zeros_m = lax.full(a.shape[:-1] + (m,), 0, a.dtype)
-    zeros_n = lax.full(a.shape[:-2] + (n, n), 0, a.dtype)
-    ah = _conj(jnp.swapaxes(a, -1, -2))
-    b = lax.concatenate([lax.concatenate([zeros_m, a], a.ndim - 1),
-                         lax.concatenate([ah, zeros_n], a.ndim - 1)], a.ndim - 2)
-    vectors, values = _jacobi_eigh(b, sort_eigenvalues=True)
-    s = lax.max(lax.rev(values[..., m + n - k:], (values.ndim - 1,)), lax.full_like(values[..., :k], 0))
+    if m > n:  # a = q core
+        q, core = jnp.linalg.qr(a)
+    elif m < n:  # a^H = q r, so a = r^H q^H
+        q, r = jnp.linalg.qr(_conj(jnp.swapaxes(a, -1, -2)))
+        core = _conj(jnp.swapaxes(r, -1, -2))
+    else:
+        core = a
+    s, u, v = _square_complex_svd(core, compute_uv)
     if subset_by_index is not None:
         lo, hi = subset_by_index
         s = s[..., lo:hi]
     if not compute_uv:
         return [s]
-    top = lax.rev(vectors[..., m + n - k:], (vectors.ndim - 1,))
-    u, v = top[..., :m, :], top[..., m:, :]
+    if m > n:
+        u = q @ u
+    elif m < n:
+        v = q @ v
+    if full_matrices and m > k:  # complete U to a unitary m x m with QR
+        u = lax.concatenate([u, jnp.linalg.qr(u, mode="complete")[0][..., :, k:]], u.ndim - 1)
+    if full_matrices and n > k:
+        v = lax.concatenate([v, jnp.linalg.qr(v, mode="complete")[0][..., :, k:]], v.ndim - 1)
+    if subset_by_index is not None:
+        u, v = u[..., lo:hi], v[..., lo:hi]
+    return [s, u, _conj(jnp.swapaxes(v, -1, -2))]
+
+
+def _square_complex_svd(a, compute_uv):
+    """SVD of a square complex [..., k, k] as (s, u, v) from the Jacobi eigendecomposition
+    of [[0, A], [A^H, 0]].
+
+    Its eigenvalues are +-sigma_i with eigenvectors [u_i; v_i] / sqrt(2), so the largest k
+    eigenpairs give the SVD without squaring the condition number (unlike A^H A).
+    """
+    import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
+    k = a.shape[-1]
+    zeros = lax.full(a.shape, 0, a.dtype)
+    ah = _conj(jnp.swapaxes(a, -1, -2))
+    b = lax.concatenate([lax.concatenate([zeros, a], a.ndim - 1),
+                         lax.concatenate([ah, zeros], a.ndim - 1)], a.ndim - 2)
+    vectors, values = _jacobi_eigh(b, sort_eigenvalues=True)
+    s = lax.max(lax.rev(values[..., k:], (values.ndim - 1,)), lax.full_like(values[..., :k], 0))
+    if not compute_uv:
+        return s, None, None
+    top = lax.rev(vectors[..., k:], (vectors.ndim - 1,))
+    u, v = top[..., :k, :], top[..., k:, :]
     # Columns for sigma ~ 0 mix the u and v halves; re-orthonormalize with Householder QR.
     # Columns come in descending sigma, so QR keeps the well-defined ones (up to the phase
     # restored from R's diagonal) and replaces the rest with an orthonormal completion.
@@ -545,15 +610,7 @@ def _complex_svd(a, *, full_matrices, compute_uv, subset_by_index, **_):
                            lax.full_like(d, 1))
         return q * phase[..., None, :]
 
-    u, v = orthonormalize(u), orthonormalize(v)
-    if full_matrices and m > k:  # complete U to a unitary m x m with QR
-        u = lax.concatenate([u, jnp.linalg.qr(u, mode="complete")[0][..., :, k:]], u.ndim - 1)
-    if full_matrices and n > k:
-        v = lax.concatenate([v, jnp.linalg.qr(v, mode="complete")[0][..., :, k:]], v.ndim - 1)
-    if subset_by_index is not None:
-        lo, hi = subset_by_index
-        u, v = u[..., lo:hi], v[..., lo:hi]
-    return [s, u, _conj(jnp.swapaxes(v, -1, -2))]
+    return s, orthonormalize(u), orthonormalize(v)
 
 
 def _svd_rule():
@@ -577,7 +634,7 @@ def _svd_rule():
         shape = ctx.avals_in[0].shape
         if 0 in shape[-2:]:
             return default(ctx, a, **params)
-        if np.issubdtype(ctx.avals_in[0].dtype, np.complexfloating):
+        if _complex.is_complex_aval(ctx.avals_in[0]):
             return complex_rule(ctx, a, **params)
         if len(shape) > 2:
             return default(ctx, a, **params)
@@ -688,6 +745,9 @@ def _convert_element_type(ctx, operand, *, new_dtype, **params):
     # The plugin emulates bfloat16 in float32. Its own float<->bfloat16 casts do not round
     # when the result stays in the program, and flush subnormals at buffer boundaries.
     # bfloat16 arithmetic and bitcasts are exact, so convert through the bit pattern.
+    if not isinstance(ctx.avals_in[0].dtype, np.dtype) or not isinstance(np.dtype(new_dtype), np.dtype):
+        return _default_rule(lax_internal.convert_element_type_p)(ctx, operand, new_dtype=new_dtype,
+                                                                  **params)
     source, target = np.dtype(ctx.avals_in[0].dtype), np.dtype(new_dtype)
     real = lambda dtype: dtype.kind in "biuf"
     if target == _BFLOAT16 and source != _BFLOAT16 and real(source):
@@ -757,7 +817,7 @@ def _real_or_complex(primitive, real_rule, complex_fn):
     complex_rule = mlir.lower_fun(lambda *args, **_: complex_fn(*args), multiple_results=False)
 
     def rule(ctx, *args, **params):
-        if any(np.issubdtype(aval.dtype, np.complexfloating) for aval in ctx.avals_in):
+        if any(_complex.is_complex_aval(aval) for aval in ctx.avals_in):
             return complex_rule(ctx, *args, **params)
         return real_rule(ctx, *args, **params)
 
@@ -776,6 +836,7 @@ def register():
             real_rule = _real_or_complex(primitive, real_rule, _complex.ELEMENTWISE[primitive])
         mlir.register_lowering(primitive, real_rule, platform=PLATFORM)
     _register(lax_internal.top_k_p, _top_k, multiple_results=True)
+    _register(lax_internal.mulhi_p, _mulhi)
     _register(linalg.cholesky_p, _cholesky)
     _register(linalg.triangular_solve_p, _triangular_solve)
     _register(linalg.geqrf_p, _geqrf, multiple_results=True)

@@ -34,6 +34,12 @@ def is_complex(x):
     return np.issubdtype(x.dtype, np.complexfloating)
 
 
+def is_complex_aval(aval):
+    """Complex check that tolerates JAX's extended dtypes (PRNG keys are not NumPy dtypes)."""
+    dtype = getattr(aval, "dtype", None)
+    return isinstance(dtype, np.dtype) and np.issubdtype(dtype, np.complexfloating)
+
+
 # --- real / imag / complex ---------------------------------------------------------
 
 def _complex_constant(ctx, value, aval):
@@ -217,7 +223,7 @@ def _sort_rule():
     multi_pass = mlir.lower_fun(_sort, multiple_results=True)
 
     def rule(ctx, *args, num_keys, **params):
-        complex_input = any(np.issubdtype(a.dtype, np.complexfloating) for a in ctx.avals_in)
+        complex_input = any(is_complex_aval(a) for a in ctx.avals_in)
         if complex_input or num_keys > 1:
             return multi_pass(ctx, *args, num_keys=num_keys, **params)
         return default(ctx, *args, num_keys=num_keys, **params)
@@ -303,11 +309,34 @@ def _while_rule():
 
     def rule(ctx, *args, cond_nconsts, body_nconsts, **params):
         carries = ctx.avals_in[cond_nconsts + body_nconsts:]
-        if any(np.issubdtype(aval.dtype, np.complexfloating) for aval in carries
-               if hasattr(aval, "dtype") and isinstance(aval.dtype, np.dtype)):
+        if any(is_complex_aval(aval) for aval in carries):
             return split(ctx, *args, cond_nconsts=cond_nconsts, body_nconsts=body_nconsts,
                          cond_jaxpr=params["cond_jaxpr"], body_jaxpr=params["body_jaxpr"])
         return default(ctx, *args, cond_nconsts=cond_nconsts, body_nconsts=body_nconsts, **params)
+
+    return rule
+
+
+def _dot_general_rule():
+    """dot_general for METAL: empty contractions and complex operands.
+
+    A contraction over a zero-length dimension aborts MPSGraph ("MLIR pass manager failed");
+    its result is all zeros. Complex operands become real products (see _bilinear).
+    """
+    primitive = lax_internal.dot_general_p
+    default = mlir._lowerings[primitive].rule  # pylint: disable=protected-access
+    complex_rule = mlir.lower_fun(_bilinear(primitive), multiple_results=False)
+
+    def rule(ctx, lhs, rhs, *, dimension_numbers, **params):
+        (lhs_contract, _), _ = dimension_numbers
+        if any(ctx.avals_in[0].shape[d] == 0 for d in lhs_contract):
+            out = ctx.avals_out[0]
+            empty = mlir.lower_fun(lambda lhs, rhs: lax.full(out.shape, 0, out.dtype),
+                                   multiple_results=False)
+            return empty(ctx, lhs, rhs)
+        if any(is_complex_aval(aval) for aval in ctx.avals_in):
+            return complex_rule(ctx, lhs, rhs, dimension_numbers=dimension_numbers, **params)
+        return default(ctx, lhs, rhs, dimension_numbers=dimension_numbers, **params)
 
     return rule
 
@@ -318,7 +347,7 @@ def _when_complex(primitive, complex_fn, multiple_results=False):
     complex_rule = mlir.lower_fun(complex_fn, multiple_results=multiple_results)
 
     def rule(ctx, *args, **params):
-        if any(np.issubdtype(aval.dtype, np.complexfloating) for aval in ctx.avals_in):
+        if any(is_complex_aval(aval) for aval in ctx.avals_in):
             return complex_rule(ctx, *args, **params)
         return default(ctx, *args, **params)
 
@@ -417,13 +446,13 @@ def register():
         (slicing.scatter_p, partial(_scatter, lax.scatter), False),
         (slicing.scatter_add_p, partial(_scatter, lax.scatter_add), False),
         (slicing.scatter_sub_p, partial(_scatter, lax.scatter_sub), False),
-        (lax_internal.dot_general_p, _bilinear(lax_internal.dot_general_p), False),
         (convolution.conv_general_dilated_p, _bilinear(convolution.conv_general_dilated_p), False),
     ]
     for primitive, fn, multiple_results in splits:
         mlir.register_lowering(primitive, _when_complex(primitive, fn, multiple_results),
                                platform=PLATFORM)
     mlir.register_lowering(lax_internal.sort_p, _sort_rule(), platform=PLATFORM)
+    mlir.register_lowering(lax_internal.dot_general_p, _dot_general_rule(), platform=PLATFORM)
     from jax._src.lax.control_flow import loops  # pylint: disable=import-outside-toplevel
     mlir.register_lowering(loops.while_p, _while_rule(), platform=PLATFORM)
 
