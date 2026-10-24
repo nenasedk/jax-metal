@@ -51,14 +51,40 @@ Environment variables:
 
 ## Tests
 
+Run anything that uses the GPU through `tests/guard.py`. A runaway test once grew to 20 GB
+on an 8 GB Mac and kernel-panicked it. The guard:
+
+- kills the command's process group above a memory cap (30% of RAM by default; set
+  `--mem-gb` or `JAX_METAL_TEST_MEM_GB`), Metal allocations included;
+- kills the job when a trivial Metal command buffer gets no answer for 5 s (`tests/gpu_probe.m`);
+- applies a timeout and lowers the command's priority;
+- runs one GPU job at a time.
+
 ```sh
+G=".venv-shim/bin/python shim/tests/guard.py --"
 make -C shim test                                    # C++ load tests (plugin alone, then via shim)
-.venv-shim/bin/python shim/tests/test_jax_e2e.py     # JAX end to end
-.venv-shim/bin/python shim/tests/test_phase3.py      # linear algebra, precision, bf16, rbg
-.venv-shim/bin/python shim/tests/test_complex.py     # complex numbers and FFT
-.venv-shim/bin/python shim/tests/accuracy_sweep.py --strict
-.venv-shim/bin/python shim/tests/probe_jax_ops.py re/findings/jax-op-probe.md
+$G .venv-shim/bin/python shim/tests/test_jax_e2e.py  # JAX end to end
+$G .venv-shim/bin/python shim/tests/test_phase3.py   # linear algebra, precision, bf16, rbg
+$G .venv-shim/bin/python shim/tests/test_complex.py  # complex numbers and FFT
+$G .venv-shim/bin/python shim/tests/accuracy_sweep.py --strict
+$G .venv-shim/bin/python shim/tests/probe_jax_ops.py re/findings/jax-op-probe.md
 ```
+
+Killing a job does not free the GPU or the Metal compiler service immediately. A job that
+monopolizes them can still stall WindowServer, whose watchdog then restarts it and logs the
+user out. Prevention lives in the lowering rules: for example, Jacobi eigendecomposition
+refuses sizes above 256. Try new algorithms on the CPU backend before running them on METAL.
+
+Benchmarks use `guard.py --no-throttle --` so that timings run at normal priority.
+
+`tests/jax_suite/run_jax_tests.py JAX_SRC OUT_DIR files...` runs JAX's own test files on METAL.
+It applies the guard to each pytest process and also sets:
+
+- a 120 s per-test timeout;
+- an idle timeout for hangs;
+- a soft memory limit that restarts pytest between tests.
+
+A test that crashes, hangs or exceeds the cap is recorded as `crashed`, and the run continues.
 
 `make test` needs test data from `tests/gen_artifact.py` in `shim/build/testdata`
 (`.venv-latest/bin/python shim/tests/gen_artifact.py shim/build/testdata`).

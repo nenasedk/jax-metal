@@ -1,6 +1,7 @@
 # Build the jax-metal PJRT shim and its tests.
 #   make            -> build/pjrt_plugin_metal_shim.dylib
 #   make test       -> run the C++ load tests (needs PLUGIN=path/to/pjrt_plugin_metal_14.dylib)
+#   make probe      -> build/gpu_probe, the GPU-availability probe tests/guard.py uses
 
 CXX ?= clang++
 CXXFLAGS ?= -std=c++20 -O2 -Wall -Wextra -Wno-missing-field-initializers
@@ -24,6 +25,11 @@ $(BUILD)/direct_load: tests/direct_load.cc | $(BUILD)
 $(BUILD)/shim_load: tests/shim_load.cc | $(BUILD)
 	$(CXX) $(CXXFLAGS) -Wno-unused-parameter -I$(FRAMEWORK_HEADERS) $< -o $@
 
+$(BUILD)/gpu_probe: tests/gpu_probe.m | $(BUILD)
+	clang -O2 -Wall -fobjc-arc -framework Foundation -framework Metal $< -o $@
+
+probe: $(BUILD)/gpu_probe
+
 $(BUILD):
 	mkdir -p $@
 
@@ -34,4 +40,4 @@ test: $(SHIM) $(BUILD)/direct_load $(BUILD)/shim_load
 clean:
 	rm -rf $(BUILD)
 
-.PHONY: all test clean
+.PHONY: all test probe clean
