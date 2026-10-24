@@ -13,6 +13,27 @@ import os
 import re
 import sys
 
+# From the REA decompilation of compileMlirHLOToMPS and the functions it calls.
+PIPELINE = """## Compilation pipeline
+
+Decompiled with REA (`re/findings/rea-compileMlirHLOToMPS.c`, `rea-populatePreLegalization.c`
+at `0x1937c`, `rea-populatePassManager.c`; evidence in
+`re/evidence/phase1-op-pipeline-bundle.json`). `compileMlirHLOToMPS` runs:
+
+1. `mhlo::createStablehloLegalizeToHloPass` (StableHLO -> MHLO)
+2. `createInlinerPass` (func-call inlining; does not expand `composite` ops)
+3. `DecomposeChloToHLOPass` (Apple)
+4. `mhlo::createLegalizeGeneralDotPass`, `createHloCanonicalizeGatherPass`,
+   `createHloCanonicalizeScatterPass`, `createFlattenTuplePass`, canonicalizer
+5. `LegalizeControlFlowPass` (Apple)
+6. `ConvertHLOToMPSPass` (the patterns below), `RemoveZeroDimPass` (Apple), canonicalizer
+
+No pass expands `stablehlo.composite`/`mhlo.composite`, so CHLO ops that current XLA serializes as
+composites (`ChloPreserveHighLevelOpsPass`) fail to legalize even when an MPS pattern exists for the
+underlying CHLO op. The shim package works around this with METAL lowering rules.
+
+"""
+
 
 def snake(class_name):
     name = re.sub(r"Op$", "", class_name)
@@ -62,6 +83,7 @@ def main(work, vhlo_ops_path, out_path):
                   "`mlir::mps::(anonymous namespace)::*Converter` classes (source op from each "
                   "`matchAndRewrite` signature). Apple's lowering works on MHLO/CHLO; "
                   "StableHLO is legalized to MHLO first.\n\n")
+        out.write(PIPELINE)
         out.write(f"## Ops with an MPS lowering pattern ({len(patterns)})\n\n")
         out.write("| Source op | Pattern(s) |\n|---|---|\n")
         for name in sorted(patterns):

@@ -120,6 +120,11 @@ API: allocate, memcpy, streams, events), `pjrt::metal_plugin` (`PJRT_Client_Crea
   ops, collectives, dynamic-shape ops, quantization, …).
 - Empirically (`re/findings/jax-op-probe.md`, through the shim with jax 0.12): 79 of 88 JAX ops
   pass after the METAL lowering rules in `shim/python/jax_plugins/metal_shim/_lowerings.py`.
+- Compilation pipeline (REA decompilation of `compileMlirHLOToMPS`, `populatePreLegalization`,
+  `populatePassManager`): StableHLO→MHLO, inliner, Apple's `DecomposeChloToHLOPass`, MHLO
+  canonicalizations, Apple's `LegalizeControlFlowPass`, `ConvertHLOToMPSPass`,
+  `RemoveZeroDimPass`. Nothing expands `composite` ops, which is why CHLO ops that current XLA
+  serializes as composites fail.
 
 ## Direct-load test
 
