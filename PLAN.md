@@ -101,13 +101,75 @@ All 88 probed JAX ops pass. METAL lowering rules now cover cumulative reductions
 composite-wrapped CHLO ops, `cbrt`/`popcnt`/`clz`, `cholesky`/`triangular_solve` (so
 `solve`/`inv`), `reduce_precision`, exact bfloat16 conversions, the `rbg` PRNG (MPS aborts on
 it), MPS accuracy bugs (`expm1`, `log1p`, `tanh`, `sign(NaN)`), multi-key sorts, and complex64
-inside programs including FFT. Remaining: complex values at program boundaries; float64 (no MPS
-support, see `shim/DESIGN.md`).
+inside programs including FFT, and complex64 values at program boundaries (dual pair/complex
+programs with zero-copy buffer views). Remaining: float64 (no MPS support; double-float
+emulation measured, see `shim/DESIGN.md`).
 
 ### Phase 4: open-source reimplementation (only if Phases 2–3 stall)
 
 Use the reverse-engineered behavior as a spec for a new MPSGraph-based plugin. Multi-month effort
 with ongoing maintenance.
+
+## Limitations (as of 2026-10-24)
+
+Correctness and coverage:
+
+- **float64 / complex128**: unavailable; MPS has no float64 type. Double-float emulation is
+  measured (~1e-14 relative error, float32 exponent range) but not wired into JAX.
+- **Test coverage is our own**: 16 end-to-end cases, an 88-op probe, an elementwise float32
+  accuracy sweep, linear algebra, complex/FFT and precision suites. JAX's own test suite and real
+  models (Flax/Optax training, transformers) have not been run on METAL.
+- **Accuracy beyond elementwise ops is unmeasured**: the sweep found silent MPS errors in
+  `expm1`/`log1p`/`tanh`/`sign`; reductions, matmul precision, convolutions and float16/bfloat16
+  arithmetic have not been swept the same way.
+- **Newer-than-0.19.4 features**: JAX programs using ops newer than StableHLO 0.19.4, or CHLO ops
+  XLA serializes as composites without a METAL rule (`mulhi`, `ragged_dot`, CHLO `scan`), fail.
+- **bfloat16 is emulated in float32 by the plugin**: results are now exact, but there is no
+  memory or speed benefit from bfloat16.
+
+Performance:
+
+- **Not benchmarked**, neither against the CPU nor against the old jax 0.4.34 + jax-metal setup.
+- **Some rules are sequential loops**: `cholesky` and `triangular_solve` do n matrix-vector steps;
+  FFT is radix-2 with a direct DFT for odd factors (O(n²) for large odd/prime lengths).
+- **Programs returning complex values are synchronous** (the shim waits for the output before
+  relabeling it), and are lowered/serialized twice at compile time.
+- **No persistent compilation cache**: JAX's cache stays empty for METAL programs (the plugin
+  does not serialize executables), so every new process recompiles.
+
+Platform and maintenance:
+
+- **Single device, single process**; no collectives or multi-process.
+- **Pinned to jax/jaxlib 0.12**: the package hooks private JAX internals
+  (`mlir.lower_jaxpr_to_module`, `compiler.compile_or_get_cached`, lowering-rule registries,
+  `threefry_2x32`); `pyproject.toml` pins `<0.13` until a newer release is tested.
+- **Depends on Apple's closed binary** from the `jax-metal==0.1.1` wheel on PyPI (fetched at
+  install, checksum-verified). Tested on one machine (M3, macOS 26.7.1).
+- **Shardy is turned off process-wide**, which affects multi-device sharding on other backends in
+  the same process.
+- **No CI**; the install builds locally and needs Xcode command-line tools.
+- **REA analysis of the plugin costs ~37 minutes per session** on this 8 GB machine (REA
+  re-imports the binary every session; its snapshot does not keep the Ghidra database).
+
+## Recommended next steps
+
+1. **Run JAX's own tests on METAL** (`lax_test`, `lax_numpy_test`, `linalg_test`, `fft_test`,
+   `random_test`, `lax_autodiff_test`) to find remaining gaps systematically; triage failures
+   into METAL lowering rules, accuracy fixes or documented limits.
+2. **Real workloads and benchmarks**: train small Flax/Optax models (MLP, CNN, transformer),
+   compare speed and loss curves with the CPU and with the jax 0.4.34 + jax-metal baseline.
+3. **Extend the accuracy sweep** to reductions, matmul/conv precision and float16/bfloat16
+   arithmetic, and add strict-mode checks to the test suite.
+4. **Performance work where benchmarks point**: blocked Cholesky/triangular solve built on
+   matmuls, a larger-radix FFT with Bluestein for prime lengths, asynchronous complex outputs.
+5. **CI on a self-hosted Apple-silicon runner** running the C++ tests, the probe, the accuracy
+   sweep and the JAX test subset, to catch JAX/macOS drift before users do.
+6. **float64 via an explicit `df64.jit` transform** if users need it (estimated 2–4 weeks).
+7. **Packaging**: a macOS arm64 wheel for the shim that fetches and verifies Apple's library on
+   first use; a version check that warns on untested JAX releases.
+8. **Report the MPS bugs** found here to Apple (Feedback Assistant): naive `expm1`/`log1p`,
+   `tanh(NaN) = 1`, `sign(NaN)`, the `rng_bit_generator` abort, the missing complex `pad`
+   kernel (`padOp_cf`), and the bfloat16 cast behavior.
 
 ## Complexity estimate
 
