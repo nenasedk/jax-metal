@@ -45,7 +45,8 @@ Environment variables:
   within 1–4), with matching NaN/inf behavior.
 - complex64 works inside jitted functions (arithmetic, transcendental functions, FFT), but a
   jitted function cannot take or return complex arrays, so keep complex values internal.
-- float64 is not supported (no float64 in MPS or Apple GPU hardware). See DESIGN.md.
+- float64 is not supported (no float64 in MPS or Apple GPU hardware). Double-float emulation
+  measures ~1e-14 relative error on the M3 (`experimental/double_float.py`); see DESIGN.md.
 
 ## Tests
 

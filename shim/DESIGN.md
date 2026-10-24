@@ -149,6 +149,48 @@ Apple's dylib is not redistributed. `shim/install.sh` downloads the `jax-metal==
 PyPI, verifies the dylib's sha256 (`e8e0656f…61bf`), and places it next to the shim in the
 installed package.
 
+### float64
+
+Not available, and not fixable with lowering rules:
+
+- MPS has no float64 type. A float64 value cannot exist anywhere in a plugin program, not even
+  as an internal constant (`'mps.constant' op result #0 must be tensor of mps native type`), and
+  float64 program inputs/outputs are rejected. Apple GPUs have no float64 hardware.
+- float64 buffers do transfer to the device (storage only).
+
+**Double-float emulation works.** `experimental/double_float.py` represents a value as an
+unevaluated sum of two float32s and carries rounding errors with error-free transformations
+(Knuth TwoSum, Dekker TwoProduct). These need every float32 add and multiply rounded exactly per
+IEEE 754, which holds on the M3 through MPS (no fast-math reassociation or FMA contraction:
+TwoSum and TwoProduct are bit-exact over 65,536 random pairs). Measured against NumPy float64,
+65,536 elements on the M3:
+
+| Operation | max relative error | float32 alone | time |
+|---|---|---|---|
+| add | 6.4e-15 | 6.0e-8 | 0.62 ms |
+| multiply | 1.4e-14 | 5.9e-8 | 0.45 ms |
+| divide | 1.0e-14 | 5.9e-8 | 1.55 ms |
+| sqrt | 1.1e-14 | 5.9e-8 | 0.68 ms |
+| dot, 65,536 terms | 2.7e-16 | 1.8e-8 | 1.44 ms |
+
+That is about 48 significand bits (true float64 has 53), but only float32's exponent range
+(about 1e-38 to 3e38, no float64 subnormals), at roughly 10-20 float32 operations per operation.
+
+**Possible delivery: an explicit transform, not transparent x64.** Transparent
+`jax_enable_x64` would need float64 arrays passed straight to plugin programs, which the plugin
+rejects; relabeling float64 buffers would also need an on-device bit conversion. An explicit
+`df64.jit(f)` is feasible:
+
+1. trace `f` with float64 avals (x64 enabled) to a jaxpr;
+2. interpret the jaxpr, mapping each float64 variable to an (hi, lo) float32 pair and each
+   primitive to its double-float algorithm (arithmetic, `dot_general` and reductions with
+   compensated summation, comparisons, `select`, converts; shape ops apply to both parts);
+3. split float64 inputs into pairs on the host before transfer and recombine outputs on the host.
+
+Transcendental functions need double-float algorithms (range reduction plus series, as in the QD
+library). Rough effort: 1-2 weeks for arithmetic, linear algebra and reductions; another 1-2 weeks
+for transcendental functions and gradients.
+
 ## Additional considerations
 
 1. **Ops newer than StableHLO 0.19.4.** jaxlib fails to serialize a program that uses an op or
