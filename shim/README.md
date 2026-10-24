@@ -39,15 +39,22 @@ Environment variables:
 
 - `tests/test_jax_e2e.py`: 16 of 16 cases match the CPU, including grad, conv, sort,
   scatter, control flow and an MLP training step.
-- `tests/probe_jax_ops.py`: 79 of 88 JAX ops pass. Known gaps (no MPS lowering): `cholesky`,
-  `triangular_solve`/`linalg.solve`/`inv`, `fft`, `reduce_precision`, complex numbers; the
-  `rbg` PRNG aborts inside MPS. See `../re/findings/jax-op-probe.md`.
+- `tests/probe_jax_ops.py`: 88 of 88 JAX ops pass, including linear algebra
+  (`cholesky`, `solve`, `inv`), FFT, `reduce_precision`, bfloat16 and the `rbg` PRNG.
+- `tests/accuracy_sweep.py`: every float32 elementwise op is within 18 ulps of the CPU (most
+  within 1–4), with matching NaN/inf behavior.
+- complex64 works inside jitted functions (arithmetic, transcendental functions, FFT), but a
+  jitted function cannot take or return complex arrays, so keep complex values internal.
+- float64 is not supported (no float64 in MPS or Apple GPU hardware). See DESIGN.md.
 
 ## Tests
 
 ```sh
 make -C shim test                                    # C++ load tests (plugin alone, then via shim)
 .venv-shim/bin/python shim/tests/test_jax_e2e.py     # JAX end to end
+.venv-shim/bin/python shim/tests/test_phase3.py      # linear algebra, precision, bf16, rbg
+.venv-shim/bin/python shim/tests/test_complex.py     # complex numbers and FFT
+.venv-shim/bin/python shim/tests/accuracy_sweep.py --strict
 .venv-shim/bin/python shim/tests/probe_jax_ops.py re/findings/jax-op-probe.md
 ```
 

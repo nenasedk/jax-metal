@@ -101,6 +101,49 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     (`ChloPreserveHighLevelOpsPass`): `acos`, `acosh`, `asinh`, `atanh`, `sinh`, `cosh`, `erf`
     (Eigen/XLA float32 rational approximation), `erfc`, `top_k` (stable sort).
   - Ops without an MPS pattern: `cbrt`, `population_count`, `clz` (which also fixes `lgamma`).
+  - Linear algebra: `cholesky` (column-by-column) and `triangular_solve` (forward substitution
+    after transposing/reversing every flag combination into one canonical case), as `fori_loop`s
+    of matrix-vector products. This also makes `linalg.solve`, `inv` and `cho_solve` work, since
+    JAX's generic `lu` already lowered.
+  - `reduce_precision`: XLA's bit-level algorithm (round to nearest even, flush subnormals) on
+    the float32 or native float16 bit pattern.
+  - `bfloat16` conversions: the plugin emulates bfloat16 in float32, so its own float↔bfloat16
+    casts skip rounding inside a program and flush subnormals at buffer boundaries. Conversions
+    into bfloat16 round on the float32 bits and bitcast the top 16 bits; conversions out widen the
+    bits. bfloat16 arithmetic itself was already exact.
+  - `rng_bit_generator` (`jax.random` with `impl="rbg"`): MPS's random kernel aborts the process
+    for this op whatever integer type it is asked for, so METAL generates the bits with
+    Threefry-2x32 in counter mode. JAX defines these bits as backend-specific.
+  - Accuracy fixes for MPS elementwise functions, found by `tests/accuracy_sweep.py`: MPS computes
+    `expm1`/`log1p` naively (1.5e7 ulps off near 0), returns 1 for `tanh(NaN)` and loses
+    small-argument `tanh`, and returns a number for `sign(NaN)`. METAL uses Kahan/Goldberg
+    `expm1`/`log1p` on MPS's accurate `exp`/`log`, `tanh` via `expm1`, XLA's float32 `erfc`,
+    and a `log1p` form of `acosh`/`atanh`. Every float32 elementwise op is now within 18 ulps of
+    XLA's CPU results (most within 1–4) with matching NaN/inf behavior.
+  - Multi-key sorts (`lexsort`, complex sorts): the plugin's sort takes one key, so n keys become
+    n stable passes.
+- **Registers complex support** (`_complex.py`), see "Complex numbers" below.
+
+### Complex numbers and FFT
+
+The plugin computes complex64 arithmetic (add, multiply, divide, `dot`, sums, `abs`) but has no
+pattern for `mhlo.real`/`imag`/`complex`, has no complex kernels for `pad` (aborts the process),
+`gather` or `scatter`, and no `fft` pattern. XLA's serializer also expands complex transcendental
+functions into raw `real`/`imag` ops. `_complex.py`:
+
+- builds `real` as a complex→real `convert` (MPS keeps the real part), `imag` as `real(z·(−i))`,
+  and `complex(x, y)` as `convert(x) + convert(y)·i`;
+- expresses complex `exp`, `log`, `sqrt`, `sin`, `cos`, `tan`, `sinh`, `cosh`, `tanh`, `expm1`,
+  `log1p`, `sign`, `rsqrt` and `pow` in real arithmetic;
+- applies `pad`, `gather`, `scatter`, `scatter_add`/`sub` and `dynamic_update_slice` to real and
+  imaginary parts separately, and sorts complex keys as (real, imag);
+- implements `fft`/`ifft`/`rfft`/`irfft` (any rank) as a radix-2 transform with a direct DFT for
+  odd lengths, with twiddle factors computed on the GPU from exact integer angles.
+
+Limitation: the plugin rejects any compiled function whose inputs or outputs are complex, and
+eager complex ops are such functions. Complex values work inside a jitted function whose inputs and
+outputs are real (spectral losses, power spectra, FFT convolution, phase rotations). Lifting this
+would need JAX's function signatures rewritten to float pairs plus buffer relabeling in the shim.
 
 Apple's dylib is not redistributed. `shim/install.sh` downloads the `jax-metal==0.1.1` wheel from
 PyPI, verifies the dylib's sha256 (`e8e0656f…61bf`), and places it next to the shim in the
@@ -115,8 +158,10 @@ installed package.
    (Phase 3), either in JAX lowering rules registered for platform `METAL` or inside the shim.
 2. **What the plugin can lower.** Even valid 0.19.4 programs fail if Apple's HLO→MPS lowering has no
    pattern for an op. The op inventory is in `re/findings/mps-op-coverage.md`.
-3. **Data types.** The plugin does not support `float64` or complex types. JAX keeps x64 disabled
-   by default.
+3. **Data types.** float64 is not available: MPS has no float64 type (not even for constants
+   inside a program) and Apple GPUs have no float64 hardware; see "float64" below. complex64
+   works inside programs but not at their boundary (see above). int64 works; uint64 cannot be a
+   program input or output.
 4. **Shardy.** Handled by turning the Shardy partitioner off (see the Python package section).
    If a future JAX removes the GSPMD path, the shim would have to strip `sdy` attributes, which
    needs MLIR in the shim.
@@ -130,14 +175,11 @@ installed package.
 8. **Licensing.** The shim and its tools are new code; the vendored PJRT headers are Apache-2.0
    (see `third_party/*/SOURCE`). Apple's binary is fetched from PyPI at install time.
 
-9. **Remaining gaps** (`re/findings/jax-op-probe.md`, 79 of 88 probed JAX ops pass):
-   - No MPS lowering: `cholesky`, `triangular_solve` (so `linalg.solve`/`inv`), `fft`,
-     `reduce_precision`, complex numbers (`mhlo.real`). Candidates for further lowering rules
-     (blocked algorithms with loops) or host fallback.
-   - `jax.random` with the `rbg` implementation aborts inside MPS (`rng_bit_generator`); the
-     default `threefry` works.
-   - `bfloat16` round-trips come back unrounded: an f32→bf16→f32 conversion keeps float32 precision
-     on METAL, so results are slightly more precise than on CPU.
+9. **Remaining gaps** (`re/findings/jax-op-probe.md`: 88 of 88 probed JAX ops pass):
+   - complex values at a program's inputs/outputs, and eager complex ops (see above);
+   - float64 (see below);
+   - float32→bfloat16 casts done by the plugin itself, outside these rules (none known), would
+     still flush bfloat16 subnormals.
 
 ## Tests
 
@@ -148,4 +190,10 @@ installed package.
   jit, grad, matmul, conv, sort, scatter, control flow, PRNG and an MLP training step on the GPU
   and compares with CPU (16 of 16 pass).
 - `tests/probe_jax_ops.py`: 88 individual JAX ops, each in its own process, recorded in
-  `re/findings/jax-op-probe.md`.
+  `re/findings/jax-op-probe.md` (88 of 88 pass).
+- `tests/test_phase3.py`: linear algebra (every `triangular_solve` flag combination, batched),
+  bit-exact `reduce_precision` and bfloat16 conversions, the `rbg` PRNG.
+- `tests/test_complex.py`: complex arithmetic and transcendental functions, FFT family at lengths
+  7–4096, multi-dimensional FFTs, FFT convolution, gradients through `rfft`.
+- `tests/accuracy_sweep.py --strict`: every float32 elementwise op against the CPU across
+  magnitudes 1e-12…1e4 and special values.

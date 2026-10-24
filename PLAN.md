@@ -89,14 +89,20 @@ Main risk: StableHLO's forward-compatibility window is about two years, and the 
 edge. If current StableHLO cannot target the plugin's version, the shim must also rewrite the
 module itself (+1–2 weeks).
 
-### Phase 3: fill op gaps (ongoing) — started
-
-METAL lowering rules for cumulative reductions, composite-wrapped CHLO ops, `cbrt`, `popcnt`, `clz`.
-Remaining: `cholesky`, `triangular_solve`, `fft`, `reduce_precision`, complex numbers, `rbg` PRNG.
-
+### Phase 3: fill op gaps (ongoing) — op gaps closed
 
 Run the JAX test suite against the shim, and use REA to explain each lowering failure. Fix gaps by
 rewriting ops in the shim into forms the plugin already legalizes, without patching Apple's binary.
+(In practice the rewrites live in the shim package's METAL lowering rules,
+`shim/python/jax_plugins/metal_shim/_lowerings.py` and `_complex.py`; the C++ shim does not
+parse programs.)
+
+All 88 probed JAX ops pass. METAL lowering rules now cover cumulative reductions,
+composite-wrapped CHLO ops, `cbrt`/`popcnt`/`clz`, `cholesky`/`triangular_solve` (so
+`solve`/`inv`), `reduce_precision`, exact bfloat16 conversions, the `rbg` PRNG (MPS aborts on
+it), MPS accuracy bugs (`expm1`, `log1p`, `tanh`, `sign(NaN)`), multi-key sorts, and complex64
+inside programs including FFT. Remaining: complex values at program boundaries; float64 (no MPS
+support, see `shim/DESIGN.md`).
 
 ### Phase 4: open-source reimplementation (only if Phases 2–3 stall)
 

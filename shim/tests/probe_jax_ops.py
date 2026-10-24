@@ -14,6 +14,9 @@ import sys
 
 import numpy as np
 
+# jax.random with the rbg implementation: bits are backend-specific by definition.
+BACKEND_DEFINED = {"random_rbg"}
+
 
 def _cases():
     import jax
@@ -125,6 +128,10 @@ def run_case(name):
         with jax.default_device(device):
             out = jax.jit(fn)(*placed)
         results[platform] = [np.asarray(leaf) for leaf in jax.tree.leaves(out)]
+    if name in BACKEND_DEFINED:  # bits differ by design; check shape, dtype and range
+        ok = all(g.shape == w.shape and g.dtype == w.dtype and np.all((g >= 0) & (g < 1))
+                 for g, w in zip(results["METAL"], results["cpu"]))
+        return "PASS" if ok else "MISMATCH", "backend-defined bits; shape/dtype/range checked"
     ok = all(g.shape == w.shape and np.allclose(g.astype(np.float64), w.astype(np.float64),
                                                 rtol=1e-3, atol=1e-3, equal_nan=True)
              for g, w in zip(results["METAL"], results["cpu"]))
