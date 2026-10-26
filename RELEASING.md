@@ -2,8 +2,6 @@
 
 ## Before the first public release
 
-- Choose the project license: add `LICENSE` at the repository root and in `shim/` (the
-  package root, so the sdist and wheel carry it), and set `license` in `shim/pyproject.toml`.
 - Decide what of `re/` stays public (it holds decompiled excerpts of Apple's plugin).
 - One-time PyPI setup: on pypi.org, add a trusted publisher for project `jax-metal-shim`
   (owner `nenasedk`, repository `jax-metal`, workflow `release.yml`, environment `pypi`). In

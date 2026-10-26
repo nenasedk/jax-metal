@@ -310,7 +310,8 @@ an integer-based IEEE mode only if users need the float64 exponent range.
    padded table makes such calls hit null rather than garbage.
 7. **Single process, single device.** The plugin exposes one device. Multi-process or collective
    APIs are out of scope.
-8. **Licensing.** The shim and its tools are new code; the vendored PJRT headers are Apache-2.0
+8. **Licensing.** The shim and its tools are new code under Apache-2.0 (`LICENSE`), as are the
+   vendored PJRT headers
    (see `third_party/*/SOURCE`). Apple's binary is not redistributed: each user fetches it from
    PyPI. Its wheel carries an MIT-style license file (Apple copyright) while its metadata says
    "All rights reserved", so bundling it would need that resolved first.

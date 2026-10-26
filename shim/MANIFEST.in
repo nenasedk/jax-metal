@@ -1,5 +1,5 @@
 # Sources setup.py compiles, and the vendored PJRT headers with their notices.
-include setup.py Makefile DESIGN.md
+include setup.py Makefile DESIGN.md LICENSE
 graft src
 graft third_party
 global-exclude *.dylib *.so __pycache__ *.py[cod]

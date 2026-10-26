@@ -61,8 +61,8 @@ Details, environment variables and tests: [shim/README.md](shim/README.md).
 
 ## License
 
-The license of this project is still to be chosen. The vendored PJRT C API headers in
-`shim/third_party/` are Apache-2.0 (OpenXLA). Apple's plugin library is Apple's, under the
-terms in its wheel, and is not part of this repository or its packages.
+The project is licensed under the Apache License 2.0 (`LICENSE`), as are the vendored PJRT C
+API headers in `shim/third_party/` (OpenXLA). Apple's plugin library is Apple's, under the terms in its wheel, and is not part
+of this repository or its packages.
 
 This project is not affiliated with or endorsed by Apple.
