@@ -6,3 +6,5 @@ shim/build/
 shim/python/jax_plugins/metal_shim/*.dylib
 shim/python/build/
 shim/python/*.egg-info/
+dist/
+shim/dist/

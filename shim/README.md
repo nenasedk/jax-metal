@@ -6,18 +6,27 @@ Runs current JAX (tested with jax/jaxlib 0.12.0.1) on Apple GPUs using Apple's u
 
 ## Install
 
-Requires macOS on Apple silicon, Xcode command-line tools and a Python with jax/jaxlib 0.12.
-Apple's `jax-metal` package must not be installed in the same environment (the shim carries
-Apple's plugin library itself).
+Requires macOS 14.4 or later on Apple silicon and Python 3.12+. Apple's `jax-metal` package
+must not be installed in the same environment: the shim loads Apple's plugin library itself.
+
+From PyPI (once released):
+
+```sh
+pip install jax-metal-shim
+python -m jax_plugins.metal_shim fetch   # once: Apple's plugin library, from jax-metal 0.1.1
+```
+
+From a checkout (compiling the shim needs Xcode command-line tools):
 
 ```sh
 python3 -m venv .venv-shim
-.venv-shim/bin/pip install jax==0.12.0.1 jaxlib==0.12.0.1
 PYTHON=.venv-shim/bin/python shim/install.sh
 ```
 
-`install.sh` builds `pjrt_plugin_metal_shim.dylib`, downloads the `jax-metal==0.1.1` wheel from
-PyPI, checks the plugin library's sha256 and installs the `jax-metal-shim` package.
+`fetch` downloads the `jax-metal==0.1.1` wheel from PyPI, checks it against PyPI's sha256 and
+the library inside against a pinned sha256, and keeps `pjrt_plugin_metal_14.dylib` with
+Apple's license in `~/Library/Caches/jax-metal-shim/`. `python -m jax_plugins.metal_shim info`
+shows the versions and which libraries are used.
 
 ## Use
 
@@ -32,7 +41,8 @@ Environment variables:
 | Variable | Effect |
 |---|---|
 | `JAX_METAL_SHIM_TRACE=1` | Log shim initialization and attribute queries to stderr |
-| `JAX_METAL_SHIM_PLUGIN_PATH` | Load Apple's plugin from this path instead of the package directory |
+| `JAX_METAL_SHIM_PLUGIN_PATH` | Load Apple's plugin from this path (default: the package directory, then the cache) |
+| `JAX_METAL_SHIM_CACHE` | Directory for the fetched plugin (default `~/Library/Caches/jax-metal-shim/jax-metal-0.1.1`) |
 | `JAX_USE_SHARDY_PARTITIONER` | If set, the shim leaves JAX's Shardy setting alone (the plugin needs it off) |
 
 ## Status
@@ -40,7 +50,12 @@ Environment variables:
 - `tests/test_jax_e2e.py`: 16 of 16 cases match the CPU, including grad, conv, sort,
   scatter, control flow and an MLP training step.
 - `tests/probe_jax_ops.py`: 88 of 88 JAX ops pass, including linear algebra
-  (`cholesky`, `solve`, `inv`), FFT, `reduce_precision`, bfloat16 and the `rbg` PRNG.
+  (`cholesky`, `solve`, `inv`), FFT, `reduce_precision`, bfloat16 and the `rbg` PRNG; 10 newer
+  cases (NaN semantics, integer matmul, empty matrices, complex inverse functions) await a
+  GPU run.
+- JAX's own tests on METAL: `fft_test` passes (109, 2 skipped); `linalg_test` has run in part
+  (`build/jax-suite/`). Through the METAL lowering rules on CPU, ten of JAX's test files pass
+  (9,165 tests; see `tests/jax_suite/cpu_rules_plugin.py`).
 - `tests/accuracy_sweep.py`: every float32 elementwise op is within 18 ulps of the CPU (most
   within 1–4), with matching NaN/inf behavior.
 - complex64 works throughout: inside jitted functions (arithmetic, transcendental functions,

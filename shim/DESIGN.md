@@ -50,8 +50,8 @@ changes.
    - `jax_metal_shim_version` = shim version string
    jaxlib then downgrades every program to StableHLO 0.19.4 before handing it to the plugin.
 4. **Loading the plugin.** On first `GetPjrtApi` call the shim `dlopen`s the plugin from
-   `JAX_METAL_SHIM_PLUGIN_PATH` if set, else `pjrt_plugin_metal_14.dylib` next to the shim. It
-   checks that the plugin reports PJRT 0.47 with `struct_size` 808 and refuses to load anything
+   `JAX_METAL_SHIM_PLUGIN_PATH` if set, else `pjrt_plugin_metal_14.dylib` next to the shim (the
+   Python package sets the variable to the library it found, see below). It checks that the plugin reports PJRT 0.47 with `struct_size` 808 and refuses to load anything
    else, since the table copy is only valid for that layout.
 5. **Synthetic memory spaces.** The plugin's device reports no memory spaces and
    `PJRT_Device_DefaultMemory` returns UNIMPLEMENTED. jaxlib 0.12 routes every host-to-device
@@ -91,6 +91,13 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
 
 `initialize()` also:
 
+- **Finds Apple's library.** The wheel never contains it. `python -m jax_plugins.metal_shim
+  fetch` downloads the jax-metal 0.1.1 wheel from PyPI, verifies it (PyPI's sha256 for the
+  wheel, a pinned sha256 for the library) and keeps the library and Apple's LICENSE in a
+  per-user cache (`_plugin.py`). `initialize()` looks in `$JAX_METAL_SHIM_PLUGIN_PATH`, the
+  package directory, then the cache, passes the result to the shim through
+  `JAX_METAL_SHIM_PLUGIN_PATH`, and fails with instructions when there is none. It warns when
+  jax or jaxlib is not a release this version was tested with.
 - **Disables Shardy by default.** jax 0.12 lowers with the Shardy partitioner, whose `sdy` dialect
   appears on every jitted function with committed inputs (`sdy.mesh`, `sdy.sharding`); the plugin
   fails with `dialect 'sdy' is unknown`. Setting `jax_use_shardy_partitioner = False` makes JAX
@@ -293,7 +300,9 @@ an integer-based IEEE mode only if users need the float64 exponent range.
 7. **Single process, single device.** The plugin exposes one device. Multi-process or collective
    APIs are out of scope.
 8. **Licensing.** The shim and its tools are new code; the vendored PJRT headers are Apache-2.0
-   (see `third_party/*/SOURCE`). Apple's binary is fetched from PyPI at install time.
+   (see `third_party/*/SOURCE`). Apple's binary is not redistributed: each user fetches it from
+   PyPI. Its wheel carries an MIT-style license file (Apple copyright) while its metadata says
+   "All rights reserved", so bundling it would need that resolved first.
 
 9. **Remaining gaps** (`re/findings/jax-op-probe.md`: 88 of 88 probed JAX ops pass):
    - float64 (see below);

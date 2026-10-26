@@ -1,5 +1,5 @@
 # Build the jax-metal PJRT shim and its tests.
-#   make            -> build/pjrt_plugin_metal_shim.dylib
+#   make            -> build/pjrt_plugin_metal_shim.dylib (for the C++ tests; pip builds its own)
 #   make test       -> run the C++ load tests (needs PLUGIN=path/to/pjrt_plugin_metal_14.dylib)
 #   make probe      -> build/gpu_probe, the GPU-availability probe tests/guard.py uses
 
@@ -10,6 +10,7 @@ FRAMEWORK_HEADERS := third_party/xla_0bfeeb47
 PLUGIN_HEADERS := third_party/xla_3c8260f6
 PLUGIN ?= ../re/targets/pjrt_plugin_metal_14-0.1.1.dylib
 TEST_DATA ?= $(BUILD)/testdata
+VERSION := $(shell sed -n 's/^__version__ = "\(.*\)"/\1/p' python/jax_plugins/metal_shim/__init__.py)
 
 SHIM := $(BUILD)/pjrt_plugin_metal_shim.dylib
 
@@ -17,6 +18,7 @@ all: $(SHIM)
 
 $(SHIM): src/pjrt_plugin_metal_shim.cc $(FRAMEWORK_HEADERS)/pjrt_c_api.h | $(BUILD)
 	$(CXX) $(CXXFLAGS) -fPIC -fvisibility=hidden -shared -I$(FRAMEWORK_HEADERS) \
+	  -DJAX_METAL_SHIM_VERSION='"$(VERSION)"' \
 	  -install_name @rpath/pjrt_plugin_metal_shim.dylib $< -o $@
 
 $(BUILD)/direct_load: tests/direct_load.cc | $(BUILD)

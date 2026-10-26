@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jax-metal-shim"
+dynamic = ["version"]
+description = "Run current JAX on Apple GPUs through Apple's jax-metal 0.1.1 PJRT plugin"
+readme = "README.md"
+requires-python = ">=3.12"
+# Hooks private JAX internals; widen only after testing a new JAX release.
+dependencies = ["jax>=0.12,<0.13", "jaxlib>=0.12,<0.13"]
+# The compiled shim includes the vendored PJRT headers (Apache-2.0). Add the project's own
+# LICENSE here, and `license = "<SPDX id>"`, once it is chosen (RELEASING.md).
+license-files = ["third_party/LICENSE-Apache-2.0", "third_party/*/SOURCE"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Operating System :: MacOS",
+    "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Repository = "https://github.com/nenasedk/jax-metal"
+Design = "https://github.com/nenasedk/jax-metal/blob/main/shim/DESIGN.md"
+
+[project.scripts]
+jax-metal-shim = "jax_plugins.metal_shim.__main__:main"
+
+[project.entry-points.jax_plugins]
+metal_shim = "jax_plugins.metal_shim"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+packages = ["jax_plugins.metal_shim"]
+# setup.py compiles pjrt_plugin_metal_shim.dylib into the wheel. Apple's plugin is never
+# packaged: it is fetched from PyPI on the user's machine (python -m jax_plugins.metal_shim fetch).
+include-package-data = false
+
+[tool.setuptools.exclude-package-data]
+"jax_plugins.metal_shim" = ["*.dylib"]
+
+[tool.setuptools.dynamic]
+version = {attr = "jax_plugins.metal_shim.__version__"}

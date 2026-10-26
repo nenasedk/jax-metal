@@ -34,7 +34,11 @@
 
 namespace {
 
-constexpr char kShimVersion[] = "0.1.0";
+// The package's __version__, passed in by setup.py and the Makefile.
+#ifndef JAX_METAL_SHIM_VERSION
+#define JAX_METAL_SHIM_VERSION "dev"
+#endif
+constexpr char kShimVersion[] = JAX_METAL_SHIM_VERSION;
 constexpr char kPluginFileName[] = "pjrt_plugin_metal_14.dylib";
 
 // The only plugin layout this shim knows how to copy.
