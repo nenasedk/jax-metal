@@ -1,0 +1,538 @@
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholesky9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCholeskyGradPrecision"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholeskyGradPrecision", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCond9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular1", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (2, 4, 4) (4, 4) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular2", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-06, atol=1e-06\n\ninf location mismatch:\n ACTUAL: array(0., dtype=float32)\n DESIRED: array(inf, dtype=float32)"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular4", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-06, atol=1e-06\n\ninf location mismatch:\n ACTUAL: array([0., 1.], dtype=float32)\n DESIRED: array([inf,  1.], dtype=float32)"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular8", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (2, 4, 4) (4, 4) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular9", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-06, atol=1e-06\n\ninf location mismatch:\n ACTUAL: array([0., 1.], dtype=float32)\n DESIRED: array([inf,  1.], dtype=float32)"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testCross9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet3x3NumericalStabilityIssue39905"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet3x3NumericalStabilityIssue39905", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDet9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGradIssue6121"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGradIssue6121", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGradOfSingularMatrixCorank1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGradOfSingularMatrixCorank1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetGradOfSingularMatrixCorank2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGradOfSingularMatrixCorank2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDetOfSingularMatrix"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetOfSingularMatrix", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEig9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvals0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvals1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvals2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvals3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvals4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvals5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsInf"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsInf", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testInv0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testInv1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testInv2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv2", "outcome": "failed", "message": "TypeError: slice slice_sizes must be less than or equal to operand shape, got slice_sizes (1, 0) for operand shape (0, 0)."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testInv3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testInv4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testInv5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testInvDtypeError"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInvDtypeError", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testIssue1151"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testIssue1151", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testIssue1213"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testIssue1213", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testIssue1383"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testIssue1383", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testIssue669"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testIssue669", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testJspSVDBasic"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testJspSVDBasic", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLinalgPrimitivesInvalidDtype"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLinalgPrimitivesInvalidDtype", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq1", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq2", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 4, 4) (4, 4) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsq9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq9", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsqZeroMatrix0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsqZeroMatrix0", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsqZeroMatrix1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsqZeroMatrix1", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLstsqZeroMatrix2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsqZeroMatrix2", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutation0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutation0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutation1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutation1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutation2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutation2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutationBatching0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutationBatching0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutationBatching1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutationBatching1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutationBatching2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutationBatching2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatmul0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatmul1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatmul2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatmul3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatmul4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatmul5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatmul6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatmul7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm3", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (4, 6, 6) (6, 6) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm7", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPowerBool"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPowerBool", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_complex_io.py:93:19: error: 'mps.matmul' op operand #0 must be tensor of floating point values or tensor of complex values, but got 'tensor<2x2xi1>'\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/linalg_test.py:1191:17: note: called from\n    jnp_result = jnp.linalg.matrix_power(mat, 2)\n       "}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank3", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank5", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 6, 6) (6, 6) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank6", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (3, 10, 10) (10, 10) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank8", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 4, 4) (4, 4) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRankTol"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRankTol", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 4, 4) (4, 4) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm4", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (8, 16, 16) (16, 16) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNorm9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes1", "outcome": "passed", "message": ""}
+{"restart": 1546226472}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter1", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter2", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter3", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter4", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter5", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter6", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter7", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testOuter9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter9", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv0", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv1", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv2", "outcome": "crashed", "message": "timeout after 120s"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv3", "outcome": "crashed", "message": "exit -9: "}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv4", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 8, 8) (8, 8) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv5"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv5", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (70, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv6"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv6", "outcome": "crashed", "message": "guard: memory 2.4 GB > limit 2.4 GB"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv7"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv7", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (70, 10, 10) (10, 10) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv8"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv8", "outcome": "passed", "message": ""}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinv9"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv9", "outcome": "failed", "message": "ValueError: Operands could not be broadcast together for multiply on shapes (1, 2, 2) (2, 2) and with the config option jax_numpy_rank_promotion='raise'. For more information, see https://docs.jax.dev/en/latest/101/rank_promotion_warning.html."}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinvGradIssue2792"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinvGradIssue2792", "outcome": "crashed", "message": "exit -9: F.FFatal Python error: "}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinvRcond"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinvRcond", "outcome": "crashed", "message": "exit -9: Fatal Python error: "}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testPinvTracedRtol"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinvTracedRtol", "outcome": "crashed", "message": "exit -9: Fatal Python error: "}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testQr0"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr0", "outcome": "crashed", "message": "exit -9: Thread 0x00000003012c3000"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testQr1"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr1", "outcome": "crashed", "message": "exit -9: Fatal Python error: "}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testQr2"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr2", "outcome": "crashed", "message": "exit -9: Fatal Python error: "}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testQr3"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr3", "outcome": "crashed", "message": "exit -9: Thread 0x"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testQr4"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr4", "outcome": "crashed", "message": "exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"start": "tests/linalg_test.py::NumpyLinalgTest::testQr5"}

@@ -1,0 +1,7 @@
+tests/linalg_test.py::NumpyLinalgTest::testQr3
+exit -9
+guard: None
+
+Fatal Python error: Aborted
+
+Thread 0x

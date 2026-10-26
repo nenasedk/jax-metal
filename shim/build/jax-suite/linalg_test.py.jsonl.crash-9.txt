@@ -1,0 +1,5 @@
+tests/linalg_test.py::NumpyLinalgTest::testQr2
+exit -9
+guard: None
+
+Fatal Python error: 

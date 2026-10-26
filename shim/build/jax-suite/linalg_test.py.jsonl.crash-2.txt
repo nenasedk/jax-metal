@@ -1,0 +1,4 @@
+tests/linalg_test.py::NumpyLinalgTest::testPinv3
+exit -9
+guard: None
+

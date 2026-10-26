@@ -1,0 +1,5 @@
+tests/linalg_test.py::NumpyLinalgTest::testPinvRcond
+exit -9
+guard: None
+
+Fatal Python error: 

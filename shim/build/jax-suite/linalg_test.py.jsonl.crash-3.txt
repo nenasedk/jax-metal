@@ -1,0 +1,5 @@
+tests/linalg_test.py::NumpyLinalgTest::testPinv6
+exit 137
+guard: memory 2.4 GB > limit 2.4 GB
+
+FF

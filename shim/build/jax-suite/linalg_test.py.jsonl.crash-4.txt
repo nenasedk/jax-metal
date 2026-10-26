@@ -1,0 +1,5 @@
+tests/linalg_test.py::NumpyLinalgTest::testPinvGradIssue2792
+exit -9
+guard: None
+
+F.FFatal Python error: 
