@@ -108,7 +108,23 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
   - Linear algebra: `cholesky` (column-by-column) and `triangular_solve` (forward substitution
     after transposing/reversing every flag combination into one canonical case), as `fori_loop`s
     of matrix-vector products. This also makes `linalg.solve`, `inv` and `cho_solve` work, since
-    JAX's generic `lu` already lowered.
+    JAX's generic `lu` already lowered. Like JAX on CPU and GPU, `cholesky` of a matrix that is
+    not positive definite is all NaN.
+  - QR: `geqrf` and `householder_product` as Householder loops in LAPACK's packed form. JAX's
+    generic lowering emits XLA's `Qr` custom call, which aborts the plugin (its
+    `CustomCallConverter` only knows LU).
+  - `eigh`: parallel cyclic Jacobi (round-robin pairs, one gather per round) for n ≤ 256 and for
+    complex inputs; JAX's QDWH spectral divide-and-conquer, always batched, above. Jacobi refuses
+    n > 256 at trace time: a 1008 × 1008 one stalled the GPU and WindowServer.
+  - SVD: real inputs use JAX's generic QDWH SVD, always batched (unbatched, its `lax.cond`s inside
+    a while loop crash MPSGraph at run time, `GPU::WhileOpHandler`). Complex inputs reduce to a
+    min(m, n) square core with QR, then take the Jacobi eigendecomposition of [[0, A], [Aᴴ, 0]]
+    (complex QDWH crashes MPSGraph). A requested SVD `algorithm` is a hint, and METAL uses its
+    own (JAX's generic SVD would reject anything but POLAR).
+  - Empty matrices: the linear algebra rules return early, since `fori_loop` traces its body even
+    for zero trips and the body cannot index an empty axis.
+  - `mulhi` (philox PRNG), which XLA serializes as a CHLO composite: 32-bit products from 16-bit
+    limbs.
   - `reduce_precision`: XLA's bit-level algorithm (round to nearest even, flush subnormals) on
     the float32 or native float16 bit pattern.
   - `bfloat16` conversions: the plugin emulates bfloat16 in float32, so its own float↔bfloat16
@@ -126,6 +142,12 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     XLA's CPU results (most within 1–4) with matching NaN/inf behavior.
   - Multi-key sorts (`lexsort`, complex sorts): the plugin's sort takes one key, so n keys become
     n stable passes.
+  - `dot_general` with an integer or bool result: MPS matmul takes floating point only, so these
+    are exact multiply-and-sum (wrapping like XLA; bool is OR of ANDs), over slices of the
+    contraction that keep the broadcast product within 4M elements. A contraction over a
+    zero-length dimension returns zeros (it aborts MPSGraph).
+  - Every rule traces with `jax_numpy_rank_promotion="allow"`: rules broadcast with jnp-style
+    operators, and a user's `"raise"` (which JAX's own tests set) must not reject them.
 - **Registers complex support** (`_complex.py`, `_complex_io.py`), see "Complex numbers" below.
 
 ### Complex numbers and FFT
@@ -291,3 +313,7 @@ an integer-based IEEE mode only if users need the float64 exponent range.
   transfer to CPU, donation, no buffer leak over 500 calls).
 - `tests/accuracy_sweep.py --strict`: every float32 elementwise op against the CPU across
   magnitudes 1e-12…1e4 and special values.
+- `tests/jax_suite/run_jax_tests.py`: JAX's own test files on METAL, in batches, crash-tolerant.
+- `tests/jax_suite/cpu_rules_plugin.py`: JAX's own tests on the CPU backend through these
+  lowering rules (any machine, no GPU). With it, `linalg_test`, `fft_test` and `random_test`
+  pass in full on CPU; what remains on METAL is MPS behavior.

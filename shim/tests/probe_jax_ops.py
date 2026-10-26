@@ -114,6 +114,19 @@ def _cases():
         "softmax_layernorm": (lambda x: (jax.nn.softmax(x), (x - x.mean(-1, keepdims=True))
                                          / jnp.sqrt(x.var(-1, keepdims=True) + 1e-5)), f(4, 16)),
         "float64_x64_off": (lambda x: x.astype(jnp.float64) * 2, f(4)),
+        # Edge cases from JAX's test suite (linalg_test): NaN/inf semantics, integer and
+        # bool matmul, empty matrices
+        "nan_max_min": (lambda x: (x.max(), x.min(), jnp.maximum(x, 0.0), jnp.minimum(x, 0.0),
+                                   jnp.argmax(x), jnp.argmin(x)),
+                        np.array([1, np.nan, -2, 3], np.float32)),
+        "divide_by_zero": (lambda x: x / jnp.zeros_like(x), np.array([1, -1, 0], np.float32)),
+        "singular_inv_cond": (lambda x: (jnp.linalg.inv(x), jnp.linalg.cond(x, np.inf),
+                                         jnp.linalg.cond(x, 1)), np.zeros((2, 2), np.float32)),
+        "matmul_int32": (lambda a, b: a @ b, i32(4, 5), i32(5, 3)),
+        "matmul_bool": (lambda x: jnp.linalg.matrix_power(x, 3), rng.random((4, 4)) < 0.4),
+        "linalg_empty": (lambda x: (jnp.linalg.inv(x), jnp.linalg.eigh(x)[0],
+                                    jnp.linalg.cholesky(x)), np.zeros((0, 0), np.float32)),
+        "qr_empty": (lambda x: jnp.linalg.qr(x, mode="complete"), np.zeros((2, 0), np.float32)),
     }
 
 
@@ -132,10 +145,12 @@ def run_case(name):
         ok = all(g.shape == w.shape and g.dtype == w.dtype and np.all((g >= 0) & (g < 1))
                  for g, w in zip(results["METAL"], results["cpu"]))
         return "PASS" if ok else "MISMATCH", "backend-defined bits; shape/dtype/range checked"
-    ok = all(g.shape == w.shape and np.allclose(g.astype(np.float64), w.astype(np.float64),
-                                                rtol=1e-3, atol=1e-3, equal_nan=True)
-             for g, w in zip(results["METAL"], results["cpu"]))
-    return "PASS" if ok else "MISMATCH", ""
+    for index, (g, w) in enumerate(zip(results["METAL"], results["cpu"])):
+        if not (g.shape == w.shape and np.allclose(g.astype(np.float64), w.astype(np.float64),
+                                                   rtol=1e-3, atol=1e-3, equal_nan=True)):
+            return "MISMATCH", (f"output {index}: METAL {g.ravel()[:4].tolist()} {g.shape}, "
+                                f"CPU {w.ravel()[:4].tolist()} {w.shape}")
+    return "PASS", ""
 
 
 def main(out_path):

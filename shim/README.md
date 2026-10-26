@@ -75,6 +75,16 @@ monopolizes them can still stall WindowServer, whose watchdog then restarts it a
 user out. Prevention lives in the lowering rules: for example, Jacobi eigendecomposition
 refuses sizes above 256. Try new algorithms on the CPU backend before running them on METAL.
 
+`tests/jax_suite/cpu_rules_plugin.py` does that for JAX's own tests: it registers the shim's
+lowering rules for the CPU backend, so the tests run through them on any machine (Linux
+included), with no GPU at risk. It finds tracing errors and wrong algorithms; crashes and
+accuracy problems specific to MPS still need METAL.
+
+```sh
+cd re/work/jax-src && JAX_PLATFORMS=cpu PYTHONPATH=../../../shim/tests/jax_suite \
+  ../../../.venv-shim/bin/python -m pytest -q -p cpu_rules_plugin tests/linalg_test.py
+```
+
 Benchmarks use `guard.py --no-throttle --` so that timings run at normal priority.
 
 `tests/jax_suite/run_jax_tests.py JAX_SRC OUT_DIR TEST...` runs JAX's own test files on METAL.
@@ -91,7 +101,7 @@ Setup: JAX's tests at the installed version, plus pytest.
 
 ```sh
 git clone --depth 1 --branch jax-v0.12.0.1 --filter=blob:none --sparse \
-  https://github.com/jax-ml/jax ../jax-src && git -C ../jax-src sparse-checkout set tests
+  https://github.com/jax-ml/jax re/work/jax-src && git -C re/work/jax-src sparse-checkout set tests
 .venv-shim/bin/pip install pytest pytest-timeout absl-py
 ```
 
@@ -103,6 +113,7 @@ batches:
 | `-k EXPR` | pytest `-k` expression, applied to every TEST |
 | `--shard I/N` | only the I-th of N contiguous slices (1-based) of what `-k` leaves; slices are stable between runs |
 | `--resume` | skip tests that already have a result in OUT_DIR (crashed ones too) |
+| `--retry-failures` | like `--resume`, but run failed and crashed tests again (after a fix) |
 | `--budget-minutes M` | stop between tests after M minutes; continue later with `--resume` |
 
 A TEST is a file under `tests/` or a node id prefix (`linalg_test.py::NumpyLinalgTest`).
@@ -112,7 +123,7 @@ failures by message; crash logs are in `OUT_DIR/<file>.jsonl.crash-N.txt`. Keep 
 `shim/build/` (git-ignored), for example:
 
 ```sh
-R=".venv-shim/bin/python shim/tests/jax_suite/run_jax_tests.py ../jax-src shim/build/jax-suite"
+R=".venv-shim/bin/python shim/tests/jax_suite/run_jax_tests.py re/work/jax-src shim/build/jax-suite"
 $R fft_test.py random_test.py                     # 365 tests
 $R linalg_test.py --shard 1/4                     # 250 of 1,000
 $R lax_test.py --shard 3/10 --budget-minutes 30   # then the same command with --resume

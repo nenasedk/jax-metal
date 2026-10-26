@@ -12,10 +12,15 @@ XLA's serializer also expands complex transcendental functions into real/imag op
 
 Complex values must stay inside the program: the plugin rejects any compiled function
 whose inputs or outputs are complex. See shim/DESIGN.md.
+
+A primitive has one rule per platform, so the dot_general rule here also covers its
+non-complex cases (empty contractions, integer and bool results). allow_rank_promotion
+wraps every rule this package registers.
 """
 
-from functools import partial
+from functools import partial, wraps
 
+import jax
 import numpy as np
 from jax import lax
 from jax._src import core
@@ -38,6 +43,23 @@ def is_complex_aval(aval):
     """Complex check that tolerates JAX's extended dtypes (PRNG keys are not NumPy dtypes)."""
     dtype = getattr(aval, "dtype", None)
     return isinstance(dtype, np.dtype) and np.issubdtype(dtype, np.complexfloating)
+
+
+def allow_rank_promotion(rule):
+    """`rule`, traced with jax_numpy_rank_promotion="allow".
+
+    Rules broadcast with jnp-style operators (a batched [b, n, n] times an [n, n] mask); a
+    user's "raise" or "warn" setting, which JAX's own tests use, must not apply to them.
+    """
+    @wraps(rule)
+    def wrapped(*args, **kwargs):
+        with jax.numpy_rank_promotion("allow"):
+            return rule(*args, **kwargs)
+    return wrapped
+
+
+def _register_rule(primitive, rule):
+    mlir.register_lowering(primitive, allow_rank_promotion(rule), platform=PLATFORM)
 
 
 # --- real / imag / complex ---------------------------------------------------------
@@ -317,11 +339,55 @@ def _while_rule():
     return rule
 
 
+# Most elements _integer_dot_general's broadcast product holds at a time (16 MB of int32).
+_INTEGER_DOT_CHUNK = 1 << 22
+
+
+def _integer_dot_general(lhs, rhs, *, dimension_numbers, out_dtype):
+    """dot_general with an integer or bool result, which MPS matmul rejects (it takes floating
+    point only): exact multiply-and-sum, wrapping like XLA, over slices of the contraction so
+    that the broadcast product stays within _INTEGER_DOT_CHUNK elements. bool is OR of ANDs.
+    """
+    (lhs_contract, rhs_contract), (lhs_batch, rhs_batch) = dimension_numbers
+    lhs_free = [d for d in range(lhs.ndim) if d not in (*lhs_contract, *lhs_batch)]
+    rhs_free = [d for d in range(rhs.ndim) if d not in (*rhs_contract, *rhs_batch)]
+    sizes = lambda x, dims: [x.shape[d] for d in dims]
+    out_shape = (*sizes(lhs, lhs_batch), *sizes(lhs, lhs_free), *sizes(rhs, rhs_free))
+    if 0 in out_shape:
+        return lax.full(out_shape, 0, out_dtype)
+    b, m, n, k = (int(np.prod(s)) for s in (sizes(lhs, lhs_batch), sizes(lhs, lhs_free),
+                                             sizes(rhs, rhs_free), sizes(lhs, lhs_contract)))
+    acc_dtype = np.dtype(np.int32) if out_dtype == np.bool_ else out_dtype
+    l = lax.reshape(lax.convert_element_type(lhs, acc_dtype), (b, m, k),
+                    dimensions=(*lhs_batch, *lhs_free, *lhs_contract))
+    r = lax.reshape(lax.convert_element_type(rhs, acc_dtype), (b, k, n),
+                    dimensions=(*rhs_batch, *rhs_contract, *rhs_free))
+    chunk = max(1, min(k, _INTEGER_DOT_CHUNK // (b * m * n)))
+    steps = -(-k // chunk)
+    if steps * chunk != k:  # zero padding adds nothing to the sums
+        zero = np.array(0, acc_dtype)
+        l = lax.pad(l, zero, [(0, 0, 0), (0, 0, 0), (0, steps * chunk - k, 0)])
+        r = lax.pad(r, zero, [(0, 0, 0), (0, steps * chunk - k, 0), (0, 0, 0)])
+
+    def partial_sum(i):
+        l_chunk = lax.dynamic_slice_in_dim(l, i * chunk, chunk, axis=2)
+        r_chunk = lax.dynamic_slice_in_dim(r, i * chunk, chunk, axis=1)
+        return lax.reduce_sum(lax.expand_dims(l_chunk, (3,)) * lax.expand_dims(r_chunk, (1,)),
+                              (2,))
+
+    out = partial_sum(0)
+    if steps > 1:
+        out = lax.fori_loop(1, steps, lambda i, acc: acc + partial_sum(i), out)
+    out = out != 0 if out_dtype == np.bool_ else out
+    return lax.reshape(out, out_shape)
+
+
 def _dot_general_rule():
-    """dot_general for METAL: empty contractions and complex operands.
+    """dot_general for METAL: empty contractions, complex operands and integer results.
 
     A contraction over a zero-length dimension aborts MPSGraph ("MLIR pass manager failed");
-    its result is all zeros. Complex operands become real products (see _bilinear).
+    its result is all zeros. Complex operands become real products (see _bilinear). Integer
+    and bool results use _integer_dot_general.
     """
     primitive = lax_internal.dot_general_p
     default = mlir._lowerings[primitive].rule  # pylint: disable=protected-access
@@ -329,13 +395,19 @@ def _dot_general_rule():
 
     def rule(ctx, lhs, rhs, *, dimension_numbers, **params):
         (lhs_contract, _), _ = dimension_numbers
+        out = ctx.avals_out[0]
         if any(ctx.avals_in[0].shape[d] == 0 for d in lhs_contract):
-            out = ctx.avals_out[0]
             empty = mlir.lower_fun(lambda lhs, rhs: lax.full(out.shape, 0, out.dtype),
                                    multiple_results=False)
             return empty(ctx, lhs, rhs)
         if any(is_complex_aval(aval) for aval in ctx.avals_in):
             return complex_rule(ctx, lhs, rhs, dimension_numbers=dimension_numbers, **params)
+        if np.issubdtype(out.dtype, np.integer) or out.dtype == np.bool_:
+            integer_rule = mlir.lower_fun(
+                partial(_integer_dot_general, dimension_numbers=dimension_numbers,
+                        out_dtype=np.dtype(out.dtype)),
+                multiple_results=False)
+            return integer_rule(ctx, lhs, rhs)
         return default(ctx, lhs, rhs, dimension_numbers=dimension_numbers, **params)
 
     return rule
@@ -434,11 +506,10 @@ def _fft(x, *, fft_type, fft_lengths, **_):
 
 
 def register():
-    mlir.register_lowering(lax_internal.real_p, _real_rule, platform=PLATFORM)
-    mlir.register_lowering(lax_internal.imag_p, _imag_rule, platform=PLATFORM)
-    mlir.register_lowering(lax_internal.complex_p, _complex_rule, platform=PLATFORM)
-    mlir.register_lowering(lax_fft.fft_p, mlir.lower_fun(_fft, multiple_results=False),
-                           platform=PLATFORM)
+    _register_rule(lax_internal.real_p, _real_rule)
+    _register_rule(lax_internal.imag_p, _imag_rule)
+    _register_rule(lax_internal.complex_p, _complex_rule)
+    _register_rule(lax_fft.fft_p, mlir.lower_fun(_fft, multiple_results=False))
     splits = [
         (lax_internal.pad_p, _pad, False),
         (slicing.gather_p, _gather, False),
@@ -449,12 +520,11 @@ def register():
         (convolution.conv_general_dilated_p, _bilinear(convolution.conv_general_dilated_p), False),
     ]
     for primitive, fn, multiple_results in splits:
-        mlir.register_lowering(primitive, _when_complex(primitive, fn, multiple_results),
-                               platform=PLATFORM)
-    mlir.register_lowering(lax_internal.sort_p, _sort_rule(), platform=PLATFORM)
-    mlir.register_lowering(lax_internal.dot_general_p, _dot_general_rule(), platform=PLATFORM)
+        _register_rule(primitive, _when_complex(primitive, fn, multiple_results))
+    _register_rule(lax_internal.sort_p, _sort_rule())
+    _register_rule(lax_internal.dot_general_p, _dot_general_rule())
     from jax._src.lax.control_flow import loops  # pylint: disable=import-outside-toplevel
-    mlir.register_lowering(loops.while_p, _while_rule(), platform=PLATFORM)
+    _register_rule(loops.while_p, _while_rule())
 
 
 # Complex implementations for primitives that _lowerings.py also handles for real dtypes.

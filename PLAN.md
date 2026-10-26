@@ -116,14 +116,15 @@ Correctness and coverage:
 
 - **float64 / complex128**: unavailable; MPS has no float64 type. Double-float emulation is
   measured (~1e-14 relative error, float32 exponent range) but not wired into JAX.
-- **Test coverage is our own**: 16 end-to-end cases, an 88-op probe, an elementwise float32
-  accuracy sweep, linear algebra, complex/FFT and precision suites. JAX's own test suite and real
-  models (Flax/Optax training, transformers) have not been run on METAL.
+- **Test coverage is mostly our own**: 16 end-to-end cases, an op probe, an elementwise float32
+  accuracy sweep, linear algebra, complex/FFT and precision suites. Of JAX's own tests, only
+  `fft_test` (109 passed, 2 skipped) and part of `linalg_test` have run on METAL
+  (`shim/build/jax-suite/`); real models (Flax/Optax training, transformers) have not.
 - **Accuracy beyond elementwise ops is unmeasured**: the sweep found silent MPS errors in
   `expm1`/`log1p`/`tanh`/`sign`; reductions, matmul precision, convolutions and float16/bfloat16
   arithmetic have not been swept the same way.
 - **Newer-than-0.19.4 features**: JAX programs using ops newer than StableHLO 0.19.4, or CHLO ops
-  XLA serializes as composites without a METAL rule (`mulhi`, `ragged_dot`, CHLO `scan`), fail.
+  XLA serializes as composites without a METAL rule (`ragged_dot`, CHLO `scan`), fail.
 - **bfloat16 is emulated in float32 by the plugin**: results are now exact, but there is no
   memory or speed benefit from bfloat16.
 

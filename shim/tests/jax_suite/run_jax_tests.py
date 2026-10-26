@@ -1,7 +1,7 @@
 """Run JAX's own test files on the METAL backend, surviving plugin crashes.
 
     .venv-shim/bin/python shim/tests/jax_suite/run_jax_tests.py [-k EXPR] [--shard I/N]
-        [--resume] [--budget-minutes M] JAX_SRC OUT_DIR TEST ...
+        [--resume | --retry-failures] [--budget-minutes M] JAX_SRC OUT_DIR TEST ...
 
 JAX_SRC is a checkout of the jax repository at the installed version (tests/ only is enough).
 TEST is a file under JAX_SRC/tests (linalg_test.py) or a node id prefix
@@ -14,7 +14,8 @@ do not grow without bound.
 
 Batches: -k and --shard pick part of each TEST (--shard 2/4 is the second of four contiguous
 slices of what -k leaves), --budget-minutes stops between tests after that long, and --resume
-skips tests that already have a result, crashed ones included.
+skips tests that already have a result, crashed ones included (--retry-failures runs failed and
+crashed ones again, for after a fix).
 
 Results: OUT_DIR/<file>.jsonl holds one record per test of that file, merged across runs (a
 run replaces the records of the tests it ran and keeps the rest); OUT_DIR/<file>.run.jsonl
@@ -74,13 +75,13 @@ def merge_run(log):
     os.remove(run_log)
 
 
-def run_file(jax_src, out_dir, test, *, keyword, shard, resume, deadline):
+def run_file(jax_src, out_dir, test, *, keyword, shard, skip_outcomes, deadline):
     """Run one TEST; returns (this run's outcome records, whether the time budget ran out)."""
     log = log_path(out_dir, test)
     run_log = log[:-len(".jsonl")] + RUN_SUFFIX
     skip_path, stderr_path = log + ".skip", log + ".stderr"
     merge_run(log)  # a run log left by a runner that was itself killed
-    done_before = {r["nodeid"] for r in read_records(log) if "outcome" in r} if resume else set()
+    done_before = {r["nodeid"] for r in read_records(log) if r.get("outcome") in skip_outcomes}
     mem_limit = guard.default_mem_limit()
     crashed = []
     stopped = False
@@ -212,8 +213,11 @@ def parse_args(argv):
                         help="pytest -k expression applied to every TEST")
     parser.add_argument("--shard", type=_shard, metavar="I/N",
                         help="run only the I-th of N contiguous slices (1-based) of each TEST")
-    parser.add_argument("--resume", action="store_true",
+    resume = parser.add_mutually_exclusive_group()
+    resume.add_argument("--resume", action="store_true",
                         help="skip tests that already have a result in OUT_DIR")
+    resume.add_argument("--retry-failures", action="store_true",
+                        help="like --resume, but run failed and crashed tests again")
     parser.add_argument("--budget-minutes", type=float, metavar="M",
                         help="stop between tests after M minutes (continue with --resume)")
     return parser.parse_intermixed_args(argv)  # options may come between TESTs
@@ -224,6 +228,8 @@ def main(argv):
     jax_src, out_dir = os.path.abspath(args.jax_src), os.path.abspath(args.out_dir)  # pytest runs in jax_src
     os.makedirs(out_dir, exist_ok=True)
     deadline = time.time() + 60 * args.budget_minutes if args.budget_minutes else None
+    skip_outcomes = (("passed", "skipped") if args.retry_failures
+                     else ("passed", "skipped", "failed", "crashed") if args.resume else ())
     with guard.GpuLock():
         for index, test in enumerate(args.tests):
             if deadline and time.time() > deadline:
@@ -232,7 +238,8 @@ def main(argv):
                 start = time.time()
                 print(f"{test}: running", flush=True)
                 ran, stopped = run_file(jax_src, out_dir, test, keyword=args.keyword,
-                                        shard=args.shard, resume=args.resume, deadline=deadline)
+                                        shard=args.shard, skip_outcomes=skip_outcomes,
+                                        deadline=deadline)
                 outcomes = collections.Counter(r["outcome"] for r in ran)
                 print(f"{test}: {dict(outcomes)} in {time.time() - start:.0f}s", flush=True)
                 summarize(out_dir)

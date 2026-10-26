@@ -21,9 +21,12 @@ from jax_plugins.metal_shim import _complex
 PLATFORM = "METAL"
 
 
+def _register_rule(primitive, rule):
+    mlir.register_lowering(primitive, _complex.allow_rank_promotion(rule), platform=PLATFORM)
+
+
 def _register(primitive, fn, multiple_results=False):
-    mlir.register_lowering(primitive, mlir.lower_fun(fn, multiple_results=multiple_results),
-                           platform=PLATFORM)
+    _register_rule(primitive, mlir.lower_fun(fn, multiple_results=multiple_results))
 
 
 def _default_rule(primitive):
@@ -270,6 +273,8 @@ def _cholesky(a, **_):
     # l[i, j] = (a[i, j] - sum_k l[i, k] conj(l[j, k])) / l[j, j], with a real diagonal).
     # Columns not yet computed are zero, so l @ conj(l[j]) only sums over k < j.
     n = a.shape[-1]
+    if a.size == 0:  # fori_loop traces its body even for zero trips, which cannot index here
+        return a
     row_axis, col_axis = a.ndim - 2, a.ndim - 1
     rows = lax.broadcasted_iota(np.int32, a.shape[:-1], a.ndim - 2)
     complex_input = np.issubdtype(a.dtype, np.complexfloating)
@@ -289,7 +294,13 @@ def _cholesky(a, **_):
             d, v.shape, tuple(range(v.ndim))), lax.full_like(v, 0)))
         return lax.dynamic_update_index_in_dim(l, col[..., None], j, axis=col_axis)
 
-    return lax.fori_loop(0, n, column, lax.full_like(a, 0))
+    l = lax.fori_loop(0, n, column, lax.full_like(a, 0))
+    # Like JAX on CPU and GPU, a matrix that is not positive definite gives all NaN (here
+    # NaN would only start at the failing column).
+    diagonal = jnp_diagonal(l)
+    ok = lax.reduce_and((lax.real(diagonal) if complex_input else diagonal) > 0, (l.ndim - 2,))
+    return lax.select(lax.broadcast_in_dim(ok, l.shape, tuple(range(ok.ndim))), l,
+                      lax.full_like(l, np.nan))
 
 
 def _swap_last(x):
@@ -316,6 +327,8 @@ def _forward_substitution(a, b, unit_diagonal):
 
 
 def _triangular_solve(a, b, *, left_side, lower, transpose_a, conjugate_a, unit_diagonal, **_):
+    if b.size == 0:  # the solution has b's shape; an empty a makes b empty too
+        return b
     if conjugate_a and np.issubdtype(a.dtype, np.complexfloating):
         a = lax.conj(a)
     if transpose_a:
@@ -375,6 +388,8 @@ def _geqrf(a, **_):
     rows = lax.broadcasted_iota(np.int32, a.shape[:-1], a.ndim - 2)
     cols = lax.broadcasted_iota(np.int32, (*a.shape[:-2], n), a.ndim - 2)
     taus = lax.full(a.shape[:-2] + (k,), 0, a.dtype)
+    if a.size == 0:
+        return [a, taus]
 
     def step(j, carry):
         a, taus = carry
@@ -400,6 +415,8 @@ def _householder_product(a, taus, **_):
     rows = lax.broadcasted_iota(np.int32, a.shape[:-1], a.ndim - 2)
     q = lax.broadcast_in_dim(lax_internal._eye(a.dtype, (m, n)), a.shape,  # pylint: disable=protected-access
                              (a.ndim - 2, a.ndim - 1))
+    if a.size == 0 or k == 0:
+        return q
 
     def step(i, q):
         j = k - 1 - i
@@ -620,6 +637,8 @@ def _svd_rule():
     unbatched, its QDWH while loop keeps lax.cond branches, which crash MPSGraph at run time
     (GPU::WhileOpHandler); with a batch dimension vmap turns them into selects.
     Complex inputs: _complex_svd (complex QDWH also crashes MPSGraph).
+    A requested `algorithm` (QR, divide and conquer, ...) is a LAPACK-style hint; METAL has
+    one algorithm per case and uses it, where JAX's generic SVD would reject the request.
     """
     default = _default_rule(linalg.svd_p)
 
@@ -631,6 +650,7 @@ def _svd_rule():
     complex_rule = mlir.lower_fun(_complex_svd, multiple_results=True)
 
     def rule(ctx, a, **params):
+        params["algorithm"] = None
         shape = ctx.avals_in[0].shape
         if 0 in shape[-2:]:
             return default(ctx, a, **params)
@@ -645,16 +665,16 @@ def _svd_rule():
 
 def _eigh(x, *, lower, sort_eigenvalues, subset_by_index, algorithm=None, **_):
     n = x.shape[-1]
-    if n == 0:
-        return [x, lax.real(x[..., 0]) if _is_complex(x) else x[..., 0]]
     # Rebuild the Hermitian matrix from the referenced triangle.
     import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
     tri = jnp.tril(x) if lower else jnp.triu(x)
     strict = jnp.tril(x, -1) if lower else jnp.triu(x, 1)
     h = tri + _conj(jnp.swapaxes(strict, -1, -2))
     full_range = subset_by_index is None or tuple(subset_by_index) == (0, n)
+    if h.size == 0:  # Jacobi's loops would index empty axes
+        v, w = h, lax.full(h.shape[:-1], 0, np.finfo(h.dtype).dtype)
     # Jacobi for small matrices and for complex ones (complex QDWH crashes MPSGraph).
-    if n <= 256 or algorithm == linalg.EighImplementation.JACOBI or _is_complex(h):
+    elif n <= JACOBI_MAX_SIZE or algorithm == linalg.EighImplementation.JACOBI or _is_complex(h):
         v, w = _jacobi_eigh(h, sort_eigenvalues or not full_range)
     else:
         # JAX's QDWH spectral divide-and-conquer (used on TPU) is pure JAX; it needs QR
@@ -834,7 +854,7 @@ def register():
         real_rule = real_rules.get(primitive) or _default_rule(primitive)
         if primitive in _complex.ELEMENTWISE:
             real_rule = _real_or_complex(primitive, real_rule, _complex.ELEMENTWISE[primitive])
-        mlir.register_lowering(primitive, real_rule, platform=PLATFORM)
+        _register_rule(primitive, real_rule)
     _register(lax_internal.top_k_p, _top_k, multiple_results=True)
     _register(lax_internal.mulhi_p, _mulhi)
     _register(linalg.cholesky_p, _cholesky)
@@ -842,9 +862,8 @@ def register():
     _register(linalg.geqrf_p, _geqrf, multiple_results=True)
     _register(linalg.householder_product_p, _householder_product)
     _register(linalg.eigh_p, _eigh, multiple_results=True)
-    mlir.register_lowering(linalg.svd_p, _svd_rule(), platform=PLATFORM)
+    _register_rule(linalg.svd_p, _svd_rule())
     _register(lax_internal.reduce_precision_p, _reduce_precision)
-    mlir.register_lowering(lax_internal.convert_element_type_p, _convert_element_type,
-                           platform=PLATFORM)
+    _register_rule(lax_internal.convert_element_type_p, _convert_element_type)
     _register(lax_internal.rng_bit_generator_p, _rng_bit_generator, multiple_results=True)
     _complex.register()
