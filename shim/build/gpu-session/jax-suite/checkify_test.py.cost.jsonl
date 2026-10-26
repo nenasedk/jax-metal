@@ -1,0 +1,118 @@
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_auto_axes_explicit_top_level", "seconds": 0.167, "before_mb": 76, "peak_mb": 91}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_checify_donation_no_forwarding", "seconds": 0.02, "before_mb": 91, "peak_mb": 91}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_checkify_custom_jvp", "seconds": 0.299, "before_mb": 91, "peak_mb": 156}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_checkify_jit", "seconds": 0.17, "before_mb": 156, "peak_mb": 160}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_checking_key_split_with_nan_check", "seconds": 0.122, "before_mb": 160, "peak_mb": 169}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_closed_call", "seconds": 0.207, "before_mb": 169, "peak_mb": 178}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_cond_basic", "seconds": 0.234, "before_mb": 178, "peak_mb": 201}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_cond_different_payloads", "seconds": 0.22, "before_mb": 201, "peak_mb": 207}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_cond_nd_payloads", "seconds": 0.23, "before_mb": 207, "peak_mb": 209}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_custom_jvp", "seconds": 0.296, "before_mb": 209, "peak_mb": 219}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_custom_jvp_vmap", "seconds": 0.069, "before_mb": 219, "peak_mb": 224}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_custom_vjp", "seconds": 0.08, "before_mb": 224, "peak_mb": 228}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_custom_vjp_explicit_check", "seconds": 0.186, "before_mb": 228, "peak_mb": 243}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_different_payload_effects", "seconds": 0.465, "before_mb": 243, "peak_mb": 295}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_dynamic_slice_oobs", "seconds": 0.342, "before_mb": 295, "peak_mb": 307}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_dynamic_update_slice_oobs", "seconds": 0.185, "before_mb": 307, "peak_mb": 306}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_effects_total_ordering", "seconds": 0.032, "before_mb": 306, "peak_mb": 307}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_empty_enabled_errors", "seconds": 0.067, "before_mb": 307, "peak_mb": 315}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_assert", "seconds": 0.042, "before_mb": 315, "peak_mb": 318}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_automatic_checks", "seconds": 0.237, "before_mb": 318, "peak_mb": 336}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_div", "seconds": 0.021, "before_mb": 336, "peak_mb": 337}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_nan", "seconds": 0.02, "before_mb": 337, "peak_mb": 344}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_oob", "seconds": 0.027, "before_mb": 344, "peak_mb": 347}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_goodfellow_custom_jvp", "seconds": 0.115, "before_mb": 347, "peak_mb": 350}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_goodfellow_custom_vjp", "seconds": 0.057, "before_mb": 350, "peak_mb": 351}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_hijax_custom_derivative_primal_error0", "seconds": 0.078, "before_mb": 351, "peak_mb": 359, "params": "('jvp')"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_hijax_custom_derivative_primal_error1", "seconds": 0.073, "before_mb": 359, "peak_mb": 361, "params": "('vjp')"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_div_errors0", "seconds": 0.097, "before_mb": 361, "peak_mb": 365, "params": "(jit=True)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_div_errors1", "seconds": 0.1, "before_mb": 365, "peak_mb": 373, "params": "(jit=False)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_multi0", "seconds": 0.185, "before_mb": 373, "peak_mb": 374, "params": "(jit=True)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_multi1", "seconds": 0.048, "before_mb": 374, "peak_mb": 379, "params": "(jit=False)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_nan0", "seconds": 0.082, "before_mb": 379, "peak_mb": 380, "params": "(jit=True)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_nan1", "seconds": 0.027, "before_mb": 380, "peak_mb": 381, "params": "(jit=False)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob0", "seconds": 0.069, "before_mb": 381, "peak_mb": 382, "params": "(jit=True)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob1", "seconds": 0.046, "before_mb": 382, "peak_mb": 385, "params": "(jit=False)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_add", "seconds": 0.1, "before_mb": 385, "peak_mb": 386}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_div", "seconds": 0.076, "before_mb": 386, "peak_mb": 387}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_get", "seconds": 0.04, "before_mb": 387, "peak_mb": 388}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_max", "seconds": 0.074, "before_mb": 388, "peak_mb": 389}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_min", "seconds": 0.078, "before_mb": 389, "peak_mb": 391}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_mul", "seconds": 0.05, "before_mb": 391, "peak_mb": 393}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_pow", "seconds": 0.199, "before_mb": 393, "peak_mb": 396}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_set", "seconds": 0.058, "before_mb": 396, "peak_mb": 398}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_ordering0", "seconds": 0.142, "before_mb": 398, "peak_mb": 399, "params": "(jit=True)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_ordering1", "seconds": 0.045, "before_mb": 400, "peak_mb": 403, "params": "(jit=False)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_mapped_error_one_payload", "seconds": 0.132, "before_mb": 403, "peak_mb": 411}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_multiple_payloads", "seconds": 0.066, "before_mb": 411, "peak_mb": 414}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_nd_payloads", "seconds": 0.215, "before_mb": 414, "peak_mb": 440}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_gather", "seconds": 0.656, "before_mb": 440, "peak_mb": 454}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_add", "seconds": 0.57, "before_mb": 454, "peak_mb": 460}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_div", "seconds": 0.234, "before_mb": 460, "peak_mb": 468}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_max", "seconds": 0.333, "before_mb": 468, "peak_mb": 476}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_min", "seconds": 0.286, "before_mb": 476, "peak_mb": 485}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_mul", "seconds": 0.219, "before_mb": 485, "peak_mb": 492}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_pow", "seconds": 0.251, "before_mb": 493, "peak_mb": 499}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_update", "seconds": 0.22, "before_mb": 499, "peak_mb": 511}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_pmap_basic", "seconds": 0.014, "before_mb": 511, "peak_mb": 511}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_pmap_collectives", "seconds": 0.01, "before_mb": 511, "peak_mb": 511}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_pmap_one_device", "seconds": 0.068, "before_mb": 511, "peak_mb": 513}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_post_process_call", "seconds": 0.08, "before_mb": 513, "peak_mb": 514}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_post_process_map", "seconds": 0.088, "before_mb": 514, "peak_mb": 515}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_psum_nan_check", "seconds": 0.09, "before_mb": 515, "peak_mb": 521}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_remat0", "seconds": 0.088, "before_mb": 521, "peak_mb": 520, "params": "(True)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_remat1", "seconds": 0.039, "before_mb": 520, "peak_mb": 523, "params": "(False)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_retracing", "seconds": 0.058, "before_mb": 523, "peak_mb": 524}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_carry", "seconds": 0.278, "before_mb": 524, "peak_mb": 533}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_consts", "seconds": 0.134, "before_mb": 533, "peak_mb": 535}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_consts2", "seconds": 0.179, "before_mb": 535, "peak_mb": 537}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_map", "seconds": 0.065, "before_mb": 537, "peak_mb": 541}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_xs_mapped_correctly", "seconds": 0.037, "before_mb": 541, "peak_mb": 543}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_shard_map0", "seconds": 0.159, "before_mb": 543, "peak_mb": 548, "params": "(True)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_shard_map1", "seconds": 0.053, "before_mb": 548, "peak_mb": 549, "params": "(False)"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_consts", "seconds": 0.273, "before_mb": 549, "peak_mb": 559}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_body_and_cond_error", "seconds": 0.228, "before_mb": 559, "peak_mb": 562}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_body_error", "seconds": 0.206, "before_mb": 562, "peak_mb": 565}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_cond_error", "seconds": 0.255, "before_mb": 565, "peak_mb": 567}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_cond_error_and_false", "seconds": 0.163, "before_mb": 567, "peak_mb": 568}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_leaks", "seconds": 0.023, "before_mb": 568, "peak_mb": 568}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_batching_rule", "seconds": 0.216, "before_mb": 568, "peak_mb": 591}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_cond_no_data_dependence", "seconds": 0.039, "before_mb": 591, "peak_mb": 592}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging", "seconds": 0.037, "before_mb": 592, "peak_mb": 594}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging_cond", "seconds": 0.251, "before_mb": 594, "peak_mb": 622}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging_no_data_dependence", "seconds": 0.025, "before_mb": 622, "peak_mb": 622}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging_scan", "seconds": 0.07, "before_mb": 622, "peak_mb": 622}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging_while_loop", "seconds": 0.112, "before_mb": 622, "peak_mb": 623}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_primitive_eval_shape", "seconds": 0.006, "before_mb": 623, "peak_mb": 623}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_primitive_impl", "seconds": 0.018, "before_mb": 623, "peak_mb": 623}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_primitive_jaxpr_effects", "seconds": 0.019, "before_mb": 623, "peak_mb": 624}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_primitive_lowering", "seconds": 0.267, "before_mb": 624, "peak_mb": 631}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_switch_no_data_dependence", "seconds": 0.094, "before_mb": 631, "peak_mb": 632}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_check_error", "seconds": 0.023, "before_mb": 632, "peak_mb": 633}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_check_error_scanned", "seconds": 0.169, "before_mb": 633, "peak_mb": 639}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_check_pp_rule", "seconds": 0.018, "before_mb": 639, "peak_mb": 639}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_inner_jit", "seconds": 0.048, "before_mb": 639, "peak_mb": 640}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_multithreaded_determinism", "seconds": 0.046, "before_mb": 640, "peak_mb": 643}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_non_jax_type_input", "seconds": 0.009, "before_mb": 643, "peak_mb": 643}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_of_vmap_of_while_errors", "seconds": 0.023, "before_mb": 643, "peak_mb": 640}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_of_vmap_of_while_masked_errors", "seconds": 0.019, "before_mb": 640, "peak_mb": 640}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_static_args", "seconds": 0.014, "before_mb": 640, "peak_mb": 640}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_trace_determinism", "seconds": 0.011, "before_mb": 640, "peak_mb": 640}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_cond_of_named_call", "seconds": 0.03, "before_mb": 640, "peak_mb": 641}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_disabled_errors_with_jit", "seconds": 0.017, "before_mb": 641, "peak_mb": 641}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_disabled_errors_without_jit", "seconds": 0.042, "before_mb": 639, "peak_mb": 639}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_jaxpr_roundtrip", "seconds": 0.046, "before_mb": 639, "peak_mb": 640}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_nonscalar_pred_with_jit", "seconds": 0.019, "before_mb": 640, "peak_mb": 640}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_nonscalar_pred_without_jit", "seconds": 0.008, "before_mb": 640, "peak_mb": 640}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_noop", "seconds": 0.242, "before_mb": 640, "peak_mb": 643}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_with_jit", "seconds": 0.027, "before_mb": 643, "peak_mb": 644}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_without_jit", "seconds": 0.03, "before_mb": 644, "peak_mb": 645}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_discharge_recharge", "seconds": 0.021, "before_mb": 645, "peak_mb": 646}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_enable_x64_inner_scope0", "seconds": 0.332, "before_mb": 646, "peak_mb": 662, "params": "(False)"}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_enable_x64_inner_scope1", "seconds": 0.414, "before_mb": 662, "peak_mb": 674, "params": "(True)"}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_fmt_args_array_type_error", "seconds": 0.026, "before_mb": 674, "peak_mb": 672}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_grad", "seconds": 0.027, "before_mb": 672, "peak_mb": 672}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_nested_checkify_namespace_collision", "seconds": 0.021, "before_mb": 672, "peak_mb": 674}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_reinjected_error_after_while_loop_cond_check", "seconds": 0.103, "before_mb": 674, "peak_mb": 680}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_reinjected_error_with_disabled_checks", "seconds": 0.021, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_vmap_of_checkify_of_while", "seconds": 0.217, "before_mb": 680, "peak_mb": 682}

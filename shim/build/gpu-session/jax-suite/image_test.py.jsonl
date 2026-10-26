@@ -1,0 +1,87 @@
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL0", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL1", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL2", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL3", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL4", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL5", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL6", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL7", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL8", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPIL9", "outcome": "skipped", "message": "Skipped: Test requires PIL"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch0", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch1", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch2", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch3", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch4", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch5", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch6", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch7", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch8", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstPyTorch9", "outcome": "skipped", "message": "Skipped: PyTorch not available"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow0", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow1", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow2", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow3", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow4", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow5", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow6", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow7", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow8", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeAgainstTensorFlow9", "outcome": "skipped", "message": "Skipped: Test requires TensorFlow"}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeEmpty9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeGradients9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizePyTorchGolden", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeUp9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testResizeWithUnusualShapes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateDown9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateGradFinite0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateGradFinite1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateJITs0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateJITs1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateNegativeDims", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/image_test.py::ImageTest::testScaleAndTranslateUp9", "outcome": "passed", "message": ""}

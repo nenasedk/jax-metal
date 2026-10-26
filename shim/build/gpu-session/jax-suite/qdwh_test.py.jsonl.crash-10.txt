@@ -1,0 +1,56 @@
+tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape1
+exit -11
+guard: None
+
+..Fatal Python error: Segmentation fault
+
+Thread 0x000000017f03f000 (most recent call first):
+  File "/opt/anaconda3/lib/python3.12/threading.py", line 359 in wait
+  File "/opt/anaconda3/lib/python3.12/threading.py", line 655 in wait
+  File "/opt/anaconda3/lib/python3.12/threading.py", line 1429 in run
+  File "/opt/anaconda3/lib/python3.12/threading.py", line 1073 in _bootstrap_inner
+  File "/opt/anaconda3/lib/python3.12/threading.py", line 1030 in _bootstrap
+
+Current thread 0x00000001fcc521c0 (most recent call first):
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py", line 420 in __call__
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py", line 588 in wrapper
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py", line 1172 in _pjit_call_impl_python
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py", line 149 in _run_python_pjit
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py", line 272 in cache_miss
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax/_src/traceback_util.py", line 194 in reraise_with_filtered_traceback
+  File "/Users/nasedkin/jax_metal/re/work/jax-src/tests/qdwh_test.py", line 69 in _testQdwh
+  File "/Users/nasedkin/jax_metal/re/work/jax-src/tests/qdwh_test.py", line 96 in testQdwhWithDynamicShape
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py", line 327 in bound_param_test
+  File "/opt/anaconda3/lib/python3.12/unittest/case.py", line 589 in _callTestMethod
+  File "/opt/anaconda3/lib/python3.12/unittest/case.py", line 634 in run
+  File "/opt/anaconda3/lib/python3.12/unittest/case.py", line 690 in __call__
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py", line 410 in runtest
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py", line 184 in pytest_runtest_call
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_execution.py", line 147 in _multicall
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_manager.py", line 183 in _hookexec
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_caller.py", line 197 in __call__
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py", line 250 in <lambda>
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py", line 361 in from_call
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py", line 249 in call_and_report
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py", line 139 in runtestprotocol
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py", line 118 in pytest_runtest_protocol
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_execution.py", line 147 in _multicall
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_manager.py", line 183 in _hookexec
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_caller.py", line 197 in __call__
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/main.py", line 408 in pytest_runtestloop
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_execution.py", line 147 in _multicall
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_manager.py", line 183 in _hookexec
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_caller.py", line 197 in __call__
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/main.py", line 384 in _main
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/main.py", line 330 in wrap_session
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/main.py", line 377 in pytest_cmdline_main
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_execution.py", line 147 in _multicall
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_manager.py", line 183 in _hookexec
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_caller.py", line 197 in __call__
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/config/__init__.py", line 229 in _main
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/config/__init__.py", line 253 in _console_main
+  File "/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pytest/__main__.py", line 9 in <module>
+  File "<frozen runpy>", line 88 in _run_code
+  File "<frozen runpy>", line 198 in _run_module_as_main
+
+Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_umath, numpy.linalg._umath_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, numpy.random.mtrand (total: 12)

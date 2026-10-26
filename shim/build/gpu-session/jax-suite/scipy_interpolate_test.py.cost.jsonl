@@ -1,0 +1,4 @@
+{"nodeid": "tests/scipy_interpolate_test.py::LaxBackedScipyInterpolateTests::testRegularGridInterpolator0", "seconds": 1.179, "before_mb": 102, "peak_mb": 269, "params": "(spaces=((-15.0, 20.0, 12), (3.0, 4.0, 24)), method='linear')"}
+{"nodeid": "tests/scipy_interpolate_test.py::LaxBackedScipyInterpolateTests::testRegularGridInterpolator1", "seconds": 0.239, "before_mb": 269, "peak_mb": 275, "params": "(spaces=((-15.0, 20.0, 12), (3.0, 4.0, 24)), method='nearest')"}
+{"nodeid": "tests/scipy_interpolate_test.py::LaxBackedScipyInterpolateTests::testRegularGridInterpolator2", "seconds": 0.239, "before_mb": 275, "peak_mb": 289, "params": "(spaces=((0.0, 10.0, 10),), method='linear')"}
+{"nodeid": "tests/scipy_interpolate_test.py::LaxBackedScipyInterpolateTests::testRegularGridInterpolator3", "seconds": 0.13, "before_mb": 289, "peak_mb": 291, "params": "(spaces=((0.0, 10.0, 10),), method='nearest')"}

@@ -1,0 +1,23 @@
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_batched_derivative_of_constant_root0", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_batched_derivative_of_constant_root1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_complex", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_defers_linearization0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_defers_linearization1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_defers_linearization2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_ignores_solver_tangents", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_nested_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_scalar_binary_search", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_solve_runs_once", "outcome": "failed", "message": "NotImplementedError: MLIR translation rule for primitive 'debug_callback' not found for platform METAL"}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_solver_ref_effects0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_solver_ref_effects1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_stages_as_hiprim", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/custom_root_test.py:248:13: error: null operand found\n      return lax.custom_root(lambda x: x**2 - a, 1., binary_search,\n            ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: called from\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal"}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_traces_f_once", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_vector_with_solve_closure", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_with_custom_linear_solve", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_with_integer_aux", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_with_xla_metadata_call", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_scalar_newton_raphson", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_vector_nonlinear", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_root_test.py::CustomRootTest::test_custom_root_with_aux", "outcome": "passed", "message": ""}

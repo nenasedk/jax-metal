@@ -1,0 +1,8 @@
+$ /Users/nasedkin/jax_metal/shim/../.venv-shim/bin/python -m jax_plugins.metal_shim info
+jax-metal-shim               0.1.0
+jax / jaxlib                 0.12.0.1 / 0.12.0.1 (tested: 0.12.0, 0.12.0.1)
+shim library                 /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/pjrt_plugin_metal_shim.dylib (present)
+Apple's plugin               /Users/nasedkin/Library/Caches/jax-metal-shim/jax-metal-0.1.1/pjrt_plugin_metal_14.dylib (verified)
+plugin cache                 /Users/nasedkin/Library/Caches/jax-metal-shim/jax-metal-0.1.1
+$JAX_METAL_SHIM_PLUGIN_PATH  (unset)
+

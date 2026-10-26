@@ -1,0 +1,46 @@
+$ /Users/nasedkin/jax_metal/shim/../.venv-shim/bin/python /Users/nasedkin/jax_metal/shim/tests/accuracy_sweep.py --strict
+Platform 'METAL' is experimental and not all JAX functionality may be correctly supported!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793040261.045201 1118171 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+Metal device set to: Apple M3
+I0000 00:00:1793040261.061022 1118171 service.cc:145] XLA service 0x600001fa0800 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793040261.061121 1118171 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793040261.062648 1118171 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793040261.062675 1118171 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+ok   exp        worst         1 ulps  
+ok   expm1      worst         3 ulps  
+ok   log        worst         2 ulps  
+ok   log1p      worst         2 ulps  
+ok   sqrt       worst         0 ulps  
+ok   rsqrt      worst         1 ulps  
+ok   cbrt       worst        10 ulps  
+ok   sin        worst         2 ulps  
+ok   cos        worst         2 ulps  
+ok   tan        worst         2 ulps  
+ok   tanh       worst         3 ulps  
+ok   sinh       worst        18 ulps  
+ok   cosh       worst        18 ulps  
+ok   arcsinh    worst         3 ulps  
+ok   arccosh    worst         2 ulps  
+ok   arctanh    worst         2 ulps  
+ok   arcsin     worst         1 ulps  
+ok   arccos     worst         1 ulps  
+ok   arctan     worst         1 ulps  
+ok   erf        worst         2 ulps  
+ok   erfc       worst         2 ulps  
+ok   erfinv     worst         2 ulps  
+ok   sigmoid    worst         2 ulps  
+ok   softplus   worst         3 ulps  
+ok   logaddexp  worst         8 ulps  
+ok   pow_2.5    worst         1 ulps  
+ok   square     worst         0 ulps  
+ok   reciprocal worst         0 ulps  
+ok   sign       worst         0 ulps  
+ok   abs        worst         0 ulps  
+
+ops outside 64 ulps or with NaN/inf mismatches: none
+I0000 00:00:1793040262.116601 1118171 mps_client.h:209] MetalClient destroyed.
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+

@@ -1,0 +1,7 @@
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_args_must_be_tuple", "seconds": 0.289, "before_mb": 102, "peak_mb": 194}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_fixes4594", "seconds": 1.817, "before_mb": 194, "peak_mb": 242}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize3", "seconds": 1.004, "before_mb": 102, "peak_mb": 205, "params": "(maxiter=None, func_and_init=(<function matyas at 0x131f6d940>, array([6., 6.])))"}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize_bad_initial_values", "seconds": 0.805, "before_mb": 205, "peak_mb": 235}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_zakharov", "seconds": 0.02, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_complex_rosenbrock", "seconds": 4.599, "before_mb": 235, "peak_mb": 283}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize1", "seconds": 0.994, "before_mb": 99, "peak_mb": 209, "params": "(maxiter=None, func_and_init=(<function eggholder at 0x120d719e0>, array([100., 100.])))"}

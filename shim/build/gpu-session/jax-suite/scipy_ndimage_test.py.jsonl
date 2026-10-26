@@ -1,0 +1,16 @@
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testContinuousGradients", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinates9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinatesErrors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinatesRoundHalf0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinatesRoundHalf1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinatesRoundHalf2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_ndimage_test.py::NdimageTest::testMapCoordinatesRoundHalf3", "outcome": "passed", "message": ""}

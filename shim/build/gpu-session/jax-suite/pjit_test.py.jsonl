@@ -1,0 +1,888 @@
+{"nodeid": "tests/pjit_test.py::PJitTest::testAutodiffCache", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testAutodiff_2", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testAutodiff_2x1", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testAutodiff_2x2", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBasic1D", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBasic1DWithMeshContextManager", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBasic2D", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonation", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationDifferentIOShapes", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, cpu, gpu"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationNotDonated", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, cpu, gpu"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithKwargs", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu, tpu"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithNames", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu, tpu"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithOutputShardingInference", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, cpu, gpu"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithOutputShardingInferenceAndTokens", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithPyTreeKwargs", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu, tpu"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testCaching", "outcome": "skipped", "message": "Skipped: Test requires 4 devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testDeviceBufferAval", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::testDifferentNestedMesh", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::testEvalJaxpr", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testGradOfConstraint", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testJitOfPjitDisallowed", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerAsText", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompile", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileArgTypeMismatch", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileAsText", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileCompilerIR", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileCostAnalysis", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileExecutable", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileInTreeMismatch", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileMemoryAnalysis", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileWithAvals", "outcome": "skipped", "message": "Skipped: Test requires 8 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileWithKwargs", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompilerIR", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCostAnalysis", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerDonateArgnumsAvailable", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerDonateArgnumsAvailableWithNames", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerPartitionsAttribute", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerWithDuckTyping", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testMeshDecorator", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices."}
+{"nodeid": "tests/pjit_test.py::PJitTest::testMeshHashRace", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::testNested", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testNonArrayArg", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testNonHashableAxisResources", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testNoopPartitionSpecs", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testSameNestedMesh", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintPyTreeVmapWithUnconstrainedDims", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintPyTreeWithArray", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintPyTreeWithUnconstrainedDimsWithJit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintStablehlo", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintWithArray", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::testTwoMeshAxisSharding", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testUnevenShardingConstraint", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testVMap", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testVMapShardingConstraint", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testVMapShardingConstraintWithSpmdAxis", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::testWithCustomPRNGKey", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_cache_bug", "outcome": "skipped", "message": "Skipped: Test requires 2 devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_concurrent_pjit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_device_put_copy_donate", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INVALID_ARGUMENT: CopyToDevice cannot accept the same source and destination devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_jax_set_mesh_trace_only_once", "outcome": "skipped", "message": "Skipped: Test requires at least 4 devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_local_sharded_key_array_sda", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_lower_with_wrapper_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_html", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_large_inner_jaxpr_inline", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_nested_shared_jaxprs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_pjit_id", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_aliased_args", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_closure", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_constant_pjit_arg", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_literal_outvar", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_name_clash", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_static_argnums", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_with_sharding_constraint_is_compatible_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_with_sharding_constraint_vmap_spmd_axis_name_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_zero_literal_equality", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::testLowerCompileWithStaticArguments", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_device", "outcome": "skipped", "message": "Skipped: only works on TPU v3"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_lower_real_dev_compile", "outcome": "skipped", "message": "Skipped: Requires >=2 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_lower_real_dev_compile_single_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_mesh_lower", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_mesh_lower_same_size_different_axis_name", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_mesh_top_level", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_compile_in_tree_mismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_device_implicit_transfer", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, gpu"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_device_mismatch", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, gpu"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_devices_to_compile", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_devices_to_compile_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_nested_pjit_closing_over_const_top_level", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_sharding_dce", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_device_assignment_mismatch_in_and_out_shardings", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_device_assignment_mismatch_out_shardings", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_device_assignment_mismatch_with_mesh", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_enabled_non_empty_mesh_with_pspec", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_lower_compile", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_autodiff_with_device_arg", "outcome": "skipped", "message": "Skipped: Test requires more >1 device."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_autodiff_with_single_device_sharding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_cache_hit_pjit_lower_with_cpp_cache_miss", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_cache_miss_explanations_sharding_mismatch", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_check_arg_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_closed_constants_at_top_level", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_closed_over_constant_diff_sharding", "outcome": "skipped", "message": "Skipped: Requires use_simplified_jaxpr_constants=True"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_compiled_out_info", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_compiler_options_nested_jit_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_convert_element_type_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_cpu_bfloat16_to_tpu", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_assignment_mismatch_apply_primitive", "outcome": "skipped", "message": "Skipped: Requires >=2 devices."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_donate_pytree", "outcome": "skipped", "message": "Skipped: Requires >= 8 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_efficient_reshard_complex_mesh_8_2", "outcome": "skipped", "message": "Skipped: Requires >= 8 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_efficient_reshard_complex_mesh_8_384", "outcome": "skipped", "message": "Skipped: Requires >= 8 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_efficient_reshard_single_host", "outcome": "skipped", "message": "Skipped: Requires >= 4 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_grad", "outcome": "skipped", "message": "Skipped: Requires >=8 devices."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_in_jit_default_mem_kind_no_op", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_on_different_sharding", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_sharding_nondivisible_sharding_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_sharding_prng", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_different_devices_wsc_abstract_mesh_cache_hit", "outcome": "skipped", "message": "Skipped: Requires >=4 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_different_named_sharding_object_replicated", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_empty_io_callback_under_shard_map", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_empty_io_callback_under_shard_map_reshard_to_singledev", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_empty_mesh_to_out_sharding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_fast_path_array", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_global_array_to_host_local_array_already_host_local", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_global_jit_cpp_cache_hit_out_shardings", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_globally_sharded_key_array_8x4_multi_device", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_globally_sharded_key_array_8x4_multi_device_with_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_globally_sharded_key_array_result_8x4_single_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_grad_of_pjit_single_device_sharding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_in_axis_resources_mismatch_error", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_in_axis_resources_same_as_array_sharding", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_in_out_shardings_unconstrained_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_input_shardings_aot", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_input_shardings_single_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jaxpr_as_fun_fast_path", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_both_shardings_none", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_cpp_cache_obj_config", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_device_with_sharding_constraint_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_in_shardings_none", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_lower_shape_dtype_struct_sharding_none", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_mul_sum_sharding_preserved", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_no_forwarding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_out_shardings_none", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_out_shardings_unconstrained", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_partially_specified_shardings", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_static_argnames_non_interned", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_submhlo_cached", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_token_input", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{function_type = () -> !mhlo.token, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n  %0 = \"mhlo.create_token\"() : () -> !mhlo.token\n  \"func.return\"(%0) : (!mhlo.token) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func.func'\n<unknown>:"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_trace", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_trace_lower_and_compile", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_with_mesh_context_manager", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_with_sharding_constraint_committed_inp_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_arange_concrete_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_array_inside_jit_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_array_reshard_error", "outcome": "skipped", "message": "Skipped: Requires >=2 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_array_sharded_array_no_op", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_array_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_list_in_pspec", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowered_out_info", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowered_out_info_mesh", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_different_devices", "outcome": "skipped", "message": "Skipped: Requires >=4 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_inputs_with_different_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_jit_hoist", "outcome": "skipped", "message": "Skipped: Hoisting works only with use_simplified_jaxpr_constants"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_jit_no_hoist", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_scan_hoist", "outcome": "skipped", "message": "Skipped: Hoisting works only with use_simplified_jaxpr_constants"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_scan_no_hoist", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_sharded", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_miss_different_devices_and_sharding", "outcome": "skipped", "message": "Skipped: Requires >=4 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_make_mesh_non_int_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_mixed_inputs", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_most_recent_executable_outer_inner_cache", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_mpmd_device_put_fast_path", "outcome": "skipped", "message": "Skipped: Needs >= 4 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_multi_device_pjit_mul", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_mutable_array_closed_over_multi_device", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_nested_pjit_closing_over_const_top_level_and_tracer", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_nested_pjit_closing_over_top_level_const", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_nested_pjit_closing_over_tracer", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_new_static_argnum_on_keyword_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_new_static_argnum_with_default_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_no_input_output", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_no_output_multiple_devices", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_none_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_nullary_out_sharding_partial", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_numpy_array_input", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_numpy_array_input_assume_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_out_sharding_indices_id_cache_hit", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_parameter_tupled_jit", "outcome": "skipped", "message": "Skipped: Parameters are tupled only on TPU if >2000 parameters"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_partial_sharded_prng_key_inp", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_multi_input_multi_output_mesh1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_multi_input_multi_output_mesh2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_multi_input_multi_output_mesh3", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_same_sharding_aot", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_single_output_fully_replicated_output", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_single_output_fully_sharded_output", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_single_output_with_mesh_context_manager_fully_replicated_output", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_single_output_with_mesh_context_manager_fully_sharded_output", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_committed_array_different_devices", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_committed_array_different_devices_variadic_args", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_device_backend_axis_resources_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_device_backend_both_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_different_default_device", "outcome": "skipped", "message": "Skipped: Test requires more >1 device."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_different_device_recompilation", "outcome": "skipped", "message": "Skipped: Requires 2 or more devices."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_disable_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_function_cache_cpp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_inline", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_inline_literal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_keep_unused_default_false", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_keep_unused_true", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_kwargs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_kwargs_axis_resources_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_mesh_with_device_or_backend_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_mixed_device_cache_miss", "outcome": "skipped", "message": "Skipped: Only a bug on TPU."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_nested_uncommitted_output", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_no_global_cache_hit_axis_resources", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_on_different_default_device_with_uncommitted_inputs", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_out_sharding_preserved", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_pytree_inp_device_assignment_mismatch", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_relayout_multi_slice", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_sin_nested", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_single_device_sharding_add", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_single_device_sharding_cache", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_single_device_sharding_mul", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_uncommitted_array_and_committed_array", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_uncommitted_array_in_axis_resources_reshard", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_uncommitted_array_multi_devices", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_uncommitted_array_reshard", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_backend_arg", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_device_arg", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_device_arg_input_from_another_pjit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_mismatched_static_argnames", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_static_argnames", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_static_argnames_cpp_dispatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pmap_pjit_axis_index", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pmap_sharding_input_pjit_in_axis_resources", "outcome": "skipped", "message": "Skipped: Requires at least 4 devices."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pmap_sharding_input_to_pjit_multi_device", "outcome": "skipped", "message": "Skipped: Requires at least 4 devices."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pmap_sharding_input_to_pjit_single_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_prng_key_wsc", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_prng_key_wsc_multi_axes_sharding", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_prng_sharding_propagation", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_prng_sharding_propagation_with_nested_jit", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_same_named_sharding_pspec_on_eager_ops", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_same_out_sharding_id", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_full_like", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_incompatible_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_input_to_zeros_like_propagates_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_pspec_input", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_pspec_no_mesh_ctx_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_update", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_set_mesh_none_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_shape_dtype_struct_as_const_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sharding_on_output_with_vmap", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sharding_preserved_apply_primitive", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_add_single_compile", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_lowering_cache_hit_diff_devices", "outcome": "skipped", "message": "Skipped: Requires device_count() >= 2"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_named_sharding_preserved", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_pjit_cpp_dispatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_sharding_preserved", "outcome": "skipped", "message": "Skipped: Test requires >=2 devices"}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_spmd_preserves_input_sharding_vmap_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_threefry_partitionable_context_within_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_to_gspmd_sharding_cache_with_and_without_device", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_trivial_computation", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_trivial_computation_with_replicated_literal", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_trivial_computation_with_sharded_const", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_trivial_computation_with_sharded_const_using_transposed_mesh", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_uneven_sharding_wsc", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_unspecified_out_axis_resources", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_vmap_of_jvp_pjit_no_axis_resources", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_vmap_of_jvp_pjit_no_axis_resources_2d", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_vmap_pjit_single_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_vmap_spmd_axis_name_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_with_sharding_constraint_jit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_with_sharding_constraint_pjit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_with_sharding_constraint_spmd_axis_name", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_with_sharding_constraint_with_two_meshes", "outcome": "skipped", "message": "Skipped: Requires more than 4 devices."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_abstract_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_abstract_mesh_errors", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_aval_cache_hit", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_aval_diff_shardings", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_eager", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_eager_copy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_eager_different_order_devices", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_error_on_none", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_named_sharding_nullary", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_sds_abstract_mesh", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_vmap_abstract_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_vmap_unconstrained_spmd_axis_name", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_with_scalar", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_changing_names_sizes", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_changing_names_sizes_auto_mode", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_changing_names_sizes_grad", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_context_mismatch_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_context_trace", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_add_transpose", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_add_unreduced_error_add", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_add_unreduced_error_sub", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_argminmax", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_argsort_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_at_add_lower_to_scatter_add", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_computation_follows_data", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_inside_scan", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_late_bind", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_no_context_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_no_op", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_numpy_array", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_single_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_top_level", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_gather_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_mode_mix", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_mode_mix_dual_sharded_output", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_mode_mix_repeat", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_mode_no_context_mesh", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_user", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_aval_repr", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_aval_spec_explicit_auto_complete", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_axes_api_error_manual_to_auto_explicit", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_basic_mul", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bincount", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type4", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type5", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type7", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type8", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type9", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_both_inputs_reduced_add", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_both_inputs_reduced_mul", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_both_inputs_reduced_sub", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_forwarding", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_in_dim_-1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_in_dim_0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_in_dim_1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_in_dim_2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_like", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_reduced_inp_unreduced_out", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_to", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_transpose_unit_dims", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcasted_iota_mix_axes", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcasted_iota_with_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcasting_nary_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_c64_to_f32_view_rountrip", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cet_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_changing_abstract_device", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_compilation_cache_miss_when_devices_change", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_concat_reduced_split_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_concat_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_concat_vmap", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_concatenate", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cond_fori_reduced_fwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cond_lowering_constraint", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_config_remove_size_one_mesh_axis_roundtrip", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_conv_general_dilated", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_convert_element_type_vmap", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cumsum", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cumsum_sharded", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_different_dst_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_no_set_mesh_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_set_mesh", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_typeof", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_under_set_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_unreduced_via_jit", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_unreduced_via_runtime_transfer", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_div_reduced_fwd_unreduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_div_unreduced_fwd_reduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_divisbility_aval_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_batch_dims_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_empty_mesh_lhs_rhs", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_batch_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_contracting2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_error_contracting1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_error_fail1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_error_fail2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_error_other_half_tp", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_fsdp", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_half_tp", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_out_sharding0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_out_sharding1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_unreduced_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_vmap0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_vmap1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_x_None", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_x_y", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_lhs_rhs_mesh_empty", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_unreduced_max_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dynamic_slice", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dynamic_update_slice", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dynamic_update_slice_transpose", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_einsum_inverse", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_einsum_unreduced_with_transpose", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_einsum_with_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_error_on_canonicalize_under_auto_mode", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_eval_shape", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_eval_shape_jitted_fun_cache_hit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_axes_late_bind", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_axes_top_level", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_complex", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_complex_grad", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_ctx_vmap_over_auto_axes", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_mode_no_context_mesh", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_extended_dtypes", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_fold_in", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_fold_in_auto_different_meshes", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_auto_outside_jit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_auto_to_full_user", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_auto_to_partial_user", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_explicit_mode", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_like_eager_non_concrete_sharding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_user_to_auto_user_mix", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_user_to_full_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_visible_outside_jit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_fully_replicated_array_mul", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_fully_replicated_reshape", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_reduced_fwd_unreduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_replicated", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_sharded", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_sharding_rule", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_transpose_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_transpose_sharded", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_with_full_slice_in_index_start_map", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_grad_conv_general_dilated", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_he_normal", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_histogram_flattened_multi_axis_sharding_error", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_histogram_sharded_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_identity_jit_out_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_and_out_unreduced_Rx,Uy", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_and_out_unreduced_Sx,Uy", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_and_out_unreduced_Sx,Uy,Rz", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_and_out_unreduced_Ux", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_aval_matches_in_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_index_update", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_indices_sharded_gather_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_inputs_different_context", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_integer_pow_2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_integer_pow_3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_integer_pow_4", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_intermediate_einsum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_intermediate_einsum_auto_complete_spec", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_intermediate_einsum_conflict_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jacfwd_sharded_broadcast", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jacrev_sharded_broadcast", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_arange_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_array", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_array_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_dot", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_full", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_like_functions", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_matmul", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_matmul_out_sharding_3d", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_matmul_out_sharding_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_ones_mesh_context_eager", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_ones_mesh_ctx_aval", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_pad_reflect", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_ravel", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_repeat", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_repeat_arraylike", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_reshape_order_F", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_roll", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_tensordot", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_zeros_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_zeros_out_sharding_partial_manual_unreduced_reduced", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_map", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_map_batch_size_greater_than_input", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_map_remainder", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_switch_vmap", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_switch_vmap_random", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_transpose_rule", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_linalg_slogdet_and_solve", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_map", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_random", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_random_no_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_repeat", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_repeat_no_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_scatter_gather", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_microbatch_vmap_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_minibatch_scan_unreduced_custom_vjp", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_minibatch_scan_unreduced_grad", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mix_axis_type_in_pspec", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mix_to_full_user_mode", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mul_reduced_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mul_vmap0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mul_vmap1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_multi_einsum_intermediate_einsum_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_nary_op_input_constraint", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_ndim_less_than_pspec_length_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_neg_and_sub_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_nn_constant", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_nn_uniform", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_allowed", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden10", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden11", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden12", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden13", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden14", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden4", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden5", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden7", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden8", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden9", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad4", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad5", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel4", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel5", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_op_auto_axes_no_mesh", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_op_broadcast_except_for_sharding_change", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_hot_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_reduced_another_replicated_add", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_reduced_another_replicated_mul", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_reduced_another_replicated_sub", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_sharded_another_reduced_add", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_sharded_another_reduced_mul", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_sharded_another_reduced_sub", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_only_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_out_aval_auto_mode", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_out_aval_matches_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_out_aval_matches_out_sharding_override", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_out_sharding_mix_axis_types", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_output_different_context_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_pad", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_percentile", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_pspec_einsum_no_context_mesh", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_bernoulli", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_bits", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_gumbel", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_normal", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_permutation_1d", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_permutation_2d", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_randint", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_uniform", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_normal_wo_mesh_context", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_normal_wo_mesh_context_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_truncated_normal", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_rbg_impl_none_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_all", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_first", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_first2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_min_unreduced_basic_max", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_min_unreduced_basic_min", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_min_unreduced_complex_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_min_unreduced_complex_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_reduced_reshard", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_reduced_shmap", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_second", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_second2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_unreduced_partial_reduction", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_unreduced_reduce_scatter", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_precision", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_all", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_first", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_first2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_scalar_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_second", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_second2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh4", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh5", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_window_spec1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_window_spec2", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_window_spec3", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_window_spec4", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_at_get_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_mul_scalar_fwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_reshard_unreduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_reshard_unreduced_bwd_sharded", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_sin_fwd_mul_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_remat_reduced_transpose", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_remove_size_one_mesh_axis_1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_remove_size_one_mesh_axis_2", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_remove_size_one_mesh_axis_3", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip10", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip11", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip12", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip13", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip14", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip15", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip2", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip3", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip4", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip5", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip6", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip7", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip8", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip9", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape10", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape11", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape12", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape13", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape14", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape15", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape16", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape17", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape18", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape19", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape2", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape20", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape21", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape22", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape23", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape24", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape25", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape3", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape4", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape5", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape6", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape7", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape8", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape9", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes2", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes3", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes4", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_replicated_mesh1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_replicated_mesh2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_preserve_singleton_dim_spec", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_reduced_fwd_unreduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_error0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_error1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis10", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis11", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis12", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis13", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis14", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis15", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis16", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis17", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis18", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis19", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis20", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis21", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis22", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis4", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis5", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis7", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis8", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis9", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes2", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes3", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes4", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_unreduced_fwd_reduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_unreduced_out_sharding_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_vmap", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_api", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_eager_mode", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_no_mesh_ctx", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_on_scalar_reduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_replicated_to_sharded_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_rng_keys", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_rng_keys_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_unreduced_max_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_with_np_array", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_zero_cotangent", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_return_output_different_context", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_rng_bit_generator", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scalar_to_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_carry_shardings_diff_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_over_layers_minibatch_unreduced_custom_vjp", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_over_layers_minibatch_unreduced_grad", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_unroll", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_with_random_key_inside_jit", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_bool_index", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_gather", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_jit_invariant", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_add", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_dynamic_update_slice_in_dim", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_mul", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_set", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_add", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_dynamic_update_slice_in_dim", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_mul", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_set", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_unreduced_fwd_reduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sds_closed_over_to_zeros_like_propagates_sharding_jit", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_segment_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_segment_prod", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_segment_sum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_select", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_select_batch", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_select_reduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_select_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_set_mesh", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_set_mesh_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_set_mesh_none", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shaped_array_input_to_jit_no_sharding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shard_map_dot", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shard_map_full_manual", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip4", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip5", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip7", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shit_vmap_error_check0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shit_vmap_error_check1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shmap_close_over", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shmap_close_over_partial_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sin_unop", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_singleton_explicit_axis_multi_auto_axes", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_slice", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_slice_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_slice_reduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_slice_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sort_grad", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sparse_linalg_cg_indexing", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_split", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_split_reduced_concat_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_split_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_spmd_axis_name_explicit_mode_assert0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_spmd_axis_name_explicit_mode_assert1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_spmd_axis_name_explicit_mode_assert_remove_one_size0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_spmd_axis_name_explicit_mode_assert_remove_one_size1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_squeeze", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_stack", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sub_custom_jvp", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_svd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_three_operand_einsum_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_tile", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_to_pinned_host_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_basic", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi2", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi3", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi4", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi5", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi6", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi7", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_no_one_size_mesh_axis", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_topk", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_trace_cache_hit_default_abs_mesh_ctx", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_triangular_solve_vmap", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_triu_tril", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_typeof_not_mesh_context_dependent", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unmapped_last_vmap", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_add_jaxvals", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_einsum_add_basic", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_einsum_basic", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_einsum_lowers_to_reduce_sum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_input_to_jit_Rx,Uy", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_input_to_jit_Sx,Uy", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_input_to_jit_Sx,Uy,Rz", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_input_to_jit_Ux", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_is_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_concat_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_concat_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_dynamic_update_slice_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_dynamic_update_slice_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_reshape_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_reshape_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_slice_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_slice_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_squeeze_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_squeeze_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_transpose_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_transpose_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_mul_scalar_fwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_multi_axes_einsum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_multi_axes_none_einsum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_multi_axes_reduce_sum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_output_from_jit_Rx,Uy", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_output_from_jit_Sx,Uy", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_output_from_jit_Sx,Uy,Rz", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_output_from_jit_Ux", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unstack", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_use_abstract_mesh_override", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_user_auto_mix_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vjp_unreduced_zeros", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_conv_general_dilated", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_dot_out_sharding_hessian", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_grad_axis_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_grad_cet_dot", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_grad_sharded_gather", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_mapped_input_sharding_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_random_categorical_sample", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_select_const_broadcast", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_spmd_axis_name_explicit_axes_inside", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_vjp_complex_explicit_mode", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_where_vmap", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_where_with_prng_sharded_inp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_where_with_scalar", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_wsc_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_wsc_mix_axis_types", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_wsc_pspec_set_mesh0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_wsc_pspec_set_mesh1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_xla_metadata_applied_to_op", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testAxisResourcesMismatch", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testEmptyMesh", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNestedDifferentResources", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleArgs_2", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleArgs_2x1", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleArgs_2x2", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleOuts_2", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleOuts_2x1", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleOuts_2x2", "outcome": "skipped", "message": "Skipped: Test requires 4 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testOutShardingsMismatchShowsAllDetails", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRankTooLowArgs", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRankTooLowArgsAxisResourcesNone", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRankTooLowConstraint", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRankTooLowOuts", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRepeatedInResources", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRepeatedOutResources", "outcome": "skipped", "message": "Skipped: Test requires 2 local devices"}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesArgs_2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesArgs_2x1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesArgs_2x2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesConstraint_2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesConstraint_2x1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesConstraint_2x2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesOuts_2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesOuts_2x1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesOuts_2x2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_aot_error_on_dced_avals_mismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_compiled_with_deleted_input", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_dce_no_array", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_named_sharding_of_none", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pjit_with_deleted_input_at_first_call_committed", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pjit_with_deleted_input_at_first_call_uncommitted", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pjit_with_deleted_input_at_subsequent_call_committed", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pjit_with_deleted_input_at_subsequent_call_uncommitted", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pspec_to_wsc_without_mesh", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::testOpShardingRoundTrip", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_array_mapping_to_axis_resources_combine", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_array_mapping_to_axis_resources_linear", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_array_mapping_to_axis_resources_multi_skip", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_array_mapping_to_axis_resources_skip", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_compile_after_trace_and_lower_on_abstract_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_device_indices_cache", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_get_intermediate_shardings", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_get_partition_spec", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_hlo_sharding_iota_tile_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_hlo_sharding_manual_replicated", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_hlo_sharding_with_device_ordering", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_mesh_with_list_devices", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_mesh_with_string_axis_names", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_cache_on_mesh_pspec_sharding", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_equality_and_hash_equality", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_manual_replicated", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_partial_sharding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_semantically_replicated", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_tuple_shardings", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_pjit_function_cache_explicit_mutation_during_lookup", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_sharded_in_place_assignment", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}

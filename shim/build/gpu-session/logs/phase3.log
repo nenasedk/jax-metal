@@ -1,0 +1,59 @@
+$ /Users/nasedkin/jax_metal/shim/../.venv-shim/bin/python /Users/nasedkin/jax_metal/shim/tests/test_phase3.py
+Platform 'METAL' is experimental and not all JAX functionality may be correctly supported!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793040138.187334 1107797 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+Metal device set to: Apple M3
+I0000 00:00:1793040138.202388 1107797 service.cc:145] XLA service 0x600000eeb200 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793040138.202403 1107797 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793040138.203536 1107797 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793040138.203549 1107797 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+/Users/nasedkin/jax_metal/shim/tests/test_phase3.py:86: RuntimeWarning: overflow encountered in cast
+  values.astype(np.float16), exact=True)
+/Users/nasedkin/jax_metal/shim/tests/test_phase3.py:94: RuntimeWarning: overflow encountered in cast
+  values.astype(np.float16), exact=True)
+PASS cholesky 6x6 
+PASS cholesky batched 3x4x6x6 
+PASS cholesky 32x32 
+PASS triangular_solve left=True lower=True transpose=True unit=True 
+PASS triangular_solve left=True lower=True transpose=True unit=False 
+PASS triangular_solve left=True lower=True transpose=False unit=True 
+PASS triangular_solve left=True lower=True transpose=False unit=False 
+PASS triangular_solve left=True lower=False transpose=True unit=True 
+PASS triangular_solve left=True lower=False transpose=True unit=False 
+PASS triangular_solve left=True lower=False transpose=False unit=True 
+PASS triangular_solve left=True lower=False transpose=False unit=False 
+PASS triangular_solve left=False lower=True transpose=True unit=True 
+PASS triangular_solve left=False lower=True transpose=True unit=False 
+PASS triangular_solve left=False lower=True transpose=False unit=True 
+PASS triangular_solve left=False lower=True transpose=False unit=False 
+PASS triangular_solve left=False lower=False transpose=True unit=True 
+PASS triangular_solve left=False lower=False transpose=True unit=False 
+PASS triangular_solve left=False lower=False transpose=False unit=True 
+PASS triangular_solve left=False lower=False transpose=False unit=False 
+PASS linalg.solve 
+PASS linalg.inv 
+PASS cho_solve 
+PASS grad through solve 
+PASS reduce_precision e5 m10 
+PASS reduce_precision e8 m7 
+PASS reduce_precision e4 m3 
+PASS reduce_precision e5 m2 
+PASS reduce_precision e8 m23 
+PASS reduce_precision e6 m0 
+PASS reduce_precision on float16 input 
+PASS f32 -> bf16 -> f32 round trip 
+PASS bf16 output buffer 
+PASS f16 -> bf16 -> f32 
+PASS bf16 -> f32 subnormals and specials 
+PASS bf16 -> f16 and int32 -> bf16 
+PASS bf16 arithmetic 
+PASS bf16 transcendental (1 bf16 ulp) 
+PASS bf16 matmul inputs 
+PASS rbg PRNG mean 0.498, unique u8 250, unique u16 1016
+
+0 failure(s): none
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793040141.767849 1107797 mps_client.h:209] MetalClient destroyed.

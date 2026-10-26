@@ -1,0 +1,888 @@
+{"nodeid": "tests/pjit_test.py::PJitTest::testAutodiffCache", "seconds": 0.023, "before_mb": 98, "peak_mb": 98}
+{"nodeid": "tests/pjit_test.py::PJitTest::testAutodiff_2", "seconds": 0.013, "before_mb": 98, "peak_mb": 98}
+{"nodeid": "tests/pjit_test.py::PJitTest::testAutodiff_2x1", "seconds": 0.01, "before_mb": 98, "peak_mb": 98}
+{"nodeid": "tests/pjit_test.py::PJitTest::testAutodiff_2x2", "seconds": 0.007, "before_mb": 98, "peak_mb": 98}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBasic1D", "seconds": 0.008, "before_mb": 98, "peak_mb": 98}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBasic1DWithMeshContextManager", "seconds": 0.011, "before_mb": 98, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBasic2D", "seconds": 0.013, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonation", "seconds": 0.009, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationDifferentIOShapes", "seconds": 0.012, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationNotDonated", "seconds": 0.009, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithKwargs", "seconds": 0.01, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithNames", "seconds": 0.01, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithOutputShardingInference", "seconds": 0.01, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithOutputShardingInferenceAndTokens", "seconds": 0.009, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testBufferDonationWithPyTreeKwargs", "seconds": 0.011, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testCaching", "seconds": 0.011, "before_mb": 99, "peak_mb": 99}
+{"nodeid": "tests/pjit_test.py::PJitTest::testDeviceBufferAval", "seconds": 0.266, "before_mb": 99, "peak_mb": 171}
+{"nodeid": "tests/pjit_test.py::PJitTest::testDifferentNestedMesh", "seconds": 0.015, "before_mb": 171, "peak_mb": 171}
+{"nodeid": "tests/pjit_test.py::PJitTest::testEvalJaxpr", "seconds": 0.018, "before_mb": 171, "peak_mb": 171}
+{"nodeid": "tests/pjit_test.py::PJitTest::testGradOfConstraint", "seconds": 0.01, "before_mb": 171, "peak_mb": 171}
+{"nodeid": "tests/pjit_test.py::PJitTest::testJitOfPjitDisallowed", "seconds": 0.013, "before_mb": 171, "peak_mb": 171}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerAsText", "seconds": 0.008, "before_mb": 171, "peak_mb": 171}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompile", "seconds": 0.015, "before_mb": 171, "peak_mb": 171}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileArgTypeMismatch", "seconds": 0.008, "before_mb": 171, "peak_mb": 171}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileAsText", "seconds": 0.014, "before_mb": 171, "peak_mb": 171}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileCompilerIR", "seconds": 0.01, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileCostAnalysis", "seconds": 0.013, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileExecutable", "seconds": 0.011, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileInTreeMismatch", "seconds": 0.015, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileMemoryAnalysis", "seconds": 0.009, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileWithAvals", "seconds": 0.011, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompileWithKwargs", "seconds": 0.009, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCompilerIR", "seconds": 0.011, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerCostAnalysis", "seconds": 0.007, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerDonateArgnumsAvailable", "seconds": 0.01, "before_mb": 172, "peak_mb": 172}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerDonateArgnumsAvailableWithNames", "seconds": 0.021, "before_mb": 172, "peak_mb": 173}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerPartitionsAttribute", "seconds": 0.024, "before_mb": 173, "peak_mb": 173}
+{"nodeid": "tests/pjit_test.py::PJitTest::testLowerWithDuckTyping", "seconds": 0.018, "before_mb": 173, "peak_mb": 174}
+{"nodeid": "tests/pjit_test.py::PJitTest::testMeshDecorator", "seconds": 0.041, "before_mb": 174, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testMeshHashRace", "seconds": 0.206, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testNested", "seconds": 0.026, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testNonArrayArg", "seconds": 0.013, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testNonHashableAxisResources", "seconds": 0.018, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testNoopPartitionSpecs", "seconds": 0.01, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testSameNestedMesh", "seconds": 0.009, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintPyTreeVmapWithUnconstrainedDims", "seconds": 0.013, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintPyTreeWithArray", "seconds": 0.01, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintPyTreeWithUnconstrainedDimsWithJit", "seconds": 0.012, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintStablehlo", "seconds": 0.01, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testShardingConstraintWithArray", "seconds": 0.01, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testTwoMeshAxisSharding", "seconds": 0.009, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testUnevenShardingConstraint", "seconds": 0.017, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testVMap", "seconds": 0.011, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testVMapShardingConstraint", "seconds": 0.01, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testVMapShardingConstraintWithSpmdAxis", "seconds": 0.009, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::testWithCustomPRNGKey", "seconds": 0.008, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_cache_bug", "seconds": 0.018, "before_mb": 175, "peak_mb": 175}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_concurrent_pjit", "seconds": 0.459, "before_mb": 175, "peak_mb": 203}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_device_put_copy_donate", "seconds": 0.282, "before_mb": 203, "peak_mb": 230}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_jax_set_mesh_trace_only_once", "seconds": 0.023, "before_mb": 230, "peak_mb": 230}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_local_sharded_key_array_sda", "seconds": 0.008, "before_mb": 230, "peak_mb": 230}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_lower_with_wrapper_error", "seconds": 0.022, "before_mb": 230, "peak_mb": 230}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print", "seconds": 0.021, "before_mb": 230, "peak_mb": 231}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_html", "seconds": 0.014, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_large_inner_jaxpr_inline", "seconds": 0.039, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_nested_shared_jaxprs", "seconds": 0.013, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_pjit_id", "seconds": 0.02, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_aliased_args", "seconds": 0.01, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_closure", "seconds": 0.02, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_constant_pjit_arg", "seconds": 0.009, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_literal_outvar", "seconds": 0.008, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_pretty_print_with_name_clash", "seconds": 0.024, "before_mb": 231, "peak_mb": 232}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_static_argnums", "seconds": 0.006, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_with_sharding_constraint_is_compatible_error", "seconds": 0.014, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_with_sharding_constraint_vmap_spmd_axis_name_error", "seconds": 0.006, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/pjit_test.py::PJitTest::test_zero_literal_equality", "seconds": 0.113, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::testLowerCompileWithStaticArguments", "seconds": 0.008, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_device", "seconds": 0.008, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_lower_real_dev_compile", "seconds": 0.006, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_lower_real_dev_compile_single_device", "seconds": 0.202, "before_mb": 232, "peak_mb": 234}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_mesh_lower", "seconds": 0.015, "before_mb": 234, "peak_mb": 234}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_mesh_lower_same_size_different_axis_name", "seconds": 0.015, "before_mb": 234, "peak_mb": 234}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_abstract_mesh_top_level", "seconds": 0.016, "before_mb": 234, "peak_mb": 235}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_compile_in_tree_mismatch", "seconds": 0.028, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_device_implicit_transfer", "seconds": 0.019, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_device_mismatch", "seconds": 0.013, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_devices_to_compile", "seconds": 0.024, "before_mb": 235, "peak_mb": 233}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_devices_to_compile_error", "seconds": 0.01, "before_mb": 233, "peak_mb": 233}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_nested_pjit_closing_over_const_top_level", "seconds": 0.11, "before_mb": 233, "peak_mb": 235}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_aot_sharding_dce", "seconds": 0.018, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_device_assignment_mismatch_in_and_out_shardings", "seconds": 0.143, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_device_assignment_mismatch_out_shardings", "seconds": 0.018, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_device_assignment_mismatch_with_mesh", "seconds": 0.015, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_enabled_non_empty_mesh_with_pspec", "seconds": 0.065, "before_mb": 235, "peak_mb": 236}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_array_lower_compile", "seconds": 0.014, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_autodiff_with_device_arg", "seconds": 0.02, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_autodiff_with_single_device_sharding", "seconds": 1.422, "before_mb": 236, "peak_mb": 259}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_cache_hit_pjit_lower_with_cpp_cache_miss", "seconds": 0.034, "before_mb": 259, "peak_mb": 259}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_cache_miss_explanations_sharding_mismatch", "seconds": 0.017, "before_mb": 259, "peak_mb": 259}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_check_arg_error", "seconds": 0.02, "before_mb": 259, "peak_mb": 260}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_closed_constants_at_top_level", "seconds": 0.014, "before_mb": 260, "peak_mb": 260}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_closed_over_constant_diff_sharding", "seconds": 0.01, "before_mb": 260, "peak_mb": 260}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_compiled_out_info", "seconds": 0.008, "before_mb": 260, "peak_mb": 260}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_compiler_options_nested_jit_error", "seconds": 0.021, "before_mb": 260, "peak_mb": 261}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_convert_element_type_sharding", "seconds": 0.021, "before_mb": 261, "peak_mb": 261}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_cpu_bfloat16_to_tpu", "seconds": 0.164, "before_mb": 261, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_assignment_mismatch_apply_primitive", "seconds": 0.015, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_donate_pytree", "seconds": 0.01, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_efficient_reshard_complex_mesh_8_2", "seconds": 0.01, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_efficient_reshard_complex_mesh_8_384", "seconds": 0.007, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_efficient_reshard_single_host", "seconds": 0.025, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_grad", "seconds": 0.01, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_in_jit_default_mem_kind_no_op", "seconds": 0.026, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_on_different_sharding", "seconds": 0.011, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_sharding_nondivisible_sharding_error", "seconds": 0.023, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_device_put_sharding_prng", "seconds": 0.011, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_different_devices_wsc_abstract_mesh_cache_hit", "seconds": 0.009, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_different_named_sharding_object_replicated", "seconds": 0.01, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_empty_io_callback_under_shard_map", "seconds": 0.012, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_empty_io_callback_under_shard_map_reshard_to_singledev", "seconds": 0.017, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_empty_mesh_to_out_sharding", "seconds": 0.01, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_fast_path_array", "seconds": 0.018, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_global_array_to_host_local_array_already_host_local", "seconds": 0.008, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_global_jit_cpp_cache_hit_out_shardings", "seconds": 0.009, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_globally_sharded_key_array_8x4_multi_device", "seconds": 0.009, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_globally_sharded_key_array_8x4_multi_device_with_out_sharding", "seconds": 0.015, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_globally_sharded_key_array_result_8x4_single_device", "seconds": 0.076, "before_mb": 262, "peak_mb": 265}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_grad_of_pjit_single_device_sharding", "seconds": 0.11, "before_mb": 265, "peak_mb": 270}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_in_axis_resources_mismatch_error", "seconds": 0.026, "before_mb": 270, "peak_mb": 270}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_in_axis_resources_same_as_array_sharding", "seconds": 0.028, "before_mb": 270, "peak_mb": 270}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_in_out_shardings_unconstrained_error", "seconds": 0.039, "before_mb": 270, "peak_mb": 270}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_input_shardings_aot", "seconds": 0.016, "before_mb": 270, "peak_mb": 270}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_input_shardings_single_device", "seconds": 0.029, "before_mb": 270, "peak_mb": 271}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jaxpr_as_fun_fast_path", "seconds": 0.115, "before_mb": 271, "peak_mb": 272}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_both_shardings_none", "seconds": 0.017, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_cpp_cache_obj_config", "seconds": 0.087, "before_mb": 272, "peak_mb": 276}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_device_with_sharding_constraint_error", "seconds": 0.011, "before_mb": 276, "peak_mb": 276}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_in_shardings_none", "seconds": 0.008, "before_mb": 276, "peak_mb": 276}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_lower_shape_dtype_struct_sharding_none", "seconds": 0.022, "before_mb": 276, "peak_mb": 276}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_mul_sum_sharding_preserved", "seconds": 0.01, "before_mb": 276, "peak_mb": 276}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_no_forwarding", "seconds": 0.017, "before_mb": 274, "peak_mb": 274}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_out_shardings_none", "seconds": 0.006, "before_mb": 274, "peak_mb": 274}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_out_shardings_unconstrained", "seconds": 0.008, "before_mb": 274, "peak_mb": 274}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_partially_specified_shardings", "seconds": 0.006, "before_mb": 274, "peak_mb": 274}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_static_argnames_non_interned", "seconds": 0.016, "before_mb": 274, "peak_mb": 275}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_submhlo_cached", "seconds": 0.048, "before_mb": 275, "peak_mb": 276}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_token_input", "seconds": 0.481, "before_mb": 276, "peak_mb": 310}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_trace", "seconds": 0.02, "before_mb": 310, "peak_mb": 310}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_trace_lower_and_compile", "seconds": 0.038, "before_mb": 310, "peak_mb": 310}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_with_mesh_context_manager", "seconds": 0.024, "before_mb": 310, "peak_mb": 314}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_with_sharding_constraint_committed_inp_error", "seconds": 0.028, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_arange_concrete_sharding", "seconds": 0.013, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_array_inside_jit_sharding", "seconds": 0.016, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_array_reshard_error", "seconds": 0.008, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_array_sharded_array_no_op", "seconds": 0.01, "before_mb": 314, "peak_mb": 313}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jnp_array_sharding", "seconds": 0.008, "before_mb": 313, "peak_mb": 313}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_list_in_pspec", "seconds": 0.009, "before_mb": 313, "peak_mb": 313}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowered_out_info", "seconds": 0.169, "before_mb": 313, "peak_mb": 313}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowered_out_info_mesh", "seconds": 0.013, "before_mb": 313, "peak_mb": 313}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_different_devices", "seconds": 0.026, "before_mb": 313, "peak_mb": 313}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_inputs_with_different_mesh", "seconds": 0.02, "before_mb": 313, "peak_mb": 314}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_jit_hoist", "seconds": 0.112, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_jit_no_hoist", "seconds": 0.026, "before_mb": 314, "peak_mb": 315}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_scan_hoist", "seconds": 0.009, "before_mb": 315, "peak_mb": 315}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_scan_no_hoist", "seconds": 0.064, "before_mb": 315, "peak_mb": 320}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_hit_with_closed_over_constants_sharded", "seconds": 0.011, "before_mb": 320, "peak_mb": 320}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_lowering_cache_miss_different_devices_and_sharding", "seconds": 0.008, "before_mb": 320, "peak_mb": 320}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_make_mesh_non_int_error", "seconds": 0.016, "before_mb": 320, "peak_mb": 320}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_mixed_inputs", "seconds": 0.013, "before_mb": 320, "peak_mb": 320}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_most_recent_executable_outer_inner_cache", "seconds": 0.054, "before_mb": 320, "peak_mb": 326}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_mpmd_device_put_fast_path", "seconds": 0.012, "before_mb": 326, "peak_mb": 326}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_multi_device_pjit_mul", "seconds": 0.008, "before_mb": 326, "peak_mb": 326}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_mutable_array_closed_over_multi_device", "seconds": 0.008, "before_mb": 326, "peak_mb": 326}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_nested_pjit_closing_over_const_top_level_and_tracer", "seconds": 0.083, "before_mb": 326, "peak_mb": 327}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_nested_pjit_closing_over_top_level_const", "seconds": 0.05, "before_mb": 327, "peak_mb": 328}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_nested_pjit_closing_over_tracer", "seconds": 0.068, "before_mb": 328, "peak_mb": 328}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_new_static_argnum_on_keyword_arguments", "seconds": 0.038, "before_mb": 328, "peak_mb": 329}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_new_static_argnum_with_default_arguments", "seconds": 0.026, "before_mb": 329, "peak_mb": 330}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_no_input_output", "seconds": 0.008, "before_mb": 330, "peak_mb": 330}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_no_output_multiple_devices", "seconds": 0.03, "before_mb": 330, "peak_mb": 330}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_none_out_sharding", "seconds": 0.009, "before_mb": 330, "peak_mb": 330}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_nullary_out_sharding_partial", "seconds": 0.033, "before_mb": 330, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_numpy_array_input", "seconds": 0.007, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_numpy_array_input_assume_fully_replicated", "seconds": 0.007, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_out_sharding_indices_id_cache_hit", "seconds": 0.019, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_parameter_tupled_jit", "seconds": 0.009, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_partial_sharded_prng_key_inp", "seconds": 0.136, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_multi_input_multi_output_mesh1", "seconds": 0.011, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_multi_input_multi_output_mesh2", "seconds": 0.018, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_multi_input_multi_output_mesh3", "seconds": 0.018, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_same_sharding_aot", "seconds": 0.011, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_single_output_fully_replicated_output", "seconds": 0.007, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_single_output_fully_sharded_output", "seconds": 0.011, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_single_output_with_mesh_context_manager_fully_replicated_output", "seconds": 0.024, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_array_single_output_with_mesh_context_manager_fully_sharded_output", "seconds": 0.015, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_committed_array_different_devices", "seconds": 0.013, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_committed_array_different_devices_variadic_args", "seconds": 0.012, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_device_backend_axis_resources_error", "seconds": 0.014, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_device_backend_both_error", "seconds": 0.006, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_different_default_device", "seconds": 0.011, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_different_device_recompilation", "seconds": 0.012, "before_mb": 331, "peak_mb": 331}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_disable_jit", "seconds": 0.03, "before_mb": 331, "peak_mb": 332}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_function_cache_cpp", "seconds": 0.052, "before_mb": 332, "peak_mb": 334}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_inline", "seconds": 0.016, "before_mb": 334, "peak_mb": 334}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_inline_literal", "seconds": 0.022, "before_mb": 334, "peak_mb": 334}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_keep_unused_default_false", "seconds": 0.288, "before_mb": 334, "peak_mb": 338}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_keep_unused_true", "seconds": 0.051, "before_mb": 338, "peak_mb": 337}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_kwargs", "seconds": 0.06, "before_mb": 337, "peak_mb": 339}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_kwargs_axis_resources_error", "seconds": 0.034, "before_mb": 339, "peak_mb": 339}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_mesh_with_device_or_backend_error", "seconds": 0.015, "before_mb": 339, "peak_mb": 339}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_mixed_device_cache_miss", "seconds": 0.053, "before_mb": 339, "peak_mb": 339}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_nested_uncommitted_output", "seconds": 0.031, "before_mb": 339, "peak_mb": 339}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_no_global_cache_hit_axis_resources", "seconds": 0.216, "before_mb": 339, "peak_mb": 353}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_on_different_default_device_with_uncommitted_inputs", "seconds": 0.183, "before_mb": 353, "peak_mb": 353}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_out_sharding_preserved", "seconds": 0.029, "before_mb": 353, "peak_mb": 353}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_pytree_inp_device_assignment_mismatch", "seconds": 0.025, "before_mb": 353, "peak_mb": 353}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_relayout_multi_slice", "seconds": 0.015, "before_mb": 353, "peak_mb": 353}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_sin_nested", "seconds": 0.015, "before_mb": 353, "peak_mb": 353}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_single_device_sharding_add", "seconds": 0.099, "before_mb": 353, "peak_mb": 355}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_single_device_sharding_cache", "seconds": 0.061, "before_mb": 355, "peak_mb": 356}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_single_device_sharding_mul", "seconds": 0.288, "before_mb": 356, "peak_mb": 360}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_uncommitted_array_and_committed_array", "seconds": 0.036, "before_mb": 360, "peak_mb": 361}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_uncommitted_array_in_axis_resources_reshard", "seconds": 0.016, "before_mb": 361, "peak_mb": 361}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_uncommitted_array_multi_devices", "seconds": 0.014, "before_mb": 361, "peak_mb": 361}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_uncommitted_array_reshard", "seconds": 0.054, "before_mb": 361, "peak_mb": 361}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_backend_arg", "seconds": 0.03, "before_mb": 361, "peak_mb": 361}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_device_arg", "seconds": 0.016, "before_mb": 361, "peak_mb": 361}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_device_arg_input_from_another_pjit", "seconds": 0.021, "before_mb": 361, "peak_mb": 361}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_mismatched_static_argnames", "seconds": 0.083, "before_mb": 361, "peak_mb": 365}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_static_argnames", "seconds": 0.069, "before_mb": 365, "peak_mb": 367}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pjit_with_static_argnames_cpp_dispatch", "seconds": 0.056, "before_mb": 367, "peak_mb": 368}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pmap_pjit_axis_index", "seconds": 0.049, "before_mb": 368, "peak_mb": 370}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pmap_sharding_input_pjit_in_axis_resources", "seconds": 0.01, "before_mb": 370, "peak_mb": 370}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pmap_sharding_input_to_pjit_multi_device", "seconds": 0.028, "before_mb": 370, "peak_mb": 370}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_pmap_sharding_input_to_pjit_single_device", "seconds": 0.095, "before_mb": 370, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_prng_key_wsc", "seconds": 0.02, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_prng_key_wsc_multi_axes_sharding", "seconds": 0.011, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_prng_sharding_propagation", "seconds": 0.016, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_prng_sharding_propagation_with_nested_jit", "seconds": 0.008, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_same_named_sharding_pspec_on_eager_ops", "seconds": 0.011, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_same_out_sharding_id", "seconds": 0.011, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_full_like", "seconds": 0.01, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_incompatible_sharding", "seconds": 0.015, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_input_to_zeros_like_propagates_sharding", "seconds": 0.009, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_pspec_input", "seconds": 0.009, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_pspec_no_mesh_ctx_error", "seconds": 0.014, "before_mb": 371, "peak_mb": 371}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sds_update", "seconds": 0.008, "before_mb": 371, "peak_mb": 371}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_set_mesh_none_out_sharding", "seconds": 0.015, "before_mb": 371, "peak_mb": 371}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_shape_dtype_struct_as_const_error", "seconds": 0.021, "before_mb": 371, "peak_mb": 371}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sharding_on_output_with_vmap", "seconds": 0.009, "before_mb": 371, "peak_mb": 371}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_sharding_preserved_apply_primitive", "seconds": 0.009, "before_mb": 371, "peak_mb": 371}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_add_single_compile", "seconds": 0.037, "before_mb": 371, "peak_mb": 372}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_lowering_cache_hit_diff_devices", "seconds": 0.008, "before_mb": 372, "peak_mb": 372}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_named_sharding_preserved", "seconds": 0.162, "before_mb": 372, "peak_mb": 373}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_pjit_cpp_dispatch", "seconds": 0.039, "before_mb": 373, "peak_mb": 388}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_single_device_sharding_preserved", "seconds": 0.006, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_spmd_preserves_input_sharding_vmap_grad", "seconds": 0.253, "before_mb": 388, "peak_mb": 393}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_threefry_partitionable_context_within_jit", "seconds": 0.744, "before_mb": 393, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_to_gspmd_sharding_cache_with_and_without_device", "seconds": 0.028, "before_mb": 417, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_trivial_computation", "seconds": 0.012, "before_mb": 417, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_trivial_computation_with_replicated_literal", "seconds": 0.01, "before_mb": 417, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_trivial_computation_with_sharded_const", "seconds": 0.01, "before_mb": 417, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_trivial_computation_with_sharded_const_using_transposed_mesh", "seconds": 0.008, "before_mb": 417, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_uneven_sharding_wsc", "seconds": 0.019, "before_mb": 417, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_unspecified_out_axis_resources", "seconds": 0.006, "before_mb": 417, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_vmap_of_jvp_pjit_no_axis_resources", "seconds": 0.011, "before_mb": 417, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_vmap_of_jvp_pjit_no_axis_resources_2d", "seconds": 0.006, "before_mb": 417, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_vmap_pjit_single_device", "seconds": 0.017, "before_mb": 417, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_vmap_spmd_axis_name_error", "seconds": 0.005, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_with_sharding_constraint_jit", "seconds": 0.005, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_with_sharding_constraint_pjit", "seconds": 0.015, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_with_sharding_constraint_spmd_axis_name", "seconds": 0.005, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_with_sharding_constraint_with_two_meshes", "seconds": 0.006, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_abstract_mesh", "seconds": 0.006, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_abstract_mesh_errors", "seconds": 0.006, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_aval_cache_hit", "seconds": 0.023, "before_mb": 418, "peak_mb": 417}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_aval_diff_shardings", "seconds": 0.029, "before_mb": 417, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_eager", "seconds": 0.015, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_eager_copy", "seconds": 0.024, "before_mb": 418, "peak_mb": 419}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_eager_different_order_devices", "seconds": 0.034, "before_mb": 419, "peak_mb": 419}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_error_on_none", "seconds": 0.017, "before_mb": 419, "peak_mb": 419}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_named_sharding_nullary", "seconds": 0.022, "before_mb": 419, "peak_mb": 419}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_sds_abstract_mesh", "seconds": 0.011, "before_mb": 419, "peak_mb": 419}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_vmap_abstract_mesh", "seconds": 0.014, "before_mb": 419, "peak_mb": 419}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_vmap_unconstrained_spmd_axis_name", "seconds": 0.067, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_wsc_with_scalar", "seconds": 0.014, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_changing_names_sizes", "seconds": 0.009, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_changing_names_sizes_auto_mode", "seconds": 0.011, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_changing_names_sizes_grad", "seconds": 0.008, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_context_mismatch_error", "seconds": 0.049, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_abstract_mesh_context_trace", "seconds": 0.042, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_add_transpose", "seconds": 0.012, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_add_unreduced_error_add", "seconds": 0.01, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_add_unreduced_error_sub", "seconds": 0.016, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_argminmax", "seconds": 0.01, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_argsort_error", "seconds": 0.015, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_at_add_lower_to_scatter_add", "seconds": 0.011, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_computation_follows_data", "seconds": 0.02, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_inside_scan", "seconds": 0.01, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_late_bind", "seconds": 0.022, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_no_context_mesh", "seconds": 0.009, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_no_op", "seconds": 0.115, "before_mb": 420, "peak_mb": 423}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_numpy_array", "seconds": 0.017, "before_mb": 423, "peak_mb": 423}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_single_device", "seconds": 0.183, "before_mb": 423, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_axes_top_level", "seconds": 0.012, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_gather_out_sharding", "seconds": 0.03, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_mode_mix", "seconds": 0.013, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_mode_mix_dual_sharded_output", "seconds": 0.007, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_mode_mix_repeat", "seconds": 0.033, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_mode_no_context_mesh", "seconds": 0.009, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_auto_user", "seconds": 0.014, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_aval_repr", "seconds": 0.013, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_aval_spec_explicit_auto_complete", "seconds": 0.011, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_axes_api_error_manual_to_auto_explicit", "seconds": 0.017, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_basic_mul", "seconds": 0.013, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bincount", "seconds": 0.018, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type0", "seconds": 0.018, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype=<class 'numpy.uint16'>, to_dtype=<class 'numpy.float16'>, shape_and_spec=((2,), P('x',)))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type1", "seconds": 0.011, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype='int4', to_dtype=<class 'numpy.float16'>, shape_and_spec=((), P()))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type2", "seconds": 0.012, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype=<class 'numpy.float32'>, to_dtype='uint4', shape_and_spec=((), P()))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type3", "seconds": 0.071, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype=<class 'numpy.uint32'>, to_dtype=<class 'numpy.int8'>, shape_and_spec=((2, 4), P('x', 'y')))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type4", "seconds": 0.019, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype=<class 'ml_dtypes.bfloat16'>, to_dtype=<class 'numpy.int8'>, shape_and_spec=((), P()))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type5", "seconds": 0.017, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype=<class 'numpy.int16'>, to_dtype=<class 'numpy.int8'>, shape_and_spec=((2,), P('x',)))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type6", "seconds": 0.01, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype=<class 'numpy.uint32'>, to_dtype=<class 'numpy.int16'>, shape_and_spec=((), P()))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type7", "seconds": 0.035, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype=<class 'numpy.uint16'>, to_dtype=<class 'numpy.uint32'>, shape_and_spec=((), P()))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type8", "seconds": 0.01, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype=<class 'numpy.float32'>, to_dtype=<class 'ml_dtypes.bfloat16'>, shape_and_spec=((2, 4), P('x', 'y')))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_bitcast_convert_type9", "seconds": 0.021, "before_mb": 424, "peak_mb": 424, "params": "(from_dtype=<class 'numpy.int8'>, to_dtype='int4', shape_and_spec=((2,), P('x',)))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_both_inputs_reduced_add", "seconds": 0.01, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_both_inputs_reduced_mul", "seconds": 0.01, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_both_inputs_reduced_sub", "seconds": 0.01, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_forwarding", "seconds": 0.012, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_in_dim_-1", "seconds": 0.029, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_in_dim_0", "seconds": 0.011, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_in_dim_1", "seconds": 0.017, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_in_dim_2", "seconds": 0.009, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_like", "seconds": 0.01, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_reduced_inp_unreduced_out", "seconds": 0.01, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_to", "seconds": 0.01, "before_mb": 424, "peak_mb": 424}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_transpose_unit_dims", "seconds": 0.332, "before_mb": 424, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcast_unreduced", "seconds": 0.028, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcasted_iota_mix_axes", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcasted_iota_with_sharding", "seconds": 0.019, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_broadcasting_nary_error", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_c64_to_f32_view_rountrip", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cet_unreduced", "seconds": 0.007, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_changing_abstract_device", "seconds": 0.006, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_compilation_cache_miss_when_devices_change", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_concat_reduced_split_unreduced", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_concat_unreduced", "seconds": 0.009, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_concat_vmap", "seconds": 0.009, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_concatenate", "seconds": 0.02, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cond_fori_reduced_fwd", "seconds": 0.011, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cond_lowering_constraint", "seconds": 0.018, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_config_remove_size_one_mesh_axis_roundtrip", "seconds": 0.029, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_conv_general_dilated", "seconds": 0.016, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_convert_element_type_vmap", "seconds": 0.011, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cumsum", "seconds": 0.02, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_cumsum_sharded", "seconds": 0.017, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_different_dst_mesh", "seconds": 0.014, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_no_set_mesh_error", "seconds": 0.013, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_set_mesh", "seconds": 0.013, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_typeof", "seconds": 0.006, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_under_set_mesh", "seconds": 0.011, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_unreduced_via_jit", "seconds": 0.026, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_device_put_unreduced_via_runtime_transfer", "seconds": 0.01, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_div_reduced_fwd_unreduced_bwd", "seconds": 0.01, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_div_unreduced_fwd_reduced_bwd", "seconds": 0.01, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_divisbility_aval_error", "seconds": 0.009, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_batch_dims_error", "seconds": 0.009, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_empty_mesh_lhs_rhs", "seconds": 0.009, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_batch_error", "seconds": 0.013, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_contracting2", "seconds": 0.01, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_error_contracting1", "seconds": 0.011, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_error_fail1", "seconds": 0.011, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_error_fail2", "seconds": 0.011, "before_mb": 432, "peak_mb": 432}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_error_other_half_tp", "seconds": 0.209, "before_mb": 432, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_fsdp", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_half_tp", "seconds": 0.017, "before_mb": 431, "peak_mb": 429}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_out_sharding0", "seconds": 0.01, "before_mb": 429, "peak_mb": 429, "params": "(True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_out_sharding1", "seconds": 0.02, "before_mb": 429, "peak_mb": 429, "params": "(False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_unreduced_error", "seconds": 0.015, "before_mb": 429, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_vmap0", "seconds": 0.012, "before_mb": 430, "peak_mb": 430, "params": "(True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_vmap1", "seconds": 0.008, "before_mb": 430, "peak_mb": 430, "params": "(False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_x_None", "seconds": 0.008, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_general_x_y", "seconds": 0.016, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_lhs_rhs_mesh_empty", "seconds": 0.042, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dot_unreduced_max_error", "seconds": 0.011, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dynamic_slice", "seconds": 0.009, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dynamic_update_slice", "seconds": 0.01, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_dynamic_update_slice_transpose", "seconds": 0.008, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_einsum_inverse", "seconds": 0.016, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_einsum_unreduced_with_transpose", "seconds": 0.013, "before_mb": 430, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_einsum_with_out_sharding", "seconds": 0.009, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_error_on_canonicalize_under_auto_mode", "seconds": 0.009, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_eval_shape", "seconds": 0.018, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_eval_shape_jitted_fun_cache_hit", "seconds": 0.046, "before_mb": 384, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_axes_late_bind", "seconds": 0.022, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_axes_top_level", "seconds": 0.008, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_complex", "seconds": 0.024, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_complex_grad", "seconds": 0.009, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_ctx_vmap_over_auto_axes", "seconds": 0.009, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_explicit_mode_no_context_mesh", "seconds": 0.013, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_extended_dtypes", "seconds": 0.01, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_fold_in", "seconds": 0.02, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_fold_in_auto_different_meshes", "seconds": 0.01, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_auto_outside_jit", "seconds": 0.01, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_auto_to_full_user", "seconds": 0.009, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_auto_to_partial_user", "seconds": 0.009, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_explicit_mode", "seconds": 0.006, "before_mb": 430, "peak_mb": 430}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_like_eager_non_concrete_sharding", "seconds": 0.026, "before_mb": 430, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_user_to_auto_user_mix", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_user_to_full_auto", "seconds": 0.011, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_full_visible_outside_jit", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_fully_replicated_array_mul", "seconds": 0.017, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_fully_replicated_reshape", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_reduced_fwd_unreduced_bwd", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_replicated", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_sharded", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_sharding_rule", "seconds": 0.022, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_transpose_fully_replicated", "seconds": 0.012, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_transpose_sharded", "seconds": 0.017, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_gather_with_full_slice_in_index_start_map", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_grad_conv_general_dilated", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_he_normal", "seconds": 0.005, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_histogram_flattened_multi_axis_sharding_error", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_histogram_sharded_error", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_identity_jit_out_unreduced", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_and_out_unreduced_Rx,Uy", "seconds": 0.015, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_and_out_unreduced_Sx,Uy", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_and_out_unreduced_Sx,Uy,Rz", "seconds": 0.013, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_and_out_unreduced_Ux", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_in_aval_matches_in_sharding", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_index_update", "seconds": 0.013, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_indices_sharded_gather_error", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_inputs_different_context", "seconds": 0.017, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_integer_pow_2", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_integer_pow_3", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_integer_pow_4", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_intermediate_einsum", "seconds": 0.007, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_intermediate_einsum_auto_complete_spec", "seconds": 0.013, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_intermediate_einsum_conflict_error", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jacfwd_sharded_broadcast", "seconds": 0.014, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jacrev_sharded_broadcast", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_arange_out_sharding", "seconds": 0.014, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_array", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_array_out_sharding", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_dot", "seconds": 0.018, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_full", "seconds": 0.012, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_like_functions", "seconds": 0.016, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_matmul", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_matmul_out_sharding_3d", "seconds": 0.011, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_matmul_out_sharding_unreduced", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_ones_mesh_context_eager", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_ones_mesh_ctx_aval", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_pad_reflect", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_ravel", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_repeat", "seconds": 0.016, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_repeat_arraylike", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_reshape_order_F", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_roll", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_tensordot", "seconds": 0.044, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_zeros_out_sharding", "seconds": 0.012, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_jnp_zeros_out_sharding_partial_manual_unreduced_reduced", "seconds": 0.025, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_map", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_map_batch_size_greater_than_input", "seconds": 0.009, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_map_remainder", "seconds": 0.111, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_switch_vmap", "seconds": 0.012, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_switch_vmap_random", "seconds": 0.033, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_lax_transpose_rule", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_linalg_slogdet_and_solve", "seconds": 0.025, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_map", "seconds": 0.013, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_random", "seconds": 0.021, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_random_no_out_sharding", "seconds": 0.011, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_repeat", "seconds": 0.01, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_repeat_no_out_sharding", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_manual_mode_mix_scatter_gather", "seconds": 0.008, "before_mb": 431, "peak_mb": 431}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_microbatch_vmap_unreduced", "seconds": 0.017, "before_mb": 431, "peak_mb": 385}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_minibatch_scan_unreduced_custom_vjp", "seconds": 0.008, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_minibatch_scan_unreduced_grad", "seconds": 0.013, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mix_axis_type_in_pspec", "seconds": 0.007, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mix_to_full_user_mode", "seconds": 0.007, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mul_reduced_error", "seconds": 0.006, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mul_vmap0", "seconds": 0.008, "before_mb": 385, "peak_mb": 385, "params": "(True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_mul_vmap1", "seconds": 0.016, "before_mb": 385, "peak_mb": 384, "params": "(False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_multi_einsum_intermediate_einsum_auto", "seconds": 0.011, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_nary_op_input_constraint", "seconds": 0.016, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_ndim_less_than_pspec_length_error", "seconds": 0.01, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_neg_and_sub_unreduced", "seconds": 0.01, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_nn_constant", "seconds": 0.009, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_nn_uniform", "seconds": 0.009, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_allowed", "seconds": 0.014, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden0", "seconds": 0.008, "before_mb": 384, "peak_mb": 384, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e8ae0>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden1", "seconds": 0.017, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e8e00>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden10", "seconds": 0.009, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e93a0>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden11", "seconds": 0.009, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9440>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden12", "seconds": 0.008, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e94e0>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden13", "seconds": 0.009, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9580>, P(None, None, unreduced={'replica'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden14", "seconds": 0.022, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9620>, P(None, None, unreduced={'replica'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden2", "seconds": 0.011, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e8ea0>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden3", "seconds": 0.013, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e8f40>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden4", "seconds": 0.01, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e8fe0>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden5", "seconds": 0.01, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9080>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden6", "seconds": 0.01, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9120>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden7", "seconds": 0.01, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e91c0>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden8", "seconds": 0.013, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9260>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_forbidden9", "seconds": 0.007, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9300>, P('replica', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad0", "seconds": 0.013, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e96c0>, (4, 4), True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad1", "seconds": 0.011, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9760>, (4, 4), True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad2", "seconds": 0.012, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9940>, (4,), True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad3", "seconds": 0.006, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e99e0>, (2, 4), True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad4", "seconds": 0.008, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9a80>, (4, 4), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad5", "seconds": 0.019, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9b20>, (4, 4), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_grad6", "seconds": 0.007, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9bc0>, (4,), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel0", "seconds": 0.013, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9c60>, P(None, 'data'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel1", "seconds": 0.009, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9d00>, P(None, 'data'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel2", "seconds": 0.008, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9ee0>, P(None, 'data'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel3", "seconds": 0.008, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234e9f80>, P(None, 'data'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel4", "seconds": 0.009, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234ea020>, P('replica', 'data'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel5", "seconds": 0.022, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234ea0c0>, P('replica', 'data'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_collectives_parallel6", "seconds": 0.009, "before_mb": 385, "peak_mb": 385, "params": "(<function ShardingInTypesTest.<lambda> at 0x1234ea160>, P('replica', 'data'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_op_auto_axes_no_mesh", "seconds": 0.029, "before_mb": 385, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_no_op_broadcast_except_for_sharding_change", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_hot_out_sharding", "seconds": 0.008, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_reduced_another_replicated_add", "seconds": 0.007, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_reduced_another_replicated_mul", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_reduced_another_replicated_sub", "seconds": 0.015, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_sharded_another_reduced_add", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_sharded_another_reduced_mul", "seconds": 0.016, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_one_input_sharded_another_reduced_sub", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_only_auto", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_out_aval_auto_mode", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_out_aval_matches_out_sharding", "seconds": 0.008, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_out_aval_matches_out_sharding_override", "seconds": 0.019, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_out_sharding_mix_axis_types", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_output_different_context_error", "seconds": 0.015, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_pad", "seconds": 0.013, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_percentile", "seconds": 0.01, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_pspec_einsum_no_context_mesh", "seconds": 0.014, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_bernoulli", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_bits", "seconds": 0.01, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_gumbel", "seconds": 0.01, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_normal", "seconds": 0.015, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_permutation_1d", "seconds": 0.017, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_permutation_2d", "seconds": 0.019, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_randint", "seconds": 0.016, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_functions_uniform", "seconds": 0.021, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_normal_wo_mesh_context", "seconds": 0.014, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_normal_wo_mesh_context_error", "seconds": 0.023, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_random_truncated_normal", "seconds": 0.014, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_rbg_impl_none_out_sharding", "seconds": 0.012, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_all", "seconds": 0.013, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_first", "seconds": 0.012, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_first2", "seconds": 0.011, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_min_unreduced_basic_max", "seconds": 0.01, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_min_unreduced_basic_min", "seconds": 0.025, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_min_unreduced_complex_max", "seconds": 0.011, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_min_unreduced_complex_min", "seconds": 0.01, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_reduced_reshard", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_reduced_shmap", "seconds": 0.009, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_second", "seconds": 0.006, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_second2", "seconds": 0.008, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_unreduced_partial_reduction", "seconds": 0.021, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_max_unreduced_reduce_scatter", "seconds": 0.011, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_precision", "seconds": 0.016, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_all", "seconds": 0.015, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_first", "seconds": 0.017, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_first2", "seconds": 0.016, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_scalar_unreduced", "seconds": 0.011, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_second", "seconds": 0.016, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_second2", "seconds": 0.013, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced", "seconds": 0.021, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_error", "seconds": 0.01, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp", "seconds": 0.019, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh0", "seconds": 0.013, "before_mb": 426, "peak_mb": 386, "params": "([0], None, P(None, unreduced={'y'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh1", "seconds": 0.012, "before_mb": 386, "peak_mb": 386, "params": "([0], P(unreduced={'y', 'x'}, unreduced_kind=sum), P(None, unreduced={'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh2", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "([0], P(unreduced={'x'}, unreduced_kind=sum), P(None, unreduced={'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh3", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "([0, 1], None, P(unreduced={'y'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh4", "seconds": 0.02, "before_mb": 386, "peak_mb": 386, "params": "([0, 1], P(unreduced={'y', 'x'}, unreduced_kind=sum), P(unreduced={'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_sum_unreduced_inp_multi_mesh5", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "([0, 1], P(unreduced={'x'}, unreduced_kind=sum), P(unreduced={'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_window_spec1", "seconds": 0.014, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_window_spec2", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_window_spec3", "seconds": 0.008, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduce_window_spec4", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_at_get_out_sharding", "seconds": 0.01, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_mul_scalar_fwd", "seconds": 0.017, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_reshard_unreduced_bwd", "seconds": 0.01, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_reshard_unreduced_bwd_sharded", "seconds": 0.017, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reduced_sin_fwd_mul_bwd", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_remat_reduced_transpose", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_remove_size_one_mesh_axis_1", "seconds": 0.007, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_remove_size_one_mesh_axis_2", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_remove_size_one_mesh_axis_3", "seconds": 0.017, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip0", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4,), P(None,), P(None, unreduced={'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip1", "seconds": 0.017, "before_mb": 386, "peak_mb": 386, "params": "((4,), P(None,), P(None, unreduced={'y'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip10", "seconds": 0.013, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P('x', 'y'), P(None, None, unreduced={'z', 'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip11", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P('x', 'z'), P(None, None, unreduced={'z', 'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip12", "seconds": 0.007, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P(('x', 'z'), 'y'), P(None, None, unreduced={'z', 'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip13", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P(('x', 'z'), 'y'), P('x', None, unreduced={'z', 'y'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip14", "seconds": 0.014, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P('z', 'y'), P(None, None, unreduced={'z', 'y'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip15", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P('z', 'y'), P(None, None, unreduced={'z', 'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip2", "seconds": 0.012, "before_mb": 386, "peak_mb": 386, "params": "((4,), P(None,), P(None, unreduced={'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip3", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P(None, None), P(None, None, unreduced={'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip4", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P(None, None), P(None, None, unreduced={'y'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip5", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P(None, None), P(None, None, unreduced={'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip6", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P('x', None), P('x', None, unreduced={'y'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip7", "seconds": 0.021, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P(None, 'y'), P(None, 'y', unreduced={'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip8", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P('x', None), P(None, None, unreduced={'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_replicated_sharded_unreduced_roundtrip9", "seconds": 0.016, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P('y', None), P(None, None, unreduced={'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape0", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((16, 1), (1, 16, 1), P('x', None), P(None, 'x', None), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape1", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((8, 2, 1), (1, 16, 1), P('x', None, None), P(None, 'x', None), True, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape10", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((8, 16, 2, 1, 1, 1), (8, 32), P(None, 'x', None, None, None, None), P(None, 'x'), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape11", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((4, 1, 8, 1, 32), (4, 1, 2, 4, 1, 32), P('x', None, None, None, None), P('x', None, None, None, None, None), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape12", "seconds": 0.013, "before_mb": 386, "peak_mb": 386, "params": "((4, 1, 2, 4, 1, 32), (4, 1, 8, 1, 32), P('x', None, None, None, None, None), P('x', None, None, None, None), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape13", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((16, 1), (1, 16, 1), P('x', None), P(None, 'x', None), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape14", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((8, 2, 1), (1, 16, 1), P('x', None, None), P(None, 'x', None), True, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape15", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((8, 1), (1, 4, 2), P('x', None), P(None, None, 'x'), True, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape16", "seconds": 0.013, "before_mb": 386, "peak_mb": 386, "params": "((1, 4, 1, 6, 1), (1, 4, 6), P(None, 'x', None, None, None), P(None, 'x', None), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape17", "seconds": 0.018, "before_mb": 386, "peak_mb": 386, "params": "((4, 6), (4, 6), P(None, 'x'), P(None, 'x'), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape18", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((8, 32), (8, 16, 2, 1, 1, 1, 1), P('x', None), P('x', None, None, None, None, None, None), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape19", "seconds": 0.011, "before_mb": 386, "peak_mb": 386, "params": "((8, 32, 32), (8, 16, 2, 1, 1, 32), P('x', None, None), P('x', None, None, None, None, None), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape2", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((8, 1), (1, 4, 2), P('x', None), P(None, None, 'x'), True, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape20", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((8, 32), (8, 1, 1, 32), P('x', None), P('x', None, None, None), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape21", "seconds": 0.199, "before_mb": 386, "peak_mb": 386, "params": "((8, 32), (8, 1, 1, 32), P(None, 'x'), P(None, None, None, 'x'), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape22", "seconds": 0.012, "before_mb": 386, "peak_mb": 386, "params": "((8, 16, 2, 1, 1, 1), (8, 32), P('x', None, None, None, None, None), P('x', None), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape23", "seconds": 0.013, "before_mb": 386, "peak_mb": 386, "params": "((8, 16, 2, 1, 1, 1), (8, 32), P(None, 'x', None, None, None, None), P(None, 'x'), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape24", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((4, 1, 8, 1, 32), (4, 1, 2, 4, 1, 32), P('x', None, None, None, None), P('x', None, None, None, None, None), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape25", "seconds": 0.026, "before_mb": 386, "peak_mb": 386, "params": "((4, 1, 2, 4, 1, 32), (4, 1, 8, 1, 32), P('x', None, None, None, None, None), P('x', None, None, None, None), False, <function reshape at 0x122b79c60>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape3", "seconds": 0.011, "before_mb": 386, "peak_mb": 386, "params": "((1, 4, 1, 6, 1), (1, 4, 6), P(None, 'x', None, None, None), P(None, 'x', None), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape4", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 6), (4, 6), P(None, 'x'), P(None, 'x'), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape5", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((8, 32), (8, 16, 2, 1, 1, 1, 1), P('x', None), P('x', None, None, None, None, None, None), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape6", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((8, 32, 32), (8, 16, 2, 1, 1, 32), P('x', None, None), P('x', None, None, None, None, None), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape7", "seconds": 0.022, "before_mb": 386, "peak_mb": 386, "params": "((8, 32), (8, 1, 1, 32), P('x', None), P('x', None, None, None), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape8", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((8, 32), (8, 1, 1, 32), P(None, 'x'), P(None, None, None, 'x'), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape9", "seconds": 0.013, "before_mb": 386, "peak_mb": 386, "params": "((8, 16, 2, 1, 1, 1), (8, 32), P('x', None, None, None, None, None), P('x', None), False, <function reshape at 0x1230ed800>)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes0", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((2, 2), P('x', 'y'), (4,), P(('x', 'y'),))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes1", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((2, 4), P('x', 'y'), (8,), P(('x', 'y'),))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes2", "seconds": 0.007, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P(('x', 'y'), None), (8,), P(('x', 'y'),))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes0", "seconds": 0.007, "before_mb": 386, "peak_mb": 386, "params": "((2, 2, 2), P('x', 'y', 'z'), (8,), P(('x', 'y', 'z'),))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes1", "seconds": 0.013, "before_mb": 386, "peak_mb": 386, "params": "((2, 4), P('x', ('y', 'z')), (8,), P(('x', 'y', 'z'),))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes2", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P(('x', 'y'), 'z'), (8,), P(('x', 'y', 'z'),))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes3", "seconds": 0.017, "before_mb": 386, "peak_mb": 386, "params": "((2, 2, 2), P('x', 'y', 'z'), (4, 2), P(('x', 'y'), 'z'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_one_dim_multi_axes_3_mesh_axes4", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((2, 2, 2, 2), P('x', 'y', 'z', None), (16,), P(('x', 'y', 'z'),))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_replicated_mesh1", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_merge_replicated_mesh2", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_preserve_singleton_dim_spec", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_reduced_fwd_unreduced_bwd", "seconds": 0.02, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_error0", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((2, 2, 2), P('x', None, 'y'), (8,))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_error1", "seconds": 0.016, "before_mb": 386, "peak_mb": 386, "params": "((12,), P(('x', 'y'),), (3, 4))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis0", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 6, 8), (4, 2, 3, 8), P('x', None, 'y'), P('x', None, None, 'y'), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis1", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 6, 8), (4, 6, 2, 2, 2), P('x', None, None), P('x', None, None, None, None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis10", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((10, 1, 1), (2, 5, 1, 1), P('x', None, None), P('x', None, None, None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis11", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((1, 10), (1, 2, 5), P(None, 'x'), P(None, 'x', None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis12", "seconds": 0.013, "before_mb": 386, "peak_mb": 386, "params": "((4, 2, 3, 8), (4, 6, 8), P('x', None, None, 'y'), P('x', None, 'y'), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis13", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((2, 2, 6, 8), (4, 6, 8), P(None, None, 'y', 'x'), P(None, 'y', 'x'), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis14", "seconds": 0.016, "before_mb": 386, "peak_mb": 386, "params": "((4, 6, 2, 2, 2), (4, 6, 8), P('x', None, None, None, None), P('x', None, None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis15", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 2, 3, 8), (4, 6, 8), P(None, 'y', None, 'x'), P(None, 'y', 'x'), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis16", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 4, 3, 8), (4, 12, 8), P(None, ('x', 'y'), None, None), P(None, ('x', 'y'), None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis17", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((4, 2, 3, 2, 4), (4, 6, 8), P('x', None, None, None, None), P('x', None, None), True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis18", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 2, 6, 8), (4, 12, 8), P(None, None, 'y', 'x'), None, True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis19", "seconds": 0.02, "before_mb": 386, "peak_mb": 386, "params": "((4, 2, 3, 8), (4, 8, 6), P(None, 'y', None, 'x'), None, True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis2", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 6, 8), (4, 2, 3, 4, 2), P('x', None, None), P('x', None, None, None, None), True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis20", "seconds": 0.013, "before_mb": 386, "peak_mb": 386, "params": "((2, 5, 1), (10, 1), P('x', None, None), P('x', None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis21", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((16, 8, 4), (16, 32, 1), P('x', 'y', None), P('x', 'y', None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis22", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((16, 32, 1), (16, 8, 4), P('x', 'y', None), P('x', 'y', None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis3", "seconds": 0.012, "before_mb": 386, "peak_mb": 386, "params": "((4, 6, 8), (4, 2, 3, 8), P('x', 'y', None), P('x', 'y', None, None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis4", "seconds": 0.011, "before_mb": 386, "peak_mb": 386, "params": "((4, 12, 8), (4, 4, 3, 8), P(None, ('x', 'y'), None), P(None, ('x', 'y'), None, None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis5", "seconds": 0.007, "before_mb": 386, "peak_mb": 386, "params": "((4, 6, 8), (4, 3, 2, 8), P('x', 'y', None), None, True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis6", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 6, 8), (4, 4, 2, 6), P('x', None, None), None, True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis7", "seconds": 0.015, "before_mb": 386, "peak_mb": 386, "params": "((4, 8, 9), (4, 2, 2, 3, 3, 2), P('x', None, None), None, True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis8", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((10, 1), (2, 5, 1), P('x', None), P('x', None, None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_merge_one_axis9", "seconds": 0.013, "before_mb": 386, "peak_mb": 386, "params": "((10, 1), (2, 5, 1, 1), P('x', None), P('x', None, None, None), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes0", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((4,), P(('x', 'y'),), (2, 2), P('x', 'y'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes1", "seconds": 0.016, "before_mb": 386, "peak_mb": 386, "params": "((8,), P(('x', 'y'),), (2, 4), P('x', 'y'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes2", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((8,), P(('x', 'y'),), (4, 2), P(('x', 'y'), None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes0", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((8,), P(('x', 'y', 'z'),), (2, 2, 2), P('x', 'y', 'z'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes1", "seconds": 0.011, "before_mb": 386, "peak_mb": 386, "params": "((8,), P(('x', 'y', 'z'),), (2, 4), P('x', ('y', 'z')))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes2", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "((8,), P(('x', 'y', 'z'),), (4, 2), P(('x', 'y'), 'z'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes3", "seconds": 0.019, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P(('x', 'y'), 'z'), (2, 2, 2), P('x', 'y', 'z'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_split_one_dim_multi_axes_3_mesh_axes4", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((16,), P(('x', 'y', 'z'),), (2, 2, 2, 2), P('x', 'y', 'z', None))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_unreduced_fwd_reduced_bwd", "seconds": 0.014, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_unreduced_out_sharding_error", "seconds": 0.012, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshape_vmap", "seconds": 0.095, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_api", "seconds": 0.008, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_eager_mode", "seconds": 0.007, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_no_mesh_ctx", "seconds": 0.013, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_on_scalar_reduced", "seconds": 0.006, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_replicated_to_sharded_unreduced", "seconds": 0.006, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_rng_keys", "seconds": 0.008, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_rng_keys_sharding", "seconds": 0.008, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_unreduced_max_error", "seconds": 0.02, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_with_np_array", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_reshard_zero_cotangent", "seconds": 0.014, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_return_output_different_context", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_rng_bit_generator", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scalar_to_unreduced", "seconds": 0.014, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_carry_shardings_diff_error", "seconds": 0.015, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_over_layers_minibatch_unreduced_custom_vjp", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_over_layers_minibatch_unreduced_grad", "seconds": 0.016, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_unroll", "seconds": 0.01, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scan_with_random_key_inside_jit", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_bool_index", "seconds": 0.01, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_gather", "seconds": 0.008, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_jit_invariant", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_add", "seconds": 0.01, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_dynamic_update_slice_in_dim", "seconds": 0.014, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_max", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_min", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_mul", "seconds": 0.01, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_x_sharded_set", "seconds": 0.011, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_add", "seconds": 0.013, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_dynamic_update_slice_in_dim", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_max", "seconds": 0.017, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_min", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_mul", "seconds": 0.008, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_sharding_rule_operand_xy_sharded_set", "seconds": 0.007, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_scatter_unreduced_fwd_reduced_bwd", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sds_closed_over_to_zeros_like_propagates_sharding_jit", "seconds": 0.017, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_segment_max", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_segment_prod", "seconds": 0.014, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_segment_sum", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_select", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_select_batch", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_select_reduced", "seconds": 0.029, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_select_unreduced", "seconds": 0.016, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_set_mesh", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_set_mesh_error", "seconds": 0.015, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_set_mesh_none", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shaped_array_input_to_jit_no_sharding", "seconds": 0.015, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shard_map_dot", "seconds": 0.011, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shard_map_full_manual", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip0", "seconds": 0.007, "before_mb": 386, "peak_mb": 386, "params": "((8,), P('x',), P(None, unreduced={'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip1", "seconds": 0.011, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P('x', 'y'), P(None, None, unreduced={'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip2", "seconds": 0.012, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P('x', 'y'), P('x', None, unreduced={'y'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip3", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P('x', 'y'), P(None, 'y', unreduced={'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip4", "seconds": 0.007, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P('x', None), P(None, None, unreduced={'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip5", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P('y', None), P(None, None, unreduced={'y'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip6", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((4, 2), P(('x', 'y'), None), P(None, None, unreduced={'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sharded_unreduced_roundtrip7", "seconds": 0.011, "before_mb": 386, "peak_mb": 386, "params": "((4, 4), P(None, ('x', 'y')), P(None, None, unreduced={'y', 'x'}, unreduced_kind=sum))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shit_vmap_error_check0", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "(True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shit_vmap_error_check1", "seconds": 0.008, "before_mb": 386, "peak_mb": 386, "params": "(False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shmap_close_over", "seconds": 0.008, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_shmap_close_over_partial_auto", "seconds": 0.013, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sin_unop", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_singleton_explicit_axis_multi_auto_axes", "seconds": 0.011, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_slice", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_slice_fully_replicated", "seconds": 0.018, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_slice_reduced", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_slice_unreduced", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sort_grad", "seconds": 0.007, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sparse_linalg_cg_indexing", "seconds": 0.011, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_split", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_split_reduced_concat_unreduced", "seconds": 0.011, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_split_unreduced", "seconds": 0.02, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_spmd_axis_name_explicit_mode_assert0", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "('x')"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_spmd_axis_name_explicit_mode_assert1", "seconds": 0.007, "before_mb": 386, "peak_mb": 386, "params": "('y')"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_spmd_axis_name_explicit_mode_assert_remove_one_size0", "seconds": 0.006, "before_mb": 386, "peak_mb": 386, "params": "(('data', 'model', 'stage'), ('data', 'model'))"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_spmd_axis_name_explicit_mode_assert_remove_one_size1", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "(('data', 'stage'), 'data')"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_squeeze", "seconds": 0.018, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_stack", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_sub_custom_jvp", "seconds": 0.011, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_svd", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_three_operand_einsum_unreduced", "seconds": 0.008, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_tile", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_to_pinned_host_error", "seconds": 0.01, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_basic", "seconds": 0.018, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_error", "seconds": 0.009, "before_mb": 386, "peak_mb": 386}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi0", "seconds": 0.012, "before_mb": 386, "peak_mb": 386, "params": "((8, 2), P('x', 'y'), P(None, None, reduced={'y', 'x'}), True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi1", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((8, 2), P('x', 'y'), P('x', None, reduced={'y'}), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi2", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((8, 2), P('x', 'y'), P(None, 'y', reduced={'x'}), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi3", "seconds": 0.01, "before_mb": 386, "peak_mb": 386, "params": "((8, 2), P(('x', 'y'), None), P(None, None, reduced={'y', 'x'}), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi4", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((8, 2), P(('x', 'y'), None), P('x', None, reduced={'y'}), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi5", "seconds": 0.015, "before_mb": 386, "peak_mb": 386, "params": "((8, 2), P(('y', 'x'), None), P('y', None, reduced={'x'}), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi6", "seconds": 0.009, "before_mb": 386, "peak_mb": 386, "params": "((8, 2), P(('x', 'y'), 'z'), P('x', None, reduced={'z', 'y'}), True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_multi7", "seconds": 0.016, "before_mb": 386, "peak_mb": 386, "params": "((8, 2), P(('x', 'y'), 'z'), P(None, 'z', reduced={'y', 'x'}), False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_top_level_ag_no_one_size_mesh_axis", "seconds": 0.079, "before_mb": 386, "peak_mb": 427}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_topk", "seconds": 0.034, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_trace_cache_hit_default_abs_mesh_ctx", "seconds": 0.041, "before_mb": 427, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_triangular_solve_vmap", "seconds": 0.011, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_triu_tril", "seconds": 0.006, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_typeof_not_mesh_context_dependent", "seconds": 0.011, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unmapped_last_vmap", "seconds": 0.01, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_add_jaxvals", "seconds": 0.008, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_einsum_add_basic", "seconds": 0.023, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_einsum_basic", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_einsum_lowers_to_reduce_sum", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_input_to_jit_Rx,Uy", "seconds": 0.015, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_input_to_jit_Sx,Uy", "seconds": 0.011, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_input_to_jit_Sx,Uy,Rz", "seconds": 0.021, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_input_to_jit_Ux", "seconds": 0.008, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_is_fully_replicated", "seconds": 0.012, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_concat_max", "seconds": 0.008, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_concat_min", "seconds": 0.01, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_dynamic_update_slice_max", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_dynamic_update_slice_min", "seconds": 0.013, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_reshape_max", "seconds": 0.012, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_reshape_min", "seconds": 0.011, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_slice_max", "seconds": 0.014, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_slice_min", "seconds": 0.012, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_squeeze_max", "seconds": 0.01, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_squeeze_min", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_transpose_max", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_max_min_transpose_min", "seconds": 0.017, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_mul_scalar_fwd", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_multi_axes_einsum", "seconds": 0.016, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_multi_axes_none_einsum", "seconds": 0.008, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_multi_axes_reduce_sum", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_output_from_jit_Rx,Uy", "seconds": 0.008, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_output_from_jit_Sx,Uy", "seconds": 0.008, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_output_from_jit_Sx,Uy,Rz", "seconds": 0.02, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unreduced_output_from_jit_Ux", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_unstack", "seconds": 0.013, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_use_abstract_mesh_override", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_user_auto_mix_error", "seconds": 0.007, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vjp_unreduced_zeros", "seconds": 0.007, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_conv_general_dilated", "seconds": 0.009, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_dot_out_sharding_hessian", "seconds": 0.918, "before_mb": 428, "peak_mb": 460}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_grad_axis_error", "seconds": 0.019, "before_mb": 460, "peak_mb": 460}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_grad_cet_dot", "seconds": 0.014, "before_mb": 460, "peak_mb": 460}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_grad_sharded_gather", "seconds": 0.013, "before_mb": 460, "peak_mb": 460}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_mapped_input_sharding_error", "seconds": 0.033, "before_mb": 460, "peak_mb": 460}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_random_categorical_sample", "seconds": 0.007, "before_mb": 460, "peak_mb": 460}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_select_const_broadcast", "seconds": 0.097, "before_mb": 460, "peak_mb": 462}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_spmd_axis_name_explicit_axes_inside", "seconds": 0.008, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_vmap_vjp_complex_explicit_mode", "seconds": 0.008, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_where_vmap", "seconds": 0.008, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_where_with_prng_sharded_inp", "seconds": 0.131, "before_mb": 462, "peak_mb": 467}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_where_with_scalar", "seconds": 0.009, "before_mb": 467, "peak_mb": 467}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_wsc_error", "seconds": 0.007, "before_mb": 467, "peak_mb": 467}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_wsc_mix_axis_types", "seconds": 0.009, "before_mb": 467, "peak_mb": 467}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_wsc_pspec_set_mesh0", "seconds": 0.007, "before_mb": 467, "peak_mb": 467, "params": "(True)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_wsc_pspec_set_mesh1", "seconds": 0.021, "before_mb": 467, "peak_mb": 467, "params": "(False)"}
+{"nodeid": "tests/pjit_test.py::ShardingInTypesTest::test_xla_metadata_applied_to_op", "seconds": 0.008, "before_mb": 467, "peak_mb": 467}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testAxisResourcesMismatch", "seconds": 0.006, "before_mb": 467, "peak_mb": 467}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testEmptyMesh", "seconds": 0.014, "before_mb": 467, "peak_mb": 468}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNestedDifferentResources", "seconds": 0.007, "before_mb": 468, "peak_mb": 468}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleArgs_2", "seconds": 0.006, "before_mb": 468, "peak_mb": 468}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleArgs_2x1", "seconds": 0.006, "before_mb": 468, "peak_mb": 468}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleArgs_2x2", "seconds": 0.198, "before_mb": 468, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleOuts_2", "seconds": 0.013, "before_mb": 469, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleOuts_2x1", "seconds": 0.025, "before_mb": 469, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testNonDivisibleOuts_2x2", "seconds": 0.014, "before_mb": 469, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testOutShardingsMismatchShowsAllDetails", "seconds": 0.014, "before_mb": 469, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRankTooLowArgs", "seconds": 0.01, "before_mb": 469, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRankTooLowArgsAxisResourcesNone", "seconds": 0.008, "before_mb": 469, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRankTooLowConstraint", "seconds": 0.009, "before_mb": 469, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRankTooLowOuts", "seconds": 0.008, "before_mb": 469, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRepeatedInResources", "seconds": 0.016, "before_mb": 469, "peak_mb": 469}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testRepeatedOutResources", "seconds": 0.01, "before_mb": 469, "peak_mb": 470}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesArgs_2", "seconds": 0.038, "before_mb": 470, "peak_mb": 471}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesArgs_2x1", "seconds": 0.008, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesArgs_2x2", "seconds": 0.013, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesConstraint_2", "seconds": 0.015, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesConstraint_2x1", "seconds": 0.013, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesConstraint_2x2", "seconds": 0.011, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesOuts_2", "seconds": 0.01, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesOuts_2x1", "seconds": 0.014, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::testUndefinedResourcesOuts_2x2", "seconds": 0.011, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_aot_error_on_dced_avals_mismatch", "seconds": 0.074, "before_mb": 471, "peak_mb": 473}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_compiled_with_deleted_input", "seconds": 0.015, "before_mb": 473, "peak_mb": 474}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_dce_no_array", "seconds": 0.018, "before_mb": 474, "peak_mb": 474}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_named_sharding_of_none", "seconds": 0.006, "before_mb": 474, "peak_mb": 474}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pjit_with_deleted_input_at_first_call_committed", "seconds": 0.028, "before_mb": 474, "peak_mb": 475}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pjit_with_deleted_input_at_first_call_uncommitted", "seconds": 0.018, "before_mb": 475, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pjit_with_deleted_input_at_subsequent_call_committed", "seconds": 0.05, "before_mb": 476, "peak_mb": 477}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pjit_with_deleted_input_at_subsequent_call_uncommitted", "seconds": 0.058, "before_mb": 475, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::PJitErrorTest::test_pspec_to_wsc_without_mesh", "seconds": 0.031, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::testOpShardingRoundTrip", "seconds": 0.053, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_array_mapping_to_axis_resources_combine", "seconds": 0.021, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_array_mapping_to_axis_resources_linear", "seconds": 0.023, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_array_mapping_to_axis_resources_multi_skip", "seconds": 0.013, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_array_mapping_to_axis_resources_skip", "seconds": 0.041, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_compile_after_trace_and_lower_on_abstract_mesh", "seconds": 0.014, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_device_indices_cache", "seconds": 0.027, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_get_intermediate_shardings", "seconds": 0.031, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_get_partition_spec", "seconds": 0.039, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_hlo_sharding_iota_tile_error", "seconds": 0.054, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_hlo_sharding_manual_replicated", "seconds": 0.017, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_hlo_sharding_with_device_ordering", "seconds": 0.014, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_mesh_with_list_devices", "seconds": 0.011, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_mesh_with_string_axis_names", "seconds": 0.011, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_cache_on_mesh_pspec_sharding", "seconds": 0.011, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_equality_and_hash_equality", "seconds": 0.009, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_manual_replicated", "seconds": 0.009, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_partial_sharding", "seconds": 0.009, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_semantically_replicated", "seconds": 0.037, "before_mb": 476, "peak_mb": 477}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_op_sharding_tuple_shardings", "seconds": 0.01, "before_mb": 477, "peak_mb": 477}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_pjit_function_cache_explicit_mutation_during_lookup", "seconds": 0.01, "before_mb": 477, "peak_mb": 477}
+{"nodeid": "tests/pjit_test.py::UtilTest::test_sharded_in_place_assignment", "seconds": 0.013, "before_mb": 477, "peak_mb": 477}

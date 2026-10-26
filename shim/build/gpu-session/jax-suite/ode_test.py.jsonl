@@ -1,0 +1,14 @@
+{"nodeid": "tests/ode_test.py::ODETest::test_closure_nondiff", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/ode_test.py::ODETest::test_complex_odeint", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, jaxlib.cpu_feature_guard, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, nu"}
+{"nodeid": "tests/ode_test.py::ODETest::test_disable_jit_odeint_with_vmap", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/ode_test.py::ODETest::test_forward_mode_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_grad_closure", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_grad_closure_with_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_hmax", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/ode_test.py::ODETest::test_odeint_vmap_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_pend_grads", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_pytree_state", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_swoop", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_swoop_bigger", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_weird_time_pendulum_grads", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_decay", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}

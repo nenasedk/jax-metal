@@ -1,0 +1,95 @@
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching3", "outcome": "failed", "message": "NotImplementedError: METAL: Jacobi eigendecomposition of size 300 exceeds 256 (larger ones can stall the GPU and WindowServer); complex eigh/SVD is limited to this size"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGradLargeEigenvalues", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGradPrecision", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGradRankPromotion", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighLargeMatrix", "outcome": "skipped", "message": "Skipped: Needs a large amount of GPU memory, doesn't work in CI"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighZeroDiagonal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform0", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform1", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform3", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform7", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform9", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testSelect0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testSelect1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching6", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighRankDeficient0", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighRankDeficient1", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighRankDeficient2", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighTinyNorm", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz0", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz1", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz3", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz7", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz9", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}

@@ -1,0 +1,4 @@
+tests/pmap_test.py::PythonPmapTest::testSizeOverflow
+exit 137
+guard: memory 2.4 GB > limit 2.4 GB
+

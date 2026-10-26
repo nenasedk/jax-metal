@@ -1,0 +1,7 @@
+......sssssssssssss..............................                        [100%]
+36 passed, 13 skipped, 415 deselected in 13.78s
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793043456.648336 1253252 mps_client.h:209] MetalClient destroyed.

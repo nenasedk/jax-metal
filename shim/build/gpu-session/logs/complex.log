@@ -1,0 +1,91 @@
+$ /Users/nasedkin/jax_metal/shim/../.venv-shim/bin/python /Users/nasedkin/jax_metal/shim/tests/test_complex.py
+Platform 'METAL' is experimental and not all JAX functionality may be correctly supported!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793040142.448782 1108066 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+Metal device set to: Apple M3
+I0000 00:00:1793040142.461483 1108066 service.cc:145] XLA service 0x600000b3c300 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793040142.461495 1108066 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793040142.462543 1108066 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793040142.462554 1108066 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+PASS real/imag of complex(x, y)               max scaled error 0.00e+00
+PASS multiply, divide, conj                   max scaled error 7.23e-08
+PASS abs, angle                               max scaled error 9.86e-08
+PASS sum, mean, dot                           max scaled error 1.94e-07
+PASS complex matmul                           max scaled error 9.73e-08
+PASS exp(1j * x).real (rotation)              max scaled error 5.96e-08
+PASS complex exp                              max scaled error 7.65e-08
+PASS complex log                              max scaled error 8.21e-08
+PASS complex sqrt                             max scaled error 5.96e-08
+PASS complex sin                              max scaled error 1.75e-07
+PASS complex cos                              max scaled error 1.41e-07
+PASS complex tan                              max scaled error 1.61e-07
+PASS complex tanh                             max scaled error 2.38e-07
+PASS complex sinh                             max scaled error 1.31e-07
+PASS complex cosh                             max scaled error 1.44e-07
+PASS complex expm1                            max scaled error 2.15e-07
+PASS complex log1p                            max scaled error 2.38e-07
+PASS complex sign                             max scaled error 1.19e-07
+PASS complex reciprocal sqrt                  max scaled error 9.11e-08
+PASS complex power                            max scaled error 4.82e-07
+PASS fft n=8                                  max scaled error 9.64e-08
+PASS ifft(fft) n=8                            max scaled error 1.48e-07
+PASS rfft n=8                                 max scaled error 9.64e-08
+PASS irfft(rfft) n=8                          max scaled error 1.48e-07
+PASS fft n=12                                 max scaled error 2.70e-07
+PASS ifft(fft) n=12                           max scaled error 1.73e-07
+PASS rfft n=12                                max scaled error 1.35e-07
+PASS irfft(rfft) n=12                         max scaled error 1.97e-07
+PASS fft n=15                                 max scaled error 1.85e-07
+PASS ifft(fft) n=15                           max scaled error 1.21e-07
+PASS rfft n=15                                max scaled error 1.45e-07
+PASS irfft(rfft) n=15                         max scaled error 1.10e-07
+PASS fft n=7                                  max scaled error 3.17e-07
+PASS ifft(fft) n=7                            max scaled error 2.26e-07
+PASS rfft n=7                                 max scaled error 2.04e-07
+PASS irfft(rfft) n=7                          max scaled error 2.26e-07
+PASS fft n=64                                 max scaled error 2.26e-07
+PASS ifft(fft) n=64                           max scaled error 2.89e-07
+PASS rfft n=64                                max scaled error 1.98e-07
+PASS irfft(rfft) n=64                         max scaled error 1.38e-07
+PASS fft n=100                                max scaled error 3.78e-07
+PASS ifft(fft) n=100                          max scaled error 7.46e-07
+PASS rfft n=100                               max scaled error 3.78e-07
+PASS irfft(rfft) n=100                        max scaled error 3.87e-07
+PASS fft n=1000                               max scaled error 2.34e-07
+PASS ifft(fft) n=1000                         max scaled error 6.26e-07
+PASS rfft n=1000                              max scaled error 2.93e-07
+PASS irfft(rfft) n=1000                       max scaled error 3.73e-07
+PASS fft n=1024                               max scaled error 3.35e-07
+PASS ifft(fft) n=1024                         max scaled error 7.10e-07
+PASS rfft n=1024                              max scaled error 2.99e-07
+PASS irfft(rfft) n=1024                       max scaled error 3.64e-07
+PASS fft n=4096                               max scaled error 4.04e-07
+PASS ifft(fft) n=4096                         max scaled error 9.02e-07
+PASS rfft n=4096                              max scaled error 4.10e-07
+PASS irfft(rfft) n=4096                       max scaled error 4.29e-07
+PASS fft2 batched                             max scaled error 2.60e-07
+PASS rfftn / irfftn                           max scaled error 3.65e-07
+PASS power spectrum                           max scaled error 1.95e-07
+PASS FFT convolution                          max scaled error 3.22e-07
+PASS grad through rfft                        max scaled error 2.04e-07
+PASS complex in, complex out                  max scaled error 7.42e-08
+PASS complex in, real out                     max scaled error 5.48e-08
+PASS real in, complex out                     max scaled error 0.00e+00
+PASS several complex outputs                  max scaled error 1.28e-07
+PASS mixed pytree outputs                     max scaled error 0.00e+00
+PASS complex scalar                           max scaled error 5.04e-09
+PASS fft / ifft at the boundary               max scaled error 2.62e-07
+PASS complex matmul at the boundary           max scaled error 1.03e-07
+PASS fori_loop with complex carry             max scaled error 1.78e-07
+PASS grad wrt complex parameter               max scaled error 3.95e-08
+PASS empty complex array                      max scaled error 0.00e+00
+PASS chained jit, eager ops, device transfer  
+PASS donated complex input                    
+PASS no buffer leak                           live buffers 2 -> 2 over 500 calls
+
+0 failure(s): none
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793040146.271363 1108066 mps_client.h:209] MetalClient destroyed.

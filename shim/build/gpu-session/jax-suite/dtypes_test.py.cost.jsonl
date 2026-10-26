@@ -1,0 +1,865 @@
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testArrayCasts", "seconds": 0.209, "before_mb": 95, "peak_mb": 166}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testBinaryPromotion_swap=False_jit=False", "seconds": 0.263, "before_mb": 166, "peak_mb": 191}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testBinaryPromotion_swap=False_jit=True", "seconds": 0.102, "before_mb": 191, "peak_mb": 218}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testBinaryPromotion_swap=True_jit=False", "seconds": 0.076, "before_mb": 218, "peak_mb": 224}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testBinaryPromotion_swap=True_jit=True", "seconds": 0.064, "before_mb": 224, "peak_mb": 230}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDefaultDtypes", "seconds": 0.016, "before_mb": 230, "peak_mb": 230}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDefaultTypes_type=bool", "seconds": 0.03, "before_mb": 230, "peak_mb": 232}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDefaultTypes_type=complex", "seconds": 0.053, "before_mb": 232, "peak_mb": 236}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDefaultTypes_type=float", "seconds": 0.031, "before_mb": 236, "peak_mb": 238}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDefaultTypes_type=int", "seconds": 0.042, "before_mb": 238, "peak_mb": 241}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype0", "seconds": 0.01, "before_mb": 241, "peak_mb": 241, "params": "(dtype=dtype('bool'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype1", "seconds": 0.01, "before_mb": 241, "peak_mb": 241, "params": "(dtype=dtype('bool'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype10", "seconds": 0.012, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('int16'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype11", "seconds": 0.008, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('int16'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype12", "seconds": 0.191, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('int32'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype13", "seconds": 0.018, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('int32'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype14", "seconds": 0.018, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('int32'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype15", "seconds": 0.013, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('int64'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype16", "seconds": 0.013, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('int64'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype17", "seconds": 0.012, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('int64'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype18", "seconds": 0.013, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(int2), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype19", "seconds": 0.011, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(int2), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype2", "seconds": 0.011, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('bool'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype20", "seconds": 0.013, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(int2), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype21", "seconds": 0.011, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(int4), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype22", "seconds": 0.014, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(int4), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype23", "seconds": 0.01, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(int4), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype24", "seconds": 0.01, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(uint1), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype25", "seconds": 0.017, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(uint1), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype26", "seconds": 0.01, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(uint1), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype27", "seconds": 0.015, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint8'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype28", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint8'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype29", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint8'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype3", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(int1), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype30", "seconds": 0.01, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint16'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype31", "seconds": 0.008, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint16'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype32", "seconds": 0.012, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint16'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype33", "seconds": 0.015, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint32'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype34", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint32'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype35", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint32'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype36", "seconds": 0.01, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint64'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype37", "seconds": 0.01, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint64'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype38", "seconds": 0.014, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('uint64'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype39", "seconds": 0.01, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(uint2), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype4", "seconds": 0.012, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(int1), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype40", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(uint2), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype41", "seconds": 0.015, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(uint2), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype42", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(uint4), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype43", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(uint4), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype44", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(uint4), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype45", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(bfloat16), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype46", "seconds": 0.015, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(bfloat16), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype47", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(bfloat16), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype48", "seconds": 0.017, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('float16'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype49", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('float16'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype5", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(int1), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype50", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('float16'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype51", "seconds": 0.011, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('float32'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype52", "seconds": 0.014, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('float32'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype53", "seconds": 0.008, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('float32'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype54", "seconds": 0.012, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('float64'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype55", "seconds": 0.008, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('float64'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype56", "seconds": 0.008, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('float64'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype57", "seconds": 0.008, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(float8_e4m3b11fnuz), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype58", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(float8_e4m3b11fnuz), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype59", "seconds": 0.017, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(float8_e4m3b11fnuz), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype6", "seconds": 0.009, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype('int8'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype60", "seconds": 0.017, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(float8_e4m3fn), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype61", "seconds": 0.008, "before_mb": 242, "peak_mb": 242, "params": "(dtype=dtype(float8_e4m3fn), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype62", "seconds": 0.009, "before_mb": 242, "peak_mb": 200, "params": "(dtype=dtype(float8_e4m3fn), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype63", "seconds": 0.013, "before_mb": 200, "peak_mb": 200, "params": "(dtype=dtype(float8_e4m3fnuz), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype64", "seconds": 0.007, "before_mb": 200, "peak_mb": 200, "params": "(dtype=dtype(float8_e4m3fnuz), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype65", "seconds": 0.008, "before_mb": 200, "peak_mb": 200, "params": "(dtype=dtype(float8_e4m3fnuz), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype66", "seconds": 0.008, "before_mb": 200, "peak_mb": 200, "params": "(dtype=dtype(float8_e5m2), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype67", "seconds": 0.008, "before_mb": 200, "peak_mb": 200, "params": "(dtype=dtype(float8_e5m2), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype68", "seconds": 0.016, "before_mb": 200, "peak_mb": 200, "params": "(dtype=dtype(float8_e5m2), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype69", "seconds": 0.008, "before_mb": 200, "peak_mb": 200, "params": "(dtype=dtype(float8_e5m2fnuz), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype7", "seconds": 0.019, "before_mb": 200, "peak_mb": 191, "params": "(dtype=dtype('int8'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype70", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e5m2fnuz), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype71", "seconds": 0.011, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e5m2fnuz), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype72", "seconds": 0.007, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e3m4), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype73", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e3m4), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype74", "seconds": 0.009, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e3m4), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype75", "seconds": 0.009, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e4m3), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype76", "seconds": 0.016, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e4m3), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype77", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e4m3), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype78", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e8m0fnu), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype79", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e8m0fnu), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype8", "seconds": 0.009, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype('int8'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype80", "seconds": 0.015, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float8_e8m0fnu), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype81", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float4_e2m1fn), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype82", "seconds": 0.016, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float4_e2m1fn), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype83", "seconds": 0.009, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float4_e2m1fn), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype84", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float6_e2m3fn), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype85", "seconds": 0.009, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float6_e2m3fn), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype86", "seconds": 0.009, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float6_e2m3fn), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype87", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(dtype=dtype(float6_e3m2fn), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype88", "seconds": 0.009, "before_mb": 191, "peak_mb": 192, "params": "(dtype=dtype(float6_e3m2fn), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype89", "seconds": 0.015, "before_mb": 192, "peak_mb": 192, "params": "(dtype=dtype(float6_e3m2fn), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype9", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype=dtype('int16'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype90", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype=dtype('complex64'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype91", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype=dtype('complex64'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype92", "seconds": 0.009, "before_mb": 192, "peak_mb": 192, "params": "(dtype=dtype('complex64'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype93", "seconds": 0.015, "before_mb": 192, "peak_mb": 192, "params": "(dtype=dtype('complex128'), explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype94", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype=dtype('complex128'), explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromDtype95", "seconds": 0.012, "before_mb": 192, "peak_mb": 192, "params": "(dtype=dtype('complex128'), explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromLiteralValue", "seconds": 0.009, "before_mb": 192, "peak_mb": 192}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromNone", "seconds": 0.009, "before_mb": 192, "peak_mb": 192}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromScalarType", "seconds": 0.005, "before_mb": 192, "peak_mb": 192}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromScalarValue", "seconds": 0.008, "before_mb": 192, "peak_mb": 192}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString0", "seconds": 0.015, "before_mb": 192, "peak_mb": 192, "params": "(dtype('bool'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString1", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype(int1))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString10", "seconds": 0.018, "before_mb": 192, "peak_mb": 192, "params": "(dtype('uint16'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString11", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype('uint32'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString12", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype('uint64'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString13", "seconds": 0.009, "before_mb": 192, "peak_mb": 192, "params": "(dtype(uint2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString14", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype(uint4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString15", "seconds": 0.015, "before_mb": 192, "peak_mb": 192, "params": "(dtype(bfloat16))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString16", "seconds": 0.007, "before_mb": 192, "peak_mb": 192, "params": "(dtype('float16'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString17", "seconds": 0.019, "before_mb": 192, "peak_mb": 192, "params": "(dtype('float32'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString18", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype('float64'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString19", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype(float8_e4m3b11fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString2", "seconds": 0.009, "before_mb": 192, "peak_mb": 192, "params": "(dtype('int8'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString20", "seconds": 0.008, "before_mb": 192, "peak_mb": 192, "params": "(dtype(float8_e4m3fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString21", "seconds": 0.009, "before_mb": 192, "peak_mb": 192, "params": "(dtype(float8_e4m3fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString22", "seconds": 0.009, "before_mb": 192, "peak_mb": 192, "params": "(dtype(float8_e5m2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString23", "seconds": 0.021, "before_mb": 192, "peak_mb": 197, "params": "(dtype(float8_e5m2fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString24", "seconds": 0.009, "before_mb": 197, "peak_mb": 197, "params": "(dtype(float8_e3m4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString25", "seconds": 0.007, "before_mb": 197, "peak_mb": 197, "params": "(dtype(float8_e4m3))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString26", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype(float8_e8m0fnu))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString27", "seconds": 0.009, "before_mb": 197, "peak_mb": 197, "params": "(dtype(float4_e2m1fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString28", "seconds": 0.009, "before_mb": 197, "peak_mb": 197, "params": "(dtype(float6_e2m3fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString29", "seconds": 0.009, "before_mb": 197, "peak_mb": 197, "params": "(dtype(float6_e3m2fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString3", "seconds": 0.021, "before_mb": 197, "peak_mb": 197, "params": "(dtype('int16'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString30", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype('complex64'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString31", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype('complex128'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString4", "seconds": 0.007, "before_mb": 197, "peak_mb": 197, "params": "(dtype('int32'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString5", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype('int64'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString6", "seconds": 0.018, "before_mb": 197, "peak_mb": 197, "params": "(dtype(int2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString7", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype(int4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString8", "seconds": 0.011, "before_mb": 197, "peak_mb": 197, "params": "(dtype(uint1))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromString9", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype('uint8'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue0", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype('bool'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue1", "seconds": 0.005, "before_mb": 197, "peak_mb": 197, "params": "(dtype(int1))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue10", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype('uint16'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue11", "seconds": 0.02, "before_mb": 197, "peak_mb": 197, "params": "(dtype('uint32'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue12", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype('uint64'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue13", "seconds": 0.011, "before_mb": 197, "peak_mb": 197, "params": "(dtype(uint2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue14", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype(uint4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue15", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype(bfloat16))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue16", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype('float16'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue17", "seconds": 0.008, "before_mb": 197, "peak_mb": 197, "params": "(dtype('float32'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue18", "seconds": 0.021, "before_mb": 197, "peak_mb": 197, "params": "(dtype('float64'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue19", "seconds": 0.063, "before_mb": 197, "peak_mb": 198, "params": "(dtype(float8_e4m3b11fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue2", "seconds": 0.009, "before_mb": 198, "peak_mb": 198, "params": "(dtype('int8'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue20", "seconds": 0.008, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float8_e4m3fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue21", "seconds": 0.008, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float8_e4m3fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue22", "seconds": 0.201, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float8_e5m2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue23", "seconds": 0.023, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float8_e5m2fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue24", "seconds": 0.013, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float8_e3m4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue25", "seconds": 0.013, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float8_e4m3))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue26", "seconds": 0.027, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float8_e8m0fnu))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue27", "seconds": 0.011, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float4_e2m1fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue28", "seconds": 0.02, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float6_e2m3fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue29", "seconds": 0.009, "before_mb": 198, "peak_mb": 198, "params": "(dtype(float6_e3m2fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue3", "seconds": 0.014, "before_mb": 198, "peak_mb": 198, "params": "(dtype('int16'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue30", "seconds": 0.01, "before_mb": 198, "peak_mb": 198, "params": "(dtype('complex64'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue31", "seconds": 0.009, "before_mb": 198, "peak_mb": 198, "params": "(dtype('complex128'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue4", "seconds": 0.009, "before_mb": 198, "peak_mb": 198, "params": "(dtype('int32'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue5", "seconds": 0.01, "before_mb": 198, "peak_mb": 198, "params": "(dtype('int64'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue6", "seconds": 0.02, "before_mb": 198, "peak_mb": 198, "params": "(dtype(int2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue7", "seconds": 0.009, "before_mb": 198, "peak_mb": 198, "params": "(dtype(int4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue8", "seconds": 0.019, "before_mb": 198, "peak_mb": 198, "params": "(dtype(uint1))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testDtypeFromValue9", "seconds": 0.008, "before_mb": 198, "peak_mb": 198, "params": "(dtype('uint8'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testEnumPromotion", "seconds": 0.074, "before_mb": 198, "peak_mb": 245}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype0", "seconds": 0.007, "before_mb": 245, "peak_mb": 245, "params": "(dtype=dtype(int2), kind=dtype(uint4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype1", "seconds": 0.006, "before_mb": 245, "peak_mb": 245, "params": "(dtype=dtype(bfloat16), kind=dtype(float8_e4m3fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype2", "seconds": 0.006, "before_mb": 245, "peak_mb": 245, "params": "(dtype=dtype('int32'), kind=dtype(float8_e4m3fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype3", "seconds": 0.006, "before_mb": 245, "peak_mb": 245, "params": "(dtype=dtype(float8_e4m3b11fnuz), kind=dtype('bool'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype4", "seconds": 0.011, "before_mb": 245, "peak_mb": 245, "params": "(dtype=dtype(uint1), kind=dtype('int16'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype5", "seconds": 0.006, "before_mb": 245, "peak_mb": 245, "params": "(dtype=dtype(uint2), kind=dtype(int4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype6", "seconds": 0.009, "before_mb": 245, "peak_mb": 245, "params": "(dtype=dtype('complex64'), kind=dtype('bool'))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype7", "seconds": 0.006, "before_mb": 245, "peak_mb": 245, "params": "(dtype=dtype('float32'), kind='unsigned integer')"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype8", "seconds": 0.009, "before_mb": 245, "peak_mb": 246, "params": "(dtype=dtype('uint32'), kind='signed integer')"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsDtype9", "seconds": 0.005, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float8_e5m2), kind=dtype(float8_e5m2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtype", "seconds": 0.008, "before_mb": 246, "peak_mb": 246}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats0", "seconds": 0.02, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(bfloat16))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats1", "seconds": 0.01, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float8_e4m3b11fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats10", "seconds": 0.013, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float6_e2m3fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats11", "seconds": 0.008, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float6_e3m2fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats2", "seconds": 0.009, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float8_e4m3fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats3", "seconds": 0.006, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float8_e4m3fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats4", "seconds": 0.008, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float8_e5m2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats5", "seconds": 0.014, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float8_e5m2fnuz))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats6", "seconds": 0.008, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float8_e3m4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats7", "seconds": 0.017, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float8_e4m3))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats8", "seconds": 0.008, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float8_e8m0fnu))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeCustomFloats9", "seconds": 0.008, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(float4_e2m1fn))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeIntN0", "seconds": 0.008, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(int1))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeIntN1", "seconds": 0.008, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(uint1))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeIntN2", "seconds": 0.015, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(int2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeIntN3", "seconds": 0.007, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(uint2))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeIntN4", "seconds": 0.007, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(int4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testIsSubdtypeIntN5", "seconds": 0.008, "before_mb": 246, "peak_mb": 246, "params": "(dtype=dtype(uint4))"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testPromoteDtypesStandard", "seconds": 0.041, "before_mb": 246, "peak_mb": 246}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testPromoteDtypesStrict", "seconds": 0.012, "before_mb": 246, "peak_mb": 246}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testScalarCastInsideJitWorks", "seconds": 0.022, "before_mb": 246, "peak_mb": 248}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testScalarInstantiation0", "seconds": 0.012, "before_mb": 248, "peak_mb": 248, "params": "(<class 'jax.numpy.bool'>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testScalarInstantiation1", "seconds": 0.006, "before_mb": 248, "peak_mb": 248, "params": "(<class 'jax.numpy.int32'>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testScalarInstantiation2", "seconds": 0.015, "before_mb": 248, "peak_mb": 249, "params": "(<class 'jax.numpy.bfloat16'>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testScalarInstantiation3", "seconds": 0.006, "before_mb": 249, "peak_mb": 249, "params": "(<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testScalarInstantiation4", "seconds": 0.018, "before_mb": 249, "peak_mb": 252, "params": "(<class 'jax.numpy.complex64'>)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::testUnsupportedType", "seconds": 0.012, "before_mb": 252, "peak_mb": 252}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_canonicalize_type", "seconds": 0.005, "before_mb": 252, "peak_mb": 252}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_canonicalize_value_float0", "seconds": 0.015, "before_mb": 252, "peak_mb": 252}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_canonicalize_value_preserves_literal_dtypes", "seconds": 0.005, "before_mb": 252, "peak_mb": 252}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_check_dtype_array", "seconds": 0.023, "before_mb": 252, "peak_mb": 254}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_check_dtype_non_hashable", "seconds": 0.006, "before_mb": 254, "peak_mb": 254}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits0", "seconds": 0.011, "before_mb": 254, "peak_mb": 254, "params": "(<class 'jax.numpy.int1'>, 1)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits1", "seconds": 0.005, "before_mb": 254, "peak_mb": 254, "params": "(<class 'jax.numpy.int2'>, 2)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits10", "seconds": 0.006, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float8_e4m3fn), 8)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits11", "seconds": 0.006, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float8_e4m3fnuz), 8)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits12", "seconds": 0.005, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float8_e5m2), 8)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits13", "seconds": 0.018, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float8_e5m2fnuz), 8)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits14", "seconds": 0.007, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float8_e3m4), 8)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits15", "seconds": 0.012, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float8_e4m3), 8)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits16", "seconds": 0.007, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float8_e8m0fnu), 8)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits17", "seconds": 0.008, "before_mb": 254, "peak_mb": 254, "params": "(<class 'jax.numpy.float16'>, 16)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits18", "seconds": 0.018, "before_mb": 254, "peak_mb": 254, "params": "(<class 'jax.numpy.float32'>, 32)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits19", "seconds": 0.008, "before_mb": 254, "peak_mb": 254, "params": "(<class 'jax.numpy.float64'>, 64)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits2", "seconds": 0.018, "before_mb": 254, "peak_mb": 254, "params": "(<class 'jax.numpy.int4'>, 4)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits3", "seconds": 0.009, "before_mb": 254, "peak_mb": 254, "params": "(<class 'jax.numpy.int8'>, 8)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits4", "seconds": 0.009, "before_mb": 254, "peak_mb": 254, "params": "(<class 'jax.numpy.int16'>, 16)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits5", "seconds": 0.008, "before_mb": 254, "peak_mb": 254, "params": "(<class 'jax.numpy.int32'>, 32)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits6", "seconds": 0.009, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float4_e2m1fn), 4)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits7", "seconds": 0.016, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float6_e2m3fn), 6)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits8", "seconds": 0.008, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float6_e3m2fn), 6)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_bits9", "seconds": 0.016, "before_mb": 254, "peak_mb": 254, "params": "(dtype(float8_e4m3b11fnuz), 8)"}
+{"nodeid": "tests/dtypes_test.py::DtypesTest::test_itemsize_none_raises", "seconds": 0.008, "before_mb": 254, "peak_mb": 254}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::testIsSubdtypeExtended", "seconds": 0.009, "before_mb": 254, "peak_mb": 254}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_custom_tangent_dtype", "seconds": 0.49, "before_mb": 254, "peak_mb": 293}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_custom_tangent_dtype_with_scan", "seconds": 0.07, "before_mb": 293, "peak_mb": 295}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion0", "seconds": 0.04, "before_mb": 295, "peak_mb": 296, "params": "((), ())"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion1", "seconds": 0.025, "before_mb": 296, "peak_mb": 297, "params": "((), (2,))"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion2", "seconds": 0.026, "before_mb": 297, "peak_mb": 298, "params": "((), (3, 4))"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion3", "seconds": 0.016, "before_mb": 298, "peak_mb": 298, "params": "((2,), ())"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion4", "seconds": 0.057, "before_mb": 298, "peak_mb": 301, "params": "((2,), (2,))"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion5", "seconds": 0.04, "before_mb": 301, "peak_mb": 303, "params": "((2,), (3, 4))"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion6", "seconds": 0.016, "before_mb": 303, "peak_mb": 304, "params": "((3, 4), ())"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion7", "seconds": 0.024, "before_mb": 304, "peak_mb": 305, "params": "((3, 4), (2,))"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion8", "seconds": 0.058, "before_mb": 305, "peak_mb": 306, "params": "((3, 4), (3, 4))"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion_autodiff", "seconds": 0.025, "before_mb": 306, "peak_mb": 308}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_edtype_conversion_errors", "seconds": 0.027, "before_mb": 308, "peak_mb": 311}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_primal_tangent_dtype0", "seconds": 0.238, "before_mb": 311, "peak_mb": 322, "params": "(True)"}
+{"nodeid": "tests/dtypes_test.py::ExtendedDTypeTest::test_primal_tangent_dtype_cond", "seconds": 0.169, "before_mb": 322, "peak_mb": 323}
+{"nodeid": "tests/dtypes_test.py::EArrayTest::test_extended_dtypes_at_rest0", "seconds": 0.037, "before_mb": 323, "peak_mb": 327, "params": "(True)"}
+{"nodeid": "tests/dtypes_test.py::EArrayTest::test_extended_dtypes_at_rest1", "seconds": 0.03, "before_mb": 327, "peak_mb": 328, "params": "(False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr0", "seconds": 0.367, "before_mb": 328, "peak_mb": 329, "params": "(dtype=dtype('bool'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr1", "seconds": 0.02, "before_mb": 329, "peak_mb": 329, "params": "(dtype=dtype('bool'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr10", "seconds": 0.033, "before_mb": 329, "peak_mb": 329, "params": "(dtype=dtype('int64'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr11", "seconds": 0.013, "before_mb": 329, "peak_mb": 330, "params": "(dtype=dtype('int64'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr12", "seconds": 0.012, "before_mb": 330, "peak_mb": 330, "params": "(dtype=dtype(int2), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr13", "seconds": 0.024, "before_mb": 330, "peak_mb": 330, "params": "(dtype=dtype(int2), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr14", "seconds": 0.011, "before_mb": 330, "peak_mb": 330, "params": "(dtype=dtype(int4), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr15", "seconds": 0.021, "before_mb": 330, "peak_mb": 330, "params": "(dtype=dtype(int4), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr16", "seconds": 0.011, "before_mb": 330, "peak_mb": 330, "params": "(dtype=dtype(uint1), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr17", "seconds": 0.016, "before_mb": 330, "peak_mb": 330, "params": "(dtype=dtype(uint1), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr18", "seconds": 0.028, "before_mb": 330, "peak_mb": 330, "params": "(dtype=dtype('uint8'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr19", "seconds": 0.022, "before_mb": 330, "peak_mb": 331, "params": "(dtype=dtype('uint8'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr2", "seconds": 0.007, "before_mb": 329, "peak_mb": 329, "params": "(dtype=dtype(int1), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr20", "seconds": 0.043, "before_mb": 329, "peak_mb": 330, "params": "(dtype=dtype('uint16'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr21", "seconds": 0.013, "before_mb": 330, "peak_mb": 331, "params": "(dtype=dtype('uint16'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr22", "seconds": 0.015, "before_mb": 331, "peak_mb": 332, "params": "(dtype=dtype('uint32'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr23", "seconds": 0.016, "before_mb": 332, "peak_mb": 333, "params": "(dtype=dtype('uint32'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr24", "seconds": 0.007, "before_mb": 333, "peak_mb": 333, "params": "(dtype=dtype('uint64'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr25", "seconds": 0.012, "before_mb": 333, "peak_mb": 333, "params": "(dtype=dtype('uint64'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr26", "seconds": 0.006, "before_mb": 333, "peak_mb": 333, "params": "(dtype=dtype(uint2), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr27", "seconds": 0.006, "before_mb": 333, "peak_mb": 333, "params": "(dtype=dtype(uint2), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr28", "seconds": 0.011, "before_mb": 333, "peak_mb": 333, "params": "(dtype=dtype(uint4), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr29", "seconds": 0.006, "before_mb": 333, "peak_mb": 333, "params": "(dtype=dtype(uint4), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr3", "seconds": 0.015, "before_mb": 333, "peak_mb": 333, "params": "(dtype=dtype(int1), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr30", "seconds": 0.017, "before_mb": 333, "peak_mb": 334, "params": "(dtype=dtype(bfloat16), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr31", "seconds": 0.008, "before_mb": 334, "peak_mb": 334, "params": "(dtype=dtype(bfloat16), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr32", "seconds": 0.013, "before_mb": 334, "peak_mb": 335, "params": "(dtype=dtype('float16'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr33", "seconds": 0.016, "before_mb": 335, "peak_mb": 335, "params": "(dtype=dtype('float16'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr34", "seconds": 0.019, "before_mb": 335, "peak_mb": 336, "params": "(dtype=dtype('float32'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr35", "seconds": 0.007, "before_mb": 336, "peak_mb": 336, "params": "(dtype=dtype('float32'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr36", "seconds": 0.014, "before_mb": 336, "peak_mb": 336, "params": "(dtype=dtype('float64'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr37", "seconds": 0.007, "before_mb": 336, "peak_mb": 336, "params": "(dtype=dtype('float64'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr38", "seconds": 0.105, "before_mb": 336, "peak_mb": 340, "params": "(dtype=dtype(float8_e4m3b11fnuz), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr39", "seconds": 0.024, "before_mb": 340, "peak_mb": 341, "params": "(dtype=dtype(float8_e4m3b11fnuz), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr4", "seconds": 0.026, "before_mb": 341, "peak_mb": 342, "params": "(dtype=dtype('int8'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr40", "seconds": 0.053, "before_mb": 342, "peak_mb": 345, "params": "(dtype=dtype(float8_e4m3fn), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr41", "seconds": 0.029, "before_mb": 345, "peak_mb": 345, "params": "(dtype=dtype(float8_e4m3fn), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr42", "seconds": 0.065, "before_mb": 345, "peak_mb": 346, "params": "(dtype=dtype(float8_e4m3fnuz), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr43", "seconds": 0.024, "before_mb": 346, "peak_mb": 347, "params": "(dtype=dtype(float8_e4m3fnuz), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr44", "seconds": 0.023, "before_mb": 347, "peak_mb": 348, "params": "(dtype=dtype(float8_e5m2), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr45", "seconds": 0.008, "before_mb": 348, "peak_mb": 348, "params": "(dtype=dtype(float8_e5m2), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr46", "seconds": 0.068, "before_mb": 348, "peak_mb": 350, "params": "(dtype=dtype(float8_e5m2fnuz), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr47", "seconds": 0.026, "before_mb": 350, "peak_mb": 352, "params": "(dtype=dtype(float8_e5m2fnuz), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr48", "seconds": 0.92, "before_mb": 352, "peak_mb": 376, "params": "(dtype=dtype(float8_e3m4), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr49", "seconds": 0.31, "before_mb": 376, "peak_mb": 340, "params": "(dtype=dtype(float8_e3m4), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr5", "seconds": 0.047, "before_mb": 340, "peak_mb": 380, "params": "(dtype=dtype('int8'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr50", "seconds": 0.289, "before_mb": 380, "peak_mb": 378, "params": "(dtype=dtype(float8_e4m3), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr51", "seconds": 0.308, "before_mb": 378, "peak_mb": 384, "params": "(dtype=dtype(float8_e4m3), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr52", "seconds": 0.312, "before_mb": 384, "peak_mb": 378, "params": "(dtype=dtype(float8_e8m0fnu), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr53", "seconds": 0.291, "before_mb": 378, "peak_mb": 337, "params": "(dtype=dtype(float8_e8m0fnu), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr54", "seconds": 0.306, "before_mb": 337, "peak_mb": 334, "params": "(dtype=dtype(float4_e2m1fn), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr55", "seconds": 0.38, "before_mb": 335, "peak_mb": 345, "params": "(dtype=dtype(float4_e2m1fn), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr56", "seconds": 0.35, "before_mb": 345, "peak_mb": 347, "params": "(dtype=dtype(float6_e2m3fn), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr57", "seconds": 0.323, "before_mb": 347, "peak_mb": 349, "params": "(dtype=dtype(float6_e2m3fn), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr58", "seconds": 0.341, "before_mb": 349, "peak_mb": 349, "params": "(dtype=dtype(float6_e3m2fn), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr59", "seconds": 0.327, "before_mb": 350, "peak_mb": 344, "params": "(dtype=dtype(float6_e3m2fn), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr6", "seconds": 0.058, "before_mb": 344, "peak_mb": 386, "params": "(dtype=dtype('int16'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr60", "seconds": 0.043, "before_mb": 386, "peak_mb": 388, "params": "(dtype=dtype('complex64'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr61", "seconds": 0.019, "before_mb": 388, "peak_mb": 388, "params": "(dtype=dtype('complex64'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr62", "seconds": 0.017, "before_mb": 388, "peak_mb": 388, "params": "(dtype=dtype('complex128'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr63", "seconds": 0.012, "before_mb": 388, "peak_mb": 388, "params": "(dtype=dtype('complex128'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr7", "seconds": 0.025, "before_mb": 388, "peak_mb": 389, "params": "(dtype=dtype('int16'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr8", "seconds": 0.013, "before_mb": 389, "peak_mb": 389, "params": "(dtype=dtype('int32'), weak_type=True)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testArrayRepr9", "seconds": 0.013, "before_mb": 389, "peak_mb": 389, "params": "(dtype=dtype('int32'), weak_type=False)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion0", "seconds": 0.022, "before_mb": 389, "peak_mb": 389, "params": "(dtype=dtype(float8_e5m2fnuz), weak_type=False, promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion1", "seconds": 0.009, "before_mb": 389, "peak_mb": 389, "params": "(dtype=dtype(uint1), weak_type=False, promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion2", "seconds": 0.02, "before_mb": 389, "peak_mb": 389, "params": "(dtype=dtype(float8_e4m3b11fnuz), weak_type=True, promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion3", "seconds": 0.042, "before_mb": 389, "peak_mb": 390, "params": "(dtype=dtype('complex128'), weak_type=True, promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion4", "seconds": 0.045, "before_mb": 390, "peak_mb": 391, "params": "(dtype=dtype('int8'), weak_type=False, promotion='strict')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion5", "seconds": 0.016, "before_mb": 391, "peak_mb": 391, "params": "(dtype=dtype(float8_e3m4), weak_type=False, promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion6", "seconds": 0.018, "before_mb": 391, "peak_mb": 391, "params": "(dtype=dtype('int64'), weak_type=True, promotion='strict')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion7", "seconds": 0.007, "before_mb": 391, "peak_mb": 391, "params": "(dtype=dtype(uint1), weak_type=False, promotion='strict')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion8", "seconds": 0.018, "before_mb": 391, "peak_mb": 391, "params": "(dtype=dtype('float32'), weak_type=True, promotion='strict')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryNonPromotion9", "seconds": 0.007, "before_mb": 391, "peak_mb": 391, "params": "(dtype=dtype(float8_e8m0fnu), weak_type=True, promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float16_xfun=abs_yfun=abs", "seconds": 0.082, "before_mb": 391, "peak_mb": 393}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float16_xfun=abs_yfun=array", "seconds": 0.062, "before_mb": 393, "peak_mb": 394}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float16_xfun=abs_yfun=identity", "seconds": 0.022, "before_mb": 394, "peak_mb": 394}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float16_xfun=array_yfun=abs", "seconds": 0.039, "before_mb": 394, "peak_mb": 395}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float16_xfun=array_yfun=array", "seconds": 0.023, "before_mb": 395, "peak_mb": 396}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float16_xfun=array_yfun=identity", "seconds": 0.016, "before_mb": 396, "peak_mb": 397}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float16_xfun=identity_yfun=abs", "seconds": 0.022, "before_mb": 397, "peak_mb": 398}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float16_xfun=identity_yfun=array", "seconds": 0.725, "before_mb": 398, "peak_mb": 400}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float16_xfun=identity_yfun=identity", "seconds": 1.191, "before_mb": 400, "peak_mb": 399}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float32_xfun=abs_yfun=abs", "seconds": 0.514, "before_mb": 399, "peak_mb": 401}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float32_xfun=abs_yfun=array", "seconds": 0.097, "before_mb": 401, "peak_mb": 403}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float32_xfun=abs_yfun=identity", "seconds": 0.028, "before_mb": 403, "peak_mb": 403}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float32_xfun=array_yfun=abs", "seconds": 0.061, "before_mb": 403, "peak_mb": 404}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float32_xfun=array_yfun=array", "seconds": 0.081, "before_mb": 404, "peak_mb": 405}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float32_xfun=array_yfun=identity", "seconds": 0.03, "before_mb": 405, "peak_mb": 405}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float32_xfun=identity_yfun=abs", "seconds": 0.026, "before_mb": 405, "peak_mb": 406}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float32_xfun=identity_yfun=array", "seconds": 0.027, "before_mb": 406, "peak_mb": 406}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float32_xfun=identity_yfun=identity", "seconds": 0.024, "before_mb": 406, "peak_mb": 407}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float_xfun=abs_yfun=abs", "seconds": 0.055, "before_mb": 407, "peak_mb": 407}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float_xfun=abs_yfun=array", "seconds": 0.048, "before_mb": 407, "peak_mb": 407}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float_xfun=abs_yfun=identity", "seconds": 0.02, "before_mb": 407, "peak_mb": 408}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float_xfun=array_yfun=abs", "seconds": 0.062, "before_mb": 408, "peak_mb": 409}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float_xfun=array_yfun=array", "seconds": 0.031, "before_mb": 409, "peak_mb": 410}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float_xfun=array_yfun=identity", "seconds": 0.042, "before_mb": 410, "peak_mb": 410}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float_xfun=identity_yfun=abs", "seconds": 0.037, "before_mb": 410, "peak_mb": 411}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float_xfun=identity_yfun=array", "seconds": 0.034, "before_mb": 411, "peak_mb": 411}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=float_xfun=identity_yfun=identity", "seconds": 0.026, "before_mb": 411, "peak_mb": 412}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int16_xfun=abs_yfun=abs", "seconds": 0.108, "before_mb": 412, "peak_mb": 414}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int16_xfun=abs_yfun=array", "seconds": 0.146, "before_mb": 414, "peak_mb": 415}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int16_xfun=abs_yfun=identity", "seconds": 0.028, "before_mb": 415, "peak_mb": 415}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int16_xfun=array_yfun=abs", "seconds": 0.063, "before_mb": 415, "peak_mb": 416}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int16_xfun=array_yfun=array", "seconds": 0.03, "before_mb": 416, "peak_mb": 417}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int16_xfun=array_yfun=identity", "seconds": 0.028, "before_mb": 417, "peak_mb": 418}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int16_xfun=identity_yfun=abs", "seconds": 0.024, "before_mb": 418, "peak_mb": 419}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int16_xfun=identity_yfun=array", "seconds": 0.024, "before_mb": 419, "peak_mb": 419}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int16_xfun=identity_yfun=identity", "seconds": 0.025, "before_mb": 419, "peak_mb": 419}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int32_xfun=abs_yfun=abs", "seconds": 0.108, "before_mb": 419, "peak_mb": 422}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int32_xfun=abs_yfun=array", "seconds": 0.065, "before_mb": 422, "peak_mb": 423}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int32_xfun=abs_yfun=identity", "seconds": 0.03, "before_mb": 423, "peak_mb": 425}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int32_xfun=array_yfun=abs", "seconds": 0.044, "before_mb": 425, "peak_mb": 426}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int32_xfun=array_yfun=array", "seconds": 0.019, "before_mb": 426, "peak_mb": 427}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int32_xfun=array_yfun=identity", "seconds": 0.018, "before_mb": 427, "peak_mb": 428}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int32_xfun=identity_yfun=abs", "seconds": 0.021, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int32_xfun=identity_yfun=array", "seconds": 0.022, "before_mb": 428, "peak_mb": 429}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int32_xfun=identity_yfun=identity", "seconds": 0.031, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int_xfun=abs_yfun=abs", "seconds": 0.047, "before_mb": 429, "peak_mb": 431}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int_xfun=abs_yfun=array", "seconds": 0.028, "before_mb": 431, "peak_mb": 433}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int_xfun=abs_yfun=identity", "seconds": 0.024, "before_mb": 433, "peak_mb": 434}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int_xfun=array_yfun=abs", "seconds": 0.022, "before_mb": 434, "peak_mb": 435}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int_xfun=array_yfun=array", "seconds": 0.021, "before_mb": 435, "peak_mb": 436}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int_xfun=array_yfun=identity", "seconds": 0.016, "before_mb": 436, "peak_mb": 437}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int_xfun=identity_yfun=abs", "seconds": 0.021, "before_mb": 437, "peak_mb": 438}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int_xfun=identity_yfun=array", "seconds": 0.02, "before_mb": 438, "peak_mb": 439}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float16_ytype=int_xfun=identity_yfun=identity", "seconds": 0.018, "before_mb": 439, "peak_mb": 440}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float16_xfun=abs_yfun=abs", "seconds": 0.046, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float16_xfun=abs_yfun=array", "seconds": 0.041, "before_mb": 440, "peak_mb": 441}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float16_xfun=abs_yfun=identity", "seconds": 0.019, "before_mb": 441, "peak_mb": 441}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float16_xfun=array_yfun=abs", "seconds": 0.042, "before_mb": 441, "peak_mb": 442}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float16_xfun=array_yfun=array", "seconds": 0.021, "before_mb": 442, "peak_mb": 443}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float16_xfun=array_yfun=identity", "seconds": 0.017, "before_mb": 443, "peak_mb": 444}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float16_xfun=identity_yfun=abs", "seconds": 0.019, "before_mb": 444, "peak_mb": 444}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float16_xfun=identity_yfun=array", "seconds": 0.017, "before_mb": 444, "peak_mb": 445}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float16_xfun=identity_yfun=identity", "seconds": 0.017, "before_mb": 445, "peak_mb": 445}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float32_xfun=abs_yfun=abs", "seconds": 0.041, "before_mb": 445, "peak_mb": 446}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float32_xfun=abs_yfun=array", "seconds": 0.039, "before_mb": 446, "peak_mb": 447}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float32_xfun=abs_yfun=identity", "seconds": 0.019, "before_mb": 447, "peak_mb": 448}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float32_xfun=array_yfun=abs", "seconds": 0.04, "before_mb": 448, "peak_mb": 449}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float32_xfun=array_yfun=array", "seconds": 0.017, "before_mb": 449, "peak_mb": 449}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float32_xfun=array_yfun=identity", "seconds": 0.017, "before_mb": 449, "peak_mb": 450}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float32_xfun=identity_yfun=abs", "seconds": 0.022, "before_mb": 450, "peak_mb": 451}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float32_xfun=identity_yfun=array", "seconds": 0.017, "before_mb": 451, "peak_mb": 452}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float32_xfun=identity_yfun=identity", "seconds": 0.023, "before_mb": 452, "peak_mb": 452}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float_xfun=abs_yfun=abs", "seconds": 0.075, "before_mb": 452, "peak_mb": 453}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float_xfun=abs_yfun=array", "seconds": 0.017, "before_mb": 453, "peak_mb": 454}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float_xfun=abs_yfun=identity", "seconds": 0.017, "before_mb": 454, "peak_mb": 455}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float_xfun=array_yfun=abs", "seconds": 0.017, "before_mb": 455, "peak_mb": 456}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float_xfun=array_yfun=array", "seconds": 0.019, "before_mb": 456, "peak_mb": 456}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float_xfun=array_yfun=identity", "seconds": 0.017, "before_mb": 456, "peak_mb": 457}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float_xfun=identity_yfun=abs", "seconds": 0.018, "before_mb": 457, "peak_mb": 458}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float_xfun=identity_yfun=array", "seconds": 0.017, "before_mb": 458, "peak_mb": 459}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=float_xfun=identity_yfun=identity", "seconds": 0.019, "before_mb": 459, "peak_mb": 460}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int16_xfun=abs_yfun=abs", "seconds": 0.069, "before_mb": 460, "peak_mb": 462}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int16_xfun=abs_yfun=array", "seconds": 0.042, "before_mb": 462, "peak_mb": 463}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int16_xfun=abs_yfun=identity", "seconds": 0.018, "before_mb": 463, "peak_mb": 463}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int16_xfun=array_yfun=abs", "seconds": 0.037, "before_mb": 463, "peak_mb": 464}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int16_xfun=array_yfun=array", "seconds": 0.018, "before_mb": 464, "peak_mb": 464}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int16_xfun=array_yfun=identity", "seconds": 0.039, "before_mb": 464, "peak_mb": 465}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int16_xfun=identity_yfun=abs", "seconds": 0.018, "before_mb": 465, "peak_mb": 466}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int16_xfun=identity_yfun=array", "seconds": 0.193, "before_mb": 466, "peak_mb": 467}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int16_xfun=identity_yfun=identity", "seconds": 0.026, "before_mb": 467, "peak_mb": 468}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int32_xfun=abs_yfun=abs", "seconds": 0.057, "before_mb": 468, "peak_mb": 471}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int32_xfun=abs_yfun=array", "seconds": 0.041, "before_mb": 471, "peak_mb": 472}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int32_xfun=abs_yfun=identity", "seconds": 0.018, "before_mb": 472, "peak_mb": 473}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int32_xfun=array_yfun=abs", "seconds": 0.039, "before_mb": 473, "peak_mb": 473}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int32_xfun=array_yfun=array", "seconds": 0.02, "before_mb": 473, "peak_mb": 474}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int32_xfun=array_yfun=identity", "seconds": 0.016, "before_mb": 474, "peak_mb": 475}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int32_xfun=identity_yfun=abs", "seconds": 0.016, "before_mb": 475, "peak_mb": 476}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int32_xfun=identity_yfun=array", "seconds": 0.016, "before_mb": 476, "peak_mb": 477}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int32_xfun=identity_yfun=identity", "seconds": 0.018, "before_mb": 477, "peak_mb": 478}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int_xfun=abs_yfun=abs", "seconds": 0.027, "before_mb": 478, "peak_mb": 480}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int_xfun=abs_yfun=array", "seconds": 0.017, "before_mb": 480, "peak_mb": 481}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int_xfun=abs_yfun=identity", "seconds": 0.017, "before_mb": 481, "peak_mb": 482}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int_xfun=array_yfun=abs", "seconds": 0.015, "before_mb": 482, "peak_mb": 483}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int_xfun=array_yfun=array", "seconds": 0.018, "before_mb": 483, "peak_mb": 483}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int_xfun=array_yfun=identity", "seconds": 0.018, "before_mb": 483, "peak_mb": 484}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int_xfun=identity_yfun=abs", "seconds": 0.016, "before_mb": 484, "peak_mb": 485}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int_xfun=identity_yfun=array", "seconds": 0.018, "before_mb": 485, "peak_mb": 485}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float32_ytype=int_xfun=identity_yfun=identity", "seconds": 0.018, "before_mb": 485, "peak_mb": 486}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float16_xfun=abs_yfun=abs", "seconds": 0.04, "before_mb": 486, "peak_mb": 488}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float16_xfun=abs_yfun=array", "seconds": 0.039, "before_mb": 488, "peak_mb": 489}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float16_xfun=abs_yfun=identity", "seconds": 0.019, "before_mb": 489, "peak_mb": 490}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float16_xfun=array_yfun=abs", "seconds": 0.039, "before_mb": 490, "peak_mb": 491}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float16_xfun=array_yfun=array", "seconds": 0.018, "before_mb": 491, "peak_mb": 492}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float16_xfun=array_yfun=identity", "seconds": 0.019, "before_mb": 492, "peak_mb": 493}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float16_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 493, "peak_mb": 494}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float16_xfun=identity_yfun=array", "seconds": 0.016, "before_mb": 494, "peak_mb": 494}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float16_xfun=identity_yfun=identity", "seconds": 0.016, "before_mb": 494, "peak_mb": 495}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float32_xfun=abs_yfun=abs", "seconds": 0.018, "before_mb": 495, "peak_mb": 496}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float32_xfun=abs_yfun=array", "seconds": 0.026, "before_mb": 496, "peak_mb": 497}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float32_xfun=abs_yfun=identity", "seconds": 0.017, "before_mb": 497, "peak_mb": 497}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float32_xfun=array_yfun=abs", "seconds": 0.017, "before_mb": 497, "peak_mb": 498}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float32_xfun=array_yfun=array", "seconds": 0.018, "before_mb": 498, "peak_mb": 499}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float32_xfun=array_yfun=identity", "seconds": 0.018, "before_mb": 499, "peak_mb": 499}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float32_xfun=identity_yfun=abs", "seconds": 0.155, "before_mb": 499, "peak_mb": 500}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float32_xfun=identity_yfun=array", "seconds": 0.017, "before_mb": 500, "peak_mb": 500}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float32_xfun=identity_yfun=identity", "seconds": 0.014, "before_mb": 500, "peak_mb": 501}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float_xfun=abs_yfun=abs", "seconds": 0.015, "before_mb": 501, "peak_mb": 502}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float_xfun=abs_yfun=array", "seconds": 0.018, "before_mb": 502, "peak_mb": 502}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float_xfun=abs_yfun=identity", "seconds": 0.015, "before_mb": 502, "peak_mb": 503}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float_xfun=array_yfun=abs", "seconds": 0.032, "before_mb": 503, "peak_mb": 504}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float_xfun=array_yfun=array", "seconds": 0.018, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float_xfun=array_yfun=identity", "seconds": 0.016, "before_mb": 504, "peak_mb": 505}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float_xfun=identity_yfun=abs", "seconds": 0.019, "before_mb": 505, "peak_mb": 506}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float_xfun=identity_yfun=array", "seconds": 0.019, "before_mb": 506, "peak_mb": 507}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=float_xfun=identity_yfun=identity", "seconds": 0.016, "before_mb": 507, "peak_mb": 508}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int16_xfun=abs_yfun=abs", "seconds": 0.03, "before_mb": 508, "peak_mb": 509}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int16_xfun=abs_yfun=array", "seconds": 0.029, "before_mb": 509, "peak_mb": 510}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int16_xfun=abs_yfun=identity", "seconds": 0.028, "before_mb": 510, "peak_mb": 511}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int16_xfun=array_yfun=abs", "seconds": 0.021, "before_mb": 511, "peak_mb": 512}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int16_xfun=array_yfun=array", "seconds": 0.022, "before_mb": 512, "peak_mb": 513}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int16_xfun=array_yfun=identity", "seconds": 0.018, "before_mb": 513, "peak_mb": 513}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int16_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 513, "peak_mb": 514}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int16_xfun=identity_yfun=array", "seconds": 0.02, "before_mb": 514, "peak_mb": 516}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int16_xfun=identity_yfun=identity", "seconds": 0.137, "before_mb": 516, "peak_mb": 517}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int32_xfun=abs_yfun=abs", "seconds": 0.222, "before_mb": 517, "peak_mb": 519}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int32_xfun=abs_yfun=array", "seconds": 0.027, "before_mb": 519, "peak_mb": 519}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int32_xfun=abs_yfun=identity", "seconds": 0.179, "before_mb": 519, "peak_mb": 520}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int32_xfun=array_yfun=abs", "seconds": 0.039, "before_mb": 520, "peak_mb": 521}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int32_xfun=array_yfun=array", "seconds": 0.024, "before_mb": 521, "peak_mb": 522}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int32_xfun=array_yfun=identity", "seconds": 0.023, "before_mb": 522, "peak_mb": 523}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int32_xfun=identity_yfun=abs", "seconds": 0.023, "before_mb": 523, "peak_mb": 523}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int32_xfun=identity_yfun=array", "seconds": 0.021, "before_mb": 523, "peak_mb": 524}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int32_xfun=identity_yfun=identity", "seconds": 0.022, "before_mb": 524, "peak_mb": 526}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int_xfun=abs_yfun=abs", "seconds": 0.018, "before_mb": 526, "peak_mb": 527}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int_xfun=abs_yfun=array", "seconds": 0.027, "before_mb": 527, "peak_mb": 528}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int_xfun=abs_yfun=identity", "seconds": 0.016, "before_mb": 528, "peak_mb": 529}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int_xfun=array_yfun=abs", "seconds": 0.021, "before_mb": 529, "peak_mb": 530}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int_xfun=array_yfun=array", "seconds": 0.018, "before_mb": 530, "peak_mb": 530}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int_xfun=array_yfun=identity", "seconds": 0.024, "before_mb": 530, "peak_mb": 531}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int_xfun=identity_yfun=abs", "seconds": 0.019, "before_mb": 531, "peak_mb": 532}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int_xfun=identity_yfun=array", "seconds": 0.019, "before_mb": 532, "peak_mb": 533}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=float_ytype=int_xfun=identity_yfun=identity", "seconds": 0.015, "before_mb": 533, "peak_mb": 534}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float16_xfun=abs_yfun=abs", "seconds": 0.078, "before_mb": 534, "peak_mb": 537}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float16_xfun=abs_yfun=array", "seconds": 0.042, "before_mb": 537, "peak_mb": 537}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float16_xfun=abs_yfun=identity", "seconds": 0.023, "before_mb": 537, "peak_mb": 539}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float16_xfun=array_yfun=abs", "seconds": 0.04, "before_mb": 539, "peak_mb": 540}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float16_xfun=array_yfun=array", "seconds": 0.021, "before_mb": 540, "peak_mb": 540}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float16_xfun=array_yfun=identity", "seconds": 0.016, "before_mb": 540, "peak_mb": 541}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float16_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 541, "peak_mb": 542}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float16_xfun=identity_yfun=array", "seconds": 0.021, "before_mb": 542, "peak_mb": 543}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float16_xfun=identity_yfun=identity", "seconds": 0.017, "before_mb": 543, "peak_mb": 544}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float32_xfun=abs_yfun=abs", "seconds": 0.074, "before_mb": 544, "peak_mb": 546}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float32_xfun=abs_yfun=array", "seconds": 0.041, "before_mb": 546, "peak_mb": 547}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float32_xfun=abs_yfun=identity", "seconds": 0.02, "before_mb": 547, "peak_mb": 548}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float32_xfun=array_yfun=abs", "seconds": 0.043, "before_mb": 548, "peak_mb": 549}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float32_xfun=array_yfun=array", "seconds": 0.019, "before_mb": 549, "peak_mb": 550}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float32_xfun=array_yfun=identity", "seconds": 0.025, "before_mb": 550, "peak_mb": 550}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float32_xfun=identity_yfun=abs", "seconds": 0.018, "before_mb": 550, "peak_mb": 551}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float32_xfun=identity_yfun=array", "seconds": 0.02, "before_mb": 551, "peak_mb": 552}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float32_xfun=identity_yfun=identity", "seconds": 0.02, "before_mb": 552, "peak_mb": 553}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float_xfun=abs_yfun=abs", "seconds": 0.023, "before_mb": 553, "peak_mb": 554}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float_xfun=abs_yfun=array", "seconds": 0.019, "before_mb": 554, "peak_mb": 556}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float_xfun=abs_yfun=identity", "seconds": 0.017, "before_mb": 556, "peak_mb": 557}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float_xfun=array_yfun=abs", "seconds": 0.017, "before_mb": 557, "peak_mb": 558}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float_xfun=array_yfun=array", "seconds": 0.017, "before_mb": 558, "peak_mb": 559}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float_xfun=array_yfun=identity", "seconds": 0.017, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float_xfun=identity_yfun=abs", "seconds": 0.02, "before_mb": 559, "peak_mb": 560}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float_xfun=identity_yfun=array", "seconds": 0.018, "before_mb": 560, "peak_mb": 561}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=float_xfun=identity_yfun=identity", "seconds": 0.017, "before_mb": 561, "peak_mb": 562}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int16_xfun=abs_yfun=abs", "seconds": 0.067, "before_mb": 562, "peak_mb": 563}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int16_xfun=abs_yfun=array", "seconds": 0.044, "before_mb": 563, "peak_mb": 564}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int16_xfun=abs_yfun=identity", "seconds": 0.019, "before_mb": 564, "peak_mb": 566}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int16_xfun=array_yfun=abs", "seconds": 0.045, "before_mb": 566, "peak_mb": 567}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int16_xfun=array_yfun=array", "seconds": 0.016, "before_mb": 567, "peak_mb": 568}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int16_xfun=array_yfun=identity", "seconds": 0.017, "before_mb": 568, "peak_mb": 569}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int16_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 569, "peak_mb": 570}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int16_xfun=identity_yfun=array", "seconds": 0.021, "before_mb": 570, "peak_mb": 570}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int16_xfun=identity_yfun=identity", "seconds": 0.026, "before_mb": 571, "peak_mb": 571}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int32_xfun=abs_yfun=abs", "seconds": 0.099, "before_mb": 571, "peak_mb": 573}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int32_xfun=abs_yfun=array", "seconds": 0.046, "before_mb": 573, "peak_mb": 574}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int32_xfun=abs_yfun=identity", "seconds": 0.025, "before_mb": 574, "peak_mb": 575}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int32_xfun=array_yfun=abs", "seconds": 0.05, "before_mb": 575, "peak_mb": 577}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int32_xfun=array_yfun=array", "seconds": 0.021, "before_mb": 577, "peak_mb": 578}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int32_xfun=array_yfun=identity", "seconds": 0.022, "before_mb": 578, "peak_mb": 579}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int32_xfun=identity_yfun=abs", "seconds": 0.018, "before_mb": 579, "peak_mb": 579}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int32_xfun=identity_yfun=array", "seconds": 0.021, "before_mb": 579, "peak_mb": 580}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int32_xfun=identity_yfun=identity", "seconds": 0.021, "before_mb": 580, "peak_mb": 581}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int_xfun=abs_yfun=abs", "seconds": 0.084, "before_mb": 581, "peak_mb": 584}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int_xfun=abs_yfun=array", "seconds": 0.066, "before_mb": 584, "peak_mb": 585}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int_xfun=abs_yfun=identity", "seconds": 0.022, "before_mb": 585, "peak_mb": 586}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int_xfun=array_yfun=abs", "seconds": 0.045, "before_mb": 586, "peak_mb": 587}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int_xfun=array_yfun=array", "seconds": 0.019, "before_mb": 587, "peak_mb": 589}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int_xfun=array_yfun=identity", "seconds": 0.017, "before_mb": 589, "peak_mb": 590}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 590, "peak_mb": 590}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int_xfun=identity_yfun=array", "seconds": 0.017, "before_mb": 590, "peak_mb": 591}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int16_ytype=int_xfun=identity_yfun=identity", "seconds": 0.019, "before_mb": 591, "peak_mb": 592}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float16_xfun=abs_yfun=abs", "seconds": 0.067, "before_mb": 592, "peak_mb": 594}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float16_xfun=abs_yfun=array", "seconds": 0.053, "before_mb": 594, "peak_mb": 595}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float16_xfun=abs_yfun=identity", "seconds": 0.019, "before_mb": 595, "peak_mb": 595}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float16_xfun=array_yfun=abs", "seconds": 0.041, "before_mb": 595, "peak_mb": 596}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float16_xfun=array_yfun=array", "seconds": 0.019, "before_mb": 596, "peak_mb": 597}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float16_xfun=array_yfun=identity", "seconds": 0.019, "before_mb": 597, "peak_mb": 599}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float16_xfun=identity_yfun=abs", "seconds": 0.021, "before_mb": 599, "peak_mb": 600}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float16_xfun=identity_yfun=array", "seconds": 0.018, "before_mb": 600, "peak_mb": 600}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float16_xfun=identity_yfun=identity", "seconds": 0.017, "before_mb": 600, "peak_mb": 601}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float32_xfun=abs_yfun=abs", "seconds": 0.049, "before_mb": 601, "peak_mb": 603}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float32_xfun=abs_yfun=array", "seconds": 0.053, "before_mb": 603, "peak_mb": 604}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float32_xfun=abs_yfun=identity", "seconds": 0.018, "before_mb": 604, "peak_mb": 605}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float32_xfun=array_yfun=abs", "seconds": 0.049, "before_mb": 605, "peak_mb": 606}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float32_xfun=array_yfun=array", "seconds": 0.019, "before_mb": 606, "peak_mb": 607}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float32_xfun=array_yfun=identity", "seconds": 0.019, "before_mb": 607, "peak_mb": 608}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float32_xfun=identity_yfun=abs", "seconds": 0.019, "before_mb": 608, "peak_mb": 609}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float32_xfun=identity_yfun=array", "seconds": 0.018, "before_mb": 609, "peak_mb": 610}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float32_xfun=identity_yfun=identity", "seconds": 0.018, "before_mb": 610, "peak_mb": 611}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float_xfun=abs_yfun=abs", "seconds": 0.039, "before_mb": 611, "peak_mb": 613}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float_xfun=abs_yfun=array", "seconds": 0.024, "before_mb": 613, "peak_mb": 614}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float_xfun=abs_yfun=identity", "seconds": 0.017, "before_mb": 614, "peak_mb": 614}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float_xfun=array_yfun=abs", "seconds": 0.018, "before_mb": 614, "peak_mb": 615}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float_xfun=array_yfun=array", "seconds": 0.02, "before_mb": 615, "peak_mb": 616}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float_xfun=array_yfun=identity", "seconds": 0.02, "before_mb": 616, "peak_mb": 617}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 617, "peak_mb": 617}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float_xfun=identity_yfun=array", "seconds": 0.022, "before_mb": 617, "peak_mb": 619}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=float_xfun=identity_yfun=identity", "seconds": 0.017, "before_mb": 619, "peak_mb": 620}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int16_xfun=abs_yfun=abs", "seconds": 0.07, "before_mb": 620, "peak_mb": 622}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int16_xfun=abs_yfun=array", "seconds": 0.039, "before_mb": 622, "peak_mb": 623}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int16_xfun=abs_yfun=identity", "seconds": 0.028, "before_mb": 623, "peak_mb": 624}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int16_xfun=array_yfun=abs", "seconds": 0.045, "before_mb": 624, "peak_mb": 624}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int16_xfun=array_yfun=array", "seconds": 0.019, "before_mb": 624, "peak_mb": 625}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int16_xfun=array_yfun=identity", "seconds": 0.017, "before_mb": 625, "peak_mb": 626}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int16_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 626, "peak_mb": 627}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int16_xfun=identity_yfun=array", "seconds": 0.023, "before_mb": 627, "peak_mb": 628}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int16_xfun=identity_yfun=identity", "seconds": 0.02, "before_mb": 628, "peak_mb": 629}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int32_xfun=abs_yfun=abs", "seconds": 0.047, "before_mb": 629, "peak_mb": 631}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int32_xfun=abs_yfun=array", "seconds": 0.041, "before_mb": 631, "peak_mb": 632}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int32_xfun=abs_yfun=identity", "seconds": 0.018, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int32_xfun=array_yfun=abs", "seconds": 0.052, "before_mb": 632, "peak_mb": 633}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int32_xfun=array_yfun=array", "seconds": 0.018, "before_mb": 633, "peak_mb": 634}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int32_xfun=array_yfun=identity", "seconds": 0.015, "before_mb": 634, "peak_mb": 635}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int32_xfun=identity_yfun=abs", "seconds": 0.021, "before_mb": 635, "peak_mb": 636}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int32_xfun=identity_yfun=array", "seconds": 0.019, "before_mb": 636, "peak_mb": 637}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int32_xfun=identity_yfun=identity", "seconds": 0.016, "before_mb": 637, "peak_mb": 638}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int_xfun=abs_yfun=abs", "seconds": 0.039, "before_mb": 638, "peak_mb": 640}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int_xfun=abs_yfun=array", "seconds": 0.018, "before_mb": 640, "peak_mb": 641}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int_xfun=abs_yfun=identity", "seconds": 0.017, "before_mb": 641, "peak_mb": 642}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int_xfun=array_yfun=abs", "seconds": 0.021, "before_mb": 642, "peak_mb": 643}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int_xfun=array_yfun=array", "seconds": 0.016, "before_mb": 643, "peak_mb": 644}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int_xfun=array_yfun=identity", "seconds": 0.016, "before_mb": 644, "peak_mb": 645}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 645, "peak_mb": 645}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int_xfun=identity_yfun=array", "seconds": 0.031, "before_mb": 645, "peak_mb": 646}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int32_ytype=int_xfun=identity_yfun=identity", "seconds": 0.017, "before_mb": 646, "peak_mb": 647}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float16_xfun=abs_yfun=abs", "seconds": 0.024, "before_mb": 647, "peak_mb": 650}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float16_xfun=abs_yfun=array", "seconds": 0.018, "before_mb": 650, "peak_mb": 651}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float16_xfun=abs_yfun=identity", "seconds": 0.016, "before_mb": 651, "peak_mb": 651}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float16_xfun=array_yfun=abs", "seconds": 0.022, "before_mb": 651, "peak_mb": 652}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float16_xfun=array_yfun=array", "seconds": 0.017, "before_mb": 652, "peak_mb": 653}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float16_xfun=array_yfun=identity", "seconds": 0.017, "before_mb": 653, "peak_mb": 654}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float16_xfun=identity_yfun=abs", "seconds": 0.016, "before_mb": 654, "peak_mb": 654}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float16_xfun=identity_yfun=array", "seconds": 0.018, "before_mb": 654, "peak_mb": 655}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float16_xfun=identity_yfun=identity", "seconds": 0.082, "before_mb": 655, "peak_mb": 655}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float32_xfun=abs_yfun=abs", "seconds": 0.026, "before_mb": 655, "peak_mb": 657}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float32_xfun=abs_yfun=array", "seconds": 0.022, "before_mb": 657, "peak_mb": 659}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float32_xfun=abs_yfun=identity", "seconds": 0.017, "before_mb": 659, "peak_mb": 660}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float32_xfun=array_yfun=abs", "seconds": 0.017, "before_mb": 660, "peak_mb": 660}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float32_xfun=array_yfun=array", "seconds": 0.017, "before_mb": 660, "peak_mb": 661}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float32_xfun=array_yfun=identity", "seconds": 0.016, "before_mb": 661, "peak_mb": 662}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float32_xfun=identity_yfun=abs", "seconds": 0.016, "before_mb": 662, "peak_mb": 663}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float32_xfun=identity_yfun=array", "seconds": 0.017, "before_mb": 663, "peak_mb": 663}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float32_xfun=identity_yfun=identity", "seconds": 0.023, "before_mb": 663, "peak_mb": 664}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float_xfun=abs_yfun=abs", "seconds": 0.02, "before_mb": 664, "peak_mb": 665}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float_xfun=abs_yfun=array", "seconds": 0.022, "before_mb": 665, "peak_mb": 667}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float_xfun=abs_yfun=identity", "seconds": 0.018, "before_mb": 667, "peak_mb": 669}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float_xfun=array_yfun=abs", "seconds": 0.02, "before_mb": 669, "peak_mb": 669}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float_xfun=array_yfun=array", "seconds": 0.022, "before_mb": 669, "peak_mb": 670}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float_xfun=array_yfun=identity", "seconds": 0.019, "before_mb": 670, "peak_mb": 671}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 671, "peak_mb": 672}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float_xfun=identity_yfun=array", "seconds": 0.021, "before_mb": 672, "peak_mb": 672}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=float_xfun=identity_yfun=identity", "seconds": 0.146, "before_mb": 672, "peak_mb": 674}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int16_xfun=abs_yfun=abs", "seconds": 0.099, "before_mb": 674, "peak_mb": 675}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int16_xfun=abs_yfun=array", "seconds": 0.062, "before_mb": 675, "peak_mb": 677}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int16_xfun=abs_yfun=identity", "seconds": 0.021, "before_mb": 677, "peak_mb": 678}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int16_xfun=array_yfun=abs", "seconds": 0.045, "before_mb": 678, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int16_xfun=array_yfun=array", "seconds": 0.019, "before_mb": 680, "peak_mb": 681}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int16_xfun=array_yfun=identity", "seconds": 0.019, "before_mb": 681, "peak_mb": 681}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int16_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 681, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int16_xfun=identity_yfun=array", "seconds": 0.019, "before_mb": 682, "peak_mb": 683}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int16_xfun=identity_yfun=identity", "seconds": 0.025, "before_mb": 683, "peak_mb": 684}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int32_xfun=abs_yfun=abs", "seconds": 0.024, "before_mb": 684, "peak_mb": 685}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int32_xfun=abs_yfun=array", "seconds": 0.025, "before_mb": 685, "peak_mb": 686}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int32_xfun=abs_yfun=identity", "seconds": 0.017, "before_mb": 686, "peak_mb": 687}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int32_xfun=array_yfun=abs", "seconds": 0.018, "before_mb": 687, "peak_mb": 688}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int32_xfun=array_yfun=array", "seconds": 0.02, "before_mb": 688, "peak_mb": 690}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int32_xfun=array_yfun=identity", "seconds": 0.021, "before_mb": 690, "peak_mb": 690}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int32_xfun=identity_yfun=abs", "seconds": 0.017, "before_mb": 690, "peak_mb": 691}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int32_xfun=identity_yfun=array", "seconds": 0.014, "before_mb": 691, "peak_mb": 692}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int32_xfun=identity_yfun=identity", "seconds": 0.016, "before_mb": 692, "peak_mb": 693}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int_xfun=abs_yfun=abs", "seconds": 0.016, "before_mb": 693, "peak_mb": 693}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int_xfun=abs_yfun=array", "seconds": 0.023, "before_mb": 693, "peak_mb": 695}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int_xfun=abs_yfun=identity", "seconds": 0.023, "before_mb": 695, "peak_mb": 696}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int_xfun=array_yfun=abs", "seconds": 0.016, "before_mb": 696, "peak_mb": 696}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int_xfun=array_yfun=array", "seconds": 0.017, "before_mb": 696, "peak_mb": 697}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int_xfun=array_yfun=identity", "seconds": 0.019, "before_mb": 697, "peak_mb": 699}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int_xfun=identity_yfun=abs", "seconds": 0.016, "before_mb": 699, "peak_mb": 700}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int_xfun=identity_yfun=array", "seconds": 0.018, "before_mb": 700, "peak_mb": 701}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testBinaryPromotionJitInvariance_xtype=int_ytype=int_xfun=identity_yfun=identity", "seconds": 0.014, "before_mb": 701, "peak_mb": 701}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation0", "seconds": 0.014, "before_mb": 701, "peak_mb": 702, "params": "(dtype(bfloat16))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation1", "seconds": 0.016, "before_mb": 702, "peak_mb": 703, "params": "(dtype('float16'))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation10", "seconds": 0.33, "before_mb": 703, "peak_mb": 731, "params": "(dtype(float8_e4m3))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation11", "seconds": 0.318, "before_mb": 731, "peak_mb": 741, "params": "(dtype(float8_e8m0fnu))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation12", "seconds": 0.305, "before_mb": 741, "peak_mb": 746, "params": "(dtype(float4_e2m1fn))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation13", "seconds": 0.297, "before_mb": 746, "peak_mb": 704, "params": "(dtype(float6_e2m3fn))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation14", "seconds": 0.307, "before_mb": 704, "peak_mb": 706, "params": "(dtype(float6_e3m2fn))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation2", "seconds": 0.039, "before_mb": 706, "peak_mb": 747, "params": "(dtype('float32'))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation3", "seconds": 0.324, "before_mb": 747, "peak_mb": 747, "params": "(dtype('float64'))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation4", "seconds": 0.14, "before_mb": 747, "peak_mb": 751, "params": "(dtype(float8_e4m3b11fnuz))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation5", "seconds": 0.135, "before_mb": 751, "peak_mb": 752, "params": "(dtype(float8_e4m3fn))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation6", "seconds": 0.098, "before_mb": 752, "peak_mb": 753, "params": "(dtype(float8_e4m3fnuz))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation7", "seconds": 0.069, "before_mb": 753, "peak_mb": 754, "params": "(dtype(float8_e5m2))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation8", "seconds": 0.068, "before_mb": 754, "peak_mb": 754, "params": "(dtype(float8_e5m2fnuz))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatArrayCreation9", "seconds": 0.357, "before_mb": 754, "peak_mb": 753, "params": "(dtype(float8_e3m4))"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError0", "seconds": 0.038, "before_mb": 753, "peak_mb": 754, "params": "(dtype(float8_e4m3b11fnuz), 8)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError1", "seconds": 0.041, "before_mb": 754, "peak_mb": 755, "params": "(dtype(float8_e4m3fn), 8)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError10", "seconds": 0.489, "before_mb": 755, "peak_mb": 756, "params": "(dtype(float6_e3m2fn), 6)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError2", "seconds": 0.029, "before_mb": 756, "peak_mb": 756, "params": "(dtype(float8_e4m3fnuz), 8)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError3", "seconds": 0.026, "before_mb": 756, "peak_mb": 757, "params": "(dtype(float8_e5m2), 8)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError4", "seconds": 0.029, "before_mb": 757, "peak_mb": 757, "params": "(dtype(float8_e5m2fnuz), 8)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError5", "seconds": 0.349, "before_mb": 757, "peak_mb": 765, "params": "(dtype(float8_e3m4), 8)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError6", "seconds": 0.372, "before_mb": 765, "peak_mb": 764, "params": "(dtype(float8_e4m3), 8)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError7", "seconds": 0.309, "before_mb": 764, "peak_mb": 764, "params": "(dtype(float8_e8m0fnu), 8)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError8", "seconds": 0.312, "before_mb": 764, "peak_mb": 678, "params": "(dtype(float4_e2m1fn), 4)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testFloatPromotionError9", "seconds": 0.313, "before_mb": 678, "peak_mb": 680, "params": "(dtype(float6_e2m3fn), 6)"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testIntNPromotionError", "seconds": 0.028, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=<class 'complex'>", "seconds": 0.016, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=<class 'float'>", "seconds": 0.011, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=<class 'int'>", "seconds": 0.012, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('bool')", "seconds": 0.006, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('complex128')", "seconds": 0.006, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('complex64')", "seconds": 0.006, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('float16')", "seconds": 0.014, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('float32')", "seconds": 0.012, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('float64')", "seconds": 0.006, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('int16')", "seconds": 0.006, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('int32')", "seconds": 0.007, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('int64')", "seconds": 0.006, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('int8')", "seconds": 0.011, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('uint16')", "seconds": 0.013, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('uint32')", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('uint64')", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype('uint8')", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(bfloat16)", "seconds": 0.013, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float4_e2m1fn)", "seconds": 0.012, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float6_e2m3fn)", "seconds": 0.197, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float6_e3m2fn)", "seconds": 0.017, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float8_e3m4)", "seconds": 0.011, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float8_e4m3)", "seconds": 0.01, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float8_e4m3b11fnuz)", "seconds": 0.01, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float8_e4m3fn)", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float8_e4m3fnuz)", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float8_e5m2)", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float8_e5m2fnuz)", "seconds": 0.014, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(float8_e8m0fnu)", "seconds": 0.011, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(int1)", "seconds": 0.016, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(int2)", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(int4)", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(uint1)", "seconds": 0.007, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(uint2)", "seconds": 0.012, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromType_jaxtype=dtype(uint4)", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=<class 'complex'>", "seconds": 0.012, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=<class 'float'>", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=<class 'int'>", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('bool')", "seconds": 0.016, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('complex128')", "seconds": 0.013, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('complex64')", "seconds": 0.012, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('float16')", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('float32')", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('float64')", "seconds": 0.016, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('int16')", "seconds": 0.01, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('int32')", "seconds": 0.014, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('int64')", "seconds": 0.012, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('int8')", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('uint16')", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('uint32')", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('uint64')", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype('uint8')", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(bfloat16)", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float4_e2m1fn)", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float6_e2m3fn)", "seconds": 0.012, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float6_e3m2fn)", "seconds": 0.013, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float8_e3m4)", "seconds": 0.014, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float8_e4m3)", "seconds": 0.011, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float8_e4m3b11fnuz)", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float8_e4m3fn)", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float8_e4m3fnuz)", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float8_e5m2)", "seconds": 0.013, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float8_e5m2fnuz)", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(float8_e8m0fnu)", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(int1)", "seconds": 0.011, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(int2)", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(int4)", "seconds": 0.016, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(uint1)", "seconds": 0.008, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(uint2)", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeFromVal_jaxtype=dtype(uint4)", "seconds": 0.013, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('bool')", "seconds": 0.011, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('complex128')", "seconds": 0.012, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('complex64')", "seconds": 0.007, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('float16')", "seconds": 0.014, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('float32')", "seconds": 0.015, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('float64')", "seconds": 0.01, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('int16')", "seconds": 0.009, "before_mb": 680, "peak_mb": 680}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('int32')", "seconds": 0.035, "before_mb": 680, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('int64')", "seconds": 0.012, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('int8')", "seconds": 0.009, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('uint16')", "seconds": 0.013, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('uint32')", "seconds": 0.009, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('uint64')", "seconds": 0.008, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype('uint8')", "seconds": 0.008, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(bfloat16)", "seconds": 0.011, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float4_e2m1fn)", "seconds": 0.014, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float6_e2m3fn)", "seconds": 0.009, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float6_e3m2fn)", "seconds": 0.009, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float8_e3m4)", "seconds": 0.01, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float8_e4m3)", "seconds": 0.008, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float8_e4m3b11fnuz)", "seconds": 0.009, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float8_e4m3fn)", "seconds": 0.009, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float8_e4m3fnuz)", "seconds": 0.009, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float8_e5m2)", "seconds": 0.009, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float8_e5m2fnuz)", "seconds": 0.007, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(float8_e8m0fnu)", "seconds": 0.014, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(int1)", "seconds": 0.008, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(int2)", "seconds": 0.008, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(int4)", "seconds": 0.014, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(uint1)", "seconds": 0.018, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(uint2)", "seconds": 0.008, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testJaxTypeWeak_dtype=dtype(uint4)", "seconds": 0.009, "before_mb": 682, "peak_mb": 682}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testObservedPromotionTable", "seconds": 3.912, "before_mb": 682, "peak_mb": 895}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testResultTypeNone", "seconds": 0.026, "before_mb": 895, "peak_mb": 895}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testResultTypeWeakFlag", "seconds": 0.022, "before_mb": 895, "peak_mb": 897}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast0", "seconds": 0.01, "before_mb": 897, "peak_mb": 897, "params": "(input_dtype=<class 'numpy.float32'>, output_dtype=<class 'int'>, numpy_dtype_promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast1", "seconds": 0.029, "before_mb": 897, "peak_mb": 897, "params": "(input_dtype=<class 'numpy.complex64'>, output_dtype=<class 'complex'>, numpy_dtype_promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast2", "seconds": 0.008, "before_mb": 897, "peak_mb": 897, "params": "(input_dtype=<class 'int'>, output_dtype=<class 'numpy.uint16'>, numpy_dtype_promotion='strict')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast3", "seconds": 0.008, "before_mb": 897, "peak_mb": 897, "params": "(input_dtype=<class 'ml_dtypes.bfloat16'>, output_dtype=<class 'numpy.float32'>, numpy_dtype_promotion='strict')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast4", "seconds": 0.022, "before_mb": 897, "peak_mb": 897, "params": "(input_dtype=<class 'numpy.bool'>, output_dtype=<class 'int'>, numpy_dtype_promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast5", "seconds": 0.007, "before_mb": 897, "peak_mb": 897, "params": "(input_dtype=<class 'numpy.uint16'>, output_dtype=<class 'numpy.bool'>, numpy_dtype_promotion='strict')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast6", "seconds": 0.023, "before_mb": 897, "peak_mb": 898, "params": "(input_dtype=<class 'numpy.bool'>, output_dtype=<class 'numpy.uint8'>, numpy_dtype_promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast7", "seconds": 0.016, "before_mb": 898, "peak_mb": 899, "params": "(input_dtype=<class 'int'>, output_dtype=<class 'complex'>, numpy_dtype_promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast8", "seconds": 0.009, "before_mb": 899, "peak_mb": 899, "params": "(input_dtype=<class 'float'>, output_dtype=<class 'numpy.float32'>, numpy_dtype_promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testSafeToCast9", "seconds": 0.019, "before_mb": 899, "peak_mb": 899, "params": "(input_dtype=<class 'int'>, output_dtype=<class 'numpy.int16'>, numpy_dtype_promotion='standard')"}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testScalarWeakTypes_<class 'bool'>", "seconds": 0.06, "before_mb": 899, "peak_mb": 900}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testScalarWeakTypes_<class 'complex'>", "seconds": 0.107, "before_mb": 900, "peak_mb": 902}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testScalarWeakTypes_<class 'float'>", "seconds": 0.023, "before_mb": 902, "peak_mb": 903}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testScalarWeakTypes_<class 'int'>", "seconds": 0.039, "before_mb": 903, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('bool')_weak_type=False", "seconds": 0.01, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('bool')_weak_type=True", "seconds": 0.008, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('complex128')_weak_type=False", "seconds": 0.013, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('complex128')_weak_type=True", "seconds": 0.007, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('complex64')_weak_type=False", "seconds": 0.009, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('complex64')_weak_type=True", "seconds": 0.007, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('float16')_weak_type=False", "seconds": 0.007, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('float16')_weak_type=True", "seconds": 0.007, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('float32')_weak_type=False", "seconds": 0.01, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('float32')_weak_type=True", "seconds": 0.014, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('float64')_weak_type=False", "seconds": 0.006, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('float64')_weak_type=True", "seconds": 0.006, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('int16')_weak_type=False", "seconds": 0.006, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('int16')_weak_type=True", "seconds": 0.006, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('int32')_weak_type=False", "seconds": 0.017, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('int32')_weak_type=True", "seconds": 0.009, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('int64')_weak_type=False", "seconds": 0.007, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('int64')_weak_type=True", "seconds": 0.015, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('int8')_weak_type=False", "seconds": 0.008, "before_mb": 904, "peak_mb": 904}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('int8')_weak_type=True", "seconds": 0.014, "before_mb": 904, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('uint16')_weak_type=False", "seconds": 0.021, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('uint16')_weak_type=True", "seconds": 0.012, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('uint32')_weak_type=False", "seconds": 0.01, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('uint32')_weak_type=True", "seconds": 0.011, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('uint64')_weak_type=False", "seconds": 0.01, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('uint64')_weak_type=True", "seconds": 0.016, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('uint8')_weak_type=False", "seconds": 0.011, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype('uint8')_weak_type=True", "seconds": 0.009, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(bfloat16)_weak_type=False", "seconds": 0.009, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(bfloat16)_weak_type=True", "seconds": 0.016, "before_mb": 905, "peak_mb": 905}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float4_e2m1fn)_weak_type=False", "seconds": 0.355, "before_mb": 905, "peak_mb": 935}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float4_e2m1fn)_weak_type=True", "seconds": 0.297, "before_mb": 935, "peak_mb": 949}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float6_e2m3fn)_weak_type=False", "seconds": 0.368, "before_mb": 949, "peak_mb": 951}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float6_e2m3fn)_weak_type=True", "seconds": 0.316, "before_mb": 951, "peak_mb": 953}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float6_e3m2fn)_weak_type=False", "seconds": 0.311, "before_mb": 953, "peak_mb": 954}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float6_e3m2fn)_weak_type=True", "seconds": 0.295, "before_mb": 954, "peak_mb": 963}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e3m4)_weak_type=False", "seconds": 0.323, "before_mb": 963, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e3m4)_weak_type=True", "seconds": 0.327, "before_mb": 965, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e4m3)_weak_type=False", "seconds": 0.288, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e4m3)_weak_type=True", "seconds": 0.304, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e4m3b11fnuz)_weak_type=False", "seconds": 0.021, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e4m3b11fnuz)_weak_type=True", "seconds": 0.014, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e4m3fn)_weak_type=False", "seconds": 0.031, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e4m3fn)_weak_type=True", "seconds": 0.01, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e4m3fnuz)_weak_type=False", "seconds": 0.009, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e4m3fnuz)_weak_type=True", "seconds": 0.022, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e5m2)_weak_type=False", "seconds": 0.007, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e5m2)_weak_type=True", "seconds": 0.015, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e5m2fnuz)_weak_type=False", "seconds": 0.007, "before_mb": 966, "peak_mb": 966}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e5m2fnuz)_weak_type=True", "seconds": 0.008, "before_mb": 966, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e8m0fnu)_weak_type=False", "seconds": 0.365, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(float8_e8m0fnu)_weak_type=True", "seconds": 0.294, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(int1)_weak_type=False", "seconds": 0.211, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(int1)_weak_type=True", "seconds": 0.017, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(int2)_weak_type=False", "seconds": 0.011, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(int2)_weak_type=True", "seconds": 0.017, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(int4)_weak_type=False", "seconds": 0.013, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(int4)_weak_type=True", "seconds": 0.01, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(uint1)_weak_type=False", "seconds": 0.009, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(uint1)_weak_type=True", "seconds": 0.01, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(uint2)_weak_type=False", "seconds": 0.008, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(uint2)_weak_type=True", "seconds": 0.01, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(uint4)_weak_type=False", "seconds": 0.014, "before_mb": 965, "peak_mb": 965}
+{"nodeid": "tests/dtypes_test.py::TestPromotionTables::testUnaryPromotion_dtype=dtype(uint4)_weak_type=True", "seconds": 0.012, "before_mb": 965, "peak_mb": 965}

@@ -1,0 +1,5 @@
+tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_dot_general_sampled0
+exit 137
+guard: memory 2.4 GB > limit 2.4 GB
+
+FF.

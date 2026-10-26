@@ -1,0 +1,55 @@
+$ make test PLUGIN=/Users/nasedkin/Library/Caches/jax-metal-shim/jax-metal-0.1.1/pjrt_plugin_metal_14.dylib TEST_DATA=/Users/nasedkin/jax_metal/shim/build/testdata
+c++ -std=c++20 -O2 -Wall -Wextra -Wno-missing-field-initializers -fPIC -fvisibility=hidden -shared -Ithird_party/xla_0bfeeb47 \
+	  -DJAX_METAL_SHIM_VERSION='"0.1.0"' \
+	  -install_name @rpath/pjrt_plugin_metal_shim.dylib src/pjrt_plugin_metal_shim.cc -o build/pjrt_plugin_metal_shim.dylib
+c++ -std=c++20 -O2 -Wall -Wextra -Wno-missing-field-initializers -Wno-unused-parameter -Ithird_party/xla_3c8260f6 tests/direct_load.cc -o build/direct_load
+c++ -std=c++20 -O2 -Wall -Wextra -Wno-missing-field-initializers -Wno-unused-parameter -Ithird_party/xla_0bfeeb47 tests/shim_load.cc -o build/shim_load
+build/direct_load /Users/nasedkin/Library/Caches/jax-metal-shim/jax-metal-0.1.1/pjrt_plugin_metal_14.dylib /Users/nasedkin/jax_metal/shim/build/testdata
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793040134.260461 1107584 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+PJRT 0.47, struct_size 808
+Metal device set to: Apple M3
+I0000 00:00:1793040134.286153 1107584 service.cc:145] XLA service 0xc2cc26800 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793040134.286332 1107584 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793040134.288955 1107584 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793040134.288976 1107584 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+addressable devices: 1
+compiled 556-byte StableHLO artifact
+result[0..3] = 1.61585 0.381055 1.94128, expected 1.61585 0.381054 1.94128
+max abs error vs CPU: 4.76837e-07
+PASS
+JAX_METAL_SHIM_PLUGIN_PATH=/Users/nasedkin/Library/Caches/jax-metal-shim/jax-metal-0.1.1/pjrt_plugin_metal_14.dylib build/shim_load /Users/nasedkin/jax_metal/shim/build/pjrt_plugin_metal_shim.dylib /Users/nasedkin/jax_metal/shim/build/testdata
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793040135.102863 1107614 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+ok   GetPjrtApi returns a table
+ok   reports the plugin's PJRT version 0.47
+ok   reports the plugin's struct_size 808
+ok   PJRT_Plugin_Attributes succeeds
+ok   stablehlo_current_version = 0.19.4
+ok   stablehlo_minimum_version = 0.9.0
+ok   first entry past the plugin table is null
+ok   PJRT_Client_Load is null
+ok   PJRT_LoadedExecutable_AddressableDeviceLogicalIds is null
+ok   PJRT_Event_Create/Set are null
+ok   last 0.116 entry is null
+ok   padding past the 0.116 table is null
+ok   plugin entries are forwarded
+PJRT 0.47, struct_size 808
+Metal device set to: Apple M3
+I0000 00:00:1793040135.119122 1107614 service.cc:145] XLA service 0x9c2c4a400 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793040135.119134 1107614 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793040135.120187 1107614 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793040135.120197 1107614 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+addressable devices: 1
+compiled 556-byte StableHLO artifact
+result[0..3] = 1.61585 0.381055 1.94128, expected 1.61585 0.381054 1.94128
+max abs error vs CPU: 4.76837e-07
+PASS

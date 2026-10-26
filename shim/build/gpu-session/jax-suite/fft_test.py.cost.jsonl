@@ -1,0 +1,111 @@
+{"nodeid": "tests/fft_test.py::FftTest::testFft0", "seconds": 0.253, "before_mb": 122, "peak_mb": 196, "params": "(inverse=False, real=False, hermitian=True, dtype=<class 'numpy.int32'>, shape=(10,), n=1, axis=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft1", "seconds": 0.176, "before_mb": 196, "peak_mb": 214, "params": "(inverse=True, real=True, hermitian=False, dtype=<class 'numpy.complex64'>, shape=(10,), n=13, axis=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2", "seconds": 0.131, "before_mb": 214, "peak_mb": 228, "params": "(inverse=True, real=False, hermitian=False, dtype=<class 'numpy.bool'>, shape=(10,), n=13, axis=0)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2Errors0", "seconds": 0.158, "before_mb": 228, "peak_mb": 229, "params": "(inverse=True, real=False)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2Errors1", "seconds": 0.011, "before_mb": 229, "peak_mb": 229, "params": "(inverse=True, real=True)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2Errors2", "seconds": 0.013, "before_mb": 229, "peak_mb": 229, "params": "(inverse=False, real=False)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2Errors3", "seconds": 0.009, "before_mb": 229, "peak_mb": 229, "params": "(inverse=False, real=True)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_0", "seconds": 0.167, "before_mb": 229, "peak_mb": 241, "params": "(inverse=True, real=True, dtype=<class 'numpy.bool'>, shape=(16, 8, 4, 8), axes=(1, 3), norm=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_1", "seconds": 0.196, "before_mb": 241, "peak_mb": 261, "params": "(inverse=True, real=False, dtype=<class 'numpy.bool'>, shape=(16, 8, 4, 8, 4), axes=(0, 1), norm='backward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_2", "seconds": 0.218, "before_mb": 261, "peak_mb": 270, "params": "(inverse=False, real=True, dtype=<class 'numpy.float32'>, shape=(16, 8, 4, 8), axes=(0, 1), norm='backward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_3", "seconds": 0.15, "before_mb": 270, "peak_mb": 280, "params": "(inverse=True, real=False, dtype=<class 'numpy.float32'>, shape=(16, 8, 4, 8), axes=(0, 1), norm='forward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_4", "seconds": 0.109, "before_mb": 280, "peak_mb": 286, "params": "(inverse=True, real=False, dtype=<class 'numpy.bool'>, shape=(16, 8, 4, 8), axes=(0, 1), norm='backward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_5", "seconds": 0.331, "before_mb": 286, "peak_mb": 299, "params": "(inverse=True, real=False, dtype=<class 'numpy.float32'>, shape=(16, 8, 4, 8, 4), axes=(0, 1), norm='ortho')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_6", "seconds": 0.104, "before_mb": 299, "peak_mb": 310, "params": "(inverse=True, real=True, dtype=<class 'numpy.bool'>, shape=(16, 8, 4, 8, 4), axes=(-2, -1), norm='forward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_7", "seconds": 0.1, "before_mb": 310, "peak_mb": 311, "params": "(inverse=False, real=False, dtype=<class 'numpy.float32'>, shape=(16, 8, 4, 8, 4), axes=(-2, -1), norm='backward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_8", "seconds": 0.194, "before_mb": 311, "peak_mb": 319, "params": "(inverse=False, real=False, dtype=<class 'numpy.bool'>, shape=(16, 8, 4, 8, 4), axes=(1, 3), norm=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft2_9", "seconds": 0.125, "before_mb": 319, "peak_mb": 324, "params": "(inverse=True, real=False, dtype=<class 'numpy.float32'>, shape=(16, 8, 4, 8, 4), axes=(1, 3), norm='backward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft3", "seconds": 0.137, "before_mb": 324, "peak_mb": 332, "params": "(inverse=False, real=False, hermitian=True, dtype=<class 'numpy.complex64'>, shape=(10,), n=20, axis=0)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft4", "seconds": 0.078, "before_mb": 332, "peak_mb": 336, "params": "(inverse=True, real=False, hermitian=False, dtype=<class 'numpy.float32'>, shape=(10,), n=None, axis=0)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft5", "seconds": 0.077, "before_mb": 336, "peak_mb": 341, "params": "(inverse=False, real=True, hermitian=False, dtype=<class 'numpy.int32'>, shape=(10,), n=None, axis=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft6", "seconds": 0.07, "before_mb": 341, "peak_mb": 346, "params": "(inverse=False, real=False, hermitian=True, dtype=<class 'numpy.bool'>, shape=(10,), n=None, axis=0)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft7", "seconds": 0.106, "before_mb": 346, "peak_mb": 354, "params": "(inverse=False, real=False, hermitian=True, dtype=<class 'numpy.complex64'>, shape=(10,), n=7, axis=0)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft8", "seconds": 0.062, "before_mb": 354, "peak_mb": 358, "params": "(inverse=False, real=False, hermitian=True, dtype=<class 'numpy.float32'>, shape=(10,), n=None, axis=0)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFft9", "seconds": 0.063, "before_mb": 358, "peak_mb": 358, "params": "(inverse=True, real=False, hermitian=False, dtype=<class 'numpy.int32'>, shape=(10,), n=None, axis=0)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftEmpty", "seconds": 0.068, "before_mb": 358, "peak_mb": 363}
+{"nodeid": "tests/fft_test.py::FftTest::testFftErrors0", "seconds": 0.013, "before_mb": 363, "peak_mb": 363, "params": "(inverse=True, real=False, hermitian=False)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftErrors1", "seconds": 0.014, "before_mb": 363, "peak_mb": 363, "params": "(inverse=True, real=False, hermitian=True)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftErrors2", "seconds": 0.011, "before_mb": 363, "peak_mb": 363, "params": "(inverse=False, real=False, hermitian=False)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftErrors3", "seconds": 0.02, "before_mb": 363, "peak_mb": 363, "params": "(inverse=True, real=True, hermitian=True)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftErrors4", "seconds": 0.009, "before_mb": 363, "peak_mb": 363, "params": "(inverse=False, real=True, hermitian=False)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftErrors5", "seconds": 0.021, "before_mb": 363, "peak_mb": 364, "params": "(inverse=False, real=False, hermitian=True)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftErrors6", "seconds": 0.02, "before_mb": 364, "peak_mb": 364, "params": "(inverse=True, real=True, hermitian=False)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftErrors7", "seconds": 0.019, "before_mb": 364, "peak_mb": 364, "params": "(inverse=False, real=True, hermitian=True)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftNormalizationPrecision", "seconds": 0.017, "before_mb": 364, "peak_mb": 364}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq0", "seconds": 0.288, "before_mb": 364, "peak_mb": 380, "params": "(dtype=<class 'numpy.complex64'>, size=101, d=2.0, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq1", "seconds": 0.162, "before_mb": 380, "peak_mb": 391, "params": "(dtype=<class 'numpy.complex64'>, size=102, d=2.0, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq2", "seconds": 0.131, "before_mb": 391, "peak_mb": 409, "params": "(dtype=<class 'numpy.float32'>, size=9, d=2.0, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq3", "seconds": 0.132, "before_mb": 409, "peak_mb": 416, "params": "(dtype=<class 'numpy.complex64'>, size=9, d=0.1, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq4", "seconds": 0.103, "before_mb": 417, "peak_mb": 428, "params": "(dtype=<class 'numpy.float32'>, size=9, d=2.0, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq5", "seconds": 0.12, "before_mb": 428, "peak_mb": 429, "params": "(dtype=<class 'numpy.complex64'>, size=9, d=2.0, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq6", "seconds": 0.114, "before_mb": 429, "peak_mb": 437, "params": "(dtype=<class 'numpy.float32'>, size=102, d=2.0, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq7", "seconds": 0.114, "before_mb": 437, "peak_mb": 439, "params": "(dtype=<class 'numpy.complex64'>, size=9, d=2.0, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq8", "seconds": 0.109, "before_mb": 439, "peak_mb": 446, "params": "(dtype=<class 'numpy.float32'>, size=101, d=2.0, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreq9", "seconds": 0.079, "before_mb": 446, "peak_mb": 447, "params": "(dtype=<class 'numpy.float32'>, size=9, d=0.1, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftfreqErrors0", "seconds": 0.032, "before_mb": 447, "peak_mb": 447, "params": "(n=[0, 1, 2])"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn0", "seconds": 0.242, "before_mb": 447, "peak_mb": 465, "params": "(inverse=False, real=True, dtype=<class 'numpy.int32'>, shape=(2, 3, 4, 5, 6), axes=(0, 1, 2, 3, 4), s=(2, 2, 4, 1, 11), norm=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn1", "seconds": 0.476, "before_mb": 465, "peak_mb": 486, "params": "(inverse=True, real=False, dtype=<class 'numpy.complex64'>, shape=(2, 3, 4, 5, 6), axes=(0, 1, 2, 3, 4), s=(1, 5, 6, 2, 7), norm='backward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn2", "seconds": 0.194, "before_mb": 486, "peak_mb": 502, "params": "(inverse=False, real=False, dtype=<class 'numpy.bool'>, shape=(2, 3, 4, 5, 6), axes=(0, 1, 3, 4), s=(4, 4, 7, 11), norm=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn3", "seconds": 0.205, "before_mb": 502, "peak_mb": 515, "params": "(inverse=True, real=True, dtype=<class 'numpy.float32'>, shape=(2, 3, 4, 5, 6), axes=(0, 1, 3, 4), s=(2, 2, 3, 1), norm=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn4", "seconds": 0.239, "before_mb": 515, "peak_mb": 538, "params": "(inverse=True, real=True, dtype=<class 'numpy.bool'>, shape=(2, 3, 4, 5, 6), axes=(0, 1, 2, 3, 4), s=(4, 6, 3, 1, 11), norm='backward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn5", "seconds": 0.166, "before_mb": 538, "peak_mb": 556, "params": "(inverse=True, real=True, dtype=<class 'numpy.int32'>, shape=(2, 3, 4, 5, 6), axes=(1, 2, 4), s=(4, 1, 8), norm='forward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn6", "seconds": 0.269, "before_mb": 556, "peak_mb": 572, "params": "(inverse=True, real=False, dtype=<class 'numpy.float32'>, shape=(2, 3, 4, 5, 6), axes=(0, 1, 2, 3, 4), s=(2, 6, 7, 10, 11), norm='backward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn7", "seconds": 0.262, "before_mb": 572, "peak_mb": 593, "params": "(inverse=False, real=True, dtype=<class 'numpy.int32'>, shape=(2, 3, 4, 5, 6), axes=(0, 1, 3, 4), s=(2, 6, 5, 3), norm='forward')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn8", "seconds": 0.396, "before_mb": 593, "peak_mb": 612, "params": "(inverse=True, real=False, dtype=<class 'numpy.complex64'>, shape=(2, 3, 4, 5, 6), axes=(0, 1, 2, 4), s=(1, 3, 5, 11), norm='ortho')"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftn9", "seconds": 0.099, "before_mb": 612, "peak_mb": 621, "params": "(inverse=True, real=True, dtype=<class 'numpy.bool'>, shape=(2, 3, 4, 5, 6), axes=(3, 4), s=(9, 11), norm=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftnErrors0", "seconds": 0.016, "before_mb": 621, "peak_mb": 621, "params": "(inverse=True, real=False)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftnErrors1", "seconds": 0.045, "before_mb": 621, "peak_mb": 625, "params": "(inverse=True, real=True)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftnErrors2", "seconds": 0.015, "before_mb": 625, "peak_mb": 625, "params": "(inverse=False, real=False)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftnErrors3", "seconds": 0.023, "before_mb": 625, "peak_mb": 625, "params": "(inverse=False, real=True)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftnormOverflow0", "seconds": 0.044, "before_mb": 625, "peak_mb": 630, "params": "(norm='forward', func_name='fft', dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftnormOverflow1", "seconds": 0.011, "before_mb": 630, "peak_mb": 630, "params": "(norm='forward', func_name='ifft', dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftnormOverflow2", "seconds": 0.021, "before_mb": 630, "peak_mb": 630, "params": "(norm='ortho', func_name='fft', dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftnormOverflow3", "seconds": 0.01, "before_mb": 630, "peak_mb": 630, "params": "(norm='ortho', func_name='ifft', dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift0", "seconds": 0.035, "before_mb": 630, "peak_mb": 630, "params": "(shape=[101], axes=(-1,), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift1", "seconds": 0.021, "before_mb": 630, "peak_mb": 632, "params": "(shape=[5, 7, 11], axes=[], dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift2", "seconds": 0.028, "before_mb": 632, "peak_mb": 634, "params": "(shape=[5, 7, 11], axes=(0, 1), dtype=<class 'numpy.bool'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift3", "seconds": 0.025, "before_mb": 634, "peak_mb": 637, "params": "(shape=[3, 17], axes=(-2,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift4", "seconds": 0.036, "before_mb": 637, "peak_mb": 639, "params": "(shape=[3, 5], axes=[], dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift5", "seconds": 0.032, "before_mb": 639, "peak_mb": 641, "params": "(shape=[5, 7, 11], axes=(0, 1), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift6", "seconds": 0.034, "before_mb": 641, "peak_mb": 642, "params": "(shape=[5, 7, 11], axes=(0, 1, 2), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift7", "seconds": 0.023, "before_mb": 642, "peak_mb": 644, "params": "(shape=[101], axes=None, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift8", "seconds": 0.035, "before_mb": 644, "peak_mb": 646, "params": "(shape=[3, 5], axes=(-1,), dtype=<class 'numpy.bool'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testFftshift9", "seconds": 0.027, "before_mb": 646, "peak_mb": 648, "params": "(shape=[3, 5], axes=(0,), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift0", "seconds": 0.023, "before_mb": 648, "peak_mb": 649, "params": "(shape=[101], axes=(-1,), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift1", "seconds": 0.009, "before_mb": 649, "peak_mb": 649, "params": "(shape=[5, 7, 11], axes=[], dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift2", "seconds": 0.018, "before_mb": 649, "peak_mb": 649, "params": "(shape=[5, 7, 11], axes=(0, 1), dtype=<class 'numpy.bool'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift3", "seconds": 0.015, "before_mb": 649, "peak_mb": 650, "params": "(shape=[3, 17], axes=(-2,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift4", "seconds": 0.015, "before_mb": 650, "peak_mb": 650, "params": "(shape=[3, 5], axes=[], dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift5", "seconds": 0.026, "before_mb": 650, "peak_mb": 653, "params": "(shape=[5, 7, 11], axes=(0, 1), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift6", "seconds": 0.027, "before_mb": 653, "peak_mb": 654, "params": "(shape=[5, 7, 11], axes=(0, 1, 2), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift7", "seconds": 0.016, "before_mb": 654, "peak_mb": 655, "params": "(shape=[101], axes=None, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift8", "seconds": 0.016, "before_mb": 655, "peak_mb": 655, "params": "(shape=[3, 5], axes=(-1,), dtype=<class 'numpy.bool'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIfftshift9", "seconds": 0.015, "before_mb": 655, "peak_mb": 656, "params": "(shape=[3, 5], axes=(0,), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftTranspose", "seconds": 0.374, "before_mb": 656, "peak_mb": 700}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnGpuLoweringIsASingleFft", "seconds": 0.036, "before_mb": 700, "peak_mb": 701}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes0", "seconds": 0.142, "before_mb": 701, "peak_mb": 711, "params": "(shape=(3, 5, 4), s=(3, 5, 7), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes1", "seconds": 0.135, "before_mb": 711, "peak_mb": 720, "params": "(shape=(4, 4, 3), s=(4, 4, 4), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes2", "seconds": 0.124, "before_mb": 720, "peak_mb": 730, "params": "(shape=(5, 1), s=(5, 1), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes3", "seconds": 0.153, "before_mb": 730, "peak_mb": 741, "params": "(shape=(4, 6, 1), s=(4, 6, 1), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes4", "seconds": 0.125, "before_mb": 741, "peak_mb": 749, "params": "(shape=(6, 5), s=(6, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes5", "seconds": 0.118, "before_mb": 749, "peak_mb": 757, "params": "(shape=(4, 1), s=(4, 1), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes6", "seconds": 0.124, "before_mb": 757, "peak_mb": 767, "params": "(shape=(3, 5, 1), s=(5, 1), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes7", "seconds": 0.144, "before_mb": 767, "peak_mb": 778, "params": "(shape=(2, 3, 4, 3), s=(3, 4, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes8", "seconds": 0.125, "before_mb": 778, "peak_mb": 787, "params": "(shape=(5, 2), s=(5, 2), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonHermitianOuterAxes9", "seconds": 0.128, "before_mb": 787, "peak_mb": 795, "params": "(shape=(3, 6, 5), s=(6, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testIrfftnNonSymmetricOuterAxes", "seconds": 0.114, "before_mb": 795, "peak_mb": 804}
+{"nodeid": "tests/fft_test.py::FftTest::testLaxFftAcceptsStringTypes", "seconds": 0.104, "before_mb": 804, "peak_mb": 806}
+{"nodeid": "tests/fft_test.py::FftTest::testLaxFftErrors", "seconds": 0.012, "before_mb": 806, "peak_mb": 806}
+{"nodeid": "tests/fft_test.py::FftTest::testLaxIrfftDoesNotMutateInputs0", "seconds": 0.073, "before_mb": 806, "peak_mb": 813, "params": "(<class 'numpy.float32'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testLaxIrfftDoesNotMutateInputs1", "seconds": 0.009, "before_mb": 813, "peak_mb": 813, "params": "(<class 'numpy.float64'>)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq0", "seconds": 0.076, "before_mb": 813, "peak_mb": 819, "params": "(dtype=<class 'numpy.float32'>, size=10, d=2.0, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq1", "seconds": 0.034, "before_mb": 819, "peak_mb": 822, "params": "(dtype=<class 'numpy.bool'>, size=101, d=2.0, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq2", "seconds": 0.084, "before_mb": 822, "peak_mb": 827, "params": "(dtype=<class 'numpy.float32'>, size=9, d=0.1, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq3", "seconds": 0.069, "before_mb": 827, "peak_mb": 831, "params": "(dtype=<class 'numpy.float32'>, size=102, d=0.1, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq4", "seconds": 0.045, "before_mb": 831, "peak_mb": 833, "params": "(dtype=<class 'numpy.int32'>, size=10, d=0.1, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq5", "seconds": 0.053, "before_mb": 833, "peak_mb": 834, "params": "(dtype=<class 'numpy.float32'>, size=10, d=0.1, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq6", "seconds": 0.052, "before_mb": 834, "peak_mb": 835, "params": "(dtype=<class 'numpy.float32'>, size=9, d=2.0, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq7", "seconds": 0.053, "before_mb": 835, "peak_mb": 837, "params": "(dtype=<class 'numpy.float32'>, size=102, d=0.1, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq8", "seconds": 0.023, "before_mb": 837, "peak_mb": 838, "params": "(dtype=<class 'numpy.int32'>, size=101, d=2.0, device=None)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreq9", "seconds": 0.021, "before_mb": 838, "peak_mb": 839, "params": "(dtype=<class 'numpy.int32'>, size=102, d=2.0, device=-1)"}
+{"nodeid": "tests/fft_test.py::FftTest::testRfftfreqErrors0", "seconds": 0.008, "before_mb": 839, "peak_mb": 839, "params": "(n=[0, 1, 2])"}

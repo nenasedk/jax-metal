@@ -1,0 +1,5 @@
+tests/random_lax_test.py::DistributionsTest::testBernoulliSmallProbabilty
+exit 137
+guard: memory 2.4 GB > limit 2.4 GB
+
+ss

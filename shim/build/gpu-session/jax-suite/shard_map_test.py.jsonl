@@ -1,0 +1,488 @@
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_invariant_basic", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_invariant_complex", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_no_check_vma_grad0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_no_check_vma_grad1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_reduced_fwd_unreduced_psum_scatter_bwd", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_rgv3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_with_axis_index_groups", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_with_vma_in_types", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_reduce_rgv3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_reduce_rgv3_multiple_meshes", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_grad", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_multiple_axis_names", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_rgv3", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_single_axis_name", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_with_axis_index_groups", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_approx_top_k", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_argmax_pvary", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_astype_reduced_fwd_unreduced_bwd_shmap", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_env_extension_regression", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/shard_map_test.py:2491:13: error: null operand found\n      return jnp.exp(x) + i.astype(x.dtype)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/shard_map_test.py:2495:13: note: called from\n      return shard_map(foo, mesh=Mesh(jax.devices(), ['x']), in_specs=(P('x'),),\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/shard_map_test.py:2498:31: note: called from\n    jax.jit(jax.grad(la"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu, tpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_basic0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_basic1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_eager", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_explicit_mesh_eager_shmap", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_twoaxes0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_twoaxes1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_unmapped", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_size_1_partial_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_rep_failure_inside_rule0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_rep_failure_inside_rule1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_rep_false_doesnt_hit_rep_rules", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_rep_false_grads", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_vma_false_reduced_fwd_no_psum_on_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_vma_false_unreduced_fwd_psum_on_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_close_over_explicit_sharded_input_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_close_over_input_explict_ctx_mesh", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_collective_permute", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_collective_permute_with_multiple_axis_names", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_collectives_not_saved", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_cond_pvary_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_cond_pvary_errors_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_cond_rep_rule", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_conv_general_dilated", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_cumsum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_custom_jvp_inside_jit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_custom_jvp_symbolic_zeros", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_custom_linear_solve_rep_rules", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_custom_vjp_replication_error_message_hint", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_dce", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_debug_print_eager", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_debug_print_jit0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu, tpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_debug_print_jit1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu, tpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_debug_print_jit_partial_auto", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu, tpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_device_put", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_different_devices_shmap_abstract_mesh_cache_hit", "outcome": "skipped", "message": "Skipped: Requires >=4 devices"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_disable_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_dynamic_slice_transpose", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_control_flow", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_custom_jvp_basic", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_custom_vjp_basic", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_mutable_array_arg_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_reduced_in", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_reduced_out", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_repr", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_shmap_new_ref", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_unreduced_in", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_unreduced_out", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_erf_rules", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_error_for_variable_num_args", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eval_shape_vma", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_explicit_vmap_grad_shmap_axis_name", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_explicit_vmap_grad_shmap_no_axis_name", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_fanin_psum_transposes_to_fanout", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_fanout_specs_transpose_to_psum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness10", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness11", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness12", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness13", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness14", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness15", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness16", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness17", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness18", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness19", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness20", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness21", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness22", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness23", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness24", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness25", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness26", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness27", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness28", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness29", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness30", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness31", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness32", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness33", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness34", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness35", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness36", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness37", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness38", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness39", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness40", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness41", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness42", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness43", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness44", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness45", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness46", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness47", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness48", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness49", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness50", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness51", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness52", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness53", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness54", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness55", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness56", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness57", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness58", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness59", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness60", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness61", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness62", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness63", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_full_like_pvary_existing", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_functools_partial_rank_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_get_check_rep", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_mutable_array_arg0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_mutable_array_arg1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_mutable_array_arg2", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_mutable_array_arg_unmentioned_no_check_vma", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_nested_partial_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_nested_partial_auto_with_residuals", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_shmap_residuals_axis_names_in_mesh_order", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_identity", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_spec_none", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_spec_none_divisibility_errors", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_spec_none_hashability", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_spec_none_rank_errors", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_specs_none_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jacrev_explicit", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jacrev_explicit_complex", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jaxpr_shardings_with_no_outputs", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jnp_histogram", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jvp_basic", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_key_array_with_replicated_last_tile_dim", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu, tpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_linalg_inv", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_linearize_basic", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_linearize_basic_repres", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_linearize_basic_repres_jit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mat_invarying", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_matmul_full_unreduced_out", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_matmul_reduce_scatter", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_matmul_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_matmul_unreduced_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mix_manual_explicit_partial", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mul_shmap_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mul_with_vma_in_types", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_multiple_result_primitive_with_none_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_aliased_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_aliased_typecheck_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_basic", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_at_varying_index", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_invariant_to_varying0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_invariant_to_varying1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_varying_to_invariant_error0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_varying_to_invariant_error1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_varying_to_invariant_error2", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_varying_to_invariant_error3", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_internal_basic", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto_1d_0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto_1d_1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto_1d_2", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto_1d_3", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_shmap_innermost_no_axis_names", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_vmap_with_capture_spmd_axis_name", "outcome": "skipped", "message": "Skipped: https://github.com/jax-ml/jax/issues/23476"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_no_auto_pcast_config0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_no_auto_pcast_config1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_no_mesh_context_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_one_input_sharded_another_reduced_shmap_add", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_one_input_sharded_another_reduced_shmap_mul", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_one_input_sharded_another_reduced_shmap_no_psum_add", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_one_input_sharded_another_reduced_shmap_no_psum_mul", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_optimization_barrier_varying_manual_axes", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: null operand found\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: called from\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packag"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_optimize_remat", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_outer_jit_detects_shard_map_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_axis_index", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_axis_index_degenerated_axis", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_axis_index_eager", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_debug_print", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_error_invalid_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_error_wrong_in_specs", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_error_wsc_manual", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_explicit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_explicit_multi_explicit", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_explicit_no_set_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_mismatch_mesh_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_no_check_vma_eager", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_of_pjit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_of_pjit_different_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_of_random_keys", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_of_random_keys_slice", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_ppermute", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_propagate_through", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_eval_custom_axis_env", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_manual_explicit_nested", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_manual_explicit_shmap0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_manual_explicit_shmap1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pbroadcast_dynamic_root", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pbroadcast_fully_replicated", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pbroadcast_partial_replicated", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pcast_axis_name_is_not_set", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pcast_to_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pmax", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pmax_vma_in_types", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pmin", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_post_process", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_post_process_partial_eval_with_scalar_res", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_ppermute_different_axis_order_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_ppermute_zip_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_preduced_fwd_unreduced_psum_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_print_inside_shard_map0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_print_inside_shard_map1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_print_inside_shard_map2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_prngkeyarray_eager", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_process_env_traces", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_two_gpus", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_dangling_recv", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_deadlock_cycle", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_duplicate_source_target_pairs", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_no_deadlock_cycle", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_non_matching_source_target_pairs", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_reverse_two_gpus", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psum_not_under_shmap_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psum_reduced_input", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psum_transpose_non_zero_cts", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psum_with_implicit_fanout_self_transposes", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pure_callback_return_multiple_arrays", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary_eager", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary_explicit_axes_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary_in_shmap_of_grad", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary_no_op_one_sized_mesh_axis", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_random_beta_vma", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_random_choice_pvary", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_random_normal_rules", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rank_errors", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduce_scatter_rgv3_multidim_mesh", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduce_scatter_rgv3_multidim_mesh_tuple_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduce_scatter_rgv3_simple", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduce_scatter_with_axis_index_groups", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduced_pcast_fwd_unreduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduced_shmap_inside_partially_manual_shmap", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduced_vary_automatically_inserted", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduced_vary_automatically_inserted_psum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_remat_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_remat_transform", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_remove_one_sized_mesh_axis_from_vma", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rep_none_canonicalization", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rep_none_canonicalization_again", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_repeat_shmap_vmap_spmd_axis_names", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_repeated_psum_allowed", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_replicated_unreduced_bitcast_check_vma_false0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_replicated_unreduced_bitcast_check_vma_false1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_replication_checker_eager", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_replication_checker_jit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_complex0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_complex1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_complex2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_complex3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reshape_reduced_fwd_unreduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_residual_reduced_preserved_via_nospec", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_returned_out_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reverse_mode_ad", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_binops", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_custom_vjp_call_jaxpr0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_custom_vjp_call_jaxpr1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_post_process_call", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_call", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_jvp_call0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_jvp_call1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_vjp_call0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_vjp_call1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_vjp_call_match_more_replicated0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_vjp_call_match_more_replicated1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_scan", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_same_pspec_eager_shard_map", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_scan_pvary_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_scan_pvary_errors2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_scan_rep_rule", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shard_map_abstract_mesh", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_prng_with_abstract_mesh", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_random_bits0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_random_bits1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_random_bits2", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_unreduced_roundtrip_check_vma_false0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_unreduced_roundtrip_check_vma_false1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharding_metadata_in_hlo_attrs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_abstract_mesh_errors", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_auto_unreduced_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_bwd_rep_to_unreduced_check_vma_true", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_close_over_unused_params", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_close_over_unused_params_vmap", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_custom_vjp_empty_mesh", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_empty_mesh_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_full_manual_context_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_full_manual_context_explicit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_linearize_and_linearize_transpose_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_of_remat_basic", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/shard_map_test.py:1188:13: error: null operand found\n      return jnp.sin(x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/shard_map_test.py:1190:28: note: called from\n    g2 = jax.grad(lambda x: f2(x).sum())(x)  # doesn't crash\n                           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/shard_map_test.py:1190:9: note: called from\n    g2 = jax.grad(lambda x: f2(x).sum())(x)  # do"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_partial_manual_auto", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_partial_manual_explicit", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_primal_type_match_ct_type", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_unreduced_fsdp_custom_vjp_bwd", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_unreduced_fsdp_grad", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sin_unreduced_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_slice_oob_shmap0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_slice_oob_shmap1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_error0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_error1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest_inner_none0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest_inner_none1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest_mesh_call_time0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest_mesh_call_time1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_explicit0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_explicit1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_nested_psum0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_nested_psum1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_replicated0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_replicated1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_replicated_sharded0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_replicated_sharded1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_split_with_unused_result_in_shardmap", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_switch_rep_rule", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_temporary_error_suppression_flag", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_transpose_float0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_transpose_identity", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_transpose_unreduced_shmap", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_tree_prefix_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_bwd_manual_reshard_op_shardy", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_max_min_local_reduce_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_max_min_local_reduce_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_max_min_nested_shard_map_add_manual_axes_max", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_max_min_nested_shard_map_add_manual_axes_min", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_partial_manual_basic", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_psum_fwd_preduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_psum_scatter_fwd_all_gather_reduced_bwd", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_replicated_bitcast", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_varargs_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs2", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs3", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs_aliased_args0", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs_aliased_args1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs_aliased_args2", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vma_out_specs_error_check", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_basic", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_basic_axis_name", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_basic_axis_name_reuse_mesh_name", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_explicit_mesh_axis", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_explicit_mesh_axis_error", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_explicit_mesh_axis_single_axis", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_grad_remat_shmap_spmd_axis_name_residuals", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_grad_shmap_spmd_axis_name_residuals", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_of_grad_spmd_axis_name", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_shmap_psum", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_shmap_spmd_axis_name_scalar0", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_shmap_spmd_axis_name_scalar1", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_spmd_axis_name", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_spmd_axis_name_error", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_spmd_axis_name_pair", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_while_rep_rule", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_with_static_arg", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_zero_cotangent_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_zero_unreduced", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads10", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads11", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads12", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads13", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads14", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads15", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads18", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads19", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads2", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads3", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref1", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap7", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap8", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap9", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure3", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure6", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure7", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure8", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure9", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::CustomPartitionerTest::test_custom_partitioning", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::CustomPartitionerTest::test_partially_sharded_dim_with_auto", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref2", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref4", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref5", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref7", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::SdyIntegrationTest::test_shardy_collective_permute", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_remat_scalar_residuals", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads16", "outcome": "crashed", "message": "exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, jaxlib.cpu_feature_guard, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, nu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads17", "outcome": "crashed", "message": "exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, jaxlib.cpu_feature_guard, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, nu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads6", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure3", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure8", "outcome": "crashed", "message": "exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, jaxlib.cpu_feature_guard, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, nu"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure9", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}

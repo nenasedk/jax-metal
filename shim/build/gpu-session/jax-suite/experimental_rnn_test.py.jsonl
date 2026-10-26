@@ -1,0 +1,22 @@
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_no_workspace_overflow", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cuda, rocm"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_struct_encoding_determinism", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref0", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/experimental_rnn_test.py::RnnTest::test_lstm_ref1", "outcome": "passed", "message": ""}

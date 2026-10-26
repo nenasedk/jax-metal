@@ -1,0 +1,202 @@
+$ /Users/nasedkin/jax_metal/shim/../.venv-shim/bin/python /Users/nasedkin/jax_metal/shim/tests/test_narrow.py
+Platform 'METAL' is experimental and not all JAX functionality may be correctly supported!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793040147.330361 1108408 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+Metal device set to: Apple M3
+I0000 00:00:1793040147.347392 1108408 service.cc:145] XLA service 0x600003fe0700 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793040147.347520 1108408 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793040147.349103 1108408 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793040147.349139 1108408 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+ok    convert float32 -> float8_e4m3fn
+ok    convert float32 -> float8_e5m2
+ok    convert float32 -> float8_e4m3
+ok    convert float32 -> float8_e3m4
+ok    convert float32 -> float8_e4m3fnuz
+ok    convert float32 -> float8_e5m2fnuz
+ok    convert float32 -> float8_e4m3b11fnuz
+ok    convert float32 -> float8_e8m0fnu
+ok    convert float32 -> float4_e2m1fn
+ok    convert float16 -> float8_e4m3fn
+ok    convert float16 -> float8_e5m2
+ok    convert float16 -> float8_e4m3
+ok    convert float16 -> float8_e3m4
+ok    convert float16 -> float8_e4m3fnuz
+ok    convert float16 -> float8_e5m2fnuz
+ok    convert float16 -> float8_e4m3b11fnuz
+ok    convert float16 -> float8_e8m0fnu
+ok    convert float16 -> float4_e2m1fn
+ok    convert bfloat16 -> float8_e4m3fn
+ok    convert bfloat16 -> float8_e5m2
+ok    convert bfloat16 -> float8_e4m3
+ok    convert bfloat16 -> float8_e3m4
+ok    convert bfloat16 -> float8_e4m3fnuz
+ok    convert bfloat16 -> float8_e5m2fnuz
+ok    convert bfloat16 -> float8_e4m3b11fnuz
+ok    convert bfloat16 -> float8_e8m0fnu
+ok    convert bfloat16 -> float4_e2m1fn
+ok    convert int32 -> int4
+ok    convert float32 -> int4
+ok    convert int32 -> uint4
+ok    convert float32 -> uint4
+ok    convert int32 -> int2
+ok    convert float32 -> int2
+ok    convert int32 -> uint2
+ok    convert float32 -> uint2
+ok    float8_e4m3fn arithmetic
+ok    float8_e4m3fn functions
+ok    float8_e4m3fn comparisons
+ok    float8_e4m3fn reductions (2 last-bit differences)
+ok    float8_e4m3fn dot (2 last-bit differences)
+ok    float8_e4m3fn movement
+ok    float8_e4m3fn scatter-add
+ok    float8_e4m3fn control flow
+ok    float8_e4m3fn nextafter
+ok    float8_e4m3fn bitcast
+ok    float8_e5m2 arithmetic
+ok    float8_e5m2 functions (2 last-bit differences)
+ok    float8_e5m2 comparisons
+ok    float8_e5m2 reductions (4 last-bit differences)
+ok    float8_e5m2 dot (1 last-bit differences)
+ok    float8_e5m2 movement
+ok    float8_e5m2 scatter-add
+ok    float8_e5m2 control flow
+ok    float8_e5m2 nextafter
+ok    float8_e5m2 bitcast
+ok    float8_e4m3 arithmetic
+ok    float8_e4m3 functions
+ok    float8_e4m3 comparisons
+ok    float8_e4m3 reductions (1 last-bit differences)
+ok    float8_e4m3 dot (1 last-bit differences)
+ok    float8_e4m3 movement
+ok    float8_e4m3 scatter-add
+ok    float8_e4m3 control flow
+ok    float8_e4m3 nextafter
+ok    float8_e4m3 bitcast
+ok    float8_e3m4 arithmetic
+ok    float8_e3m4 functions (4 last-bit differences)
+ok    float8_e3m4 comparisons
+ok    float8_e3m4 reductions (3 last-bit differences)
+ok    float8_e3m4 dot
+ok    float8_e3m4 movement
+ok    float8_e3m4 scatter-add
+ok    float8_e3m4 control flow
+ok    float8_e3m4 nextafter
+ok    float8_e3m4 bitcast
+ok    float8_e4m3fnuz arithmetic
+ok    float8_e4m3fnuz functions
+ok    float8_e4m3fnuz comparisons
+ok    float8_e4m3fnuz reductions (6 last-bit differences)
+ok    float8_e4m3fnuz dot (1 last-bit differences)
+ok    float8_e4m3fnuz movement
+ok    float8_e4m3fnuz scatter-add (1 last-bit differences)
+ok    float8_e4m3fnuz control flow
+ok    float8_e4m3fnuz nextafter
+ok    float8_e4m3fnuz bitcast
+ok    float8_e5m2fnuz arithmetic
+ok    float8_e5m2fnuz functions (1 last-bit differences)
+ok    float8_e5m2fnuz comparisons
+ok    float8_e5m2fnuz reductions (2 last-bit differences)
+ok    float8_e5m2fnuz dot (5 last-bit differences)
+ok    float8_e5m2fnuz movement
+ok    float8_e5m2fnuz scatter-add
+ok    float8_e5m2fnuz control flow
+ok    float8_e5m2fnuz nextafter
+ok    float8_e5m2fnuz bitcast
+ok    float8_e4m3b11fnuz arithmetic
+ok    float8_e4m3b11fnuz functions
+ok    float8_e4m3b11fnuz comparisons
+ok    float8_e4m3b11fnuz reductions (2 last-bit differences)
+ok    float8_e4m3b11fnuz dot (3 last-bit differences)
+ok    float8_e4m3b11fnuz movement
+ok    float8_e4m3b11fnuz scatter-add
+ok    float8_e4m3b11fnuz control flow
+ok    float8_e4m3b11fnuz nextafter
+ok    float8_e4m3b11fnuz bitcast
+ok    float8_e8m0fnu arithmetic
+ok    float8_e8m0fnu functions
+ok    float8_e8m0fnu comparisons
+ok    float8_e8m0fnu reductions (11 last-bit differences)
+ok    float8_e8m0fnu dot (1 last-bit differences)
+ok    float8_e8m0fnu movement
+ok    float8_e8m0fnu scatter-add
+ok    float8_e8m0fnu control flow
+ok    float8_e8m0fnu nextafter
+ok    float8_e8m0fnu bitcast
+ok    float4_e2m1fn arithmetic
+ok    float4_e2m1fn functions
+ok    float4_e2m1fn comparisons
+ok    float4_e2m1fn reductions (8 last-bit differences)
+ok    float4_e2m1fn dot
+ok    float4_e2m1fn movement
+ok    float4_e2m1fn scatter-add (1 last-bit differences)
+ok    float4_e2m1fn control flow
+ok    float4_e2m1fn nextafter
+ok    int4 arithmetic
+ok    int4 shifts
+ok    int4 population_count
+ok    int4 convert
+ok    int4 reductions, loops
+ok    uint4 arithmetic
+FAIL  uint4 shifts: 31 of 64 differ, e.g. got [ 8  1  5 14] want [0 0 0 0]
+ok    uint4 population_count
+ok    uint4 convert
+ok    uint4 reductions, loops
+ok    int2 arithmetic
+ok    int2 shifts
+ok    int2 population_count
+ok    int2 convert
+ok    int2 reductions, loops
+ok    uint2 arithmetic
+FAIL  uint2 shifts: 25 of 64 differ, e.g. got [3 2 3 1] want [0 0 0 0]
+ok    uint2 population_count
+ok    uint2 convert
+ok    uint2 reductions, loops
+ok    bitcast int4[..., 2] <-> int8
+ok    bitcast uint4[..., 4] <-> float16
+ok    bitcast float32 <-> int4[..., 8]
+ok    bitcast int2[..., 2] <-> int4
+ok    bitcast uint2[..., 4] <-> float8_e5m2
+ok    bitcast float4[..., 2] <-> uint8
+ok    float8_e4m3fn in/out: identity
+ok    float8_e4m3fn in/out: arithmetic
+ok    float8_e4m3fn in/out: zeros
+ok    float8_e4m3fn in/out: to float32
+ok    float8_e4m3fn device_put round trip
+ok    float8_e5m2 in/out: identity
+ok    float8_e5m2 in/out: arithmetic
+ok    float8_e5m2 in/out: zeros
+ok    float8_e5m2 in/out: to float32
+ok    float8_e5m2 device_put round trip
+ok    float8_e4m3fnuz in/out: identity
+ok    float8_e4m3fnuz in/out: arithmetic
+ok    float8_e4m3fnuz in/out: zeros
+ok    float8_e4m3fnuz in/out: to float32
+ok    float8_e4m3fnuz device_put round trip
+ok    float8_e5m2fnuz in/out: identity
+ok    float8_e5m2fnuz in/out: arithmetic
+ok    float8_e5m2fnuz in/out: zeros
+ok    float8_e5m2fnuz in/out: to float32
+ok    float8_e5m2fnuz device_put round trip
+ok    float8_e4m3b11fnuz in/out: identity
+ok    float8_e4m3b11fnuz in/out: arithmetic
+ok    float8_e4m3b11fnuz in/out: zeros
+ok    float8_e4m3b11fnuz in/out: to float32
+ok    float8_e4m3b11fnuz device_put round trip
+ok    int4 in/out: identity
+ok    int4 in/out: arithmetic
+ok    int4 in/out: zeros
+ok    int4 in/out: to float32
+ok    int4 device_put round trip
+ok    uint4 in/out: identity
+ok    uint4 in/out: arithmetic
+ok    uint4 in/out: zeros
+ok    uint4 in/out: to float32
+ok    uint4 device_put round trip
+ok    float8_e4m3 output: refused with NotImplementedError
+
+2 failed: uint4 shifts, uint2 shifts
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793040175.487345 1108408 mps_client.h:209] MetalClient destroyed.

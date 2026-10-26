@@ -1,0 +1,304 @@
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAllNegativeAxes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAllReplicaGroups", "outcome": "skipped", "message": "Skipped: test requires an even number of devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,2]_axis=0_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,2]_axis=0_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,2]_axis=1_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,2]_axis=1_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,4]_axis=0_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,4]_axis=0_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,4]_axis=1_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,4]_axis=1_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4,2]_axis=0_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4,2]_axis=0_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4,2]_axis=1_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4,2]_axis=1_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4]_axis=0_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4]_axis=0_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,2]_axis=0_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,2]_axis=0_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,2]_axis=1_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,2]_axis=1_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,4]_axis=0_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,4]_axis=0_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,4]_axis=1_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,4]_axis=1_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4,2]_axis=0_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4,2]_axis=0_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4,2]_axis=1_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4,2]_axis=1_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 2 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4]_axis=0_collective=pargmax", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4]_axis=0_collective=pargmin", "outcome": "skipped", "message": "Skipped: test requires at least 4 devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayBlockUntilReady", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayGetItem", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayReshape_in=(1,)_out=()", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayReshape_in=(1,)_out=(1,1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayReshape_in=(1,1)_out=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrays", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAxisIndex", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAxisIndexInInitialStyle", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAxisIndexRemat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAxisIndexRemat_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testBasic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcast", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRoot", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootAxisIndexAsSource", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootBatcherConstantData", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootBatcherNonzeroSource", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootGrad", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootNonzeroSource", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootVmapOuterAxis", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastGrad", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastVmap", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveConstant", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivePermute", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivePermuteCyclicGrad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivePermuteCyclicWithPShuffle", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivePermuteGrad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivesWithTreesOfDifferentDtypes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testComplexPsum", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCompositionWithJitTwice", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testDefaultDeviceOrdering", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testDefaultDeviceOrderingAfterClearBackends", "outcome": "crashed", "message": "exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_umath, numpy.linalg._umath_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, nu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testDeviceCountError", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGather", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherBool", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherNegativeAxis", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherReplicaGroups", "outcome": "skipped", "message": "Skipped: Test expected an even number of devices greater than 1."}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherReplicaGroupsInterleaved", "outcome": "skipped", "message": "Skipped: Test expected an even number of devices greater than 1."}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherTiled", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherTiledNegativeAxis", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradBasic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfAllToAllReplicaGroups", "outcome": "skipped", "message": "Skipped: test requires an even number of devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfGather", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfGatherIndexGroups", "outcome": "skipped", "message": "Skipped: Need at least two devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfGatherTiled", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfJvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfPsum", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfPswapaxes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfReduceScatter", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfReduceScatterIndexGroups", "outcome": "skipped", "message": "Skipped: Need at least two devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfReduceScatterTiled", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testInAxesPyTreePrefixMismatchError", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testInAxesPyTreePrefixMismatchErrorKwargs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testIssue1065", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testJitOfPmapLowerHasReplicaAttributes", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testJitOfPmapOutputSharding", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testJitPmapComposition", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testJvpAndPartialEval", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerAsText", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompile", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileArgTypeMismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileAsText", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileCompilerIR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileCostAnalysis", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileExecutable", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileInTreeMismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileMemoryAnalysis", "outcome": "crashed", "message": "exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_umath, numpy.linalg._umath_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, nu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileMultiArg", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileTrivial", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileTrivialInTreeMismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileTrivialMultiArg", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompilerIR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCostAnalysis", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerHasReplicaAttributes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerShapedArray", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testManyArgs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testMean", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testMismatchedAxisSizes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testOutAxesPyTreePrefixMismatchError", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPShuffleWithBadPerm", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPartiallyMapped", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapAxisNameError", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapConstant", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapConstantDevices", "outcome": "skipped", "message": "Skipped: this test requires multiple devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapConstantError", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapDtype_dtype=float32[]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapDtype_dtype=int32[]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapMapVmapCombinations", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPostProcessMap2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPpermuteWithZipObject", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumConstantReplicaGroups", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumOnBooleanDtype", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumReplicaGroups", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumUnevenReplicaGroups", "outcome": "skipped", "message": "Skipped: Test expected devices greater than 2."}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumZeroCotangents", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPswapaxes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceMax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceMin", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceScatter", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceScatterNegativeScatterDimension", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceScatterReplicaGroupsTiled", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceScatterTiled", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testRule30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testTrees", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testTwoArgsGrad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfGather", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmap2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmap3", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmapNonLeadingAxis", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmapTuple", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfReduceScatter", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_axis_env_length", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_axis_name_shadowing_with_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_grad_of_pmap_compilation_caching_axis_size=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_grad_of_pmap_compilation_caching_axis_size=2", "outcome": "skipped", "message": "Skipped: too few devices for test"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_issue_1062", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_jit_lower_compile_with_compiler_options", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_jit_lower_compile_with_compiler_options_invalid", "outcome": "failed", "message": "AssertionError: JaxRuntimeError not raised by <lambda>"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_jit_lower_compile_with_compiler_options_multiple", "outcome": "failed", "message": "AssertionError: JaxRuntimeError not raised by <lambda>"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_num_replicas_with_switch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_pmap_error_on_non_hashable_static_argument", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_pmap_of_prng_key", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_pmap_replicated_copy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_pmap_stack_size", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_remat_of_pmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_remat_of_pmap_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_remat_of_pmap_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_remat_of_pmap_policy_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_static_argnum_on_method", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_typed_prng_key_sharded", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((2, 1, 4), (2, 1, 4))_(3, 2)_2_(1, 0)_3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((2, 1, 4),)_(2,)_1_(2,)_0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((2, 3, 4),)_(2,)_0_(3,)_0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3, 1),)_(1,)_0_(1,)_1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3, 4), (3, 1))_(2, None)_0_(0, 0)_1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3, 4), (3, 4), (1, 4))_(1, 2, None)_0_(2, 0, 2)_2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3, 4),)_(0,)_2_(2,)_2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3,), (3,))_(0, 0)_0_(0, 0)_1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3,), (3,), (3,))_(1, 0, 0)_1_(1, 0, None)_1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3,), (3,), (3,))_(None, 1, 0)_0_(1, 0, None)_0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=0_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=0_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=0_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=0_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=1_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=1_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=1_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=1_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=2_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=2_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=2_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=2_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=0_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=0_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=0_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=0_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=1_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=1_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=1_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=1_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=2_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=2_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=2_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=2_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=0_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=0_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=0_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=0_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=1_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=1_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=1_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=1_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=2_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=2_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=2_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=2_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=0_concat=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=0_concat=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=0_concat=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=1_concat=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=1_concat=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=1_concat=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=2_concat=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=2_concat=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=2_concat=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap2_collective=pmax", "outcome": "skipped", "message": "Skipped: test requires at least eight devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap2_collective=pmean", "outcome": "skipped", "message": "Skipped: test requires at least eight devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap2_collective=pmin", "outcome": "skipped", "message": "Skipped: test requires at least eight devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap2_collective=psum", "outcome": "skipped", "message": "Skipped: test requires at least eight devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap_collective=pmax", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap_collective=pmean", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap_collective=pmin", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap_collective=psum", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testPPermuteAgreesWithVmap", "outcome": "skipped", "message": "Skipped: test requires at least three devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testPPermuteWithVmap", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testVsVmapAllGather", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testVsVmapAllGatherTiled", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testVsVmapReduceScatter", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testVsVmapReduceScatterTiled", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testWithVmapAllGather", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testWithVmapReduceScatter", "outcome": "skipped", "message": "Skipped: test requires at least four devices"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testAllDevices", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testBadAxisSizeError", "outcome": "skipped", "message": "Skipped: this test requires multiple devices"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testBadAxisSizeErrorNested", "outcome": "skipped", "message": "Skipped: Ignore nested pmap when `pmap_shmap_merge=True`."}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testGradBasic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testJitInPmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testNestedPmaps", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testNestedPmapsBools", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testNestedPmapsError", "outcome": "skipped", "message": "Skipped: Ignore nested pmap when `pmap_shmap_merge=True`."}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testNoDevicesError", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testOneDevice", "outcome": "skipped", "message": "Skipped: this test requires multiple devices"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapDictOutAxes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapInAxesBasic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapInAxesGrad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapInJit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapOutAxesBasic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapPostProcess", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapStaticArgnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayTest::testNoCopyIndexing1D", "outcome": "skipped", "message": "Skipped: requires 8 devices"}
+{"nodeid": "tests/pmap_test.py::ArrayTest::testThreadsafeIndexing", "outcome": "skipped", "message": "Skipped: TODO(dsuo): See https://github.com/jax-ml/jax/issues/31911"}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_delete_is_idempotent", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_device_put_replicated", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_device_put_replicated_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_device_put_sharded", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_device_put_sharded_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_repr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_amap", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices."}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_array_with_pmap_sharding_copy_without_round_trip", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_device_put_sharded_transfer_guard", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_jnp_stack", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_array_devices_mismatch", "outcome": "skipped", "message": "Skipped: Skipping because this test needs more than 1 device."}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_array_in_axes_out_axes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_array_sharding_mismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_double_input_array_output_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_input_array_output_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_same_out_sharding_id", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_float0_dtype_input", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_float0_dtype_output", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_int_arg_with_in_axes_none", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_lower_with_flattened_args", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_lowered_args_info", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_numpy_input_sharding", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_prng_key", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_store_exception", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_wrapped", "outcome": "skipped", "message": "Skipped: test requires at least two devices"}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_backend_new_stablehlo_version_enables_dynamic_root", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_backend_old_stablehlo_version_disables_dynamic_root", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_backend_without_stablehlo_version_falls_back_to_host_version", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_forward_compat_disables_dynamic_root", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_ifrt_proxy_backend_disables_dynamic_root", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_no_backend_falls_back_to_host_version", "outcome": "passed", "message": ""}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootDowngradeIntegrationTest::test_gate_disabled_downgrades_cleanly", "outcome": "skipped", "message": "Skipped: pbroadcast_dynamic is only lowered for gpu"}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootDowngradeIntegrationTest::test_gate_incorrectly_enabled_reproduces_original_crash", "outcome": "skipped", "message": "Skipped: pbroadcast_dynamic is only lowered for gpu"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testSizeOverflow", "outcome": "crashed", "message": "guard: memory 2.4 GB > limit 2.4 GB"}

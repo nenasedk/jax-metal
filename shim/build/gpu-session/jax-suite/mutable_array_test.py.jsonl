@@ -1,0 +1,218 @@
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic0", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic_aot", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic_aot_closure", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic_sharded_aot", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_can_dce_internal_ref_effect", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_closed_over_basic0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_closed_over_basic1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_closed_over_nested0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_closed_over_nested1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_differentiated_ref0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_differentiated_ref1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic_vjp30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic_vjp31", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic_vjp32", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic_vjp33", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_cond0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_cond1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_cond2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_cond3", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:602:12: error: null operand found\n        x = jnp.sin(x)\n           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:611:13: note: called from\n      return f(x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:627:4: note: called from\n    jax.grad(primal, argnums=1)(grads_ref, jnp.float32(1.0))\n   ^\n/Users/nasedkin/jax_metal/.venv-sh"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan1", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:572:12: error: null operand found\n        x = jnp.sin(x)\n           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:578:14: note: called from\n      x, () = jax.lax.scan(body, x, None, length=1)\n             ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:595:4: note: called from\n    jax.grad(primal, argnums=1)(grads_ref, jnp.float32(1.0))\n   ^"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan3", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:572:12: error: null operand found\n        x = jnp.sin(x)\n           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:578:14: note: called from\n      x, () = jax.lax.scan(body, x, None, length=1)\n             ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:595:4: note: called from\n    jax.grad(primal, argnums=1)(grads_ref, jnp.float32(1.0))\n   ^"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan_vjp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_internal_ref0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_internal_ref1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vmap_discharge_internal_ref", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vmap_discharge_ref_across_boundary", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_dead_ref_writes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_keeps_ref_write_read_by_next_scan_iteration", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_input_liveness", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_after_last_read", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_cond", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_one_cond_branch_read_in_other", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_remat0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_remat1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_scan0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_scan1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_scan_ref_liveness_fixpoint", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_defensive_copy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_deref_after_free_ref_raises", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_double_free_ref_raises", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_double_jit_mutable_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_empty_ref_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_empty_ref_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_empty_ref_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_explicit_sharding_after_indexing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_free_ref_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_free_ref_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_free_ref_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_freeze_insertion0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_freeze_insertion1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_gather_with_vjp30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_gather_with_vjp31", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_gather_with_vjp3_general_fallback", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_gather_with_vjp3_multidim", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_get_transpose_uninstantiated_grad_ref", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_get_transformed_ref", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit_readonly0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit_readonly1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit_readonly_1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit_readonly_2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_mutable_array0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_mutable_array1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_of_constant_ref_set", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_of_constant_ref_set_indexed", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_scan0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_scan1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_scan_extensive", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_implicit_bitcast_regression", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_implicit_cast_in_swap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_internal_mutarray_basic0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_internal_mutarray_basic1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_isinstance", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_len_mutable_array0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_len_mutable_array1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_multiple_inputs_and_outputs0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_multiple_inputs_and_outputs1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_none_index", "outcome": "skipped", "message": "Skipped: Not yet implemented"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_optimization_barrier_with_refs", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: null operand found\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_arg0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_arg1", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:901:12: error: null operand found\n      out = y * y\n           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:909:8: note: called from\n    g = jax.grad(f)(2., x_ref)\n       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:331:17: note: called from\n          return test_method(self, testcase_params)\n                ^\n/"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_closed_over0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_closed_over1", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:917:12: error: null operand found\n      out = y * x_ref[...]\n           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:925:8: note: called from\n    g = jax.grad(f)(2.)\n       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:331:17: note: called from\n          return test_method(self, testcase_params)\n                ^"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_closed_over_nested", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_internal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_internal1", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:887:12: error: null operand found\n      out = y * x_ref[...]\n           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/mutable_array_test.py:894:8: note: called from\n    g = jax.grad(f)(2., 1.)\n       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:331:17: note: called from\n          return test_method(self, testcase_params)\n             "}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_grad_stats_plumbing_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_while_loop_residuals", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_rng_key", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_closed_over_mut_array0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_closed_over_mut_array1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_grad_doesnt_hoist_mutable_stuff", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_grad_doesnt_hoist_mutable_stuff2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_internal_mut_array0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_internal_mut_array1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_scanned_mut_array0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_scanned_mut_array1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_mixed_accum_kinds_consts0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_mixed_accum_kinds_consts1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_mixed_accum_kinds_xs0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_mixed_accum_kinds_xs1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_reverse", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_sharded_aot_mutable_sds", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_sharding_persists", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_slicing_with_vjp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_static_slicing_with_vjp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_ref_grads_for_val_primals", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_aliased_args0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_aliased_args1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_aliased_args2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_aliased_sparse_reads", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_same_ref_for_two_inputs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_scan_const_and_xs_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_closed_over_ref0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_closed_over_ref1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref_leading_axis", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_ref_extensive_inputs0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_ref_extensive_inputs1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_closed_over_read_only", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_create_ref_from_unbatched_value", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_extensive_inputs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_with_vjp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_what_if_you_lower_fun_something_with_internal_effects", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_with_refs_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_checkpoint0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_checkpoint1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_cond", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_fwd0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_fwd1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_primal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_primal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_under_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_checkpoint0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_checkpoint1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_cond", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_custom_vjp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_shard_map", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_cond_both_branches_close_over_same_mutable_array0", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_cond_both_branches_close_over_same_mutable_array1", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_jnp_function_on_ref_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_jvp_closed_over_ref_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_empty_ref_message", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_cond", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_fwd0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_fwd1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_primal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_primal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_primal_nondiff_argnum0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_primal_nondiff_argnum1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_jit_arg", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_jit_closure", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_jit_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_vmap_aliased_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_vmap_closed_over_ref_write", "outcome": "passed", "message": ""}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_while_same_ref_in_cond_and_body_typechecks", "outcome": "passed", "message": ""}

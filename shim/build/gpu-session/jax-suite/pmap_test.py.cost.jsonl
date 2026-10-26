@@ -1,0 +1,301 @@
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll0", "seconds": 0.155, "before_mb": 87, "peak_mb": 161, "params": "(split_axis=1, concat_axis=0, dtype=<class 'numpy.uint32'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll1", "seconds": 0.034, "before_mb": 161, "peak_mb": 163, "params": "(split_axis=0, concat_axis=0, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll2", "seconds": 0.032, "before_mb": 163, "peak_mb": 165, "params": "(split_axis=1, concat_axis=0, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll3", "seconds": 0.039, "before_mb": 165, "peak_mb": 167, "params": "(split_axis=0, concat_axis=0, dtype=<class 'numpy.uint32'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll4", "seconds": 0.105, "before_mb": 167, "peak_mb": 171, "params": "(split_axis=0, concat_axis=1, dtype=<class 'numpy.uint16'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll5", "seconds": 0.044, "before_mb": 171, "peak_mb": 172, "params": "(split_axis=0, concat_axis=0, dtype=<class 'numpy.bool'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll6", "seconds": 0.043, "before_mb": 172, "peak_mb": 179, "params": "(split_axis=0, concat_axis=0, dtype=<class 'numpy.float16'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll7", "seconds": 0.058, "before_mb": 179, "peak_mb": 186, "params": "(split_axis=0, concat_axis=0, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll8", "seconds": 0.046, "before_mb": 186, "peak_mb": 189, "params": "(split_axis=0, concat_axis=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAll9", "seconds": 0.04, "before_mb": 189, "peak_mb": 191, "params": "(split_axis=1, concat_axis=1, dtype=<class 'ml_dtypes.bfloat16'>)"}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAllNegativeAxes", "seconds": 0.057, "before_mb": 191, "peak_mb": 194}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAllToAllReplicaGroups", "seconds": 0.029, "before_mb": 194, "peak_mb": 195}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,2]_axis=0_collective=pargmax", "seconds": 0.009, "before_mb": 195, "peak_mb": 195}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,2]_axis=0_collective=pargmin", "seconds": 0.012, "before_mb": 195, "peak_mb": 195}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,2]_axis=1_collective=pargmax", "seconds": 0.022, "before_mb": 195, "peak_mb": 195}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,2]_axis=1_collective=pargmin", "seconds": 0.019, "before_mb": 195, "peak_mb": 195}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,4]_axis=0_collective=pargmax", "seconds": 0.081, "before_mb": 195, "peak_mb": 195}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,4]_axis=0_collective=pargmin", "seconds": 0.011, "before_mb": 195, "peak_mb": 195}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,4]_axis=1_collective=pargmax", "seconds": 0.017, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[2,4]_axis=1_collective=pargmin", "seconds": 0.031, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4,2]_axis=0_collective=pargmax", "seconds": 0.014, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4,2]_axis=0_collective=pargmin", "seconds": 0.023, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4,2]_axis=1_collective=pargmax", "seconds": 0.01, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4,2]_axis=1_collective=pargmin", "seconds": 0.009, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4]_axis=0_collective=pargmax", "seconds": 0.013, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=float32[4]_axis=0_collective=pargmin", "seconds": 0.01, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,2]_axis=0_collective=pargmax", "seconds": 0.014, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,2]_axis=0_collective=pargmin", "seconds": 0.006, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,2]_axis=1_collective=pargmax", "seconds": 0.016, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,2]_axis=1_collective=pargmin", "seconds": 0.01, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,4]_axis=0_collective=pargmax", "seconds": 0.008, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,4]_axis=0_collective=pargmin", "seconds": 0.016, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,4]_axis=1_collective=pargmax", "seconds": 0.024, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[2,4]_axis=1_collective=pargmin", "seconds": 0.019, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4,2]_axis=0_collective=pargmax", "seconds": 0.015, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4,2]_axis=0_collective=pargmin", "seconds": 0.01, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4,2]_axis=1_collective=pargmax", "seconds": 0.009, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4,2]_axis=1_collective=pargmin", "seconds": 0.014, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4]_axis=0_collective=pargmax", "seconds": 0.015, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArgAllReduce_shape=int32[4]_axis=0_collective=pargmin", "seconds": 0.015, "before_mb": 196, "peak_mb": 196}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayBlockUntilReady", "seconds": 0.052, "before_mb": 196, "peak_mb": 198}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayGetItem", "seconds": 0.233, "before_mb": 198, "peak_mb": 200}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayReshape_in=(1,)_out=()", "seconds": 0.036, "before_mb": 200, "peak_mb": 202}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayReshape_in=(1,)_out=(1,1)", "seconds": 0.03, "before_mb": 202, "peak_mb": 203}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrayReshape_in=(1,1)_out=(1,)", "seconds": 0.031, "before_mb": 203, "peak_mb": 205}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testArrays", "seconds": 0.144, "before_mb": 205, "peak_mb": 211}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAxisIndex", "seconds": 0.042, "before_mb": 211, "peak_mb": 213}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAxisIndexInInitialStyle", "seconds": 0.161, "before_mb": 213, "peak_mb": 219}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAxisIndexRemat", "seconds": 0.278, "before_mb": 219, "peak_mb": 232}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testAxisIndexRemat_new", "seconds": 0.061, "before_mb": 232, "peak_mb": 235}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testBasic", "seconds": 0.047, "before_mb": 235, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcast", "seconds": 0.067, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRoot", "seconds": 0.011, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootAxisIndexAsSource", "seconds": 0.007, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootBatcherConstantData", "seconds": 0.017, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootBatcherNonzeroSource", "seconds": 0.007, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootGrad", "seconds": 0.012, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootNonzeroSource", "seconds": 0.007, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastDynamicRootVmapOuterAxis", "seconds": 0.012, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastGrad", "seconds": 0.006, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveBroadcastVmap", "seconds": 0.011, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectiveConstant", "seconds": 0.022, "before_mb": 236, "peak_mb": 237}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivePermute", "seconds": 0.033, "before_mb": 237, "peak_mb": 239}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivePermuteCyclicGrad", "seconds": 0.532, "before_mb": 239, "peak_mb": 286}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivePermuteCyclicWithPShuffle", "seconds": 0.041, "before_mb": 286, "peak_mb": 287}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivePermuteGrad", "seconds": 0.041, "before_mb": 287, "peak_mb": 289}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCollectivesWithTreesOfDifferentDtypes", "seconds": 0.112, "before_mb": 289, "peak_mb": 293}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testComplexPsum", "seconds": 0.157, "before_mb": 293, "peak_mb": 295}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testCompositionWithJitTwice", "seconds": 0.074, "before_mb": 295, "peak_mb": 297}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testDefaultDeviceOrdering", "seconds": 0.025, "before_mb": 297, "peak_mb": 298}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testDeviceCountError", "seconds": 0.405, "before_mb": 93, "peak_mb": 163}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGather", "seconds": 0.046, "before_mb": 163, "peak_mb": 168}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherBool", "seconds": 0.03, "before_mb": 168, "peak_mb": 169}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherNegativeAxis", "seconds": 0.026, "before_mb": 169, "peak_mb": 170}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherReplicaGroups", "seconds": 0.01, "before_mb": 170, "peak_mb": 170}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherReplicaGroupsInterleaved", "seconds": 0.01, "before_mb": 170, "peak_mb": 170}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherTiled", "seconds": 0.021, "before_mb": 170, "peak_mb": 171}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGatherTiledNegativeAxis", "seconds": 0.022, "before_mb": 171, "peak_mb": 172}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradBasic", "seconds": 0.411, "before_mb": 172, "peak_mb": 184}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfAllToAllReplicaGroups", "seconds": 0.016, "before_mb": 184, "peak_mb": 184}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfGather", "seconds": 0.168, "before_mb": 184, "peak_mb": 199}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfGatherIndexGroups", "seconds": 0.209, "before_mb": 199, "peak_mb": 201}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfGatherTiled", "seconds": 0.242, "before_mb": 201, "peak_mb": 214}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfJvp", "seconds": 0.213, "before_mb": 214, "peak_mb": 222}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfPsum", "seconds": 0.149, "before_mb": 222, "peak_mb": 235}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfPswapaxes", "seconds": 0.026, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfReduceScatter", "seconds": 0.158, "before_mb": 235, "peak_mb": 250}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfReduceScatterIndexGroups", "seconds": 0.01, "before_mb": 250, "peak_mb": 250}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testGradOfReduceScatterTiled", "seconds": 0.169, "before_mb": 250, "peak_mb": 264}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testInAxesPyTreePrefixMismatchError", "seconds": 0.023, "before_mb": 264, "peak_mb": 265}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testInAxesPyTreePrefixMismatchErrorKwargs", "seconds": 0.029, "before_mb": 266, "peak_mb": 266}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testIssue1065", "seconds": 0.043, "before_mb": 266, "peak_mb": 268}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testJitOfPmapLowerHasReplicaAttributes", "seconds": 0.008, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testJitOfPmapOutputSharding", "seconds": 0.047, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testJitPmapComposition", "seconds": 0.063, "before_mb": 268, "peak_mb": 270}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testJvpAndPartialEval", "seconds": 0.046, "before_mb": 270, "peak_mb": 272}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerAsText", "seconds": 0.069, "before_mb": 272, "peak_mb": 273}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompile", "seconds": 0.024, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileArgTypeMismatch", "seconds": 0.036, "before_mb": 273, "peak_mb": 274}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileAsText", "seconds": 0.093, "before_mb": 274, "peak_mb": 275}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileCompilerIR", "seconds": 0.014, "before_mb": 275, "peak_mb": 276}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileCostAnalysis", "seconds": 0.013, "before_mb": 276, "peak_mb": 277}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileExecutable", "seconds": 0.015, "before_mb": 277, "peak_mb": 278}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileInTreeMismatch", "seconds": 0.019, "before_mb": 278, "peak_mb": 278}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileMultiArg", "seconds": 0.179, "before_mb": 90, "peak_mb": 162}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileTrivial", "seconds": 0.041, "before_mb": 162, "peak_mb": 163}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileTrivialInTreeMismatch", "seconds": 0.224, "before_mb": 163, "peak_mb": 164}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompileTrivialMultiArg", "seconds": 0.033, "before_mb": 164, "peak_mb": 165}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCompilerIR", "seconds": 0.049, "before_mb": 165, "peak_mb": 166}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerCostAnalysis", "seconds": 0.012, "before_mb": 166, "peak_mb": 166}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerHasReplicaAttributes", "seconds": 0.013, "before_mb": 166, "peak_mb": 166}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testLowerShapedArray", "seconds": 0.026, "before_mb": 166, "peak_mb": 171}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testManyArgs", "seconds": 0.559, "before_mb": 171, "peak_mb": 198}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testMean", "seconds": 0.029, "before_mb": 198, "peak_mb": 199}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testMismatchedAxisSizes", "seconds": 0.03, "before_mb": 199, "peak_mb": 200}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testOutAxesPyTreePrefixMismatchError", "seconds": 0.018, "before_mb": 200, "peak_mb": 202}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPShuffleWithBadPerm", "seconds": 0.018, "before_mb": 202, "peak_mb": 202}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPartiallyMapped", "seconds": 0.034, "before_mb": 202, "peak_mb": 203}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapAxisNameError", "seconds": 0.009, "before_mb": 203, "peak_mb": 203}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapConstant", "seconds": 0.091, "before_mb": 203, "peak_mb": 206}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapConstantDevices", "seconds": 0.008, "before_mb": 206, "peak_mb": 206}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapConstantError", "seconds": 0.027, "before_mb": 206, "peak_mb": 207}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapDtype_dtype=float32[]", "seconds": 0.016, "before_mb": 207, "peak_mb": 208}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapDtype_dtype=int32[]", "seconds": 0.019, "before_mb": 208, "peak_mb": 208}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPmapMapVmapCombinations", "seconds": 0.6, "before_mb": 208, "peak_mb": 238}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPostProcessMap2", "seconds": 2.002, "before_mb": 238, "peak_mb": 259}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPpermuteWithZipObject", "seconds": 0.063, "before_mb": 259, "peak_mb": 261}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumConstantReplicaGroups", "seconds": 0.028, "before_mb": 261, "peak_mb": 261}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumOnBooleanDtype", "seconds": 0.093, "before_mb": 261, "peak_mb": 268}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumReplicaGroups", "seconds": 0.055, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumUnevenReplicaGroups", "seconds": 0.015, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPsumZeroCotangents", "seconds": 0.746, "before_mb": 268, "peak_mb": 288}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testPswapaxes", "seconds": 0.054, "before_mb": 288, "peak_mb": 289}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceMax", "seconds": 0.024, "before_mb": 289, "peak_mb": 289}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceMin", "seconds": 0.068, "before_mb": 289, "peak_mb": 290}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceScatter", "seconds": 0.022, "before_mb": 290, "peak_mb": 291}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceScatterNegativeScatterDimension", "seconds": 0.047, "before_mb": 291, "peak_mb": 294}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceScatterReplicaGroupsTiled", "seconds": 0.009, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testReduceScatterTiled", "seconds": 0.038, "before_mb": 294, "peak_mb": 296}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testRule30", "seconds": 0.194, "before_mb": 296, "peak_mb": 300}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testTrees", "seconds": 0.074, "before_mb": 300, "peak_mb": 306}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testTwoArgsGrad", "seconds": 0.187, "before_mb": 306, "peak_mb": 318}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfGather", "seconds": 0.045, "before_mb": 318, "peak_mb": 321}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmap", "seconds": 0.023, "before_mb": 321, "peak_mb": 322}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmap2", "seconds": 0.593, "before_mb": 322, "peak_mb": 332}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmap3", "seconds": 0.008, "before_mb": 332, "peak_mb": 332}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmapNonLeadingAxis", "seconds": 0.033, "before_mb": 332, "peak_mb": 334}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfPmapTuple", "seconds": 0.09, "before_mb": 334, "peak_mb": 338}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::testVmapOfReduceScatter", "seconds": 0.07, "before_mb": 338, "peak_mb": 340}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_axis_env_length", "seconds": 0.134, "before_mb": 340, "peak_mb": 348}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_axis_name_shadowing_with_vmap", "seconds": 0.381, "before_mb": 348, "peak_mb": 354}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_grad_of_pmap_compilation_caching_axis_size=1", "seconds": 0.081, "before_mb": 354, "peak_mb": 359}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_grad_of_pmap_compilation_caching_axis_size=2", "seconds": 0.157, "before_mb": 359, "peak_mb": 359}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_issue_1062", "seconds": 0.037, "before_mb": 359, "peak_mb": 360}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_jit_lower_compile_with_compiler_options", "seconds": 0.023, "before_mb": 360, "peak_mb": 361}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_jit_lower_compile_with_compiler_options_invalid", "seconds": 0.097, "before_mb": 361, "peak_mb": 369}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_jit_lower_compile_with_compiler_options_multiple", "seconds": 0.085, "before_mb": 369, "peak_mb": 379}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_num_replicas_with_switch", "seconds": 0.038, "before_mb": 379, "peak_mb": 380}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_pmap_error_on_non_hashable_static_argument", "seconds": 0.011, "before_mb": 380, "peak_mb": 380}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_pmap_of_prng_key", "seconds": 0.185, "before_mb": 380, "peak_mb": 383}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_pmap_replicated_copy", "seconds": 0.043, "before_mb": 383, "peak_mb": 384}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_pmap_stack_size", "seconds": 0.013, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_remat_of_pmap", "seconds": 0.324, "before_mb": 384, "peak_mb": 397}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_remat_of_pmap_new", "seconds": 0.192, "before_mb": 397, "peak_mb": 409}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_remat_of_pmap_policy", "seconds": 0.08, "before_mb": 409, "peak_mb": 412}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_remat_of_pmap_policy_new", "seconds": 0.089, "before_mb": 412, "peak_mb": 414}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_static_argnum_on_method", "seconds": 0.074, "before_mb": 414, "peak_mb": 415}
+{"nodeid": "tests/pmap_test.py::PythonPmapTest::test_typed_prng_key_sharded", "seconds": 0.129, "before_mb": 415, "peak_mb": 422}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((2, 1, 4), (2, 1, 4))_(3, 2)_2_(1, 0)_3", "seconds": 0.241, "before_mb": 422, "peak_mb": 437}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((2, 1, 4),)_(2,)_1_(2,)_0", "seconds": 0.122, "before_mb": 437, "peak_mb": 442}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((2, 3, 4),)_(2,)_0_(3,)_0", "seconds": 0.106, "before_mb": 442, "peak_mb": 451}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3, 1),)_(1,)_0_(1,)_1", "seconds": 0.088, "before_mb": 451, "peak_mb": 459}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3, 4), (3, 1))_(2, None)_0_(0, 0)_1", "seconds": 0.235, "before_mb": 459, "peak_mb": 471}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3, 4), (3, 4), (1, 4))_(1, 2, None)_0_(2, 0, 2)_2", "seconds": 0.24, "before_mb": 471, "peak_mb": 483}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3, 4),)_(0,)_2_(2,)_2", "seconds": 0.111, "before_mb": 483, "peak_mb": 488}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3,), (3,))_(0, 0)_0_(0, 0)_1", "seconds": 0.13, "before_mb": 488, "peak_mb": 497}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3,), (3,), (3,))_(1, 0, 0)_1_(1, 0, None)_1", "seconds": 0.13, "before_mb": 497, "peak_mb": 507}
+{"nodeid": "tests/pmap_test.py::VmapOfPmapTest::testVmapOfPmap((3,), (3,), (3,))_(None, 1, 0)_0_(1, 0, None)_0", "seconds": 0.097, "before_mb": 507, "peak_mb": 513}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=0_vmap=0", "seconds": 0.097, "before_mb": 513, "peak_mb": 520}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=0_vmap=1", "seconds": 0.044, "before_mb": 520, "peak_mb": 524}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=0_vmap=2", "seconds": 0.084, "before_mb": 524, "peak_mb": 528}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=0_vmap=3", "seconds": 0.045, "before_mb": 528, "peak_mb": 532}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=1_vmap=0", "seconds": 0.19, "before_mb": 532, "peak_mb": 536}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=1_vmap=1", "seconds": 0.051, "before_mb": 536, "peak_mb": 538}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=1_vmap=2", "seconds": 0.064, "before_mb": 538, "peak_mb": 540}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=1_vmap=3", "seconds": 0.094, "before_mb": 540, "peak_mb": 543}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=2_vmap=0", "seconds": 0.078, "before_mb": 543, "peak_mb": 547}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=2_vmap=1", "seconds": 0.159, "before_mb": 547, "peak_mb": 550}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=2_vmap=2", "seconds": 0.11, "before_mb": 550, "peak_mb": 549}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=0_concat=2_vmap=3", "seconds": 0.106, "before_mb": 549, "peak_mb": 552}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=0_vmap=0", "seconds": 0.074, "before_mb": 552, "peak_mb": 556}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=0_vmap=1", "seconds": 0.053, "before_mb": 556, "peak_mb": 556}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=0_vmap=2", "seconds": 0.215, "before_mb": 556, "peak_mb": 559}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=0_vmap=3", "seconds": 0.038, "before_mb": 559, "peak_mb": 562}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=1_vmap=0", "seconds": 0.062, "before_mb": 562, "peak_mb": 564}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=1_vmap=1", "seconds": 0.056, "before_mb": 564, "peak_mb": 566}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=1_vmap=2", "seconds": 0.052, "before_mb": 566, "peak_mb": 568}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=1_vmap=3", "seconds": 0.056, "before_mb": 568, "peak_mb": 569}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=2_vmap=0", "seconds": 0.047, "before_mb": 569, "peak_mb": 573}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=2_vmap=1", "seconds": 0.232, "before_mb": 573, "peak_mb": 575}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=2_vmap=2", "seconds": 0.056, "before_mb": 575, "peak_mb": 577}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=1_concat=2_vmap=3", "seconds": 0.127, "before_mb": 577, "peak_mb": 579}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=0_vmap=0", "seconds": 0.055, "before_mb": 579, "peak_mb": 583}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=0_vmap=1", "seconds": 0.051, "before_mb": 583, "peak_mb": 586}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=0_vmap=2", "seconds": 0.054, "before_mb": 586, "peak_mb": 587}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=0_vmap=3", "seconds": 0.063, "before_mb": 587, "peak_mb": 589}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=1_vmap=0", "seconds": 0.084, "before_mb": 589, "peak_mb": 592}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=1_vmap=1", "seconds": 0.052, "before_mb": 592, "peak_mb": 594}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=1_vmap=2", "seconds": 0.042, "before_mb": 594, "peak_mb": 596}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=1_vmap=3", "seconds": 0.044, "before_mb": 596, "peak_mb": 597}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=2_vmap=0", "seconds": 0.057, "before_mb": 597, "peak_mb": 600}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=2_vmap=1", "seconds": 0.045, "before_mb": 600, "peak_mb": 603}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=2_vmap=2", "seconds": 0.039, "before_mb": 603, "peak_mb": 604}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllInVmap_split=2_concat=2_vmap=3", "seconds": 0.074, "before_mb": 605, "peak_mb": 606}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=0_concat=0", "seconds": 0.102, "before_mb": 606, "peak_mb": 611}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=0_concat=1", "seconds": 0.068, "before_mb": 611, "peak_mb": 615}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=0_concat=2", "seconds": 0.075, "before_mb": 615, "peak_mb": 617}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=1_concat=0", "seconds": 0.053, "before_mb": 617, "peak_mb": 621}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=1_concat=1", "seconds": 0.052, "before_mb": 621, "peak_mb": 623}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=1_concat=2", "seconds": 0.041, "before_mb": 623, "peak_mb": 625}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=2_concat=0", "seconds": 0.052, "before_mb": 625, "peak_mb": 628}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=2_concat=1", "seconds": 0.037, "before_mb": 628, "peak_mb": 630}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testAllToAllVsVmap_split=2_concat=2", "seconds": 0.03, "before_mb": 630, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap2_collective=pmax", "seconds": 0.011, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap2_collective=pmean", "seconds": 0.182, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap2_collective=pmin", "seconds": 0.014, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap2_collective=psum", "seconds": 0.028, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap_collective=pmax", "seconds": 0.011, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap_collective=pmean", "seconds": 0.012, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap_collective=pmin", "seconds": 0.022, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testCollectivesWithVmap_collective=psum", "seconds": 0.012, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testPPermuteAgreesWithVmap", "seconds": 0.024, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testPPermuteWithVmap", "seconds": 0.011, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testVsVmapAllGather", "seconds": 0.01, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testVsVmapAllGatherTiled", "seconds": 0.025, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testVsVmapReduceScatter", "seconds": 0.013, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testVsVmapReduceScatterTiled", "seconds": 0.01, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testWithVmapAllGather", "seconds": 0.009, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::VmapPmapCollectivesTest::testWithVmapReduceScatter", "seconds": 0.011, "before_mb": 632, "peak_mb": 632}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testAllDevices", "seconds": 0.034, "before_mb": 632, "peak_mb": 635}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testBadAxisSizeError", "seconds": 0.012, "before_mb": 635, "peak_mb": 635}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testBadAxisSizeErrorNested", "seconds": 0.008, "before_mb": 635, "peak_mb": 635}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testGradBasic", "seconds": 0.139, "before_mb": 635, "peak_mb": 641}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testJitInPmap", "seconds": 0.045, "before_mb": 641, "peak_mb": 643}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testNestedPmaps", "seconds": 0.029, "before_mb": 643, "peak_mb": 643}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testNestedPmapsBools", "seconds": 0.008, "before_mb": 643, "peak_mb": 643}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testNestedPmapsError", "seconds": 0.032, "before_mb": 643, "peak_mb": 643}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testNoDevicesError", "seconds": 0.012, "before_mb": 643, "peak_mb": 643}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testOneDevice", "seconds": 0.009, "before_mb": 643, "peak_mb": 643}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad0", "seconds": 1.899, "before_mb": 643, "peak_mb": 667, "params": "(in_axes=(2, 1, 2), out_axes=2)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad1", "seconds": 0.303, "before_mb": 667, "peak_mb": 683, "params": "(in_axes=(1, 0, 1), out_axes=2)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad2", "seconds": 0.308, "before_mb": 683, "peak_mb": 698, "params": "(in_axes=(0, None, 2), out_axes=0)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad3", "seconds": 0.296, "before_mb": 698, "peak_mb": 714, "params": "(in_axes=(0, None, None), out_axes=0)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad4", "seconds": 0.296, "before_mb": 714, "peak_mb": 730, "params": "(in_axes=(None, 0, 0), out_axes=1)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad5", "seconds": 0.357, "before_mb": 730, "peak_mb": 746, "params": "(in_axes=(1, 2, 1), out_axes=1)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad6", "seconds": 0.353, "before_mb": 746, "peak_mb": 761, "params": "(in_axes=(1, 2, 1), out_axes=0)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad7", "seconds": 0.37, "before_mb": 761, "peak_mb": 779, "params": "(in_axes=(None, 2, 1), out_axes=1)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad8", "seconds": 0.255, "before_mb": 779, "peak_mb": 795, "params": "(in_axes=(0, None, 0), out_axes=0)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapAllAxesGrad9", "seconds": 0.269, "before_mb": 795, "peak_mb": 808, "params": "(in_axes=(None, 0, 2), out_axes=2)"}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapDictOutAxes", "seconds": 0.026, "before_mb": 808, "peak_mb": 809}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapInAxesBasic", "seconds": 0.117, "before_mb": 809, "peak_mb": 811}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapInAxesGrad", "seconds": 0.279, "before_mb": 811, "peak_mb": 827}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapInJit", "seconds": 0.035, "before_mb": 827, "peak_mb": 828}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapOutAxesBasic", "seconds": 0.059, "before_mb": 828, "peak_mb": 829}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapPostProcess", "seconds": 0.161, "before_mb": 829, "peak_mb": 839}
+{"nodeid": "tests/pmap_test.py::PmapWithDevicesTest::testPmapStaticArgnums", "seconds": 0.058, "before_mb": 839, "peak_mb": 841}
+{"nodeid": "tests/pmap_test.py::ArrayTest::testNoCopyIndexing1D", "seconds": 0.041, "before_mb": 841, "peak_mb": 841}
+{"nodeid": "tests/pmap_test.py::ArrayTest::testThreadsafeIndexing", "seconds": 0.008, "before_mb": 841, "peak_mb": 841}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_delete_is_idempotent", "seconds": 0.024, "before_mb": 841, "peak_mb": 842}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_device_put_replicated", "seconds": 0.011, "before_mb": 842, "peak_mb": 842}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_device_put_replicated_pytree", "seconds": 0.01, "before_mb": 842, "peak_mb": 842}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_device_put_sharded", "seconds": 0.024, "before_mb": 842, "peak_mb": 843}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_device_put_sharded_pytree", "seconds": 0.015, "before_mb": 843, "peak_mb": 844}
+{"nodeid": "tests/pmap_test.py::ArrayTest::test_repr", "seconds": 0.007, "before_mb": 844, "peak_mb": 844}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_amap", "seconds": 0.007, "before_mb": 844, "peak_mb": 844}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_array_with_pmap_sharding_copy_without_round_trip", "seconds": 0.022, "before_mb": 844, "peak_mb": 846}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_device_put_sharded_transfer_guard", "seconds": 0.021, "before_mb": 846, "peak_mb": 846}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_jnp_stack", "seconds": 0.057, "before_mb": 846, "peak_mb": 850}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_array_devices_mismatch", "seconds": 0.016, "before_mb": 850, "peak_mb": 850}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_array_in_axes_out_axes", "seconds": 0.022, "before_mb": 850, "peak_mb": 850}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_array_sharding_mismatch", "seconds": 0.035, "before_mb": 850, "peak_mb": 852}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_double_input_array_output_array", "seconds": 0.023, "before_mb": 852, "peak_mb": 853}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_pmap_input_array_output_array", "seconds": 0.025, "before_mb": 853, "peak_mb": 853}
+{"nodeid": "tests/pmap_test.py::ArrayPmapTest::test_same_out_sharding_id", "seconds": 0.036, "before_mb": 853, "peak_mb": 855}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_float0_dtype_input", "seconds": 0.007, "before_mb": 855, "peak_mb": 855}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_float0_dtype_output", "seconds": 0.006, "before_mb": 855, "peak_mb": 855}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_int_arg_with_in_axes_none", "seconds": 0.008, "before_mb": 855, "peak_mb": 855}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_lower_with_flattened_args", "seconds": 0.008, "before_mb": 855, "peak_mb": 855}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_lowered_args_info", "seconds": 0.014, "before_mb": 855, "peak_mb": 855}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_numpy_input_sharding", "seconds": 0.007, "before_mb": 855, "peak_mb": 855}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_prng_key", "seconds": 0.007, "before_mb": 855, "peak_mb": 855}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_store_exception", "seconds": 0.02, "before_mb": 855, "peak_mb": 856}
+{"nodeid": "tests/pmap_test.py::PmapShmapMergeTest::test_wrapped", "seconds": 0.007, "before_mb": 856, "peak_mb": 856}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_backend_new_stablehlo_version_enables_dynamic_root", "seconds": 0.009, "before_mb": 856, "peak_mb": 856}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_backend_old_stablehlo_version_disables_dynamic_root", "seconds": 0.024, "before_mb": 856, "peak_mb": 856}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_backend_without_stablehlo_version_falls_back_to_host_version", "seconds": 0.009, "before_mb": 856, "peak_mb": 856}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_forward_compat_disables_dynamic_root", "seconds": 0.198, "before_mb": 856, "peak_mb": 856}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_ifrt_proxy_backend_disables_dynamic_root", "seconds": 0.012, "before_mb": 856, "peak_mb": 856}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootVersionGateTest::test_no_backend_falls_back_to_host_version", "seconds": 0.013, "before_mb": 856, "peak_mb": 856}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootDowngradeIntegrationTest::test_gate_disabled_downgrades_cleanly", "seconds": 0.023, "before_mb": 856, "peak_mb": 856}
+{"nodeid": "tests/pmap_test.py::PbroadcastDynamicRootDowngradeIntegrationTest::test_gate_incorrectly_enabled_reproduces_original_crash", "seconds": 0.019, "before_mb": 856, "peak_mb": 856}

@@ -1,0 +1,232 @@
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllGatherOfConst", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllGatherTiled", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllGatherToUnmapped", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllGatherVjp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=0_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=0_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=0_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=1_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=1_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=1_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=0_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=0_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=0_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=1_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=1_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=1_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=0_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=0_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=0_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=0_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=1_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=1_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=1_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=1_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=2_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=2_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=2_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=2_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=0_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=0_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=0_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=0_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=1_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=1_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=1_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=1_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=2_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=2_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=2_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=2_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=0_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=0_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=0_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=0_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=1_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=1_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=1_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=1_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=2_vmap=0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=2_vmap=1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=2_vmap=2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=2_vmap=3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAny", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[5,8]_axis=0_collective=pargmax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[5,8]_axis=0_collective=pargmin", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[5,8]_axis=1_collective=pargmax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[5,8]_axis=1_collective=pargmin", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[7]_axis=0_collective=pargmax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[7]_axis=0_collective=pargmin", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[5,8]_axis=0_collective=pargmax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[5,8]_axis=0_collective=pargmin", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[5,8]_axis=1_collective=pargmax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[5,8]_axis=1_collective=pargmin", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[7]_axis=0_collective=pargmax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[7]_axis=0_collective=pargmin", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAxisIndex", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testBatchOfCompile", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testBatchedAllGather", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testBatchedAllGatherTiled", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testBatchingPreservesWeakType", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=i_collective_names=i", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ij_collective_names=i", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ij_collective_names=ij", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ij_collective_names=j", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ij_collective_names=ji", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=i", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ij", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ijk", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ik", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ikj", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=j", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ji", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=jik", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=jk", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=jki", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=k", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ki", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=kij", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=kj", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=kji", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=i_collective_names=i", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ij_collective_names=i", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ij_collective_names=ij", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ij_collective_names=j", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ij_collective_names=ji", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=i", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ij", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ijk", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ik", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ikj", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=j", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ji", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=jik", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=jk", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=jki", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=k", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ki", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=kij", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=kj", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=kji", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=i_collective_names=i", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ij_collective_names=i", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ij_collective_names=ij", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ij_collective_names=j", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ij_collective_names=ji", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=i", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ij", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ijk", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ik", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ikj", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=j", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ji", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=jik", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=jk", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=jki", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=k", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ki", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=kij", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=kj", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=kji", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testConcatenate", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testConstantFunction", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testConvGeneralDilated", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/batching_test.py:469:10: error: 'mhlo.convolution' op Not supported: ConvolutionOp with batchGroups.\n      y = lax.conv_general_dilated(\n         ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/batching_test.py:472:48: note: called from\n    grad_loss = grad(lambda params, x: jnp.mean(f(params, x) ** 2))\n                                               ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/batching_te"}
+{"nodeid": "tests/batching_test.py::BatchingTest::testConvGeneralDilatedBatchNotMajor", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCumProd", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDot", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDot2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDot3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDot4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDotGeneral", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDynamicSlice", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDynamicUpdateSlice", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testEmptyTuples", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=float32[10,2]_op_axis=1_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=float32[10,5,2]_op_axis=2_idxs_axis=0_idxs=[[[0 2]\n  [1 0]]\n\n [[1 0]\n  [2 0]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=float32[2,10,5]_op_axis=0_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=float32[2,5]_op_axis=0_idxs_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=int32[10,2]_op_axis=1_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=int32[10,5,2]_op_axis=2_idxs_axis=0_idxs=[[[0 2]\n  [1 0]]\n\n [[1 0]\n  [2 0]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=int32[2,10,5]_op_axis=0_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=int32[2,5]_op_axis=0_idxs_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=float32[10,5]_axis=0_idxs=[[[0 1]\n  [2 0]]\n\n [[1 0]\n  [2 3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=float32[10,5]_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=float32[10]_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=float32[5]_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=int32[10,5]_axis=0_idxs=[[[0 1]\n  [2 0]]\n\n [[1 0]\n  [2 3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=int32[10,5]_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=int32[10]_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=int32[5]_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=float32[10,3,5]_axis=1_idxs=[[0]\n [2]\n [1]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=float32[10,3]_axis=1_idxs=[[0]\n [0]\n [0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=float32[10,5,3]_axis=2_idxs=[[0 2]\n [1 0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=float32[3,5]_axis=0_idxs=[[0]\n [2]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=int32[10,3,5]_axis=1_idxs=[[0]\n [2]\n [1]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=int32[10,3]_axis=1_idxs=[[0]\n [0]\n [0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=int32[10,5,3]_axis=2_idxs=[[0 2]\n [1 0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=int32[3,5]_axis=0_idxs=[[0]\n [2]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedBoth_shape=float32[10,2]_op_axis=1_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedBoth_shape=float32[10,5,2]_op_axis=2_idxs_axis=0_idxs=[[[0 2]\n  [1 0]]\n\n [[1 0]\n  [2 0]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedBoth_shape=float32[2,10,5]_op_axis=0_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedBoth_shape=float32[2,5]_op_axis=0_idxs_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float32[10,5]_axis=0_idxs=[[[0 1]\n  [2 0]]\n\n [[1 0]\n  [2 3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float32[10,5]_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float32[10]_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float32[5]_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float64[10,5]_axis=0_idxs=[[[0 1]\n  [2 0]]\n\n [[1 0]\n  [2 3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float64[10,5]_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float64[10]_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float64[5]_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float32[10,3,5]_axis=1_idxs=[[0]\n [2]\n [1]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float32[10,3]_axis=1_idxs=[[0]\n [0]\n [0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float32[10,5,3]_axis=2_idxs=[[0 2]\n [1 0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float32[3,5]_axis=0_idxs=[[0]\n [2]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float64[10,3,5]_axis=1_idxs=[[0]\n [2]\n [1]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float64[10,3]_axis=1_idxs=[[0]\n [0]\n [0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float64[10,5,3]_axis=2_idxs=[[0 2]\n [1 0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float64[3,5]_axis=0_idxs=[[0]\n [2]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGradOfPsum", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testHessian", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIndexAddBatchedIndexesOnly", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue1170", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue354", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue3883", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: 'tensor.expand_shape' op expected collapsed rank (1) to equal the number of reassociation maps (0).\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr,"}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue489", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue6096", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testJacobianIssue54", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testJacobians", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testLaxLinalgCholesky", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testLaxLinalgTriangularSolve", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testLaxLinalgTridiagonalSolve", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testMinMaxPool_op=max", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.reduce_window'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users/nasedkin/jax"}
+{"nodeid": "tests/batching_test.py::BatchingTest::testMinMaxPool_op=min", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.reduce_window'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users/nasedkin/jax"}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNegativeAxes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNestedBatchingMatMat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNonJaxTypedOutput", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNpGtrThan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNpMaximum", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNpMaximumPerExampleGrad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNumpyIndexing1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNumpyIndexing2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testPPermute", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testPad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testPerExampleGradients", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testPpermuteBatcherTrivial", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testRandom", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testReduceScatterAutodiff", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testRevLax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testRevNumpy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSelect", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSliceLax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSliceNumpy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSort", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSortKeyVal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSumPool", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.reduce_window'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users/nasedkin/jax"}
+{"nodeid": "tests/batching_test.py::BatchingTest::testTranspose", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testTransposePermutation", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::BatchingTest::testVmapKwargs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_basic0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_basic1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_from_elt_that_binds_primitives", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_to_elt_that_binds_primitives", "outcome": "passed", "message": ""}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_types_with_same_spec", "outcome": "passed", "message": ""}

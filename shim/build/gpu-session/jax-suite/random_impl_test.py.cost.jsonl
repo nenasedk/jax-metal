@@ -1,0 +1,60 @@
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_philox2x32_kat_vectors0", "seconds": 0.471, "before_mb": 79, "peak_mb": 166, "params": "(key=[0], counter=[0, 0], expected=[4280135257, 1825639922])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_philox2x32_kat_vectors1", "seconds": 0.039, "before_mb": 166, "peak_mb": 168, "params": "(key=[4294967295], counter=[4294967295, 4294967295], expected=[742351499, 2874136493])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_philox2x32_kat_vectors2", "seconds": 0.013, "before_mb": 168, "peak_mb": 168, "params": "(key=[320440878], counter=[608135816, 2242054355], expected=[3715948600, 4129967122])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_philox4x32_kat_vectors0", "seconds": 0.124, "before_mb": 168, "peak_mb": 174, "params": "(key=[0, 0], counter=[0, 0, 0, 0], expected=[1713891541, 3781805453, 3159862348, 2600524760])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_philox4x32_kat_vectors1", "seconds": 0.014, "before_mb": 174, "peak_mb": 176, "params": "(key=[4294967295, 4294967295], counter=[4294967295, 4294967295, 4294967295, 4294967295], expected=[1083123565, 1103641358, 2718681030, 1834242557])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_philox4x32_kat_vectors2", "seconds": 0.013, "before_mb": 176, "peak_mb": 176, "params": "(key=[2752067618, 698298832], counter=[608135816, 2242054355, 320440878, 57701188], expected=[3513581065, 2499661035, 1342301216, 605187745])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_threefry2x32_kat_vectors0", "seconds": 0.054, "before_mb": 176, "peak_mb": 178, "params": "(key=[0, 0], counter=[0, 0], expected=[1797259609, 2579123966])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_threefry2x32_kat_vectors1", "seconds": 0.01, "before_mb": 178, "peak_mb": 179, "params": "(key=[4294967295, 4294967295], counter=[4294967295, 4294967295], expected=[481924860, 3137350631])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_threefry2x32_kat_vectors2", "seconds": 0.013, "before_mb": 179, "peak_mb": 179, "params": "(key=[320440878, 57701188], counter=[608135816, 2242054355], expected=[3297917596, 1212020640])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_threefry4x32_kat_vectors0", "seconds": 0.158, "before_mb": 179, "peak_mb": 185, "params": "(key=[0, 0, 0, 0], counter=[0, 0, 0, 0], expected=[2624366954, 3783175782, 4228967636, 1381410776])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_threefry4x32_kat_vectors1", "seconds": 0.018, "before_mb": 185, "peak_mb": 185, "params": "(key=[4294967295, 4294967295, 4294967295, 4294967295], counter=[4294967295, 4294967295, 4294967295, 4294967295], expected=[713561750, 1459692167, 4140254318, 2708105010])"}
+{"nodeid": "tests/random_impl_test.py::RandomImplTest::test_threefry4x32_kat_vectors2", "seconds": 0.025, "before_mb": 185, "peak_mb": 186, "params": "(key=[2752067618, 698298832, 137296536, 3964562569], counter=[608135816, 2242054355, 320440878, 57701188], expected=[1506614715, 3095893369, 2260062220, 2894818692])"}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_deterministic_philox2x32", "seconds": 0.217, "before_mb": 186, "peak_mb": 197}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_deterministic_philox4x32", "seconds": 0.171, "before_mb": 197, "peak_mb": 205}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_deterministic_threefry2x32", "seconds": 0.087, "before_mb": 205, "peak_mb": 208}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_deterministic_threefry4x32", "seconds": 0.267, "before_mb": 208, "peak_mb": 220}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_different_seeds_differ_philox2x32", "seconds": 0.018, "before_mb": 220, "peak_mb": 220}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_different_seeds_differ_philox4x32", "seconds": 0.017, "before_mb": 220, "peak_mb": 221}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_different_seeds_differ_threefry2x32", "seconds": 0.017, "before_mb": 221, "peak_mb": 223}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_different_seeds_differ_threefry4x32", "seconds": 0.014, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_fold_in_philox2x32", "seconds": 0.084, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_fold_in_philox4x32", "seconds": 0.049, "before_mb": 223, "peak_mb": 225}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_fold_in_threefry2x32", "seconds": 0.042, "before_mb": 225, "peak_mb": 226}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_fold_in_threefry4x32", "seconds": 0.05, "before_mb": 226, "peak_mb": 228}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_jit_compatible_philox2x32", "seconds": 0.129, "before_mb": 228, "peak_mb": 231}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_jit_compatible_philox4x32", "seconds": 0.115, "before_mb": 231, "peak_mb": 234}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_jit_compatible_threefry2x32", "seconds": 0.074, "before_mb": 234, "peak_mb": 235}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_jit_compatible_threefry4x32", "seconds": 0.068, "before_mb": 235, "peak_mb": 239}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_key_creation_philox2x32", "seconds": 0.01, "before_mb": 239, "peak_mb": 240}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_key_creation_philox4x32", "seconds": 0.011, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_key_creation_threefry2x32", "seconds": 0.014, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_key_creation_threefry4x32", "seconds": 0.01, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_key_data_shape_philox2x32", "seconds": 0.008, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_key_data_shape_philox4x32", "seconds": 0.014, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_key_data_shape_threefry2x32", "seconds": 0.006, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_key_data_shape_threefry4x32", "seconds": 0.007, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_normal_philox2x32", "seconds": 0.359, "before_mb": 240, "peak_mb": 247}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_normal_philox4x32", "seconds": 0.069, "before_mb": 247, "peak_mb": 251}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_normal_threefry2x32", "seconds": 0.058, "before_mb": 251, "peak_mb": 253}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_normal_threefry4x32", "seconds": 0.056, "before_mb": 253, "peak_mb": 256}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_random_bits_philox2x32", "seconds": 0.167, "before_mb": 256, "peak_mb": 260}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_random_bits_philox4x32", "seconds": 0.261, "before_mb": 260, "peak_mb": 271}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_random_bits_threefry2x32", "seconds": 0.171, "before_mb": 271, "peak_mb": 285}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_random_bits_threefry4x32", "seconds": 0.207, "before_mb": 285, "peak_mb": 294}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_split_fold_in_equivalence_philox2x32", "seconds": 0.084, "before_mb": 294, "peak_mb": 298}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_split_fold_in_equivalence_philox4x32", "seconds": 0.094, "before_mb": 298, "peak_mb": 305}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_split_fold_in_equivalence_threefry2x32", "seconds": 0.131, "before_mb": 305, "peak_mb": 313}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_split_fold_in_equivalence_threefry4x32", "seconds": 0.094, "before_mb": 313, "peak_mb": 316}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_split_philox2x32", "seconds": 0.093, "before_mb": 316, "peak_mb": 321}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_split_philox4x32", "seconds": 0.042, "before_mb": 321, "peak_mb": 322}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_split_threefry2x32", "seconds": 0.026, "before_mb": 322, "peak_mb": 323}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_split_threefry4x32", "seconds": 0.062, "before_mb": 323, "peak_mb": 324}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_uniform_philox2x32", "seconds": 0.049, "before_mb": 324, "peak_mb": 327}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_uniform_philox4x32", "seconds": 0.068, "before_mb": 327, "peak_mb": 330}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_uniform_threefry2x32", "seconds": 0.04, "before_mb": 330, "peak_mb": 331}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_uniform_threefry4x32", "seconds": 0.052, "before_mb": 331, "peak_mb": 333}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_vmap_split_philox2x32", "seconds": 0.484, "before_mb": 333, "peak_mb": 345}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_vmap_split_philox4x32", "seconds": 0.571, "before_mb": 345, "peak_mb": 362}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_vmap_split_threefry2x32", "seconds": 0.118, "before_mb": 362, "peak_mb": 371}
+{"nodeid": "tests/random_impl_test.py::PRNGImplTest::test_vmap_split_threefry4x32", "seconds": 0.511, "before_mb": 371, "peak_mb": 381}

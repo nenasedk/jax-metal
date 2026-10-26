@@ -1,0 +1,700 @@
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp0", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp1", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp10", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp100", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp101", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp102", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp103", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp104", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp105", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp106", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp107", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp108", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp109", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp11", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp110", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp111", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp112", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp113", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp114", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp115", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp116", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.real'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp117", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp118", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp119", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp12", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp120", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp121", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp122", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp123", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp124", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp125", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp126", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp127", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp128", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp129", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp13", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp130", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp131", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp132", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp133", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp134", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp135", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp136", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp137", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp138", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp139", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp14", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp140", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp141", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp142", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp143", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp144", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp145", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp146", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp147", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp148", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp149", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp15", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp150", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp151", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp152", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp153", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp154", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp155", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp156", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp157", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp158", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp159", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp160", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp161", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp162", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp163", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp164", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp165", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp166", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp167", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp168", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp169", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp17", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp170", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp171", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp172", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp173", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp174", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp175", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp176", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp177", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp178", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp179", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp18", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp180", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp181", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp182", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp183", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp184", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp185", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp186", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp187", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp188", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp189", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp19", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp190", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp191", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp192", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp193", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp194", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp195", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp196", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp197", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp198", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp199", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp2", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp20", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp200", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp201", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp202", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp203", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp204", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp205", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp206", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp207", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp208", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp209", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp21", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp210", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp211", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp212", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp213", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp214", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp215", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp216", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp217", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp218", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp219", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp22", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp220", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp221", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp222", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp223", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp224", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp225", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp226", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp227", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp228", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp229", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp23", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp230", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp231", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp232", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp233", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp234", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp235", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp236", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.real'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp237", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp238", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp239", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp24", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp240", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp241", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp242", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp243", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp244", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp245", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp246", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp247", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp248", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp249", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp25", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp250", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp251", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp252", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp253", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp254", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp255", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp256", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp257", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp258", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp259", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp26", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp260", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp261", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp262", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp263", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp264", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp265", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp266", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp267", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp268", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp269", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp27", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp270", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp271", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp272", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp273", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp274", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp275", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp276", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp277", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp278", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp279", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp28", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp280", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp281", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp282", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp283", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp284", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp285", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp286", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp287", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp288", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp289", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp29", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp290", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp291", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp292", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp293", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp294", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp295", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp296", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp297", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp298", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp299", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp300", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp301", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp302", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp303", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp304", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp305", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp306", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp307", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp308", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp309", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp31", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp310", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp311", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp312", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp313", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp314", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp315", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp316", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp317", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp318", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp319", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp32", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp320", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp321", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp322", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp323", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp324", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp325", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp326", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp327", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp328", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp329", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp33", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp330", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp331", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp332", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp333", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp334", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp335", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp336", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp337", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp338", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp339", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp34", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp340", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp341", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp342", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp343", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp344", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp345", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp346", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp347", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp348", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp349", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp35", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp350", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp351", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp352", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp353", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp354", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp355", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp356", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp357", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp358", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp359", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp36", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp360", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp361", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp362", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp363", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp364", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp365", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp366", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp367", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp368", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp369", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp37", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp370", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp371", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp372", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp373", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp374", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp375", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp376", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp377", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp378", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp379", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp38", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp380", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp381", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp382", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp383", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp384", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp385", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp386", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp387", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp388", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp389", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp39", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp390", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp391", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp392", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp393", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp394", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp395", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp396", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp397", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp398", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp399", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp40", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp400", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp401", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp402", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp403", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp404", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp405", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp406", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp407", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp408", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp409", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp41", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp410", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp411", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp412", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp413", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp414", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp415", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp416", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp417", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp418", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp419", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp42", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp420", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp421", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp422", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp423", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp424", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp425", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp426", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp427", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp428", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp429", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp43", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp430", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp431", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp432", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp433", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp434", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp435", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp436", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp437", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp438", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp439", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp44", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp440", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp441", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp442", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp443", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp444", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp445", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp446", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp447", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp448", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp449", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp45", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp450", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp451", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp452", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp453", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp454", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp455", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp456", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp457", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp458", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp459", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp46", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp460", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp461", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp462", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp463", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp464", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp465", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp466", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp467", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp468", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp469", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp47", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp470", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp471", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp472", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp473", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp474", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp475", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp476", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp477", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp478", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp479", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp48", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp480", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp481", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp482", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp483", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp484", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp485", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp486", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp487", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp488", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp489", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp49", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp490", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp491", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp492", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp493", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp494", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp495", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp496", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp497", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp498", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp499", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp50", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp500", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp501", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp502", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp503", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp504", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp505", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp506", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp507", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp508", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp509", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp51", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp510", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp511", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp512", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp513", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp514", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp515", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp516", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp517", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp518", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp519", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp52", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp520", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp521", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp522", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp523", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp524", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp525", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp526", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp527", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp528", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp529", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp53", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp530", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp531", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp532", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp533", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp534", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp535", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp536", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp537", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp538", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp539", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp54", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp540", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp541", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp542", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp543", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp544", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp545", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp546", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp547", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp548", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp549", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp55", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp550", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp551", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp552", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp553", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp554", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp555", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp556", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp557", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp558", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp559", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp56", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp560", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp561", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp562", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp563", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp564", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp565", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp566", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp567", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp568", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp569", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp57", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp570", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp571", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp572", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp573", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp574", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp575", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp576", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp577", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp578", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp579", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp58", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp580", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp581", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp582", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp583", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp584", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp585", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp586", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp587", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp588", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp589", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp59", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp590", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp591", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp592", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp593", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp594", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp595", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp596", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp597", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp598", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp599", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp6", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp60", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp600", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp601", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp602", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp603", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp604", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp605", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp606", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp607", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp608", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp609", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp61", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp610", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp611", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp612", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp613", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp614", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp615", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp616", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp617", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp618", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp619", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp62", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp620", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp621", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp622", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp623", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp624", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp625", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp626", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp627", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp628", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp629", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp63", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp630", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp631", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp632", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp633", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp634", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp635", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp636", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp637", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp638", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp639", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp64", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp640", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp641", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp642", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp643", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp644", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp645", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp646", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp647", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp648", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp649", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp65", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp650", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp651", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp652", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp653", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp654", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp655", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp656", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp657", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp658", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp659", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp66", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp660", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp661", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp662", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp663", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp664", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp665", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp666", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp667", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp668", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp669", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp67", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp670", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp671", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp672", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp673", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp674", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp675", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp676", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp677", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp678", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp679", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp68", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp680", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp681", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp682", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp683", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp684", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp685", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp686", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp687", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp688", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp689", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp69", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp690", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp691", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp692", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp693", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp694", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp695", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp696", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp697", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp698", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp699", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp7", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp70", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp71", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp72", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp73", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp74", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp75", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp76", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp77", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp78", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp79", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp80", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp81", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp82", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp83", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp84", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp85", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp86", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.real'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp87", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp88", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp89", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp9", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp90", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp91", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp92", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp93", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp94", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp95", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp96", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp97", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp98", "outcome": "skipped", "message": "Skipped: Skipping big tests under sanitizers due to slowdown."}
+{"nodeid": "tests/lax_vmap_op_test.py::LaxVmapOpTest::testOp99", "outcome": "passed", "message": ""}

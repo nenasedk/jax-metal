@@ -1,0 +1,977 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+___________________ NNFunctionsTest.testDotProductAttention1 ___________________
+
+query = VmapTracer(aval=bfloat16[2,128,4,32], batched=bfloat16[2,128,4,1,32])
+key = GradTracer(primal=[[[[-0.273438 -0.482422 0.78125 ... -0.621094 1.15625 0.202148]
+   [-0.3125 1.48438 -2.10938 ... -2....1562 0.0834961]
+   [-1.46094 -0.0147095 0.181641 ... -0.691406 -0.503906 1.54688]]]], typeof(tangent)=bf16[2,128,4,32])
+value = GradTracer(primal=[[[[-0.667969 -0.9375 0.162109 ... 0.494141 -0.375 1.19531]
+   [-0.96875 1.15625 -0.96875 ... 0.8085...125 0.00488281]
+   [-0.503906 -0.482422 -0.0341797 ... -0.375 -0.597656 0.408203]]]], typeof(tangent)=bf16[2,128,4,32])
+bias = None, mask = None, is_causal = False
+scale = np.float64(0.17677669529663687), q_seqlen = None, kv_seqlen = None
+local_window_size = None, return_residual = False
+
+    def _dot_product_attention_core(query, key, value, bias, mask, is_causal,
+                                    scale, q_seqlen, kv_seqlen, local_window_size,
+                                    return_residual):
+      logits_dtype = jnp.promote_types(query.dtype, np.float32)
+    
+      # If the query and logits dtypes are different, then the default precision
+      # can use inconsistent types in the backwards pass
+      # (see https://github.com/jax-ml/jax/issues/24047).
+      if query.dtype == dtypes.bfloat16:
+        precision = lax.DotAlgorithmPreset.BF16_BF16_F32
+      elif query.dtype == np.float16:
+        precision = lax.DotAlgorithmPreset.F16_F16_F32
+      # TODO(sbodenstein): Implement this fix for all dtypes.
+      else:
+        precision = None
+    
+      # Explicit precision will fail on platforms that don't support it. For example,
+      # some GPUs do not support BF16_BF16_F32, and TPU does not support F16_F16_F32.
+      # Use the default precision as a fallback in these cases.
+      try:
+>       logits = jnp_einsum.einsum(
+            "BTNH,BSNH->BNTS",
+            query,
+            key,
+            precision=precision,
+            preferred_element_type=logits_dtype,
+        )
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/nn/functions.py:963: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/einsum.py:340: in einsum
+    return jit_einsum(operand_arrays, contractions, precision,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/source_info_util.py:288: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:152: in _run_python_pjit
+    out_flat = jit_p.bind(*args_flat, **p.params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:261: in process_primitive
+    val_out, dim_out = fancy_primitive_batchers[p](
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1462: in _pjit_batcher
+    vals_out = jit_p.bind(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/ad.py:732: in process_primitive
+    primal_out, tangent_nzs_out, residuals, structured_res, linearized = lin(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1635: in _pjit_linearize
+    ans = jit_p.bind(*primals_in, jaxpr=fwd_jaxpr,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1221: in _pjit_call_impl
+    return _jax.pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1197: in call_impl_cache_miss
+    out_flat, compiled, pgle_profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x10f158340>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x1219a80e0>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x122986200>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to materialize conversion for result #0 of operation 'mhlo.dot_general' that remained live after conversion
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from
+E                     return original(module_name, jaxpr, **kwargs)
+E                           ^
+E         /Users/nasedkin/jax_metal/re/work/jax-src/tests/nn_test.py:339:28: note: called from
+E             out_ref, sdpa_vjp_ref = jax.vjp(sdpa_ref, Q, K_ref, V_ref, bias, mask)
+E                                    ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from
+E                   return test_method(self, **testcase_params)
+E                         ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from
+E                         testcase(result=self)
+E                        ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from
+E                 item.runtest()
+E                ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_execution.py:147:26: note: called from
+E                             res = hook_impl.function(*args)
+E                                  ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_manager.py:183:15: note: called from
+E                 return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_caller.py:197:15: note: called from
+E                 return self._hookexec(
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:250:16: note: called from
+E                 lambda: runtest_hook(item=item, **kwds),
+E                        ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:361:37: note: called from
+E                     result: TResult | None = func()
+E                                             ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: see current operation: %9 = "mhlo.dot_general"(%arg0, %arg1) {dot_dimension_numbers = #mhlo.dot<lhs_batching_dimensions = [0, 2], rhs_batching_dimensions = [0, 2], lhs_contracting_dimensions = [4], rhs_contracting_dimensions = [3]>} : (tensor<2x128x4x1x32xbf16>, tensor<2x128x4x32xbf16>) -> tensor<2x4x128x1x128xf32>
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: see existing live user here: func.return %9 : tensor<2x4x128x1x128xf32>
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.nn_test.NNFunctionsTest testMethod=testDotProductAttention1>
+dtype = <class 'jax.numpy.bfloat16'>, group_num = 1, use_vmap = False
+impl = 'xla'
+
+    @parameterized.product(
+        dtype=[jnp.bfloat16, jnp.float16],
+        group_num=[1, 2, 4],
+        use_vmap=[False, True],
+        impl=['cudnn', 'xla'],
+    )
+    def testDotProductAttention(self, dtype, group_num, use_vmap, impl):
+      if impl == 'cudnn' and jtu.is_device_rocm():
+        raise unittest.SkipTest("cuDNN not available on ROCm.")
+      if impl == 'cudnn' and not jtu.is_cuda_compute_capability_at_least("8.0"):
+        raise unittest.SkipTest("Needs compute capability 8.0 or higher.")
+      if impl == 'cudnn' and dtype == jnp.float32:
+        raise unittest.SkipTest("cuDNN only supports fp16 or bf16.")
+      if impl == 'cudnn' and jtu.is_cuda_version_at_least(13, 0):
+        raise unittest.SkipTest("cuDNN creates no execution plans on CUDA 13.0.")
+    
+      B, S, T, N, H, G = 2, 128, 128, 4, 32, group_num
+      keys = random.split(random.PRNGKey(0), 5)
+      Q = random.normal(keys[0], (B, T, N, H), dtype)
+      K = random.normal(keys[1], (B, S, N // G, H), dtype)
+      V = random.normal(keys[2], (B, S, N // G, H), dtype)
+      grad = random.normal(keys[3], (B, T, N, H), dtype)
+      lse_grad = random.normal(keys[4], (B, T, N), dtype)
+      bias, mask = None, None
+    
+      sdpa = nn.dot_product_attention
+      sdpa_ref = partial(sdpa, implementation=None)
+      sdpa_ans = partial(sdpa, implementation=impl)
+      sdpa_ref_lse = partial(sdpa, implementation=None, return_residual=True)
+      sdpa_ans_lse = partial(sdpa, implementation=impl, return_residual=True)
+      if use_vmap:
+        sdpa_ans = jax.vmap(sdpa_ans, in_axes=(0, 0, 0, None, None), out_axes=0)
+    
+      # For testing purposes, we call the non-GQA version without vmap in the
+      # reference code
+      K_ref = jnp.repeat(K, G, axis=2)
+      V_ref = jnp.repeat(V, G, axis=2)
+>     out_ref, sdpa_vjp_ref = jax.vjp(sdpa_ref, Q, K_ref, V_ref, bias, mask)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/nn_test.py:339: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/api.py:1719: in vjp
+    ad.linearize(fun, primals_ft, is_vjp=True, has_aux=has_aux,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/ad.py:249: in linearize
+    ans = traceable(*tracers.unflatten())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/nn/functions.py:1272: in dot_product_attention
+    out = _dot_product_attention_xla(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/nn/functions.py:1037: in _dot_product_attention_xla
+    output = vmapped_fn(query, key, value, bias, mask, is_causal, scale,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/api.py:1241: in vmap_f
+    out_flat, inferred_out_axes = batching.batch(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/linear_util.py:212: in call_wrapped
+    return self.f_transformed(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:328: in _batch_outer
+    outs, out_dim_srcs, trace = f(tag, in_dims, *in_vals)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:347: in _batch_inner
+    outs = f(*in_tracers)
+           ^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:122: in flatten_fun_for_vmap
+    ans = f(*py_args, **py_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/nn/functions.py:971: in _dot_product_attention_core
+    logits = jnp_einsum.einsum(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/einsum.py:340: in einsum
+    return jit_einsum(operand_arrays, contractions, precision,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/source_info_util.py:288: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:152: in _run_python_pjit
+    out_flat = jit_p.bind(*args_flat, **p.params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:261: in process_primitive
+    val_out, dim_out = fancy_primitive_batchers[p](
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1462: in _pjit_batcher
+    vals_out = jit_p.bind(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/ad.py:732: in process_primitive
+    primal_out, tangent_nzs_out, residuals, structured_res, linearized = lin(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1635: in _pjit_linearize
+    ans = jit_p.bind(*primals_in, jaxpr=fwd_jaxpr,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1221: in _pjit_call_impl
+    return _jax.pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1197: in call_impl_cache_miss
+    out_flat, compiled, pgle_profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x10f158340>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x1225a52b0>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x1229b2a00>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to materialize conversion for result #0 of operation 'mhlo.dot_general' that remained live after conversion
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from
+E                     return original(module_name, jaxpr, **kwargs)
+E                           ^
+E         /Users/nasedkin/jax_metal/re/work/jax-src/tests/nn_test.py:339:28: note: called from
+E             out_ref, sdpa_vjp_ref = jax.vjp(sdpa_ref, Q, K_ref, V_ref, bias, mask)
+E                                    ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from
+E                   return test_method(self, **testcase_params)
+E                         ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from
+E                         testcase(result=self)
+E                        ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from
+E                 item.runtest()
+E                ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_execution.py:147:26: note: called from
+E                             res = hook_impl.function(*args)
+E                                  ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_manager.py:183:15: note: called from
+E                 return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_caller.py:197:15: note: called from
+E                 return self._hookexec(
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:250:16: note: called from
+E                 lambda: runtest_hook(item=item, **kwds),
+E                        ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:361:37: note: called from
+E                     result: TResult | None = func()
+E                                             ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: see current operation: %9 = "mhlo.dot_general"(%arg0, %arg1) {dot_dimension_numbers = #mhlo.dot<lhs_batching_dimensions = [0, 2], rhs_batching_dimensions = [0, 2], lhs_contracting_dimensions = [4], rhs_contracting_dimensions = [3]>} : (tensor<2x128x4x1x32xbf16>, tensor<2x128x4x32xbf16>) -> tensor<2x4x128x1x128xf32>
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: see existing live user here: func.return %9 : tensor<2x4x128x1x128xf32>
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_________________ NNFunctionsTest.testDotProductAttentionMask5 _________________
+
+query = VmapTracer(aval=bfloat16[2,128,4,32], batched=bfloat16[2,128,4,1,32])
+key = GradTracer(primal=[[[[-0.273438 -0.482422 0.78125 ... -0.621094 1.15625 0.202148]
+   [-0.3125 1.48438 -2.10938 ... -2....1562 0.0834961]
+   [-1.46094 -0.0147095 0.181641 ... -0.691406 -0.503906 1.54688]]]], typeof(tangent)=bf16[2,128,4,32])
+value = GradTracer(primal=[[[[-0.667969 -0.9375 0.162109 ... 0.494141 -0.375 1.19531]
+   [-0.96875 1.15625 -0.96875 ... 0.8085...125 0.00488281]
+   [-0.503906 -0.482422 -0.0341797 ... -0.375 -0.597656 0.408203]]]], typeof(tangent)=bf16[2,128,4,32])
+bias = None
+mask = VmapTracer(aval=bool[1,1,128,128], batched=bool[1,1,1,128,128])
+is_causal = False, scale = np.float64(0.17677669529663687)
+q_seqlen = Array([64, 32], dtype=int32)
+kv_seqlen = Array([32, 64], dtype=int32), local_window_size = None
+return_residual = False
+
+    def _dot_product_attention_core(query, key, value, bias, mask, is_causal,
+                                    scale, q_seqlen, kv_seqlen, local_window_size,
+                                    return_residual):
+      logits_dtype = jnp.promote_types(query.dtype, np.float32)
+    
+      # If the query and logits dtypes are different, then the default precision
+      # can use inconsistent types in the backwards pass
+      # (see https://github.com/jax-ml/jax/issues/24047).
+      if query.dtype == dtypes.bfloat16:
+        precision = lax.DotAlgorithmPreset.BF16_BF16_F32
+      elif query.dtype == np.float16:
+        precision = lax.DotAlgorithmPreset.F16_F16_F32
+      # TODO(sbodenstein): Implement this fix for all dtypes.
+      else:
+        precision = None
+    
+      # Explicit precision will fail on platforms that don't support it. For example,
+      # some GPUs do not support BF16_BF16_F32, and TPU does not support F16_F16_F32.
+      # Use the default precision as a fallback in these cases.
+      try:
+>       logits = jnp_einsum.einsum(
+            "BTNH,BSNH->BNTS",
+            query,
+            key,
+            precision=precision,
+            preferred_element_type=logits_dtype,
+        )
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/nn/functions.py:963: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/einsum.py:340: in einsum
+    return jit_einsum(operand_arrays, contractions, precision,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/source_info_util.py:288: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:152: in _run_python_pjit
+    out_flat = jit_p.bind(*args_flat, **p.params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:261: in process_primitive
+    val_out, dim_out = fancy_primitive_batchers[p](
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1462: in _pjit_batcher
+    vals_out = jit_p.bind(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/ad.py:732: in process_primitive
+    primal_out, tangent_nzs_out, residuals, structured_res, linearized = lin(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1635: in _pjit_linearize
+    ans = jit_p.bind(*primals_in, jaxpr=fwd_jaxpr,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1221: in _pjit_call_impl
+    return _jax.pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1197: in call_impl_cache_miss
+    out_flat, compiled, pgle_profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x10f158340>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x1219a80e0>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x10ec99e00>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to materialize conversion for result #0 of operation 'mhlo.dot_general' that remained live after conversion
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from
+E                     return original(module_name, jaxpr, **kwargs)
+E                           ^
+E         /Users/nasedkin/jax_metal/re/work/jax-src/tests/nn_test.py:339:28: note: called from
+E             out_ref, sdpa_vjp_ref = jax.vjp(sdpa_ref, Q, K_ref, V_ref, bias, mask)
+E                                    ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from
+E                   return test_method(self, **testcase_params)
+E                         ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from
+E                         testcase(result=self)
+E                        ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from
+E                 item.runtest()
+E                ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_execution.py:147:26: note: called from
+E                             res = hook_impl.function(*args)
+E                                  ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_manager.py:183:15: note: called from
+E                 return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_caller.py:197:15: note: called from
+E                 return self._hookexec(
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:250:16: note: called from
+E                 lambda: runtest_hook(item=item, **kwds),
+E                        ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:361:37: note: called from
+E                     result: TResult | None = func()
+E                                             ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: see current operation: %9 = "mhlo.dot_general"(%arg0, %arg1) {dot_dimension_numbers = #mhlo.dot<lhs_batching_dimensions = [0, 2], rhs_batching_dimensions = [0, 2], lhs_contracting_dimensions = [4], rhs_contracting_dimensions = [3]>} : (tensor<2x128x4x1x32xbf16>, tensor<2x128x4x32xbf16>) -> tensor<2x4x128x1x128xf32>
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: see existing live user here: func.return %9 : tensor<2x4x128x1x128xf32>
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+
+During handling of the above exception, another exception occurred:
+
+self = <tests.nn_test.NNFunctionsTest testMethod=testDotProductAttentionMask5>
+mask_mode = ('custom', 'padding')
+
+    @parameterized.product(
+        mask_mode=['bias', 'causal', 'padding', 'custom', ('causal', 'padding'),
+                   ('custom', 'padding'), ('bias', 'causal'),
+                   ('causal', 'sliding_window')],
+    )
+    def testDotProductAttentionMask(self, mask_mode):
+      if isinstance(mask_mode, str):
+        mask_mode = (mask_mode,)
+      # ROCm: use XLA implementation instead of cuDNN
+      use_cudnn = jtu.is_device_cuda()
+      if use_cudnn:
+        if not jtu.is_cuda_compute_capability_at_least("8.0"):
+          raise unittest.SkipTest("Requires compute capability 8.0 or higher.")
+        if jtu.is_cuda_version_at_least(13, 0):
+          raise unittest.SkipTest("cuDNN creates no execution plans on CUDA 13.0.")
+    
+      dtype = jnp.bfloat16
+      B, S, T, N, H = 2, 128, 128, 4, 32
+      keys = random.split(random.PRNGKey(0), 4)
+      Q = random.normal(keys[0], (B, T, N, H), dtype)
+      K = random.normal(keys[1], (B, S, N, H), dtype)
+      V = random.normal(keys[2], (B, S, N, H), dtype)
+      grad = random.normal(keys[3], (B, T, N, H), dtype)
+      bias, mask = None, None
+      q_seqlen, kv_seqlen = None, None
+      window_size = None
+    
+      is_causal = 'causal' in mask_mode
+      if 'padding' in mask_mode:
+        q_seqlen = jnp.array([T // 2, T // 4], dtype=jnp.int32)
+        kv_seqlen = jnp.array([S // 4, S // 2], dtype=jnp.int32)
+      if 'custom' in mask_mode:
+        # Use a generated causal mask as the custom mask.
+        custom_mask = jnp.tril(jnp.ones((T, S), dtype=jnp.bool_))
+        mask = custom_mask[None, None, :, :]
+      if 'bias' in mask_mode:
+        bias = random.normal(keys[4], (1, N, T, S), dtype)
+      if 'sliding_window' in mask_mode:
+        window_size = (3, 2) if is_causal else (3, 0)
+    
+      sdpa = nn.dot_product_attention
+      impl = 'cudnn' if use_cudnn else 'xla'
+      sdpa_ref = partial(sdpa, is_causal=is_causal, implementation=None)
+      sdpa_ans = partial(sdpa, is_causal=is_causal, implementation=impl)
+    
+      args = (Q, K, V, bias, mask)
+      kwargs = {'query_seq_lengths': q_seqlen, 'key_value_seq_lengths': kv_seqlen}
+    
+      # Convert the kargs to positional args for the jax.vjp.
+      fn_ref = lambda q, k, v, b, m, qs, kvs: sdpa_ref(
+          q, k, v, b, m, query_seq_lengths=qs, key_value_seq_lengths=kvs,
+          local_window_size=window_size,
+      )
+      fn_ans = lambda q, k, v, b, m, qs, kvs: sdpa_ans(
+          q, k, v, b, m, query_seq_lengths=qs, key_value_seq_lengths=kvs,
+          local_window_size=window_size,
+      )
+>     out_ref, sdpa_vjp_ref = jax.vjp(fn_ref, *args, q_seqlen, kv_seqlen)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/nn_test.py:429: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/api.py:1719: in vjp
+    ad.linearize(fun, primals_ft, is_vjp=True, has_aux=has_aux,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/ad.py:249: in linearize
+    ans = traceable(*tracers.unflatten())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/nn_test.py:421: in <lambda>
+    fn_ref = lambda q, k, v, b, m, qs, kvs: sdpa_ref(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/nn/functions.py:1272: in dot_product_attention
+    out = _dot_product_attention_xla(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/nn/functions.py:1037: in _dot_product_attention_xla
+    output = vmapped_fn(query, key, value, bias, mask, is_causal, scale,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/api.py:1241: in vmap_f
+    out_flat, inferred_out_axes = batching.batch(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/linear_util.py:212: in call_wrapped
+    return self.f_transformed(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:328: in _batch_outer
+    outs, out_dim_srcs, trace = f(tag, in_dims, *in_vals)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:347: in _batch_inner
+    outs = f(*in_tracers)
+           ^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:122: in flatten_fun_for_vmap
+    ans = f(*py_args, **py_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/nn/functions.py:971: in _dot_product_attention_core
+    logits = jnp_einsum.einsum(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/einsum.py:340: in einsum
+    return jit_einsum(operand_arrays, contractions, precision,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/source_info_util.py:288: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:152: in _run_python_pjit
+    out_flat = jit_p.bind(*args_flat, **p.params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/batching.py:261: in process_primitive
+    val_out, dim_out = fancy_primitive_batchers[p](
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1462: in _pjit_batcher
+    vals_out = jit_p.bind(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/ad.py:732: in process_primitive
+    primal_out, tangent_nzs_out, residuals, structured_res, linearized = lin(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1635: in _pjit_linearize
+    ans = jit_p.bind(*primals_in, jaxpr=fwd_jaxpr,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1221: in _pjit_call_impl
+    return _jax.pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1197: in call_impl_cache_miss
+    out_flat, compiled, pgle_profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x10f158340>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x1225a52b0>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x10ec9c200>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to materialize conversion for result #0 of operation 'mhlo.dot_general' that remained live after conversion
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from
+E                     return original(module_name, jaxpr, **kwargs)
+E                           ^
+E         /Users/nasedkin/jax_metal/re/work/jax-src/tests/nn_test.py:339:28: note: called from
+E             out_ref, sdpa_vjp_ref = jax.vjp(sdpa_ref, Q, K_ref, V_ref, bias, mask)
+E                                    ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from
+E                   return test_method(self, **testcase_params)
+E                         ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from
+E                         testcase(result=self)
+E                        ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from
+E                 item.runtest()
+E                ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_execution.py:147:26: note: called from
+E                             res = hook_impl.function(*args)
+E                                  ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_manager.py:183:15: note: called from
+E                 return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/pluggy/_caller.py:197:15: note: called from
+E                 return self._hookexec(
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:250:16: note: called from
+E                 lambda: runtest_hook(item=item, **kwds),
+E                        ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:361:37: note: called from
+E                     result: TResult | None = func()
+E                                             ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: see current operation: %9 = "mhlo.dot_general"(%arg0, %arg1) {dot_dimension_numbers = #mhlo.dot<lhs_batching_dimensions = [0, 2], rhs_batching_dimensions = [0, 2], lhs_contracting_dimensions = [4], rhs_contracting_dimensions = [3]>} : (tensor<2x128x4x1x32xbf16>, tensor<2x128x4x32xbf16>) -> tensor<2x4x128x1x128xf32>
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+E         /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: note: see existing live user here: func.return %9 : tensor<2x4x128x1x128xf32>
+E                 return original(module_name, jaxpr, **kwargs)
+E                       ^
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+=========================== short test summary info ============================
+FAILED tests/nn_test.py::NNFunctionsTest::testDotProductAttention1 - jax.erro...
+FAILED tests/nn_test.py::NNFunctionsTest::testDotProductAttentionMask5 - jax....
+2 failed, 441 deselected in 8.20s
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793044801.373703 1341739 mps_client.h:209] MetalClient destroyed.

@@ -1,0 +1,485 @@
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather", "seconds": 0.334, "before_mb": 88, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_invariant_basic", "seconds": 0.117, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_invariant_complex", "seconds": 0.006, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_no_check_vma_grad0", "seconds": 0.012, "before_mb": 105, "peak_mb": 105, "params": "('invarying')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_no_check_vma_grad1", "seconds": 0.009, "before_mb": 105, "peak_mb": 105, "params": "('reduced')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_reduced_fwd_unreduced_psum_scatter_bwd", "seconds": 0.01, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_rgv3", "seconds": 0.011, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_with_axis_index_groups", "seconds": 0.012, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_gather_with_vma_in_types", "seconds": 0.008, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_reduce_rgv3", "seconds": 0.014, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_reduce_rgv3_multiple_meshes", "seconds": 0.01, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_grad", "seconds": 0.012, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_multiple_axis_names", "seconds": 0.009, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_rgv3", "seconds": 0.007, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_single_axis_name", "seconds": 0.012, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_all_to_all_with_axis_index_groups", "seconds": 0.009, "before_mb": 105, "peak_mb": 105}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_approx_top_k", "seconds": 0.756, "before_mb": 105, "peak_mb": 179}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_argmax_pvary", "seconds": 0.012, "before_mb": 179, "peak_mb": 179}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_astype_reduced_fwd_unreduced_bwd_shmap", "seconds": 0.006, "before_mb": 179, "peak_mb": 179}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_env_extension_regression", "seconds": 0.255, "before_mb": 179, "peak_mb": 211}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index", "seconds": 0.009, "before_mb": 211, "peak_mb": 211}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_basic0", "seconds": 0.006, "before_mb": 211, "peak_mb": 211, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_basic1", "seconds": 0.008, "before_mb": 211, "peak_mb": 211, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_eager", "seconds": 0.006, "before_mb": 211, "peak_mb": 211}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_explicit_mesh_eager_shmap", "seconds": 0.011, "before_mb": 211, "peak_mb": 211}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_twoaxes0", "seconds": 0.007, "before_mb": 211, "peak_mb": 211, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_twoaxes1", "seconds": 0.007, "before_mb": 211, "peak_mb": 211, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_index_unmapped", "seconds": 0.007, "before_mb": 211, "peak_mb": 211}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_axis_size_1_partial_auto", "seconds": 0.007, "before_mb": 211, "peak_mb": 211}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_rep_failure_inside_rule0", "seconds": 0.006, "before_mb": 211, "peak_mb": 211, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_rep_failure_inside_rule1", "seconds": 0.011, "before_mb": 211, "peak_mb": 211, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_rep_false_doesnt_hit_rep_rules", "seconds": 0.028, "before_mb": 211, "peak_mb": 212}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_rep_false_grads", "seconds": 0.006, "before_mb": 212, "peak_mb": 212}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_vma_false_reduced_fwd_no_psum_on_bwd", "seconds": 0.01, "before_mb": 212, "peak_mb": 212}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_check_vma_false_unreduced_fwd_psum_on_bwd", "seconds": 0.006, "before_mb": 212, "peak_mb": 212}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_close_over_explicit_sharded_input_error", "seconds": 0.01, "before_mb": 212, "peak_mb": 212}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_close_over_input_explict_ctx_mesh", "seconds": 0.006, "before_mb": 212, "peak_mb": 212}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_collective_permute", "seconds": 0.008, "before_mb": 212, "peak_mb": 212}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_collective_permute_with_multiple_axis_names", "seconds": 0.007, "before_mb": 212, "peak_mb": 212}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_collectives_not_saved", "seconds": 0.034, "before_mb": 212, "peak_mb": 214}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_cond_pvary_errors", "seconds": 0.036, "before_mb": 214, "peak_mb": 215}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_cond_pvary_errors_pytree", "seconds": 0.022, "before_mb": 215, "peak_mb": 216}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_cond_rep_rule", "seconds": 0.008, "before_mb": 216, "peak_mb": 216}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_conv_general_dilated", "seconds": 0.007, "before_mb": 216, "peak_mb": 216}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_cumsum", "seconds": 0.017, "before_mb": 216, "peak_mb": 216}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_custom_jvp_inside_jit", "seconds": 0.006, "before_mb": 216, "peak_mb": 216}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_custom_jvp_symbolic_zeros", "seconds": 0.008, "before_mb": 216, "peak_mb": 216}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_custom_linear_solve_rep_rules", "seconds": 0.343, "before_mb": 216, "peak_mb": 231}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_custom_vjp_replication_error_message_hint", "seconds": 0.011, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_dce", "seconds": 0.009, "before_mb": 231, "peak_mb": 231}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_debug_print_eager", "seconds": 0.194, "before_mb": 231, "peak_mb": 236}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_debug_print_jit0", "seconds": 0.02, "before_mb": 236, "peak_mb": 236, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_debug_print_jit1", "seconds": 0.012, "before_mb": 236, "peak_mb": 236, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_debug_print_jit_partial_auto", "seconds": 0.021, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_device_put", "seconds": 0.012, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_different_devices_shmap_abstract_mesh_cache_hit", "seconds": 0.009, "before_mb": 236, "peak_mb": 236}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_disable_jit", "seconds": 0.03, "before_mb": 236, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_dynamic_slice_transpose", "seconds": 0.011, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_control_flow", "seconds": 0.006, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_custom_jvp_basic", "seconds": 0.009, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_custom_vjp_basic", "seconds": 0.012, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_mutable_array_arg_error", "seconds": 0.006, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_reduced_in", "seconds": 0.007, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_reduced_out", "seconds": 0.006, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_repr", "seconds": 0.017, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_shmap_new_ref", "seconds": 0.013, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_unreduced_in", "seconds": 0.01, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eager_unreduced_out", "seconds": 0.009, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_erf_rules", "seconds": 0.016, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_error_for_variable_num_args", "seconds": 0.01, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_eval_shape_vma", "seconds": 0.014, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_explicit_vmap_grad_shmap_axis_name", "seconds": 0.01, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_explicit_vmap_grad_shmap_no_axis_name", "seconds": 0.02, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_fanin_psum_transposes_to_fanout", "seconds": 0.009, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_fanout_specs_transpose_to_psum", "seconds": 0.03, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness0", "seconds": 0.019, "before_mb": 238, "peak_mb": 238, "params": "(0, 0, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness1", "seconds": 0.009, "before_mb": 238, "peak_mb": 238, "params": "(0, 0, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness10", "seconds": 0.013, "before_mb": 238, "peak_mb": 238, "params": "(0, 2, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness11", "seconds": 0.01, "before_mb": 238, "peak_mb": 238, "params": "(0, 2, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness12", "seconds": 0.011, "before_mb": 238, "peak_mb": 238, "params": "(0, 3, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness13", "seconds": 0.013, "before_mb": 238, "peak_mb": 238, "params": "(0, 3, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness14", "seconds": 0.015, "before_mb": 238, "peak_mb": 238, "params": "(0, 3, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness15", "seconds": 0.011, "before_mb": 238, "peak_mb": 238, "params": "(0, 3, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness16", "seconds": 0.012, "before_mb": 238, "peak_mb": 238, "params": "(1, 0, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness17", "seconds": 0.01, "before_mb": 238, "peak_mb": 238, "params": "(1, 0, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness18", "seconds": 0.013, "before_mb": 238, "peak_mb": 238, "params": "(1, 0, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness19", "seconds": 0.013, "before_mb": 238, "peak_mb": 238, "params": "(1, 0, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness2", "seconds": 0.175, "before_mb": 238, "peak_mb": 238, "params": "(0, 0, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness20", "seconds": 0.014, "before_mb": 238, "peak_mb": 238, "params": "(1, 1, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness21", "seconds": 0.018, "before_mb": 238, "peak_mb": 238, "params": "(1, 1, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness22", "seconds": 0.01, "before_mb": 238, "peak_mb": 238, "params": "(1, 1, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness23", "seconds": 0.014, "before_mb": 238, "peak_mb": 238, "params": "(1, 1, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness24", "seconds": 0.013, "before_mb": 238, "peak_mb": 238, "params": "(1, 2, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness25", "seconds": 0.027, "before_mb": 238, "peak_mb": 238, "params": "(1, 2, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness26", "seconds": 0.014, "before_mb": 238, "peak_mb": 238, "params": "(1, 2, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness27", "seconds": 0.017, "before_mb": 238, "peak_mb": 238, "params": "(1, 2, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness28", "seconds": 0.009, "before_mb": 238, "peak_mb": 238, "params": "(1, 3, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness29", "seconds": 0.014, "before_mb": 238, "peak_mb": 238, "params": "(1, 3, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness3", "seconds": 0.01, "before_mb": 238, "peak_mb": 238, "params": "(0, 0, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness30", "seconds": 0.012, "before_mb": 238, "peak_mb": 238, "params": "(1, 3, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness31", "seconds": 0.01, "before_mb": 238, "peak_mb": 238, "params": "(1, 3, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness32", "seconds": 0.019, "before_mb": 238, "peak_mb": 238, "params": "(2, 0, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness33", "seconds": 0.016, "before_mb": 238, "peak_mb": 236, "params": "(2, 0, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness34", "seconds": 0.011, "before_mb": 236, "peak_mb": 236, "params": "(2, 0, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness35", "seconds": 0.022, "before_mb": 236, "peak_mb": 236, "params": "(2, 0, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness36", "seconds": 0.012, "before_mb": 236, "peak_mb": 236, "params": "(2, 1, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness37", "seconds": 0.009, "before_mb": 236, "peak_mb": 236, "params": "(2, 1, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness38", "seconds": 0.009, "before_mb": 236, "peak_mb": 236, "params": "(2, 1, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness39", "seconds": 0.013, "before_mb": 236, "peak_mb": 236, "params": "(2, 1, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness4", "seconds": 0.012, "before_mb": 236, "peak_mb": 236, "params": "(0, 1, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness40", "seconds": 0.01, "before_mb": 236, "peak_mb": 236, "params": "(2, 2, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness41", "seconds": 0.011, "before_mb": 236, "peak_mb": 236, "params": "(2, 2, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness42", "seconds": 0.013, "before_mb": 236, "peak_mb": 236, "params": "(2, 2, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness43", "seconds": 0.01, "before_mb": 236, "peak_mb": 236, "params": "(2, 2, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness44", "seconds": 0.009, "before_mb": 236, "peak_mb": 236, "params": "(2, 3, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness45", "seconds": 0.011, "before_mb": 236, "peak_mb": 236, "params": "(2, 3, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness46", "seconds": 0.013, "before_mb": 236, "peak_mb": 236, "params": "(2, 3, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness47", "seconds": 0.012, "before_mb": 236, "peak_mb": 236, "params": "(2, 3, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness48", "seconds": 0.011, "before_mb": 236, "peak_mb": 236, "params": "(3, 0, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness49", "seconds": 0.012, "before_mb": 236, "peak_mb": 192, "params": "(3, 0, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness5", "seconds": 0.028, "before_mb": 192, "peak_mb": 192, "params": "(0, 1, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness50", "seconds": 0.012, "before_mb": 192, "peak_mb": 192, "params": "(3, 0, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness51", "seconds": 0.012, "before_mb": 192, "peak_mb": 191, "params": "(3, 0, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness52", "seconds": 0.014, "before_mb": 191, "peak_mb": 191, "params": "(3, 1, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness53", "seconds": 0.009, "before_mb": 191, "peak_mb": 191, "params": "(3, 1, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness54", "seconds": 0.007, "before_mb": 191, "peak_mb": 191, "params": "(3, 1, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness55", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(3, 1, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness56", "seconds": 0.014, "before_mb": 191, "peak_mb": 191, "params": "(3, 2, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness57", "seconds": 0.011, "before_mb": 191, "peak_mb": 191, "params": "(3, 2, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness58", "seconds": 0.009, "before_mb": 191, "peak_mb": 191, "params": "(3, 2, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness59", "seconds": 0.011, "before_mb": 191, "peak_mb": 191, "params": "(3, 2, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness6", "seconds": 0.011, "before_mb": 191, "peak_mb": 191, "params": "(0, 1, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness60", "seconds": 0.023, "before_mb": 191, "peak_mb": 191, "params": "(3, 3, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness61", "seconds": 0.012, "before_mb": 191, "peak_mb": 191, "params": "(3, 3, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness62", "seconds": 0.01, "before_mb": 191, "peak_mb": 191, "params": "(3, 3, 2)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness63", "seconds": 0.012, "before_mb": 191, "peak_mb": 191, "params": "(3, 3, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness7", "seconds": 0.012, "before_mb": 191, "peak_mb": 191, "params": "(0, 1, 3)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness8", "seconds": 0.021, "before_mb": 191, "peak_mb": 191, "params": "(0, 2, 0)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_forwarding_correctness9", "seconds": 0.009, "before_mb": 191, "peak_mb": 191, "params": "(0, 2, 1)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_full_like_pvary_existing", "seconds": 0.01, "before_mb": 191, "peak_mb": 191}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_functools_partial_rank_error", "seconds": 0.011, "before_mb": 191, "peak_mb": 191}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_get_check_rep", "seconds": 0.009, "before_mb": 191, "peak_mb": 191}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_mutable_array_arg0", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(True, P('x',))"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_mutable_array_arg1", "seconds": 0.008, "before_mb": 191, "peak_mb": 191, "params": "(True, P())"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_mutable_array_arg2", "seconds": 0.013, "before_mb": 191, "peak_mb": 191, "params": "(False, P('x',))"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_mutable_array_arg_unmentioned_no_check_vma", "seconds": 0.181, "before_mb": 191, "peak_mb": 191}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_nested_partial_auto", "seconds": 0.016, "before_mb": 191, "peak_mb": 191}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_nested_partial_auto_with_residuals", "seconds": 0.01, "before_mb": 191, "peak_mb": 191}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_remat", "seconds": 0.394, "before_mb": 191, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_grad_shmap_residuals_axis_names_in_mesh_order", "seconds": 0.01, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_identity", "seconds": 0.013, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_spec_none", "seconds": 0.032, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_spec_none_divisibility_errors", "seconds": 0.008, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_spec_none_hashability", "seconds": 0.008, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_spec_none_rank_errors", "seconds": 0.008, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_in_specs_none_error", "seconds": 0.009, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jacrev_explicit", "seconds": 0.007, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jacrev_explicit_complex", "seconds": 0.007, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jaxpr_shardings_with_no_outputs", "seconds": 0.007, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jnp_histogram", "seconds": 0.007, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_jvp_basic", "seconds": 0.007, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_key_array_with_replicated_last_tile_dim", "seconds": 0.009, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_linalg_inv", "seconds": 0.01, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_linearize_basic", "seconds": 0.009, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_linearize_basic_repres", "seconds": 0.012, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_linearize_basic_repres_jit", "seconds": 0.025, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mat_invarying", "seconds": 0.027, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_matmul_full_unreduced_out", "seconds": 0.011, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_matmul_reduce_scatter", "seconds": 0.013, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_matmul_unreduced", "seconds": 0.014, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_matmul_unreduced_error", "seconds": 0.022, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mix_manual_explicit_partial", "seconds": 0.012, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mul_shmap_unreduced", "seconds": 0.018, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mul_with_vma_in_types", "seconds": 0.011, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_multiple_result_primitive_with_none_sharding", "seconds": 0.055, "before_mb": 251, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_aliased_error", "seconds": 0.006, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_aliased_typecheck_error", "seconds": 0.018, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_basic", "seconds": 0.008, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_at_varying_index", "seconds": 0.015, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_invariant_to_varying0", "seconds": 0.02, "before_mb": 253, "peak_mb": 253, "params": "('set')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_invariant_to_varying1", "seconds": 0.011, "before_mb": 253, "peak_mb": 253, "params": "('addupdate')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_varying_to_invariant_error0", "seconds": 0.012, "before_mb": 253, "peak_mb": 253, "params": "('set')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_varying_to_invariant_error1", "seconds": 0.013, "before_mb": 253, "peak_mb": 253, "params": "('addupdate')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_varying_to_invariant_error2", "seconds": 0.013, "before_mb": 253, "peak_mb": 253, "params": "('set_idx')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_arg_write_varying_to_invariant_error3", "seconds": 0.011, "before_mb": 253, "peak_mb": 253, "params": "('addupdate_idx')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_mutable_array_internal_basic", "seconds": 0.012, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto", "seconds": 0.012, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto_1d_0", "seconds": 0.012, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto_1d_1", "seconds": 0.009, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto_1d_2", "seconds": 0.013, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_partial_auto_1d_3", "seconds": 0.011, "before_mb": 253, "peak_mb": 253}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_shmap_innermost_no_axis_names", "seconds": 0.017, "before_mb": 253, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_nested_vmap_with_capture_spmd_axis_name", "seconds": 0.02, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_no_auto_pcast_config0", "seconds": 0.015, "before_mb": 251, "peak_mb": 251, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_no_auto_pcast_config1", "seconds": 0.009, "before_mb": 251, "peak_mb": 251, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_no_mesh_context_error", "seconds": 0.013, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_one_input_sharded_another_reduced_shmap_add", "seconds": 0.012, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_one_input_sharded_another_reduced_shmap_mul", "seconds": 0.011, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_one_input_sharded_another_reduced_shmap_no_psum_add", "seconds": 0.01, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_one_input_sharded_another_reduced_shmap_no_psum_mul", "seconds": 0.011, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_optimization_barrier_varying_manual_axes", "seconds": 0.676, "before_mb": 251, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_optimize_remat", "seconds": 0.032, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_outer_jit_detects_shard_map_mesh", "seconds": 0.013, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto", "seconds": 0.014, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_axis_index", "seconds": 0.008, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_axis_index_degenerated_axis", "seconds": 0.008, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_axis_index_eager", "seconds": 0.029, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_debug_print", "seconds": 0.012, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_error_invalid_auto", "seconds": 0.007, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_error_wrong_in_specs", "seconds": 0.017, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_error_wsc_manual", "seconds": 0.009, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_explicit", "seconds": 0.009, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_explicit_multi_explicit", "seconds": 0.009, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_explicit_no_set_mesh", "seconds": 0.009, "before_mb": 271, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_mismatch_mesh_error", "seconds": 0.013, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_no_check_vma_eager", "seconds": 0.01, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_of_pjit", "seconds": 0.021, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_of_pjit_different_mesh", "seconds": 0.009, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_of_random_keys", "seconds": 0.019, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_of_random_keys_slice", "seconds": 0.009, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_ppermute", "seconds": 0.018, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_auto_propagate_through", "seconds": 0.011, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_eval_custom_axis_env", "seconds": 0.041, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_manual_explicit_nested", "seconds": 0.007, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_manual_explicit_shmap0", "seconds": 0.012, "before_mb": 272, "peak_mb": 272, "params": "(P('x',), {'x'}, P(None, 'y'))"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_partial_manual_explicit_shmap1", "seconds": 0.029, "before_mb": 272, "peak_mb": 272, "params": "(P(None, 'y'), {'y'}, P('x', None))"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pbroadcast_dynamic_root", "seconds": 0.013, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pbroadcast_fully_replicated", "seconds": 0.01, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pbroadcast_partial_replicated", "seconds": 0.09, "before_mb": 272, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pcast_axis_name_is_not_set", "seconds": 0.023, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pcast_to_unreduced", "seconds": 0.008, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pmax", "seconds": 0.007, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pmax_vma_in_types", "seconds": 0.007, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pmin", "seconds": 0.009, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_post_process", "seconds": 0.008, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_post_process_partial_eval_with_scalar_res", "seconds": 0.009, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_ppermute_different_axis_order_error", "seconds": 0.014, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_ppermute_zip_error", "seconds": 0.008, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_preduced_fwd_unreduced_psum_bwd", "seconds": 0.015, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_print_inside_shard_map0", "seconds": 0.009, "before_mb": 273, "peak_mb": 273, "params": "(P())"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_print_inside_shard_map1", "seconds": 0.014, "before_mb": 273, "peak_mb": 273, "params": "(P('x',))"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_print_inside_shard_map2", "seconds": 0.009, "before_mb": 273, "peak_mb": 273, "params": "(P(('x', 'y'),))"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_prngkeyarray_eager", "seconds": 0.013, "before_mb": 273, "peak_mb": 273}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_process_env_traces", "seconds": 0.658, "before_mb": 273, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_two_gpus", "seconds": 0.025, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_dangling_recv", "seconds": 0.013, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_deadlock_cycle", "seconds": 0.011, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_duplicate_source_target_pairs", "seconds": 0.008, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_no_deadlock_cycle", "seconds": 0.008, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_basic_with_non_matching_source_target_pairs", "seconds": 0.006, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psend_precv_reverse_two_gpus", "seconds": 0.017, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psum_not_under_shmap_error", "seconds": 0.006, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psum_reduced_input", "seconds": 0.02, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psum_transpose_non_zero_cts", "seconds": 0.007, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_psum_with_implicit_fanout_self_transposes", "seconds": 0.019, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pure_callback_return_multiple_arrays", "seconds": 0.012, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary", "seconds": 0.013, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary_eager", "seconds": 0.01, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary_explicit_axes_error", "seconds": 0.015, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary_in_shmap_of_grad", "seconds": 0.01, "before_mb": 323, "peak_mb": 323}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_pvary_no_op_one_sized_mesh_axis", "seconds": 0.056, "before_mb": 323, "peak_mb": 324}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_random_beta_vma", "seconds": 0.013, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_random_choice_pvary", "seconds": 0.023, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_random_normal_rules", "seconds": 0.01, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rank_errors", "seconds": 0.017, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduce_scatter_rgv3_multidim_mesh", "seconds": 0.009, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduce_scatter_rgv3_multidim_mesh_tuple_sharding", "seconds": 0.012, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduce_scatter_rgv3_simple", "seconds": 0.009, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduce_scatter_with_axis_index_groups", "seconds": 0.009, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduced_pcast_fwd_unreduced_bwd", "seconds": 0.01, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduced_shmap_inside_partially_manual_shmap", "seconds": 0.016, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduced_vary_automatically_inserted", "seconds": 0.009, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reduced_vary_automatically_inserted_psum", "seconds": 0.011, "before_mb": 325, "peak_mb": 325}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_remat_basic", "seconds": 0.501, "before_mb": 325, "peak_mb": 356}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_remat_transform", "seconds": 0.033, "before_mb": 356, "peak_mb": 356}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_remove_one_sized_mesh_axis_from_vma", "seconds": 0.012, "before_mb": 356, "peak_mb": 356}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rep_none_canonicalization", "seconds": 0.944, "before_mb": 356, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rep_none_canonicalization_again", "seconds": 0.009, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_repeat_shmap_vmap_spmd_axis_names", "seconds": 0.012, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_repeated_psum_allowed", "seconds": 0.018, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_replicated_unreduced_bitcast_check_vma_false0", "seconds": 0.008, "before_mb": 377, "peak_mb": 377, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_replicated_unreduced_bitcast_check_vma_false1", "seconds": 0.019, "before_mb": 377, "peak_mb": 377, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_replication_checker_eager", "seconds": 0.007, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_replication_checker_jit", "seconds": 0.015, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization0", "seconds": 0.006, "before_mb": 377, "peak_mb": 377, "params": "(True, True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization1", "seconds": 0.006, "before_mb": 377, "peak_mb": 377, "params": "(True, False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization2", "seconds": 0.006, "before_mb": 377, "peak_mb": 377, "params": "(False, True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization3", "seconds": 0.006, "before_mb": 377, "peak_mb": 377, "params": "(False, False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_2", "seconds": 0.019, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_complex0", "seconds": 0.009, "before_mb": 377, "peak_mb": 377, "params": "(True, True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_complex1", "seconds": 0.01, "before_mb": 377, "peak_mb": 377, "params": "(True, False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_complex2", "seconds": 0.017, "before_mb": 377, "peak_mb": 377, "params": "(False, True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_res_forwarding_optimization_complex3", "seconds": 0.01, "before_mb": 377, "peak_mb": 377, "params": "(False, False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reshape_reduced_fwd_unreduced_bwd", "seconds": 0.012, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_residual_reduced_preserved_via_nospec", "seconds": 0.012, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_returned_out_sharding", "seconds": 0.018, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_reverse_mode_ad", "seconds": 0.01, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_binops", "seconds": 0.017, "before_mb": 377, "peak_mb": 377}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_custom_vjp_call_jaxpr0", "seconds": 0.012, "before_mb": 378, "peak_mb": 378, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_custom_vjp_call_jaxpr1", "seconds": 0.01, "before_mb": 378, "peak_mb": 378, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_post_process_call", "seconds": 0.011, "before_mb": 378, "peak_mb": 378}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_call", "seconds": 0.01, "before_mb": 378, "peak_mb": 378}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_jvp_call0", "seconds": 0.007, "before_mb": 378, "peak_mb": 378, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_jvp_call1", "seconds": 0.009, "before_mb": 378, "peak_mb": 378, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_vjp_call0", "seconds": 0.016, "before_mb": 378, "peak_mb": 378, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_vjp_call1", "seconds": 0.01, "before_mb": 378, "peak_mb": 378, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_vjp_call_match_more_replicated0", "seconds": 0.014, "before_mb": 378, "peak_mb": 378, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_process_custom_vjp_call_match_more_replicated1", "seconds": 0.014, "before_mb": 378, "peak_mb": 378, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_rewrite_scan", "seconds": 0.008, "before_mb": 378, "peak_mb": 378}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_same_pspec_eager_shard_map", "seconds": 0.009, "before_mb": 378, "peak_mb": 378}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_scan_pvary_errors", "seconds": 0.152, "before_mb": 378, "peak_mb": 385}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_scan_pvary_errors2", "seconds": 0.15, "before_mb": 385, "peak_mb": 393}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_scan_rep_rule", "seconds": 0.02, "before_mb": 393, "peak_mb": 393}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shard_map_abstract_mesh", "seconds": 0.012, "before_mb": 393, "peak_mb": 393}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_prng_with_abstract_mesh", "seconds": 0.023, "before_mb": 393, "peak_mb": 393}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_random_bits0", "seconds": 0.009, "before_mb": 393, "peak_mb": 393, "params": "('threefry2x32')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_random_bits1", "seconds": 0.018, "before_mb": 393, "peak_mb": 393, "params": "('rbg')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_random_bits2", "seconds": 0.008, "before_mb": 393, "peak_mb": 393, "params": "('unsafe_rbg')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_unreduced_roundtrip_check_vma_false0", "seconds": 0.024, "before_mb": 393, "peak_mb": 393, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharded_unreduced_roundtrip_check_vma_false1", "seconds": 0.007, "before_mb": 393, "peak_mb": 394, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sharding_metadata_in_hlo_attrs", "seconds": 0.025, "before_mb": 394, "peak_mb": 394}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_abstract_mesh_errors", "seconds": 0.008, "before_mb": 394, "peak_mb": 394}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_auto_unreduced_error", "seconds": 0.022, "before_mb": 394, "peak_mb": 394}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_bwd_rep_to_unreduced_check_vma_true", "seconds": 0.017, "before_mb": 394, "peak_mb": 394}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_close_over_unused_params", "seconds": 0.029, "before_mb": 394, "peak_mb": 394}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_close_over_unused_params_vmap", "seconds": 0.013, "before_mb": 394, "peak_mb": 394}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_custom_vjp_empty_mesh", "seconds": 0.1, "before_mb": 394, "peak_mb": 397}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_empty_mesh_error", "seconds": 0.024, "before_mb": 397, "peak_mb": 399}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_full_manual_context_auto", "seconds": 0.021, "before_mb": 399, "peak_mb": 399}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_full_manual_context_explicit", "seconds": 0.011, "before_mb": 399, "peak_mb": 399}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_linearize_and_linearize_transpose_error", "seconds": 0.016, "before_mb": 399, "peak_mb": 399}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_of_remat_basic", "seconds": 0.703, "before_mb": 399, "peak_mb": 435}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_partial_manual_auto", "seconds": 0.037, "before_mb": 435, "peak_mb": 435}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_partial_manual_explicit", "seconds": 0.032, "before_mb": 435, "peak_mb": 435}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_primal_type_match_ct_type", "seconds": 0.016, "before_mb": 435, "peak_mb": 435}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_unreduced_fsdp_custom_vjp_bwd", "seconds": 0.024, "before_mb": 435, "peak_mb": 435}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_shmap_unreduced_fsdp_grad", "seconds": 0.014, "before_mb": 435, "peak_mb": 435}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_sin_unreduced_error", "seconds": 0.029, "before_mb": 435, "peak_mb": 435}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_slice_oob_shmap0", "seconds": 0.014, "before_mb": 435, "peak_mb": 435, "params": "(Auto)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_slice_oob_shmap1", "seconds": 0.015, "before_mb": 435, "peak_mb": 435, "params": "(Explicit)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap0", "seconds": 0.016, "before_mb": 435, "peak_mb": 435, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap1", "seconds": 0.015, "before_mb": 435, "peak_mb": 435, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_error0", "seconds": 0.029, "before_mb": 435, "peak_mb": 435, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_error1", "seconds": 0.014, "before_mb": 435, "peak_mb": 435, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit0", "seconds": 0.014, "before_mb": 435, "peak_mb": 435, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit1", "seconds": 0.017, "before_mb": 435, "peak_mb": 435, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest0", "seconds": 0.017, "before_mb": 435, "peak_mb": 435, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest1", "seconds": 0.016, "before_mb": 435, "peak_mb": 435, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest_inner_none0", "seconds": 0.015, "before_mb": 435, "peak_mb": 435, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest_inner_none1", "seconds": 0.009, "before_mb": 435, "peak_mb": 435, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest_mesh_call_time0", "seconds": 0.011, "before_mb": 435, "peak_mb": 389, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_auto_explicit_nest_mesh_call_time1", "seconds": 0.009, "before_mb": 389, "peak_mb": 388, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_explicit0", "seconds": 0.023, "before_mb": 388, "peak_mb": 388, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_explicit1", "seconds": 0.009, "before_mb": 388, "peak_mb": 388, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_nested_psum0", "seconds": 0.009, "before_mb": 388, "peak_mb": 388, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_nested_psum1", "seconds": 0.008, "before_mb": 388, "peak_mb": 388, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_replicated0", "seconds": 0.018, "before_mb": 388, "peak_mb": 388, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_replicated1", "seconds": 0.01, "before_mb": 388, "peak_mb": 388, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_replicated_sharded0", "seconds": 0.01, "before_mb": 388, "peak_mb": 388, "params": "(False)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_smap_replicated_sharded1", "seconds": 0.009, "before_mb": 388, "peak_mb": 388, "params": "(True)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_split_with_unused_result_in_shardmap", "seconds": 0.014, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_switch_rep_rule", "seconds": 0.03, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_temporary_error_suppression_flag", "seconds": 0.011, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_transpose_float0", "seconds": 0.014, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_transpose_identity", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_transpose_unreduced_shmap", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_tree_prefix_error", "seconds": 0.014, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_bwd_manual_reshard_op_shardy", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_max_min_local_reduce_max", "seconds": 0.023, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_max_min_local_reduce_min", "seconds": 0.009, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_max_min_nested_shard_map_add_manual_axes_max", "seconds": 0.018, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_max_min_nested_shard_map_add_manual_axes_min", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_partial_manual_basic", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_psum_fwd_preduced_bwd", "seconds": 0.011, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_psum_scatter_fwd_all_gather_reduced_bwd", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_unreduced_replicated_bitcast", "seconds": 0.015, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_varargs_error", "seconds": 0.009, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs0", "seconds": 0.01, "before_mb": 388, "peak_mb": 388, "params": "(check_vma=True, w_spec=P('x',))"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs1", "seconds": 0.008, "before_mb": 388, "peak_mb": 388, "params": "(check_vma=True, w_spec=P())"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs2", "seconds": 0.014, "before_mb": 388, "peak_mb": 388, "params": "(check_vma=False, w_spec=P('x',))"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs3", "seconds": 0.008, "before_mb": 388, "peak_mb": 388, "params": "(check_vma=False, w_spec=P())"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs_aliased_args0", "seconds": 0.012, "before_mb": 388, "peak_mb": 388, "params": "('same_arg')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs_aliased_args1", "seconds": 0.011, "before_mb": 388, "peak_mb": 388, "params": "('same_ref')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vjp3_with_refs_aliased_args2", "seconds": 0.008, "before_mb": 388, "peak_mb": 388, "params": "('different_specs')"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vma_out_specs_error_check", "seconds": 0.007, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_basic", "seconds": 0.018, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_basic_axis_name", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_basic_axis_name_reuse_mesh_name", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_explicit_mesh_axis", "seconds": 0.007, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_explicit_mesh_axis_error", "seconds": 0.009, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_explicit_mesh_axis_single_axis", "seconds": 0.02, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_grad_remat_shmap_spmd_axis_name_residuals", "seconds": 0.009, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_grad_shmap_spmd_axis_name_residuals", "seconds": 0.016, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_of_grad_spmd_axis_name", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_shmap_psum", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_shmap_spmd_axis_name_scalar0", "seconds": 0.024, "before_mb": 388, "peak_mb": 388, "params": "(Explicit)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_shmap_spmd_axis_name_scalar1", "seconds": 0.008, "before_mb": 388, "peak_mb": 388, "params": "(Auto)"}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_spmd_axis_name", "seconds": 0.014, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_spmd_axis_name_error", "seconds": 0.01, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_vmap_spmd_axis_name_pair", "seconds": 0.009, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_while_rep_rule", "seconds": 0.018, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_with_static_arg", "seconds": 0.009, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_zero_cotangent_sharding", "seconds": 0.017, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_zero_unreduced", "seconds": 0.011, "before_mb": 388, "peak_mb": 388}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref0", "seconds": 0.008, "before_mb": 388, "peak_mb": 388, "params": "(<PjitFunction of <function dot at 0x106c3c360>>, {'i': 4, 'j': 2}, False, (P(None, ('i', 'j')), P(None, ('i', 'j'))), P('i', 'j'), [array([[0.    , 0.0625, 0.125 , 0.1875, 0.25  , 0.3125, 0.375 , 0.4375,\n        0.5   , 0.5625, 0.625 , 0.6875, 0.75  , 0.8125, 0.875 , 0.9375]],\n      dtype=float32),"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref1", "seconds": 0.009, "before_mb": 388, "peak_mb": 388, "params": "(<function <lambda> at 0x106fa6200>, {'i': 1, 'j': 2}, True, (P('j', None, 'i'), P(None, None)), P(None, None, ('i', 'j')), [array([[[0.        ],\n        [0.08333334],\n        [0.16666667]],\n\n       [[0.25      ],\n        [0.33333334],\n        [0.41666666]],\n\n       [[0.5       ],\n        [0.583333"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref2", "seconds": 0.163, "before_mb": 388, "peak_mb": 437, "params": "(<function <lambda> at 0x106fa5e40>, {'i': 1, 'j': 1}, False, (P(None, 'j', 'i'),), P(None, None, ('i', 'j')), [array([[[0.        , 0.16666667, 0.33333334],\n        [0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_reference at 0x106fa6520>, (ShapeDtypeStruc"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref3", "seconds": 0.189, "before_mb": 437, "peak_mb": 449, "params": "(<function <lambda> at 0x106fa6200>, {'i': 1, 'j': 1}, False, (P(None, None), P('i', None)), P(('i', 'j'), None), [array([[0.        , 0.16666667, 0.33333334],\n       [0.5       , 0.6666667 , 0.8333333 ]], dtype=float32), array([[0.        , 0.16666667],\n       [0.33333334, 0.5       ],\n       [0.66"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref4", "seconds": 0.194, "before_mb": 449, "peak_mb": 460, "params": "(<function <lambda> at 0x106fa6200>, {'i': 1}, False, (P('i', None), P(None, 'i', None)), P(None, None, 'i'), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        , 0.16666667, 0.33333334]],\n\n       [[0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref5", "seconds": 0.074, "before_mb": 460, "peak_mb": 464, "params": "(<function <lambda> at 0x106f4dd00>, {'i': 1, 'j': 1}, False, (P('i', None, None),), P(None, ('i', 'j'), None), [array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5       ],\n        [0.6666667 ],\n        [0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref6", "seconds": 0.03, "before_mb": 464, "peak_mb": 464, "params": "(<function <lambda> at 0x106fa5f80>, {'i': 2, 'j': 2}, True, (P(('i', 'j'), None),), P(('i', 'j'),), [array([[0.   ],\n       [0.125],\n       [0.25 ],\n       [0.375],\n       [0.5  ],\n       [0.625],\n       [0.75 ],\n       [0.875]], dtype=float32)], functools.partial(<function shmap_reference at 0x106"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref7", "seconds": 0.056, "before_mb": 464, "peak_mb": 468, "params": "(<function <lambda> at 0x106f4dd00>, {'i': 1}, True, (P(None, 'i'),), P('i', None), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32)], functools.partial(<function shmap_reference at 0x106fa6520>, (ShapeDtypeStruct(shape=(3, 1), dtype=float32),), ShapeDtypeStruct(shape="}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref8", "seconds": 0.072, "before_mb": 468, "peak_mb": 474, "params": "(<PjitFunction of <function dot at 0x106c3c360>>, {'i': 1, 'j': 1}, False, (P(None, None), P(None, None, 'i')), P('i', None, None), [array([[0.        , 0.16666667, 0.33333334],\n       [0.5       , 0.6666667 , 0.8333333 ]], dtype=float32), array([[[0.        ],\n        [0.16666667],\n        [0.33333"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_eager_against_ref9", "seconds": 0.058, "before_mb": 474, "peak_mb": 477, "params": "(<function <lambda> at 0x106fa5d00>, {'i': 1, 'j': 1}, False, (P('j', 'i'), P('i', None, 'j')), (P(('i', 'j'), None, None), P('j', 'i')), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5 "}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads0", "seconds": 0.012, "before_mb": 477, "peak_mb": 477, "params": "(<PjitFunction of <function dot at 0x106c3c360>>, {'i': 4, 'j': 2}, False, (P(None, ('i', 'j')), P(None, ('i', 'j'))), P('i', 'j'), [array([[0.    , 0.0625, 0.125 , 0.1875, 0.25  , 0.3125, 0.375 , 0.4375,\n        0.5   , 0.5625, 0.625 , 0.6875, 0.75  , 0.8125, 0.875 , 0.9375]],\n      dtype=float32),"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads1", "seconds": 0.011, "before_mb": 477, "peak_mb": 477, "params": "(<PjitFunction of <function dot at 0x106c3c360>>, {'i': 4, 'j': 2}, False, (P(None, ('i', 'j')), P(None, ('i', 'j'))), P('i', 'j'), [array([[0.    , 0.0625, 0.125 , 0.1875, 0.25  , 0.3125, 0.375 , 0.4375,\n        0.5   , 0.5625, 0.625 , 0.6875, 0.75  , 0.8125, 0.875 , 0.9375]],\n      dtype=float32),"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads10", "seconds": 1.182, "before_mb": 477, "peak_mb": 590, "params": "(<function <lambda> at 0x106f4dd00>, {'i': 1, 'j': 1}, False, (P('i', None, None),), P(None, ('i', 'j'), None), [array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5       ],\n        [0.6666667 ],\n        [0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads11", "seconds": 0.846, "before_mb": 590, "peak_mb": 674, "params": "(<function <lambda> at 0x106f4dd00>, {'i': 1, 'j': 1}, False, (P('i', None, None),), P(None, ('i', 'j'), None), [array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5       ],\n        [0.6666667 ],\n        [0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads12", "seconds": 0.02, "before_mb": 674, "peak_mb": 674, "params": "(<function <lambda> at 0x106fa5f80>, {'i': 2, 'j': 2}, True, (P(('i', 'j'), None),), P(('i', 'j'),), [array([[0.   ],\n       [0.125],\n       [0.25 ],\n       [0.375],\n       [0.5  ],\n       [0.625],\n       [0.75 ],\n       [0.875]], dtype=float32)], functools.partial(<function shmap_reference at 0x106"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads13", "seconds": 0.014, "before_mb": 675, "peak_mb": 675, "params": "(<function <lambda> at 0x106fa5f80>, {'i': 2, 'j': 2}, True, (P(('i', 'j'), None),), P(('i', 'j'),), [array([[0.   ],\n       [0.125],\n       [0.25 ],\n       [0.375],\n       [0.5  ],\n       [0.625],\n       [0.75 ],\n       [0.875]], dtype=float32)], functools.partial(<function shmap_reference at 0x106"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads14", "seconds": 0.196, "before_mb": 675, "peak_mb": 691, "params": "(<function <lambda> at 0x106f4dd00>, {'i': 1}, True, (P(None, 'i'),), P('i', None), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32)], functools.partial(<function shmap_reference at 0x106fa6520>, (ShapeDtypeStruct(shape=(3, 1), dtype=float32),), ShapeDtypeStruct(shape="}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads15", "seconds": 0.221, "before_mb": 691, "peak_mb": 704, "params": "(<function <lambda> at 0x106f4dd00>, {'i': 1}, True, (P(None, 'i'),), P('i', None), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32)], functools.partial(<function shmap_reference at 0x106fa6520>, (ShapeDtypeStruct(shape=(3, 1), dtype=float32),), ShapeDtypeStruct(shape="}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads18", "seconds": 1.762, "before_mb": 704, "peak_mb": 852, "params": "(<function <lambda> at 0x106fa5d00>, {'i': 1, 'j': 1}, False, (P('j', 'i'), P('i', None, 'j')), (P(('i', 'j'), None, None), P('j', 'i')), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5 "}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads19", "seconds": 1.502, "before_mb": 852, "peak_mb": 1001, "params": "(<function <lambda> at 0x106fa5d00>, {'i': 1, 'j': 1}, False, (P('j', 'i'), P('i', None, 'j')), (P(('i', 'j'), None, None), P('j', 'i')), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5 "}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads2", "seconds": 0.201, "before_mb": 1001, "peak_mb": 1002, "params": "(<function <lambda> at 0x106fa6200>, {'i': 1, 'j': 2}, True, (P('j', None, 'i'), P(None, None)), P(None, None, ('i', 'j')), [array([[[0.        ],\n        [0.08333334],\n        [0.16666667]],\n\n       [[0.25      ],\n        [0.33333334],\n        [0.41666666]],\n\n       [[0.5       ],\n        [0.583333"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads3", "seconds": 0.03, "before_mb": 1002, "peak_mb": 1002, "params": "(<function <lambda> at 0x106fa6200>, {'i': 1, 'j': 2}, True, (P('j', None, 'i'), P(None, None)), P(None, None, ('i', 'j')), [array([[[0.        ],\n        [0.08333334],\n        [0.16666667]],\n\n       [[0.25      ],\n        [0.33333334],\n        [0.41666666]],\n\n       [[0.5       ],\n        [0.583333"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads4", "seconds": 1.34, "before_mb": 1002, "peak_mb": 1120, "params": "(<function <lambda> at 0x106fa5e40>, {'i': 1, 'j': 1}, False, (P(None, 'j', 'i'),), P(None, None, ('i', 'j')), [array([[[0.        , 0.16666667, 0.33333334],\n        [0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_reference at 0x106fa6520>, (ShapeDtypeStruc"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads5", "seconds": 1.587, "before_mb": 1120, "peak_mb": 1234, "params": "(<function <lambda> at 0x106fa5e40>, {'i': 1, 'j': 1}, False, (P(None, 'j', 'i'),), P(None, None, ('i', 'j')), [array([[[0.        , 0.16666667, 0.33333334],\n        [0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_reference at 0x106fa6520>, (ShapeDtypeStruc"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure0", "seconds": 0.027, "before_mb": 1234, "peak_mb": 1234, "params": "(<PjitFunction of <function dot at 0x106c3c360>>, {'i': 4, 'j': 2}, False, (P(None, ('i', 'j')), P(None, ('i', 'j'))), P('i', 'j'), [array([[0.    , 0.0625, 0.125 , 0.1875, 0.25  , 0.3125, 0.375 , 0.4375,\n        0.5   , 0.5625, 0.625 , 0.6875, 0.75  , 0.8125, 0.875 , 0.9375]],\n      dtype=float32),"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure1", "seconds": 0.016, "before_mb": 1234, "peak_mb": 1234, "params": "(<function <lambda> at 0x106fa6200>, {'i': 1, 'j': 2}, True, (P('j', None, 'i'), P(None, None)), P(None, None, ('i', 'j')), [array([[[0.        ],\n        [0.08333334],\n        [0.16666667]],\n\n       [[0.25      ],\n        [0.33333334],\n        [0.41666666]],\n\n       [[0.5       ],\n        [0.583333"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure6", "seconds": 0.006, "before_mb": 1234, "peak_mb": 1234, "params": "(<function <lambda> at 0x106fa5f80>, {'i': 2, 'j': 2}, True, (P(('i', 'j'), None),), P(('i', 'j'),), [array([[0.   ],\n       [0.125],\n       [0.25 ],\n       [0.375],\n       [0.5  ],\n       [0.625],\n       [0.75 ],\n       [0.875]], dtype=float32)], functools.partial(<function shmap_reference at 0x106"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure7", "seconds": 0.75, "before_mb": 1235, "peak_mb": 1264, "params": "(<function <lambda> at 0x106f4dd00>, {'i': 1}, True, (P(None, 'i'),), P('i', None), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32)], functools.partial(<function shmap_reference at 0x106fa6520>, (ShapeDtypeStruct(shape=(3, 1), dtype=float32),), ShapeDtypeStruct(shape="}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref0", "seconds": 0.017, "before_mb": 1264, "peak_mb": 1264, "params": "(<PjitFunction of <function dot at 0x106c3c360>>, {'i': 4, 'j': 2}, False, (P(None, ('i', 'j')), P(None, ('i', 'j'))), P('i', 'j'), [array([[0.    , 0.0625, 0.125 , 0.1875, 0.25  , 0.3125, 0.375 , 0.4375,\n        0.5   , 0.5625, 0.625 , 0.6875, 0.75  , 0.8125, 0.875 , 0.9375]],\n      dtype=float32),"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref1", "seconds": 0.031, "before_mb": 1264, "peak_mb": 1264, "params": "(<function <lambda> at 0x106fa6200>, {'i': 1, 'j': 2}, True, (P('j', None, 'i'), P(None, None)), P(None, None, ('i', 'j')), [array([[[0.        ],\n        [0.08333334],\n        [0.16666667]],\n\n       [[0.25      ],\n        [0.33333334],\n        [0.41666666]],\n\n       [[0.5       ],\n        [0.583333"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref2", "seconds": 0.029, "before_mb": 1264, "peak_mb": 1265, "params": "(<function <lambda> at 0x106fa5e40>, {'i': 1, 'j': 1}, False, (P(None, 'j', 'i'),), P(None, None, ('i', 'j')), [array([[[0.        , 0.16666667, 0.33333334],\n        [0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_reference at 0x106fa6520>, (ShapeDtypeStruc"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref3", "seconds": 0.209, "before_mb": 1265, "peak_mb": 1268, "params": "(<function <lambda> at 0x106fa6200>, {'i': 1, 'j': 1}, False, (P(None, None), P('i', None)), P(('i', 'j'), None), [array([[0.        , 0.16666667, 0.33333334],\n       [0.5       , 0.6666667 , 0.8333333 ]], dtype=float32), array([[0.        , 0.16666667],\n       [0.33333334, 0.5       ],\n       [0.66"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref4", "seconds": 0.027, "before_mb": 1268, "peak_mb": 1269, "params": "(<function <lambda> at 0x106fa6200>, {'i': 1}, False, (P('i', None), P(None, 'i', None)), P(None, None, 'i'), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        , 0.16666667, 0.33333334]],\n\n       [[0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref5", "seconds": 0.02, "before_mb": 1269, "peak_mb": 1269, "params": "(<function <lambda> at 0x106f4dd00>, {'i': 1, 'j': 1}, False, (P('i', None, None),), P(None, ('i', 'j'), None), [array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5       ],\n        [0.6666667 ],\n        [0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref6", "seconds": 0.024, "before_mb": 1269, "peak_mb": 1269, "params": "(<function <lambda> at 0x106fa5f80>, {'i': 2, 'j': 2}, True, (P(('i', 'j'), None),), P(('i', 'j'),), [array([[0.   ],\n       [0.125],\n       [0.25 ],\n       [0.375],\n       [0.5  ],\n       [0.625],\n       [0.75 ],\n       [0.875]], dtype=float32)], functools.partial(<function shmap_reference at 0x106"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref7", "seconds": 0.026, "before_mb": 1269, "peak_mb": 1270, "params": "(<function <lambda> at 0x106f4dd00>, {'i': 1}, True, (P(None, 'i'),), P('i', None), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32)], functools.partial(<function shmap_reference at 0x106fa6520>, (ShapeDtypeStruct(shape=(3, 1), dtype=float32),), ShapeDtypeStruct(shape="}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref8", "seconds": 0.029, "before_mb": 1270, "peak_mb": 1271, "params": "(<PjitFunction of <function dot at 0x106c3c360>>, {'i': 1, 'j': 1}, False, (P(None, None), P(None, None, 'i')), P('i', None, None), [array([[0.        , 0.16666667, 0.33333334],\n       [0.5       , 0.6666667 , 0.8333333 ]], dtype=float32), array([[[0.        ],\n        [0.16666667],\n        [0.33333"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_jit_against_ref9", "seconds": 0.022, "before_mb": 1271, "peak_mb": 1272, "params": "(<function <lambda> at 0x106fa5d00>, {'i': 1, 'j': 1}, False, (P('j', 'i'), P('i', None, 'j')), (P(('i', 'j'), None, None), P('j', 'i')), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5 "}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap0", "seconds": 0.014, "before_mb": 1272, "peak_mb": 1272, "params": "((0, 1), <PjitFunction of <function dot at 0x106c3c360>>, {'i': 4, 'j': 2}, False, (P(None, ('i', 'j')), P(None, ('i', 'j'))), P('i', 'j'), [array([[[0.    , 0.0625, 0.125 , 0.1875, 0.25  , 0.3125, 0.375 , 0.4375,\n         0.5   , 0.5625, 0.625 , 0.6875, 0.75  , 0.8125, 0.875 , 0.9375]],\n\n       [[0"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap1", "seconds": 0.011, "before_mb": 1272, "peak_mb": 1272, "params": "((1,), <function <lambda> at 0x106fa5e40>, {'i': 2, 'j': 4}, True, (P('j', None, None),), P('j', None, None), [array([[[[0.        , 0.04166667],\n         [0.08333334, 0.125     ],\n         [0.16666667, 0.20833333]],\n\n        [[0.        , 0.08333334],\n         [0.16666667, 0.25      ],\n         [0."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap2", "seconds": 0.252, "before_mb": 1272, "peak_mb": 1282, "params": "((1,), <function <lambda> at 0x106fa63e0>, {'i': 1}, True, (P(None, 'i'),), P(None, 'i'), [array([[[0.        , 0.33333334, 0.6666667 ],\n        [0.        , 0.6666667 , 1.3333334 ],\n        [0.        , 1.        , 2.        ],\n        [0.        , 1.3333334 , 2.6666667 ],\n        [0.        , 1.66"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap3", "seconds": 0.009, "before_mb": 1282, "peak_mb": 1282, "params": "((None, 2), <PjitFunction of <function dot at 0x106c3c360>>, {'i': 2, 'j': 2}, True, (P('i', 'j'), P(None, 'j')), P(None, ('i', 'j')), [array([[0.        , 0.08333334],\n       [0.16666667, 0.25      ],\n       [0.33333334, 0.41666666],\n       [0.5       , 0.5833333 ],\n       [0.6666667 , 0.75      ],"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap4", "seconds": 0.222, "before_mb": 1282, "peak_mb": 1296, "params": "((2,), <function <lambda> at 0x106fa5f80>, {'i': 1}, False, (P(None, 'i'),), P('i',), [array([[[0.        , 0.        , 0.        , 0.        , 0.        ],\n        [0.33333334, 0.6666667 , 1.        , 1.3333334 , 1.6666667 ],\n        [0.6666667 , 1.3333334 , 2.        , 2.6666667 , 3.3333335 ]]],\n "}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap5", "seconds": 0.315, "before_mb": 1296, "peak_mb": 1318, "params": "((3,), <function <lambda> at 0x106f4dd00>, {'i': 1, 'j': 1}, False, (P('i', None, None),), P(None, ('i', 'j'), None), [array([[[[0.        , 0.        , 0.        , 0.        , 0.        ]],\n\n        [[0.16666667, 0.33333334, 0.5       , 0.6666667 , 0.8333334 ]],\n\n        [[0.33333334, 0.6666667 , 1"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap6", "seconds": 0.018, "before_mb": 1318, "peak_mb": 1317, "params": "((0,), <function <lambda> at 0x106fa63e0>, {'i': 2, 'j': 2}, True, (P(('i', 'j'), None),), P('j', 'i'), [array([[[0.   ],\n        [0.125],\n        [0.25 ],\n        [0.375],\n        [0.5  ],\n        [0.625],\n        [0.75 ],\n        [0.875]],\n\n       [[0.   ],\n        [0.25 ],\n        [0.5  ],\n      "}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap7", "seconds": 0.033, "before_mb": 1317, "peak_mb": 1317, "params": "((1, 1), <PjitFunction of <function dot at 0x106c3c360>>, {'i': 4, 'j': 2}, True, (P('j', None), P(None, None)), P(None, ('i', 'j')), [array([[[0.        , 0.16666667, 0.33333334],\n        [0.        , 0.33333334, 0.6666667 ],\n        [0.        , 0.5       , 1.        ],\n        [0.        , 0.6666"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap8", "seconds": 0.007, "before_mb": 1317, "peak_mb": 1317, "params": "((3,), <function <lambda> at 0x106fa5e40>, {'i': 1, 'j': 2}, True, (P(None, 'i', None),), P('j', 'i', None), [array([[[[0.        , 0.        , 0.        , 0.        , 0.        ],\n         [0.16666667, 0.33333334, 0.5       , 0.6666667 , 0.8333334 ],\n         [0.33333334, 0.6666667 , 1.        , 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap9", "seconds": 0.007, "before_mb": 1317, "peak_mb": 1317, "params": "((1,), <function <lambda> at 0x106fa5f80>, {'i': 1, 'j': 2}, False, (P(None, None, None),), P('j',), [array([[[[0.        ],\n         [0.16666667]],\n\n        [[0.        ],\n         [0.33333334]],\n\n        [[0.        ],\n         [0.5       ]],\n\n        [[0.        ],\n         [0.6666667 ]],\n\n      "}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure0", "seconds": 0.008, "before_mb": 1317, "peak_mb": 1317, "params": "((0, 1), <PjitFunction of <function dot at 0x106c3c360>>, {'i': 4, 'j': 2}, False, (P(None, ('i', 'j')), P(None, ('i', 'j'))), P('i', 'j'), [array([[[0.    , 0.0625, 0.125 , 0.1875, 0.25  , 0.3125, 0.375 , 0.4375,\n         0.5   , 0.5625, 0.625 , 0.6875, 0.75  , 0.8125, 0.875 , 0.9375]],\n\n       [[0"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure1", "seconds": 0.007, "before_mb": 1317, "peak_mb": 1317, "params": "((1,), <function <lambda> at 0x106fa5e40>, {'i': 2, 'j': 4}, True, (P('j', None, None),), P('j', None, None), [array([[[[0.        , 0.04166667],\n         [0.08333334, 0.125     ],\n         [0.16666667, 0.20833333]],\n\n        [[0.        , 0.08333334],\n         [0.16666667, 0.25      ],\n         [0."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure2", "seconds": 0.339, "before_mb": 1317, "peak_mb": 1329, "params": "((1,), <function <lambda> at 0x106fa63e0>, {'i': 1}, True, (P(None, 'i'),), P(None, 'i'), [array([[[0.        , 0.33333334, 0.6666667 ],\n        [0.        , 0.6666667 , 1.3333334 ],\n        [0.        , 1.        , 2.        ],\n        [0.        , 1.3333334 , 2.6666667 ],\n        [0.        , 1.66"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure3", "seconds": 0.015, "before_mb": 1329, "peak_mb": 1329, "params": "((None, 2), <PjitFunction of <function dot at 0x106c3c360>>, {'i': 2, 'j': 2}, True, (P('i', 'j'), P(None, 'j')), P(None, ('i', 'j')), [array([[0.        , 0.08333334],\n       [0.16666667, 0.25      ],\n       [0.33333334, 0.41666666],\n       [0.5       , 0.5833333 ],\n       [0.6666667 , 0.75      ],"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure4", "seconds": 0.375, "before_mb": 1329, "peak_mb": 1354, "params": "((2,), <function <lambda> at 0x106fa5f80>, {'i': 1}, False, (P(None, 'i'),), P('i',), [array([[[0.        , 0.        , 0.        , 0.        , 0.        ],\n        [0.33333334, 0.6666667 , 1.        , 1.3333334 , 1.6666667 ],\n        [0.6666667 , 1.3333334 , 2.        , 2.6666667 , 3.3333335 ]]],\n "}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure5", "seconds": 0.4, "before_mb": 1354, "peak_mb": 1380, "params": "((3,), <function <lambda> at 0x106f4dd00>, {'i': 1, 'j': 1}, False, (P('i', None, None),), P(None, ('i', 'j'), None), [array([[[[0.        , 0.        , 0.        , 0.        , 0.        ]],\n\n        [[0.16666667, 0.33333334, 0.5       , 0.6666667 , 0.8333334 ]],\n\n        [[0.33333334, 0.6666667 , 1"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure6", "seconds": 0.025, "before_mb": 1380, "peak_mb": 1380, "params": "((0,), <function <lambda> at 0x106fa63e0>, {'i': 2, 'j': 2}, True, (P(('i', 'j'), None),), P('j', 'i'), [array([[[0.   ],\n        [0.125],\n        [0.25 ],\n        [0.375],\n        [0.5  ],\n        [0.625],\n        [0.75 ],\n        [0.875]],\n\n       [[0.   ],\n        [0.25 ],\n        [0.5  ],\n      "}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure7", "seconds": 0.01, "before_mb": 1380, "peak_mb": 1380, "params": "((1, 1), <PjitFunction of <function dot at 0x106c3c360>>, {'i': 4, 'j': 2}, True, (P('j', None), P(None, None)), P(None, ('i', 'j')), [array([[[0.        , 0.16666667, 0.33333334],\n        [0.        , 0.33333334, 0.6666667 ],\n        [0.        , 0.5       , 1.        ],\n        [0.        , 0.6666"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure8", "seconds": 0.008, "before_mb": 1380, "peak_mb": 1380, "params": "((3,), <function <lambda> at 0x106fa5e40>, {'i': 1, 'j': 2}, True, (P(None, 'i', None),), P('j', 'i', None), [array([[[[0.        , 0.        , 0.        , 0.        , 0.        ],\n         [0.16666667, 0.33333334, 0.5       , 0.6666667 , 0.8333334 ],\n         [0.33333334, 0.6666667 , 1.        , 1."}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_vmap_closure9", "seconds": 0.014, "before_mb": 1380, "peak_mb": 1380, "params": "((1,), <function <lambda> at 0x106fa5f80>, {'i': 1, 'j': 2}, False, (P(None, None, None),), P('j',), [array([[[[0.        ],\n         [0.16666667]],\n\n        [[0.        ],\n         [0.33333334]],\n\n        [[0.        ],\n         [0.5       ]],\n\n        [[0.        ],\n         [0.6666667 ]],\n\n      "}
+{"nodeid": "tests/shard_map_test.py::CustomPartitionerTest::test_custom_partitioning", "seconds": 0.008, "before_mb": 1380, "peak_mb": 1380}
+{"nodeid": "tests/shard_map_test.py::CustomPartitionerTest::test_partially_sharded_dim_with_auto", "seconds": 0.009, "before_mb": 1380, "peak_mb": 1380}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref0", "seconds": 0.006, "before_mb": 1380, "peak_mb": 1380, "params": "(FunSpec(name='dot', num_inputs=2, fun=<PjitFunction of <function dot at 0x106c3c360>>, out_rep=<function <lambda> at 0x106fa60c0>, valid_types=<function <lambda> at 0x106fa6160>), {'i': 4, 'j': 2}, (0, 2), 1, 'i', [array([[0.   , 0.125],\n       [0.25 , 0.375],\n       [0.5  , 0.625],\n       [0.75 , "}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref1", "seconds": 0.013, "before_mb": 1380, "peak_mb": 1380, "params": "(FunSpec(name='transpose', num_inputs=1, fun=<function <lambda> at 0x106fa5e40>, out_rep=<function <lambda> at 0x106fa5ee0>, valid_types=None), {'i': 2, 'j': 4}, (None,), None, 'j', [array([[[0.        , 0.16666667, 0.33333334],\n        [0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32)])"}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref2", "seconds": 0.007, "before_mb": 1380, "peak_mb": 1380, "params": "(FunSpec(name='dot', num_inputs=2, fun=<PjitFunction of <function dot at 0x106c3c360>>, out_rep=<function <lambda> at 0x106fa60c0>, valid_types=<function <lambda> at 0x106fa6160>), {'i': 1, 'j': 2}, (2, 2), 2, 'j', [array([[[0.        , 0.08333334],\n        [0.16666667, 0.25      ],\n        [0.33333"}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref3", "seconds": 0.05, "before_mb": 1380, "peak_mb": 1381, "params": "(FunSpec(name='id', num_inputs=1, fun=<function <lambda> at 0x106f4dd00>, out_rep=<function <lambda> at 0x106fa5c60>, valid_types=None), {'i': 1, 'j': 1}, (0,), 0, 'j', [array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5       ],\n        [0.6666667 ],\n        [0.8333333"}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref4", "seconds": 0.021, "before_mb": 1381, "peak_mb": 1381, "params": "(FunSpec(name='flip', num_inputs=2, fun=<function <lambda> at 0x106fa5d00>, out_rep=<function <lambda> at 0x106fa5da0>, valid_types=None), {'i': 2, 'j': 4}, (2, None), (1, 0), 'j', [array([[[0.        , 0.04166667, 0.08333334, 0.125     , 0.16666667,\n         0.20833333, 0.25      , 0.29166666, 0.33"}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref5", "seconds": 0.012, "before_mb": 1381, "peak_mb": 1381, "params": "(FunSpec(name='flip', num_inputs=2, fun=<function <lambda> at 0x106fa5d00>, out_rep=<function <lambda> at 0x106fa5da0>, valid_types=None), {'i': 2, 'j': 2}, (2, None), (0, 1), 'j', [array([[[0.        , 0.08333334],\n        [0.16666667, 0.25      ]],\n\n       [[0.33333334, 0.41666666],\n        [0.5  "}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref6", "seconds": 0.061, "before_mb": 1381, "peak_mb": 1385, "params": "(FunSpec(name='flip', num_inputs=2, fun=<function <lambda> at 0x106fa5d00>, out_rep=<function <lambda> at 0x106fa5da0>, valid_types=None), {'i': 1}, (1, None), (2, 1), 'i', [array([[0. ],\n       [0.5]], dtype=float32), array([[[0.        , 0.16666667],\n        [0.33333334, 0.5       ],\n        [0.66"}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref7", "seconds": 0.008, "before_mb": 1385, "peak_mb": 1385, "params": "(FunSpec(name='relu', num_inputs=1, fun=<function <lambda> at 0x106fa63e0>, out_rep=<function <lambda> at 0x106fa6480>, valid_types=None), {'i': 2, 'j': 2}, (None,), 1, 'i', [array([[[0.        , 0.16666667],\n        [0.33333334, 0.5       ],\n        [0.6666667 , 0.8333333 ]]], dtype=float32)])"}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref8", "seconds": 0.034, "before_mb": 1385, "peak_mb": 1387, "params": "(FunSpec(name='id', num_inputs=1, fun=<function <lambda> at 0x106f4dd00>, out_rep=<function <lambda> at 0x106fa5c60>, valid_types=None), {'i': 1}, (0,), 1, 'i', [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32)])"}
+{"nodeid": "tests/shard_map_test.py::SmapSystematicTest::test_against_ref9", "seconds": 0.181, "before_mb": 1387, "peak_mb": 1392, "params": "(FunSpec(name='relu', num_inputs=1, fun=<function <lambda> at 0x106fa63e0>, out_rep=<function <lambda> at 0x106fa6480>, valid_types=None), {'i': 1}, (0,), 1, 'i', [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32)])"}
+{"nodeid": "tests/shard_map_test.py::SdyIntegrationTest::test_shardy_collective_permute", "seconds": 0.013, "before_mb": 1392, "peak_mb": 1392}
+{"nodeid": "tests/shard_map_test.py::ShardMapTest::test_remat_scalar_residuals", "seconds": 2.564, "before_mb": 84, "peak_mb": 376}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads6", "seconds": 4.33, "before_mb": 85, "peak_mb": 514, "params": "(<function <lambda> at 0x10cb9d260>, {'i': 1, 'j': 1}, False, (P(None, None), P('i', None)), P(('i', 'j'), None), [array([[0.        , 0.16666667, 0.33333334],\n       [0.5       , 0.6666667 , 0.8333333 ]], dtype=float32), array([[0.        , 0.16666667],\n       [0.33333334, 0.5       ],\n       [0.66"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads7", "seconds": 3.225, "before_mb": 514, "peak_mb": 817, "params": "(<function <lambda> at 0x10cb9d260>, {'i': 1, 'j': 1}, False, (P(None, None), P('i', None)), P(('i', 'j'), None), [array([[0.        , 0.16666667, 0.33333334],\n       [0.5       , 0.6666667 , 0.8333333 ]], dtype=float32), array([[0.        , 0.16666667],\n       [0.33333334, 0.5       ],\n       [0.66"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads8", "seconds": 5.114, "before_mb": 817, "peak_mb": 1120, "params": "(<function <lambda> at 0x10cb9d260>, {'i': 1}, False, (P('i', None), P(None, 'i', None)), P(None, None, 'i'), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        , 0.16666667, 0.33333334]],\n\n       [[0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads9", "seconds": 3.679, "before_mb": 1120, "peak_mb": 1407, "params": "(<function <lambda> at 0x10cb9d260>, {'i': 1}, False, (P('i', None), P(None, 'i', None)), P(None, None, 'i'), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        , 0.16666667, 0.33333334]],\n\n       [[0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure2", "seconds": 2.256, "before_mb": 1407, "peak_mb": 1574, "params": "(<function <lambda> at 0x10cb9cea0>, {'i': 1, 'j': 1}, False, (P(None, 'j', 'i'),), P(None, None, ('i', 'j')), [array([[[0.        , 0.16666667, 0.33333334],\n        [0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_reference at 0x10cb9d580>, (ShapeDtypeStruc"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure3", "seconds": 4.685, "before_mb": 84, "peak_mb": 573, "params": "(<function <lambda> at 0x11989d260>, {'i': 1, 'j': 1}, False, (P(None, None), P('i', None)), P(('i', 'j'), None), [array([[0.        , 0.16666667, 0.33333334],\n       [0.5       , 0.6666667 , 0.8333333 ]], dtype=float32), array([[0.        , 0.16666667],\n       [0.33333334, 0.5       ],\n       [0.66"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure4", "seconds": 4.756, "before_mb": 573, "peak_mb": 982, "params": "(<function <lambda> at 0x11989d260>, {'i': 1}, False, (P('i', None), P(None, 'i', None)), P(None, None, 'i'), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        , 0.16666667, 0.33333334]],\n\n       [[0.5       , 0.6666667 , 0.8333333 ]]], dtype=float32"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure5", "seconds": 2.245, "before_mb": 982, "peak_mb": 1149, "params": "(<function <lambda> at 0x11983cd60>, {'i': 1, 'j': 1}, False, (P('i', None, None),), P(None, ('i', 'j'), None), [array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5       ],\n        [0.6666667 ],\n        [0.8333333 ]]], dtype=float32)], functools.partial(<function shmap_"}
+{"nodeid": "tests/shard_map_test.py::ShardMapSystematicTest::test_grads_closure9", "seconds": 3.021, "before_mb": 85, "peak_mb": 434, "params": "(<function <lambda> at 0x115c6cd60>, {'i': 1, 'j': 1}, False, (P('j', 'i'), P('i', None, 'j')), (P(('i', 'j'), None, None), P('j', 'i')), [array([[0.        ],\n       [0.33333334],\n       [0.6666667 ]], dtype=float32), array([[[0.        ],\n        [0.16666667],\n        [0.33333334]],\n\n       [[0.5 "}

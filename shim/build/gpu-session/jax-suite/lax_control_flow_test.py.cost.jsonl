@@ -1,0 +1,1028 @@
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanOfBools", "seconds": 0.805, "before_mb": 90, "peak_mb": 181}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanSolvingRegressionTest_2", "seconds": 1.239, "before_mb": 181, "peak_mb": 227}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanSolvingRegressionTest_43", "seconds": 2.39, "before_mb": 227, "peak_mb": 341}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanStructured3", "seconds": 0.131, "before_mb": 341, "peak_mb": 350}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured1000Reverse", "seconds": 2.001, "before_mb": 350, "peak_mb": 440}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[0]_axis=-1", "seconds": 0.022, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[1000]_axis=-1", "seconds": 0.041, "before_mb": 440, "peak_mb": 443}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[10]_axis=-1", "seconds": 0.315, "before_mb": 443, "peak_mb": 469}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[1]_axis=-1", "seconds": 0.016, "before_mb": 469, "peak_mb": 470}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[2, 3]_axis=-1", "seconds": 0.26, "before_mb": 470, "peak_mb": 479}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[2, 3]_axis=-2", "seconds": 0.306, "before_mb": 479, "peak_mb": 489}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[2, 3]_axis=0", "seconds": 0.027, "before_mb": 489, "peak_mb": 489}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[2]_axis=-1", "seconds": 0.021, "before_mb": 489, "peak_mb": 489}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[3]_axis=-1", "seconds": 0.021, "before_mb": 489, "peak_mb": 489}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[5, 6, 7]_axis=-1", "seconds": 0.693, "before_mb": 489, "peak_mb": 511}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[5, 6, 7]_axis=-2", "seconds": 0.612, "before_mb": 511, "peak_mb": 532}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[5, 6, 7]_axis=-3", "seconds": 0.49, "before_mb": 532, "peak_mb": 551}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[5, 6, 7]_axis=0", "seconds": 0.026, "before_mb": 551, "peak_mb": 553}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[5, 6, 7]_axis=1", "seconds": 0.026, "before_mb": 553, "peak_mb": 553}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[5]_axis=-1", "seconds": 0.02, "before_mb": 553, "peak_mb": 555}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[7, 5]_axis=-1", "seconds": 0.602, "before_mb": 555, "peak_mb": 575}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[7, 5]_axis=-2", "seconds": 1.148, "before_mb": 575, "peak_mb": 591}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanUnstructured_[7, 5]_axis=0", "seconds": 0.052, "before_mb": 591, "peak_mb": 593}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCaching", "seconds": 0.225, "before_mb": 593, "peak_mb": 593}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCaching2", "seconds": 0.022, "before_mb": 593, "peak_mb": 593}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCallableErrors", "seconds": 0.065, "before_mb": 593, "peak_mb": 593}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCond", "seconds": 0.771, "before_mb": 593, "peak_mb": 598}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondBatched", "seconds": 1.026, "before_mb": 598, "peak_mb": 610}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondCallableOperands", "seconds": 0.416, "before_mb": 610, "peak_mb": 615}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad", "seconds": 1.256, "before_mb": 615, "peak_mb": 638}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad2_cond", "seconds": 1.774, "before_mb": 638, "peak_mb": 682}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad2_new_checkpoint", "seconds": 0.577, "before_mb": 682, "peak_mb": 722}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad2_switch", "seconds": 0.366, "before_mb": 722, "peak_mb": 725}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad3_cond", "seconds": 0.765, "before_mb": 725, "peak_mb": 793}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad3_new_checkpoint", "seconds": 1.203, "before_mb": 793, "peak_mb": 884}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad3_switch", "seconds": 0.838, "before_mb": 884, "peak_mb": 958}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad4_cond", "seconds": 0.656, "before_mb": 958, "peak_mb": 981}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad4_new_checkpoint", "seconds": 0.413, "before_mb": 981, "peak_mb": 1002}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGrad4_switch", "seconds": 0.466, "before_mb": 1002, "peak_mb": 1014}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondGradVmapNan", "seconds": 0.255, "before_mb": 1014, "peak_mb": 1021}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJVP", "seconds": 0.271, "before_mb": 1021, "peak_mb": 1036}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJVP2_cond", "seconds": 0.239, "before_mb": 1036, "peak_mb": 1054}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJVP2_new_checkpoint", "seconds": 0.204, "before_mb": 1054, "peak_mb": 1071}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJVP2_switch", "seconds": 0.192, "before_mb": 1071, "peak_mb": 1090}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJit", "seconds": 0.042, "before_mb": 1090, "peak_mb": 1093}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJitDisabled_cond", "seconds": 0.038, "before_mb": 1093, "peak_mb": 1093}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJitDisabled_new_checkpoint", "seconds": 0.052, "before_mb": 1093, "peak_mb": 1097}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJitDisabled_switch", "seconds": 0.017, "before_mb": 1097, "peak_mb": 1097}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJitWithConsts_cond", "seconds": 0.102, "before_mb": 1097, "peak_mb": 1102}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJitWithConsts_new_checkpoint", "seconds": 0.057, "before_mb": 1102, "peak_mb": 1104}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondJitWithConsts_switch", "seconds": 0.066, "before_mb": 1104, "peak_mb": 1106}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondLinearize", "seconds": 0.092, "before_mb": 1106, "peak_mb": 1112}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondLinearize2_cond", "seconds": 0.299, "before_mb": 1112, "peak_mb": 1128}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondLinearize2_new_checkpoint", "seconds": 0.409, "before_mb": 1128, "peak_mb": 1156}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondLinearize2_switch", "seconds": 0.102, "before_mb": 1156, "peak_mb": 1159}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondOneBranchConstant", "seconds": 0.15, "before_mb": 1159, "peak_mb": 1165}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondOneBranchConstantTuple", "seconds": 0.161, "before_mb": 1165, "peak_mb": 1171}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondPredIsNone", "seconds": 0.025, "before_mb": 1171, "peak_mb": 1171}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondThreeOperands", "seconds": 0.164, "before_mb": 1171, "peak_mb": 1171}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondTwoOperands", "seconds": 0.089, "before_mb": 1171, "peak_mb": 1172}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondTypeErrors", "seconds": 0.027, "before_mb": 1172, "peak_mb": 1172}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondVmapGrad_cond", "seconds": 0.426, "before_mb": 1172, "peak_mb": 1181}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondVmapGrad_new_checkpoint", "seconds": 0.07, "before_mb": 1181, "peak_mb": 1183}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondVmapGrad_switch", "seconds": 0.048, "before_mb": 1183, "peak_mb": 1183}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondWithConsts_cond", "seconds": 0.105, "before_mb": 1183, "peak_mb": 1184}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondWithConsts_new_checkpoint", "seconds": 0.044, "before_mb": 1184, "peak_mb": 1185}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testCondWithConsts_switch", "seconds": 0.038, "before_mb": 1185, "peak_mb": 1186}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopBasic", "seconds": 0.339, "before_mb": 1186, "peak_mb": 1192}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopBatched", "seconds": 0.174, "before_mb": 1192, "peak_mb": 1192}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopBatchedIssue1190", "seconds": 0.079, "before_mb": 1192, "peak_mb": 1193}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopClosure", "seconds": 0.413, "before_mb": 1193, "peak_mb": 1197}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopDictState", "seconds": 0.253, "before_mb": 1197, "peak_mb": 1201}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopEmptyTupleInState", "seconds": 0.117, "before_mb": 1201, "peak_mb": 1204}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopErrors", "seconds": 0.034, "before_mb": 1204, "peak_mb": 1205}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopIssue8152", "seconds": 0.067, "before_mb": 1205, "peak_mb": 1207}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopScalarLimits", "seconds": 0.12, "before_mb": 1207, "peak_mb": 1210}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testForiLoopTupleState", "seconds": 0.093, "before_mb": 1210, "peak_mb": 1213}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue1263", "seconds": 0.944, "before_mb": 1213, "peak_mb": 1230}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue1316", "seconds": 0.072, "before_mb": 1230, "peak_mb": 1231}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue1361", "seconds": 0.044, "before_mb": 1231, "peak_mb": 1232}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue1379", "seconds": 0.267, "before_mb": 1232, "peak_mb": 1244}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue514", "seconds": 0.235, "before_mb": 1244, "peak_mb": 1252}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue649", "seconds": 0.025, "before_mb": 1252, "peak_mb": 1253}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue711_impl=new_checkpoint", "seconds": 0.323, "before_mb": 1253, "peak_mb": 1267}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue711_impl=new_checkpoint2", "seconds": 0.072, "before_mb": 1267, "peak_mb": 1269}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue711_impl=unroll0", "seconds": 0.214, "before_mb": 1269, "peak_mb": 1273}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue711_impl=unroll1", "seconds": 0.054, "before_mb": 1273, "peak_mb": 1278}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue711_impl=unroll2", "seconds": 0.155, "before_mb": 1278, "peak_mb": 1280}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue744", "seconds": 0.053, "before_mb": 1280, "peak_mb": 1280}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue757", "seconds": 0.121, "before_mb": 1280, "peak_mb": 1280}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue804", "seconds": 0.102, "before_mb": 1280, "peak_mb": 1282}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testIssue810", "seconds": 0.113, "before_mb": 1282, "peak_mb": 1283}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testLoopWithConjunctionCondition", "seconds": 0.155, "before_mb": 1283, "peak_mb": 1288}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testMap", "seconds": 0.103, "before_mb": 1288, "peak_mb": 1290}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testMapEmpty", "seconds": 0.058, "before_mb": 1290, "peak_mb": 1291}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testNestedCond_cond", "seconds": 0.121, "before_mb": 1291, "peak_mb": 1292}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testNestedCond_new_checkpoint", "seconds": 0.102, "before_mb": 1292, "peak_mb": 1293}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testNestedCond_switch", "seconds": 0.04, "before_mb": 1293, "peak_mb": 1294}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testNestedWhile", "seconds": 0.09, "before_mb": 1294, "peak_mb": 1296}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testNestedWhileWithDynamicUpdateSlice", "seconds": 0.112, "before_mb": 1296, "peak_mb": 1298}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testOneBranchSwitch", "seconds": 0.22, "before_mb": 1298, "peak_mb": 1302}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanBodyCarryPytreeMismatchErrors", "seconds": 0.049, "before_mb": 1302, "peak_mb": 1301}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanBodyCarryTypeMismatchErrors", "seconds": 0.026, "before_mb": 1301, "peak_mb": 1301}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanBodyOutputError", "seconds": 0.017, "before_mb": 1301, "peak_mb": 1301}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=False_impl=new_checkpoint", "seconds": 1.583, "before_mb": 1301, "peak_mb": 1346}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=False_impl=new_checkpoint2", "seconds": 0.728, "before_mb": 1346, "peak_mb": 1374}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=False_impl=unroll0", "seconds": 3.382, "before_mb": 1374, "peak_mb": 1403}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=False_impl=unroll1", "seconds": 0.272, "before_mb": 1403, "peak_mb": 1419}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=False_impl=unroll2", "seconds": 0.898, "before_mb": 1419, "peak_mb": 1439}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=True_impl=new_checkpoint", "seconds": 0.781, "before_mb": 1439, "peak_mb": 1475}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=True_impl=new_checkpoint2", "seconds": 0.786, "before_mb": 92, "peak_mb": 206}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=True_impl=unroll0", "seconds": 0.62, "before_mb": 206, "peak_mb": 242}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=True_impl=unroll1", "seconds": 0.339, "before_mb": 242, "peak_mb": 264}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=False_jit_f=True_impl=unroll2", "seconds": 0.574, "before_mb": 264, "peak_mb": 292}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=False_impl=new_checkpoint", "seconds": 0.437, "before_mb": 292, "peak_mb": 334}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=False_impl=new_checkpoint2", "seconds": 0.467, "before_mb": 334, "peak_mb": 344}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=False_impl=unroll0", "seconds": 0.434, "before_mb": 344, "peak_mb": 363}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=False_impl=unroll1", "seconds": 0.311, "before_mb": 363, "peak_mb": 372}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=False_impl=unroll2", "seconds": 0.327, "before_mb": 372, "peak_mb": 385}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=True_impl=new_checkpoint", "seconds": 0.37, "before_mb": 385, "peak_mb": 412}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=True_impl=new_checkpoint2", "seconds": 0.367, "before_mb": 412, "peak_mb": 422}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=True_impl=unroll0", "seconds": 0.474, "before_mb": 422, "peak_mb": 426}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=True_impl=unroll1", "seconds": 0.26, "before_mb": 426, "peak_mb": 437}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanGrad_jit_scan=True_jit_f=True_impl=unroll2", "seconds": 0.346, "before_mb": 437, "peak_mb": 448}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanHigherOrderDifferentiation_new_checkpoint", "seconds": 1.626, "before_mb": 448, "peak_mb": 479}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanHigherOrderDifferentiation_new_checkpoint2", "seconds": 0.634, "before_mb": 479, "peak_mb": 502}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanHigherOrderDifferentiation_unroll0", "seconds": 0.823, "before_mb": 502, "peak_mb": 519}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanHigherOrderDifferentiation_unroll1", "seconds": 0.258, "before_mb": 519, "peak_mb": 531}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanHigherOrderDifferentiation_unroll2", "seconds": 0.482, "before_mb": 531, "peak_mb": 550}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=False_impl=new_checkpoint", "seconds": 0.175, "before_mb": 550, "peak_mb": 567}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=False_impl=new_checkpoint2", "seconds": 0.071, "before_mb": 567, "peak_mb": 568}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=False_impl=unroll0", "seconds": 0.466, "before_mb": 568, "peak_mb": 578}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=False_impl=unroll1", "seconds": 0.059, "before_mb": 578, "peak_mb": 590}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=False_impl=unroll2", "seconds": 0.054, "before_mb": 590, "peak_mb": 588}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=True_impl=new_checkpoint", "seconds": 0.092, "before_mb": 588, "peak_mb": 582}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=True_impl=new_checkpoint2", "seconds": 0.05, "before_mb": 582, "peak_mb": 585}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=True_impl=unroll0", "seconds": 0.044, "before_mb": 585, "peak_mb": 585}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=True_impl=unroll1", "seconds": 0.037, "before_mb": 585, "peak_mb": 586}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=False_jit_f=True_impl=unroll2", "seconds": 0.046, "before_mb": 586, "peak_mb": 588}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=False_impl=new_checkpoint", "seconds": 0.037, "before_mb": 588, "peak_mb": 601}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=False_impl=new_checkpoint2", "seconds": 0.043, "before_mb": 601, "peak_mb": 603}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=False_impl=unroll0", "seconds": 0.053, "before_mb": 603, "peak_mb": 604}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=False_impl=unroll1", "seconds": 0.031, "before_mb": 604, "peak_mb": 606}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=False_impl=unroll2", "seconds": 0.036, "before_mb": 606, "peak_mb": 607}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=True_impl=new_checkpoint", "seconds": 0.042, "before_mb": 607, "peak_mb": 608}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=True_impl=new_checkpoint2", "seconds": 0.039, "before_mb": 608, "peak_mb": 599}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=True_impl=unroll0", "seconds": 0.038, "before_mb": 599, "peak_mb": 601}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=True_impl=unroll1", "seconds": 0.037, "before_mb": 601, "peak_mb": 604}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanImpl_jit_scan=True_jit_f=True_impl=unroll2", "seconds": 0.044, "before_mb": 604, "peak_mb": 606}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanInvalidUnrollRaises", "seconds": 0.029, "before_mb": 606, "peak_mb": 607}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=False_impl=new_checkpoint", "seconds": 0.777, "before_mb": 607, "peak_mb": 623}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=False_impl=new_checkpoint2", "seconds": 0.154, "before_mb": 623, "peak_mb": 634}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=False_impl=unroll0", "seconds": 1.886, "before_mb": 634, "peak_mb": 644}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=False_impl=unroll1", "seconds": 0.163, "before_mb": 644, "peak_mb": 652}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=False_impl=unroll2", "seconds": 0.415, "before_mb": 652, "peak_mb": 664}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=True_impl=new_checkpoint", "seconds": 0.22, "before_mb": 664, "peak_mb": 673}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=True_impl=new_checkpoint2", "seconds": 0.18, "before_mb": 673, "peak_mb": 681}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=True_impl=unroll0", "seconds": 0.326, "before_mb": 681, "peak_mb": 694}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=True_impl=unroll1", "seconds": 0.176, "before_mb": 694, "peak_mb": 703}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=False_jit_f=True_impl=unroll2", "seconds": 0.219, "before_mb": 703, "peak_mb": 715}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=False_impl=new_checkpoint", "seconds": 0.103, "before_mb": 715, "peak_mb": 723}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=False_impl=new_checkpoint2", "seconds": 0.227, "before_mb": 723, "peak_mb": 730}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=False_impl=unroll0", "seconds": 0.157, "before_mb": 730, "peak_mb": 732}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=False_impl=unroll1", "seconds": 0.113, "before_mb": 732, "peak_mb": 740}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=False_impl=unroll2", "seconds": 0.168, "before_mb": 740, "peak_mb": 742}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=True_impl=new_checkpoint", "seconds": 0.107, "before_mb": 742, "peak_mb": 746}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=True_impl=new_checkpoint2", "seconds": 0.108, "before_mb": 746, "peak_mb": 754}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=True_impl=unroll0", "seconds": 0.141, "before_mb": 754, "peak_mb": 759}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=True_impl=unroll1", "seconds": 0.116, "before_mb": 759, "peak_mb": 766}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanJVP_jit_scan=True_jit_f=True_impl=unroll2", "seconds": 0.137, "before_mb": 766, "peak_mb": 773}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLengthArg", "seconds": 0.088, "before_mb": 773, "peak_mb": 770}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLengthError", "seconds": 0.025, "before_mb": 770, "peak_mb": 771}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=False_impl=new_checkpoint", "seconds": 0.326, "before_mb": 771, "peak_mb": 792}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=False_impl=new_checkpoint2", "seconds": 0.2, "before_mb": 792, "peak_mb": 794}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=False_impl=unroll0", "seconds": 0.534, "before_mb": 794, "peak_mb": 806}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=False_impl=unroll1", "seconds": 0.068, "before_mb": 806, "peak_mb": 810}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=False_impl=unroll2", "seconds": 0.221, "before_mb": 810, "peak_mb": 814}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=True_impl=new_checkpoint", "seconds": 0.157, "before_mb": 814, "peak_mb": 816}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=True_impl=new_checkpoint2", "seconds": 0.113, "before_mb": 816, "peak_mb": 818}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=True_impl=unroll0", "seconds": 0.147, "before_mb": 818, "peak_mb": 826}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=True_impl=unroll1", "seconds": 0.093, "before_mb": 826, "peak_mb": 830}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=False_jit_f=True_impl=unroll2", "seconds": 0.156, "before_mb": 830, "peak_mb": 835}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=False_impl=new_checkpoint", "seconds": 0.474, "before_mb": 835, "peak_mb": 857}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=False_impl=new_checkpoint2", "seconds": 0.34, "before_mb": 857, "peak_mb": 871}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=False_impl=unroll0", "seconds": 0.104, "before_mb": 871, "peak_mb": 874}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=False_impl=unroll1", "seconds": 0.104, "before_mb": 874, "peak_mb": 881}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=False_impl=unroll2", "seconds": 0.111, "before_mb": 881, "peak_mb": 879}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=True_impl=new_checkpoint", "seconds": 0.355, "before_mb": 879, "peak_mb": 887}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=True_impl=new_checkpoint2", "seconds": 0.33, "before_mb": 887, "peak_mb": 894}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=True_impl=unroll0", "seconds": 0.137, "before_mb": 894, "peak_mb": 898}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=True_impl=unroll1", "seconds": 0.119, "before_mb": 898, "peak_mb": 901}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanLinearize_jit_scan=True_jit_f=True_impl=unroll2", "seconds": 0.122, "before_mb": 901, "peak_mb": 906}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanMetadataError", "seconds": 0.033, "before_mb": 903, "peak_mb": 903}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanRnn", "seconds": 3.604, "before_mb": 903, "peak_mb": 941}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmapFixpoint_impl=new_checkpoint", "seconds": 0.08, "before_mb": 941, "peak_mb": 936}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmapFixpoint_impl=new_checkpoint2", "seconds": 0.043, "before_mb": 936, "peak_mb": 936}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmapFixpoint_impl=unroll0", "seconds": 0.067, "before_mb": 936, "peak_mb": 937}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmapFixpoint_impl=unroll1", "seconds": 0.04, "before_mb": 937, "peak_mb": 937}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmapFixpoint_impl=unroll2", "seconds": 0.054, "before_mb": 937, "peak_mb": 938}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmapTuples", "seconds": 0.37, "before_mb": 938, "peak_mb": 946}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 0)_impl=new_checkpoint", "seconds": 0.388, "before_mb": 946, "peak_mb": 963}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 0)_impl=new_checkpoint2", "seconds": 0.045, "before_mb": 963, "peak_mb": 965}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 0)_impl=unroll0", "seconds": 0.594, "before_mb": 965, "peak_mb": 964}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 0)_impl=unroll1", "seconds": 0.053, "before_mb": 964, "peak_mb": 964}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 0)_impl=unroll2", "seconds": 0.124, "before_mb": 964, "peak_mb": 971}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 1)_impl=new_checkpoint", "seconds": 0.053, "before_mb": 971, "peak_mb": 969}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 1)_impl=new_checkpoint2", "seconds": 0.042, "before_mb": 969, "peak_mb": 971}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 1)_impl=unroll0", "seconds": 0.046, "before_mb": 971, "peak_mb": 972}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 1)_impl=unroll1", "seconds": 0.035, "before_mb": 972, "peak_mb": 973}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 1)_impl=unroll2", "seconds": 0.036, "before_mb": 973, "peak_mb": 982}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 2)_impl=new_checkpoint", "seconds": 0.083, "before_mb": 982, "peak_mb": 980}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 2)_impl=new_checkpoint2", "seconds": 0.042, "before_mb": 980, "peak_mb": 983}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 2)_impl=unroll0", "seconds": 0.056, "before_mb": 983, "peak_mb": 985}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 2)_impl=unroll1", "seconds": 0.037, "before_mb": 985, "peak_mb": 991}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, 2)_impl=unroll2", "seconds": 0.034, "before_mb": 991, "peak_mb": 988}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, None)_impl=new_checkpoint", "seconds": 0.083, "before_mb": 988, "peak_mb": 991}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, None)_impl=new_checkpoint2", "seconds": 0.043, "before_mb": 991, "peak_mb": 999}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, None)_impl=unroll0", "seconds": 0.061, "before_mb": 999, "peak_mb": 1001}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, None)_impl=unroll1", "seconds": 0.042, "before_mb": 1001, "peak_mb": 999}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(0, None)_impl=unroll2", "seconds": 0.043, "before_mb": 999, "peak_mb": 1004}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 0)_impl=new_checkpoint", "seconds": 0.085, "before_mb": 1004, "peak_mb": 1001}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 0)_impl=new_checkpoint2", "seconds": 0.095, "before_mb": 1001, "peak_mb": 1004}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 0)_impl=unroll0", "seconds": 0.056, "before_mb": 1004, "peak_mb": 1004}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 0)_impl=unroll1", "seconds": 0.044, "before_mb": 1004, "peak_mb": 1007}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 0)_impl=unroll2", "seconds": 0.049, "before_mb": 1007, "peak_mb": 1006}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 1)_impl=new_checkpoint", "seconds": 0.041, "before_mb": 1006, "peak_mb": 1007}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 1)_impl=new_checkpoint2", "seconds": 0.244, "before_mb": 1007, "peak_mb": 1008}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 1)_impl=unroll0", "seconds": 0.087, "before_mb": 1008, "peak_mb": 1009}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 1)_impl=unroll1", "seconds": 0.074, "before_mb": 1009, "peak_mb": 1014}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 1)_impl=unroll2", "seconds": 0.049, "before_mb": 1014, "peak_mb": 1015}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 2)_impl=new_checkpoint", "seconds": 0.039, "before_mb": 1015, "peak_mb": 1018}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 2)_impl=new_checkpoint2", "seconds": 0.039, "before_mb": 1018, "peak_mb": 1015}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 2)_impl=unroll0", "seconds": 0.201, "before_mb": 1015, "peak_mb": 1018}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 2)_impl=unroll1", "seconds": 0.084, "before_mb": 1018, "peak_mb": 1020}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, 2)_impl=unroll2", "seconds": 0.069, "before_mb": 1020, "peak_mb": 1020}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, None)_impl=new_checkpoint", "seconds": 0.038, "before_mb": 1020, "peak_mb": 1021}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, None)_impl=new_checkpoint2", "seconds": 0.039, "before_mb": 1021, "peak_mb": 1025}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, None)_impl=unroll0", "seconds": 0.275, "before_mb": 1025, "peak_mb": 1020}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, None)_impl=unroll1", "seconds": 0.065, "before_mb": 1020, "peak_mb": 1021}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(1, None)_impl=unroll2", "seconds": 0.055, "before_mb": 1021, "peak_mb": 1025}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 0)_impl=new_checkpoint", "seconds": 0.128, "before_mb": 1025, "peak_mb": 1027}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 0)_impl=new_checkpoint2", "seconds": 0.058, "before_mb": 1027, "peak_mb": 1028}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 0)_impl=unroll0", "seconds": 0.037, "before_mb": 1028, "peak_mb": 1030}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 0)_impl=unroll1", "seconds": 0.041, "before_mb": 1030, "peak_mb": 1033}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 0)_impl=unroll2", "seconds": 0.043, "before_mb": 1033, "peak_mb": 1032}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 1)_impl=new_checkpoint", "seconds": 0.049, "before_mb": 1032, "peak_mb": 1031}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 1)_impl=new_checkpoint2", "seconds": 0.047, "before_mb": 1031, "peak_mb": 1037}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 1)_impl=unroll0", "seconds": 0.036, "before_mb": 1037, "peak_mb": 1035}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 1)_impl=unroll1", "seconds": 0.041, "before_mb": 1035, "peak_mb": 1037}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 1)_impl=unroll2", "seconds": 0.046, "before_mb": 1037, "peak_mb": 1039}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 2)_impl=new_checkpoint", "seconds": 0.053, "before_mb": 1039, "peak_mb": 1042}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 2)_impl=new_checkpoint2", "seconds": 0.046, "before_mb": 1042, "peak_mb": 1043}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 2)_impl=unroll0", "seconds": 0.034, "before_mb": 1043, "peak_mb": 1042}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 2)_impl=unroll1", "seconds": 0.037, "before_mb": 1042, "peak_mb": 1045}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=False_in_axes=(None, 2)_impl=unroll2", "seconds": 0.036, "before_mb": 1045, "peak_mb": 1047}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 0)_impl=new_checkpoint", "seconds": 0.042, "before_mb": 1047, "peak_mb": 1048}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 0)_impl=new_checkpoint2", "seconds": 0.071, "before_mb": 1048, "peak_mb": 1052}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 0)_impl=unroll0", "seconds": 0.048, "before_mb": 1052, "peak_mb": 1052}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 0)_impl=unroll1", "seconds": 0.054, "before_mb": 1052, "peak_mb": 1054}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 0)_impl=unroll2", "seconds": 0.054, "before_mb": 1054, "peak_mb": 1058}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 1)_impl=new_checkpoint", "seconds": 0.044, "before_mb": 1058, "peak_mb": 1058}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 1)_impl=new_checkpoint2", "seconds": 0.048, "before_mb": 1058, "peak_mb": 1060}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 1)_impl=unroll0", "seconds": 0.117, "before_mb": 1060, "peak_mb": 1064}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 1)_impl=unroll1", "seconds": 0.046, "before_mb": 1064, "peak_mb": 1064}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 1)_impl=unroll2", "seconds": 0.076, "before_mb": 1064, "peak_mb": 1064}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 2)_impl=new_checkpoint", "seconds": 0.153, "before_mb": 1064, "peak_mb": 1068}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 2)_impl=new_checkpoint2", "seconds": 0.096, "before_mb": 1068, "peak_mb": 1069}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 2)_impl=unroll0", "seconds": 0.059, "before_mb": 1069, "peak_mb": 1072}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 2)_impl=unroll1", "seconds": 0.061, "before_mb": 1072, "peak_mb": 1074}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, 2)_impl=unroll2", "seconds": 0.053, "before_mb": 1074, "peak_mb": 1078}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, None)_impl=new_checkpoint", "seconds": 0.041, "before_mb": 1078, "peak_mb": 1077}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, None)_impl=new_checkpoint2", "seconds": 0.05, "before_mb": 1077, "peak_mb": 1082}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, None)_impl=unroll0", "seconds": 0.055, "before_mb": 1082, "peak_mb": 1085}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, None)_impl=unroll1", "seconds": 0.053, "before_mb": 1085, "peak_mb": 1087}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(0, None)_impl=unroll2", "seconds": 0.074, "before_mb": 1087, "peak_mb": 1087}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 0)_impl=new_checkpoint", "seconds": 0.168, "before_mb": 1087, "peak_mb": 1090}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 0)_impl=new_checkpoint2", "seconds": 0.088, "before_mb": 1090, "peak_mb": 1095}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 0)_impl=unroll0", "seconds": 0.066, "before_mb": 1095, "peak_mb": 1099}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 0)_impl=unroll1", "seconds": 0.063, "before_mb": 1099, "peak_mb": 1099}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 0)_impl=unroll2", "seconds": 0.059, "before_mb": 1099, "peak_mb": 1104}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 1)_impl=new_checkpoint", "seconds": 0.086, "before_mb": 1104, "peak_mb": 1106}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 1)_impl=new_checkpoint2", "seconds": 0.065, "before_mb": 1106, "peak_mb": 1109}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 1)_impl=unroll0", "seconds": 0.056, "before_mb": 1109, "peak_mb": 1112}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 1)_impl=unroll1", "seconds": 0.06, "before_mb": 1112, "peak_mb": 1114}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 1)_impl=unroll2", "seconds": 0.062, "before_mb": 1114, "peak_mb": 1118}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 2)_impl=new_checkpoint", "seconds": 0.062, "before_mb": 1118, "peak_mb": 1121}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 2)_impl=new_checkpoint2", "seconds": 0.054, "before_mb": 1121, "peak_mb": 1124}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 2)_impl=unroll0", "seconds": 0.054, "before_mb": 1124, "peak_mb": 1127}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 2)_impl=unroll1", "seconds": 0.072, "before_mb": 1127, "peak_mb": 1131}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, 2)_impl=unroll2", "seconds": 0.058, "before_mb": 1131, "peak_mb": 1135}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, None)_impl=new_checkpoint", "seconds": 0.056, "before_mb": 1135, "peak_mb": 1137}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, None)_impl=new_checkpoint2", "seconds": 0.068, "before_mb": 1137, "peak_mb": 1138}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, None)_impl=unroll0", "seconds": 0.053, "before_mb": 1138, "peak_mb": 1140}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, None)_impl=unroll1", "seconds": 0.057, "before_mb": 1140, "peak_mb": 1145}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(1, None)_impl=unroll2", "seconds": 0.054, "before_mb": 1145, "peak_mb": 1148}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 0)_impl=new_checkpoint", "seconds": 0.117, "before_mb": 1148, "peak_mb": 1152}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 0)_impl=new_checkpoint2", "seconds": 0.058, "before_mb": 1152, "peak_mb": 1155}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 0)_impl=unroll0", "seconds": 0.054, "before_mb": 1155, "peak_mb": 1160}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 0)_impl=unroll1", "seconds": 0.249, "before_mb": 1160, "peak_mb": 1163}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 0)_impl=unroll2", "seconds": 0.112, "before_mb": 1163, "peak_mb": 1165}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 1)_impl=new_checkpoint", "seconds": 0.101, "before_mb": 1165, "peak_mb": 1168}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 1)_impl=new_checkpoint2", "seconds": 0.063, "before_mb": 1168, "peak_mb": 1171}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 1)_impl=unroll0", "seconds": 0.067, "before_mb": 1171, "peak_mb": 1176}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 1)_impl=unroll1", "seconds": 0.087, "before_mb": 1176, "peak_mb": 1176}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 1)_impl=unroll2", "seconds": 0.111, "before_mb": 1176, "peak_mb": 1180}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 2)_impl=new_checkpoint", "seconds": 0.06, "before_mb": 1180, "peak_mb": 1182}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 2)_impl=new_checkpoint2", "seconds": 0.058, "before_mb": 1182, "peak_mb": 1187}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 2)_impl=unroll0", "seconds": 0.065, "before_mb": 1187, "peak_mb": 1189}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 2)_impl=unroll1", "seconds": 0.063, "before_mb": 1189, "peak_mb": 1192}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=False_jit_f=True_in_axes=(None, 2)_impl=unroll2", "seconds": 0.069, "before_mb": 1192, "peak_mb": 1195}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 0)_impl=new_checkpoint", "seconds": 0.045, "before_mb": 1195, "peak_mb": 1197}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 0)_impl=new_checkpoint2", "seconds": 0.04, "before_mb": 1197, "peak_mb": 1196}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 0)_impl=unroll0", "seconds": 0.041, "before_mb": 1196, "peak_mb": 1200}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 0)_impl=unroll1", "seconds": 0.034, "before_mb": 1200, "peak_mb": 1206}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 0)_impl=unroll2", "seconds": 0.039, "before_mb": 1206, "peak_mb": 1204}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 1)_impl=new_checkpoint", "seconds": 0.037, "before_mb": 1204, "peak_mb": 1205}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 1)_impl=new_checkpoint2", "seconds": 0.035, "before_mb": 1205, "peak_mb": 1206}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 1)_impl=unroll0", "seconds": 0.036, "before_mb": 1206, "peak_mb": 1208}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 1)_impl=unroll1", "seconds": 0.052, "before_mb": 1208, "peak_mb": 1211}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 1)_impl=unroll2", "seconds": 0.043, "before_mb": 1211, "peak_mb": 1215}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 2)_impl=new_checkpoint", "seconds": 0.039, "before_mb": 1215, "peak_mb": 1212}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 2)_impl=new_checkpoint2", "seconds": 0.04, "before_mb": 1212, "peak_mb": 1214}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 2)_impl=unroll0", "seconds": 0.04, "before_mb": 1214, "peak_mb": 1216}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 2)_impl=unroll1", "seconds": 0.06, "before_mb": 1216, "peak_mb": 1219}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, 2)_impl=unroll2", "seconds": 0.045, "before_mb": 1219, "peak_mb": 1220}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, None)_impl=new_checkpoint", "seconds": 0.038, "before_mb": 1220, "peak_mb": 1223}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, None)_impl=new_checkpoint2", "seconds": 0.035, "before_mb": 1223, "peak_mb": 1224}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, None)_impl=unroll0", "seconds": 0.041, "before_mb": 1224, "peak_mb": 1229}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, None)_impl=unroll1", "seconds": 0.056, "before_mb": 1229, "peak_mb": 1231}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(0, None)_impl=unroll2", "seconds": 0.039, "before_mb": 1231, "peak_mb": 1230}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 0)_impl=new_checkpoint", "seconds": 0.038, "before_mb": 1230, "peak_mb": 1229}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 0)_impl=new_checkpoint2", "seconds": 0.034, "before_mb": 1229, "peak_mb": 1230}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 0)_impl=unroll0", "seconds": 0.078, "before_mb": 1230, "peak_mb": 1236}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 0)_impl=unroll1", "seconds": 0.299, "before_mb": 1236, "peak_mb": 1237}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 0)_impl=unroll2", "seconds": 0.069, "before_mb": 1237, "peak_mb": 1236}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 1)_impl=new_checkpoint", "seconds": 0.062, "before_mb": 1236, "peak_mb": 1237}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 1)_impl=new_checkpoint2", "seconds": 0.041, "before_mb": 1237, "peak_mb": 1241}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 1)_impl=unroll0", "seconds": 0.041, "before_mb": 1241, "peak_mb": 1238}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 1)_impl=unroll1", "seconds": 0.049, "before_mb": 1238, "peak_mb": 1243}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 1)_impl=unroll2", "seconds": 0.224, "before_mb": 1243, "peak_mb": 1241}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 2)_impl=new_checkpoint", "seconds": 0.046, "before_mb": 1241, "peak_mb": 1242}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 2)_impl=new_checkpoint2", "seconds": 0.035, "before_mb": 1242, "peak_mb": 1247}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 2)_impl=unroll0", "seconds": 0.041, "before_mb": 1247, "peak_mb": 1244}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 2)_impl=unroll1", "seconds": 0.062, "before_mb": 1244, "peak_mb": 1247}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, 2)_impl=unroll2", "seconds": 0.042, "before_mb": 1247, "peak_mb": 1248}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, None)_impl=new_checkpoint", "seconds": 0.238, "before_mb": 1248, "peak_mb": 1251}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, None)_impl=new_checkpoint2", "seconds": 0.098, "before_mb": 1251, "peak_mb": 1250}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, None)_impl=unroll0", "seconds": 0.056, "before_mb": 1250, "peak_mb": 1253}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, None)_impl=unroll1", "seconds": 0.044, "before_mb": 1253, "peak_mb": 1252}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(1, None)_impl=unroll2", "seconds": 0.045, "before_mb": 1252, "peak_mb": 1263}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 0)_impl=new_checkpoint", "seconds": 0.042, "before_mb": 1263, "peak_mb": 1264}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 0)_impl=new_checkpoint2", "seconds": 0.032, "before_mb": 1264, "peak_mb": 1265}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 0)_impl=unroll0", "seconds": 0.518, "before_mb": 1265, "peak_mb": 1262}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 0)_impl=unroll1", "seconds": 0.045, "before_mb": 1262, "peak_mb": 1263}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 0)_impl=unroll2", "seconds": 0.05, "before_mb": 1263, "peak_mb": 1270}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 1)_impl=new_checkpoint", "seconds": 0.063, "before_mb": 1270, "peak_mb": 1267}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 1)_impl=new_checkpoint2", "seconds": 0.035, "before_mb": 1267, "peak_mb": 1270}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 1)_impl=unroll0", "seconds": 0.033, "before_mb": 1270, "peak_mb": 1271}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 1)_impl=unroll1", "seconds": 0.033, "before_mb": 1271, "peak_mb": 1272}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 1)_impl=unroll2", "seconds": 0.039, "before_mb": 1272, "peak_mb": 1274}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 2)_impl=new_checkpoint", "seconds": 0.283, "before_mb": 1274, "peak_mb": 1271}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 2)_impl=new_checkpoint2", "seconds": 0.058, "before_mb": 1271, "peak_mb": 1271}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 2)_impl=unroll0", "seconds": 0.046, "before_mb": 1271, "peak_mb": 1275}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 2)_impl=unroll1", "seconds": 0.053, "before_mb": 1275, "peak_mb": 1278}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=False_in_axes=(None, 2)_impl=unroll2", "seconds": 0.048, "before_mb": 1278, "peak_mb": 1280}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 0)_impl=new_checkpoint", "seconds": 0.111, "before_mb": 1280, "peak_mb": 1282}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 0)_impl=new_checkpoint2", "seconds": 0.044, "before_mb": 1282, "peak_mb": 1284}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 0)_impl=unroll0", "seconds": 0.04, "before_mb": 1284, "peak_mb": 1284}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 0)_impl=unroll1", "seconds": 0.044, "before_mb": 1284, "peak_mb": 1286}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 0)_impl=unroll2", "seconds": 0.064, "before_mb": 1286, "peak_mb": 1286}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 1)_impl=new_checkpoint", "seconds": 0.037, "before_mb": 1286, "peak_mb": 1289}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 1)_impl=new_checkpoint2", "seconds": 0.048, "before_mb": 1289, "peak_mb": 1291}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 1)_impl=unroll0", "seconds": 0.211, "before_mb": 1291, "peak_mb": 1294}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 1)_impl=unroll1", "seconds": 0.092, "before_mb": 1294, "peak_mb": 1293}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 1)_impl=unroll2", "seconds": 0.071, "before_mb": 1293, "peak_mb": 1295}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 2)_impl=new_checkpoint", "seconds": 0.077, "before_mb": 1295, "peak_mb": 1297}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 2)_impl=new_checkpoint2", "seconds": 0.068, "before_mb": 1297, "peak_mb": 1300}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 2)_impl=unroll0", "seconds": 0.059, "before_mb": 1300, "peak_mb": 1302}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 2)_impl=unroll1", "seconds": 0.055, "before_mb": 1302, "peak_mb": 1306}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, 2)_impl=unroll2", "seconds": 0.045, "before_mb": 1303, "peak_mb": 1305}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, None)_impl=new_checkpoint", "seconds": 0.047, "before_mb": 1305, "peak_mb": 1306}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, None)_impl=new_checkpoint2", "seconds": 0.071, "before_mb": 1306, "peak_mb": 1308}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, None)_impl=unroll0", "seconds": 0.047, "before_mb": 1308, "peak_mb": 1311}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, None)_impl=unroll1", "seconds": 0.046, "before_mb": 1311, "peak_mb": 1315}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(0, None)_impl=unroll2", "seconds": 0.071, "before_mb": 1315, "peak_mb": 1316}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 0)_impl=new_checkpoint", "seconds": 0.057, "before_mb": 1316, "peak_mb": 1318}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 0)_impl=new_checkpoint2", "seconds": 0.059, "before_mb": 1318, "peak_mb": 1324}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 0)_impl=unroll0", "seconds": 0.065, "before_mb": 1324, "peak_mb": 1325}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 0)_impl=unroll1", "seconds": 0.057, "before_mb": 1325, "peak_mb": 1328}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 0)_impl=unroll2", "seconds": 0.061, "before_mb": 1328, "peak_mb": 1331}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 1)_impl=new_checkpoint", "seconds": 0.057, "before_mb": 1331, "peak_mb": 1337}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 1)_impl=new_checkpoint2", "seconds": 0.048, "before_mb": 1337, "peak_mb": 1338}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 1)_impl=unroll0", "seconds": 0.056, "before_mb": 1338, "peak_mb": 1341}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 1)_impl=unroll1", "seconds": 0.055, "before_mb": 1341, "peak_mb": 1345}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 1)_impl=unroll2", "seconds": 0.064, "before_mb": 1345, "peak_mb": 1349}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 2)_impl=new_checkpoint", "seconds": 0.054, "before_mb": 1349, "peak_mb": 1352}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 2)_impl=new_checkpoint2", "seconds": 0.069, "before_mb": 1352, "peak_mb": 1353}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 2)_impl=unroll0", "seconds": 0.061, "before_mb": 1353, "peak_mb": 1357}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 2)_impl=unroll1", "seconds": 0.056, "before_mb": 1357, "peak_mb": 1362}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, 2)_impl=unroll2", "seconds": 0.076, "before_mb": 1362, "peak_mb": 1365}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, None)_impl=new_checkpoint", "seconds": 0.175, "before_mb": 1365, "peak_mb": 1364}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, None)_impl=new_checkpoint2", "seconds": 0.091, "before_mb": 1364, "peak_mb": 1370}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, None)_impl=unroll0", "seconds": 0.07, "before_mb": 1370, "peak_mb": 1371}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, None)_impl=unroll1", "seconds": 0.065, "before_mb": 1371, "peak_mb": 1376}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(1, None)_impl=unroll2", "seconds": 0.067, "before_mb": 1376, "peak_mb": 1380}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 0)_impl=new_checkpoint", "seconds": 0.059, "before_mb": 1380, "peak_mb": 1383}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 0)_impl=new_checkpoint2", "seconds": 0.056, "before_mb": 1383, "peak_mb": 1388}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 0)_impl=unroll0", "seconds": 0.052, "before_mb": 1388, "peak_mb": 1388}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 0)_impl=unroll1", "seconds": 0.075, "before_mb": 1388, "peak_mb": 1394}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 0)_impl=unroll2", "seconds": 0.059, "before_mb": 1394, "peak_mb": 1395}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 1)_impl=new_checkpoint", "seconds": 0.066, "before_mb": 1395, "peak_mb": 1401}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 1)_impl=new_checkpoint2", "seconds": 0.058, "before_mb": 1401, "peak_mb": 1404}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 1)_impl=unroll0", "seconds": 0.06, "before_mb": 1404, "peak_mb": 1407}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 1)_impl=unroll1", "seconds": 0.052, "before_mb": 1407, "peak_mb": 1410}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 1)_impl=unroll2", "seconds": 0.053, "before_mb": 1410, "peak_mb": 1412}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 2)_impl=new_checkpoint", "seconds": 0.057, "before_mb": 1412, "peak_mb": 1416}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 2)_impl=new_checkpoint2", "seconds": 0.052, "before_mb": 1416, "peak_mb": 1419}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 2)_impl=unroll0", "seconds": 0.29, "before_mb": 1419, "peak_mb": 1421}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 2)_impl=unroll1", "seconds": 0.07, "before_mb": 1421, "peak_mb": 1427}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testScanVmap_jit_scan=True_jit_f=True_in_axes=(None, 2)_impl=unroll2", "seconds": 0.065, "before_mb": 1427, "peak_mb": 1432}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testStaticForiGrad", "seconds": 0.059, "before_mb": 1432, "peak_mb": 1432}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitch", "seconds": 0.27, "before_mb": 1432, "peak_mb": 1441}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchBatched", "seconds": 0.293, "before_mb": 1441, "peak_mb": 1450}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchErrors", "seconds": 0.039, "before_mb": 1450, "peak_mb": 1450}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGrad", "seconds": 0.793, "before_mb": 1450, "peak_mb": 1479}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding0", "seconds": 0.029, "before_mb": 94, "peak_mb": 94, "params": "(0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding1", "seconds": 0.018, "before_mb": 94, "peak_mb": 94, "params": "(0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding10", "seconds": 0.029, "before_mb": 94, "peak_mb": 94, "params": "(0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding11", "seconds": 0.008, "before_mb": 94, "peak_mb": 94, "params": "(0, 2, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding12", "seconds": 0.008, "before_mb": 94, "peak_mb": 94, "params": "(0, 3, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding13", "seconds": 0.008, "before_mb": 94, "peak_mb": 94, "params": "(0, 3, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding14", "seconds": 0.006, "before_mb": 94, "peak_mb": 94, "params": "(0, 3, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding15", "seconds": 0.016, "before_mb": 94, "peak_mb": 94, "params": "(0, 3, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding16", "seconds": 0.006, "before_mb": 94, "peak_mb": 94, "params": "(1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding17", "seconds": 0.005, "before_mb": 94, "peak_mb": 94, "params": "(1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding18", "seconds": 0.017, "before_mb": 94, "peak_mb": 94, "params": "(1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding19", "seconds": 0.008, "before_mb": 94, "peak_mb": 94, "params": "(1, 0, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding2", "seconds": 0.009, "before_mb": 94, "peak_mb": 95, "params": "(0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding20", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding21", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding22", "seconds": 0.017, "before_mb": 95, "peak_mb": 95, "params": "(1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding23", "seconds": 0.011, "before_mb": 95, "peak_mb": 95, "params": "(1, 1, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding24", "seconds": 0.013, "before_mb": 95, "peak_mb": 95, "params": "(1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding25", "seconds": 0.022, "before_mb": 95, "peak_mb": 95, "params": "(1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding26", "seconds": 0.011, "before_mb": 95, "peak_mb": 95, "params": "(1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding27", "seconds": 0.011, "before_mb": 95, "peak_mb": 95, "params": "(1, 2, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding28", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(1, 3, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding29", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(1, 3, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding3", "seconds": 0.018, "before_mb": 95, "peak_mb": 95, "params": "(0, 0, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding30", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(1, 3, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding31", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(1, 3, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding32", "seconds": 0.018, "before_mb": 95, "peak_mb": 95, "params": "(2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding33", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding34", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding35", "seconds": 0.011, "before_mb": 95, "peak_mb": 95, "params": "(2, 0, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding36", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding37", "seconds": 0.02, "before_mb": 95, "peak_mb": 95, "params": "(2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding38", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding39", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(2, 1, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding4", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding40", "seconds": 0.011, "before_mb": 95, "peak_mb": 95, "params": "(2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding41", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding42", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding43", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(2, 2, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding44", "seconds": 0.016, "before_mb": 95, "peak_mb": 95, "params": "(2, 3, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding45", "seconds": 0.008, "before_mb": 95, "peak_mb": 95, "params": "(2, 3, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding46", "seconds": 0.008, "before_mb": 95, "peak_mb": 95, "params": "(2, 3, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding47", "seconds": 0.013, "before_mb": 95, "peak_mb": 95, "params": "(2, 3, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding48", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(3, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding49", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(3, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding5", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding50", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(3, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding51", "seconds": 0.014, "before_mb": 95, "peak_mb": 95, "params": "(3, 0, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding52", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(3, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding53", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(3, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding54", "seconds": 0.029, "before_mb": 95, "peak_mb": 95, "params": "(3, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding55", "seconds": 0.008, "before_mb": 95, "peak_mb": 95, "params": "(3, 1, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding56", "seconds": 0.008, "before_mb": 95, "peak_mb": 95, "params": "(3, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding57", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(3, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding58", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(3, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding59", "seconds": 0.016, "before_mb": 95, "peak_mb": 95, "params": "(3, 2, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding6", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding60", "seconds": 0.008, "before_mb": 95, "peak_mb": 95, "params": "(3, 3, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding61", "seconds": 0.013, "before_mb": 95, "peak_mb": 95, "params": "(3, 3, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding62", "seconds": 0.01, "before_mb": 95, "peak_mb": 95, "params": "(3, 3, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding63", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(3, 3, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding7", "seconds": 0.007, "before_mb": 95, "peak_mb": 95, "params": "(0, 1, 3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding8", "seconds": 0.009, "before_mb": 95, "peak_mb": 95, "params": "(0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithForwarding9", "seconds": 0.017, "before_mb": 95, "peak_mb": 95, "params": "(0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchGradWithWeakTypeMismatch", "seconds": 0.273, "before_mb": 95, "peak_mb": 168}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchJVP", "seconds": 0.312, "before_mb": 168, "peak_mb": 197}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchJit", "seconds": 0.243, "before_mb": 197, "peak_mb": 200}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchLinearize", "seconds": 0.23, "before_mb": 200, "peak_mb": 215}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchMultiOperands", "seconds": 0.164, "before_mb": 215, "peak_mb": 221}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testSwitchResidualsMerge", "seconds": 0.031, "before_mb": 221, "peak_mb": 221}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileCondConstant", "seconds": 0.016, "before_mb": 221, "peak_mb": 222}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileGradError_loop='fori_inside_cond'", "seconds": 0.115, "before_mb": 222, "peak_mb": 227}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileGradError_loop='fori_inside_scan'", "seconds": 0.064, "before_mb": 227, "peak_mb": 229}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileGradError_loop='while'", "seconds": 0.086, "before_mb": 229, "peak_mb": 232}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVPViaForiLoop", "seconds": 0.271, "before_mb": 232, "peak_mb": 248}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVPWithGrowingNonzeroTangents", "seconds": 0.192, "before_mb": 248, "peak_mb": 261}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVP_jit_loop=False_jit_body=False_jit_cond=False", "seconds": 0.243, "before_mb": 261, "peak_mb": 277}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVP_jit_loop=False_jit_body=False_jit_cond=True", "seconds": 0.095, "before_mb": 277, "peak_mb": 285}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVP_jit_loop=False_jit_body=True_jit_cond=False", "seconds": 0.095, "before_mb": 285, "peak_mb": 293}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVP_jit_loop=False_jit_body=True_jit_cond=True", "seconds": 0.105, "before_mb": 293, "peak_mb": 302}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVP_jit_loop=True_jit_body=False_jit_cond=False", "seconds": 0.058, "before_mb": 302, "peak_mb": 305}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVP_jit_loop=True_jit_body=False_jit_cond=True", "seconds": 0.071, "before_mb": 305, "peak_mb": 310}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVP_jit_loop=True_jit_body=True_jit_cond=False", "seconds": 0.07, "before_mb": 310, "peak_mb": 313}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileJVP_jit_loop=True_jit_body=True_jit_cond=True", "seconds": 0.08, "before_mb": 313, "peak_mb": 318}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=False_jit_body=False_jit_cond=False_impl=new_checkpoint", "seconds": 0.039, "before_mb": 318, "peak_mb": 319}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=False_jit_body=False_jit_cond=False_impl=while_loop", "seconds": 0.035, "before_mb": 319, "peak_mb": 320}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=False_jit_body=False_jit_cond=True_impl=new_checkpoint", "seconds": 0.039, "before_mb": 320, "peak_mb": 323}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=False_jit_body=False_jit_cond=True_impl=while_loop", "seconds": 0.067, "before_mb": 323, "peak_mb": 326}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=False_jit_body=True_jit_cond=False_impl=new_checkpoint", "seconds": 0.051, "before_mb": 326, "peak_mb": 329}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=False_jit_body=True_jit_cond=False_impl=while_loop", "seconds": 0.079, "before_mb": 329, "peak_mb": 332}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=False_jit_body=True_jit_cond=True_impl=new_checkpoint", "seconds": 0.058, "before_mb": 332, "peak_mb": 335}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=False_jit_body=True_jit_cond=True_impl=while_loop", "seconds": 0.058, "before_mb": 335, "peak_mb": 340}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=True_jit_body=False_jit_cond=False_impl=new_checkpoint", "seconds": 0.321, "before_mb": 341, "peak_mb": 372}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=True_jit_body=False_jit_cond=False_impl=while_loop", "seconds": 0.049, "before_mb": 372, "peak_mb": 373}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=True_jit_body=False_jit_cond=True_impl=new_checkpoint", "seconds": 0.281, "before_mb": 373, "peak_mb": 376}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=True_jit_body=False_jit_cond=True_impl=while_loop", "seconds": 0.059, "before_mb": 376, "peak_mb": 378}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=True_jit_body=True_jit_cond=False_impl=new_checkpoint", "seconds": 0.284, "before_mb": 378, "peak_mb": 393}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=True_jit_body=True_jit_cond=False_impl=while_loop", "seconds": 0.048, "before_mb": 393, "peak_mb": 395}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=True_jit_body=True_jit_cond=True_impl=new_checkpoint", "seconds": 0.266, "before_mb": 395, "peak_mb": 405}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLinearize_jit_loop=True_jit_body=True_jit_cond=True_impl=while_loop", "seconds": 0.054, "before_mb": 405, "peak_mb": 408}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLoopAxisIndexBatched", "seconds": 0.124, "before_mb": 408, "peak_mb": 410}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLoopBatched", "seconds": 0.087, "before_mb": 410, "peak_mb": 411}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLoopBatchedWithConstBody", "seconds": 0.03, "before_mb": 411, "peak_mb": 412}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLoopBodyConstsBatched", "seconds": 0.063, "before_mb": 412, "peak_mb": 416}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLoopCondConstsBatched", "seconds": 0.023, "before_mb": 416, "peak_mb": 416}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLoopCustomPytreeDiffAuxData", "seconds": 0.034, "before_mb": 416, "peak_mb": 417}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileLoopTupleBatched", "seconds": 0.081, "before_mb": 417, "peak_mb": 418}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileTypeErrors", "seconds": 0.014, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileWithClosure", "seconds": 0.036, "before_mb": 418, "peak_mb": 420}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileWithClosureJit", "seconds": 0.037, "before_mb": 420, "peak_mb": 421}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileWithManyArgs", "seconds": 0.097, "before_mb": 421, "peak_mb": 434}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testWhileWithTuple", "seconds": 0.034, "before_mb": 434, "peak_mb": 435}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_caches_depend_on_axis_env", "seconds": 0.032, "before_mb": 435, "peak_mb": 436}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_ad_batched_unit", "seconds": 0.172, "before_mb": 436, "peak_mb": 442}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_basic_vjp3", "seconds": 0.092, "before_mb": 443, "peak_mb": 447}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_casting", "seconds": 0.062, "before_mb": 447, "peak_mb": 447}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_excessive_compilation", "seconds": 0.051, "before_mb": 447, "peak_mb": 457}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_memory_leak", "seconds": 0.186, "before_mb": 457, "peak_mb": 459}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_remat_dce_speculative_branch_residuals", "seconds": 0.254, "before_mb": 459, "peak_mb": 464}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_remat_dce_unused_branch_residuals", "seconds": 0.158, "before_mb": 464, "peak_mb": 466}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_transformation_rule_with_consts", "seconds": 0.026, "before_mb": 466, "peak_mb": 463}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_typecheck_param", "seconds": 0.016, "before_mb": 463, "peak_mb": 463}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_cond_vmap_forwarding_doesnt_promote", "seconds": 0.176, "before_mb": 463, "peak_mb": 473}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_custom_jvp_tangent_cond_transpose", "seconds": 0.262, "before_mb": 473, "peak_mb": 494}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_disable_jit_cond_with_vmap", "seconds": 0.135, "before_mb": 494, "peak_mb": 503}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_disable_jit_while_loop_with_mutation", "seconds": 0.12, "before_mb": 503, "peak_mb": 508}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_disable_jit_while_loop_with_vmap", "seconds": 0.1, "before_mb": 508, "peak_mb": 512}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_returns_init_with_nonpositive_length_jit=False_upper=-1_unroll=False", "seconds": 0.058, "before_mb": 514, "peak_mb": 512}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_returns_init_with_nonpositive_length_jit=False_upper=-1_unroll=True", "seconds": 0.048, "before_mb": 512, "peak_mb": 513}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_returns_init_with_nonpositive_length_jit=False_upper=0_unroll=False", "seconds": 0.034, "before_mb": 513, "peak_mb": 514}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_returns_init_with_nonpositive_length_jit=False_upper=0_unroll=True", "seconds": 0.024, "before_mb": 514, "peak_mb": 514}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_returns_init_with_nonpositive_length_jit=True_upper=-1_unroll=False", "seconds": 0.025, "before_mb": 514, "peak_mb": 515}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_returns_init_with_nonpositive_length_jit=True_upper=-1_unroll=True", "seconds": 0.017, "before_mb": 515, "peak_mb": 516}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_returns_init_with_nonpositive_length_jit=True_upper=0_unroll=False", "seconds": 0.02, "before_mb": 516, "peak_mb": 517}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_returns_init_with_nonpositive_length_jit=True_upper=0_unroll=True", "seconds": 0.016, "before_mb": 517, "peak_mb": 517}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_supports_unrolling", "seconds": 0.109, "before_mb": 517, "peak_mb": 522}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_supports_unrolling_with_bool", "seconds": 0.081, "before_mb": 522, "peak_mb": 524}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_fori_loop_with_dynamic_indices_cannot_unroll", "seconds": 0.008, "before_mb": 524, "peak_mb": 524}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_grad_remat_while_fixpoint", "seconds": 0.026, "before_mb": 524, "peak_mb": 525}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_issue_29329", "seconds": 0.245, "before_mb": 525, "peak_mb": 540}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_issue_3204", "seconds": 0.187, "before_mb": 540, "peak_mb": 545}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_platform_dependent", "seconds": 0.034, "before_mb": 545, "peak_mb": 547}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_platform_dependent_batched", "seconds": 0.047, "before_mb": 547, "peak_mb": 547}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_platform_dependent_grad", "seconds": 0.231, "before_mb": 547, "peak_mb": 559}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_platform_dependent_lowering", "seconds": 0.02, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_platform_dependent_multiple_identical_branches", "seconds": 0.021, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_platform_dependent_no_args", "seconds": 0.008, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_platform_dependent_no_default", "seconds": 0.01, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_platform_dependent_with_non_existent_custom_call", "seconds": 0.008, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_platform_dependent_with_primitive_with_lowering_error", "seconds": 0.008, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness0", "seconds": 0.014, "before_mb": 559, "peak_mb": 559, "params": "(0, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness1", "seconds": 0.007, "before_mb": 559, "peak_mb": 559, "params": "(0, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness10", "seconds": 0.006, "before_mb": 559, "peak_mb": 559, "params": "(0, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness11", "seconds": 0.014, "before_mb": 559, "peak_mb": 559, "params": "(0, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness12", "seconds": 0.006, "before_mb": 559, "peak_mb": 559, "params": "(0, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness13", "seconds": 0.005, "before_mb": 559, "peak_mb": 559, "params": "(0, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness14", "seconds": 0.006, "before_mb": 559, "peak_mb": 559, "params": "(0, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness15", "seconds": 0.006, "before_mb": 559, "peak_mb": 559, "params": "(0, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness16", "seconds": 0.013, "before_mb": 559, "peak_mb": 559, "params": "(0, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness17", "seconds": 0.006, "before_mb": 559, "peak_mb": 559, "params": "(0, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness18", "seconds": 0.007, "before_mb": 559, "peak_mb": 559, "params": "(0, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness19", "seconds": 0.015, "before_mb": 559, "peak_mb": 559, "params": "(0, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness2", "seconds": 0.008, "before_mb": 559, "peak_mb": 559, "params": "(0, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness20", "seconds": 0.009, "before_mb": 559, "peak_mb": 559, "params": "(0, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness21", "seconds": 0.009, "before_mb": 559, "peak_mb": 559, "params": "(0, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness22", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(0, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness23", "seconds": 0.014, "before_mb": 559, "peak_mb": 559, "params": "(0, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness24", "seconds": 0.009, "before_mb": 559, "peak_mb": 559, "params": "(0, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness25", "seconds": 0.009, "before_mb": 559, "peak_mb": 559, "params": "(0, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness26", "seconds": 0.021, "before_mb": 559, "peak_mb": 559, "params": "(0, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness27", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness28", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness29", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness3", "seconds": 0.009, "before_mb": 559, "peak_mb": 559, "params": "(0, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness30", "seconds": 0.023, "before_mb": 559, "peak_mb": 559, "params": "(1, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness31", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness32", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(1, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness33", "seconds": 0.019, "before_mb": 559, "peak_mb": 559, "params": "(1, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness34", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness35", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(1, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness36", "seconds": 0.008, "before_mb": 559, "peak_mb": 559, "params": "(1, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness37", "seconds": 0.014, "before_mb": 559, "peak_mb": 559, "params": "(1, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness38", "seconds": 0.021, "before_mb": 559, "peak_mb": 559, "params": "(1, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness39", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness4", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(0, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness40", "seconds": 0.016, "before_mb": 559, "peak_mb": 559, "params": "(1, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness41", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness42", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness43", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness44", "seconds": 0.009, "before_mb": 559, "peak_mb": 559, "params": "(1, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness45", "seconds": 0.024, "before_mb": 559, "peak_mb": 559, "params": "(1, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness46", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(1, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness47", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(1, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness48", "seconds": 0.022, "before_mb": 559, "peak_mb": 559, "params": "(1, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness49", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness5", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(0, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness50", "seconds": 0.008, "before_mb": 559, "peak_mb": 559, "params": "(1, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness51", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness52", "seconds": 0.02, "before_mb": 559, "peak_mb": 559, "params": "(1, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness53", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(1, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness54", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(2, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness55", "seconds": 0.022, "before_mb": 559, "peak_mb": 559, "params": "(2, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness56", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(2, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness57", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(2, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness58", "seconds": 0.009, "before_mb": 559, "peak_mb": 559, "params": "(2, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness59", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(2, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness6", "seconds": 0.025, "before_mb": 559, "peak_mb": 559, "params": "(0, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness60", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(2, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness61", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(2, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness62", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(2, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness63", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(2, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness64", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(2, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness65", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(2, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness66", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(2, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness67", "seconds": 0.018, "before_mb": 559, "peak_mb": 559, "params": "(2, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness68", "seconds": 0.011, "before_mb": 559, "peak_mb": 559, "params": "(2, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness69", "seconds": 0.01, "before_mb": 559, "peak_mb": 559, "params": "(2, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness7", "seconds": 0.021, "before_mb": 559, "peak_mb": 513, "params": "(0, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness70", "seconds": 0.011, "before_mb": 513, "peak_mb": 513, "params": "(2, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness71", "seconds": 0.009, "before_mb": 513, "peak_mb": 513, "params": "(2, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness72", "seconds": 0.01, "before_mb": 513, "peak_mb": 513, "params": "(2, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness73", "seconds": 0.01, "before_mb": 513, "peak_mb": 513, "params": "(2, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness74", "seconds": 0.023, "before_mb": 513, "peak_mb": 513, "params": "(2, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness75", "seconds": 0.01, "before_mb": 513, "peak_mb": 513, "params": "(2, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness76", "seconds": 0.012, "before_mb": 513, "peak_mb": 513, "params": "(2, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness77", "seconds": 0.021, "before_mb": 513, "peak_mb": 513, "params": "(2, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness78", "seconds": 0.01, "before_mb": 513, "peak_mb": 513, "params": "(2, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness79", "seconds": 0.012, "before_mb": 513, "peak_mb": 513, "params": "(2, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness8", "seconds": 0.01, "before_mb": 513, "peak_mb": 513, "params": "(0, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness80", "seconds": 0.009, "before_mb": 513, "peak_mb": 513, "params": "(2, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_constification_correctness9", "seconds": 0.017, "before_mb": 513, "peak_mb": 513, "params": "(0, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_counter_where", "seconds": 0.086, "before_mb": 513, "peak_mb": 556}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_diff_of_print", "seconds": 0.011, "before_mb": 556, "peak_mb": 556}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_fixpoint_instantiate", "seconds": 0.061, "before_mb": 556, "peak_mb": 562}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness0", "seconds": 0.008, "before_mb": 562, "peak_mb": 562, "params": "(0, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness1", "seconds": 0.023, "before_mb": 562, "peak_mb": 562, "params": "(0, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness10", "seconds": 0.007, "before_mb": 562, "peak_mb": 562, "params": "(0, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness11", "seconds": 0.006, "before_mb": 562, "peak_mb": 562, "params": "(0, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness12", "seconds": 0.017, "before_mb": 562, "peak_mb": 562, "params": "(0, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness13", "seconds": 0.006, "before_mb": 562, "peak_mb": 562, "params": "(0, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness14", "seconds": 0.006, "before_mb": 562, "peak_mb": 562, "params": "(0, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness15", "seconds": 0.006, "before_mb": 562, "peak_mb": 562, "params": "(0, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness16", "seconds": 0.006, "before_mb": 562, "peak_mb": 562, "params": "(0, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness17", "seconds": 0.011, "before_mb": 562, "peak_mb": 562, "params": "(0, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness18", "seconds": 0.006, "before_mb": 562, "peak_mb": 562, "params": "(0, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness19", "seconds": 0.008, "before_mb": 562, "peak_mb": 562, "params": "(0, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness2", "seconds": 0.023, "before_mb": 562, "peak_mb": 563, "params": "(0, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness20", "seconds": 0.011, "before_mb": 563, "peak_mb": 563, "params": "(0, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness21", "seconds": 0.01, "before_mb": 563, "peak_mb": 564, "params": "(0, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness22", "seconds": 0.008, "before_mb": 564, "peak_mb": 564, "params": "(0, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness23", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(0, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness24", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(0, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness25", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(0, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness26", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(0, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness27", "seconds": 0.013, "before_mb": 564, "peak_mb": 564, "params": "(1, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness28", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(1, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness29", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(1, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness3", "seconds": 0.02, "before_mb": 564, "peak_mb": 564, "params": "(0, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness30", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(1, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness31", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(1, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness32", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(1, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness33", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(1, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness34", "seconds": 0.02, "before_mb": 564, "peak_mb": 564, "params": "(1, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness35", "seconds": 0.011, "before_mb": 564, "peak_mb": 564, "params": "(1, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness36", "seconds": 0.011, "before_mb": 564, "peak_mb": 564, "params": "(1, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness37", "seconds": 0.02, "before_mb": 564, "peak_mb": 564, "params": "(1, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness38", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(1, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness39", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(1, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness4", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(0, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness40", "seconds": 0.012, "before_mb": 564, "peak_mb": 564, "params": "(1, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness41", "seconds": 0.016, "before_mb": 564, "peak_mb": 564, "params": "(1, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness42", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(1, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness43", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(1, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness44", "seconds": 0.017, "before_mb": 564, "peak_mb": 564, "params": "(1, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness45", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(1, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness46", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(1, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness47", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(1, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness48", "seconds": 0.008, "before_mb": 564, "peak_mb": 564, "params": "(1, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness49", "seconds": 0.02, "before_mb": 564, "peak_mb": 564, "params": "(1, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness5", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(0, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness50", "seconds": 0.008, "before_mb": 564, "peak_mb": 564, "params": "(1, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness51", "seconds": 0.019, "before_mb": 564, "peak_mb": 564, "params": "(1, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness52", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(1, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness53", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(1, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness54", "seconds": 0.006, "before_mb": 564, "peak_mb": 564, "params": "(2, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness55", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(2, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness56", "seconds": 0.021, "before_mb": 564, "peak_mb": 564, "params": "(2, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness57", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(2, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness58", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(2, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness59", "seconds": 0.014, "before_mb": 564, "peak_mb": 564, "params": "(2, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness6", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(0, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness60", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(2, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness61", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(2, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness62", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(2, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness63", "seconds": 0.02, "before_mb": 564, "peak_mb": 564, "params": "(2, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness64", "seconds": 0.007, "before_mb": 564, "peak_mb": 564, "params": "(2, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness65", "seconds": 0.008, "before_mb": 564, "peak_mb": 564, "params": "(2, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness66", "seconds": 0.009, "before_mb": 564, "peak_mb": 564, "params": "(2, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness67", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(2, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness68", "seconds": 0.011, "before_mb": 564, "peak_mb": 564, "params": "(2, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness69", "seconds": 0.008, "before_mb": 564, "peak_mb": 564, "params": "(2, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness7", "seconds": 0.01, "before_mb": 564, "peak_mb": 564, "params": "(0, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness70", "seconds": 0.016, "before_mb": 564, "peak_mb": 564, "params": "(2, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness71", "seconds": 0.013, "before_mb": 564, "peak_mb": 564, "params": "(2, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness72", "seconds": 0.008, "before_mb": 564, "peak_mb": 564, "params": "(2, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness73", "seconds": 0.028, "before_mb": 564, "peak_mb": 564, "params": "(2, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness74", "seconds": 0.009, "before_mb": 564, "peak_mb": 565, "params": "(2, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness75", "seconds": 0.01, "before_mb": 565, "peak_mb": 565, "params": "(2, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness76", "seconds": 0.006, "before_mb": 523, "peak_mb": 523, "params": "(2, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness77", "seconds": 0.008, "before_mb": 523, "peak_mb": 523, "params": "(2, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness78", "seconds": 0.021, "before_mb": 523, "peak_mb": 523, "params": "(2, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness79", "seconds": 0.012, "before_mb": 523, "peak_mb": 523, "params": "(2, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness8", "seconds": 0.008, "before_mb": 523, "peak_mb": 523, "params": "(0, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness80", "seconds": 0.012, "before_mb": 523, "peak_mb": 523, "params": "(2, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_forwarding_correctness9", "seconds": 0.009, "before_mb": 523, "peak_mb": 523, "params": "(0, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_hoisting_consts_impl=new_checkpoint", "seconds": 0.211, "before_mb": 523, "peak_mb": 579}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_hoisting_consts_impl=new_checkpoint2", "seconds": 0.056, "before_mb": 579, "peak_mb": 587}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_hoisting_consts_impl=unroll0", "seconds": 0.043, "before_mb": 587, "peak_mb": 590}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_hoisting_consts_impl=unroll1", "seconds": 0.039, "before_mb": 590, "peak_mb": 591}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_hoisting_consts_impl=unroll2", "seconds": 0.068, "before_mb": 591, "peak_mb": 592}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_init_weak_type_dtype=int16", "seconds": 0.258, "before_mb": 592, "peak_mb": 593}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_init_weak_type_dtype=int32", "seconds": 0.049, "before_mb": 593, "peak_mb": 597}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_init_weak_type_dtype=int8", "seconds": 0.186, "before_mb": 597, "peak_mb": 602}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_input_to_output_forwarding", "seconds": 0.018, "before_mb": 602, "peak_mb": 602}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_length_concrete_error", "seconds": 0.038, "before_mb": 602, "peak_mb": 602}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_lowering_doesnt_introduce_singleton", "seconds": 0.026, "before_mb": 602, "peak_mb": 603}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_readonly_carry_optimization", "seconds": 0.098, "before_mb": 603, "peak_mb": 605}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_reverse_new_checkpoint", "seconds": 0.193, "before_mb": 605, "peak_mb": 622}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_reverse_new_checkpoint2", "seconds": 0.247, "before_mb": 622, "peak_mb": 627}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_reverse_unroll0", "seconds": 0.249, "before_mb": 627, "peak_mb": 630}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_reverse_unroll1", "seconds": 0.058, "before_mb": 630, "peak_mb": 634}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_reverse_unroll2", "seconds": 0.099, "before_mb": 634, "peak_mb": 636}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_typecheck_param", "seconds": 0.028, "before_mb": 636, "peak_mb": 637}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_unroll", "seconds": 0.056, "before_mb": 637, "peak_mb": 639}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_unroll_concrete_error", "seconds": 0.013, "before_mb": 639, "peak_mb": 639}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness0", "seconds": 0.011, "before_mb": 639, "peak_mb": 639, "params": "(seed=5, num_rule_consts=2, num_const_fwds=3, num_carry_fwds=0, num_input_fwds=1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness1", "seconds": 0.026, "before_mb": 639, "peak_mb": 639, "params": "(seed=0, num_rule_consts=2, num_const_fwds=4, num_carry_fwds=0, num_input_fwds=2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness2", "seconds": 0.008, "before_mb": 639, "peak_mb": 639, "params": "(seed=1, num_rule_consts=3, num_const_fwds=0, num_carry_fwds=4, num_input_fwds=2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness3", "seconds": 0.009, "before_mb": 639, "peak_mb": 639, "params": "(seed=5, num_rule_consts=3, num_const_fwds=1, num_carry_fwds=5, num_input_fwds=3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness4", "seconds": 0.008, "before_mb": 639, "peak_mb": 639, "params": "(seed=2, num_rule_consts=2, num_const_fwds=5, num_carry_fwds=1, num_input_fwds=2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness5", "seconds": 0.007, "before_mb": 639, "peak_mb": 639, "params": "(seed=4, num_rule_consts=4, num_const_fwds=0, num_carry_fwds=5, num_input_fwds=3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness6", "seconds": 0.02, "before_mb": 639, "peak_mb": 639, "params": "(seed=0, num_rule_consts=2, num_const_fwds=1, num_carry_fwds=4, num_input_fwds=3)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness7", "seconds": 0.006, "before_mb": 639, "peak_mb": 639, "params": "(seed=1, num_rule_consts=5, num_const_fwds=2, num_carry_fwds=1, num_input_fwds=0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness8", "seconds": 0.005, "before_mb": 639, "peak_mb": 639, "params": "(seed=4, num_rule_consts=3, num_const_fwds=3, num_carry_fwds=4, num_input_fwds=0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwarding_correctness9", "seconds": 0.019, "before_mb": 639, "peak_mb": 639, "params": "(seed=0, num_rule_consts=0, num_const_fwds=3, num_carry_fwds=4, num_input_fwds=1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwards_extensive_residuals", "seconds": 0.121, "before_mb": 639, "peak_mb": 642}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vjp_forwards_extensive_residuals_new_remat", "seconds": 0.119, "before_mb": 642, "peak_mb": 644}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_vmap_collectives", "seconds": 0.086, "before_mb": 644, "peak_mb": 650}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_scan_xs_none", "seconds": 0.07, "before_mb": 650, "peak_mb": 652}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_vmaps_of_while_loop", "seconds": 0.141, "before_mb": 652, "peak_mb": 659}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness0", "seconds": 0.019, "before_mb": 659, "peak_mb": 659, "params": "(0, 0, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness1", "seconds": 0.009, "before_mb": 659, "peak_mb": 659, "params": "(0, 0, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness10", "seconds": 0.008, "before_mb": 659, "peak_mb": 659, "params": "(0, 0, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness100", "seconds": 0.023, "before_mb": 659, "peak_mb": 659, "params": "(1, 0, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness101", "seconds": 0.007, "before_mb": 659, "peak_mb": 659, "params": "(1, 0, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness102", "seconds": 0.007, "before_mb": 659, "peak_mb": 659, "params": "(1, 0, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness103", "seconds": 0.006, "before_mb": 659, "peak_mb": 659, "params": "(1, 0, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness104", "seconds": 0.006, "before_mb": 659, "peak_mb": 659, "params": "(1, 0, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness105", "seconds": 0.016, "before_mb": 659, "peak_mb": 659, "params": "(1, 0, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness106", "seconds": 0.008, "before_mb": 659, "peak_mb": 659, "params": "(1, 0, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness107", "seconds": 0.008, "before_mb": 659, "peak_mb": 659, "params": "(1, 0, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness108", "seconds": 0.011, "before_mb": 659, "peak_mb": 659, "params": "(1, 1, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness109", "seconds": 0.009, "before_mb": 659, "peak_mb": 659, "params": "(1, 1, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness11", "seconds": 0.016, "before_mb": 659, "peak_mb": 659, "params": "(0, 0, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness110", "seconds": 0.011, "before_mb": 659, "peak_mb": 653, "params": "(1, 1, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness111", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness112", "seconds": 0.019, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness113", "seconds": 0.012, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness114", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness115", "seconds": 0.011, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness116", "seconds": 0.008, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness117", "seconds": 0.019, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness118", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness119", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness12", "seconds": 0.015, "before_mb": 653, "peak_mb": 653, "params": "(0, 0, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness120", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness121", "seconds": 0.016, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness122", "seconds": 0.012, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness123", "seconds": 0.011, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness124", "seconds": 0.008, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness125", "seconds": 0.007, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness126", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness127", "seconds": 0.021, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness128", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness129", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness13", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(0, 0, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness130", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness131", "seconds": 0.016, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness132", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness133", "seconds": 0.012, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness134", "seconds": 0.018, "before_mb": 653, "peak_mb": 653, "params": "(1, 1, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness135", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness136", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness137", "seconds": 0.008, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness138", "seconds": 0.008, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness139", "seconds": 0.016, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness14", "seconds": 0.013, "before_mb": 653, "peak_mb": 653, "params": "(0, 0, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness140", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness141", "seconds": 0.016, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness142", "seconds": 0.008, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness143", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness144", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness145", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness146", "seconds": 0.019, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness147", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness148", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness149", "seconds": 0.017, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness15", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(0, 0, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness150", "seconds": 0.008, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness151", "seconds": 0.009, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness152", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness153", "seconds": 0.022, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness154", "seconds": 0.01, "before_mb": 653, "peak_mb": 653, "params": "(1, 2, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness155", "seconds": 0.009, "before_mb": 653, "peak_mb": 622, "params": "(1, 2, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness156", "seconds": 0.02, "before_mb": 607, "peak_mb": 607, "params": "(1, 2, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness157", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(1, 2, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness158", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(1, 2, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness159", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(1, 2, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness16", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness160", "seconds": 0.021, "before_mb": 607, "peak_mb": 607, "params": "(1, 2, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness161", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(1, 2, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness162", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness163", "seconds": 0.023, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness164", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness165", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness166", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness167", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness168", "seconds": 0.019, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness169", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness17", "seconds": 0.009, "before_mb": 607, "peak_mb": 606, "params": "(0, 0, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness170", "seconds": 0.02, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness171", "seconds": 0.008, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness172", "seconds": 0.01, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness173", "seconds": 0.01, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness174", "seconds": 0.013, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness175", "seconds": 0.018, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness176", "seconds": 0.011, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness177", "seconds": 0.008, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness178", "seconds": 0.016, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness179", "seconds": 0.01, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness18", "seconds": 0.008, "before_mb": 606, "peak_mb": 606, "params": "(0, 0, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness180", "seconds": 0.012, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness181", "seconds": 0.01, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness182", "seconds": 0.05, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness183", "seconds": 0.018, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness184", "seconds": 0.01, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness185", "seconds": 0.013, "before_mb": 606, "peak_mb": 606, "params": "(2, 0, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness186", "seconds": 0.024, "before_mb": 606, "peak_mb": 607, "params": "(2, 0, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness187", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness188", "seconds": 0.018, "before_mb": 607, "peak_mb": 607, "params": "(2, 0, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness189", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness19", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness190", "seconds": 0.02, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness191", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness192", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness193", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness194", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness195", "seconds": 0.018, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness196", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness197", "seconds": 0.014, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness198", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness199", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness2", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness20", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness200", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness201", "seconds": 0.014, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness202", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness203", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness204", "seconds": 0.02, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness205", "seconds": 0.012, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness206", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness207", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness208", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness209", "seconds": 0.017, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness21", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness210", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness211", "seconds": 0.02, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness212", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness213", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness214", "seconds": 0.015, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness215", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(2, 1, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness216", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness217", "seconds": 0.007, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness218", "seconds": 0.016, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness219", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness22", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness220", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness221", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness222", "seconds": 0.022, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness223", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness224", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness225", "seconds": 0.017, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness226", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness227", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness228", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness229", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness23", "seconds": 0.017, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness230", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness231", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness232", "seconds": 0.018, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness233", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness234", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness235", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness236", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness237", "seconds": 0.018, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness238", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness239", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness24", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness240", "seconds": 0.007, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness241", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness242", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(2, 2, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness25", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness26", "seconds": 0.015, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness27", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness28", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness29", "seconds": 0.021, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness3", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness30", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness31", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness32", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness33", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness34", "seconds": 0.007, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness35", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness36", "seconds": 0.03, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness37", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness38", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness39", "seconds": 0.035, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness4", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness40", "seconds": 0.012, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness41", "seconds": 0.007, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness42", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness43", "seconds": 0.017, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness44", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness45", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness46", "seconds": 0.017, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness47", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness48", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness49", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness5", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness50", "seconds": 0.025, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness51", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness52", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness53", "seconds": 0.016, "before_mb": 607, "peak_mb": 607, "params": "(0, 1, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness54", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness55", "seconds": 0.012, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness56", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness57", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness58", "seconds": 0.023, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness59", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness6", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness60", "seconds": 0.02, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness61", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness62", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness63", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness64", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness65", "seconds": 0.018, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness66", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness67", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness68", "seconds": 0.016, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness69", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness7", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness70", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness71", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness72", "seconds": 0.016, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness73", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 2, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness74", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 2, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness75", "seconds": 0.02, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 2, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness76", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 2, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness77", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 2, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness78", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 2, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness79", "seconds": 0.008, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 2, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness8", "seconds": 0.016, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness80", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(0, 2, 2, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness81", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 0, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness82", "seconds": 0.021, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 0, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness83", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 0, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness84", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 0, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness85", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 0, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness86", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 0, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness87", "seconds": 0.023, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 0, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness88", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 0, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness89", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 0, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness9", "seconds": 0.019, "before_mb": 607, "peak_mb": 607, "params": "(0, 0, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness90", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 1, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness91", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 1, 0, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness92", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 1, 0, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness93", "seconds": 0.009, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 1, 1, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness94", "seconds": 0.018, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 1, 1, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness95", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 1, 1, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness96", "seconds": 0.013, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 1, 2, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness97", "seconds": 0.015, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 1, 2, 1)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness98", "seconds": 0.01, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 1, 2, 2)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness99", "seconds": 0.011, "before_mb": 607, "peak_mb": 607, "params": "(1, 0, 2, 0, 0)"}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_constification_correctness_manually", "seconds": 0.077, "before_mb": 607, "peak_mb": 650}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_loop_fixed_point_with_batched_pred_and_consts", "seconds": 0.136, "before_mb": 650, "peak_mb": 654}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_loop_init_weak_type_dtype=int16", "seconds": 0.061, "before_mb": 654, "peak_mb": 655}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_loop_init_weak_type_dtype=int32", "seconds": 0.022, "before_mb": 655, "peak_mb": 656}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_loop_init_weak_type_dtype=int8", "seconds": 0.053, "before_mb": 656, "peak_mb": 657}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_loop_of_pmap", "seconds": 0.293, "before_mb": 657, "peak_mb": 659}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_loop_of_pmap_error_message", "seconds": 0.047, "before_mb": 659, "peak_mb": 659}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_while_readonly_carry_optimization", "seconds": 0.109, "before_mb": 659, "peak_mb": 662}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::test_xla_cpu_gpu_loop_cond_bug", "seconds": 0.506, "before_mb": 662, "peak_mb": 693}
+{"nodeid": "tests/lax_control_flow_test.py::LaxControlFlowTest::testAssociativeScanSolvingRegressionTest_100", "seconds": 4.218, "before_mb": 93, "peak_mb": 361}

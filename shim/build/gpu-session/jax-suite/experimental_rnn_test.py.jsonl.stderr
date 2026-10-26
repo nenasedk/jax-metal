@@ -1,0 +1,43 @@
+F.                                                                       [100%]
+=================================== FAILURES ===================================
+____________________________ RnnTest.test_lstm_ref0 ____________________________
+/opt/anaconda3/lib/python3.12/contextlib.py:144: in __exit__
+    next(self.gen)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextmanager
+    def assert_global_configs_unchanged():
+      starting_cache = compilation_cache._cache
+      starting_config = config.config.values.copy()
+      yield
+      ending_config = config.config.values
+      ending_cache = compilation_cache._cache
+    
+      if starting_config != ending_config:
+        differing = {k: (starting_config.get(k, NotPresent()), ending_config.get(k, NotPresent()))
+                      for k in (starting_config.keys() | ending_config.keys())
+                      if (k not in starting_config or k not in ending_config
+                          or starting_config[k] != ending_config[k])}
+>       raise AssertionError(f"Test changed global config values. Differing values are: {differing}")
+E       AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1209: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Metal device set to: Apple M3
+----------------------------- Captured stderr call -----------------------------
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793045200.358086 1357395 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+I0000 00:00:1793045200.369970 1357395 service.cc:145] XLA service 0x6000030b0e00 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793045200.369982 1357395 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793045200.370903 1357395 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793045200.370913 1357395 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+------------------------------ Captured log call -------------------------------
+WARNING  jax._src.xla_bridge:xla_bridge.py:932 Platform 'METAL' is experimental and not all JAX functionality may be correctly supported!
+=========================== short test summary info ============================
+FAILED tests/experimental_rnn_test.py::RnnTest::test_lstm_ref0 - AssertionErr...
+1 failed, 1 passed, 20 deselected in 7.66s
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793045207.568552 1357395 mps_client.h:209] MetalClient destroyed.

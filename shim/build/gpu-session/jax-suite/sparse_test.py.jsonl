@@ -1,0 +1,464 @@
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat_layout", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_sorted_indices", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_sorted_indices_gpu_lowerings", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense1", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 1 / 9 (11.1%)\nMismatch at index:\n [0]: 7 (ACTUAL), 0 (DESIRED)\nMax absolute difference among violations: 7\nMax relative difference among violations: inf\n ACTUAL: array([ 7,  2,  4,  6,  8, 11, 13, 18, 20], dtype=int32)\n DESIRED: array([ 0,  2,  4,  6,  8, 11, 13, 18, 20], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense4", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 1 / 9 (11.1%)\nMismatch at index:\n [0]: 6 (ACTUAL), 0 (DESIRED)\nMax absolute difference among violations: 6\nMax relative difference among violations: inf\n ACTUAL: array([ 6,  3,  6,  9, 12, 14, 15, 17, 20], dtype=int32)\n DESIRED: array([ 0,  3,  6,  9, 12, 14, 15, 17, 20], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense6", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 1 / 9 (11.1%)\nMismatch at index:\n [0]: 2 (ACTUAL), 0 (DESIRED)\nMax absolute difference among violations: 2\nMax relative difference among violations: inf\n ACTUAL: array([ 2,  1,  2,  4,  6,  8, 10, 13, 14], dtype=int32)\n DESIRED: array([ 0,  1,  2,  4,  6,  8, 10, 13, 14], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad0", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 9 / 40 (22.5%)\nFirst 5 mismatches are at indices:\n [0, 0]: 4.614100456237793 (ACTUAL), -5.8611860275268555 (DESIRED)\n [0, 2]: 0.0 (ACTUAL), -3.430023431777954 (DESIRED)\n [0, 3]: 0.0 (ACTUAL), 1.7697581052780151 (DESIRED)\n [1, 0]: 0.0 (ACTUAL), 4.614100456237793 (DESIRED)\n [1, 1]: -2.3020946979522705 (ACTUAL), 0.0 (DESIRED)\nMax absolute difference among violations: 10.4752865\nMax relative difference among violations: 1.7872298\n ACTUAL: a"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad1", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 9 / 40 (22.5%)\nFirst 5 mismatches are at indices:\n [0, 0]: (0.07240480929613113+2.8675005435943604j) (ACTUAL), (-0.3473750352859497+0.21200799942016602j) (DESIRED)\n [0, 1]: (2.9806437492370605+4.105660438537598j) (ACTUAL), 0j (DESIRED)\n [0, 4]: (1.4476406574249268-1.720911979675293j) (ACTUAL), (0.355532169342041-2.5900492668151855j) (DESIRED)\n [1, 0]: (-1.2311803102493286+3.957501173019409j) (ACTUAL), (0.07240480929613113+2.867500543594"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad2", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 5 / 6 (83.3%)\nMismatch at indices:\n [1]: 8 (ACTUAL), 23 (DESIRED)\n [2]: 15 (ACTUAL), 30 (DESIRED)\n [3]: 32 (ACTUAL), 116 (DESIRED)\n [4]: 35 (ACTUAL), 119 (DESIRED)\n [5]: 57 (ACTUAL), 326 (DESIRED)\nMax absolute difference among violations: 269\nMax relative difference among violations: 0.82515337\n ACTUAL: array([ 0,  8, 15, 32, 35, 57], dtype=int32)\n DESIRED: array([  0,  23,  30, 116, 119, 326], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad4", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 5 / 6 (83.3%)\nMismatch at indices:\n [1]: 2 (ACTUAL), 8 (DESIRED)\n [2]: 4 (ACTUAL), 10 (DESIRED)\n [3]: 7 (ACTUAL), 40 (DESIRED)\n [4]: 9 (ACTUAL), 42 (DESIRED)\n [5]: 12 (ACTUAL), 110 (DESIRED)\nMax absolute difference among violations: 98\nMax relative difference among violations: 0.89090909\n ACTUAL: array([ 0,  2,  4,  7,  9, 12], dtype=int32)\n DESIRED: array([  0,   8,  10,  40,  42, 110], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad5", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 5 / 6 (83.3%)\nMismatch at indices:\n [1]: 7 (ACTUAL), 19 (DESIRED)\n [2]: 8 (ACTUAL), 20 (DESIRED)\n [3]: 26 (ACTUAL), 89 (DESIRED)\n [4]: 32 (ACTUAL), 95 (DESIRED)\n [5]: 56 (ACTUAL), 282 (DESIRED)\nMax absolute difference among violations: 226\nMax relative difference among violations: 0.80141844\n ACTUAL: array([ 0,  7,  8, 26, 32, 56], dtype=int32)\n DESIRED: array([  0,  19,  20,  89,  95, 282], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad7", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 5 / 6 (83.3%)\nMismatch at indices:\n [1]: 5 (ACTUAL), 11 (DESIRED)\n [2]: 6 (ACTUAL), 12 (DESIRED)\n [3]: 16 (ACTUAL), 55 (DESIRED)\n [4]: 19 (ACTUAL), 58 (DESIRED)\n [5]: 34 (ACTUAL), 174 (DESIRED)\nMax absolute difference among violations: 140\nMax relative difference among violations: 0.8045977\n ACTUAL: array([ 0,  5,  6, 16, 19, 34], dtype=int32)\n DESIRED: array([  0,  11,  12,  55,  58, 174], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad2", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 21 / 24 (87.5%)\nFirst 5 mismatches are at indices:\n [0, 0]: (1.6166877746582031+26.98288345336914j) (ACTUAL), (1.5074214935302734+28.932798385620117j) (DESIRED)\n [0, 1]: (2.3098769187927246-7.415782928466797j) (ACTUAL), (-44.89370346069336+9.783085823059082j) (DESIRED)\n [0, 2]: (-4.474722385406494+4.863454818725586j) (ACTUAL), (-12.001994132995605-5.424903869628906j) (DESIRED)\n [1, 0]: (-33.296104431152344+12.05"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad4", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 8 / 8 (100%)\nFirst 5 mismatches are at indices:\n [0]: (0.45963478088378906+20.49913787841797j) (ACTUAL), (-45.602622985839844+34.6550407409668j) (DESIRED)\n [1]: (-34.309452056884766+8.497865676879883j) (ACTUAL), (-15.535167694091797-4.998055458068848j) (DESIRED)\n [2]: (48.01663589477539-22.584747314453125j) (ACTUAL), (43.683677673339844-25.38629913330078j) (DESIRED)\n [3]: (-9.839277267456055-22.50946044921875j) "}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad5", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 4 / 5 (80%)\nMismatch at indices:\n [0, 0]: (-32.60564422607422+30.85116195678711j) (ACTUAL), (-38.59381866455078-10.769506454467773j) (DESIRED)\n [2, 0]: (-7.930314064025879-12.960277557373047j) (ACTUAL), (-6.828047752380371-11.137175559997559j) (DESIRED)\n [3, 0]: (13.379532814025879+61.884796142578125j) (ACTUAL), (12.308324813842773+14.318331718444824j) (DESIRED)\n [4, 0]: (11.933029174804688+28.990467071533203j) "}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad9", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 8 / 8 (100%)\nFirst 5 mismatches are at indices:\n [0, 0]: (8.408867835998535-0.3446875810623169j) (ACTUAL), (-0.436190128326416-27.26529312133789j) (DESIRED)\n [1, 0]: (-3.9536571502685547+23.600130081176758j) (ACTUAL), (12.153139114379883+46.86081314086914j) (DESIRED)\n [2, 0]: (-10.388482093811035+3.1067280769348145j) (ACTUAL), (19.847496032714844+38.58722686767578j) (DESIRED)\n [3, 0]: (5.593258857727051+1.780002"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec7", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 3 / 5 (60%)\nMismatch at indices:\n [0]: -6 (ACTUAL), -4 (DESIRED)\n [2]: 0 (ACTUAL), 5 (DESIRED)\n [4]: 0 (ACTUAL), 8 (DESIRED)\nMax absolute difference among violations: 8\nMax relative difference among violations: 1.\n ACTUAL: array([-6, -5,  0,  0,  0], dtype=int32)\n DESIRED: array([-4, -5,  5,  0,  8], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad0", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 1 / 40 (2.5%)\nMismatch at index:\n [7, 1]: 2.0 (ACTUAL), 1.0 (DESIRED)\nMax absolute difference among violations: 1.\nMax relative difference among violations: 1.\n ACTUAL: array([[1., 1., 0., 0., 0.],\n       [0., 1., 0., 0., 1.],\n       [0., 0., 0., 0., 0.],...\n DESIRED: array([[1., 1., 0., 0., 0.],\n       [0., 1., 0., 0., 1.],\n       [0., 0., 0., 0., 0.],..."}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad1", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 1 / 40 (2.5%)\nMismatch at index:\n [7, 0]: (2+0j) (ACTUAL), (1+0j) (DESIRED)\nMax absolute difference among violations: 1.\nMax relative difference among violations: 1.\n ACTUAL: array([[0.+0.j, 1.+0.j, 0.+0.j, 0.+0.j, 1.+0.j],\n       [0.+0.j, 0.+0.j, 1.+0.j, 0.+0.j, 0.+0.j],\n       [0.+0.j, 0.+0.j, 0.+0.j, 1.+0.j, 1.+0.j],...\n DESIRED: array([[0.+0.j, 1.+0.j, 0.+0.j, 0.+0.j, 1.+0.j],\n       [0.+0.j, 0.+0.j, 1.+0.j, 0.+0.j, 0.+0.j],\n       "}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad2", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 7 / 40 (17.5%)\nFirst 5 mismatches are at indices:\n [0, 0]: 2.0 (ACTUAL), 1.0 (DESIRED)\n [0, 1]: 3.0 (ACTUAL), 1.0 (DESIRED)\n [0, 3]: 2.0 (ACTUAL), 1.0 (DESIRED)\n [0, 4]: 4.0 (ACTUAL), 1.0 (DESIRED)\n [0, 5]: 3.0 (ACTUAL), 1.0 (DESIRED)\nMax absolute difference among violations: 3.\nMax relative difference among violations: 3.\n ACTUAL: array([[2., 3., 1., 2., 4., 3., 2., 3.],\n       [0., 0., 0., 0., 0., 0., 0., 0.],\n       [0., 0., 0., 0., "}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad4", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 3 / 25 (12%)\nMismatch at indices:\n [0, 1]: 4.0 (ACTUAL), 1.0 (DESIRED)\n [0, 2]: 3.0 (ACTUAL), 1.0 (DESIRED)\n [0, 4]: 2.0 (ACTUAL), 1.0 (DESIRED)\nMax absolute difference among violations: 3.\nMax relative difference among violations: 3.\n ACTUAL: array([[0., 4., 3., 1., 2.],\n       [0., 0., 0., 1., 1.],\n       [0., 0., 0., 0., 0.],...\n DESIRED: array([[0., 1., 1., 1., 1.],\n       [0., 0., 0., 1., 1.],\n       [0., 0., 0., 0., 0.],..."}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad5", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 6 / 40 (15%)\nFirst 5 mismatches are at indices:\n [0, 0]: (2+0j) (ACTUAL), (1+0j) (DESIRED)\n [0, 1]: (4+0j) (ACTUAL), (1+0j) (DESIRED)\n [0, 2]: (3+0j) (ACTUAL), (1+0j) (DESIRED)\n [0, 3]: (3+0j) (ACTUAL), (1+0j) (DESIRED)\n [0, 4]: (2+0j) (ACTUAL), (1+0j) (DESIRED)\nMax absolute difference among violations: 3.\nMax relative difference among violations: 3.\n ACTUAL: array([[2.+0.j, 4.+0.j, 3.+0.j, 3.+0.j, 2.+0.j, 1.+0.j, 1.+0.j, 4.+0.j],\n     "}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad7", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 3 / 25 (12%)\nMismatch at indices:\n [0, 0]: (3+0j) (ACTUAL), (1+0j) (DESIRED)\n [0, 2]: (4+0j) (ACTUAL), (1+0j) (DESIRED)\n [0, 4]: (3+0j) (ACTUAL), (1+0j) (DESIRED)\nMax absolute difference among violations: 3.\nMax relative difference among violations: 3.\n ACTUAL: array([[3.+0.j, 1.+0.j, 4.+0.j, 1.+0.j, 3.+0.j],\n       [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],\n       [0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j, 0.+0.j],...\n DESIRED: array([[1.+0.j, 1."}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_bcoo_dot_general_vmap_matvec_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_grad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_grad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_value_and_grad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_value_and_grad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_BCSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_CSC", "outcome": "failed", "message": "AssertionError: 20 != Array(19, dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_CSR", "outcome": "failed", "message": "AssertionError: 20 != Array(8, dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_methods", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip0", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 3 / 4 (75%)\nMismatch at indices:\n [1]: 8 (ACTUAL), 4 (DESIRED)\n [2]: 12 (ACTUAL), 8 (DESIRED)\n [3]: 28 (ACTUAL), 12 (DESIRED)\nMax absolute difference among violations: 16\nMax relative difference among violations: 1.33333333\n ACTUAL: array([ 0,  8, 12, 28], dtype=int32)\n DESIRED: array([ 0,  4,  8, 12], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip1", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 3 / 4 (75%)\nMismatch at indices:\n [1]: 8 (ACTUAL), 4 (DESIRED)\n [2]: 12 (ACTUAL), 8 (DESIRED)\n [3]: 28 (ACTUAL), 12 (DESIRED)\nMax absolute difference among violations: 16\nMax relative difference among violations: 1.33333333\n ACTUAL: array([ 0,  8, 12, 28], dtype=int32)\n DESIRED: array([ 0,  4,  8, 12], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip2", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 5 / 6 (83.3%)\nMismatch at indices:\n [1]: 8 (ACTUAL), 4 (DESIRED)\n [2]: 13 (ACTUAL), 9 (DESIRED)\n [3]: 32 (ACTUAL), 14 (DESIRED)\n [4]: 36 (ACTUAL), 18 (DESIRED)\n [5]: 58 (ACTUAL), 20 (DESIRED)\nMax absolute difference among violations: 38\nMax relative difference among violations: 1.9\n ACTUAL: array([ 0,  8, 13, 32, 36, 58], dtype=int32)\n DESIRED: array([ 0,  4,  9, 14, 18, 20], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip6", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 3 / 4 (75%)\nMismatch at indices:\n [1]: 8 (ACTUAL), 4 (DESIRED)\n [2]: 12 (ACTUAL), 8 (DESIRED)\n [3]: 28 (ACTUAL), 12 (DESIRED)\nMax absolute difference among violations: 16\nMax relative difference among violations: 1.33333333\n ACTUAL: array([ 0,  8, 12, 28], dtype=int32)\n DESIRED: array([ 0,  4,  8, 12], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip9", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 3 / 4 (75%)\nMismatch at indices:\n [1]: 8 (ACTUAL), 4 (DESIRED)\n [2]: 12 (ACTUAL), 8 (DESIRED)\n [3]: 28 (ACTUAL), 12 (DESIRED)\nMax absolute difference among violations: 16\nMax relative difference among violations: 1.33333333\n ACTUAL: array([ 0,  8, 12, 28], dtype=int32)\n DESIRED: array([ 0,  4,  8, 12], dtype=int32)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_CSC", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_CSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip0", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 10 / 40 (25%)\nFirst 5 mismatches are at indices:\n [0, 0]: -5.066697597503662 (ACTUAL), 0.0 (DESIRED)\n [0, 1]: 3.9242730140686035 (ACTUAL), -5.019702434539795 (DESIRED)\n [0, 2]: 2.1289162635803223 (ACTUAL), 2.6240804195404053 (DESIRED)\n [0, 3]: 0.0 (ACTUAL), -4.1150126457214355 (DESIRED)\n [1, 1]: -5.019702434539795 (ACTUAL), 0.0 (DESIRED)\nMax absolute difference among violations: 8.943975\nMax relative difference among violations: 3.81059"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip1", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 13 / 40 (32.5%)\nFirst 5 mismatches are at indices:\n [0, 1]: (-1.986739158630371-0.7116212844848633j) (ACTUAL), (2.2639048099517822+0.15320393443107605j) (DESIRED)\n [0, 3]: (-1.7553329467773438+2.1827025413513184j) (ACTUAL), (5.132676124572754-0.1857256144285202j) (DESIRED)\n [1, 1]: (2.2639048099517822+0.15320393443107605j) (ACTUAL), (4.187034606933594+0.6294752955436707j) (DESIRED)\n [1, 2]: 0j (ACTUAL), (1.4814929962158203-9.93975639343"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip10", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 8 / 40 (20%)\nFirst 5 mismatches are at indices:\n [0, 0]: -2.6974215507507324 (ACTUAL), -0.2597199082374573 (DESIRED)\n [0, 1]: -0.2597199082374573 (ACTUAL), 0.0 (DESIRED)\n [0, 7]: -3.94260835647583 (ACTUAL), -6.6400299072265625 (DESIRED)\n [1, 0]: -5.623569488525391 (ACTUAL), -0.0725235790014267 (DESIRED)\n [1, 1]: -0.0725235790014267 (ACTUAL), 0.0 (DESIRED)\nMax absolute difference among violations: 5.6235695\nMax relative difference among "}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip11", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip12", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip13", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 8 / 40 (20%)\nFirst 5 mismatches are at indices:\n [0, 0]: (-0.6552907824516296+3.502187490463257j) (ACTUAL), (3.526322841644287-1.1319279670715332j) (DESIRED)\n [0, 1]: (3.526322841644287-1.1319279670715332j) (ACTUAL), 0j (DESIRED)\n [0, 7]: 0j (ACTUAL), (-0.6552907824516296+3.502187490463257j) (DESIRED)\n [1, 0]: (3.3018133640289307+2.4021413326263428j) (ACTUAL), 0j (DESIRED)\n [1, 7]: 0j (ACTUAL), (3.3018133640289307+2.4021413326263428j) ("}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip14", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip15", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip17", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip18", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip19", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip2", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 23 / 40 (57.5%)\nFirst 5 mismatches are at indices:\n [0, 1]: -0.2840239405632019 (ACTUAL), -3.8908040523529053 (DESIRED)\n [0, 3]: -1.087141990661621 (ACTUAL), -0.8432644605636597 (DESIRED)\n [0, 4]: -5.755178451538086 (ACTUAL), -4.856621265411377 (DESIRED)\n [0, 6]: -4.564999580383301 (ACTUAL), -5.1628947257995605 (DESIRED)\n [0, 7]: 0.0 (ACTUAL), 0.012324209325015545 (DESIRED)\nMax absolute difference among violations: 6.586025\nMax relative"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip20", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip21", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip22", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip23", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip24", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip25", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip26", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip27", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip28", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip29", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip31", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip4", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 15 / 25 (60%)\nFirst 5 mismatches are at indices:\n [0, 2]: 0.0 (ACTUAL), -2.7237765789031982 (DESIRED)\n [0, 3]: -5.209625720977783 (ACTUAL), -5.947714328765869 (DESIRED)\n [0, 4]: 2.0633304119110107 (ACTUAL), 6.440486907958984 (DESIRED)\n [1, 3]: -0.7380884289741516 (ACTUAL), -2.956409215927124 (DESIRED)\n [1, 4]: 4.3771562576293945 (ACTUAL), -5.212093830108643 (DESIRED)\nMax absolute difference among violations: 9.589251\nMax relative differ"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip7", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 4 / 25 (16%)\nMismatch at indices:\n [2, 2]: (-1.087439775466919+0.9510051012039185j) (ACTUAL), (3.2751080989837646+2.008574962615967j) (DESIRED)\n [2, 3]: (-1.1625738143920898-2.347337007522583j) (ACTUAL), (0.31040334701538086-8.050119400024414j) (DESIRED)\n [3, 2]: (4.362547874450684+1.0575698614120483j) (ACTUAL), 0j (DESIRED)\n [4, 3]: (1.4729771614074707-5.702782154083252j) (ACTUAL), 0j (DESIRED)\nMax absolute difference among violations:"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip8", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 30 / 40 (75%)\nFirst 5 mismatches are at indices:\n [0, 0]: 0.0 (ACTUAL), -2.2356085777282715 (DESIRED)\n [0, 2]: -2.2356085777282715 (ACTUAL), 0.0 (DESIRED)\n [1, 0]: 0.0 (ACTUAL), 0.23877763748168945 (DESIRED)\n [1, 1]: -0.8767815828323364 (ACTUAL), -0.8384513258934021 (DESIRED)\n [1, 3]: 1.1155592203140259 (ACTUAL), 0.0 (DESIRED)\nMax absolute difference among violations: 8.850229\nMax relative difference among violations: 10.335238\n ACTUAL:"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip9", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 26 / 40 (65%)\nFirst 5 mismatches are at indices:\n [0, 0]: (-3.7456624507904053+0.5144711136817932j) (ACTUAL), (-5.577765941619873+2.5891034603118896j) (DESIRED)\n [0, 1]: (-1.8321033716201782+2.074632406234741j) (ACTUAL), 0j (DESIRED)\n [1, 2]: 0j (ACTUAL), (0.4315969944000244-1.231459379196167j) (DESIRED)\n [1, 4]: (0.4315969944000244-1.231459379196167j) (ACTUAL), 0j (DESIRED)\n [2, 0]: 0j (ACTUAL), (0.2646961212158203+9.252732276916504j) "}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_BCOO[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_BCOO[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_COO[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_COO[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSC[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSC[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSR[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSR[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_0_BCOO[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_0_BCOO[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_2_BCOO[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_2_BCOO[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, 3, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, None, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, 3, -2)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, 3, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, None, -2)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, None, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, 3, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, None, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, 3, -2)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, 3, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, None, -2)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, None, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, 3, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, None, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, 3, -2)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, 3, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, None, -2)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, None, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, 3, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, None, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, 3, -2)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, 3, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, None, -2)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, None, 1)", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_CSC", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_CSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul1", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 15 / 24 (62.5%)\nFirst 5 mismatches are at indices:\n [0, 0]: (-7.100524425506592+27.848613739013672j) (ACTUAL), (-40.64740753173828-10.120353698730469j) (DESIRED)\n [0, 1]: (0.03317323327064514+2.0641677379608154j) (ACTUAL), (-8.128446578979492-0.7969932556152344j) (DESIRED)\n [0, 2]: (9.286460876464844-12.251359939575195j) (ACTUAL), (23.798114776611328+6.4851884841918945j) (DESIRED)\n [1, 0]: (-40.64740753173828-10"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul10", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 20 / 20 (100%)\nFirst 5 mismatches are at indices:\n [0, 0]: -14.783864974975586 (ACTUAL), 7.936121940612793 (DESIRED)\n [0, 1]: 37.04608917236328 (ACTUAL), -2.8319592475891113 (DESIRED)\n [0, 2]: 40.93822479248047 (ACTUAL), -6.048291206359863 (DESIRED)\n [0, 3]: -2.339710235595703 (ACTUAL), -4.707881450653076 (DESIRED)\n [1, 0]: 0.6494211554527283 (ACTUAL), -4.448765754699707 (DESIRED)\nMax absolute difference among v"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul11", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul12", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 5 / 5 (100%)\nMismatch at indices:\n [0]: -29.13681983947754 (ACTUAL), 9.13967514038086 (DESIRED)\n [1]: 14.07278823852539 (ACTUAL), 9.20732593536377 (DESIRED)\n [2]: -7.975528240203857 (ACTUAL), -8.653480529785156 (DESIRED)\n [3]: 30.688819885253906 (ACTUAL), 18.690296173095703 (DESIRED)\n [4]: -2.1962122917175293 (ACTUAL), 4.571167469024658 (DESIRED)\nMax absolute difference among violations: 38.276497\nMax relative d"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul13", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul14", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul15", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul16", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 9 / 15 (60%)\nFirst 5 mismatches are at indices:\n [0, 0]: (-2.2831573486328125-3.685304641723633j) (ACTUAL), (13.488275527954102+5.055866718292236j) (DESIRED)\n [0, 1]: (4.245805263519287-2.4329071044921875j) (ACTUAL), (3.2172486782073975-26.15369415283203j) (DESIRED)\n [0, 2]: (24.5301513671875+43.617774963378906j) (ACTUAL), (-6.869795322418213+19.530588150024414j) (DESIRED)\n [2, 0]: (-26.23401641845703+22.6705493"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul17", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 12 / 15 (80%)\nFirst 5 mismatches are at indices:\n [1, 0]: 14.04194450378418 (ACTUAL), 24.962453842163086 (DESIRED)\n [1, 1]: 3.580702304840088 (ACTUAL), -2.820444345474243 (DESIRED)\n [1, 2]: -9.690990447998047 (ACTUAL), -4.3400397300720215 (DESIRED)\n [2, 0]: 20.984615325927734 (ACTUAL), 30.434715270996094 (DESIRED)\n [2, 1]: 6.411346912384033 (ACTUAL), 5.115629196166992 (DESIRED)\nMax absolute difference among viol"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul18", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul19", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul2", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 5 / 5 (100%)\nMismatch at indices:\n [0]: 13.852785110473633 (ACTUAL), 10.073871612548828 (DESIRED)\n [1]: -4.014683246612549 (ACTUAL), 39.81144332885742 (DESIRED)\n [2]: 40.047210693359375 (ACTUAL), -11.342594146728516 (DESIRED)\n [3]: -8.45630168914795 (ACTUAL), 0.0 (DESIRED)\n [4]: -2.8862924575805664 (ACTUAL), 0.0 (DESIRED)\nMax absolute difference among violations: 51.389805\nMax relative difference among violation"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul20", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul21", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul22", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul23", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul24", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul25", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul26", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul27", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul28", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul29", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul3", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 5 / 5 (100%)\nMismatch at indices:\n [0]: (7.087191104888916+14.36795425415039j) (ACTUAL), (15.328351974487305+17.854106903076172j) (DESIRED)\n [1]: (8.241161346435547+3.4861531257629395j) (ACTUAL), (0.0574173629283905+25.06379508972168j) (DESIRED)\n [2]: (15.188337326049805+34.84649658203125j) (ACTUAL), (-4.984219551086426-7.5883378982543945j) (DESIRED)\n [3]: (-0.6121118068695068-0.193159818649292j) (ACTUAL), 0j (D"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul31", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul32", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul33", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul34", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul35", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul36", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul37", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul38", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul39", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul6", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 15 / 15 (100%)\nFirst 5 mismatches are at indices:\n [0, 0]: (2.197174549102783+8.370010375976562j) (ACTUAL), (4.510982990264893+30.623756408691406j) (DESIRED)\n [0, 1]: (-0.22964048385620117-26.98265838623047j) (ACTUAL), (-43.68953323364258+0.4761335849761963j) (DESIRED)\n [0, 2]: (1.278597116470337+4.608933448791504j) (ACTUAL), (-23.668441772460938+21.1094970703125j) (DESIRED)\n [1, 0]: (1.5479192733764648+9.677766"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul7", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 15 / 15 (100%)\nFirst 5 mismatches are at indices:\n [0, 0]: 11.02682113647461 (ACTUAL), 10.3367919921875 (DESIRED)\n [0, 1]: 19.286094665527344 (ACTUAL), 64.1197509765625 (DESIRED)\n [0, 2]: 9.50490951538086 (ACTUAL), 21.78005027770996 (DESIRED)\n [1, 0]: -2.9655368328094482 (ACTUAL), -21.970462799072266 (DESIRED)\n [1, 1]: -8.352889060974121 (ACTUAL), -2.7494349479675293 (DESIRED)\nMax absolute difference among viola"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul9", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 16 / 32 (50%)\nFirst 5 mismatches are at indices:\n [0, 0]: -1.9298748970031738 (ACTUAL), -30.268871307373047 (DESIRED)\n [0, 1]: 0.0005519745172932744 (ACTUAL), 17.143705368041992 (DESIRED)\n [0, 2]: 3.418639898300171 (ACTUAL), -9.198936462402344 (DESIRED)\n [0, 3]: -2.0797953605651855 (ACTUAL), -1.6561393737792969 (DESIRED)\n [1, 0]: -30.26887321472168 (ACTUAL), 34.702816009521484 (DESIRED)\nMax absolute difference a"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_BCSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_CSC", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_CSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_CSC", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 11 / 40 (27.5%)\nFirst 5 mismatches are at indices:\n [1, 0]: 10.667434692382812 (ACTUAL), 0.0 (DESIRED)\n [1, 1]: 0.0 (ACTUAL), 10.667434692382812 (DESIRED)\n [2, 0]: -1.9525846242904663 (ACTUAL), -1.5933632850646973 (DESIRED)\n [2, 1]: -2.139615058898926 (ACTUAL), -1.9525846242904663 (DESIRED)\n [2, 2]: 0.0 (ACTUAL), -2.139615058898926 (DESIRED)\nMax absolute difference among violations: 10.667435\nMax relative difference among violations: 6."}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_CSR", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 24 / 40 (60%)\nFirst 5 mismatches are at indices:\n [0, 0]: -3.1069629192352295 (ACTUAL), 3.1028072834014893 (DESIRED)\n [0, 1]: -0.2966967821121216 (ACTUAL), -1.6055117845535278 (DESIRED)\n [0, 2]: -2.224411964416504 (ACTUAL), 1.0495543479919434 (DESIRED)\n [0, 3]: 0.4703633487224579 (ACTUAL), 0.0 (DESIRED)\n [0, 4]: 0.2525557279586792 (ACTUAL), 0.0 (DESIRED)\nMax absolute difference among violations: 6.20977\nMax relative difference among vio"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_ad_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_ad_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_batching_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_batching_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_scalar", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose0", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 18 / 40 (45%)\nFirst 5 mismatches are at indices:\n [0, 2]: 0.0 (ACTUAL), -0.9314272403717041 (DESIRED)\n [0, 3]: -0.9314272403717041 (ACTUAL), 0.0 (DESIRED)\n [1, 2]: 0.0 (ACTUAL), 1.2898504734039307 (DESIRED)\n [1, 3]: 1.2898504734039307 (ACTUAL), 4.10979700088501 (DESIRED)\n [1, 4]: 4.10979700088501 (ACTUAL), 0.0 (DESIRED)\nMax absolute difference among violations: 6.1429033\nMax relative difference among violations: 1.5094198\n ACTUAL: array"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose1", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 10 / 40 (25%)\nFirst 5 mismatches are at indices:\n [0, 0]: (3.0384836196899414+0.6510893702507019j) (ACTUAL), 0j (DESIRED)\n [0, 7]: (-3.141084671020508-4.256108283996582j) (ACTUAL), (-0.1026010513305664-3.6050188541412354j) (DESIRED)\n [1, 0]: 0j (ACTUAL), (3.1928186416625977-2.047747850418091j) (DESIRED)\n [1, 1]: (3.1928186416625977-2.047747850418091j) (ACTUAL), 0j (DESIRED)\n [2, 0]: (-3.080713987350464+1.6892695426940918j) (ACTUAL), (3."}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose10", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 6 / 40 (15%)\nFirst 5 mismatches are at indices:\n [0, 0]: -3.5572779178619385 (ACTUAL), 0.0 (DESIRED)\n [0, 1]: -0.9170448184013367 (ACTUAL), 0.0 (DESIRED)\n [0, 2]: 2.93633770942688 (ACTUAL), 0.0 (DESIRED)\n [7, 0]: 2.923715353012085 (ACTUAL), -0.6335625648498535 (DESIRED)\n [7, 1]: 0.0 (ACTUAL), -0.9170448184013367 (DESIRED)\nMax absolute difference among violations: 3.557278\nMax relative difference among violations: 19.408035\n ACTUAL: arra"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose11", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose12", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 17 / 25 (68%)\nFirst 5 mismatches are at indices:\n [0, 0]: 0.0 (ACTUAL), 2.20773983001709 (DESIRED)\n [0, 2]: 0.0 (ACTUAL), 1.1734683513641357 (DESIRED)\n [0, 4]: 0.0 (ACTUAL), 5.291583061218262 (DESIRED)\n [1, 1]: 0.0 (ACTUAL), 3.2280197143554688 (DESIRED)\n [1, 2]: 3.878734588623047 (ACTUAL), 0.0 (DESIRED)\nMax absolute difference among violations: 5.291583\nMax relative difference among violations: 2.5476334\n ACTUAL: array([[ 0.      ,  0. "}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose13", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 14 / 40 (35%)\nFirst 5 mismatches are at indices:\n [0, 0]: 0j (ACTUAL), (-0.5993897914886475-0.04761433228850365j) (DESIRED)\n [0, 1]: 0j (ACTUAL), (-5.080883026123047-2.0941944122314453j) (DESIRED)\n [0, 3]: 0j (ACTUAL), (-0.41826561093330383+0.43125227093696594j) (DESIRED)\n [0, 4]: (3.841482162475586-2.311695098876953j) (ACTUAL), (-0.7061101198196411+1.2257575988769531j) (DESIRED)\n [1, 0]: (-0.5993897914886475-0.04761433228850365j) (ACTU"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose14", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose15", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 13 / 25 (52%)\nFirst 5 mismatches are at indices:\n [0, 1]: (2.6237149238586426-3.7883973121643066j) (ACTUAL), (-2.4988393783569336-3.4743969440460205j) (DESIRED)\n [0, 2]: (2.6382761001586914+3.273314952850342j) (ACTUAL), (4.059176921844482+2.290915012359619j) (DESIRED)\n [1, 1]: (-4.0960235595703125+0.3538494408130646j) (ACTUAL), 0j (DESIRED)\n [1, 2]: (1.4209009408950806-0.9823998808860779j) (ACTUAL), (-0.46526241302490234+0.2791609764099"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose17", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose18", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose19", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose2", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 24 / 40 (60%)\nFirst 5 mismatches are at indices:\n [0, 0]: 0.0 (ACTUAL), -5.88421106338501 (DESIRED)\n [0, 1]: -0.6200429201126099 (ACTUAL), 0.0 (DESIRED)\n [0, 3]: -3.5643868446350098 (ACTUAL), 0.0 (DESIRED)\n [0, 4]: -1.6997812986373901 (ACTUAL), 0.0 (DESIRED)\n [1, 0]: -1.1540043354034424 (ACTUAL), 2.2672524452209473 (DESIRED)\nMax absolute difference among violations: 10.624807\nMax relative difference among violations: 1.508988\n ACTUAL: a"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose20", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose21", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose22", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose23", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose24", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose25", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose26", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose27", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose28", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose29", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose31", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose4", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 16 / 25 (64%)\nFirst 5 mismatches are at indices:\n [0, 0]: 0.0 (ACTUAL), -5.500011444091797 (DESIRED)\n [0, 1]: -3.272347927093506 (ACTUAL), 0.0 (DESIRED)\n [0, 2]: -3.5047175884246826 (ACTUAL), 0.0 (DESIRED)\n [0, 3]: 1.2770540714263916 (ACTUAL), 0.0 (DESIRED)\n [1, 0]: 0.0 (ACTUAL), 0.7493394613265991 (DESIRED)\nMax absolute difference among violations: 5.5000114\nMax relative difference among violations: 1.303792\n ACTUAL: array([[ 0.      ,"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose5", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 29 / 40 (72.5%)\nFirst 5 mismatches are at indices:\n [0, 0]: (1.373424768447876+5.594462871551514j) (ACTUAL), (1.5772238969802856+9.359752655029297j) (DESIRED)\n [0, 2]: (0.20379909873008728+3.765289783477783j) (ACTUAL), (5.546637535095215-1.671343207359314j) (DESIRED)\n [0, 4]: (5.546637535095215-1.671343207359314j) (ACTUAL), 0j (DESIRED)\n [1, 0]: (0.6347787976264954-0.34220269322395325j) (ACTUAL), (-0.6526892781257629-3.600926399230957j)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose7", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 15 / 25 (60%)\nFirst 5 mismatches are at indices:\n [0, 0]: (-3.420663595199585-3.1116931438446045j) (ACTUAL), (-10.667773246765137-1.239408016204834j) (DESIRED)\n [0, 1]: (-4.528659820556641+4.38402795791626j) (ACTUAL), (-12.133594512939453+0.8197438716888428j) (DESIRED)\n [0, 2]: (-2.718449592590332-2.5117428302764893j) (ACTUAL), 0j (DESIRED)\n [0, 3]: (-6.526648998260498+2.0809688568115234j) (ACTUAL), 0j (DESIRED)\n [0, 4]: (-5.60694503784"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose8", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 26 / 40 (65%)\nFirst 5 mismatches are at indices:\n [0, 0]: 0.0 (ACTUAL), 4.1496710777282715 (DESIRED)\n [0, 1]: 0.0 (ACTUAL), -1.5722908973693848 (DESIRED)\n [0, 2]: 0.0 (ACTUAL), 4.180695056915283 (DESIRED)\n [0, 3]: 4.47660493850708 (ACTUAL), -1.7363967895507812 (DESIRED)\n [0, 4]: 0.0 (ACTUAL), -2.982382297515869 (DESIRED)\nMax absolute difference among violations: 8.308783\nMax relative difference among violations: 3.5781002\n ACTUAL: array"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose9", "outcome": "failed", "message": "AssertionError: \nArrays are not equal\n\nMismatched elements: 24 / 40 (60%)\nFirst 5 mismatches are at indices:\n [0, 1]: (-7.348999977111816+4.928378105163574j) (ACTUAL), (-7.182426452636719+5.164773464202881j) (DESIRED)\n [0, 3]: (-1.2629361152648926-9.460254669189453j) (ACTUAL), (4.4856462478637695-14.94756031036377j) (DESIRED)\n [0, 4]: (0.7204515933990479+5.166444778442383j) (ACTUAL), (-3.9785003662109375+8.676173210144043j) (DESIRED)\n [0, 5]: (-6.379220008850098-1.4644719362258911j) (ACTUAL), (-"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_vmappable_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_vmappable_BCSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver_grads0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver_grads1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver_grads2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch9", "outcome": "passed", "message": ""}

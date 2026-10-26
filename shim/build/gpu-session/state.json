@@ -1,0 +1,86 @@
+{
+ "steps": {
+  "setup": {
+   "status": "passed",
+   "note": "",
+   "seconds": 0,
+   "finished": "2026-10-26T18:42"
+  },
+  "install": {
+   "status": "passed",
+   "note": "",
+   "seconds": 9,
+   "finished": "2026-10-26T18:42"
+  },
+  "cxx": {
+   "status": "passed",
+   "note": "",
+   "seconds": 4,
+   "finished": "2026-10-26T18:42"
+  },
+  "e2e": {
+   "status": "passed",
+   "note": "",
+   "seconds": 2,
+   "finished": "2026-10-26T18:42"
+  },
+  "phase3": {
+   "status": "passed",
+   "note": "",
+   "seconds": 4,
+   "finished": "2026-10-26T18:42"
+  },
+  "complex": {
+   "status": "passed",
+   "note": "",
+   "seconds": 5,
+   "finished": "2026-10-26T18:42"
+  },
+  "narrow": {
+   "status": "failed",
+   "note": "exit 1",
+   "seconds": 29,
+   "finished": "2026-10-26T18:42"
+  },
+  "probe": {
+   "status": "passed",
+   "note": "",
+   "seconds": 85,
+   "finished": "2026-10-26T18:44"
+  },
+  "accuracy": {
+   "status": "passed",
+   "note": "",
+   "seconds": 2,
+   "finished": "2026-10-26T18:44"
+  },
+  "accuracy-extended": {
+   "status": "passed",
+   "note": "",
+   "seconds": 6,
+   "finished": "2026-10-26T18:44"
+  },
+  "jax-suite": {
+   "status": "done",
+   "note": "",
+   "seconds": 4489,
+   "finished": "2026-10-26T19:59"
+  },
+  "jax-heavy": {
+   "status": "done",
+   "note": "",
+   "seconds": 784,
+   "finished": "2026-10-26T20:12"
+  }
+ },
+ "machine": {
+  "commit": "26e9b4d",
+  "machine": "Apple M3",
+  "memory": "8 GB",
+  "os": "macOS 26.7.1",
+  "python": "3.12.2",
+  "jax": "0.12.0.1",
+  "jaxlib": "0.12.0.1",
+  "jax-metal-shim": "0.1.0"
+ }
+}

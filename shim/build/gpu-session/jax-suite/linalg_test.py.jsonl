@@ -1,0 +1,980 @@
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholesky9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCholeskyGradPrecision", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCond9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCondSingular9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testCross9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet3x3NumericalStabilityIssue39905", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDet9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGradIssue6121", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGradOfSingularMatrixCorank1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGradOfSingularMatrixCorank2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetOfSingularMatrix", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDiagonal9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEig9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigBatching5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradComplexInputs5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigGradRealInputs5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigHandlesNanInputs9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvals5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsGrad7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEigvalsInf", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyMatrixNorm9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testEmptyVectorNorm5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInv5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testInvDtypeError", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testIssue1151", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testIssue1213", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testIssue1383", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testIssue669", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testJspSVDBasic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLinalgPrimitivesInvalidDtype", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq1", "outcome": "crashed", "message": "exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq9", "outcome": "crashed", "message": "exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsqZeroMatrix0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsqZeroMatrix1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsqZeroMatrix2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutation0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutation1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutation2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutationBatching0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutationBatching1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLuPivotsToPermutationBatching2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatmul7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixNorm9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPower9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixPowerBool", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRank9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMatrixRankTol", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testMultiDot5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNorm9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testNumpyQrModes9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testOuter9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinvGradIssue2792", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinvRcond", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinvTracedRtol", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQr9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQrBatching0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQrBatching1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQrBatching2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQrBatching3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQrBatching4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQrBatching5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testQrInvalidDtypeCPU", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVD9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad0", "outcome": "skipped", "message": "Skipped: JVP for SVD not implemented for full matrices."}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad2", "outcome": "skipped", "message": "Skipped: JVP for SVD not implemented for full matrices."}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDHermitianZeroSingularValue0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDHermitianZeroSingularValue1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdet9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdetGrad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdetGrad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdetGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdetGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdetGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolve9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSolveBroadcasting9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testStringInfNorm", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensordot0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensordot1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensordot2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensordot3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensordot4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensordot5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorinv0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorinv1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorinv2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorinv3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorinv4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorinv5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorinv6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorinv7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolveAxes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTrace", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVecdot9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testVectorNorm9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testBlockDiag0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testBlockDiag1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testBlockDiag2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testBlockDiag3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testBlockDiag4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolve0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolve1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolve2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolve3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolve4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolve5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolveBroadcast0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolveBroadcast1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolveBroadcast2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolveBroadcast3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolveBroadcast4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolveBroadcast5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolveBroadcast6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testChoSolveBroadcast7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCirculantConstruction9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanion9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanionInvalidLength0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanionInvalidLength1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanionInvalidLength2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testCompanionInvalidLength3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrix9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testConvolutionMatrixInvalidArgs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpm9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmGrad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedler9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanion0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanion1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanion2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanion3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanion4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanion5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanion6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanionEmptyInput0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanionEmptyInput1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanionShortInput0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFiedlerCompanionShortInput1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testFunm9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh2", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-05, atol=1e-05\n\nMismatched elements: 18 / 18 (100%)\nFirst 5 mismatches are at indices:\n [0, 0, 0]: -0.9266462326049805 (ACTUAL), -1.0935438871383667 (DESIRED)\n [0, 0, 1]: -0.015353426337242126 (ACTUAL), -0.01526968739926815 (DESIRED)\n [0, 0, 2]: 0.03258628770709038 (ACTUAL), -0.003131627105176449 (DESIRED)\n [0, 1, 0]: -0.3078279197216034 (ACTUAL), -0.3215291500091553 (DESIRED)\n [0, 1, 1]: -0.014369199052453041 (ACTUAL), -0.03518543764948845 (DESIRE"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEigh9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighInvalidShape0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighInvalidShape1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighInvalidShape2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighInvalidType0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighInvalidType1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighInvalidType2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighNonPositiveDefiniteB0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighNonPositiveDefiniteB1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighNonPositiveDefiniteB2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighNonPositiveDefiniteB3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighNonPositiveDefiniteB4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighNonPositiveDefiniteB5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighSymmetrizesInputs9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighVmap0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighVmap1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighVmap2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction2", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: 'mhlo.convolution' op Not supported: Integer type convolution.\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction5", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: 'mhlo.convolution' op Not supported: Integer type convolution.\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstruction9", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: 'mhlo.convolution' op Not supported: Integer type convolution.\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHankelConstructionWithKnownCases", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHessenberg9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testHouseholderProduct9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21310", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21311", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21312", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21313", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21314", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21315", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21316", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21317", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21318", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testIssue21319", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslie9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLeslieInvalidLength", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu1", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLu9", "outcome": "crashed", "message": "exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, _cyutility, scipy._cyutility, scipy._lib._ccallback_c, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg._batched_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.rando"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuBatching0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuBatching1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuCPUBackendOnGPU", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuFactor0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuFactor1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuFactor2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuFactor3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuFactor4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuFactor5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuFactor6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuFactor7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuOfSingularMatrix", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuOnZeroMatrix0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuOnZeroMatrix1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolve9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuSolveBroadcast9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testOrmqr9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testPolarBatch0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testPolarBatch1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testPolarBatch2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply0", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply1D9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply2", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply3", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply6", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply7", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testQrMultiply9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csf9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csfBroadcast0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csfBroadcast1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csfBroadcast2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csfBroadcast3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csfBroadcast4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testRsf2csfBroadcast5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSchur0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSchur1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSchur2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSchur3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSchur4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSchur5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSchur6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSchur7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes0", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes2", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes3", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes5", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes6", "outcome": "skipped", "message": "Skipped: Pivoting is only supported on CPU and GPU."}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testScipyQrModes9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolve9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangular9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangularBroadcast0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangularBroadcast1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangularBroadcast2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangularBroadcast3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangularBroadcast4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangularBroadcast5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangularBroadcast6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSolveTriangularBroadcast7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmEdgeCase0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmEdgeCase1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmEdgeCase2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmEdgeCase3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmEdgeCase4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmEdgeCase5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmEdgeCase6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmEdgeCase7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmGenMatrix0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmGenMatrix1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmGenMatrix2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmGenMatrix3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmGenMatrix4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmGenMatrix5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmGenMatrix6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmGenMatrix7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmPSDMatrix0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmPSDMatrix1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmPSDMatrix2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmPSDMatrix3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmPSDMatrix4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmPSDMatrix5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmPSDMatrix6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testSqrtmPSDMatrix7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstruction9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzConstructionWithKnownCases", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction1", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: 'mhlo.convolution' op Not supported: Integer type convolution.\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction3", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: 'mhlo.convolution' op Not supported: Integer type convolution.\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction4", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: 'mhlo.convolution' op Not supported: Integer type convolution.\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction6", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: 'mhlo.convolution' op Not supported: Integer type convolution.\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction8", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: 'mhlo.convolution' op Not supported: Integer type convolution.\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testToeplitzSymmetricConstruction9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveBatching0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveBatching1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveBatching2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveBatching3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveBatching4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveBatching5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGrad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveGradPrecision", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTriangularSolveSingularBatched", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testTridiagonal9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_ill_conditioned_sylvester9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester_broadcast0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester_broadcast1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester_broadcast2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester_broadcast3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester_broadcast4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::test_solve_sylvester_broadcast5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, gpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft0", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft1", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft2", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft3", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft4", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft5", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft6", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft7", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft8", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDft9", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDftDtype0", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.iota'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:168:26: note: called from\n        boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module\n                "}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDftInvalidDtype", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testDftInvalidScale", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamard9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamardInvalidN0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamardInvalidN1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamardInvalidN2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamardInvalidN3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHadamardInvalidN4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmert9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmertInvalidN0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmertInvalidN1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHelmertInvalidN2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHilbert0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHilbert1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHilbert2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHilbert3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testHilbert4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvhilbert0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvhilbert1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvhilbert2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvhilbert3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvhilbert4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvhilbert5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascal9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testInvpascalInvalidKind", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testMatrixTranspose0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testMatrixTranspose1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testMatrixTranspose2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testMatrixTranspose3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testMatrixTranspose4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testMatrixTranspose5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testPascal9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchur0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchur1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchur2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchur3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchur4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchur5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchur6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchur7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSchurBatching9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSymmetricProduct0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSymmetricProduct1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSymmetricProduct2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSymmetricProduct3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSymmetricProduct4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::testSymmetricProduct5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_non_square_error0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_non_square_error1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve3", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve6", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve7", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve8", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_2x2_singular0", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_2x2_singular1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_endpoints0", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_endpoints1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_grad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_grad1", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_grad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_grad3", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_grad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_grad5", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_grad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_grad7", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_requiring_pivoting0", "outcome": "skipped", "message": "Skipped: Pivoting not supported in fallback tridiagonal solve"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_requiring_pivoting1", "outcome": "skipped", "message": "Skipped: Pivoting not supported in fallback tridiagonal solve"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_requiring_pivoting_last_rows0", "outcome": "skipped", "message": "Skipped: Pivoting not supported in fallback tridiagonal solve"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_requiring_pivoting_last_rows1", "outcome": "skipped", "message": "Skipped: Pivoting not supported in fallback tridiagonal solve"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_zero_matrix0", "outcome": "skipped", "message": "Skipped: perturb_singular=True only supported on CPU and GPU"}
+{"nodeid": "tests/linalg_test.py::LaxLinalgTest::test_tridiagonal_solve_zero_matrix1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testDetGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testLstsq7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testPinv6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSVDGrad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdetGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdetGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testSlogdetGrad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::NumpyLinalgTest::testTensorsolve9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testExpmFrechet9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testGeneralizedEighGrad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/linalg_test.py::ScipyLinalgTest::testLuGrad9", "outcome": "passed", "message": ""}

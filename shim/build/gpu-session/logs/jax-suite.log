@@ -1,0 +1,316 @@
+$ /Users/nasedkin/jax_metal/shim/../.venv-shim/bin/python /Users/nasedkin/jax_metal/shim/tests/jax_suite/run_jax_tests.py /Users/nasedkin/jax_metal/re/work/jax-src /Users/nasedkin/jax_metal/shim/build/gpu-session/jax-suite fft_test.py random_test.py lax_test.py lax_numpy_operators_test.py lax_numpy_reducers_test.py lax_numpy_indexing_test.py lax_autodiff_test.py lax_control_flow_test.py nn_test.py lax_vmap_test.py lax_vmap_op_test.py lax_numpy_einsum_test.py random_lax_test.py lax_scipy_special_functions_test.py lax_scipy_test.py scipy_signal_test.py ann_test.py linalg_test.py lax_numpy_test.py lax_numpy_ufuncs_test.py lax_numpy_setops_test.py lax_numpy_vectorize_test.py batching_test.py checkify_test.py custom_linear_solve_test.py custom_root_test.py x64_context_test.py dtypes_test.py random_impl_test.py mutable_array_test.py image_test.py ode_test.py stax_test.py optimizers_test.py experimental_rnn_test.py scipy_stats_test.py scipy_fft_test.py scipy_ndimage_test.py scipy_interpolate_test.py scipy_optimize_test.py scipy_spatial_test.py lax_scipy_sparse_test.py sparse_test.py sparse_bcoo_bcsr_test.py polynomial_test.py eigh_test.py svd_test.py qdwh_test.py lobpcg_test.py lax_scipy_spectral_dac_test.py cholesky_update_test.py shard_map_test.py pmap_test.py pjit_test.py array_test.py api_test.py --exclude /Users/nasedkin/jax_metal/shim/build/gpu-session/heavy-tests.txt --resume --budget-minutes 117.6 --compare-cpu /Users/nasedkin/jax_metal/shim/build/jax-suite-cpu
+fft_test.py: running
+fft_test.py: {'passed': 109, 'skipped': 2} in 15s
+random_test.py: running
+random_test.py: {'failed': 2, 'skipped': 16, 'passed': 235} in 15s
+lax_test.py: running
+  crash in tests/lax_test.py::LaxTest::testBroadcastInDim1 after 6s (exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_l); resuming
+  crash in tests/lax_test.py::LaxTest::testBroadcastInDim9 after 2s (exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_l); resuming
+  crash in tests/lax_test.py::LaxTest::testConvGeneralDilated9 after 11s (exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_l); resuming
+  restarting pytest (memory soft limit) after 687 tests
+  restarting pytest (memory soft limit) after 1069 tests
+  restarting pytest (memory soft limit) after 1757 tests
+  restarting pytest (memory soft limit) after 2560 tests
+lax_test.py: {'passed': 2343, 'crashed': 3, 'failed': 187, 'skipped': 76} in 281s
+lax_numpy_operators_test.py: running
+  restarting pytest (memory soft limit) after 436 tests
+  restarting pytest (memory soft limit) after 1008 tests
+lax_numpy_operators_test.py: {'passed': 1617, 'failed': 9, 'skipped': 2} in 133s
+lax_numpy_reducers_test.py: running
+  restarting pytest (memory soft limit) after 684 tests
+lax_numpy_reducers_test.py: {'passed': 993, 'skipped': 4, 'failed': 50} in 138s
+lax_numpy_indexing_test.py: running
+  restarting pytest (memory soft limit) after 320 tests
+lax_numpy_indexing_test.py: {'passed': 344, 'failed': 46} in 56s
+lax_autodiff_test.py: running
+  restarting pytest (memory soft limit) after 260 tests
+  restarting pytest (memory soft limit) after 588 tests
+lax_autodiff_test.py: {'passed': 696, 'failed': 48, 'skipped': 1} in 159s
+lax_control_flow_test.py: running
+  restarting pytest (memory soft limit) after 110 tests
+  restarting pytest (memory soft limit) after 425 tests
+lax_control_flow_test.py: {'passed': 524, 'skipped': 483, 'failed': 20} in 113s
+nn_test.py: running
+  restarting pytest (memory soft limit) after 231 tests
+nn_test.py: {'passed': 362, 'skipped': 56, 'failed': 23} in 87s
+lax_vmap_test.py: running
+  restarting pytest (memory soft limit) after 163 tests
+lax_vmap_test.py: {'passed': 259, 'skipped': 10, 'failed': 59} in 70s
+lax_vmap_op_test.py: running
+  restarting pytest (memory soft limit) after 365 tests
+lax_vmap_op_test.py: {'skipped': 295, 'passed': 402, 'failed': 3} in 100s
+lax_numpy_einsum_test.py: running
+lax_numpy_einsum_test.py: {'passed': 174, 'failed': 2} in 24s
+random_lax_test.py: running
+  restarting pytest (memory soft limit) after 222 tests
+  restarting pytest (memory soft limit) after 403 tests
+  restarting pytest (memory soft limit) after 492 tests
+random_lax_test.py: {'passed': 628, 'skipped': 52} in 189s
+lax_scipy_special_functions_test.py: running
+  crash in tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpiDisableJit after 18s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary0 after 5s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  restarting pytest (memory soft limit) after 113 tests
+  crash in tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_s_float32 after 45s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_s_float32 after 12s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_s_s_int32_float32 after 16s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  restarting pytest (memory soft limit) after 266 tests
+  restarting pytest (memory soft limit) after 347 tests
+  restarting pytest (memory soft limit) after 409 tests
+lax_scipy_special_functions_test.py: {'passed': 434, 'failed': 15, 'crashed': 5} in 289s
+lax_scipy_test.py: running
+  crash in tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar0 after 35s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar2 after 4s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar4 after 7s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar8 after 4s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar9 after 3s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+lax_scipy_test.py: {'passed': 97, 'skipped': 18, 'crashed': 5} in 69s
+scipy_signal_test.py: running
+  crash in tests/scipy_signal_test.py::LaxBackedScipySignalTests::testConvolutions0 after 5s (exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_l); resuming
+  crash in tests/scipy_signal_test.py::LaxBackedScipySignalTests::testConvolutions5 after 7s (exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_l); resuming
+scipy_signal_test.py: {'crashed': 2, 'passed': 60, 'skipped': 24, 'failed': 10} in 50s
+ann_test.py: running
+ann_test.py: {'passed': 28, 'skipped': 4} in 6s
+linalg_test.py: running
+  crash in tests/linalg_test.py::NumpyLinalgTest::testLstsq1 after 26s (exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_l); resuming
+  crash in tests/linalg_test.py::NumpyLinalgTest::testLstsq9 after 6s (exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_l); resuming
+  restarting pytest (memory soft limit) after 284 tests
+  restarting pytest (memory soft limit) after 436 tests
+  crash in tests/linalg_test.py::ScipyLinalgTest::testLu1 after 34s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/linalg_test.py::ScipyLinalgTest::testLu9 after 6s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  restarting pytest (memory soft limit) after 769 tests
+linalg_test.py: {'passed': 719, 'skipped': 193, 'crashed': 4, 'failed': 20} in 244s
+lax_numpy_test.py: running
+  restarting pytest (memory soft limit) after 343 tests
+  restarting pytest (memory soft limit) after 652 tests
+  restarting pytest (memory soft limit) after 942 tests
+  restarting pytest (memory soft limit) after 1213 tests
+  restarting pytest (memory soft limit) after 1492 tests
+  restarting pytest (memory soft limit) after 1804 tests
+  restarting pytest (memory soft limit) after 2121 tests
+  restarting pytest (memory soft limit) after 2334 tests
+  crash in tests/lax_numpy_test.py::NumpyUfuncTests::testUfuncInputTypes601 after 44s (guard: system memory low (9% free) while the job holds 1.1 GB); resuming
+lax_numpy_test.py: {'passed': 3202, 'skipped': 37, 'failed': 106, 'crashed': 1} in 393s
+lax_numpy_ufuncs_test.py: running
+lax_numpy_ufuncs_test.py: {'passed': 204, 'failed': 3, 'skipped': 8} in 18s
+lax_numpy_setops_test.py: running
+  crash in tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique0 after 19s (exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_l); resuming
+  crash in tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique8 after 3s (exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_l); resuming
+lax_numpy_setops_test.py: {'passed': 128, 'failed': 25, 'crashed': 2} in 32s
+lax_numpy_vectorize_test.py: running
+lax_numpy_vectorize_test.py: {'failed': 1, 'passed': 34} in 4s
+batching_test.py: running
+batching_test.py: {'failed': 6, 'passed': 226} in 31s
+checkify_test.py: running
+checkify_test.py: {'skipped': 4, 'passed': 105, 'failed': 9} in 17s
+custom_linear_solve_test.py: running
+custom_linear_solve_test.py: {'failed': 2, 'passed': 9, 'skipped': 2} in 8s
+custom_root_test.py: running
+custom_root_test.py: {'failed': 3, 'passed': 17} in 9s
+x64_context_test.py: running
+x64_context_test.py: {'failed': 14, 'passed': 9, 'skipped': 2} in 6s
+dtypes_test.py: running
+dtypes_test.py: {'passed': 795, 'failed': 39, 'skipped': 31} in 44s
+random_impl_test.py: running
+random_impl_test.py: {'failed': 1, 'passed': 59} in 8s
+mutable_array_test.py: running
+mutable_array_test.py: {'failed': 11, 'passed': 173, 'skipped': 34} in 15s
+image_test.py: running
+image_test.py: {'skipped': 30, 'passed': 57} in 16s
+ode_test.py: running
+  crash in tests/ode_test.py::ODETest::test_complex_odeint after 10s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+ode_test.py: {'failed': 3, 'crashed': 1, 'passed': 9} in 26s
+stax_test.py: running
+stax_test.py: {'failed': 4, 'passed': 67} in 15s
+optimizers_test.py: running
+optimizers_test.py: {'failed': 1, 'passed': 21} in 8s
+experimental_rnn_test.py: running
+experimental_rnn_test.py: {'skipped': 12, 'passed': 8} in 18s
+scipy_stats_test.py: running
+  restarting pytest (memory soft limit) after 90 tests
+  restarting pytest (memory soft limit) after 314 tests
+  restarting pytest (memory soft limit) after 534 tests
+  restarting pytest (memory soft limit) after 657 tests
+  restarting pytest (memory soft limit) after 834 tests
+scipy_stats_test.py: {'passed': 995, 'failed': 6} in 233s
+scipy_fft_test.py: running
+scipy_fft_test.py: {'passed': 36, 'failed': 10, 'skipped': 1} in 41s
+scipy_ndimage_test.py: running
+scipy_ndimage_test.py: {'passed': 16} in 11s
+scipy_interpolate_test.py: running
+scipy_interpolate_test.py: {'failed': 1, 'passed': 3} in 4s
+scipy_optimize_test.py: running
+  crash in tests/scipy_optimize_test.py::TestBFGS::test_minimize0 after 3s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/scipy_optimize_test.py::TestBFGS::test_minimize1 after 2s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/scipy_optimize_test.py::TestBFGS::test_minimize2 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/scipy_optimize_test.py::TestLBFGS::test_minimize0 after 8s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/scipy_optimize_test.py::TestLBFGS::test_minimize2 after 2s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/scipy_optimize_test.py::TestLBFGS::test_minimize3 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/scipy_optimize_test.py::TestLBFGS::test_minimize_complex_sphere after 2s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+scipy_optimize_test.py: {'failed': 3, 'passed': 3, 'crashed': 7, 'skipped': 1} in 20s
+scipy_spatial_test.py: running
+scipy_spatial_test.py: {'passed': 70} in 19s
+lax_scipy_sparse_test.py: running
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_matmul after 10s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system0 after 4s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system1 after 3s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system2 after 3s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system3 after 2s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system4 after 3s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system5 after 3s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system6 after 2s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system7 after 2s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system8 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_identity_system9 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system0 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system1 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system2 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system3 after 2s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system4 after 2s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system5 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system6 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system7 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system8 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_on_random_system9 after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_pytree after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_gmres_weak_types after 1s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+lax_scipy_sparse_test.py: {'skipped': 36, 'passed': 29, 'failed': 2, 'crashed': 23} in 53s
+sparse_test.py: running
+  restarting pytest (memory soft limit) after 216 tests
+  restarting pytest (memory soft limit) after 415 tests
+sparse_test.py: {'passed': 326, 'skipped': 54, 'failed': 84} in 94s
+sparse_bcoo_bcsr_test.py: running
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_concatenate2 after 27s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_concatenate5 after 6s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_concatenate6 after 6s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  restarting pytest (memory soft limit) after 56 tests
+  restarting pytest (memory soft limit) after 88 tests
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_dynamic_slice0 after 111s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_dynamic_slice1 after 6s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_dynamic_slice2 after 9s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_dynamic_slice7 after 17s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  restarting pytest (memory soft limit) after 134 tests
+  restarting pytest (memory soft limit) after 171 tests
+  restarting pytest (memory soft limit) after 197 tests
+  restarting pytest (memory soft limit) after 217 tests
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_rev1 after 23s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_rev2 after 5s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_rev8 after 7s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_slice0 after 5s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  crash in tests/sparse_bcoo_bcsr_test.py::BCOOTest::test_bcoo_slice8 after 11s (exit -6: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_um); resuming
+  restarting pytest (memory soft limit) after 266 tests
+  restarting pytest (memory soft limit) after 291 tests
+  restarting pytest (memory soft limit) after 317 tests
+  restarting pytest (memory soft limit) after 367 tests
+  restarting pytest (memory soft limit) after 397 tests
+sparse_bcoo_bcsr_test.py: {'skipped': 25, 'passed': 317, 'failed': 60, 'crashed': 12} in 710s
+polynomial_test.py: running
+polynomial_test.py: {'passed': 17} in 25s
+eigh_test.py: running
+  crash in tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform0 after 36s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform1 after 4s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform3 after 3s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform7 after 9s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+  crash in tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform9 after 5s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+eigh_test.py: {'passed': 60, 'failed': 1, 'skipped': 11, 'crashed': 5} in 64s
+svd_test.py: running
+  crash in tests/svd_test.py::SvdTest::testSingularValues2 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSingularValues3 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSingularValues4 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSingularValues8 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSingularValues9 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdAllZero0 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdAllZero1 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdAllZero2 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdAllZero4 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdAllZero5 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdAllZero6 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdAllZero7 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdAllZero8 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdAllZero9 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues0 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues1 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues2 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues3 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues4 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues5 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues6 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues7 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues8 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdNonFiniteValues9 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdOnTinyElement0 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdOnTinyElement1 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdOnTinyElement2 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput0 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput1 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput2 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput3 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput4 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput5 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput6 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput7 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput8 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput9 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns0 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns1 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns2 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns3 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithRectangularInput0 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithRectangularInput2 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithRectangularInput3 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithRectangularInput4 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithRectangularInput6 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithRectangularInput7 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithRectangularInput8 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithRectangularInput9 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithSkinnyTallInput0 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/svd_test.py::SvdTest::testSvdWithSkinnyTallInput1 after 1s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+svd_test.py: {'skipped': 27, 'crashed': 51, 'passed': 6} in 89s
+qdwh_test.py: running
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility1 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility2 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility4 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility5 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility7 after 5s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput1 after 4s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput3 after 6s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput6 after 6s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput8 after 5s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape1 after 5s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape3 after 6s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape5 after 4s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape7 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix0 after 4s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix2 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix3 after 4s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix6 after 7s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix7 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithTinyElement0 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithTinyElement1 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithTinyElement2 after 2s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithTinyElement3 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithUpperTriangularInputAllOnes2 after 4s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithUpperTriangularInputAllOnes4 after 4s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/qdwh_test.py::QdwhTest::testQdwhWithUpperTriangularInputAllOnes5 after 3s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+qdwh_test.py: {'crashed': 25, 'passed': 17} in 101s
+lobpcg_test.py: running
+  crash in tests/lobpcg_test.py::F32LobpcgTest::testCallableMatricesF32sparse_10_ after 11s (exit -11: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_); resuming
+lobpcg_test.py: {'failed': 27, 'passed': 21, 'crashed': 1} in 38s
+lax_scipy_spectral_dac_test.py: running
+lax_scipy_spectral_dac_test.py: {'skipped': 5} in 2s
+cholesky_update_test.py: running
+cholesky_update_test.py: {'skipped': 2} in 2s
+shard_map_test.py: running
+shard_map_test.py: {'skipped': 420, 'passed': 52, 'failed': 3} in 29s
+pmap_test.py: running
+  crash in tests/pmap_test.py::PythonPmapTest::testDefaultDeviceOrderingAfterClearBackends after 6s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  crash in tests/pmap_test.py::PythonPmapTest::testLowerCompileMemoryAnalysis after 8s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+pmap_test.py: {'passed': 208, 'skipped': 91, 'crashed': 2, 'failed': 2} in 39s
+pjit_test.py: running
+pjit_test.py: {'skipped': 750, 'passed': 136, 'failed': 2} in 30s
+array_test.py: running
+array_test.py: {'skipped': 167, 'passed': 71} in 7s
+api_test.py: running
+  crash in tests/api_test.py::JitTest::test_jit_lower_compile_memory_analysis after 7s (exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_u); resuming
+  restarting pytest (memory soft limit) after 632 tests
+  restarting pytest (memory soft limit) after 852 tests
+api_test.py: {'passed': 715, 'skipped': 177, 'failed': 120, 'crashed': 1} in 161s

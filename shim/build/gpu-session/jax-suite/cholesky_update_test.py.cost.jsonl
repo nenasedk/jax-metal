@@ -1,0 +1,4 @@
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testRandomMatrix0", "seconds": 0.009, "before_mb": 80, "peak_mb": 80, "params": "(shape=(128, 128), dtype=<class 'jax.numpy.float64'>)"}
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testUpperOnes0", "seconds": 0.008, "before_mb": 80, "peak_mb": 80, "params": "(shape=(128, 128), dtype=<class 'jax.numpy.float64'>)"}
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testRandomMatrix1", "seconds": 1.949, "before_mb": 81, "peak_mb": 215, "params": "(shape=(128, 128), dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testUpperOnes1", "seconds": 0.113, "before_mb": 215, "peak_mb": 231, "params": "(shape=(128, 128), dtype=<class 'jax.numpy.float32'>)"}

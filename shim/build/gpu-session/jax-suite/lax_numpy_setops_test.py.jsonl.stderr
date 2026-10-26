@@ -1,0 +1,1255 @@
+......................FF.F..F..........F.FFFFFFF.F.............          [100%]
+=================================== FAILURES ===================================
+____________________ LaxNumpySetopsTest.testUniqueEqualNan1 ____________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueEqualNan1>
+dtype = <class 'numpy.float16'>, equal_nan = False
+
+    @jtu.sample_product(dtype=inexact_dtypes, equal_nan=[True, False])
+    @jtu.ignore_warning(
+        category=RuntimeWarning, message='invalid value encountered in cast'
+    )
+    def testUniqueEqualNan(self, dtype, equal_nan):
+      shape = (20,)
+      rng = jtu.rand_some_nan(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      def np_fun(x):
+        dtype = x.dtype
+        # numpy unique fails for bfloat16 NaNs, so we cast to float64
+        if x.dtype == jnp.bfloat16:
+          x = x.astype('float64')
+        return np.unique(x, equal_nan=equal_nan).astype(dtype)
+      jnp_fun = partial(jnp.unique, equal_nan=equal_nan)
+>     self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:404: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1473: in _CheckAgainstNumpy
+    self.assertAllClose(lax_ans, numpy_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([    nan,     nan, -5.55  , -4.348 , -3.234 , -1.466 , -1.458 ,
+       -1.028 , -0.7114,  0.3687,  0.6553,  1.018 ,  1.752 ,  2.914 ,
+        3.26  ,  3.326 ,  3.92  ,  4.555 ,  6.09  ,     nan],
+      dtype=float16)
+b = array([-5.55  , -4.348 , -3.234 , -1.466 , -1.458 , -1.028 , -0.7114,
+        0.3687,  0.6553,  1.018 ,  1.752 ,  2.914 ,  3.26  ,  3.326 ,
+        3.92  ,  4.555 ,  6.09  ,     nan,     nan,     nan],
+      dtype=float16)
+atol = 0.001, rtol = 0.001, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=0.001, atol=0.001
+E       
+E       nan location mismatch:
+E        ACTUAL: array([    nan,     nan, -5.55  , -4.348 , -3.234 , -1.466 , -1.458 ,
+E              -1.028 , -0.7114,  0.3687,  0.6553,  1.018 ,  1.752 ,  2.914 ,
+E               3.26  ,  3.326 ,  3.92  ,  4.555 ,  6.09  ,     nan],
+E             dtype=float16)
+E        DESIRED: array([-5.55  , -4.348 , -3.234 , -1.466 , -1.458 , -1.028 , -0.7114,
+E               0.3687,  0.6553,  1.018 ,  1.752 ,  2.914 ,  3.26  ,  3.326 ,
+E               3.92  ,  4.555 ,  6.09  ,     nan,     nan,     nan],
+E             dtype=float16)
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+____________________ LaxNumpySetopsTest.testUniqueEqualNan2 ____________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueEqualNan2>
+dtype = <class 'ml_dtypes.bfloat16'>, equal_nan = True
+
+    @jtu.sample_product(dtype=inexact_dtypes, equal_nan=[True, False])
+    @jtu.ignore_warning(
+        category=RuntimeWarning, message='invalid value encountered in cast'
+    )
+    def testUniqueEqualNan(self, dtype, equal_nan):
+      shape = (20,)
+      rng = jtu.rand_some_nan(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      def np_fun(x):
+        dtype = x.dtype
+        # numpy unique fails for bfloat16 NaNs, so we cast to float64
+        if x.dtype == jnp.bfloat16:
+          x = x.astype('float64')
+        return np.unique(x, equal_nan=equal_nan).astype(dtype)
+      jnp_fun = partial(jnp.unique, equal_nan=equal_nan)
+>     self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:404: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1473: in _CheckAgainstNumpy
+    self.assertAllClose(lax_ans, numpy_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([        nan, -8.8125    , -6.5625    , -6.46875   , -4.03125   ,
+       -3.359375  , -3.09375   , -2.296875  , ...-0.06445312,  0.55078125,
+        2.3125    ,  2.8125    ,  2.953125  ,  4.34375   ,  7.78125   ],
+      dtype=float32)
+b = array([-8.8125    , -6.5625    , -6.46875   , -4.03125   , -3.359375  ,
+       -3.09375   , -2.296875  , -1.578125  , ... 0.55078125,  2.3125    ,
+        2.8125    ,  2.953125  ,  4.34375   ,  7.78125   ,         nan],
+      dtype=float32)
+atol = 0.01, rtol = 0.01, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=0.01, atol=0.01
+E       
+E       nan location mismatch:
+E        ACTUAL: array([      nan, -8.8125  , -6.5625  , -6.46875 , -4.03125 , -3.359375,
+E              -3.09375 , -2.296875, -1.578125, -1.109375, -0.878906, -0.523438,
+E              -0.466797, -0.064453,  0.550781,  2.3125  ,  2.8125  ,  2.953125,
+E               4.34375 ,  7.78125 ], dtype=float32)
+E        DESIRED: array([-8.8125  , -6.5625  , -6.46875 , -4.03125 , -3.359375, -3.09375 ,
+E              -2.296875, -1.578125, -1.109375, -0.878906, -0.523438, -0.466797,
+E              -0.064453,  0.550781,  2.3125  ,  2.8125  ,  2.953125,  4.34375 ,
+E               7.78125 ,       nan], dtype=float32)
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+____________________ LaxNumpySetopsTest.testUniqueEqualNan4 ____________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueEqualNan4>
+dtype = <class 'numpy.float32'>, equal_nan = True
+
+    @jtu.sample_product(dtype=inexact_dtypes, equal_nan=[True, False])
+    @jtu.ignore_warning(
+        category=RuntimeWarning, message='invalid value encountered in cast'
+    )
+    def testUniqueEqualNan(self, dtype, equal_nan):
+      shape = (20,)
+      rng = jtu.rand_some_nan(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      def np_fun(x):
+        dtype = x.dtype
+        # numpy unique fails for bfloat16 NaNs, so we cast to float64
+        if x.dtype == jnp.bfloat16:
+          x = x.astype('float64')
+        return np.unique(x, equal_nan=equal_nan).astype(dtype)
+      jnp_fun = partial(jnp.unique, equal_nan=equal_nan)
+>     self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:404: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1473: in _CheckAgainstNumpy
+    self.assertAllClose(lax_ans, numpy_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1321: in assertArraysAllClose
+    self.assertEqual(actual.shape, desired.shape)
+E   AssertionError: Tuples differ: (20,) != (19,)
+E   
+E   First differing element 0:
+E   20
+E   19
+E   
+E   - (20,)
+E   + (19,)
+____________________ LaxNumpySetopsTest.testUniqueEqualNan7 ____________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueEqualNan7>
+dtype = <class 'numpy.float32'>, equal_nan = False
+
+    @jtu.sample_product(dtype=inexact_dtypes, equal_nan=[True, False])
+    @jtu.ignore_warning(
+        category=RuntimeWarning, message='invalid value encountered in cast'
+    )
+    def testUniqueEqualNan(self, dtype, equal_nan):
+      shape = (20,)
+      rng = jtu.rand_some_nan(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      def np_fun(x):
+        dtype = x.dtype
+        # numpy unique fails for bfloat16 NaNs, so we cast to float64
+        if x.dtype == jnp.bfloat16:
+          x = x.astype('float64')
+        return np.unique(x, equal_nan=equal_nan).astype(dtype)
+      jnp_fun = partial(jnp.unique, equal_nan=equal_nan)
+>     self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:404: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1473: in _CheckAgainstNumpy
+    self.assertAllClose(lax_ans, numpy_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([        nan, -5.071523  , -3.0630074 , -2.909769  , -2.8151686 ,
+       -2.76334   , -2.6402197 , -2.1947145 , ... 0.73210555,  1.8952283 ,
+        2.021947  ,  2.5810452 ,  4.055312  ,  6.5284495 , 11.315509  ],
+      dtype=float32)
+b = array([-5.071523  , -3.0630074 , -2.909769  , -2.8151686 , -2.76334   ,
+       -2.6402197 , -2.1947145 , -1.948821  , ... 1.8952283 ,  2.021947  ,
+        2.5810452 ,  4.055312  ,  6.5284495 , 11.315509  ,         nan],
+      dtype=float32)
+atol = 1e-06, rtol = 1e-06, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-06, atol=1e-06
+E       
+E       nan location mismatch:
+E        ACTUAL: array([      nan, -5.071523, -3.063007, -2.909769, -2.815169, -2.76334 ,
+E              -2.64022 , -2.194715, -1.948821, -1.41041 ,  0.339098,  0.416586,
+E               0.667823,  0.732106,  1.895228,  2.021947,  2.581045,  4.055312,
+E               6.52845 , 11.315509], dtype=float32)
+E        DESIRED: array([-5.071523, -3.063007, -2.909769, -2.815169, -2.76334 , -2.64022 ,
+E              -2.194715, -1.948821, -1.41041 ,  0.339098,  0.416586,  0.667823,
+E               0.732106,  1.895228,  2.021947,  2.581045,  4.055312,  6.52845 ,
+E              11.315509,       nan], dtype=float32)
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+______________________ LaxNumpySetopsTest.testUniqueNans0 ______________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueNans0>
+dtype = <class 'numpy.float16'>
+
+    @jtu.sample_product(dtype=inexact_dtypes)
+    def testUniqueNans(self, dtype):
+      def args_maker():
+        x = [-0.0, 0.0, 1.0, 1.0, np.nan, -np.nan]
+        if np.issubdtype(dtype, np.complexfloating):
+          x = [complex(i, j) for i, j in itertools.product(x, repeat=2)]
+        return [np.array(x, dtype=dtype)]
+    
+      kwds = dict(return_index=True, return_inverse=True, return_counts=True)
+      jnp_fun = partial(jnp.unique, **kwds)
+      def np_fun(x):
+        dtype = x.dtype
+        # numpy unique fails for bfloat16 NaNs, so we cast to float64
+        if x.dtype == jnp.bfloat16:
+          x = x.astype('float64')
+        u, *rest = np.unique(x, **kwds)
+        return (u.astype(dtype), *rest)
+>     self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:387: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1473: in _CheckAgainstNumpy
+    self.assertAllClose(lax_ans, numpy_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1352: in assertAllClose
+    self.assertAllClose(actual_elt, desired_elt, check_dtypes=check_dtypes, atol=atol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1321: in assertArraysAllClose
+    self.assertEqual(actual.shape, desired.shape)
+E   AssertionError: Tuples differ: (4,) != (3,)
+E   
+E   First differing element 0:
+E   4
+E   3
+E   
+E   - (4,)
+E   ?  ^
+E   
+E   + (3,)
+E   ?  ^
+______________________ LaxNumpySetopsTest.testUniqueNans2 ______________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueNans2>
+dtype = <class 'ml_dtypes.bfloat16'>
+
+    @jtu.sample_product(dtype=inexact_dtypes)
+    def testUniqueNans(self, dtype):
+      def args_maker():
+        x = [-0.0, 0.0, 1.0, 1.0, np.nan, -np.nan]
+        if np.issubdtype(dtype, np.complexfloating):
+          x = [complex(i, j) for i, j in itertools.product(x, repeat=2)]
+        return [np.array(x, dtype=dtype)]
+    
+      kwds = dict(return_index=True, return_inverse=True, return_counts=True)
+      jnp_fun = partial(jnp.unique, **kwds)
+      def np_fun(x):
+        dtype = x.dtype
+        # numpy unique fails for bfloat16 NaNs, so we cast to float64
+        if x.dtype == jnp.bfloat16:
+          x = x.astype('float64')
+        u, *rest = np.unique(x, **kwds)
+        return (u.astype(dtype), *rest)
+>     self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:387: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1473: in _CheckAgainstNumpy
+    self.assertAllClose(lax_ans, numpy_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1352: in assertAllClose
+    self.assertAllClose(actual_elt, desired_elt, check_dtypes=check_dtypes, atol=atol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1321: in assertArraysAllClose
+    self.assertEqual(actual.shape, desired.shape)
+E   AssertionError: Tuples differ: (4,) != (3,)
+E   
+E   First differing element 0:
+E   4
+E   3
+E   
+E   - (4,)
+E   ?  ^
+E   
+E   + (3,)
+E   ?  ^
+______________________ LaxNumpySetopsTest.testUniqueNans3 ______________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueNans3>
+dtype = <class 'numpy.float32'>
+
+    @jtu.sample_product(dtype=inexact_dtypes)
+    def testUniqueNans(self, dtype):
+      def args_maker():
+        x = [-0.0, 0.0, 1.0, 1.0, np.nan, -np.nan]
+        if np.issubdtype(dtype, np.complexfloating):
+          x = [complex(i, j) for i, j in itertools.product(x, repeat=2)]
+        return [np.array(x, dtype=dtype)]
+    
+      kwds = dict(return_index=True, return_inverse=True, return_counts=True)
+      jnp_fun = partial(jnp.unique, **kwds)
+      def np_fun(x):
+        dtype = x.dtype
+        # numpy unique fails for bfloat16 NaNs, so we cast to float64
+        if x.dtype == jnp.bfloat16:
+          x = x.astype('float64')
+        u, *rest = np.unique(x, **kwds)
+        return (u.astype(dtype), *rest)
+>     self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:387: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1473: in _CheckAgainstNumpy
+    self.assertAllClose(lax_ans, numpy_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1352: in assertAllClose
+    self.assertAllClose(actual_elt, desired_elt, check_dtypes=check_dtypes, atol=atol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1321: in assertArraysAllClose
+    self.assertEqual(actual.shape, desired.shape)
+E   AssertionError: Tuples differ: (4,) != (3,)
+E   
+E   First differing element 0:
+E   4
+E   3
+E   
+E   - (4,)
+E   ?  ^
+E   
+E   + (3,)
+E   ?  ^
+______________________ LaxNumpySetopsTest.testUniqueSize0 ______________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueSize0>
+shape = (1, 4), dtype = <class 'numpy.uint32'>, axis = 1, size = 5
+fill_value = array([79], dtype=uint32)
+
+    @jtu.sample_product(
+      [dict(shape=shape, axis=axis)
+        for shape in nonempty_array_shapes
+        for axis in [None] + list(range(len(shape)))],
+      dtype=number_dtypes,
+      size=[1, 5, 10],
+      fill_value=[None, 0, "slice"],
+    )
+    def testUniqueSize(self, shape, dtype, axis, size, fill_value):
+      rng = jtu.rand_some_equal(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      kwds = dict(axis=axis, return_index=True, return_inverse=True, return_counts=True)
+    
+      if fill_value == "slice":
+        if axis is None:
+          fill_value = rng((), dtype)
+        else:
+          fill_value = rng(shape[:axis] + shape[axis + 1:], dtype)
+      elif fill_value is not None:
+        fill_value = np.array(fill_value).astype(dtype)
+    
+      @partial(jtu.with_jax_dtype_defaults, use_defaults=(False, True, True, True))
+      def np_fun(x, fill_value=fill_value):
+        u, ind, inv, counts = np.unique(x, **kwds)
+        axis = kwds['axis']
+        if axis is None:
+          x = x.ravel()
+          axis = 0
+    
+        n_unique = u.shape[axis]
+        if size <= u.shape[axis]:
+          slc = (slice(None),) * axis + (slice(size),)
+          u, ind, counts = u[slc], ind[:size], counts[:size]
+        else:
+          extra = (0, size - n_unique)
+          pads = [(0, 0)] * u.ndim
+          pads[axis] = extra
+          u = np.pad(u, pads, constant_values=0)
+          slices = [slice(None)] * u.ndim
+          slices[axis] = slice(1)
+          if fill_value is None:
+            fill_value = u[tuple(slices)]
+          elif np.ndim(fill_value):
+            fill_value = lax.expand_dims(fill_value, (axis,))
+          slices[axis] = slice(n_unique, None)
+          u[tuple(slices)] = fill_value
+          ind = np.pad(ind, extra, constant_values=ind[0])
+          counts = np.pad(counts, extra, constant_values=0)
+        return u, ind, inv, counts
+    
+      jnp_fun = lambda x: jnp.unique(x, size=size, fill_value=fill_value, **kwds)
+    
+      self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+>     self._CompileAndCheck(jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:368: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1451: in _CompileAndCheck
+    self.assertAllClose(monitored_ans, python_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1352: in assertAllClose
+    self.assertAllClose(actual_elt, desired_elt, check_dtypes=check_dtypes, atol=atol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([[ 51,  51,  51, 156,  79]], dtype=uint32)
+b = array([[ 51, 156,  79,  79,  79]], dtype=uint32), atol = 0, rtol = 0
+err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=0
+E       
+E       Mismatched elements: 3 / 5 (60%)
+E       Mismatch at indices:
+E        [0, 1]: 51 (ACTUAL), 156 (DESIRED)
+E        [0, 2]: 51 (ACTUAL), 79 (DESIRED)
+E        [0, 3]: 156 (ACTUAL), 79 (DESIRED)
+E       Max absolute difference among violations: 105
+E       Max relative difference among violations: 0.97468354
+E        ACTUAL: array([[ 51,  51,  51, 156,  79]], dtype=uint32)
+E        DESIRED: array([[ 51, 156,  79,  79,  79]], dtype=uint32)
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+______________________ LaxNumpySetopsTest.testUniqueSize1 ______________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueSize1>
+shape = (3, 4), dtype = <class 'numpy.uint8'>, axis = None, size = 5
+fill_value = array(0, dtype=uint8)
+
+    @jtu.sample_product(
+      [dict(shape=shape, axis=axis)
+        for shape in nonempty_array_shapes
+        for axis in [None] + list(range(len(shape)))],
+      dtype=number_dtypes,
+      size=[1, 5, 10],
+      fill_value=[None, 0, "slice"],
+    )
+    def testUniqueSize(self, shape, dtype, axis, size, fill_value):
+      rng = jtu.rand_some_equal(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      kwds = dict(axis=axis, return_index=True, return_inverse=True, return_counts=True)
+    
+      if fill_value == "slice":
+        if axis is None:
+          fill_value = rng((), dtype)
+        else:
+          fill_value = rng(shape[:axis] + shape[axis + 1:], dtype)
+      elif fill_value is not None:
+        fill_value = np.array(fill_value).astype(dtype)
+    
+      @partial(jtu.with_jax_dtype_defaults, use_defaults=(False, True, True, True))
+      def np_fun(x, fill_value=fill_value):
+        u, ind, inv, counts = np.unique(x, **kwds)
+        axis = kwds['axis']
+        if axis is None:
+          x = x.ravel()
+          axis = 0
+    
+        n_unique = u.shape[axis]
+        if size <= u.shape[axis]:
+          slc = (slice(None),) * axis + (slice(size),)
+          u, ind, counts = u[slc], ind[:size], counts[:size]
+        else:
+          extra = (0, size - n_unique)
+          pads = [(0, 0)] * u.ndim
+          pads[axis] = extra
+          u = np.pad(u, pads, constant_values=0)
+          slices = [slice(None)] * u.ndim
+          slices[axis] = slice(1)
+          if fill_value is None:
+            fill_value = u[tuple(slices)]
+          elif np.ndim(fill_value):
+            fill_value = lax.expand_dims(fill_value, (axis,))
+          slices[axis] = slice(n_unique, None)
+          u[tuple(slices)] = fill_value
+          ind = np.pad(ind, extra, constant_values=ind[0])
+          counts = np.pad(counts, extra, constant_values=0)
+        return u, ind, inv, counts
+    
+      jnp_fun = lambda x: jnp.unique(x, size=size, fill_value=fill_value, **kwds)
+    
+      self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+>     self._CompileAndCheck(jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:368: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1451: in _CompileAndCheck
+    self.assertAllClose(monitored_ans, python_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1352: in assertAllClose
+    self.assertAllClose(actual_elt, desired_elt, check_dtypes=check_dtypes, atol=atol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([2, 3, 6, 6, 6], dtype=uint8)
+b = array([ 2,  3,  6,  7, 32], dtype=uint8), atol = 0, rtol = 0, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=0
+E       
+E       Mismatched elements: 2 / 5 (40%)
+E       Mismatch at indices:
+E        [3]: 6 (ACTUAL), 7 (DESIRED)
+E        [4]: 6 (ACTUAL), 32 (DESIRED)
+E       Max absolute difference among violations: 26
+E       Max relative difference among violations: 0.8125
+E        ACTUAL: array([2, 3, 6, 6, 6], dtype=uint8)
+E        DESIRED: array([ 2,  3,  6,  7, 32], dtype=uint8)
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+______________________ LaxNumpySetopsTest.testUniqueSize2 ______________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueSize2>
+shape = (1, 4), dtype = <class 'numpy.int8'>, axis = None, size = 5
+fill_value = array(0, dtype=int8)
+
+    @jtu.sample_product(
+      [dict(shape=shape, axis=axis)
+        for shape in nonempty_array_shapes
+        for axis in [None] + list(range(len(shape)))],
+      dtype=number_dtypes,
+      size=[1, 5, 10],
+      fill_value=[None, 0, "slice"],
+    )
+    def testUniqueSize(self, shape, dtype, axis, size, fill_value):
+      rng = jtu.rand_some_equal(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      kwds = dict(axis=axis, return_index=True, return_inverse=True, return_counts=True)
+    
+      if fill_value == "slice":
+        if axis is None:
+          fill_value = rng((), dtype)
+        else:
+          fill_value = rng(shape[:axis] + shape[axis + 1:], dtype)
+      elif fill_value is not None:
+        fill_value = np.array(fill_value).astype(dtype)
+    
+      @partial(jtu.with_jax_dtype_defaults, use_defaults=(False, True, True, True))
+      def np_fun(x, fill_value=fill_value):
+        u, ind, inv, counts = np.unique(x, **kwds)
+        axis = kwds['axis']
+        if axis is None:
+          x = x.ravel()
+          axis = 0
+    
+        n_unique = u.shape[axis]
+        if size <= u.shape[axis]:
+          slc = (slice(None),) * axis + (slice(size),)
+          u, ind, counts = u[slc], ind[:size], counts[:size]
+        else:
+          extra = (0, size - n_unique)
+          pads = [(0, 0)] * u.ndim
+          pads[axis] = extra
+          u = np.pad(u, pads, constant_values=0)
+          slices = [slice(None)] * u.ndim
+          slices[axis] = slice(1)
+          if fill_value is None:
+            fill_value = u[tuple(slices)]
+          elif np.ndim(fill_value):
+            fill_value = lax.expand_dims(fill_value, (axis,))
+          slices[axis] = slice(n_unique, None)
+          u[tuple(slices)] = fill_value
+          ind = np.pad(ind, extra, constant_values=ind[0])
+          counts = np.pad(counts, extra, constant_values=0)
+        return u, ind, inv, counts
+    
+      jnp_fun = lambda x: jnp.unique(x, size=size, fill_value=fill_value, **kwds)
+    
+      self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+>     self._CompileAndCheck(jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:368: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1451: in _CompileAndCheck
+    self.assertAllClose(monitored_ans, python_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1352: in assertAllClose
+    self.assertAllClose(actual_elt, desired_elt, check_dtypes=check_dtypes, atol=atol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([15, 15, 15, 96,  0], dtype=int8)
+b = array([15, 96,  0,  0,  0], dtype=int8), atol = 0, rtol = 0, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=0
+E       
+E       Mismatched elements: 3 / 5 (60%)
+E       Mismatch at indices:
+E        [1]: 15 (ACTUAL), 96 (DESIRED)
+E        [2]: 15 (ACTUAL), 0 (DESIRED)
+E        [3]: 96 (ACTUAL), 0 (DESIRED)
+E       Max absolute difference among violations: 96
+E       Max relative difference among violations: 0.84375
+E        ACTUAL: array([15, 15, 15, 96,  0], dtype=int8)
+E        DESIRED: array([15, 96,  0,  0,  0], dtype=int8)
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+______________________ LaxNumpySetopsTest.testUniqueSize3 ______________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueSize3>
+shape = (4,), dtype = <class 'numpy.uint16'>, axis = 0, size = 1
+fill_value = None
+
+    @jtu.sample_product(
+      [dict(shape=shape, axis=axis)
+        for shape in nonempty_array_shapes
+        for axis in [None] + list(range(len(shape)))],
+      dtype=number_dtypes,
+      size=[1, 5, 10],
+      fill_value=[None, 0, "slice"],
+    )
+    def testUniqueSize(self, shape, dtype, axis, size, fill_value):
+      rng = jtu.rand_some_equal(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      kwds = dict(axis=axis, return_index=True, return_inverse=True, return_counts=True)
+    
+      if fill_value == "slice":
+        if axis is None:
+          fill_value = rng((), dtype)
+        else:
+          fill_value = rng(shape[:axis] + shape[axis + 1:], dtype)
+      elif fill_value is not None:
+        fill_value = np.array(fill_value).astype(dtype)
+    
+      @partial(jtu.with_jax_dtype_defaults, use_defaults=(False, True, True, True))
+      def np_fun(x, fill_value=fill_value):
+        u, ind, inv, counts = np.unique(x, **kwds)
+        axis = kwds['axis']
+        if axis is None:
+          x = x.ravel()
+          axis = 0
+    
+        n_unique = u.shape[axis]
+        if size <= u.shape[axis]:
+          slc = (slice(None),) * axis + (slice(size),)
+          u, ind, counts = u[slc], ind[:size], counts[:size]
+        else:
+          extra = (0, size - n_unique)
+          pads = [(0, 0)] * u.ndim
+          pads[axis] = extra
+          u = np.pad(u, pads, constant_values=0)
+          slices = [slice(None)] * u.ndim
+          slices[axis] = slice(1)
+          if fill_value is None:
+            fill_value = u[tuple(slices)]
+          elif np.ndim(fill_value):
+            fill_value = lax.expand_dims(fill_value, (axis,))
+          slices[axis] = slice(n_unique, None)
+          u[tuple(slices)] = fill_value
+          ind = np.pad(ind, extra, constant_values=ind[0])
+          counts = np.pad(counts, extra, constant_values=0)
+        return u, ind, inv, counts
+    
+      jnp_fun = lambda x: jnp.unique(x, size=size, fill_value=fill_value, **kwds)
+    
+      self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+>     self._CompileAndCheck(jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:368: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1451: in _CompileAndCheck
+    self.assertAllClose(monitored_ans, python_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1352: in assertAllClose
+    self.assertAllClose(actual_elt, desired_elt, check_dtypes=check_dtypes, atol=atol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([0, 1, 2, 3], dtype=int32), b = array([0, 0, 0, 0], dtype=int32)
+atol = 0, rtol = 0, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=0
+E       
+E       Mismatched elements: 3 / 4 (75%)
+E       Mismatch at indices:
+E        [1]: 1 (ACTUAL), 0 (DESIRED)
+E        [2]: 2 (ACTUAL), 0 (DESIRED)
+E        [3]: 3 (ACTUAL), 0 (DESIRED)
+E       Max absolute difference among violations: 3
+E       Max relative difference among violations: inf
+E        ACTUAL: array([0, 1, 2, 3], dtype=int32)
+E        DESIRED: array([0, 0, 0, 0], dtype=int32)
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+______________________ LaxNumpySetopsTest.testUniqueSize4 ______________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueSize4>
+shape = (1, 4), dtype = <class 'numpy.int8'>, axis = 1, size = 1
+fill_value = array([-18], dtype=int8)
+
+    @jtu.sample_product(
+      [dict(shape=shape, axis=axis)
+        for shape in nonempty_array_shapes
+        for axis in [None] + list(range(len(shape)))],
+      dtype=number_dtypes,
+      size=[1, 5, 10],
+      fill_value=[None, 0, "slice"],
+    )
+    def testUniqueSize(self, shape, dtype, axis, size, fill_value):
+      rng = jtu.rand_some_equal(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      kwds = dict(axis=axis, return_index=True, return_inverse=True, return_counts=True)
+    
+      if fill_value == "slice":
+        if axis is None:
+          fill_value = rng((), dtype)
+        else:
+          fill_value = rng(shape[:axis] + shape[axis + 1:], dtype)
+      elif fill_value is not None:
+        fill_value = np.array(fill_value).astype(dtype)
+    
+      @partial(jtu.with_jax_dtype_defaults, use_defaults=(False, True, True, True))
+      def np_fun(x, fill_value=fill_value):
+        u, ind, inv, counts = np.unique(x, **kwds)
+        axis = kwds['axis']
+        if axis is None:
+          x = x.ravel()
+          axis = 0
+    
+        n_unique = u.shape[axis]
+        if size <= u.shape[axis]:
+          slc = (slice(None),) * axis + (slice(size),)
+          u, ind, counts = u[slc], ind[:size], counts[:size]
+        else:
+          extra = (0, size - n_unique)
+          pads = [(0, 0)] * u.ndim
+          pads[axis] = extra
+          u = np.pad(u, pads, constant_values=0)
+          slices = [slice(None)] * u.ndim
+          slices[axis] = slice(1)
+          if fill_value is None:
+            fill_value = u[tuple(slices)]
+          elif np.ndim(fill_value):
+            fill_value = lax.expand_dims(fill_value, (axis,))
+          slices[axis] = slice(n_unique, None)
+          u[tuple(slices)] = fill_value
+          ind = np.pad(ind, extra, constant_values=ind[0])
+          counts = np.pad(counts, extra, constant_values=0)
+        return u, ind, inv, counts
+    
+      jnp_fun = lambda x: jnp.unique(x, size=size, fill_value=fill_value, **kwds)
+    
+      self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+>     self._CompileAndCheck(jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:368: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1451: in _CompileAndCheck
+    self.assertAllClose(monitored_ans, python_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1352: in assertAllClose
+    self.assertAllClose(actual_elt, desired_elt, check_dtypes=check_dtypes, atol=atol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([1, 2, 0, 3], dtype=int32), b = array([1, 1, 0, 1], dtype=int32)
+atol = 0, rtol = 0, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=0
+E       
+E       Mismatched elements: 2 / 4 (50%)
+E       Mismatch at indices:
+E        [1]: 2 (ACTUAL), 1 (DESIRED)
+E        [3]: 3 (ACTUAL), 1 (DESIRED)
+E       Max absolute difference among violations: 2
+E       Max relative difference among violations: 2.
+E        ACTUAL: array([1, 2, 0, 3], dtype=int32)
+E        DESIRED: array([1, 1, 0, 1], dtype=int32)
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+______________________ LaxNumpySetopsTest.testUniqueSize6 ______________________
+
+self = <tests.lax_numpy_setops_test.LaxNumpySetopsTest testMethod=testUniqueSize6>
+shape = (3, 1), dtype = <class 'numpy.float32'>, axis = 0, size = 5
+fill_value = None
+
+    @jtu.sample_product(
+      [dict(shape=shape, axis=axis)
+        for shape in nonempty_array_shapes
+        for axis in [None] + list(range(len(shape)))],
+      dtype=number_dtypes,
+      size=[1, 5, 10],
+      fill_value=[None, 0, "slice"],
+    )
+    def testUniqueSize(self, shape, dtype, axis, size, fill_value):
+      rng = jtu.rand_some_equal(self.rng())
+      args_maker = lambda: [rng(shape, dtype)]
+      kwds = dict(axis=axis, return_index=True, return_inverse=True, return_counts=True)
+    
+      if fill_value == "slice":
+        if axis is None:
+          fill_value = rng((), dtype)
+        else:
+          fill_value = rng(shape[:axis] + shape[axis + 1:], dtype)
+      elif fill_value is not None:
+        fill_value = np.array(fill_value).astype(dtype)
+    
+      @partial(jtu.with_jax_dtype_defaults, use_defaults=(False, True, True, True))
+      def np_fun(x, fill_value=fill_value):
+        u, ind, inv, counts = np.unique(x, **kwds)
+        axis = kwds['axis']
+        if axis is None:
+          x = x.ravel()
+          axis = 0
+    
+        n_unique = u.shape[axis]
+        if size <= u.shape[axis]:
+          slc = (slice(None),) * axis + (slice(size),)
+          u, ind, counts = u[slc], ind[:size], counts[:size]
+        else:
+          extra = (0, size - n_unique)
+          pads = [(0, 0)] * u.ndim
+          pads[axis] = extra
+          u = np.pad(u, pads, constant_values=0)
+          slices = [slice(None)] * u.ndim
+          slices[axis] = slice(1)
+          if fill_value is None:
+            fill_value = u[tuple(slices)]
+          elif np.ndim(fill_value):
+            fill_value = lax.expand_dims(fill_value, (axis,))
+          slices[axis] = slice(n_unique, None)
+          u[tuple(slices)] = fill_value
+          ind = np.pad(ind, extra, constant_values=ind[0])
+          counts = np.pad(counts, extra, constant_values=0)
+        return u, ind, inv, counts
+    
+      jnp_fun = lambda x: jnp.unique(x, size=size, fill_value=fill_value, **kwds)
+    
+      self._CheckAgainstNumpy(np_fun, jnp_fun, args_maker)
+>     self._CompileAndCheck(jnp_fun, args_maker)
+
+tests/lax_numpy_setops_test.py:368: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1451: in _CompileAndCheck
+    self.assertAllClose(monitored_ans, python_ans, check_dtypes=check_dtypes,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1352: in assertAllClose
+    self.assertAllClose(actual_elt, desired_elt, check_dtypes=check_dtypes, atol=atol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([[-57.072075],
+       [ 98.34465 ],
+       [ 98.34465 ],
+       [-57.072075],
+       [-57.072075]], dtype=float32)
+b = array([[-57.072075],
+       [ 98.34465 ],
+       [-57.072075],
+       [-57.072075],
+       [-57.072075]], dtype=float32)
+atol = 1e-06, rtol = 1e-06, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-06, atol=1e-06
+E       
+E       Mismatched elements: 1 / 5 (20%)
+E       Mismatch at index:
+E        [2, 0]: 98.34465026855469 (ACTUAL), -57.07207489013672 (DESIRED)
+E       Max absolute difference among violations: 155.41672
+E       Max relative difference among violations: 2.7231658
+E        ACTUAL: array([[-57.072075],
+E              [ 98.34465 ],
+E              [ 98.34465 ],...
+E        DESIRED: array([[-57.072075],
+E              [ 98.34465 ],
+E              [-57.072075],...
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+=========================== short test summary info ============================
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan1
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan2
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan4
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan7
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueNans0 - ...
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueNans2 - ...
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueNans3 - ...
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize0 - ...
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize1 - ...
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize2 - ...
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize3 - ...
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize4 - ...
+FAILED tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize6 - ...
+13 failed, 50 passed, 92 deselected in 9.35s
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793042751.741728 1220066 mps_client.h:209] MetalClient destroyed.

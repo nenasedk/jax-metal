@@ -1,0 +1,1015 @@
+{"nodeid": "tests/api_test.py::JitTest::testBuffersAreFreedPromptly", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_cache_key_defaults", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_caches_depend_on_axis_env", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_caches_dont_depend_on_unnamed_axis_env", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/api_test.py::JitTest::test_compile_options_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_complex_support", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_concurrent_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_cpp_jit_raises_on_non_hashable_static_argnum", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_cpp_jit_raises_other_exceptions_when_hashing_fails", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_cpp_jitted_function_returns_PyBuffer", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_device_put_aliasing", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INVALID_ARGUMENT: CopyToDevice cannot accept the same source and destination devices"}
+{"nodeid": "tests/api_test.py::JitTest::test_device_put_aliasing_with_diff_compatible_sharding", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices"}
+{"nodeid": "tests/api_test.py::JitTest::test_device_to_device_copy_between_backends", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_dict_donation_argnames", "outcome": "failed", "message": "UserWarning: Some donated buffers were not usable: ~float32[], ~float32[].\nDonation is not implemented for ('METAL',).\nSee an explanation at https://docs.jax.dev/en/latest/201/jit.html#jax-201-buffer-donation."}
+{"nodeid": "tests/api_test.py::JitTest::test_dict_donation_argnums", "outcome": "failed", "message": "UserWarning: Some donated buffers were not usable: ~float32[], ~float32[].\nDonation is not implemented for ('METAL',).\nSee an explanation at https://docs.jax.dev/en/latest/201/jit.html#jax-201-buffer-donation."}
+{"nodeid": "tests/api_test.py::JitTest::test_dict_donation_args_kwargs_argnames", "outcome": "failed", "message": "UserWarning: Some donated buffers were not usable: ~float32[], ~float32[].\nDonation is not implemented for ('METAL',).\nSee an explanation at https://docs.jax.dev/en/latest/201/jit.html#jax-201-buffer-donation."}
+{"nodeid": "tests/api_test.py::JitTest::test_dict_donation_args_kwargs_argnums", "outcome": "failed", "message": "UserWarning: Some donated buffers were not usable: ~float32[], ~float32[].\nDonation is not implemented for ('METAL',).\nSee an explanation at https://docs.jax.dev/en/latest/201/jit.html#jax-201-buffer-donation."}
+{"nodeid": "tests/api_test.py::JitTest::test_disable_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_donate_argnames_signature_fail", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_donate_argnames_with_args", "outcome": "skipped", "message": "Skipped: test_donate_argnames_with_args not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_donate_argnums_with_kwargs", "outcome": "skipped", "message": "Skipped: test_donate_argnums_with_kwargs not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_donate_args_info_aot", "outcome": "failed", "message": "UserWarning: Some donated buffers were not usable: float32[].\nDonation is not implemented for ('METAL',).\nSee an explanation at https://docs.jax.dev/en/latest/201/jit.html#jax-201-buffer-donation."}
+{"nodeid": "tests/api_test.py::JitTest::test_double_donation", "outcome": "failed", "message": "UserWarning: Some donated buffers were not usable: float32[10].\nDonation is not implemented for ('METAL',).\nSee an explanation at https://docs.jax.dev/en/latest/201/jit.html#jax-201-buffer-donation."}
+{"nodeid": "tests/api_test.py::JitTest::test_effort_level_as_strings_compiler_option", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_effort_level_compiler_option", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_explicit_backend", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_fun_name", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_infer_argnums_and_argnames", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_intersecting_static_and_donate_argnames", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_argnames_validation0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_argnames_validation1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_argnums_overflow_error0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_argnums_overflow_error1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_bad_input", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_cache_clear", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_compile_with_compiler_options_multiple", "outcome": "failed", "message": "AssertionError: JaxRuntimeError not raised"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_decorator_factory", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_deep_copy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_default_device", "outcome": "skipped", "message": "Skipped: Test requires multiple devices"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_default_platform", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_argnames_kwargs_static_argnums", "outcome": "skipped", "message": "Skipped: test_jit_donate_argnames_kwargs_static_argnums not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_invalidates_input_argnames", "outcome": "skipped", "message": "Skipped: test_jit_donate_invalidates_input not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_invalidates_input_argnums", "outcome": "skipped", "message": "Skipped: test_jit_donate_invalidates_input not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_static_argnums_donate_argnames", "outcome": "skipped", "message": "Skipped: test_jit_donate_static_argnums not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_static_argnums_donate_argnums", "outcome": "skipped", "message": "Skipped: test_jit_donate_static_argnums not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_warning_raised_argnames", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_warning_raised_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_weak_type_argnames", "outcome": "skipped", "message": "Skipped: test_jit_donate_weak_type not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_weak_type_argnums", "outcome": "skipped", "message": "Skipped: test_jit_donate_weak_type not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_enum_as_dict_keys_fails", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_global_cache", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_kwargs0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_kwargs1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_as_text", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_arg_type_mismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_as_text", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_compiler_ir", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_cost_analysis", "outcome": "failed", "message": "AssertionError: unexpectedly None"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_executable", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_in_tree_mismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_memory_analysis", "outcome": "crashed", "message": "exit -11: Extension modules: jaxlib.cpu_feature_guard, numpy._core._multiarray_umath, numpy.linalg._umath_linalg, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, nu"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_multi_arg", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_sharding_computation", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_trivial", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_trivial_in_tree_mismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_trivial_multi_arg", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_with_compiler_options", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_with_compiler_options_invalid", "outcome": "failed", "message": "AssertionError: JaxRuntimeError not raised by <lambda>"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_with_individually_defined_outputs", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compiler_ir", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_cost_analysis", "outcome": "skipped", "message": "Skipped: C API does not support uncompiled cost analysis"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_donate_argnums_available", "outcome": "failed", "message": "UserWarning: Some donated buffers were not usable: ~float32[].\nDonation is not implemented for ('METAL',).\nSee an explanation at https://docs.jax.dev/en/latest/201/jit.html#jax-201-buffer-donation."}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_duck_typing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_no_pruning", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_trivial_compile_compiler_ir", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_trivial_compiler_ir", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_masked_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_nan_times_zero", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_nested_donate_ignored", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_of_generator", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_of_noncallable", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_of_nonweakreferenceable_function", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_on_all_devices", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_python_builtin", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_raises_on_first_invocation_on_non_hashable_static_argnum", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_reference_dropping", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_replica_attributes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_repr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_repr_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_shallow_copy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_static_argnums_requires_type_equality", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_static_args0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_static_args1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_many_args_works", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_mismatched_static_argnames", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_pruned_args0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_pruned_args1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_pruned_args2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_static_argnames", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_wrapped_attributes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jnp_array_copy_argnames", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_jnp_array_copy_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_lower_compile_with_compiler_options_multiple", "outcome": "failed", "message": "AssertionError: JaxRuntimeError not raised by <lambda>"}
+{"nodeid": "tests/api_test.py::JitTest::test_mismatched_nested_backends", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_new_static_argnum_on_keyword_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_new_static_argnum_with_default_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_no_execution", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_no_tracing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_omnistaging", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_pe_close_jaxpr_identity", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_print_token_buffer_error", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{function_type = () -> !mhlo.token, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n  %0 = \"mhlo.create_token\"() : () -> !mhlo.token\n  \"func.return\"(%0) : (!mhlo.token) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func.func'\n<unknown>:"}
+{"nodeid": "tests/api_test.py::JitTest::test_resolve_argnums_signature_fail", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_specify_donate_argnums_and_argnames", "outcome": "skipped", "message": "Skipped: test_specify_donate_argnums_and_argnames not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::JitTest::test_static_argnum_on_method", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_static_argnum_on_static_method_is_not_supported", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_static_args_equality", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_staticmethod_is_not_supported", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_sum_of_closed_over_bools", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_trivial_computations", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JitTest::test_trivial_computations_with_tokens", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{function_type = () -> !mhlo.token, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n  %0 = \"mhlo.create_token\"() : () -> !mhlo.token\n  \"func.return\"(%0) : (!mhlo.token) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func.func'\n<unknown>:"}
+{"nodeid": "tests/api_test.py::APITest::test_abstract_error_message", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_ad_weak_types_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_ad_weak_types_jacfwd", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_ad_weak_types_jacrev", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_arange_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_asarray_no_copy_np", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_backward_pass_ref_dropping", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_bad_input", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_basic_vjp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_binop_mismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_block_until_ready_function", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_block_until_ready_mixed", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_block_until_ready_numpy_arrays", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_closure_convert", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_compute_on", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_narrow.py:552:15: error: failed to legalize operation 'mhlo.custom_call'\n        return original(module_name, jaxpr, **kwargs)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:151:19: note: called from\n            return original(module_name, jaxpr, **kwargs)\n                  ^\n/Users/nasedkin/jax_m"}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_custom_gradient", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_custom_partitioning", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_custom_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_first_miss", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_linear_call", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_multiple_changes", "outcome": "skipped", "message": "Skipped: TODO(mattjj): re-enable after updating cache miss explainer"}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_new_function_in_loop", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_no_source_info", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_arg_passed_as_kwarg", "outcome": "skipped", "message": "Skipped: TODO(mattjj): re-enable after updating cache miss explainer"}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_dtype", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_in_tree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_shape_explain_closest", "outcome": "skipped", "message": "Skipped: TODO(mattjj): re-enable after updating cache miss explainer"}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_static_argnames", "outcome": "skipped", "message": "Skipped: TODO(mattjj): re-enable after updating cache miss explainer"}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_static_argnums", "outcome": "skipped", "message": "Skipped: TODO(mattjj): re-enable after updating cache miss explainer"}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_tracing_config", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_weak_type", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_run_state", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_run_state_reference", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_skip_internals", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cast_int", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_casts", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_clear_cache", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_compiler_ir", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_complex_grad_raises_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_complex_input_jacfwd_raises_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_complex_output_jacrev_raises_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_compute_with_large_transfer", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_concurrent_device_get_and_put", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handler_mro", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_bfloat16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_bool", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_complex64", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_float16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_float32", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_int16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_int32", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_int8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_uint16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_uint32", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_uint8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_constants_not_in_lowering_cond", "outcome": "skipped", "message": "Skipped: Works only with simplified Jaxpr consts"}
+{"nodeid": "tests/api_test.py::APITest::test_constants_not_in_lowering_jit", "outcome": "skipped", "message": "Skipped: Works only with simplified Jaxpr consts"}
+{"nodeid": "tests/api_test.py::APITest::test_constants_not_in_lowering_scan", "outcome": "skipped", "message": "Skipped: Works only with simplified Jaxpr consts"}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_does_not_hide_attribute_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_non_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_pytree_deleted_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_string_and_numeric_arrays", "outcome": "skipped", "message": "Skipped: Need at least 4 CPU devices, got 1"}
+{"nodeid": "tests/api_test.py::APITest::test_dce_sink_in_custom_jvp_and_vjp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dce_sink_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_default_backend", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_default_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_deferred_primal_with_direct_linearize", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_array_hash", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_array_repr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_get_scalar", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_across_devices0", "outcome": "skipped", "message": "Skipped: this test requires multiple devices"}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_across_devices1", "outcome": "skipped", "message": "Skipped: this test requires multiple devices"}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_across_platforms", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_and_get", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_custom_type_not_accepting_none_leaves", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_literals", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_mismatched_tree_shows_all_mismatches", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_mismatched_tree_shows_mismatch_detail", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_on_multi_device_donated_buffer_fails", "outcome": "failed", "message": "UserWarning: Some donated buffers were not usable: float32[1].\nDonation is not implemented for ('METAL',).\nSee an explanation at https://docs.jax.dev/en/latest/201/jit.html#jax-201-buffer-donation."}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_on_single_device_donated_buffer_fails", "outcome": "failed", "message": "UserWarning: Some donated buffers were not usable: float32[10].\nDonation is not implemented for ('METAL',).\nSee an explanation at https://docs.jax.dev/en/latest/201/jit.html#jax-201-buffer-donation."}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding_mismatched_tree_different_leaf_count", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices"}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding_mismatched_tree_same_leaf_count", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices"}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding_tree", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices"}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding_tree_prefix", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices"}
+{"nodeid": "tests/api_test.py::APITest::test_devicearray_block_until_ready", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_devicearray_delete", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_devicearray_repr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_devicearray_weakref_friendly", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_disallowed_bf16_reductions", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dot_mismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dot_precision_context_manager", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dot_precision_flag", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dot_precision_forces_retrace", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_from_builtin_types", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning0", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{arg_attrs = [{}], function_type = (tensor<3xf64>) -> tensor<3xf64>, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n^bb0(%arg0: tensor<3xf64>):\n  \"func.return\"(%arg0) : (tensor<3xf64>) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func"}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning1", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{arg_attrs = [{}], function_type = (tensor<3xf64>) -> tensor<3xf64>, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n^bb0(%arg0: tensor<3xf64>):\n  \"func.return\"(%arg0) : (tensor<3xf64>) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func"}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning3", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{arg_attrs = [{}], function_type = (tensor<3xf64>) -> tensor<3xf64>, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n^bb0(%arg0: tensor<3xf64>):\n  \"func.return\"(%arg0) : (tensor<3xf64>) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func"}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dunder_jax_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dunder_jax_array_bug", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_dunder_jax_array_warnings", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_ensure_compile_time_eval_no_leaks", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_error_for_invalid_dtype", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracer_omnistaging", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracer_omnistaging_top_trace", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracer_shape_dtype", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_cant_lift", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_cant_lift_sublevels", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_different_top_level_traces", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_incompatible_sublevel", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_not_among_input_tracers", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_tracer_from_higher_level", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/api_test.py::APITest::test_eval_context", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_constants", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_duck_typing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_duck_typing2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_error_bad_output", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_nested_jit_sds", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_out_shardings", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_output_dict", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_shape_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_trace_cache_share", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_tuple_itemgetting", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_tuple_unpacking", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_weak_type", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_fastpath_cache_confusion", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_fastpath_cache_confusion2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_float0_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_float0_reshape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_forwarding_bug", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_frexp_sharded", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd_kwargs0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd_kwargs1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd_kwargs2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd_kwargs3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_constant", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_nested", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_no_tracers", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_bad_input", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_complex_result_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_conj_symbolic_zeros", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_does_not_unflatten_tree_with_none", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_item", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_negative_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_nonscalar_output", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_nonscalar_output_hint", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_object_array_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_bool", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_bool_vjp3", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_int", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_int_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_int_index", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_jit_compilation_caching", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_jit_compilation_caching2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_token_consuming_primitive", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{function_type = () -> !mhlo.token, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n  %0 = \"mhlo.create_token\"() : () -> !mhlo.token\n  \"func.return\"(%0) : (!mhlo.token) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func.func'\n<unknown>:"}
+{"nodeid": "tests/api_test.py::APITest::test_grad_tuple_output", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_unit_output", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_without_enough_args_error_message", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_wrap_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_wrap_jacfwd", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_wrap_jacref", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_grad_wrt_ref_arg_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_hessian", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_hessian_aux", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_hessian_holomorphic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_hessian_on_pytrees", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_heterogeneous_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_heterogeneous_jacfwd", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_heterogeneous_jacrev", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_holomorphic_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_holomorphic_grad_of_float_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_holomorphic_jacfwd_of_float_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_holomorphic_jacrev_of_float_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_implicit_dce_linearize_jaxpr", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_inline_optimized_hlo", "outcome": "failed", "message": "TypeError: argument of type 'NoneType' is not iterable"}
+{"nodeid": "tests/api_test.py::APITest::test_inline_return_twice", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_inlined_literals_with_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_inner_jit_forwarded_consts_stay_const", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/api_test.py::APITest::test_inner_jit_function_retracing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_internal_device_put_assembled", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices"}
+{"nodeid": "tests/api_test.py::APITest::test_internal_device_put_with_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_invalid_value_device_put", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_is_instance", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_is_subclass", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_issue1372", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_issue_871", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jacfwd_and_aux_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jacfwd_and_aux_nested", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jacfwd_of_complex_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jacobian", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jacobian_on_pytrees", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jacrev_and_aux_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jacrev_and_aux_nested", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_boundmethod_reference_cycle", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_capturing_token", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{function_type = () -> !mhlo.token, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n  %0 = \"mhlo.create_token\"() : () -> !mhlo.token\n  \"func.return\"(%0) : (!mhlo.token) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func.func'\n<unknown>:"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_compilation_time_logging", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_custom_floats_bfloat16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness10", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness100", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness101", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness102", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness103", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness104", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness105", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness106", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness107", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness108", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness109", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness11", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness110", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness111", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness112", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness113", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness114", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness115", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness116", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness117", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness118", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness119", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness12", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness120", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness121", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness122", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness123", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness124", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness125", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness126", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness127", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness13", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness14", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness15", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness16", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness17", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness18", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness19", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness20", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness21", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness22", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness23", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness24", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness25", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness26", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness27", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness28", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness29", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness30", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness31", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness32", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness33", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness34", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness35", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness36", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness37", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness38", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness39", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness40", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness41", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness42", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness43", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness44", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness45", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness46", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness47", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness48", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness49", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness50", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness51", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness52", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness53", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness54", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness55", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness56", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness57", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness58", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness59", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness60", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness61", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness62", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness63", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness64", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness65", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness66", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness67", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness68", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness69", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness70", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness71", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness72", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness73", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness74", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness75", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness76", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness77", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness78", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness79", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness80", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness81", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness82", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness83", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness84", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness85", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness86", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness87", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness88", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness89", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness90", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness91", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness92", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness93", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness94", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness95", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness96", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness97", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness98", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness99", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_grad_of_int", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_inline", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_inline_multistate", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_item", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_jvp_of_int", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_negative_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_of_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jit_returning_token", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{function_type = () -> !mhlo.token, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n  %0 = \"mhlo.create_token\"() : () -> !mhlo.token\n  \"func.return\"(%0) : (!mhlo.token) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func.func'\n<unknown>:"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_vjp_of_int", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_and_aux_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_asarray_returns_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_jit_cached", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_mismatched_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_non_tuple_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_of_convert_element_type", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_of_int_add", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_of_int_identity", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_large_python_ints", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_lax_empty_batching_bug", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_lax_empty_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_lax_logistic", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::APITest::test_lax_real_empty", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positive_custom_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_remat3_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_remat3_scan_transpose", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:4266:33: error: null operand found\n      c = jax.remat(lambda h, w: h * jnp.sin(w), policy=policy)(c, w)\n                                ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:4270:13: note: called from\n      y, _ = lax.scan(body, x, w)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:4274:6: note: called from\n      jax.grad(f)(jnp.ones(3), jnp.ones((2,"}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_scan_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_scan_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_scan_vmap_2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_grad_leak", "outcome": "skipped", "message": "Skipped: TODO(dougalm): re-enable once we fix tests that were showing tracer leaks"}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_jit_leak", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_pmap_leak", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_scan_leak", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_sublevel_leak", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_linearize_tracer_escape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_internal_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_reference_chain", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_remat3_linearize_zero_tangent_output", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_remat3_zero_tangent_output_stays_concrete", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:4278:15: error: null operand found\n      y, aux = jax.remat(lambda x: (jnp.sin(x), lax.stop_gradient(x) * 2.0))(x)\n              ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:4283:6: note: called from\n      jax.value_and_grad(f)(3.0)  # doesn't crash\n     ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                t"}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_reports_frame_locals", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_leaked_tracer_issue_7613", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_legacy_devicearray_repr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_abstract", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_complex", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_dce", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float00", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float01", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float02", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float03", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float04", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float05", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_only0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_only1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_zero_map0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_zero_map1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_zero_map2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_zero_map3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_fun_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_integer", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_zeros", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linearize_aux", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linearize_aval_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linearize_fun_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_linearize_instantiates_zero_outputs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_list_index_err", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_lowering_platform_aot", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_make_jaxpr_deduplicates_consts", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_make_jaxpr_name", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_make_jaxpr_static_argnums_order", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_make_jaxpr_weakref", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_mesh_creation_error_message", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_namedtuple_subclass_transparency", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_namedtuple_transparency", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_nested_jit_hoisting", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_no_double_dots_in_error_message", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_none_in_sds_shape_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_nonholomorphic_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_nonholomorphic_jacrev", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_num_cpu_devices_called_after_initialization", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_pmap_empty_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_pmap_global_cache", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_pmap_in_axes_bool_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_pmap_static_kwarg_error_message", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_primitive_compilation_cache", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_range_err", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_rank_promotion_forces_retrace", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_remat_of_jit_input_to_output_forwarding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_returned_non_jaxtype", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_scalar_conversion_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_dtype_none", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_hash", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_invalid_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_non_jax_dtypes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_scalar", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_sharding_attr_on_tracer_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_std_basis", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_deduped_by_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_deduped_by_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_deduped_by_shard_map", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_input_forwarded_by_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_input_forwarded_by_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_switch_value_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_traced_closure_convert", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_traced_effects", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_traced_with_consts_as_arg_cache_hit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_tree_map_rest_prefix_err", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_trivial_computations", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_unimplemented_interpreter_rules", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_unwrapped_numpy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_use_direct_linearize", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_user_context_global", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_user_trace_context_hooks", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_value_and_grad_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_dont_want", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_dont_want_bilinear", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_ref_arg_needs_with_refs_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_with_refs_aval_mismatch_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_with_refs_tree_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_bad_cotangent_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_fun_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_mismatched_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_multiple_arguments_error_message", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_of_int_fulllike", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_of_int_index", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_of_int_shapes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_too_many_args", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_caching", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_empty_arguments", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_explicit_axis_size_mismatch", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_bool_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_leaf_types", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_list", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_non_tuple_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_tree_prefix_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_tuple_with_kwargs_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_tuple_with_kwonly_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_wrong_length_tuple_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_inconsistent_sizes_constructs_proper_error_message", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_inconsistent_sizes_constructs_proper_error_message_kwargs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_inconsistent_sizes_constructs_proper_error_message_starargs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_make_jaxpr_close_over_tracer", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_mismatched_axis_sizes_error_message_issue_705", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_mismatched_keyword", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_out_axes_leaf_types", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_preserves_docstr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_scalar", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_structured_in_axes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_unbatched_object_passthrough_issue_183", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_unmapped_last", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_while_jvp_debug_info_crash", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_why_alive_ref_chain_ending_in_frame_local", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_wrong_output_abstract_eval", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_xla_constant_dedup", "outcome": "skipped", "message": "Skipped: broken by convert_element_type change."}
+{"nodeid": "tests/api_test.py::RematTest::test_checkpoint_dropvars", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_checkpoint_dropvars_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_checkpoint_dropvars_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_checkpoint_name_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_concreteness_error_includes_user_code", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_concreteness_error_includes_user_code_with_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_const_in_jvp_cond", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/api_test.py::RematTest::test_const_in_jvp_cond_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/api_test.py::RematTest::test_const_in_jvp_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_const_in_jvp_scan_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_constants_not_hoisted", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_dce_keeps_effectful_remat_with_no_used_outputs_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_dce_keeps_effectful_remat_with_no_used_outputs_remat3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_dce_keeps_eqns_with_used_outputs_but_no_used_inputs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_escaped_tracer_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_escaped_tracer_remat_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_escaped_tracer_remat_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_excess_precision_hell", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_fwd_caching", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_fwd_caching_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_linearize_caching", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_name_allowlist", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_name_denylist", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_name_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_name_saveable_input", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_name_stack_annotation", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_on_primals", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_on_primals_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_on_primals_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_with_prevent_cse_false", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_with_prevent_cse_false_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_basic_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_binomial_checkpointing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_binomial_checkpointing_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_binomial_checkpointing_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_inside_cond", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7891:22: error: null operand found\n      return lax.cond(x.sum() > 0, f, lambda x: x, x)\n                     ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7903:4: note: called from\n    jtu.check_grads(api.jit(f), (jnp.ones((5, 5)),), order=2,\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(r"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_inside_scan", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7152:20: error: null operand found\n        x = jnp.sin(jnp.dot(x, W, precision=lax.Precision.HIGHEST))\n                   ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7158:13: note: called from\n      return lax.scan(body, x, None, length=2)[0]\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7172:4: note: called from\n    jtu.check_grads(api.jit(f), (jnp.ones("}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_jit_old_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7132:10: error: null operand found\n      x = jnp.dot(x, x, precision=lax.Precision.HIGHEST)\n         ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7144:4: note: called from\n    jtu.check_grads(f, (jnp.ones((2, 2)),), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          re"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_old_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_outside_cond", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7921:22: error: null operand found\n      return lax.cond(x.sum() > 0, f, lambda x: x, x)\n                     ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7930:4: note: called from\n    jtu.check_grads(api.jit(f), (jnp.ones((5, 5)),), order=2,\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(r"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_outside_scan", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7693:13: error: null operand found\n      return lax.scan(body, x, None, length=2)[0]\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7704:4: note: called from\n    jtu.check_grads(api.jit(f), (jnp.ones((5, 5)),), order=2,\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n "}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_saves_convs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims2_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims2_old_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims_old_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims_skips_convs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_jvp_linear_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7260:13: error: null operand found\n      return sum(x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7264:13: note: called from\n      return lax.scan(lambda _, x: (None, f(x)), None, x)[1]\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7265:4: note: called from\n    jtu.check_grads(g, (jnp.ones((2, 3)),), order=2, modes=['fwd', 'rev'])\n   ^\n/Users"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_jvp_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7187:10: error: null operand found\n      x = jnp.dot(x, x, precision=lax.Precision.HIGHEST)\n         ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7198:13: note: called from\n      return lax.scan(lambda x, _: (f(x), None), x, None, length=2)[0]\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7199:4: note: called from\n    jtu.check_grads(g, (3.,), order=2, mod"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_policy_save_anything_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_policy_save_cos", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_policy_save_nothing_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_policy_save_sin_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_vjp_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7219:14: error: null operand found\n      x = sin(x * 1e-3)\n             ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7229:13: note: called from\n      return lax.scan(lambda x, _: (f(x), None), x, None, length=2)[0]\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7230:4: note: called from\n    jtu.check_grads(g, (3.,), order=2, modes=['rev'])\n   ^\n/Users/nased"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_dce_unused_output", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_dropvar_policy_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_dropvar_policy_old_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_eval_counter", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_freevars", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_freevars_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_grad_accum_refs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_grad_python_control_flow_static_argnums", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_grad_python_control_flow_unhashable_static_argnums", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_ad_preserves_remat_primitive_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_ad_preserves_remat_primitive_cond", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_autodiff", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_autodiff_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_autodiff_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6463:13: error: null operand found\n      return lax.sin(lax.sin(x))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6466:13: note: called from\n      return g(x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6473:10: note: called from\n    ans = api.grad(f)(2.)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit2_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit2_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit3_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit3_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6463:13: error: null operand found\n      return lax.sin(lax.sin(x))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6466:13: note: called from\n      return g(x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6473:10: note: called from\n    ans = api.grad(f)(2.)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6463:13: error: null operand found\n      return lax.sin(lax.sin(x))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6466:13: note: called from\n      return g(x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6473:10: note: called from\n    ans = api.grad(f)(2.)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit_static_argnum_omnistaging", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_no_redundant_flops", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6615:13: error: null operand found\n      return jnp.sin(x) * y\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6611:13: note: called from\n      return f(2., x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6622:6: note: called from\n      api.grad(g)(3.)\n     ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameter"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_no_redundant_flops_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6615:13: error: null operand found\n      return jnp.sin(x) * y\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6611:13: note: called from\n      return f(2., x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6622:6: note: called from\n      api.grad(g)(3.)\n     ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameter"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_no_redundant_flops_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6615:13: error: null operand found\n      return jnp.sin(x) * y\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6611:13: note: called from\n      return f(2., x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6622:6: note: called from\n      api.grad(g)(3.)\n     ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameter"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_nontrivial_env", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_nontrivial_env_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond_funky_custom_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond_funky_custom_jvp2", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_jit_residual_forwarding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_funky_custom_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_funky_custom_jvp2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_unused_extensive_output_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_while_loop", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_while_loop_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_while_loop_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_offload_convs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_offload_dot_with_no_batch_dims_jaxpr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_offload_names_jaxpr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_offload_names_of_scan_jaxpr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_partial_cse_prevention", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_partial_cse_prevention_all_false", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_partial_cse_prevention_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_recursive_checkpoint_recompute_counts", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_residual_logging", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_retracing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_scan", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6572:28: error: null operand found\n    to_scan = lambda c, x: (jnp.sin(c), None)\n                           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6579:13: note: called from\n      y, _ = lax.scan(remat(to_scan), x, np.arange(3.))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6586:10: note: called from\n    ans = api.grad(f_yesremat)(4.)\n         ^\n/Us"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_scan2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_scan2_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_scan_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6572:28: error: null operand found\n    to_scan = lambda c, x: (jnp.sin(c), None)\n                           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6579:13: note: called from\n      y, _ = lax.scan(remat(to_scan), x, np.arange(3.))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6586:10: note: called from\n    ans = api.grad(f_yesremat)(4.)\n         ^\n/Us"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_static_agnums_retracing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_symbolic_zeros", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6675:24: error: null operand found\n        return shift(R, 0.001 * F), jnp.array([0.])\n                       ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6678:16: note: called from\n      R, temp = lax.scan(move, Rinit, jnp.arange(2))\n               ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6681:4: note: called from\n    api.grad(func)(5.0)  # doesn't crash\n   ^\n/U"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_symbolic_zeros_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6675:24: error: null operand found\n        return shift(R, 0.001 * F), jnp.array([0.])\n                       ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6678:16: note: called from\n      R, temp = lax.scan(move, Rinit, jnp.arange(2))\n               ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6681:4: note: called from\n    api.grad(func)(5.0)  # doesn't crash\n   ^\n/U"}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_not_leading_dim", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_not_leading_dim_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_not_leading_dim_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_wrapped_kwarg_with_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_saved_residuals_utility", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_saved_residuals_utility_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_vjp_caching", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::RematTest::test_vjp_caching_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_dropvars", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_dropvars_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_dropvars_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_name_combined_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8616:4: error: null operand found\n    jtu.check_grads(jax.remat(sin, policy=policy), (3.,), order=2,\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest("}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_name_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_name_zero_tangent_residuals", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8635:28: error: null operand found\n    g2 = jax.grad(lambda x: jax.grad(g)(x).sum())(x)\n                           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8635:9: note: called from\n    g2 = jax.grad(lambda x: jax.grad(g)(x).sum())(x)\n        ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase("}
+{"nodeid": "tests/api_test.py::Remat3Test::test_concreteness_error_includes_user_code", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_concreteness_error_includes_user_code_with_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_const_in_jvp_cond", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7878:4: error: null operand found\n    jax.grad(g)(jnp.arange(3.))  # doesn't crash\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n         "}
+{"nodeid": "tests/api_test.py::Remat3Test::test_const_in_jvp_cond_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7878:4: error: null operand found\n    jax.grad(g)(jnp.arange(3.))  # doesn't crash\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n         "}
+{"nodeid": "tests/api_test.py::Remat3Test::test_const_in_jvp_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_const_in_jvp_scan_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_constants_not_hoisted", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_layered_outermost_policy_wins", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8616:4: error: null operand found\n    jtu.check_grads(jax.remat(sin, policy=policy), (3.,), order=2,\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest("}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_offload_names_in_fwd_jaxpr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_saved_residual_is_vjp_pytree_leaf", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8650:17: error: null operand found\n      _, f_vjp = jax.vjp(jax.remat(block, policy=policy), x)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item."}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_with_checkpoint_name_in_fwd", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8616:4: error: null operand found\n    jtu.check_grads(jax.remat(sin, policy=policy), (3.,), order=2,\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest("}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_with_checkpoint_name_in_fwd_static_argnums", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8616:4: error: null operand found\n    jtu.check_grads(jax.remat(sin, policy=policy), (3.,), order=2,\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest("}
+{"nodeid": "tests/api_test.py::Remat3Test::test_dce_keeps_effectful_remat_with_no_used_outputs_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_dce_keeps_effectful_remat_with_no_used_outputs_remat3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_dce_keeps_eqns_with_used_outputs_but_no_used_inputs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_defremat_nested_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_escaped_tracer_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_escaped_tracer_remat_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_escaped_tracer_remat_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_excess_precision_hell", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_fwd_caching", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_fwd_caching_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_linearize_caching", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_allowlist", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_denylist", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_saveable_input", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_stack_annotation", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_on_primals", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_on_primals_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_on_primals_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_with_prevent_cse_false", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_with_prevent_cse_false_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_basic_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_binomial_checkpointing", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_binomial_checkpointing_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_binomial_checkpointing_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_inside_cond", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7886:12: error: null operand found\n        x = jnp.sin(jnp.dot(x, W, precision=lax.Precision.HIGHEST))\n           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7903:4: note: called from\n    jtu.check_grads(api.jit(f), (jnp.ones((5, 5)),), order=2,\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testca"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_inside_scan", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7152:12: error: null operand found\n        x = jnp.sin(jnp.dot(x, W, precision=lax.Precision.HIGHEST))\n           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7158:13: note: called from\n      return lax.scan(body, x, None, length=2)[0]\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7172:4: note: called from\n    jtu.check_grads(api.jit(f), (jnp.ones((5, 5)),"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_jit_old_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7133:18: error: null operand found\n      x = jnp.sin(x * 1e-3)\n                 ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7144:4: note: called from\n    jtu.check_grads(f, (jnp.ones((2, 2)),), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_new_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7029:4: error: null operand found\n    jtu.check_grads(f, (jnp.ones((2, 2)),), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: n"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_old_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7029:4: error: null operand found\n    jtu.check_grads(f, (jnp.ones((2, 2)),), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: n"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_outside_cond", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7916:12: error: null operand found\n        x = jnp.sin(jnp.dot(x, W, precision=lax.Precision.HIGHEST))\n           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7930:4: note: called from\n    jtu.check_grads(api.jit(f), (jnp.ones((5, 5)),), order=2,\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testca"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_outside_scan", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7158:13: error: null operand found\n      return lax.scan(body, x, None, length=2)[0]\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7693:13: note: called from\n      return lax.scan(body, x, None, length=2)[0]\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7704:4: note: called from\n    jtu.check_grads(api.jit(f), (jnp.ones((5, 5)),), order=2,\n   ^\n"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_saves_convs", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7096:4: error: null operand found\n    jtu.check_grads(g, (x, k), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n   "}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims2_new_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7075:4: error: null operand found\n    jtu.check_grads(f, (jnp.ones((3, 2, 2)),), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims2_old_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7075:4: error: null operand found\n    jtu.check_grads(f, (jnp.ones((3, 2, 2)),), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims_new_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7029:4: error: null operand found\n    jtu.check_grads(f, (jnp.ones((2, 2)),), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: n"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims_old_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7029:4: error: null operand found\n    jtu.check_grads(f, (jnp.ones((2, 2)),), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: n"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims_skips_convs", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7105:4: error: null operand found\n    jtu.check_grads(g, (x, k), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n   "}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_combined_dots_and_names_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8696:4: error: null operand found\n    jtu.check_grads(f, (x,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n       ^\n/Us"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_computed_residuals_cse_prevention", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_cse_prevention_no_cotangents_flag", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_jvp_linear_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_jvp_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7195:4: error: null operand found\n    jtu.check_grads(f, (3.,), order=2, modes=['fwd', 'rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n    "}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_policy_save_anything_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_policy_save_cos", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8335:4: error: null operand found\n    jtu.check_grads(f, (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n       ^\n/U"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_policy_save_nothing_new_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6996:6: error: null operand found\n      jtu.check_grads(f, (3.,), order=2, modes=['fwd', 'rev'])\n     ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: calle"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_policy_save_sin_new_remat", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6996:6: error: null operand found\n      jtu.check_grads(f, (3.,), order=2, modes=['fwd', 'rev'])\n     ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: calle"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_vjp_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7226:4: error: null operand found\n    jtu.check_grads(f, (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n       ^\n/U"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_dce_input_to_output_forwarding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_dce_unused_output", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_dropvar_policy_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_dropvar_policy_old_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_eqn_dce", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_eval_counter", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8513:15: error: null operand found\n      _, vjp = jax.vjp(g, v)\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n       ^\n/Users/nasedkin"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_expand_stages_call_without_inlining", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_expand_stages_call_without_inlining_high_jaxpr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_freevars", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_freevars_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_grad_accum_refs", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8314:19: error: null operand found\n    loss, vjp_fn = jax.vjp(f, param)\n                  ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n       ^\n/Us"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_grad_python_control_flow_static_argnums", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_grad_python_control_flow_unhashable_static_argnums", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_ad_preserves_remat_primitive_basic", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_ad_preserves_remat_primitive_cond", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_autodiff", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_autodiff_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_autodiff_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6648:24: error: null operand found\n    self.assertAllClose(api.grad(f1)(x), api.grad(f2)(x), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pyte"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6463:13: error: null operand found\n      return lax.sin(lax.sin(x))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6473:10: note: called from\n    ans = api.grad(f)(2.)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Us"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit2_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit2_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit3", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6754:4: error: null operand found\n    api.grad(f)(w, x)  # doesn't crash\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                tes"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit3_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6754:4: error: null operand found\n    api.grad(f)(w, x)  # doesn't crash\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                tes"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit3_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6754:4: error: null operand found\n    api.grad(f)(w, x)  # doesn't crash\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                tes"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6463:13: error: null operand found\n      return lax.sin(lax.sin(x))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6473:10: note: called from\n    ans = api.grad(f)(2.)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Us"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6463:13: error: null operand found\n      return lax.sin(lax.sin(x))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6473:10: note: called from\n    ans = api.grad(f)(2.)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Us"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit_static_argnum_omnistaging", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_no_redundant_flops", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6615:13: error: null operand found\n      return jnp.sin(x) * y\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6622:6: note: called from\n      api.grad(g)(3.)\n     ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/j"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_no_redundant_flops_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6615:13: error: null operand found\n      return jnp.sin(x) * y\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6622:6: note: called from\n      api.grad(g)(3.)\n     ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/j"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_no_redundant_flops_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6615:13: error: null operand found\n      return jnp.sin(x) * y\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6622:6: note: called from\n      api.grad(g)(3.)\n     ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/j"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_nontrivial_env", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_nontrivial_env_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7843:4: error: null operand found\n    jtu.check_grads(remat(f), (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called fr"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond_funky_custom_jvp", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8385:4: error: null operand found\n    jtu.check_grads(f, (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n       ^\n/U"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond_funky_custom_jvp2", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7843:4: error: null operand found\n    jtu.check_grads(remat(f), (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called fr"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8385:4: error: null operand found\n    jtu.check_grads(f, (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n       ^\n/U"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_jit_output_to_residual_forwarding", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8463:13: error: null operand found\n      a, b = f(x)\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8473:24: note: called from\n    self.assertAllClose(api.grad(g)(1.), api.grad(g_ref)(1.),\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n            "}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_jit_residual_forwarding", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7571:29: error: null operand found\n    ans = api.grad(lambda x: f(x).sum())(jnp.float32(3.))\n                            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7571:10: note: called from\n    ans = api.grad(lambda x: f(x).sum())(jnp.float32(3.))\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n            "}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7535:4: error: null operand found\n    jtu.check_grads(remat(f), (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called fr"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_funky_custom_jvp", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8357:4: error: null operand found\n    jtu.check_grads(f, (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n       ^\n/U"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_funky_custom_jvp2", "outcome": "skipped", "message": "Skipped"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7535:4: error: null operand found\n    jtu.check_grads(remat(f), (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called fr"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8427:4: error: null operand found\n    jtu.check_grads(f, (3.,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n       ^\n/U"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_unused_extensive_output_grad", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7555:34: error: null operand found\n    ans = api.grad(lambda c, as_: g(c, as_)[0].sum())(c, as_)\n                                 ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7555:10: note: called from\n    ans = api.grad(lambda c, as_: g(c, as_)[0].sum())(c, as_)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_while_loop", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_while_loop_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_while_loop_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_offload_convs", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:7120:24: error: null operand found\n    self.assertAllClose(jax.grad(g, argnums=(0, 1))(x, k),\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        "}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_offload_dot_with_no_batch_dims_jaxpr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_offload_names_jaxpr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_offload_names_of_scan_jaxpr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_output_to_residual_forwarding", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8450:24: error: null operand found\n    self.assertAllClose(api.grad(f)(1.), jnp.cos(1.), check_dtypes=False)\n                       ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: calle"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_partial_cse_prevention", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_partial_cse_prevention_all_false", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_partial_cse_prevention_pytree", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_partial_cse_prevention_pytree_prefix_forms", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_recursive_checkpoint_recompute_counts", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6890:28: error: null operand found\n        return lambda x: f1(jax.checkpoint(f2)(x))\n                           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6895:15: note: called from\n      _, vjp = jax.vjp(f, np.ones(()))\n              ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=se"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_residual_logging", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_retracing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_scan", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6572:28: error: null operand found\n    to_scan = lambda c, x: (jnp.sin(c), None)\n                           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6579:13: note: called from\n      y, _ = lax.scan(remat(to_scan), x, np.arange(3.))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6586:10: note: called from\n    ans = api.grad(f_yesremat)(4.)\n         ^\n/Us"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_scan2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_scan2_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_scan_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6572:28: error: null operand found\n    to_scan = lambda c, x: (jnp.sin(c), None)\n                           ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6579:13: note: called from\n      y, _ = lax.scan(remat(to_scan), x, np.arange(3.))\n            ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6586:10: note: called from\n    ans = api.grad(f_yesremat)(4.)\n         ^\n/Us"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_static_agnums_retracing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_symbolic_zeros", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6675:24: error: null operand found\n        return shift(R, 0.001 * F), jnp.array([0.])\n                       ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6678:16: note: called from\n      R, temp = lax.scan(move, Rinit, jnp.arange(2))\n               ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6681:4: note: called from\n    api.grad(func)(5.0)  # doesn't crash\n   ^\n/U"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_symbolic_zeros_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6675:24: error: null operand found\n        return shift(R, 0.001 * F), jnp.array([0.])\n                       ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6678:16: note: called from\n      R, temp = lax.scan(move, Rinit, jnp.arange(2))\n               ^\n/Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6681:4: note: called from\n    api.grad(func)(5.0)  # doesn't crash\n   ^\n/U"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_unhashable_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6503:10: error: null operand found\n    ans = api.jacrev(g)(x)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_checkpoint_name_and_custom_vjp", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:8711:4: error: null operand found\n    jtu.check_grads(f_name, (xs,), order=2, modes=['rev'])\n   ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase(result=self)\n               ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/runner.py:184:8: note: called from\n        item.runtest()\n      "}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_new", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6503:10: error: null operand found\n    ans = api.jacrev(g)(x)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_not_leading_dim", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_not_leading_dim_new", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_not_leading_dim_policy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_policy", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: /Users/nasedkin/jax_metal/re/work/jax-src/tests/api_test.py:6503:10: error: null operand found\n    ans = api.jacrev(g)(x)\n         ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/absl/testing/parameterized.py:327:17: note: called from\n          return test_method(self, **testcase_params)\n                ^\n/Users/nasedkin/jax_metal/.venv-shim/lib/python3.12/site-packages/_pytest/unittest.py:410:16: note: called from\n                testcase"}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_wrapped_kwarg_with_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_saved_residuals_utility", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_saved_residuals_utility_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_vjp_caching", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::Remat3Test::test_vjp_caching_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_abstract_inputs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_cond", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_const", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_convert_element_type_literal_constant_folding", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_elide_trivial_broadcasts", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_elide_trivial_convert_element_types", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_eqn_repr_with_no_lhs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_make_jaxpr_axis_env", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_make_jaxpr_return_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_make_jaxpr_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_non_scalar_const", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_scalar_literals", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::JaxprTest::test_weak_type_jit_invariance", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_cond_nontrivial", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_cond_trivial", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_const_in_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_extensive_input", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_nontrivial_fixedpoint_carry", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_nontrivial_fixedpoint_carry_2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_nontrivial_fixedpoint_extensive_output", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_overpruning", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_results", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_attached_consts", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_chain_fixpoint0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_chain_fixpoint1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_chain_fixpoint2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_cond_dependency", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_dead_ref_write0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_dead_ref_write1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects_only_fixpoint", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_000", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_001", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_010", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_011", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_100", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_101", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_110", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_111", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_keeps_ref_write_read_by_cond", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_keeps_ref_write_read_by_next_iteration", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_nested", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_ref_effect", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_ref_liveness_fixpoint", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_shared_const", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_vmap_batched_predicate", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_while_jit_prunes_args", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::BufferDonationTest::test_pmap_donate_argnums_invalidates_input", "outcome": "skipped", "message": "Skipped: test_pmap_donate_argnums_invalidates_input not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::BufferDonationTest::test_pmap_nested_donate_ignored", "outcome": "skipped", "message": "Skipped: test_pmap_nested_donate_ignored not supported on device with tags {'METAL'}."}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_jax_transforms0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_jax_transforms1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_jax_transforms2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_jax_transforms3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_non_jaxtype_arg", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_partial_eval", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_static_argnums", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::BackendsTest::test_no_backend_warning_on_cpu_if_platform_specified", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/api_test.py::CleanupTest::test_call_wrapped_second_phase_cleanup", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::EnvironmentInfoTest::test_print_environment_info0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::EnvironmentInfoTest::test_print_environment_info1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::AutodidaxTest::test_autodidax_smoketest", "outcome": "skipped", "message": "Skipped: Cannot locate autodidax.py"}
+{"nodeid": "tests/api_test.py::GarbageCollectionTest::test_xla_gc_callback", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::OverrideLoweringTest::test_sharding_constraint_as_noop", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_opaque_cond_vjp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_opaque_vjp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_pass_through_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_pytree_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_unused_vjp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_doesnt_leak_symbolic_zeros", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_fsdp_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_fsdp_vjp3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_basic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_broadcasts", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_isomorphic_trees", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_loose_prefix", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_pass_through_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_structure_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_unused_arg_stays_not_needed", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::TracebackTest::test_cond_traceback", "outcome": "skipped", "message": "Skipped: Expected failure."}
+{"nodeid": "tests/api_test.py::TracebackTest::test_custom_vjp_traceback", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::TracebackTest::test_grad_traceback", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::TracebackTest::test_jit_traceback", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::TracebackTest::test_scan_traceback", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::TracebackTest::test_traceback_test", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::TracebackTest::test_vmap_traceback", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_impl", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_linearize_of_while", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_are_thread_safe", "outcome": "passed", "message": ""}
+{"nodeid": "tests/api_test.py::APITest::test_large_device_constant", "outcome": "passed", "message": ""}

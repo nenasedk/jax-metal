@@ -1,0 +1,23 @@
+$ /Users/nasedkin/jax_metal/shim/../.venv-shim/bin/python -c import jax, jax.numpy as jnp
+device = jax.devices()[0]
+assert device.platform.upper() == 'METAL', jax.devices()
+x = jnp.arange(16.0).reshape(4, 4)
+y = jax.jit(lambda a: jnp.sin(a) @ a.T + 1)(x)
+import numpy as np
+np.testing.assert_allclose(np.asarray(y), np.sin(np.asarray(x)) @ np.asarray(x).T + 1, rtol=1e-4, atol=1e-4)
+print('METAL ok:', device, jax.__version__)
+
+Platform 'METAL' is experimental and not all JAX functionality may be correctly supported!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793040130.367069 1107238 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+Metal device set to: Apple M3
+I0000 00:00:1793040130.378832 1107238 service.cc:145] XLA service 0x6000034fcf00 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793040130.378854 1107238 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793040130.379833 1107238 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793040130.379844 1107238 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+METAL ok: METAL:0 0.12.0.1
+I0000 00:00:1793040131.109938 1107238 mps_client.h:209] MetalClient destroyed.
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+

@@ -1,0 +1,7 @@
+................                                                         [100%]
+16 passed in 9.62s
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793043265.726973 1243071 mps_client.h:209] MetalClient destroyed.

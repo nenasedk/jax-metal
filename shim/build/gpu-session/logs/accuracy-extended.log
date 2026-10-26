@@ -1,0 +1,81 @@
+$ /Users/nasedkin/jax_metal/shim/../.venv-shim/bin/python /Users/nasedkin/jax_metal/shim/tests/accuracy_extended.py /Users/nasedkin/jax_metal/re/findings/accuracy-extended.md
+Platform 'METAL' is experimental and not all JAX functionality may be correctly supported!
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793040262.801690 1118329 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+Metal device set to: Apple M3
+I0000 00:00:1793040262.813306 1118329 service.cc:145] XLA service 0x60000197d800 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793040262.813318 1118329 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793040262.814159 1118329 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793040262.814170 1118329 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+ok   reduce     sum n=1000                         metal  1.60e-08  cpu  1.60e-08  
+ok   reduce     mean n=1000                        metal  1.44e-08  cpu  1.44e-08  
+ok   reduce     var n=1000                         metal  6.94e-08  cpu  6.88e-09  
+ok   reduce     std n=1000                         metal  2.83e-08  cpu  2.83e-08  
+ok   reduce     norm n=1000                        metal  1.70e-08  cpu  6.06e-08  
+ok   reduce     logsumexp n=1000                   metal  3.17e-08  cpu  3.17e-08  
+ok   reduce     max/min n=1000                     metal  0.00e+00  cpu  0.00e+00  
+ok   reduce     sum n=100000                       metal  5.10e-08  cpu  5.32e-08  
+ok   reduce     mean n=100000                      metal  1.97e-09  cpu  8.14e-08  
+ok   reduce     var n=100000                       metal  4.67e-08  cpu  4.67e-08  
+ok   reduce     std n=100000                       metal  3.49e-08  cpu  3.49e-08  
+ok   reduce     norm n=100000                      metal  3.93e-09  cpu  3.93e-09  
+ok   reduce     logsumexp n=100000                 metal  5.12e-08  cpu  1.24e-08  
+ok   reduce     max/min n=100000                   metal  0.00e+00  cpu  0.00e+00  
+ok   reduce     sum n=1000000                      metal  2.28e-08  cpu  2.28e-08  
+ok   reduce     mean n=1000000                     metal  2.58e-09  cpu  2.58e-09  
+ok   reduce     var n=1000000                      metal  2.35e-08  cpu  2.35e-08  
+ok   reduce     std n=1000000                      metal  3.61e-08  cpu  3.61e-08  
+ok   reduce     norm n=1000000                     metal  7.64e-08  cpu  7.64e-08  
+ok   reduce     logsumexp n=1000000                metal  1.47e-08  cpu  1.47e-08  
+ok   reduce     max/min n=1000000                  metal  0.00e+00  cpu  0.00e+00  
+ok   reduce     prod n=4096                        metal  2.13e-08  cpu  1.21e-06  
+ok   reduce     sum axis=1 (256x4096)              metal  1.38e-07  cpu  1.21e-07  
+ok   reduce     cumsum n=100000                    metal  2.52e-07  cpu  1.95e-07  
+ok   matmul     64x64 default                      metal  2.87e-07  cpu  2.87e-07  
+ok   matmul     64x64 HIGHEST                      metal  2.87e-07  cpu  2.87e-07  
+ok   matmul     512x512 default                    metal  8.63e-07  cpu  8.63e-07  
+ok   matmul     512x512 HIGHEST                    metal  8.63e-07  cpu  8.63e-07  
+ok   matmul     2048x2048 default                  metal  1.88e-06  cpu  7.79e-07  
+ok   matmul     2048x2048 HIGHEST                  metal  1.88e-06  cpu  7.79e-07  
+ok   matmul     batched 8x64x256 @ 8x256x32        metal  5.97e-07  cpu  5.97e-07  
+ok   conv       2x3x32x32 k16x3x3 SAME             metal  1.97e-07  cpu  1.97e-07  
+ok   conv       4x64x16x16 k64x3x3 SAME            metal  3.13e-07  cpu  7.83e-07  
+ok   conv       2x16x28x28 k8x5x5 VALID            metal  6.23e-07  cpu  5.10e-07  
+ok   conv       1x128x8x8 k128x1x1 VALID           metal  3.60e-07  cpu  3.60e-07  
+ok   f16        add                                metal  0.00e+00  cpu  0.00e+00  
+ok   f16        mul                                metal  0.00e+00  cpu  0.00e+00  
+ok   f16        div                                metal  0.00e+00  cpu  0.00e+00  
+ok   f16        sqrt                               metal  0.00e+00  cpu  0.00e+00  
+ok   f16        exp                                metal  2.85e-04  cpu  2.85e-04  
+ok   f16        log                                metal  3.52e-04  cpu  3.52e-04  
+ok   f16        tanh                               metal  2.44e-04  cpu  2.44e-04  
+ok   f16        sin                                metal  2.44e-04  cpu  2.44e-04  
+ok   f16        sigmoid                            metal  2.48e-04  cpu  6.84e-04  
+ok   f16        matmul 128x256x64                  metal  2.62e-04  cpu  2.62e-04  
+ok   f16        sum n=10000                        metal  2.26e-04  cpu  2.26e-04  
+ok   bf16       add                                metal  0.00e+00  cpu  0.00e+00  
+ok   bf16       mul                                metal  0.00e+00  cpu  0.00e+00  
+ok   bf16       div                                metal  0.00e+00  cpu  0.00e+00  
+ok   bf16       sqrt                               metal  0.00e+00  cpu  0.00e+00  
+ok   bf16       exp                                metal  2.21e-03  cpu  2.21e-03  
+ok   bf16       log                                metal  2.77e-03  cpu  2.77e-03  
+ok   bf16       tanh                               metal  1.94e-03  cpu  1.94e-03  
+ok   bf16       sin                                metal  1.95e-03  cpu  1.95e-03  
+ok   bf16       sigmoid                            metal  1.98e-03  cpu  5.26e-03  
+ok   bf16       matmul 128x256x64                  metal  3.15e-03  cpu  3.15e-03  
+ok   bf16       sum n=10000                        metal  2.28e-03  cpu  2.28e-03  
+ok   binary     pow (x>0)                          metal  7.82e-09  cpu  7.82e-09  
+ok   binary     atan2                              metal  7.67e-08  cpu  4.13e-08  
+ok   binary     remainder                          metal  3.79e-10  cpu  3.79e-10  
+ok   binary     fmod                               metal  0.00e+00  cpu  0.00e+00  
+ok   binary     hypot                              metal  6.19e-08  cpu  5.80e-08  
+ok   binary     logaddexp                          metal  4.59e-08  cpu  4.59e-08  
+ok   binary     maximum/minimum with NaN           metal  0.00e+00  cpu  0.00e+00  
+ok   binary     integer power x**3                 metal  5.31e-08  cpu  5.31e-08  
+
+0 flagged: none
+I0000 00:00:1793040267.902218 1118329 mps_client.h:209] MetalClient destroyed.
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+

@@ -1,0 +1,25 @@
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_convert_element_type", "seconds": 0.364, "before_mb": 80, "peak_mb": 164}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default0", "seconds": 0.334, "before_mb": 164, "peak_mb": 196, "params": "(jit=<function <lambda> at 0x115391120>, enable_or_disable=True)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default1", "seconds": 0.338, "before_mb": 196, "peak_mb": 205, "params": "(jit=<function <lambda> at 0x115391120>, enable_or_disable=False)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default2", "seconds": 0.116, "before_mb": 205, "peak_mb": 206, "params": "(jit=<function jit at 0x114812f20>, enable_or_disable=True)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default3", "seconds": 0.117, "before_mb": 206, "peak_mb": 206, "params": "(jit=<function jit at 0x114812f20>, enable_or_disable=False)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_custom_jvp", "seconds": 0.31, "before_mb": 206, "peak_mb": 210}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_custom_vjp", "seconds": 0.362, "before_mb": 210, "peak_mb": 206}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_explicit_x64_dtypes_allow", "seconds": 0.033, "before_mb": 206, "peak_mb": 207}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_explicit_x64_dtypes_allow_reduce", "seconds": 0.197, "before_mb": 207, "peak_mb": 211}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_explicit_x64_dtypes_allow_reduce_initial", "seconds": 0.104, "before_mb": 211, "peak_mb": 212}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_explicit_x64_dtypes_allow_shape_dtype_struct", "seconds": 0.055, "before_mb": 212, "peak_mb": 213}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_grad", "seconds": 0.039, "before_mb": 213, "peak_mb": 214}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_jit_cache", "seconds": 0.237, "before_mb": 214, "peak_mb": 221}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_make_array0", "seconds": 0.35, "before_mb": 221, "peak_mb": 230, "params": "(jit=<function <lambda> at 0x115391120>)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_make_array1", "seconds": 0.118, "before_mb": 230, "peak_mb": 241, "params": "(jit=<function jit at 0x114812f20>)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_mul", "seconds": 0.311, "before_mb": 245, "peak_mb": 252}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_near_singular_inverse0", "seconds": 0.014, "before_mb": 252, "peak_mb": 252, "params": "(jit=<function <lambda> at 0x115391120>)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_near_singular_inverse1", "seconds": 0.008, "before_mb": 252, "peak_mb": 252, "params": "(jit=<function jit at 0x114812f20>)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_python_scalar", "seconds": 0.042, "before_mb": 252, "peak_mb": 253}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_scan_with_contextmanager0", "seconds": 0.167, "before_mb": 253, "peak_mb": 252, "params": "(disable_jit=False)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_scan_with_contextmanager1", "seconds": 0.1, "before_mb": 252, "peak_mb": 258, "params": "(disable_jit=True)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_sin", "seconds": 0.387, "before_mb": 258, "peak_mb": 265}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_thread_safety", "seconds": 0.234, "before_mb": 265, "peak_mb": 269}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_while_loop0", "seconds": 0.25, "before_mb": 269, "peak_mb": 271, "params": "(jit=<function <lambda> at 0x115391120>)"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_while_loop1", "seconds": 0.143, "before_mb": 271, "peak_mb": 274, "params": "(jit=<function jit at 0x114812f20>)"}

@@ -1,0 +1,80 @@
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh0", "seconds": 0.065, "before_mb": 94, "peak_mb": 106, "params": "(n=0, dtype=<class 'numpy.float32'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh1", "seconds": 1.849, "before_mb": 106, "peak_mb": 218, "params": "(n=5, dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh2", "seconds": 0.081, "before_mb": 218, "peak_mb": 225, "params": "(n=0, dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh3", "seconds": 0.369, "before_mb": 225, "peak_mb": 240, "params": "(n=4, dtype=<class 'numpy.float32'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh4", "seconds": 1.974, "before_mb": 240, "peak_mb": 262, "params": "(n=50, dtype=<class 'numpy.complex64'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh5", "seconds": 0.067, "before_mb": 262, "peak_mb": 265, "params": "(n=0, dtype=<class 'numpy.complex64'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh6", "seconds": 0.299, "before_mb": 265, "peak_mb": 272, "params": "(n=4, dtype=<class 'numpy.float32'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh7", "seconds": 0.668, "before_mb": 272, "peak_mb": 285, "params": "(n=50, dtype=<class 'numpy.float32'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh8", "seconds": 1.558, "before_mb": 285, "peak_mb": 292, "params": "(n=50, dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigh9", "seconds": 0.502, "before_mb": 292, "peak_mb": 305, "params": "(n=4, dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching0", "seconds": 0.663, "before_mb": 305, "peak_mb": 317, "params": "(shape=(4, 4), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching1", "seconds": 1.217, "before_mb": 317, "peak_mb": 344, "params": "(shape=(4, 4), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching2", "seconds": 0.66, "before_mb": 344, "peak_mb": 357, "params": "(shape=(1, 1), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching3", "seconds": 0.882, "before_mb": 357, "peak_mb": 416, "params": "(shape=(300, 300), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching4", "seconds": 0.213, "before_mb": 416, "peak_mb": 422, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching5", "seconds": 1.202, "before_mb": 422, "peak_mb": 438, "params": "(shape=(1, 1), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighBatching7", "seconds": 0.252, "before_mb": 438, "peak_mb": 443, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad0", "seconds": 1.38, "before_mb": 443, "peak_mb": 494, "params": "(shape=(1, 1), dtype=<class 'numpy.float32'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad3", "seconds": 1.564, "before_mb": 494, "peak_mb": 541, "params": "(shape=(4, 4), dtype=<class 'numpy.float32'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad5", "seconds": 5.985, "before_mb": 541, "peak_mb": 676, "params": "(shape=(1, 1), dtype=<class 'numpy.complex64'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad6", "seconds": 0.617, "before_mb": 676, "peak_mb": 716, "params": "(shape=(4, 4), dtype=<class 'numpy.float32'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGradLargeEigenvalues", "seconds": 0.476, "before_mb": 716, "peak_mb": 742}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGradPrecision", "seconds": 0.014, "before_mb": 742, "peak_mb": 742}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGradRankPromotion", "seconds": 0.217, "before_mb": 742, "peak_mb": 746}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity0", "seconds": 0.032, "before_mb": 746, "peak_mb": 750, "params": "(n=0, dtype=<class 'numpy.float32'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity1", "seconds": 0.056, "before_mb": 750, "peak_mb": 755, "params": "(n=5, dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity2", "seconds": 0.022, "before_mb": 755, "peak_mb": 755, "params": "(n=0, dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity3", "seconds": 0.041, "before_mb": 755, "peak_mb": 759, "params": "(n=4, dtype=<class 'numpy.float32'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity4", "seconds": 0.059, "before_mb": 759, "peak_mb": 764, "params": "(n=50, dtype=<class 'numpy.complex64'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity5", "seconds": 0.015, "before_mb": 764, "peak_mb": 764, "params": "(n=0, dtype=<class 'numpy.complex64'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity6", "seconds": 0.016, "before_mb": 764, "peak_mb": 764, "params": "(n=4, dtype=<class 'numpy.float32'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity7", "seconds": 0.024, "before_mb": 764, "peak_mb": 765, "params": "(n=50, dtype=<class 'numpy.float32'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity8", "seconds": 0.02, "before_mb": 765, "peak_mb": 765, "params": "(n=50, dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighIdentity9", "seconds": 0.028, "before_mb": 765, "peak_mb": 766, "params": "(n=4, dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighLargeMatrix", "seconds": 0.01, "before_mb": 766, "peak_mb": 766}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex0", "seconds": 0.016, "before_mb": 766, "peak_mb": 766, "params": "(start=64, end=256)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex1", "seconds": 0.008, "before_mb": 766, "peak_mb": 766, "params": "(start=64, end=64)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex2", "seconds": 0.008, "before_mb": 766, "peak_mb": 766, "params": "(start=255, end=65)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex3", "seconds": 0.007, "before_mb": 766, "peak_mb": 766, "params": "(start=255, end=64)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex4", "seconds": 0.007, "before_mb": 766, "peak_mb": 766, "params": "(start=63, end=63)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex5", "seconds": 0.007, "before_mb": 766, "peak_mb": 766, "params": "(start=64, end=63)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex6", "seconds": 0.013, "before_mb": 766, "peak_mb": 766, "params": "(start=65, end=256)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex7", "seconds": 0.008, "before_mb": 766, "peak_mb": 766, "params": "(start=0, end=256)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex8", "seconds": 0.009, "before_mb": 766, "peak_mb": 766, "params": "(start=0, end=64)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighSubsetByIndex9", "seconds": 0.01, "before_mb": 766, "peak_mb": 766, "params": "(start=0, end=1)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighZeroDiagonal", "seconds": 0.093, "before_mb": 766, "peak_mb": 767}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh0", "seconds": 0.1, "before_mb": 767, "peak_mb": 755, "params": "(shape=(4, 4), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh1", "seconds": 0.081, "before_mb": 755, "peak_mb": 756, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh2", "seconds": 0.306, "before_mb": 756, "peak_mb": 759, "params": "(shape=(50, 50), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh3", "seconds": 0.171, "before_mb": 759, "peak_mb": 762, "params": "(shape=(50, 50), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh4", "seconds": 0.168, "before_mb": 762, "peak_mb": 764, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEigvalsh5", "seconds": 0.141, "before_mb": 764, "peak_mb": 766, "params": "(shape=(4, 4), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh0", "seconds": 0.484, "before_mb": 766, "peak_mb": 776, "params": "(n=4, dtype=<class 'numpy.complex64'>, lower=False, sort_eigenvalues=False)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh1", "seconds": 1.232, "before_mb": 776, "peak_mb": 788, "params": "(n=50, dtype=<class 'numpy.complex64'>, lower=False, sort_eigenvalues=True)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh2", "seconds": 0.067, "before_mb": 788, "peak_mb": 790, "params": "(n=0, dtype=<class 'numpy.float32'>, lower=False, sort_eigenvalues=False)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh3", "seconds": 0.251, "before_mb": 790, "peak_mb": 798, "params": "(n=4, dtype=<class 'numpy.float32'>, lower=True, sort_eigenvalues=False)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh4", "seconds": 0.045, "before_mb": 798, "peak_mb": 800, "params": "(n=0, dtype=<class 'numpy.float32'>, lower=False, sort_eigenvalues=True)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh5", "seconds": 0.216, "before_mb": 800, "peak_mb": 806, "params": "(n=4, dtype=<class 'numpy.float32'>, lower=False, sort_eigenvalues=True)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh6", "seconds": 0.513, "before_mb": 806, "peak_mb": 817, "params": "(n=5, dtype=<class 'numpy.complex64'>, lower=False, sort_eigenvalues=False)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh7", "seconds": 0.195, "before_mb": 817, "peak_mb": 823, "params": "(n=4, dtype=<class 'numpy.float32'>, lower=False, sort_eigenvalues=False)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh8", "seconds": 0.07, "before_mb": 823, "peak_mb": 828, "params": "(n=0, dtype=<class 'numpy.complex64'>, lower=False, sort_eigenvalues=True)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testEigh9", "seconds": 0.041, "before_mb": 828, "peak_mb": 830, "params": "(n=0, dtype=<class 'numpy.float32'>, lower=True, sort_eigenvalues=True)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform2", "seconds": 0.141, "before_mb": 93, "peak_mb": 168, "params": "(n=1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform4", "seconds": 3.54, "before_mb": 98, "peak_mb": 245, "params": "(n=100, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform5", "seconds": 0.735, "before_mb": 245, "peak_mb": 271, "params": "(n=3, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform6", "seconds": 0.867, "before_mb": 271, "peak_mb": 290, "params": "(n=2, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testRandomUniform8", "seconds": 1.706, "before_mb": 96, "peak_mb": 236, "params": "(n=8, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testSelect0", "seconds": 1.164, "before_mb": 96, "peak_mb": 210, "params": "(dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testSelect1", "seconds": 0.651, "before_mb": 210, "peak_mb": 245, "params": "(dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz2", "seconds": 0.05, "before_mb": 245, "peak_mb": 249, "params": "(n=1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz5", "seconds": 1.675, "before_mb": 249, "peak_mb": 324, "params": "(n=3, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz6", "seconds": 1.186, "before_mb": 324, "peak_mb": 353, "params": "(n=2, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad1", "seconds": 6.828, "before_mb": 97, "peak_mb": 347, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad2", "seconds": 5.555, "before_mb": 347, "peak_mb": 505, "params": "(shape=(1, 1), dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad4", "seconds": 5.902, "before_mb": 505, "peak_mb": 644, "params": "(shape=(25, 25), dtype=<class 'numpy.complex64'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad7", "seconds": 2.366, "before_mb": 644, "peak_mb": 730, "params": "(shape=(25, 25), dtype=<class 'numpy.float32'>, lower=True)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad8", "seconds": 4.053, "before_mb": 730, "peak_mb": 751, "params": "(shape=(25, 25), dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::EighTest::testEighGrad9", "seconds": 3.279, "before_mb": 751, "peak_mb": 882, "params": "(shape=(4, 4), dtype=<class 'numpy.complex64'>, lower=False)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz4", "seconds": 4.199, "before_mb": 94, "peak_mb": 287, "params": "(n=100, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/eigh_test.py::LaxLinalgEighTest::testToeplitz8", "seconds": 2.864, "before_mb": 97, "peak_mb": 276, "params": "(n=8, dtype=<class 'numpy.float32'>)"}

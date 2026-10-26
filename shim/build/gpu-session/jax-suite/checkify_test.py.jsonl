@@ -1,0 +1,118 @@
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_auto_axes_explicit_top_level", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_checify_donation_no_forwarding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_checkify_custom_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_checkify_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_checking_key_split_with_nan_check", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_closed_call", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_cond_basic", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_cond_different_payloads", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_cond_nd_payloads", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_custom_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_custom_jvp_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_custom_vjp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_custom_vjp_explicit_check", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_different_payload_effects", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_dynamic_slice_oobs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_dynamic_update_slice_oobs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_effects_total_ordering", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_empty_enabled_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_assert", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_automatic_checks", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_div", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_nan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_enabled_errors_oob", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_goodfellow_custom_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_goodfellow_custom_vjp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_hijax_custom_derivative_primal_error0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_hijax_custom_derivative_primal_error1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_div_errors0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_div_errors1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_multi0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_multi1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_nan0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_nan1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_add", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_div", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_get", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_max", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_min", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_mul", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_pow", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_oob_update_set", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_ordering0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_jit_ordering1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_mapped_error_one_payload", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_multiple_payloads", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_nd_payloads", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_gather", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_add", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_div", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_max", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_min", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_mul", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_pow", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_numpy_indexing_oobs_scatter_update", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_pmap_basic", "outcome": "skipped", "message": "Skipped: requires at least 2 devices"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_pmap_collectives", "outcome": "skipped", "message": "Skipped: requires at least 2 devices"}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_pmap_one_device", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_post_process_call", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_post_process_map", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_psum_nan_check", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_remat0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_remat1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_retracing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_carry", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_consts", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_consts2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_map", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_scan_xs_mapped_correctly", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_shard_map0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_shard_map1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_consts", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_body_and_cond_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_body_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_cond_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_cond_error_and_false", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::CheckifyTransformTests::test_while_loop_leaks", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_batching_rule", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_cond_no_data_dependence", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging_cond", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: INTERNAL: Unable to serialize MPS module"}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging_no_data_dependence", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging_scan", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_discharging_while_loop", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_primitive_eval_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_primitive_impl", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_primitive_jaxpr_effects", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_primitive_lowering", "outcome": "failed", "message": "NotImplementedError: MLIR translation rule for primitive 'check' not found for platform METAL"}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_assert_switch_no_data_dependence", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_check_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_check_error_scanned", "outcome": "failed", "message": "AssertionError: unexpectedly None"}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_check_pp_rule", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_inner_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_multithreaded_determinism", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_non_jax_type_input", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_of_vmap_of_while_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_of_vmap_of_while_masked_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_static_args", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_checkify_trace_determinism", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_cond_of_named_call", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_disabled_errors_with_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_disabled_errors_without_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_jaxpr_roundtrip", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_nonscalar_pred_with_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_nonscalar_pred_without_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_noop", "outcome": "failed", "message": "NotImplementedError: MLIR translation rule for primitive 'check' not found for platform METAL"}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_with_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_without_jit", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_discharge_recharge", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_enable_x64_inner_scope0", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n^bb0(%arg0: tensor<f64>):\n  \"func.return\"(%arg0) : (tensor<f64>) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func.func'\n<"}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_enable_x64_inner_scope1", "outcome": "failed", "message": "jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.\n<unknown>:0: note: see current operation: \n\"func.func\"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = \"result\"}], sym_name = \"main\", sym_visibility = \"public\"}> ({\n^bb0(%arg0: tensor<f64>):\n  \"func.return\"(%arg0) : (tensor<f64>) -> ()\n}) : () -> ()\n<unknown>:0: error: failed to legalize operation 'func.func'\n<"}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_fmt_args_array_type_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_nested_checkify_namespace_collision", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_reinjected_error_after_while_loop_cond_check", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_reinjected_error_with_disabled_checks", "outcome": "passed", "message": ""}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_vmap_of_checkify_of_while", "outcome": "passed", "message": ""}

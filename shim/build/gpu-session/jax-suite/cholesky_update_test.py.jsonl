@@ -1,0 +1,4 @@
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testRandomMatrix0", "outcome": "skipped", "message": "Skipped: Test disabled for x32 mode"}
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testUpperOnes0", "outcome": "skipped", "message": "Skipped: Test disabled for x32 mode"}
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testRandomMatrix1", "outcome": "failed", "message": "AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}"}
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testUpperOnes1", "outcome": "passed", "message": ""}

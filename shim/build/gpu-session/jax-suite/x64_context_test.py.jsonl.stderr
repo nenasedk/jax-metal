@@ -1,0 +1,2338 @@
+FFFFFFF.....FFFFss...F.FF                                                [100%]
+=================================== FAILURES ===================================
+__________________ X64ContextTests.test_convert_element_type ___________________
+/opt/anaconda3/lib/python3.12/contextlib.py:144: in __exit__
+    next(self.gen)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextmanager
+    def assert_global_configs_unchanged():
+      starting_cache = compilation_cache._cache
+      starting_config = config.config.values.copy()
+      yield
+      ending_config = config.config.values
+      ending_cache = compilation_cache._cache
+    
+      if starting_config != ending_config:
+        differing = {k: (starting_config.get(k, NotPresent()), ending_config.get(k, NotPresent()))
+                      for k in (starting_config.keys() | ending_config.keys())
+                      if (k not in starting_config or k not in ending_config
+                          or starting_config[k] != ending_config[k])}
+>       raise AssertionError(f"Test changed global config values. Differing values are: {differing}")
+E       AssertionError: Test changed global config values. Differing values are: {'jax_use_shardy_partitioner': (True, False)}
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1209: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Metal device set to: Apple M3
+----------------------------- Captured stderr call -----------------------------
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1793042823.260515 1224179 mps_client.cc:510] WARNING: JAX Apple GPU support is experimental and not all JAX functionality is correctly supported!
+I0000 00:00:1793042823.285648 1224179 service.cc:145] XLA service 0x6000000e5700 initialized for platform METAL (this does not guarantee that XLA will be used). Devices:
+I0000 00:00:1793042823.285666 1224179 service.cc:153]   StreamExecutor device (0): Metal, <undefined>
+I0000 00:00:1793042823.286870 1224179 mps_client.cc:406] Using Simple allocator.
+I0000 00:00:1793042823.286882 1224179 mps_client.cc:384] XLA backend will use up to 5726158848 bytes on device 0 for SimpleAllocator.
+------------------------------ Captured log call -------------------------------
+WARNING  jax._src.xla_bridge:xla_bridge.py:932 Platform 'METAL' is experimental and not all JAX functionality may be correctly supported!
+_______________ X64ContextTests.test_correctly_capture_default0 ________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_correctly_capture_default0>
+jit = <function <lambda> at 0x115391120>, enable_or_disable = True
+
+    @jtu.sample_product(
+      jit=jtu.JIT_IMPLEMENTATION,
+      enable_or_disable=[True, False],
+    )
+    def test_correctly_capture_default(self, jit, enable_or_disable):
+      # The fact we defined a jitted function with a block with a different value
+      # of `jax.config.enable_x64` has no impact on the output.
+      with jax.enable_x64(enable_or_disable):
+        func = jit(lambda: jnp.array(np.float64(0)))
+>       func()
+
+tests/x64_context_test.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/x64_context_test.py:54: in <lambda>
+    func = jit(lambda: jnp.array(np.float64(0)))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/array_constructors.py:193: in array
+    return lax.stage(object)
+           ^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:1710: in stage
+    return stage_p.bind(x)
+           ^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5952: in _stage_bind_with_trace
+    return trace.stage_value(args[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1310: in stage_value
+    return self.process_primitive(stage_p, [val], {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5942: in _stage_impl
+    return dispatch.apply_primitive(stage_p, x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:89: in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x117ede430>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x123c92600>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_______________ X64ContextTests.test_correctly_capture_default1 ________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_correctly_capture_default1>
+jit = <function <lambda> at 0x115391120>, enable_or_disable = False
+
+    @jtu.sample_product(
+      jit=jtu.JIT_IMPLEMENTATION,
+      enable_or_disable=[True, False],
+    )
+    def test_correctly_capture_default(self, jit, enable_or_disable):
+      # The fact we defined a jitted function with a block with a different value
+      # of `jax.config.enable_x64` has no impact on the output.
+      with jax.enable_x64(enable_or_disable):
+        func = jit(lambda: jnp.array(np.float64(0)))
+        func()
+    
+      expected_dtype = "float64" if jax.config._read("jax_enable_x64") else "float32"
+      self.assertEqual(func().dtype, expected_dtype)
+    
+      with jax.enable_x64(True):
+>       self.assertEqual(func().dtype, "float64")
+                         ^^^^^^
+
+tests/x64_context_test.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/x64_context_test.py:54: in <lambda>
+    func = jit(lambda: jnp.array(np.float64(0)))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/array_constructors.py:193: in array
+    return lax.stage(object)
+           ^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:1710: in stage
+    return stage_p.bind(x)
+           ^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5952: in _stage_bind_with_trace
+    return trace.stage_value(args[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1310: in stage_value
+    return self.process_primitive(stage_p, [val], {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5942: in _stage_impl
+    return dispatch.apply_primitive(stage_p, x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:89: in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x117ede430>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x12180c000>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_______________ X64ContextTests.test_correctly_capture_default2 ________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_correctly_capture_default2>
+jit = <function jit at 0x114812f20>, enable_or_disable = True
+
+    @jtu.sample_product(
+      jit=jtu.JIT_IMPLEMENTATION,
+      enable_or_disable=[True, False],
+    )
+    def test_correctly_capture_default(self, jit, enable_or_disable):
+      # The fact we defined a jitted function with a block with a different value
+      # of `jax.config.enable_x64` has no impact on the output.
+      with jax.enable_x64(enable_or_disable):
+        func = jit(lambda: jnp.array(np.float64(0)))
+>       func()
+
+tests/x64_context_test.py:55: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x120b3ade0>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x113d75a00>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{function_type = () -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E           %0 = "mhlo.constant"() {value = dense<0.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           "func.return"(%0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{function_type = () -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E           %0 = "mhlo.constant"() {value = dense<0.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           "func.return"(%0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_______________ X64ContextTests.test_correctly_capture_default3 ________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_correctly_capture_default3>
+jit = <function jit at 0x114812f20>, enable_or_disable = False
+
+    @jtu.sample_product(
+      jit=jtu.JIT_IMPLEMENTATION,
+      enable_or_disable=[True, False],
+    )
+    def test_correctly_capture_default(self, jit, enable_or_disable):
+      # The fact we defined a jitted function with a block with a different value
+      # of `jax.config.enable_x64` has no impact on the output.
+      with jax.enable_x64(enable_or_disable):
+        func = jit(lambda: jnp.array(np.float64(0)))
+        func()
+    
+      expected_dtype = "float64" if jax.config._read("jax_enable_x64") else "float32"
+      self.assertEqual(func().dtype, expected_dtype)
+    
+      with jax.enable_x64(True):
+>       self.assertEqual(func().dtype, "float64")
+                         ^^^^^^
+
+tests/x64_context_test.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x120ed8ef0>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x121036000>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{function_type = () -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E           %0 = "mhlo.constant"() {value = dense<0.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           "func.return"(%0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{function_type = () -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E           %0 = "mhlo.constant"() {value = dense<0.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           "func.return"(%0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_______________________ X64ContextTests.test_custom_jvp ________________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_custom_jvp>
+
+    def test_custom_jvp(self):
+    
+      @custom_jvp
+      def f(x):
+        return x ** 2.
+    
+      @f.defjvp
+      def f_jvp(xs, ts):
+        x, = xs
+        t, = ts
+        self.assertTrue(jax.config.x64_enabled)
+        return f(x), t * jnp.sin(x)
+    
+      def g(x):
+        with jax.enable_x64():
+          x = jnp.array(x, jnp.float64)
+          return f(x)
+    
+>     self.assertEqual(g(5.).dtype, jnp.float64)
+                       ^^^^^
+
+tests/x64_context_test.py:212: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/x64_context_test.py:209: in g
+    x = jnp.array(x, jnp.float64)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/array_constructors.py:325: in array
+    out_array: Array = lax._convert_element_type(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:1844: in _convert_element_type
+    return convert_element_type_p.bind(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5881: in _convert_element_type_bind_with_trace
+    operand = core.Primitive.bind_with_trace(convert_element_type_p, trace, args,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:89: in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x123337a60>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x113d76600>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_______________________ X64ContextTests.test_custom_vjp ________________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_custom_vjp>
+
+    def test_custom_vjp(self):
+    
+      @custom_vjp
+      def f(x):
+        return x ** 2.
+    
+      def f_fwd(x):
+        return f(x), jnp.sin(x)
+    
+      def f_bwd(res, t):
+        return (res * t,)
+      f.defvjp(f_fwd, f_bwd)
+    
+      def g(x):
+        with jax.enable_x64():
+          x = jnp.array(x, jnp.float64)
+          return f(x)
+    
+      with jax.enable_x64(False):
+>       self.assertEqual(g(5.).dtype, jnp.float64)
+                         ^^^^^
+
+tests/x64_context_test.py:248: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/x64_context_test.py:244: in g
+    x = jnp.array(x, jnp.float64)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/array_constructors.py:325: in array
+    out_array: Array = lax._convert_element_type(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:1844: in _convert_element_type
+    return convert_element_type_p.bind(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5881: in _convert_element_type_bind_with_trace
+    operand = core.Primitive.bind_with_trace(convert_element_type_p, trace, args,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:89: in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x123337a60>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x121021200>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+________________________ X64ContextTests.test_jit_cache ________________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_jit_cache>
+
+    @jax.legacy_prng_key('allow')
+    @jax.debug_key_reuse(False)
+    @jtu.ignore_warning(category=UserWarning,
+                        message="Explicitly requested dtype float64 is not available")
+    def test_jit_cache(self):
+      if jtu.test_device_matches(["tpu"]):
+        self.skipTest("64-bit random not available on TPU")
+    
+      if config.explicit_x64_dtypes.value == config.ExplicitX64Mode.ERROR:
+        self.skipTest("Test uses float64 which is not available")
+    
+      f = partial(random.uniform, random.PRNGKey(0), (1,), 'float64', -1, 1)
+      with jax.enable_x64(False):
+        for _ in range(2):
+          f()
+      with jax.enable_x64():
+        for _ in range(2):
+>         f()
+
+tests/x64_context_test.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/random/core.py:515: in uniform
+    return maybe_auto_axes(_uniform, out_sharding,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x1209855d0>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x120090a00>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}, {}, {}], function_type = (tensor<2xui32>, tensor<i64>, tensor<i64>) -> tensor<1xf64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<2xui32>, %arg1: tensor<si64>, %arg2: tensor<si64>):
+E           %0 = "mhlo.constant"() {value = dense<466688986> : tensor<ui32>} : () -> tensor<ui32>
+E           %1 = "mhlo.constant"() {value = dense<13> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %2 = "mhlo.constant"() {value = dense<19> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %3 = "mhlo.constant"() {value = dense<15> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %4 = "mhlo.constant"() {value = dense<17> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %5 = "mhlo.constant"() {value = dense<26> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %6 = "mhlo.constant"() {value = dense<6> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %7 = "mhlo.constant"() {value = dense<1> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %8 = "mhlo.constant"() {value = dense<29> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %9 = "mhlo.constant"() {value = dense<3> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %10 = "mhlo.constant"() {value = dense<16> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %11 = "mhlo.constant"() {value = dense<24> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %12 = "mhlo.constant"() {value = dense<8> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %13 = "mhlo.constant"() {value = dense<2> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %14 = "mhlo.constant"() {value = dense<4> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %15 = "mhlo.constant"() {value = dense<5> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %16 = "mhlo.constant"() {value = dense<1.000000e+00> : tensor<1xf64>} : () -> tensor<1xf64>
+E           %17 = "mhlo.constant"() {value = dense<4607182418800017408> : tensor<1xui64>} : () -> tensor<1xui64>
+E           %18 = "mhlo.constant"() {value = dense<12> : tensor<1xui64>} : () -> tensor<1xui64>
+E           %19 = "mhlo.constant"() {value = dense<32> : tensor<1xui64>} : () -> tensor<1xui64>
+E           %20 = "mhlo.constant"() {value = dense<0> : tensor<1xui64>} : () -> tensor<1xui64>
+E           %21 = "mhlo.custom_call"(%arg0) {backend_config = "", call_target_name = "Sharding", mhlo.sharding = "{replicated}"} : (tensor<2xui32>) -> tensor<2xui32>
+E           %22 = "mhlo.convert"(%arg1) : (tensor<si64>) -> tensor<f64>
+E           %23 = "mhlo.convert"(%arg2) : (tensor<si64>) -> tensor<f64>
+E           %24 = "mhlo.reshape"(%22) : (tensor<f64>) -> tensor<1xf64>
+E           %25 = "mhlo.reshape"(%23) : (tensor<f64>) -> tensor<1xf64>
+E           %26 = "mhlo.slice"(%21) {limit_indices = dense<1> : tensor<1xi64>, start_indices = dense<0> : tensor<1xi64>, strides = dense<1> : tensor<1xi64>} : (tensor<2xui32>) -> tensor<1xui32>
+E           %27 = "mhlo.reshape"(%26) : (tensor<1xui32>) -> tensor<ui32>
+E           %28 = "mhlo.slice"(%21) {limit_indices = dense<2> : tensor<1xi64>, start_indices = dense<1> : tensor<1xi64>, strides = dense<1> : tensor<1xi64>} : (tensor<2xui32>) -> tensor<1xui32>
+E           %29 = "mhlo.reshape"(%28) : (tensor<1xui32>) -> tensor<ui32>
+E           %30 = "mhlo.shift_right_logical"(%20, %19) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %31 = "mhlo.convert"(%30) : (tensor<1xui64>) -> tensor<1xui32>
+E           %32 = "mhlo.xor"(%27, %29) : (tensor<ui32>, tensor<ui32>) -> tensor<ui32>
+E           %33 = "mhlo.xor"(%32, %0) : (tensor<ui32>, tensor<ui32>) -> tensor<ui32>
+E           %34 = "mhlo.add"(%31, %26) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %35 = "mhlo.add"(%34, %28) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %36 = "mhlo.shift_left"(%28, %1) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %37 = "mhlo.shift_right_logical"(%28, %2) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %38 = "mhlo.or"(%36, %37) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %39 = "mhlo.xor"(%35, %38) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %40 = "mhlo.add"(%35, %39) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %41 = "mhlo.shift_left"(%39, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %42 = "mhlo.shift_right_logical"(%39, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %43 = "mhlo.or"(%41, %42) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %44 = "mhlo.xor"(%40, %43) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %45 = "mhlo.add"(%40, %44) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %46 = "mhlo.shift_left"(%44, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %47 = "mhlo.shift_right_logical"(%44, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %48 = "mhlo.or"(%46, %47) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %49 = "mhlo.xor"(%45, %48) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %50 = "mhlo.add"(%45, %49) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %51 = "mhlo.shift_left"(%49, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %52 = "mhlo.shift_right_logical"(%49, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %53 = "mhlo.or"(%51, %52) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %54 = "mhlo.xor"(%50, %53) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %55 = "mhlo.add"(%50, %28) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %56 = "mhlo.reshape"(%33) : (tensor<ui32>) -> tensor<1xui32>
+E           %57 = "mhlo.add"(%54, %56) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %58 = "mhlo.add"(%57, %7) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %59 = "mhlo.add"(%55, %58) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %60 = "mhlo.shift_left"(%58, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %61 = "mhlo.shift_right_logical"(%58, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %62 = "mhlo.or"(%60, %61) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %63 = "mhlo.xor"(%59, %62) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %64 = "mhlo.add"(%59, %63) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %65 = "mhlo.shift_left"(%63, %8) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %66 = "mhlo.shift_right_logical"(%63, %9) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %67 = "mhlo.or"(%65, %66) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %68 = "mhlo.xor"(%64, %67) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %69 = "mhlo.add"(%64, %68) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %70 = "mhlo.shift_left"(%68, %10) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %71 = "mhlo.shift_right_logical"(%68, %10) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %72 = "mhlo.or"(%70, %71) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %73 = "mhlo.xor"(%69, %72) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %74 = "mhlo.add"(%69, %73) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %75 = "mhlo.shift_left"(%73, %11) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %76 = "mhlo.shift_right_logical"(%73, %12) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %77 = "mhlo.or"(%75, %76) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %78 = "mhlo.xor"(%74, %77) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %79 = "mhlo.reshape"(%33) : (tensor<ui32>) -> tensor<1xui32>
+E           %80 = "mhlo.add"(%74, %79) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %81 = "mhlo.add"(%78, %26) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %82 = "mhlo.add"(%81, %13) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %83 = "mhlo.add"(%80, %82) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %84 = "mhlo.shift_left"(%82, %1) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %85 = "mhlo.shift_right_logical"(%82, %2) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %86 = "mhlo.or"(%84, %85) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %87 = "mhlo.xor"(%83, %86) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %88 = "mhlo.add"(%83, %87) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %89 = "mhlo.shift_left"(%87, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %90 = "mhlo.shift_right_logical"(%87, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %91 = "mhlo.or"(%89, %90) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %92 = "mhlo.xor"(%88, %91) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %93 = "mhlo.add"(%88, %92) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %94 = "mhlo.shift_left"(%92, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %95 = "mhlo.shift_right_logical"(%92, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %96 = "mhlo.or"(%94, %95) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %97 = "mhlo.xor"(%93, %96) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %98 = "mhlo.add"(%93, %97) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %99 = "mhlo.shift_left"(%97, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %100 = "mhlo.shift_right_logical"(%97, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %101 = "mhlo.or"(%99, %100) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %102 = "mhlo.xor"(%98, %101) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %103 = "mhlo.add"(%98, %26) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %104 = "mhlo.add"(%102, %28) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %105 = "mhlo.add"(%104, %9) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %106 = "mhlo.add"(%103, %105) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %107 = "mhlo.shift_left"(%105, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %108 = "mhlo.shift_right_logical"(%105, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %109 = "mhlo.or"(%107, %108) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %110 = "mhlo.xor"(%106, %109) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %111 = "mhlo.add"(%106, %110) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %112 = "mhlo.shift_left"(%110, %8) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %113 = "mhlo.shift_right_logical"(%110, %9) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %114 = "mhlo.or"(%112, %113) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %115 = "mhlo.xor"(%111, %114) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %116 = "mhlo.add"(%111, %115) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %117 = "mhlo.shift_left"(%115, %10) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %118 = "mhlo.shift_right_logical"(%115, %10) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %119 = "mhlo.or"(%117, %118) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %120 = "mhlo.xor"(%116, %119) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %121 = "mhlo.add"(%116, %120) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %122 = "mhlo.shift_left"(%120, %11) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %123 = "mhlo.shift_right_logical"(%120, %12) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %124 = "mhlo.or"(%122, %123) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %125 = "mhlo.xor"(%121, %124) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %126 = "mhlo.add"(%121, %28) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %127 = "mhlo.reshape"(%33) : (tensor<ui32>) -> tensor<1xui32>
+E           %128 = "mhlo.add"(%125, %127) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %129 = "mhlo.add"(%128, %14) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %130 = "mhlo.add"(%126, %129) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %131 = "mhlo.shift_left"(%129, %1) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %132 = "mhlo.shift_right_logical"(%129, %2) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %133 = "mhlo.or"(%131, %132) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %134 = "mhlo.xor"(%130, %133) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %135 = "mhlo.add"(%130, %134) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %136 = "mhlo.shift_left"(%134, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %137 = "mhlo.shift_right_logical"(%134, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %138 = "mhlo.or"(%136, %137) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %139 = "mhlo.xor"(%135, %138) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %140 = "mhlo.add"(%135, %139) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %141 = "mhlo.shift_left"(%139, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %142 = "mhlo.shift_right_logical"(%139, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %143 = "mhlo.or"(%141, %142) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %144 = "mhlo.xor"(%140, %143) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %145 = "mhlo.add"(%140, %144) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %146 = "mhlo.shift_left"(%144, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %147 = "mhlo.shift_right_logical"(%144, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %148 = "mhlo.or"(%146, %147) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %149 = "mhlo.xor"(%145, %148) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %150 = "mhlo.reshape"(%33) : (tensor<ui32>) -> tensor<1xui32>
+E           %151 = "mhlo.add"(%145, %150) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %152 = "mhlo.add"(%149, %26) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %153 = "mhlo.add"(%152, %15) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %154 = "mhlo.convert"(%151) : (tensor<1xui32>) -> tensor<1xui64>
+E           %155 = "mhlo.convert"(%153) : (tensor<1xui32>) -> tensor<1xui64>
+E           %156 = "mhlo.shift_left"(%154, %19) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %157 = "mhlo.or"(%156, %155) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %158 = "mhlo.shift_right_logical"(%157, %18) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %159 = "mhlo.or"(%158, %17) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %160 = "mhlo.bitcast_convert"(%159) : (tensor<1xui64>) -> tensor<1xf64>
+E           %161 = "mhlo.subtract"(%160, %16) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %162 = "mhlo.subtract"(%25, %24) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %163 = "mhlo.multiply"(%161, %162) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %164 = "mhlo.add"(%163, %24) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %165 = "mhlo.maximum"(%24, %164) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %166 = "mhlo.compare"(%164, %164) {compare_type = #mhlo<comparison_type FLOAT>, comparison_direction = #mhlo<comparison_direction NE>} : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xi1>
+E           %167 = "mhlo.select"(%166, %164, %165) : (tensor<1xi1>, tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %168 = "mhlo.compare"(%24, %24) {compare_type = #mhlo<comparison_type FLOAT>, comparison_direction = #mhlo<comparison_direction NE>} : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xi1>
+E           %169 = "mhlo.select"(%168, %24, %167) : (tensor<1xi1>, tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           "func.return"(%169) : (tensor<1xf64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}, {}, {}], function_type = (tensor<2xui32>, tensor<i64>, tensor<i64>) -> tensor<1xf64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<2xui32>, %arg1: tensor<si64>, %arg2: tensor<si64>):
+E           %0 = "mhlo.constant"() {value = dense<466688986> : tensor<ui32>} : () -> tensor<ui32>
+E           %1 = "mhlo.constant"() {value = dense<13> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %2 = "mhlo.constant"() {value = dense<19> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %3 = "mhlo.constant"() {value = dense<15> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %4 = "mhlo.constant"() {value = dense<17> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %5 = "mhlo.constant"() {value = dense<26> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %6 = "mhlo.constant"() {value = dense<6> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %7 = "mhlo.constant"() {value = dense<1> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %8 = "mhlo.constant"() {value = dense<29> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %9 = "mhlo.constant"() {value = dense<3> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %10 = "mhlo.constant"() {value = dense<16> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %11 = "mhlo.constant"() {value = dense<24> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %12 = "mhlo.constant"() {value = dense<8> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %13 = "mhlo.constant"() {value = dense<2> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %14 = "mhlo.constant"() {value = dense<4> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %15 = "mhlo.constant"() {value = dense<5> : tensor<1xui32>} : () -> tensor<1xui32>
+E           %16 = "mhlo.constant"() {value = dense<1.000000e+00> : tensor<1xf64>} : () -> tensor<1xf64>
+E           %17 = "mhlo.constant"() {value = dense<4607182418800017408> : tensor<1xui64>} : () -> tensor<1xui64>
+E           %18 = "mhlo.constant"() {value = dense<12> : tensor<1xui64>} : () -> tensor<1xui64>
+E           %19 = "mhlo.constant"() {value = dense<32> : tensor<1xui64>} : () -> tensor<1xui64>
+E           %20 = "mhlo.constant"() {value = dense<0> : tensor<1xui64>} : () -> tensor<1xui64>
+E           %21 = "mhlo.custom_call"(%arg0) {backend_config = "", call_target_name = "Sharding", mhlo.sharding = "{replicated}"} : (tensor<2xui32>) -> tensor<2xui32>
+E           %22 = "mhlo.convert"(%arg1) : (tensor<si64>) -> tensor<f64>
+E           %23 = "mhlo.convert"(%arg2) : (tensor<si64>) -> tensor<f64>
+E           %24 = "mhlo.reshape"(%22) : (tensor<f64>) -> tensor<1xf64>
+E           %25 = "mhlo.reshape"(%23) : (tensor<f64>) -> tensor<1xf64>
+E           %26 = "mhlo.slice"(%21) {limit_indices = dense<1> : tensor<1xi64>, start_indices = dense<0> : tensor<1xi64>, strides = dense<1> : tensor<1xi64>} : (tensor<2xui32>) -> tensor<1xui32>
+E           %27 = "mhlo.reshape"(%26) : (tensor<1xui32>) -> tensor<ui32>
+E           %28 = "mhlo.slice"(%21) {limit_indices = dense<2> : tensor<1xi64>, start_indices = dense<1> : tensor<1xi64>, strides = dense<1> : tensor<1xi64>} : (tensor<2xui32>) -> tensor<1xui32>
+E           %29 = "mhlo.reshape"(%28) : (tensor<1xui32>) -> tensor<ui32>
+E           %30 = "mhlo.shift_right_logical"(%20, %19) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %31 = "mhlo.convert"(%30) : (tensor<1xui64>) -> tensor<1xui32>
+E           %32 = "mhlo.xor"(%27, %29) : (tensor<ui32>, tensor<ui32>) -> tensor<ui32>
+E           %33 = "mhlo.xor"(%32, %0) : (tensor<ui32>, tensor<ui32>) -> tensor<ui32>
+E           %34 = "mhlo.add"(%31, %26) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %35 = "mhlo.add"(%34, %28) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %36 = "mhlo.shift_left"(%28, %1) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %37 = "mhlo.shift_right_logical"(%28, %2) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %38 = "mhlo.or"(%36, %37) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %39 = "mhlo.xor"(%35, %38) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %40 = "mhlo.add"(%35, %39) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %41 = "mhlo.shift_left"(%39, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %42 = "mhlo.shift_right_logical"(%39, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %43 = "mhlo.or"(%41, %42) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %44 = "mhlo.xor"(%40, %43) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %45 = "mhlo.add"(%40, %44) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %46 = "mhlo.shift_left"(%44, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %47 = "mhlo.shift_right_logical"(%44, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %48 = "mhlo.or"(%46, %47) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %49 = "mhlo.xor"(%45, %48) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %50 = "mhlo.add"(%45, %49) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %51 = "mhlo.shift_left"(%49, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %52 = "mhlo.shift_right_logical"(%49, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %53 = "mhlo.or"(%51, %52) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %54 = "mhlo.xor"(%50, %53) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %55 = "mhlo.add"(%50, %28) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %56 = "mhlo.reshape"(%33) : (tensor<ui32>) -> tensor<1xui32>
+E           %57 = "mhlo.add"(%54, %56) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %58 = "mhlo.add"(%57, %7) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %59 = "mhlo.add"(%55, %58) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %60 = "mhlo.shift_left"(%58, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %61 = "mhlo.shift_right_logical"(%58, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %62 = "mhlo.or"(%60, %61) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %63 = "mhlo.xor"(%59, %62) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %64 = "mhlo.add"(%59, %63) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %65 = "mhlo.shift_left"(%63, %8) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %66 = "mhlo.shift_right_logical"(%63, %9) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %67 = "mhlo.or"(%65, %66) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %68 = "mhlo.xor"(%64, %67) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %69 = "mhlo.add"(%64, %68) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %70 = "mhlo.shift_left"(%68, %10) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %71 = "mhlo.shift_right_logical"(%68, %10) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %72 = "mhlo.or"(%70, %71) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %73 = "mhlo.xor"(%69, %72) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %74 = "mhlo.add"(%69, %73) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %75 = "mhlo.shift_left"(%73, %11) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %76 = "mhlo.shift_right_logical"(%73, %12) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %77 = "mhlo.or"(%75, %76) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %78 = "mhlo.xor"(%74, %77) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %79 = "mhlo.reshape"(%33) : (tensor<ui32>) -> tensor<1xui32>
+E           %80 = "mhlo.add"(%74, %79) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %81 = "mhlo.add"(%78, %26) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %82 = "mhlo.add"(%81, %13) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %83 = "mhlo.add"(%80, %82) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %84 = "mhlo.shift_left"(%82, %1) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %85 = "mhlo.shift_right_logical"(%82, %2) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %86 = "mhlo.or"(%84, %85) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %87 = "mhlo.xor"(%83, %86) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %88 = "mhlo.add"(%83, %87) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %89 = "mhlo.shift_left"(%87, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %90 = "mhlo.shift_right_logical"(%87, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %91 = "mhlo.or"(%89, %90) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %92 = "mhlo.xor"(%88, %91) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %93 = "mhlo.add"(%88, %92) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %94 = "mhlo.shift_left"(%92, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %95 = "mhlo.shift_right_logical"(%92, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %96 = "mhlo.or"(%94, %95) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %97 = "mhlo.xor"(%93, %96) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %98 = "mhlo.add"(%93, %97) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %99 = "mhlo.shift_left"(%97, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %100 = "mhlo.shift_right_logical"(%97, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %101 = "mhlo.or"(%99, %100) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %102 = "mhlo.xor"(%98, %101) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %103 = "mhlo.add"(%98, %26) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %104 = "mhlo.add"(%102, %28) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %105 = "mhlo.add"(%104, %9) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %106 = "mhlo.add"(%103, %105) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %107 = "mhlo.shift_left"(%105, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %108 = "mhlo.shift_right_logical"(%105, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %109 = "mhlo.or"(%107, %108) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %110 = "mhlo.xor"(%106, %109) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %111 = "mhlo.add"(%106, %110) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %112 = "mhlo.shift_left"(%110, %8) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %113 = "mhlo.shift_right_logical"(%110, %9) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %114 = "mhlo.or"(%112, %113) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %115 = "mhlo.xor"(%111, %114) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %116 = "mhlo.add"(%111, %115) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %117 = "mhlo.shift_left"(%115, %10) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %118 = "mhlo.shift_right_logical"(%115, %10) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %119 = "mhlo.or"(%117, %118) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %120 = "mhlo.xor"(%116, %119) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %121 = "mhlo.add"(%116, %120) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %122 = "mhlo.shift_left"(%120, %11) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %123 = "mhlo.shift_right_logical"(%120, %12) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %124 = "mhlo.or"(%122, %123) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %125 = "mhlo.xor"(%121, %124) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %126 = "mhlo.add"(%121, %28) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %127 = "mhlo.reshape"(%33) : (tensor<ui32>) -> tensor<1xui32>
+E           %128 = "mhlo.add"(%125, %127) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %129 = "mhlo.add"(%128, %14) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %130 = "mhlo.add"(%126, %129) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %131 = "mhlo.shift_left"(%129, %1) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %132 = "mhlo.shift_right_logical"(%129, %2) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %133 = "mhlo.or"(%131, %132) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %134 = "mhlo.xor"(%130, %133) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %135 = "mhlo.add"(%130, %134) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %136 = "mhlo.shift_left"(%134, %3) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %137 = "mhlo.shift_right_logical"(%134, %4) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %138 = "mhlo.or"(%136, %137) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %139 = "mhlo.xor"(%135, %138) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %140 = "mhlo.add"(%135, %139) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %141 = "mhlo.shift_left"(%139, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %142 = "mhlo.shift_right_logical"(%139, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %143 = "mhlo.or"(%141, %142) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %144 = "mhlo.xor"(%140, %143) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %145 = "mhlo.add"(%140, %144) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %146 = "mhlo.shift_left"(%144, %6) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %147 = "mhlo.shift_right_logical"(%144, %5) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %148 = "mhlo.or"(%146, %147) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %149 = "mhlo.xor"(%145, %148) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %150 = "mhlo.reshape"(%33) : (tensor<ui32>) -> tensor<1xui32>
+E           %151 = "mhlo.add"(%145, %150) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %152 = "mhlo.add"(%149, %26) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %153 = "mhlo.add"(%152, %15) : (tensor<1xui32>, tensor<1xui32>) -> tensor<1xui32>
+E           %154 = "mhlo.convert"(%151) : (tensor<1xui32>) -> tensor<1xui64>
+E           %155 = "mhlo.convert"(%153) : (tensor<1xui32>) -> tensor<1xui64>
+E           %156 = "mhlo.shift_left"(%154, %19) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %157 = "mhlo.or"(%156, %155) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %158 = "mhlo.shift_right_logical"(%157, %18) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %159 = "mhlo.or"(%158, %17) : (tensor<1xui64>, tensor<1xui64>) -> tensor<1xui64>
+E           %160 = "mhlo.bitcast_convert"(%159) : (tensor<1xui64>) -> tensor<1xf64>
+E           %161 = "mhlo.subtract"(%160, %16) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %162 = "mhlo.subtract"(%25, %24) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %163 = "mhlo.multiply"(%161, %162) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %164 = "mhlo.add"(%163, %24) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %165 = "mhlo.maximum"(%24, %164) : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %166 = "mhlo.compare"(%164, %164) {compare_type = #mhlo<comparison_type FLOAT>, comparison_direction = #mhlo<comparison_direction NE>} : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xi1>
+E           %167 = "mhlo.select"(%166, %164, %165) : (tensor<1xi1>, tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           %168 = "mhlo.compare"(%24, %24) {compare_type = #mhlo<comparison_type FLOAT>, comparison_direction = #mhlo<comparison_direction NE>} : (tensor<1xf64>, tensor<1xf64>) -> tensor<1xi1>
+E           %169 = "mhlo.select"(%168, %24, %167) : (tensor<1xi1>, tensor<1xf64>, tensor<1xf64>) -> tensor<1xf64>
+E           "func.return"(%169) : (tensor<1xf64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_______________________ X64ContextTests.test_make_array0 _______________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_make_array0>
+jit = <function <lambda> at 0x115391120>
+
+    @jtu.sample_product(jit=jtu.JIT_IMPLEMENTATION)
+    def test_make_array(self, jit):
+      func = jit(lambda: jnp.array(np.float64(0)))
+      dtype_start = func().dtype
+      with jax.enable_x64():
+>       self.assertEqual(func().dtype, "float64")
+                         ^^^^^^
+
+tests/x64_context_test.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/x64_context_test.py:38: in <lambda>
+    func = jit(lambda: jnp.array(np.float64(0)))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/array_constructors.py:193: in array
+    return lax.stage(object)
+           ^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:1710: in stage
+    return stage_p.bind(x)
+           ^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5952: in _stage_bind_with_trace
+    return trace.stage_value(args[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1310: in stage_value
+    return self.process_primitive(stage_p, [val], {})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5942: in _stage_impl
+    return dispatch.apply_primitive(stage_p, x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:89: in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x117ede430>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x121cb6e00>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_______________________ X64ContextTests.test_make_array1 _______________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_make_array1>
+jit = <function jit at 0x114812f20>
+
+    @jtu.sample_product(jit=jtu.JIT_IMPLEMENTATION)
+    def test_make_array(self, jit):
+      func = jit(lambda: jnp.array(np.float64(0)))
+      dtype_start = func().dtype
+      with jax.enable_x64():
+>       self.assertEqual(func().dtype, "float64")
+                         ^^^^^^
+
+tests/x64_context_test.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x1233886d0>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x107aa7a00>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{function_type = () -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E           %0 = "mhlo.constant"() {value = dense<0.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           "func.return"(%0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{function_type = () -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E           %0 = "mhlo.constant"() {value = dense<0.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           "func.return"(%0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+___________________________ X64ContextTests.test_mul ___________________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_mul>
+
+    def test_mul(self):
+      def fun(x, y):
+        with jax.enable_x64(True):
+          x = jnp.asarray(x, dtype=jnp.float64)
+          y = jnp.asarray(y, dtype=jnp.float64)
+        return lax.mul(x, y)
+    
+>     self.assertEqual(fun(0.5, 1.5).dtype, jnp.float64)
+                       ^^^^^^^^^^^^^
+
+tests/x64_context_test.py:176: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/x64_context_test.py:172: in fun
+    x = jnp.asarray(x, dtype=jnp.float64)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/array_constructors.py:445: in asarray
+    return array(a, dtype=dtype, copy=bool(copy), order=order, device=device,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/array_constructors.py:325: in array
+    out_array: Array = lax._convert_element_type(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:1844: in _convert_element_type
+    return convert_element_type_p.bind(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5881: in _convert_element_type_bind_with_trace
+    operand = core.Primitive.bind_with_trace(convert_element_type_p, trace, args,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:89: in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x123337a60>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x123d15200>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+___________________________ X64ContextTests.test_sin ___________________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_sin>
+
+    def test_sin(self):
+      def fun(x):
+        with jax.enable_x64(True):
+          x = jnp.asarray(x, dtype=jnp.float64)
+        return lax.sin(x)
+    
+>     self.assertEqual(fun(0.5).dtype, jnp.float64)
+                       ^^^^^^^^
+
+tests/x64_context_test.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/x64_context_test.py:164: in fun
+    x = jnp.asarray(x, dtype=jnp.float64)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/array_constructors.py:445: in asarray
+    return array(a, dtype=dtype, copy=bool(copy), order=order, device=device,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/numpy/array_constructors.py:325: in array
+    out_array: Array = lax._convert_element_type(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:1844: in _convert_element_type
+    return convert_element_type_p.bind(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/lax.py:5881: in _convert_element_type_bind_with_trace
+    operand = core.Primitive.bind_with_trace(convert_element_type_p, trace, args,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:89: in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x123337a60>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x114532400>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           "func.return"(%arg0) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_______________________ X64ContextTests.test_while_loop0 _______________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_while_loop0>
+jit = <function <lambda> at 0x115391120>
+
+    @jtu.sample_product(jit=jtu.JIT_IMPLEMENTATION)
+    def test_while_loop(self, jit):
+      @jit
+      def count_to(N):
+        return lax.while_loop(lambda x: x < N, lambda x: x + 1.0, 0.0)
+    
+      with jax.enable_x64():
+>       self.assertArraysEqual(count_to(10), jnp.float64(10), check_dtypes=True)
+                               ^^^^^^^^^^^^
+
+tests/x64_context_test.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/x64_context_test.py:89: in count_to
+    return lax.while_loop(lambda x: x < N, lambda x: x + 1.0, 0.0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/lax/control_flow/loops.py:1800: in while_loop
+    outs = while_p.bind(*cond_consts, *body_consts, *init_vals,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:89: in apply_primitive
+    outs = fun(*args)
+           ^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x123390a40>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x121d16600>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result[0]"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           %0 = "mhlo.constant"() {value = dense<1.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           %1 = "mhlo.constant"() {value = dense<1.000000e+01> : tensor<f64>} : () -> tensor<f64>
+E           %2 = "scf.while"(%arg0) ({
+E           ^bb0(%arg1: tensor<f64>):
+E             %3 = "mhlo.compare"(%arg1, %1) {compare_type = #mhlo<comparison_type FLOAT>, comparison_direction = #mhlo<comparison_direction LT>} : (tensor<f64>, tensor<f64>) -> tensor<i1>
+E             %4 = "tensor.extract"(%3) : (tensor<i1>) -> i1
+E             "scf.condition"(%4, %arg1) : (i1, tensor<f64>) -> ()
+E           }, {
+E           ^bb0(%arg1: tensor<f64>):
+E             %3 = "mhlo.add"(%arg1, %0) : (tensor<f64>, tensor<f64>) -> tensor<f64>
+E             "scf.yield"(%3) : (tensor<f64>) -> ()
+E           }) : (tensor<f64>) -> tensor<f64>
+E           "func.return"(%2) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<f64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result[0]"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<f64>):
+E           %0 = "mhlo.constant"() {value = dense<1.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           %1 = "mhlo.constant"() {value = dense<1.000000e+01> : tensor<f64>} : () -> tensor<f64>
+E           %2 = "scf.while"(%arg0) ({
+E           ^bb0(%arg1: tensor<f64>):
+E             %3 = "mhlo.compare"(%arg1, %1) {compare_type = #mhlo<comparison_type FLOAT>, comparison_direction = #mhlo<comparison_direction LT>} : (tensor<f64>, tensor<f64>) -> tensor<i1>
+E             %4 = "tensor.extract"(%3) : (tensor<i1>) -> i1
+E             "scf.condition"(%4, %arg1) : (i1, tensor<f64>) -> ()
+E           }, {
+E           ^bb0(%arg1: tensor<f64>):
+E             %3 = "mhlo.add"(%arg1, %0) : (tensor<f64>, tensor<f64>) -> tensor<f64>
+E             "scf.yield"(%3) : (tensor<f64>) -> ()
+E           }) : (tensor<f64>) -> tensor<f64>
+E           "func.return"(%2) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+_______________________ X64ContextTests.test_while_loop1 _______________________
+
+self = <tests.x64_context_test.X64ContextTests testMethod=test_while_loop1>
+jit = <function jit at 0x114812f20>
+
+    @jtu.sample_product(jit=jtu.JIT_IMPLEMENTATION)
+    def test_while_loop(self, jit):
+      @jit
+      def count_to(N):
+        return lax.while_loop(lambda x: x < N, lambda x: x + 1.0, 0.0)
+    
+      with jax.enable_x64():
+>       self.assertArraysEqual(count_to(10), jnp.float64(10), check_dtypes=True)
+                               ^^^^^^^^^^^^
+
+tests/x64_context_test.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/pjit.py:1157: in _pjit_call_impl_python
+    compiled = computation.compile()
+               ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1259: in compile
+    executable = UnloadedMeshExecutable.from_hlo(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1756: in from_hlo
+    xla_executable = _cached_compilation(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:1536: in _cached_compilation
+    xla_executable = compiler.compile_or_get_cached(
+../../../.venv-shim/lib/python3.12/site-packages/jax_plugins/metal_shim/_boundary_io.py:194: in compile_
+    return original(backend, computation, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:471: in compile_or_get_cached
+    return backend_compile_and_load(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:412: in backend_compile_and_load
+    raise e
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+backend = <jaxlib._jax.Client object at 0x115428280>
+module = <jaxlib.mlir._mlir_libs._mlir.ir.Module object at 0x1243dcf40>
+executable_devices = (METAL(id=0),)
+options = <jaxlib._jax.CompileOptions object at 0x1270da200>
+host_callbacks = ()
+
+    @profiler.annotate_function
+    def backend_compile_and_load(
+        backend: xc.Client,
+        module: ir.Module,
+        executable_devices: xc.DeviceList,
+        options: xc.CompileOptions,
+        host_callbacks: Sequence[Any],
+    ) -> xc.LoadedExecutable:
+      sym_name = module.operation.attributes['sym_name']
+      module_name = ir.StringAttr(sym_name).value
+    
+      if (options.executable_build_options.fdo_profile is not None
+          and len(options.executable_build_options.fdo_profile)):
+        logger.debug(
+            "Compiling module %s with FDO profile of length %d",
+            module_name,
+            len(options.executable_build_options.fdo_profile),
+        )
+    
+      try:
+        # we use a separate function call to ensure that XLA compilation appears
+        # separately in Python profiling results
+        # TODO(dsuo): Simplify this logic once we delete _jax.CompileOnlyPyClient.
+        if isinstance(backend, _jax.CompileOnlyPyClient):
+          # When a real backend is available for the same platform, use it for
+          # cross-compilation. The real client provides hardware access (e.g.,
+          # for GPU kernel autotuning) while the topology specifies the target.
+          cross_compile_backend = _get_cross_compile_backend(backend)
+          if cross_compile_backend is not None and not host_callbacks:
+            cross_compile_topology = xc.get_topology_for_devices(backend.devices())
+            return cross_compile_backend.compile(
+                module,
+                topology=cross_compile_topology,
+                compile_options=options,
+            )
+          if host_callbacks:
+            return backend.compile(  # pyrefly: ignore[bad-return]
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+          return backend.compile(  # pyrefly: ignore[bad-return]
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+        else:
+          if host_callbacks:
+            return backend.compile_and_load(
+                module,
+                executable_devices=executable_devices,
+                compile_options=options,
+                host_callbacks=host_callbacks,
+            )
+          # Some backends don't have `host_callbacks` option yet
+          # TODO(sharadmv): remove this fallback when all backends allow `compile`
+          # to take in `host_callbacks`
+>         return backend.compile_and_load(
+              module,
+              executable_devices=executable_devices,
+              compile_options=options,
+          )
+E         jax.errors.JaxRuntimeError: UNKNOWN: <unknown>:0: error: 'func.func' op One or more function input/output data types are not supported.
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<i64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<si64>):
+E           %0 = "mhlo.constant"() {value = dense<1.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           %1 = "mhlo.constant"() {value = dense<0.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           %2 = "scf.while"(%1) ({
+E           ^bb0(%arg1: tensor<f64>):
+E             %3 = "mhlo.convert"(%arg0) : (tensor<si64>) -> tensor<f64>
+E             %4 = "mhlo.compare"(%arg1, %3) {compare_type = #mhlo<comparison_type FLOAT>, comparison_direction = #mhlo<comparison_direction LT>} : (tensor<f64>, tensor<f64>) -> tensor<i1>
+E             %5 = "tensor.extract"(%4) : (tensor<i1>) -> i1
+E             "scf.condition"(%5, %arg1) : (i1, tensor<f64>) -> ()
+E           }, {
+E           ^bb0(%arg1: tensor<f64>):
+E             %3 = "mhlo.add"(%arg1, %0) : (tensor<f64>, tensor<f64>) -> tensor<f64>
+E             "scf.yield"(%3) : (tensor<f64>) -> ()
+E           }) : (tensor<f64>) -> tensor<f64>
+E           "func.return"(%2) : (tensor<f64>) -> ()
+E         }) : () -> ()
+E         <unknown>:0: error: failed to legalize operation 'func.func'
+E         <unknown>:0: note: see current operation: 
+E         "func.func"() <{arg_attrs = [{}], function_type = (tensor<i64>) -> tensor<f64>, res_attrs = [{jax.result_info = "result"}], sym_name = "main", sym_visibility = "public"}> ({
+E         ^bb0(%arg0: tensor<si64>):
+E           %0 = "mhlo.constant"() {value = dense<1.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           %1 = "mhlo.constant"() {value = dense<0.000000e+00> : tensor<f64>} : () -> tensor<f64>
+E           %2 = "scf.while"(%1) ({
+E           ^bb0(%arg1: tensor<f64>):
+E             %3 = "mhlo.convert"(%arg0) : (tensor<si64>) -> tensor<f64>
+E             %4 = "mhlo.compare"(%arg1, %3) {compare_type = #mhlo<comparison_type FLOAT>, comparison_direction = #mhlo<comparison_direction LT>} : (tensor<f64>, tensor<f64>) -> tensor<i1>
+E             %5 = "tensor.extract"(%4) : (tensor<i1>) -> i1
+E             "scf.condition"(%5, %arg1) : (i1, tensor<f64>) -> ()
+E           }, {
+E           ^bb0(%arg1: tensor<f64>):
+E             %3 = "mhlo.add"(%arg1, %0) : (tensor<f64>, tensor<f64>) -> tensor<f64>
+E             "scf.yield"(%3) : (tensor<f64>) -> ()
+E           }) : (tensor<f64>) -> tensor<f64>
+E           "func.return"(%2) : (tensor<f64>) -> ()
+E         }) : () -> ()
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/compiler.py:402: JaxRuntimeError
+=========================== short test summary info ============================
+FAILED tests/x64_context_test.py::X64ContextTests::test_convert_element_type
+FAILED tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default0
+FAILED tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default1
+FAILED tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default2
+FAILED tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default3
+FAILED tests/x64_context_test.py::X64ContextTests::test_custom_jvp - jax.erro...
+FAILED tests/x64_context_test.py::X64ContextTests::test_custom_vjp - jax.erro...
+FAILED tests/x64_context_test.py::X64ContextTests::test_jit_cache - jax.error...
+FAILED tests/x64_context_test.py::X64ContextTests::test_make_array0 - jax.err...
+FAILED tests/x64_context_test.py::X64ContextTests::test_make_array1 - jax.err...
+FAILED tests/x64_context_test.py::X64ContextTests::test_mul - jax.errors.JaxR...
+FAILED tests/x64_context_test.py::X64ContextTests::test_sin - jax.errors.JaxR...
+FAILED tests/x64_context_test.py::X64ContextTests::test_while_loop0 - jax.err...
+FAILED tests/x64_context_test.py::X64ContextTests::test_while_loop1 - jax.err...
+14 failed, 9 passed, 2 skipped in 5.57s
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793042828.246197 1224179 mps_client.h:209] MetalClient destroyed.

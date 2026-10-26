@@ -1,0 +1,708 @@
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testNumpyAndXLAAgreeOnFloatEndianness0", "seconds": 0.309, "before_mb": 133, "peak_mb": 197, "params": "(dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint0", "seconds": 0.71, "before_mb": 197, "peak_mb": 216, "params": "(dtype=<class 'numpy.uint16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint1", "seconds": 0.184, "before_mb": 216, "peak_mb": 223, "params": "(dtype=<class 'numpy.uint8'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint2", "seconds": 0.281, "before_mb": 223, "peak_mb": 236, "params": "(dtype=<class 'numpy.int8'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint3", "seconds": 0.132, "before_mb": 236, "peak_mb": 242, "params": "(dtype=<class 'numpy.int32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint4", "seconds": 0.162, "before_mb": 242, "peak_mb": 250, "params": "(dtype=<class 'numpy.uint32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint5", "seconds": 0.103, "before_mb": 250, "peak_mb": 257, "params": "(dtype=<class 'numpy.int32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint6", "seconds": 0.065, "before_mb": 257, "peak_mb": 261, "params": "(dtype=<class 'numpy.int16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint7", "seconds": 0.106, "before_mb": 261, "peak_mb": 266, "params": "(dtype=<class 'numpy.uint32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint8", "seconds": 0.041, "before_mb": 266, "peak_mb": 268, "params": "(dtype=<class 'numpy.uint16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint9", "seconds": 0.153, "before_mb": 268, "peak_mb": 273, "params": "(dtype=<class 'numpy.int16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform0", "seconds": 0.125, "before_mb": 273, "peak_mb": 277, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform1", "seconds": 0.128, "before_mb": 277, "peak_mb": 282, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform2", "seconds": 0.078, "before_mb": 282, "peak_mb": 285, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform3", "seconds": 0.121, "before_mb": 285, "peak_mb": 288, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform4", "seconds": 0.089, "before_mb": 289, "peak_mb": 291, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform5", "seconds": 0.229, "before_mb": 291, "peak_mb": 294, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_eval_shape_big_random_array", "seconds": 0.028, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_large_prng", "seconds": 0.033, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_errors", "seconds": 0.1, "before_mb": 294, "peak_mb": 295}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance0", "seconds": 0.034, "before_mb": 295, "peak_mb": 296, "params": "(type_='int', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance1", "seconds": 0.03, "before_mb": 296, "peak_mb": 297, "params": "(type_='np.array', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance2", "seconds": 0.039, "before_mb": 297, "peak_mb": 297, "params": "(type_='jnp.array', seed=1)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance3", "seconds": 0.027, "before_mb": 297, "peak_mb": 297, "params": "(type_='jnp.array', seed=0)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance4", "seconds": 0.025, "before_mb": 297, "peak_mb": 299, "params": "(type_='int', seed=0)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance5", "seconds": 0.023, "before_mb": 299, "peak_mb": 300, "params": "(type_='np.array', seed=9223372036854775807)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance8", "seconds": 0.057, "before_mb": 300, "peak_mb": 300, "params": "(type_='jnp.array', seed=4294967295)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance9", "seconds": 0.041, "before_mb": 300, "peak_mb": 300, "params": "(type_='jnp.array', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape0", "seconds": 0.072, "before_mb": 300, "peak_mb": 302, "params": "(num=6)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape1", "seconds": 0.137, "before_mb": 302, "peak_mb": 308, "params": "(num=(2, 3, 4))"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape2", "seconds": 0.021, "before_mb": 308, "peak_mb": 308, "params": "(num=(6,))"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape3", "seconds": 0.043, "before_mb": 308, "peak_mb": 310, "params": "(num=None)"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape4", "seconds": 0.087, "before_mb": 310, "peak_mb": 314, "params": "(num=(2, 3))"}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_ball", "seconds": 1.395, "before_mb": 314, "peak_mb": 357}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_bernoulli", "seconds": 0.329, "before_mb": 357, "peak_mb": 364}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_beta", "seconds": 0.718, "before_mb": 364, "peak_mb": 400}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_bits", "seconds": 0.096, "before_mb": 400, "peak_mb": 403}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_categorical_1", "seconds": 0.198, "before_mb": 403, "peak_mb": 408}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_categorical_2", "seconds": 0.23, "before_mb": 408, "peak_mb": 413}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_categorical_3", "seconds": 0.098, "before_mb": 413, "peak_mb": 417}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_categorical_4", "seconds": 0.17, "before_mb": 417, "peak_mb": 421}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_cauchy", "seconds": 0.128, "before_mb": 421, "peak_mb": 424}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_chisquare", "seconds": 0.367, "before_mb": 424, "peak_mb": 441}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_dirichlet", "seconds": 0.458, "before_mb": 441, "peak_mb": 458}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_exponential", "seconds": 0.133, "before_mb": 458, "peak_mb": 459}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_f", "seconds": 0.48, "before_mb": 459, "peak_mb": 480}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_gamma", "seconds": 0.311, "before_mb": 480, "peak_mb": 488}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_generalized_normal", "seconds": 0.372, "before_mb": 488, "peak_mb": 502}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_geometric", "seconds": 0.162, "before_mb": 502, "peak_mb": 506}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_gumbel", "seconds": 0.048, "before_mb": 506, "peak_mb": 506}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_laplace", "seconds": 0.134, "before_mb": 506, "peak_mb": 509}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_loggamma", "seconds": 0.259, "before_mb": 509, "peak_mb": 519}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_logistic", "seconds": 0.125, "before_mb": 519, "peak_mb": 521}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_lognormal", "seconds": 0.111, "before_mb": 521, "peak_mb": 522}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_maxwell", "seconds": 0.137, "before_mb": 522, "peak_mb": 527}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_multivariate_normal", "seconds": 0.331, "before_mb": 527, "peak_mb": 531}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_normal", "seconds": 0.101, "before_mb": 531, "peak_mb": 535}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_orthogonal", "seconds": 0.324, "before_mb": 535, "peak_mb": 548}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_pareto", "seconds": 0.148, "before_mb": 548, "peak_mb": 551}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_permutation", "seconds": 0.026, "before_mb": 551, "peak_mb": 553}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_poisson", "seconds": 0.718, "before_mb": 553, "peak_mb": 596}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_rademacher", "seconds": 0.13, "before_mb": 596, "peak_mb": 598}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_randint", "seconds": 0.146, "before_mb": 598, "peak_mb": 603}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_rayleigh", "seconds": 0.211, "before_mb": 603, "peak_mb": 606}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_t", "seconds": 0.45, "before_mb": 606, "peak_mb": 621}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_triangular", "seconds": 0.126, "before_mb": 621, "peak_mb": 623}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_truncated_normal", "seconds": 0.26, "before_mb": 623, "peak_mb": 628}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_uniform", "seconds": 0.081, "before_mb": 628, "peak_mb": 630}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_wald", "seconds": 0.184, "before_mb": 630, "peak_mb": 635}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_beta_<class 'ml_dtypes.bfloat16'>", "seconds": 0.026, "before_mb": 635, "peak_mb": 636}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_beta_<class 'numpy.float16'>", "seconds": 1.1, "before_mb": 636, "peak_mb": 676}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_beta_<class 'numpy.float32'>", "seconds": 0.563, "before_mb": 676, "peak_mb": 692}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_binomial_<class 'ml_dtypes.bfloat16'>", "seconds": 0.02, "before_mb": 692, "peak_mb": 692}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_binomial_<class 'numpy.float16'>", "seconds": 0.703, "before_mb": 692, "peak_mb": 709}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_binomial_<class 'numpy.float32'>", "seconds": 0.244, "before_mb": 709, "peak_mb": 716}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_chisquare_<class 'ml_dtypes.bfloat16'>", "seconds": 0.062, "before_mb": 716, "peak_mb": 717}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_chisquare_<class 'numpy.float16'>", "seconds": 0.352, "before_mb": 717, "peak_mb": 727}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_chisquare_<class 'numpy.float32'>", "seconds": 0.362, "before_mb": 727, "peak_mb": 738}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_dirichlet_<class 'ml_dtypes.bfloat16'>", "seconds": 0.03, "before_mb": 738, "peak_mb": 737}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_dirichlet_<class 'numpy.float16'>", "seconds": 0.669, "before_mb": 737, "peak_mb": 755}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_dirichlet_<class 'numpy.float32'>", "seconds": 0.353, "before_mb": 755, "peak_mb": 765}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_double_sided_maxwell_<class 'ml_dtypes.bfloat16'>", "seconds": 0.041, "before_mb": 765, "peak_mb": 766}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_double_sided_maxwell_<class 'numpy.float16'>", "seconds": 0.465, "before_mb": 766, "peak_mb": 774}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_double_sided_maxwell_<class 'numpy.float32'>", "seconds": 0.366, "before_mb": 774, "peak_mb": 780}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_f_<class 'ml_dtypes.bfloat16'>", "seconds": 0.029, "before_mb": 780, "peak_mb": 780}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_f_<class 'numpy.float16'>", "seconds": 0.513, "before_mb": 780, "peak_mb": 803}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_f_<class 'numpy.float32'>", "seconds": 0.417, "before_mb": 803, "peak_mb": 826}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_gamma_<class 'ml_dtypes.bfloat16'>", "seconds": 0.023, "before_mb": 826, "peak_mb": 827}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_gamma_<class 'numpy.float16'>", "seconds": 0.462, "before_mb": 829, "peak_mb": 836}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_gamma_<class 'numpy.float32'>", "seconds": 0.318, "before_mb": 836, "peak_mb": 843}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.int16'>", "seconds": 0.021, "before_mb": 843, "peak_mb": 843}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.int32'>", "seconds": 0.007, "before_mb": 843, "peak_mb": 843}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.int8'>", "seconds": 0.01, "before_mb": 843, "peak_mb": 843}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.uint16'>", "seconds": 0.028, "before_mb": 842, "peak_mb": 842}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.uint32'>", "seconds": 0.009, "before_mb": 842, "peak_mb": 842}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.uint8'>", "seconds": 0.021, "before_mb": 842, "peak_mb": 842}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_loggamma_<class 'ml_dtypes.bfloat16'>", "seconds": 0.009, "before_mb": 842, "peak_mb": 842}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_loggamma_<class 'numpy.float16'>", "seconds": 0.331, "before_mb": 842, "peak_mb": 851}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_loggamma_<class 'numpy.float32'>", "seconds": 0.249, "before_mb": 851, "peak_mb": 858}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_lognormal_<class 'ml_dtypes.bfloat16'>", "seconds": 0.015, "before_mb": 858, "peak_mb": 858}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_lognormal_<class 'numpy.float16'>", "seconds": 0.118, "before_mb": 858, "peak_mb": 862}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_lognormal_<class 'numpy.float32'>", "seconds": 0.121, "before_mb": 862, "peak_mb": 864}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_pareto_<class 'ml_dtypes.bfloat16'>", "seconds": 0.029, "before_mb": 864, "peak_mb": 863}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_pareto_<class 'numpy.float16'>", "seconds": 0.151, "before_mb": 863, "peak_mb": 866}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_pareto_<class 'numpy.float32'>", "seconds": 0.144, "before_mb": 866, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.int16'>", "seconds": 0.019, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.int32'>", "seconds": 0.037, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.int8'>", "seconds": 0.012, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.uint16'>", "seconds": 0.012, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.uint32'>", "seconds": 0.013, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.uint8'>", "seconds": 0.012, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.int16'>", "seconds": 0.029, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.int32'>", "seconds": 0.012, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.int8'>", "seconds": 0.011, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.uint16'>", "seconds": 0.01, "before_mb": 868, "peak_mb": 868}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.uint32'>", "seconds": 0.014, "before_mb": 868, "peak_mb": 869}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.uint8'>", "seconds": 0.008, "before_mb": 869, "peak_mb": 869}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_rayleigh_<class 'ml_dtypes.bfloat16'>", "seconds": 0.012, "before_mb": 869, "peak_mb": 869}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_rayleigh_<class 'numpy.float16'>", "seconds": 0.198, "before_mb": 869, "peak_mb": 872}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_rayleigh_<class 'numpy.float32'>", "seconds": 0.155, "before_mb": 872, "peak_mb": 874}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_t_<class 'ml_dtypes.bfloat16'>", "seconds": 0.011, "before_mb": 874, "peak_mb": 874}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_t_<class 'numpy.float16'>", "seconds": 0.482, "before_mb": 874, "peak_mb": 892}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_t_<class 'numpy.float32'>", "seconds": 0.459, "before_mb": 892, "peak_mb": 907}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_triangular_<class 'ml_dtypes.bfloat16'>", "seconds": 0.022, "before_mb": 907, "peak_mb": 908}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_triangular_<class 'numpy.float16'>", "seconds": 0.164, "before_mb": 908, "peak_mb": 911}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_triangular_<class 'numpy.float32'>", "seconds": 0.368, "before_mb": 911, "peak_mb": 913}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_truncated_normal_<class 'ml_dtypes.bfloat16'>", "seconds": 0.019, "before_mb": 913, "peak_mb": 913}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_truncated_normal_<class 'numpy.float16'>", "seconds": 0.329, "before_mb": 913, "peak_mb": 917}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_truncated_normal_<class 'numpy.float32'>", "seconds": 0.215, "before_mb": 917, "peak_mb": 922}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_uniform_<class 'ml_dtypes.bfloat16'>", "seconds": 0.01, "before_mb": 922, "peak_mb": 922}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_uniform_<class 'numpy.float16'>", "seconds": 0.067, "before_mb": 921, "peak_mb": 923}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_uniform_<class 'numpy.float32'>", "seconds": 0.066, "before_mb": 923, "peak_mb": 924}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_wald_<class 'ml_dtypes.bfloat16'>", "seconds": 0.018, "before_mb": 924, "peak_mb": 924}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_wald_<class 'numpy.float16'>", "seconds": 0.199, "before_mb": 924, "peak_mb": 932}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_wald_<class 'numpy.float32'>", "seconds": 0.261, "before_mb": 932, "peak_mb": 937}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_weibull_min_<class 'ml_dtypes.bfloat16'>", "seconds": 0.01, "before_mb": 937, "peak_mb": 937}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_weibull_min_<class 'numpy.float16'>", "seconds": 0.161, "before_mb": 937, "peak_mb": 939}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_weibull_min_<class 'numpy.float32'>", "seconds": 0.272, "before_mb": 939, "peak_mb": 942}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_f_broadcasted_parameters", "seconds": 0.552, "before_mb": 942, "peak_mb": 969}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_beta", "seconds": 0.571, "before_mb": 969, "peak_mb": 989}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_binomial", "seconds": 0.686, "before_mb": 990, "peak_mb": 1010}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_chisquare", "seconds": 0.402, "before_mb": 1010, "peak_mb": 1019}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_chisquare_approx", "seconds": 1.051, "before_mb": 1019, "peak_mb": 1030}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_f", "seconds": 0.481, "before_mb": 1030, "peak_mb": 1055}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_gamma", "seconds": 0.235, "before_mb": 1055, "peak_mb": 1063}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_gamma_approx", "seconds": 0.428, "before_mb": 1063, "peak_mb": 1067}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_geometric", "seconds": 0.147, "before_mb": 1067, "peak_mb": 1071}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_loggamma", "seconds": 0.311, "before_mb": 1071, "peak_mb": 1080}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_loggamma_approx", "seconds": 0.258, "before_mb": 1080, "peak_mb": 1087}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_lognormal", "seconds": 0.133, "before_mb": 1087, "peak_mb": 1089}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_pareto", "seconds": 0.171, "before_mb": 1089, "peak_mb": 1092}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_poisson", "seconds": 0.886, "before_mb": 1092, "peak_mb": 1115}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_poisson_approx", "seconds": 0.684, "before_mb": 1115, "peak_mb": 1130}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_randint", "seconds": 0.21, "before_mb": 1130, "peak_mb": 1136}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_rayleigh", "seconds": 0.133, "before_mb": 1136, "peak_mb": 1139}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_t", "seconds": 0.345, "before_mb": 1139, "peak_mb": 1158}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_triangular", "seconds": 0.139, "before_mb": 1158, "peak_mb": 1160}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_truncated_normal", "seconds": 0.199, "before_mb": 1160, "peak_mb": 1164}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_uniform", "seconds": 0.123, "before_mb": 1164, "peak_mb": 1171}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_wald", "seconds": 0.188, "before_mb": 1171, "peak_mb": 1175}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_weibull_min", "seconds": 0.174, "before_mb": 1175, "peak_mb": 1178}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall0", "seconds": 0.79, "before_mb": 1178, "peak_mb": 1196, "params": "(d=1, p=1.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall1", "seconds": 0.83, "before_mb": 1196, "peak_mb": 1211, "params": "(d=4, p=1.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall2", "seconds": 0.499, "before_mb": 1211, "peak_mb": 1227, "params": "(d=1, p=1.0, shape=(), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall3", "seconds": 0.032, "before_mb": 1227, "peak_mb": 1234, "params": "(d=4, p=2.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall4", "seconds": 0.576, "before_mb": 1234, "peak_mb": 1244, "params": "(d=3, p=1.0, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall5", "seconds": 0.214, "before_mb": 1244, "peak_mb": 1254, "params": "(d=1, p=1.0, shape=(), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall6", "seconds": 0.563, "before_mb": 1254, "peak_mb": 1263, "params": "(d=2, p=2.0, shape=(), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall7", "seconds": 0.241, "before_mb": 1263, "peak_mb": 1275, "params": "(d=3, p=1.5, shape=(), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall8", "seconds": 0.04, "before_mb": 1275, "peak_mb": 1275, "params": "(d=1, p=0.5, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall9", "seconds": 0.213, "before_mb": 1275, "peak_mb": 1281, "params": "(d=4, p=1.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS0", "seconds": 0.044, "before_mb": 1281, "peak_mb": 1282, "params": "(d=1, p=1.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS1", "seconds": 0.027, "before_mb": 1282, "peak_mb": 1282, "params": "(d=4, p=1.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS2", "seconds": 0.031, "before_mb": 1282, "peak_mb": 1282, "params": "(d=1, p=1.0, shape=(), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS3", "seconds": 0.027, "before_mb": 1282, "peak_mb": 1282, "params": "(d=4, p=2.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS4", "seconds": 0.011, "before_mb": 1282, "peak_mb": 1282, "params": "(d=3, p=1.0, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS5", "seconds": 0.009, "before_mb": 1282, "peak_mb": 1282, "params": "(d=1, p=1.0, shape=(), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS6", "seconds": 0.009, "before_mb": 1282, "peak_mb": 1283, "params": "(d=2, p=2.0, shape=(), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS7", "seconds": 0.011, "before_mb": 1283, "peak_mb": 1283, "params": "(d=3, p=1.5, shape=(), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS8", "seconds": 0.03, "before_mb": 1283, "peak_mb": 1283, "params": "(d=1, p=0.5, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS9", "seconds": 0.01, "before_mb": 1283, "peak_mb": 1283, "params": "(d=4, p=1.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli0", "seconds": 0.18, "before_mb": 1283, "peak_mb": 1284, "params": "(p=0.1, dtype=<class 'numpy.float32'>, mode=None, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli1", "seconds": 0.02, "before_mb": 1284, "peak_mb": 1286, "params": "(p=0.5, dtype=<class 'numpy.float32'>, mode=None, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli2", "seconds": 0.153, "before_mb": 1286, "peak_mb": 1287, "params": "(p=0.9, dtype=<class 'numpy.float32'>, mode='high', use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli3", "seconds": 0.028, "before_mb": 1287, "peak_mb": 1289, "params": "(p=0.9, dtype=<class 'numpy.float32'>, mode='low', use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli4", "seconds": 0.037, "before_mb": 1289, "peak_mb": 1289, "params": "(p=0.1, dtype=<class 'numpy.float32'>, mode='low', use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli5", "seconds": 0.078, "before_mb": 1289, "peak_mb": 1289, "params": "(p=0.5, dtype=<class 'numpy.float32'>, mode='low', use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli6", "seconds": 0.12, "before_mb": 1289, "peak_mb": 1292, "params": "(p=0.5, dtype=<class 'numpy.float32'>, mode='high', use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli7", "seconds": 0.022, "before_mb": 1292, "peak_mb": 1294, "params": "(p=0.1, dtype=<class 'numpy.float32'>, mode='high', use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli8", "seconds": 0.082, "before_mb": 1294, "peak_mb": 1296, "params": "(p=0.9, dtype=<class 'numpy.float32'>, mode=None, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli9", "seconds": 0.019, "before_mb": 1296, "peak_mb": 1296, "params": "(p=0.9, dtype=<class 'numpy.float32'>, mode=None, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulliShape", "seconds": 0.097, "before_mb": 1296, "peak_mb": 1295}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta0", "seconds": 0.012, "before_mb": 1295, "peak_mb": 1295, "params": "(a=0.2, b=0.2, dtype=<class 'numpy.float64'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta1", "seconds": 0.01, "before_mb": 1295, "peak_mb": 1295, "params": "(a=5.0, b=0.2, dtype=<class 'numpy.float64'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta2", "seconds": 0.019, "before_mb": 1295, "peak_mb": 1295, "params": "(a=5.0, b=0.2, dtype=<class 'numpy.float64'>, use_jit=True, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta3", "seconds": 0.008, "before_mb": 1295, "peak_mb": 1295, "params": "(a=0.2, b=5.0, dtype=<class 'numpy.float64'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta4", "seconds": 0.015, "before_mb": 1295, "peak_mb": 1295, "params": "(a=5.0, b=0.2, dtype=<class 'numpy.float64'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta5", "seconds": 0.006, "before_mb": 1295, "peak_mb": 1295, "params": "(a=5.0, b=5.0, dtype=<class 'numpy.float64'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta6", "seconds": 0.006, "before_mb": 1295, "peak_mb": 1295, "params": "(a=0.2, b=0.2, dtype=<class 'numpy.float64'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta7", "seconds": 0.013, "before_mb": 1295, "peak_mb": 1295, "params": "(a=5.0, b=0.2, dtype=<class 'numpy.float64'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta8", "seconds": 0.006, "before_mb": 1295, "peak_mb": 1296, "params": "(a=0.2, b=5.0, dtype=<class 'numpy.float64'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta9", "seconds": 0.013, "before_mb": 1296, "peak_mb": 1296, "params": "(a=5.0, b=5.0, dtype=<class 'numpy.float64'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBetaInvalidMethod", "seconds": 0.006, "before_mb": 1296, "peak_mb": 1296}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBetaSmallParameters0", "seconds": 0.453, "before_mb": 1296, "peak_mb": 1318, "params": "(method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBetaSmallParameters1", "seconds": 0.599, "before_mb": 1318, "peak_mb": 1344, "params": "(method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialCornerCases", "seconds": 0.793, "before_mb": 1344, "peak_mb": 1375}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample0", "seconds": 0.406, "before_mb": 1375, "peak_mb": 1386, "params": "(n=53, p=0.5, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample1", "seconds": 0.223, "before_mb": 1386, "peak_mb": 1397, "params": "(n=500, p=0.5, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample2", "seconds": 0.039, "before_mb": 1397, "peak_mb": 1398, "params": "(n=5, p=0.3, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample3", "seconds": 0.051, "before_mb": 1398, "peak_mb": 1398, "params": "(n=5, p=0.9, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample4", "seconds": 0.04, "before_mb": 1398, "peak_mb": 1398, "params": "(n=21, p=0.7, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample5", "seconds": 0.041, "before_mb": 1398, "peak_mb": 1398, "params": "(n=53, p=0.9, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample6", "seconds": 0.037, "before_mb": 1398, "peak_mb": 1398, "params": "(n=13, p=0.1, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample7", "seconds": 0.037, "before_mb": 1398, "peak_mb": 1398, "params": "(n=5, p=0.1, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample8", "seconds": 0.046, "before_mb": 1398, "peak_mb": 1398, "params": "(n=21, p=0.3, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample9", "seconds": 0.045, "before_mb": 1398, "peak_mb": 1396, "params": "(n=500, p=0.7, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement0", "seconds": 0.332, "before_mb": 1396, "peak_mb": 1402, "params": "(logits_shape=(8, 9), prefix_shape=(5, 6))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement1", "seconds": 0.422, "before_mb": 1402, "peak_mb": 1422, "params": "(logits_shape=(8, 9), prefix_shape=(2,))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement2", "seconds": 1.221, "before_mb": 1422, "peak_mb": 1448, "params": "(logits_shape=(10, 11, 12), prefix_shape=(3, 4))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement3", "seconds": 0.488, "before_mb": 1448, "peak_mb": 1472, "params": "(logits_shape=(7,), prefix_shape=(2,))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement4", "seconds": 0.042, "before_mb": 1472, "peak_mb": 1472, "params": "(logits_shape=(10, 11, 12), prefix_shape=(5, 6))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement5", "seconds": 0.336, "before_mb": 1472, "peak_mb": 1488, "params": "(logits_shape=(10, 11, 12), prefix_shape=(2,))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement6", "seconds": 0.44, "before_mb": 131, "peak_mb": 222, "params": "(logits_shape=(8, 9), prefix_shape=(3, 4))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement7", "seconds": 0.134, "before_mb": 222, "peak_mb": 232, "params": "(logits_shape=(7,), prefix_shape=(3, 4))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement8", "seconds": 0.023, "before_mb": 232, "peak_mb": 237, "params": "(logits_shape=(7,), prefix_shape=(5, 6))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy0", "seconds": 0.272, "before_mb": 237, "peak_mb": 244, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy1", "seconds": 0.146, "before_mb": 244, "peak_mb": 248, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy2", "seconds": 0.251, "before_mb": 248, "peak_mb": 252, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy3", "seconds": 0.099, "before_mb": 252, "peak_mb": 255, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy4", "seconds": 0.091, "before_mb": 255, "peak_mb": 258, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy5", "seconds": 0.112, "before_mb": 258, "peak_mb": 260, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare0", "seconds": 0.019, "before_mb": 260, "peak_mb": 261, "params": "(df=0.2, dtype=<class 'numpy.float32'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare1", "seconds": 0.008, "before_mb": 261, "peak_mb": 261, "params": "(df=1.0, dtype=<class 'numpy.float32'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare2", "seconds": 0.008, "before_mb": 261, "peak_mb": 261, "params": "(df=1.0, dtype=<class 'numpy.float32'>, use_jit=True, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare3", "seconds": 0.019, "before_mb": 261, "peak_mb": 261, "params": "(df=10.0, dtype=<class 'numpy.float32'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare4", "seconds": 0.006, "before_mb": 261, "peak_mb": 261, "params": "(df=1.0, dtype=<class 'numpy.float32'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare5", "seconds": 0.006, "before_mb": 261, "peak_mb": 261, "params": "(df=100.0, dtype=<class 'numpy.float32'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare6", "seconds": 0.016, "before_mb": 261, "peak_mb": 261, "params": "(df=0.2, dtype=<class 'numpy.float32'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare7", "seconds": 0.006, "before_mb": 261, "peak_mb": 261, "params": "(df=1.0, dtype=<class 'numpy.float32'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare8", "seconds": 0.006, "before_mb": 261, "peak_mb": 261, "params": "(df=10.0, dtype=<class 'numpy.float32'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare9", "seconds": 0.013, "before_mb": 261, "peak_mb": 261, "params": "(df=100.0, dtype=<class 'numpy.float32'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquareInvalidMethod", "seconds": 0.006, "before_mb": 261, "peak_mb": 261}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice0", "seconds": 0.3, "before_mb": 261, "peak_mb": 277, "params": "(shape=(), replace=False, axis=1, input_range_or_shape=(10, 10), dtype=<class 'numpy.int32'>, weighted=True, mode=None)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice1", "seconds": 0.565, "before_mb": 277, "peak_mb": 299, "params": "(shape=(4, 5), replace=True, axis=1, input_range_or_shape=(10, 5, 2), dtype=<class 'numpy.float32'>, weighted=True, mode=None)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice2", "seconds": 0.357, "before_mb": 299, "peak_mb": 313, "params": "(shape=(5,), replace=False, axis=-2, input_range_or_shape=(10, 10), dtype=<class 'numpy.int32'>, weighted=False, mode=None)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice3", "seconds": 0.137, "before_mb": 313, "peak_mb": 318, "params": "(shape=(), replace=False, axis=-1, input_range_or_shape=(10, 10), dtype=<class 'numpy.int32'>, weighted=False, mode='high')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice4", "seconds": 0.192, "before_mb": 318, "peak_mb": 324, "params": "(shape=(), replace=True, axis=-2, input_range_or_shape=(1, 5), dtype=<class 'numpy.int32'>, weighted=False, mode='low')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice5", "seconds": 0.191, "before_mb": 324, "peak_mb": 331, "params": "(shape=(), replace=True, axis=-3, input_range_or_shape=(10, 5, 2), dtype=<class 'numpy.int32'>, weighted=False, mode='high')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice6", "seconds": 0.312, "before_mb": 331, "peak_mb": 338, "params": "(shape=(4, 5), replace=True, axis=0, input_range_or_shape=(10, 10), dtype=<class 'numpy.int32'>, weighted=False, mode=None)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice7", "seconds": 0.317, "before_mb": 338, "peak_mb": 346, "params": "(shape=(), replace=False, axis=-2, input_range_or_shape=(10, 5, 2), dtype=<class 'numpy.float32'>, weighted=True, mode='high')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice8", "seconds": 0.417, "before_mb": 346, "peak_mb": 360, "params": "(shape=(), replace=True, axis=-2, input_range_or_shape=(10, 10), dtype=<class 'numpy.int32'>, weighted=True, mode='low')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice9", "seconds": 0.238, "before_mb": 360, "peak_mb": 371, "params": "(shape=(), replace=False, axis=-1, input_range_or_shape=(10, 5, 2), dtype=<class 'numpy.int32'>, weighted=False, mode='low')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoiceShapeIsNotSequenceError", "seconds": 0.009, "before_mb": 371, "peak_mb": 371}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDirichlet0", "seconds": 0.966, "before_mb": 371, "peak_mb": 401, "params": "(alpha=array([0.2, 1. , 5. ]), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDirichlet1", "seconds": 0.862, "before_mb": 401, "peak_mb": 425, "params": "(alpha=array([0.2, 1. , 5. ]), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDirichletSmallAlpha", "seconds": 0.228, "before_mb": 425, "peak_mb": 436}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDoublesidedMaxwellSample0", "seconds": 0.384, "before_mb": 436, "peak_mb": 448, "params": "(loc=2.0, scale=3.0, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDoublesidedMaxwellSample1", "seconds": 0.178, "before_mb": 448, "peak_mb": 465, "params": "(loc=2.0, scale=3.0, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDoublesidedMaxwellSample2", "seconds": 0.024, "before_mb": 465, "peak_mb": 464, "params": "(loc=4.0, scale=1.0, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDoublesidedMaxwellSample3", "seconds": 0.02, "before_mb": 464, "peak_mb": 465, "params": "(loc=4.0, scale=1.0, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDtypeErrorMessage", "seconds": 0.007, "before_mb": 465, "peak_mb": 465}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential0", "seconds": 0.168, "before_mb": 465, "peak_mb": 468, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential1", "seconds": 0.106, "before_mb": 468, "peak_mb": 470, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential2", "seconds": 0.092, "before_mb": 470, "peak_mb": 472, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential3", "seconds": 0.057, "before_mb": 472, "peak_mb": 474, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential4", "seconds": 0.093, "before_mb": 474, "peak_mb": 476, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential5", "seconds": 0.074, "before_mb": 476, "peak_mb": 479, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF0", "seconds": 0.668, "before_mb": 479, "peak_mb": 504, "params": "(dfnum=2.0, dfden=100.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF1", "seconds": 0.655, "before_mb": 504, "peak_mb": 520, "params": "(dfnum=100.0, dfden=100.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF2", "seconds": 0.038, "before_mb": 520, "peak_mb": 522, "params": "(dfnum=1.0, dfden=10.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF3", "seconds": 0.029, "before_mb": 522, "peak_mb": 524, "params": "(dfnum=2.0, dfden=1.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF4", "seconds": 0.027, "before_mb": 524, "peak_mb": 525, "params": "(dfnum=1.0, dfden=10.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF5", "seconds": 0.026, "before_mb": 525, "peak_mb": 525, "params": "(dfnum=2.0, dfden=10.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF6", "seconds": 0.021, "before_mb": 525, "peak_mb": 525, "params": "(dfnum=10.0, dfden=100.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF7", "seconds": 0.023, "before_mb": 525, "peak_mb": 525, "params": "(dfnum=2.0, dfden=10.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF8", "seconds": 0.026, "before_mb": 525, "peak_mb": 526, "params": "(dfnum=1.0, dfden=100.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF9", "seconds": 0.034, "before_mb": 526, "peak_mb": 526, "params": "(dfnum=1.0, dfden=1.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testFoldIn", "seconds": 0.062, "before_mb": 526, "peak_mb": 527}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testFoldInBig", "seconds": 0.035, "before_mb": 527, "peak_mb": 527}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma0", "seconds": 0.383, "before_mb": 527, "peak_mb": 537, "params": "(a=1.0, dtype=<class 'numpy.float32'>, use_jit=True, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma1", "seconds": 0.02, "before_mb": 537, "peak_mb": 537, "params": "(a=0.1, dtype=<class 'numpy.float32'>, use_jit=True, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma2", "seconds": 0.403, "before_mb": 537, "peak_mb": 550, "params": "(a=0.1, dtype=<class 'numpy.float32'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma3", "seconds": 0.191, "before_mb": 550, "peak_mb": 560, "params": "(a=10.0, dtype=<class 'numpy.float32'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma4", "seconds": 0.344, "before_mb": 560, "peak_mb": 569, "params": "(a=10.0, dtype=<class 'numpy.float32'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma5", "seconds": 0.02, "before_mb": 569, "peak_mb": 568, "params": "(a=10.0, dtype=<class 'numpy.float32'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma6", "seconds": 0.021, "before_mb": 568, "peak_mb": 571, "params": "(a=1.0, dtype=<class 'numpy.float32'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma7", "seconds": 0.015, "before_mb": 571, "peak_mb": 570, "params": "(a=10.0, dtype=<class 'numpy.float32'>, use_jit=True, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma8", "seconds": 0.021, "before_mb": 570, "peak_mb": 571, "params": "(a=1.0, dtype=<class 'numpy.float32'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma9", "seconds": 0.012, "before_mb": 571, "peak_mb": 571, "params": "(a=1.0, dtype=<class 'numpy.float32'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad0", "seconds": 2.057, "before_mb": 571, "peak_mb": 593, "params": "(log_space=True, alpha=0.0001)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad1", "seconds": 0.543, "before_mb": 593, "peak_mb": 609, "params": "(log_space=False, alpha=0.0001)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad2", "seconds": 0.038, "before_mb": 609, "peak_mb": 614, "params": "(log_space=True, alpha=1.0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad3", "seconds": 0.051, "before_mb": 614, "peak_mb": 615, "params": "(log_space=False, alpha=0.01)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad4", "seconds": 0.026, "before_mb": 615, "peak_mb": 613, "params": "(log_space=False, alpha=0.001)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad5", "seconds": 0.029, "before_mb": 613, "peak_mb": 613, "params": "(log_space=False, alpha=100.0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad6", "seconds": 0.052, "before_mb": 613, "peak_mb": 612, "params": "(log_space=True, alpha=10000.0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad7", "seconds": 0.033, "before_mb": 612, "peak_mb": 612, "params": "(log_space=False, alpha=1000.0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad8", "seconds": 0.028, "before_mb": 612, "peak_mb": 612, "params": "(log_space=False, alpha=10.0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad9", "seconds": 0.026, "before_mb": 612, "peak_mb": 612, "params": "(log_space=True, alpha=0.001)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate0", "seconds": 1.666, "before_mb": 612, "peak_mb": 636, "params": "(log_space=True, alpha=0.1)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate1", "seconds": 0.454, "before_mb": 636, "peak_mb": 652, "params": "(log_space=False, alpha=0.1)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate2", "seconds": 0.048, "before_mb": 652, "peak_mb": 654, "params": "(log_space=False, alpha=10.0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate3", "seconds": 0.042, "before_mb": 654, "peak_mb": 652, "params": "(log_space=True, alpha=1.0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate4", "seconds": 0.042, "before_mb": 652, "peak_mb": 654, "params": "(log_space=True, alpha=10.0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate5", "seconds": 0.061, "before_mb": 654, "peak_mb": 654, "params": "(log_space=False, alpha=1.0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradType", "seconds": 1.381, "before_mb": 654, "peak_mb": 690}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaInvalidMethod", "seconds": 0.015, "before_mb": 690, "peak_mb": 690}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma0", "seconds": 0.249, "before_mb": 690, "peak_mb": 700, "params": "(a=0.1, dtype=<class 'numpy.float32'>, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma1", "seconds": 0.038, "before_mb": 700, "peak_mb": 707, "params": "(a=1.0, dtype=<class 'numpy.float32'>, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma2", "seconds": 0.177, "before_mb": 709, "peak_mb": 711, "params": "(a=10.0, dtype=<class 'numpy.float32'>, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma3", "seconds": 0.024, "before_mb": 711, "peak_mb": 716, "params": "(a=10.0, dtype=<class 'numpy.float32'>, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma4", "seconds": 0.013, "before_mb": 716, "peak_mb": 714, "params": "(a=1.0, dtype=<class 'numpy.float32'>, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma5", "seconds": 0.019, "before_mb": 714, "peak_mb": 714, "params": "(a=0.1, dtype=<class 'numpy.float32'>, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal0", "seconds": 0.238, "before_mb": 714, "peak_mb": 721, "params": "(p=1.5, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal1", "seconds": 0.201, "before_mb": 721, "peak_mb": 730, "params": "(p=0.5, shape=(), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal2", "seconds": 0.218, "before_mb": 730, "peak_mb": 737, "params": "(p=2.0, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal3", "seconds": 0.022, "before_mb": 737, "peak_mb": 739, "params": "(p=1.5, shape=(), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal4", "seconds": 0.148, "before_mb": 739, "peak_mb": 745, "params": "(p=2.0, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal5", "seconds": 0.017, "before_mb": 745, "peak_mb": 745, "params": "(p=2.5, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal6", "seconds": 0.014, "before_mb": 745, "peak_mb": 745, "params": "(p=2.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal7", "seconds": 0.02, "before_mb": 745, "peak_mb": 745, "params": "(p=2.5, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal8", "seconds": 0.16, "before_mb": 745, "peak_mb": 748, "params": "(p=1.5, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal9", "seconds": 0.159, "before_mb": 748, "peak_mb": 754, "params": "(p=0.5, shape=(), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS0", "seconds": 0.015, "before_mb": 754, "peak_mb": 754, "params": "(p=1.5, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS1", "seconds": 0.057, "before_mb": 754, "peak_mb": 754, "params": "(p=0.5, shape=(), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS2", "seconds": 0.011, "before_mb": 754, "peak_mb": 754, "params": "(p=2.0, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS3", "seconds": 0.01, "before_mb": 754, "peak_mb": 754, "params": "(p=1.5, shape=(), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS4", "seconds": 0.009, "before_mb": 754, "peak_mb": 754, "params": "(p=2.0, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS5", "seconds": 0.008, "before_mb": 754, "peak_mb": 754, "params": "(p=2.5, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS6", "seconds": 0.018, "before_mb": 754, "peak_mb": 754, "params": "(p=2.0, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS7", "seconds": 0.009, "before_mb": 754, "peak_mb": 754, "params": "(p=2.5, shape=(5,), dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS8", "seconds": 0.009, "before_mb": 754, "peak_mb": 754, "params": "(p=1.5, shape=(10, 5), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS9", "seconds": 0.022, "before_mb": 754, "peak_mb": 754, "params": "(p=0.5, shape=(), dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric0", "seconds": 0.485, "before_mb": 754, "peak_mb": 759, "params": "(p=0.2, dtype=<class 'numpy.int16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric1", "seconds": 0.223, "before_mb": 759, "peak_mb": 764, "params": "(p=0.4, dtype=<class 'numpy.int32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric2", "seconds": 0.026, "before_mb": 764, "peak_mb": 766, "params": "(p=0.2, dtype=<class 'numpy.int32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric3", "seconds": 0.024, "before_mb": 766, "peak_mb": 766, "params": "(p=0.3, dtype=<class 'numpy.int16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric4", "seconds": 0.072, "before_mb": 766, "peak_mb": 767, "params": "(p=0.5, dtype=<class 'numpy.int32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric5", "seconds": 0.02, "before_mb": 767, "peak_mb": 769, "params": "(p=0.2, dtype=<class 'numpy.int32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric6", "seconds": 0.082, "before_mb": 769, "peak_mb": 769, "params": "(p=0.3, dtype=<class 'numpy.int16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric7", "seconds": 0.017, "before_mb": 769, "peak_mb": 771, "params": "(p=0.5, dtype=<class 'numpy.int16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric8", "seconds": 0.027, "before_mb": 771, "peak_mb": 769, "params": "(p=0.5, dtype=<class 'numpy.int32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric9", "seconds": 0.014, "before_mb": 769, "peak_mb": 771, "params": "(p=0.3, dtype=<class 'numpy.int32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGumbel0", "seconds": 0.093, "before_mb": 771, "peak_mb": 774, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGumbel1", "seconds": 0.057, "before_mb": 774, "peak_mb": 774, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testIssue1789", "seconds": 0.453, "before_mb": 774, "peak_mb": 794}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testIssue222", "seconds": 0.03, "before_mb": 794, "peak_mb": 795}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testIssue756", "seconds": 0.041, "before_mb": 795, "peak_mb": 796}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace0", "seconds": 0.188, "before_mb": 796, "peak_mb": 799, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace1", "seconds": 0.11, "before_mb": 799, "peak_mb": 801, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace2", "seconds": 0.117, "before_mb": 801, "peak_mb": 805, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace3", "seconds": 0.067, "before_mb": 805, "peak_mb": 807, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace4", "seconds": 0.099, "before_mb": 807, "peak_mb": 808, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace5", "seconds": 0.108, "before_mb": 808, "peak_mb": 811, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal0", "seconds": 0.133, "before_mb": 811, "peak_mb": 814, "params": "(sigma=0.5, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal1", "seconds": 0.116, "before_mb": 814, "peak_mb": 818, "params": "(sigma=0.5, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal2", "seconds": 0.022, "before_mb": 818, "peak_mb": 820, "params": "(sigma=0.2, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal3", "seconds": 0.013, "before_mb": 820, "peak_mb": 820, "params": "(sigma=2.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal4", "seconds": 0.013, "before_mb": 820, "peak_mb": 820, "params": "(sigma=1.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal5", "seconds": 0.008, "before_mb": 820, "peak_mb": 820, "params": "(sigma=0.2, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal6", "seconds": 0.011, "before_mb": 820, "peak_mb": 820, "params": "(sigma=2.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal7", "seconds": 0.01, "before_mb": 820, "peak_mb": 820, "params": "(sigma=1.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic0", "seconds": 0.119, "before_mb": 820, "peak_mb": 820, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic1", "seconds": 0.093, "before_mb": 820, "peak_mb": 823, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic2", "seconds": 0.092, "before_mb": 823, "peak_mb": 825, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic3", "seconds": 0.061, "before_mb": 825, "peak_mb": 827, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic4", "seconds": 0.056, "before_mb": 828, "peak_mb": 830, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic5", "seconds": 0.067, "before_mb": 830, "peak_mb": 832, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLowProbabilityGumbel", "seconds": 2.317, "before_mb": 832, "peak_mb": 873}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMaxwellSample0", "seconds": 0.858, "before_mb": 873, "peak_mb": 914, "params": "(use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMaxwellSample1", "seconds": 0.808, "before_mb": 914, "peak_mb": 961, "params": "(use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialBatchShape", "seconds": 1.921, "before_mb": 961, "peak_mb": 1005}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype0", "seconds": 0.32, "before_mb": 1005, "peak_mb": 1025, "params": "(n_dtype=<class 'ml_dtypes.bfloat16'>, p_dtype=<class 'numpy.float32'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype1", "seconds": 1.578, "before_mb": 1025, "peak_mb": 1047, "params": "(n_dtype=<class 'numpy.float16'>, p_dtype=<class 'numpy.float16'>, dtype=<class 'numpy.float16'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype2", "seconds": 0.222, "before_mb": 1047, "peak_mb": 1055, "params": "(n_dtype=<class 'numpy.float16'>, p_dtype=<class 'ml_dtypes.bfloat16'>, dtype=<class 'ml_dtypes.bfloat16'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype3", "seconds": 0.143, "before_mb": 1055, "peak_mb": 1062, "params": "(n_dtype=<class 'numpy.float32'>, p_dtype=<class 'numpy.float16'>, dtype=<class 'ml_dtypes.bfloat16'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype4", "seconds": 2.037, "before_mb": 1062, "peak_mb": 1083, "params": "(n_dtype=<class 'ml_dtypes.bfloat16'>, p_dtype=<class 'ml_dtypes.bfloat16'>, dtype=<class 'ml_dtypes.bfloat16'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype5", "seconds": 0.241, "before_mb": 1083, "peak_mb": 1089, "params": "(n_dtype=<class 'numpy.float16'>, p_dtype=<class 'ml_dtypes.bfloat16'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype6", "seconds": 0.111, "before_mb": 1089, "peak_mb": 1095, "params": "(n_dtype=<class 'numpy.float16'>, p_dtype=<class 'numpy.float32'>, dtype=<class 'numpy.float16'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype7", "seconds": 0.12, "before_mb": 1095, "peak_mb": 1100, "params": "(n_dtype=<class 'numpy.float16'>, p_dtype=<class 'numpy.float32'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype8", "seconds": 0.116, "before_mb": 1100, "peak_mb": 1106, "params": "(n_dtype=<class 'numpy.float16'>, p_dtype=<class 'numpy.float16'>, dtype=<class 'ml_dtypes.bfloat16'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype9", "seconds": 0.149, "before_mb": 1106, "peak_mb": 1112, "params": "(n_dtype=<class 'numpy.float32'>, p_dtype=<class 'numpy.float32'>, dtype=<class 'ml_dtypes.bfloat16'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialExample", "seconds": 0.708, "before_mb": 1112, "peak_mb": 1130}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape0", "seconds": 4.081, "before_mb": 1130, "peak_mb": 1164, "params": "(shape=(2, 3, 5), outcomes=3)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape1", "seconds": 0.281, "before_mb": 1164, "peak_mb": 1185, "params": "(shape=(5,), outcomes=3)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape2", "seconds": 0.641, "before_mb": 1185, "peak_mb": 1213, "params": "(shape=(2, 3), outcomes=4)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape3", "seconds": 0.566, "before_mb": 1213, "peak_mb": 1232, "params": "(shape=(5,), outcomes=2)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape4", "seconds": 0.745, "before_mb": 1232, "peak_mb": 1246, "params": "(shape=(2, 3, 5), outcomes=4)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape5", "seconds": 0.32, "before_mb": 1246, "peak_mb": 1260, "params": "(shape=(5,), outcomes=4)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape6", "seconds": 0.26, "before_mb": 1260, "peak_mb": 1276, "params": "(shape=(2, 3), outcomes=3)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape7", "seconds": 0.511, "before_mb": 1276, "peak_mb": 1290, "params": "(shape=(2, 3), outcomes=2)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape8", "seconds": 0.387, "before_mb": 1290, "peak_mb": 1303, "params": "(shape=(2, 3, 5), outcomes=2)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal0", "seconds": 0.553, "before_mb": 1303, "peak_mb": 1313, "params": "(dim=3, dtype=<class 'ml_dtypes.bfloat16'>, method='cholesky', use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal1", "seconds": 0.215, "before_mb": 1313, "peak_mb": 1319, "params": "(dim=3, dtype=<class 'numpy.float16'>, method='cholesky', use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal2", "seconds": 0.845, "before_mb": 1319, "peak_mb": 1330, "params": "(dim=1, dtype=<class 'numpy.float16'>, method='cholesky', use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal3", "seconds": 0.355, "before_mb": 1330, "peak_mb": 1339, "params": "(dim=1, dtype=<class 'numpy.float16'>, method='eigh', use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal4", "seconds": 0.464, "before_mb": 1339, "peak_mb": 1363, "params": "(dim=5, dtype=<class 'numpy.float32'>, method='eigh', use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal5", "seconds": 1.494, "before_mb": 1363, "peak_mb": 1408, "params": "(dim=5, dtype=<class 'numpy.float16'>, method='svd', use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal6", "seconds": 0.313, "before_mb": 1408, "peak_mb": 1415, "params": "(dim=5, dtype=<class 'numpy.float32'>, method='eigh', use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal7", "seconds": 0.02, "before_mb": 1415, "peak_mb": 1414, "params": "(dim=3, dtype=<class 'numpy.float32'>, method='cholesky', use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal8", "seconds": 1.403, "before_mb": 1414, "peak_mb": 1432, "params": "(dim=1, dtype=<class 'numpy.float16'>, method='svd', use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal9", "seconds": 0.395, "before_mb": 1432, "peak_mb": 1448, "params": "(dim=5, dtype=<class 'numpy.float16'>, method='svd', use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalCovariance", "seconds": 1.347, "before_mb": 1448, "peak_mb": 1522}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes0", "seconds": 1.501, "before_mb": 131, "peak_mb": 216, "params": "(dim=1, mean_batch_size=(2, 3), cov_batch_size=(2, 3), shape=(), method='cholesky')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes1", "seconds": 0.091, "before_mb": 216, "peak_mb": 223, "params": "(dim=1, mean_batch_size=(2, 3), cov_batch_size=(), shape=(), method='cholesky')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes2", "seconds": 3.994, "before_mb": 223, "peak_mb": 281, "params": "(dim=4, mean_batch_size=(2, 3), cov_batch_size=(3,), shape=(5,), method='svd')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes3", "seconds": 1.349, "before_mb": 281, "peak_mb": 301, "params": "(dim=2, mean_batch_size=(2, 3), cov_batch_size=(3,), shape=(5,), method='eigh')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes4", "seconds": 1.167, "before_mb": 301, "peak_mb": 320, "params": "(dim=2, mean_batch_size=(3,), cov_batch_size=(2, 3), shape=(5,), method='eigh')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes5", "seconds": 0.166, "before_mb": 320, "peak_mb": 331, "params": "(dim=2, mean_batch_size=(3,), cov_batch_size=(3,), shape=(), method='eigh')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes6", "seconds": 0.778, "before_mb": 331, "peak_mb": 348, "params": "(dim=4, mean_batch_size=(2, 3), cov_batch_size=(2, 3), shape=(1,), method='eigh')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes7", "seconds": 3.96, "before_mb": 348, "peak_mb": 379, "params": "(dim=1, mean_batch_size=(2, 3), cov_batch_size=(3,), shape=(5,), method='svd')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes8", "seconds": 0.32, "before_mb": 379, "peak_mb": 385, "params": "(dim=1, mean_batch_size=(), cov_batch_size=(3,), shape=(), method='cholesky')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes9", "seconds": 0.918, "before_mb": 385, "peak_mb": 420, "params": "(dim=4, mean_batch_size=(3,), cov_batch_size=(), shape=(1,), method='svd')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalSingularCovariance0", "seconds": 0.319, "before_mb": 420, "peak_mb": 434, "params": "(method='cholesky')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalSingularCovariance1", "seconds": 0.191, "before_mb": 434, "peak_mb": 440, "params": "(method='eigh')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalSingularCovariance2", "seconds": 0.535, "before_mb": 440, "peak_mb": 461, "params": "(method='svd')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal0", "seconds": 0.698, "before_mb": 461, "peak_mb": 470, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal1", "seconds": 0.129, "before_mb": 470, "peak_mb": 474, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal2", "seconds": 0.17, "before_mb": 474, "peak_mb": 478, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal3", "seconds": 0.097, "before_mb": 478, "peak_mb": 482, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal4", "seconds": 0.133, "before_mb": 482, "peak_mb": 484, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal5", "seconds": 0.104, "before_mb": 484, "peak_mb": 488, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormalBfloat16", "seconds": 0.252, "before_mb": 488, "peak_mb": 498}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormalComplex0", "seconds": 0.314, "before_mb": 498, "peak_mb": 509, "params": "(dtype=<class 'numpy.complex64'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormalComplex1", "seconds": 0.198, "before_mb": 509, "peak_mb": 515, "params": "(dtype=<class 'numpy.complex64'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal0", "seconds": 0.226, "before_mb": 515, "peak_mb": 523, "params": "(n=4, shape=(), dtype=<class 'numpy.complex64'>, m=0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal1", "seconds": 1.417, "before_mb": 523, "peak_mb": 550, "params": "(n=2, shape=(10, 5), dtype=<class 'numpy.float32'>, m=1)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal2", "seconds": 0.184, "before_mb": 550, "peak_mb": 562, "params": "(n=3, shape=(), dtype=<class 'numpy.float32'>, m=None)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal3", "seconds": 0.805, "before_mb": 562, "peak_mb": 593, "params": "(n=3, shape=(), dtype=<class 'numpy.complex64'>, m=2)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal4", "seconds": 0.116, "before_mb": 593, "peak_mb": 596, "params": "(n=0, shape=(10, 5), dtype=<class 'numpy.complex64'>, m=4)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal5", "seconds": 0.161, "before_mb": 596, "peak_mb": 601, "params": "(n=0, shape=(), dtype=<class 'numpy.complex64'>, m=0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal6", "seconds": 0.11, "before_mb": 601, "peak_mb": 606, "params": "(n=4, shape=(5,), dtype=<class 'numpy.complex64'>, m=0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal7", "seconds": 0.568, "before_mb": 606, "peak_mb": 623, "params": "(n=3, shape=(5,), dtype=<class 'numpy.float32'>, m=2)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal8", "seconds": 1.78, "before_mb": 623, "peak_mb": 650, "params": "(n=3, shape=(5,), dtype=<class 'numpy.complex64'>, m=3)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal9", "seconds": 3.383, "before_mb": 650, "peak_mb": 689, "params": "(n=3, shape=(10, 5), dtype=<class 'numpy.complex64'>, m=3)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto0", "seconds": 0.118, "before_mb": 689, "peak_mb": 692, "params": "(b=0.1, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto1", "seconds": 0.019, "before_mb": 692, "peak_mb": 694, "params": "(b=1.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto2", "seconds": 0.098, "before_mb": 694, "peak_mb": 695, "params": "(b=10.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto3", "seconds": 0.02, "before_mb": 695, "peak_mb": 697, "params": "(b=10.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto4", "seconds": 0.016, "before_mb": 697, "peak_mb": 697, "params": "(b=1.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto5", "seconds": 0.015, "before_mb": 697, "peak_mb": 697, "params": "(b=0.1, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testParetoShape", "seconds": 0.29, "before_mb": 697, "peak_mb": 697}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation0", "seconds": 0.314, "before_mb": 697, "peak_mb": 708, "params": "(range_or_shape=(10, 10), axis=0, dtype=<class 'numpy.int32'>, independent=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation1", "seconds": 0.612, "before_mb": 708, "peak_mb": 720, "params": "(range_or_shape=(10, 5, 2), axis=-2, dtype=<class 'numpy.int32'>, independent=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation2", "seconds": 0.137, "before_mb": 720, "peak_mb": 727, "params": "(range_or_shape=100, axis=-1, dtype=<class 'numpy.float32'>, independent=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation3", "seconds": 0.027, "before_mb": 727, "peak_mb": 729, "params": "(range_or_shape=(0, 5), axis=1, dtype=<class 'numpy.int32'>, independent=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation4", "seconds": 0.255, "before_mb": 729, "peak_mb": 732, "params": "(range_or_shape=(1, 5), axis=-2, dtype=<class 'numpy.float32'>, independent=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation5", "seconds": 0.159, "before_mb": 732, "peak_mb": 740, "params": "(range_or_shape=100, axis=-1, dtype=<class 'numpy.float32'>, independent=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation6", "seconds": 0.154, "before_mb": 740, "peak_mb": 750, "params": "(range_or_shape=(10, 10), axis=-1, dtype=<class 'numpy.float32'>, independent=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation7", "seconds": 0.1, "before_mb": 750, "peak_mb": 757, "params": "(range_or_shape=(100,), axis=-1, dtype=<class 'numpy.float32'>, independent=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation8", "seconds": 0.092, "before_mb": 757, "peak_mb": 758, "params": "(range_or_shape=(100,), axis=-1, dtype=<class 'numpy.int32'>, independent=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation9", "seconds": 0.143, "before_mb": 758, "peak_mb": 766, "params": "(range_or_shape=(10, 5, 2), axis=-2, dtype=<class 'numpy.int32'>, independent=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutationErrors", "seconds": 0.04, "before_mb": 766, "peak_mb": 766}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson0", "seconds": 1.73, "before_mb": 766, "peak_mb": 793, "params": "(lam=11, dtype=<class 'numpy.int16'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson1", "seconds": 0.116, "before_mb": 793, "peak_mb": 803, "params": "(lam=50, dtype=<class 'numpy.int16'>, use_jit=True, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson2", "seconds": 0.033, "before_mb": 803, "peak_mb": 804, "params": "(lam=9, dtype=<class 'numpy.int16'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson3", "seconds": 0.239, "before_mb": 804, "peak_mb": 814, "params": "(lam=3, dtype=<class 'numpy.int32'>, use_jit=True, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson4", "seconds": 0.137, "before_mb": 814, "peak_mb": 823, "params": "(lam=0.5, dtype=<class 'numpy.int16'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson5", "seconds": 0.024, "before_mb": 823, "peak_mb": 823, "params": "(lam=3, dtype=<class 'numpy.int16'>, use_jit=True, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson6", "seconds": 2.261, "before_mb": 823, "peak_mb": 852, "params": "(lam=0.5, dtype=<class 'numpy.int16'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson7", "seconds": 0.355, "before_mb": 852, "peak_mb": 868, "params": "(lam=3, dtype=<class 'numpy.int32'>, use_jit=True, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson8", "seconds": 0.38, "before_mb": 868, "peak_mb": 883, "params": "(lam=50, dtype=<class 'numpy.int16'>, use_jit=False, method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson9", "seconds": 0.021, "before_mb": 883, "peak_mb": 883, "params": "(lam=3, dtype=<class 'numpy.int16'>, use_jit=False, method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateRngImpl", "seconds": 0.16, "before_mb": 883, "peak_mb": 888}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation0", "seconds": 1.912, "before_mb": 888, "peak_mb": 998, "params": "(lam=6.9, bound=0.001)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation1", "seconds": 1.529, "before_mb": 998, "peak_mb": 1081, "params": "(lam=1000000.0, bound=0.0001)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation2", "seconds": 1.503, "before_mb": 1081, "peak_mb": 1159, "params": "(lam=7.0, bound=0.001)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation3", "seconds": 1.809, "before_mb": 1159, "peak_mb": 1238, "params": "(lam=1.0, bound=1e-05)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation4", "seconds": 2.061, "before_mb": 1238, "peak_mb": 1316, "params": "(lam=20.0, bound=0.001)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonBatched", "seconds": 0.563, "before_mb": 1316, "peak_mb": 1337}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonCornerCases", "seconds": 0.21, "before_mb": 1337, "peak_mb": 1345}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonInvalidMethod", "seconds": 0.013, "before_mb": 1345, "peak_mb": 1345}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonShape", "seconds": 0.368, "before_mb": 1345, "peak_mb": 1370}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonWithoutShape", "seconds": 0.246, "before_mb": 1370, "peak_mb": 1380}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonZeros0", "seconds": 0.357, "before_mb": 1380, "peak_mb": 1394, "params": "(method='approximate')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonZeros1", "seconds": 0.213, "before_mb": 1394, "peak_mb": 1407, "params": "(method='exact')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRadamacher0", "seconds": 1.126, "before_mb": 1407, "peak_mb": 1429, "params": "(use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRadamacher1", "seconds": 0.308, "before_mb": 1429, "peak_mb": 1436, "params": "(use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRandomBroadcast", "seconds": 0.449, "before_mb": 1436, "peak_mb": 1443}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh0", "seconds": 0.108, "before_mb": 1443, "peak_mb": 1444, "params": "(scale=10.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh1", "seconds": 0.108, "before_mb": 1444, "peak_mb": 1446, "params": "(scale=1.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh2", "seconds": 0.207, "before_mb": 1446, "peak_mb": 1447, "params": "(scale=0.2, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh3", "seconds": 0.037, "before_mb": 1447, "peak_mb": 1447, "params": "(scale=0.2, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh4", "seconds": 0.027, "before_mb": 1447, "peak_mb": 1446, "params": "(scale=2.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh5", "seconds": 0.025, "before_mb": 1446, "peak_mb": 1448, "params": "(scale=2.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh6", "seconds": 0.021, "before_mb": 1448, "peak_mb": 1446, "params": "(scale=100.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh7", "seconds": 0.016, "before_mb": 1446, "peak_mb": 1448, "params": "(scale=100.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh8", "seconds": 0.028, "before_mb": 1448, "peak_mb": 1448, "params": "(scale=10.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh9", "seconds": 0.014, "before_mb": 1448, "peak_mb": 1446, "params": "(scale=1.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testSafeIntToFloat", "seconds": 0.582, "before_mb": 1446, "peak_mb": 1464}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testStaticShapeErrors", "seconds": 0.016, "before_mb": 1464, "peak_mb": 1464}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT0", "seconds": 0.564, "before_mb": 1464, "peak_mb": 1481, "params": "(df=0.1, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT1", "seconds": 0.67, "before_mb": 130, "peak_mb": 232, "params": "(df=1.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT2", "seconds": 0.405, "before_mb": 232, "peak_mb": 247, "params": "(df=10.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT3", "seconds": 0.024, "before_mb": 247, "peak_mb": 251, "params": "(df=10.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT4", "seconds": 0.02, "before_mb": 251, "peak_mb": 252, "params": "(df=1.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT5", "seconds": 0.023, "before_mb": 252, "peak_mb": 252, "params": "(df=0.1, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular0", "seconds": 0.176, "before_mb": 252, "peak_mb": 255, "params": "(left=2.0, mode=5.0, right=40.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular1", "seconds": 0.015, "before_mb": 255, "peak_mb": 255, "params": "(left=0.2, mode=8.0, right=30.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular2", "seconds": 0.013, "before_mb": 255, "peak_mb": 256, "params": "(left=2.0, mode=3.0, right=20.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular3", "seconds": 0.021, "before_mb": 256, "peak_mb": 256, "params": "(left=2.0, mode=9.0, right=20.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular4", "seconds": 0.058, "before_mb": 256, "peak_mb": 258, "params": "(left=1.0, mode=3.0, right=30.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular5", "seconds": 0.013, "before_mb": 258, "peak_mb": 258, "params": "(left=0.2, mode=8.0, right=40.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular6", "seconds": 0.021, "before_mb": 258, "peak_mb": 259, "params": "(left=0.5, mode=5.0, right=10.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular7", "seconds": 0.012, "before_mb": 259, "peak_mb": 259, "params": "(left=0.2, mode=8.0, right=30.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular8", "seconds": 0.011, "before_mb": 259, "peak_mb": 259, "params": "(left=0.5, mode=3.0, right=20.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular9", "seconds": 0.025, "before_mb": 259, "peak_mb": 259, "params": "(left=1.0, mode=8.0, right=20.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal0", "seconds": 0.46, "before_mb": 259, "peak_mb": 269, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal1", "seconds": 0.379, "before_mb": 269, "peak_mb": 276, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal2", "seconds": 0.152, "before_mb": 276, "peak_mb": 284, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal3", "seconds": 0.09, "before_mb": 284, "peak_mb": 288, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal4", "seconds": 0.124, "before_mb": 288, "peak_mb": 292, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal5", "seconds": 0.093, "before_mb": 292, "peak_mb": 295, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald0", "seconds": 0.155, "before_mb": 295, "peak_mb": 302, "params": "(mean=10.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald1", "seconds": 0.125, "before_mb": 302, "peak_mb": 308, "params": "(mean=1.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald2", "seconds": 0.017, "before_mb": 308, "peak_mb": 308, "params": "(mean=0.2, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald3", "seconds": 0.032, "before_mb": 308, "peak_mb": 308, "params": "(mean=0.2, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald4", "seconds": 0.014, "before_mb": 308, "peak_mb": 308, "params": "(mean=2.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald5", "seconds": 0.015, "before_mb": 308, "peak_mb": 308, "params": "(mean=2.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald6", "seconds": 0.017, "before_mb": 308, "peak_mb": 308, "params": "(mean=100.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald7", "seconds": 0.016, "before_mb": 308, "peak_mb": 308, "params": "(mean=100.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald8", "seconds": 0.019, "before_mb": 308, "peak_mb": 308, "params": "(mean=10.0, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald9", "seconds": 0.039, "before_mb": 308, "peak_mb": 308, "params": "(mean=1.0, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWeibullSample0", "seconds": 0.382, "before_mb": 308, "peak_mb": 321, "params": "(concentration=2.0, scale=3.0, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWeibullSample1", "seconds": 0.275, "before_mb": 321, "peak_mb": 332, "params": "(concentration=2.0, scale=3.0, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWeibullSample2", "seconds": 0.031, "before_mb": 332, "peak_mb": 331, "params": "(concentration=4.0, scale=1.0, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWeibullSample3", "seconds": 0.026, "before_mb": 331, "peak_mb": 331, "params": "(concentration=4.0, scale=1.0, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_batched_key_errors", "seconds": 0.052, "before_mb": 331, "peak_mb": 335}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_binomial_dtypes", "seconds": 0.905, "before_mb": 335, "peak_mb": 354}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument0", "seconds": 0.181, "before_mb": 354, "peak_mb": 361, "params": "(shape=(3, 4), logits_shape_base=(3, 4), axis=-3)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument1", "seconds": 0.071, "before_mb": 361, "peak_mb": 365, "params": "(shape=(3, 4), logits_shape_base=(3, 1), axis=-3)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument2", "seconds": 0.168, "before_mb": 365, "peak_mb": 375, "params": "(shape=(3, 4), logits_shape_base=(1, 4), axis=-1)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument3", "seconds": 0.118, "before_mb": 375, "peak_mb": 380, "params": "(shape=(3, 4), logits_shape_base=(1, 4), axis=-2)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument4", "seconds": 0.031, "before_mb": 380, "peak_mb": 385, "params": "(shape=(3, 4), logits_shape_base=(3, 4), axis=-2)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument5", "seconds": 0.046, "before_mb": 385, "peak_mb": 387, "params": "(shape=(3, 4), logits_shape_base=(3, 1), axis=1)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument6", "seconds": 0.106, "before_mb": 387, "peak_mb": 390, "params": "(shape=(3, 4), logits_shape_base=(3, 1), axis=2)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument7", "seconds": 0.032, "before_mb": 390, "peak_mb": 392, "params": "(shape=(3, 4), logits_shape_base=(3, 4), axis=2)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument8", "seconds": 0.055, "before_mb": 393, "peak_mb": 406, "params": "(shape=(3, 4), logits_shape_base=(1, 4), axis=0)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument9", "seconds": 0.175, "before_mb": 407, "peak_mb": 407, "params": "(shape=(3, 4), logits_shape_base=(1, 4), axis=-3)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_geometric_avoids_infs", "seconds": 0.222, "before_mb": 407, "peak_mb": 413}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds0", "seconds": 0.157, "before_mb": 413, "peak_mb": 422, "params": "(dtype=<class 'numpy.int8'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds1", "seconds": 0.039, "before_mb": 422, "peak_mb": 428, "params": "(dtype=<class 'numpy.int16'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds2", "seconds": 0.067, "before_mb": 428, "peak_mb": 429, "params": "(dtype=<class 'numpy.uint32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds3", "seconds": 0.009, "before_mb": 429, "peak_mb": 429, "params": "(dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds4", "seconds": 0.04, "before_mb": 429, "peak_mb": 431, "params": "(dtype=<class 'numpy.uint16'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds5", "seconds": 0.085, "before_mb": 431, "peak_mb": 432, "params": "(dtype=<class 'numpy.uint8'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_narrow_int_bias0", "seconds": 0.647, "before_mb": 432, "peak_mb": 458, "params": "(dtype='uint8')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_narrow_int_bias1", "seconds": 0.119, "before_mb": 458, "peak_mb": 462, "params": "(dtype='uint16')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_narrow_int_bias2", "seconds": 0.151, "before_mb": 462, "peak_mb": 470, "params": "(dtype='int8')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_narrow_int_bias3", "seconds": 0.16, "before_mb": 470, "peak_mb": 478, "params": "(dtype='int16')"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_out_of_range", "seconds": 0.217, "before_mb": 478, "peak_mb": 489}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testNumpyAndXLAAgreeOnFloatEndianness0", "seconds": 0.033, "before_mb": 489, "peak_mb": 492, "params": "(dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint0", "seconds": 0.197, "before_mb": 492, "peak_mb": 505, "params": "(dtype=<class 'numpy.uint16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint1", "seconds": 0.132, "before_mb": 505, "peak_mb": 511, "params": "(dtype=<class 'numpy.uint8'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint2", "seconds": 0.132, "before_mb": 511, "peak_mb": 519, "params": "(dtype=<class 'numpy.int8'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint3", "seconds": 0.167, "before_mb": 519, "peak_mb": 524, "params": "(dtype=<class 'numpy.int32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint4", "seconds": 0.129, "before_mb": 524, "peak_mb": 531, "params": "(dtype=<class 'numpy.uint32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint5", "seconds": 0.134, "before_mb": 531, "peak_mb": 537, "params": "(dtype=<class 'numpy.int32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint6", "seconds": 0.037, "before_mb": 537, "peak_mb": 540, "params": "(dtype=<class 'numpy.int16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint7", "seconds": 0.168, "before_mb": 540, "peak_mb": 545, "params": "(dtype=<class 'numpy.uint32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint8", "seconds": 0.021, "before_mb": 545, "peak_mb": 547, "params": "(dtype=<class 'numpy.uint16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint9", "seconds": 0.115, "before_mb": 547, "peak_mb": 555, "params": "(dtype=<class 'numpy.int16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform0", "seconds": 0.07, "before_mb": 555, "peak_mb": 557, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform1", "seconds": 0.092, "before_mb": 557, "peak_mb": 559, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform2", "seconds": 0.094, "before_mb": 559, "peak_mb": 561, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform3", "seconds": 0.086, "before_mb": 561, "peak_mb": 564, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform4", "seconds": 0.114, "before_mb": 564, "peak_mb": 568, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform5", "seconds": 0.097, "before_mb": 568, "peak_mb": 571, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_cannot_add", "seconds": 0.05, "before_mb": 571, "peak_mb": 571}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_eval_shape_big_random_array", "seconds": 0.021, "before_mb": 571, "peak_mb": 571}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_grad_of_prng_key", "seconds": 0.037, "before_mb": 571, "peak_mb": 573}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_large_prng", "seconds": 0.026, "before_mb": 573, "peak_mb": 573}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_errors", "seconds": 0.009, "before_mb": 573, "peak_mb": 573}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance0", "seconds": 0.055, "before_mb": 573, "peak_mb": 576, "params": "(type_='int', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance1", "seconds": 0.025, "before_mb": 576, "peak_mb": 577, "params": "(type_='np.array', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance2", "seconds": 0.036, "before_mb": 577, "peak_mb": 579, "params": "(type_='jnp.array', seed=1)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance3", "seconds": 0.024, "before_mb": 579, "peak_mb": 579, "params": "(type_='jnp.array', seed=0)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance4", "seconds": 0.022, "before_mb": 579, "peak_mb": 580, "params": "(type_='int', seed=0)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance5", "seconds": 0.007, "before_mb": 580, "peak_mb": 580, "params": "(type_='np.array', seed=9223372036854775807)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance8", "seconds": 0.023, "before_mb": 580, "peak_mb": 580, "params": "(type_='jnp.array', seed=4294967295)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance9", "seconds": 0.026, "before_mb": 580, "peak_mb": 582, "params": "(type_='jnp.array', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_shape", "seconds": 0.063, "before_mb": 582, "peak_mb": 585}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape0", "seconds": 0.039, "before_mb": 585, "peak_mb": 587, "params": "(num=6)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape1", "seconds": 0.581, "before_mb": 587, "peak_mb": 594, "params": "(num=(2, 3, 4))"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape2", "seconds": 0.019, "before_mb": 594, "peak_mb": 594, "params": "(num=(6,))"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape3", "seconds": 0.044, "before_mb": 594, "peak_mb": 597, "params": "(num=None)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape4", "seconds": 0.224, "before_mb": 597, "peak_mb": 604, "params": "(num=(2, 3))"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_vmap_fold_in_shape", "seconds": 0.849, "before_mb": 604, "peak_mb": 660}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_vmap_split_mapped_key", "seconds": 0.206, "before_mb": 660, "peak_mb": 669}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testNumpyAndXLAAgreeOnFloatEndianness0", "seconds": 0.046, "before_mb": 669, "peak_mb": 671, "params": "(dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint0", "seconds": 0.426, "before_mb": 671, "peak_mb": 677, "params": "(dtype=<class 'numpy.uint16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint1", "seconds": 0.172, "before_mb": 677, "peak_mb": 679, "params": "(dtype=<class 'numpy.uint8'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint2", "seconds": 0.163, "before_mb": 679, "peak_mb": 681, "params": "(dtype=<class 'numpy.int8'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint3", "seconds": 0.097, "before_mb": 681, "peak_mb": 684, "params": "(dtype=<class 'numpy.int32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint4", "seconds": 0.152, "before_mb": 684, "peak_mb": 689, "params": "(dtype=<class 'numpy.uint32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint5", "seconds": 0.095, "before_mb": 689, "peak_mb": 690, "params": "(dtype=<class 'numpy.int32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint6", "seconds": 0.016, "before_mb": 690, "peak_mb": 693, "params": "(dtype=<class 'numpy.int16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint7", "seconds": 0.09, "before_mb": 693, "peak_mb": 696, "params": "(dtype=<class 'numpy.uint32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint8", "seconds": 0.041, "before_mb": 696, "peak_mb": 694, "params": "(dtype=<class 'numpy.uint16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint9", "seconds": 0.085, "before_mb": 694, "peak_mb": 697, "params": "(dtype=<class 'numpy.int16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform0", "seconds": 0.097, "before_mb": 697, "peak_mb": 691, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform1", "seconds": 0.102, "before_mb": 691, "peak_mb": 694, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform2", "seconds": 0.091, "before_mb": 694, "peak_mb": 697, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform3", "seconds": 0.08, "before_mb": 697, "peak_mb": 700, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform4", "seconds": 0.054, "before_mb": 700, "peak_mb": 702, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform5", "seconds": 0.059, "before_mb": 702, "peak_mb": 704, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_cannot_add", "seconds": 0.013, "before_mb": 704, "peak_mb": 704}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_eval_shape_big_random_array", "seconds": 0.016, "before_mb": 704, "peak_mb": 704}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_grad_of_prng_key", "seconds": 0.041, "before_mb": 704, "peak_mb": 706}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_large_prng", "seconds": 0.027, "before_mb": 706, "peak_mb": 706}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_errors", "seconds": 0.01, "before_mb": 706, "peak_mb": 706}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance0", "seconds": 0.023, "before_mb": 706, "peak_mb": 710, "params": "(type_='int', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance1", "seconds": 0.02, "before_mb": 710, "peak_mb": 710, "params": "(type_='np.array', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance2", "seconds": 0.021, "before_mb": 710, "peak_mb": 711, "params": "(type_='jnp.array', seed=1)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance3", "seconds": 0.021, "before_mb": 711, "peak_mb": 712, "params": "(type_='jnp.array', seed=0)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance4", "seconds": 0.092, "before_mb": 712, "peak_mb": 714, "params": "(type_='int', seed=0)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance5", "seconds": 0.026, "before_mb": 714, "peak_mb": 714, "params": "(type_='np.array', seed=9223372036854775807)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance8", "seconds": 0.007, "before_mb": 714, "peak_mb": 714, "params": "(type_='jnp.array', seed=4294967295)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance9", "seconds": 0.061, "before_mb": 714, "peak_mb": 716, "params": "(type_='jnp.array', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_randint_out_of_range", "seconds": 0.012, "before_mb": 716, "peak_mb": 716}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_random_split_doesnt_device_put_during_tracing", "seconds": 0.011, "before_mb": 716, "peak_mb": 716}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_shape", "seconds": 0.093, "before_mb": 716, "peak_mb": 715}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape0", "seconds": 0.059, "before_mb": 715, "peak_mb": 717, "params": "(num=6)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape1", "seconds": 0.148, "before_mb": 717, "peak_mb": 721, "params": "(num=(2, 3, 4))"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape2", "seconds": 0.015, "before_mb": 721, "peak_mb": 721, "params": "(num=(6,))"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape3", "seconds": 0.048, "before_mb": 721, "peak_mb": 723, "params": "(num=None)"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape4", "seconds": 0.05, "before_mb": 723, "peak_mb": 726, "params": "(num=(2, 3))"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_fold_in_shape", "seconds": 0.169, "before_mb": 726, "peak_mb": 735}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_random_bits_distribution", "seconds": 0.283, "before_mb": 735, "peak_mb": 742}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_random_bits_shape", "seconds": 0.212, "before_mb": 742, "peak_mb": 750}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_random_bits_value", "seconds": 0.193, "before_mb": 750, "peak_mb": 755}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_split_mapped_key_shape", "seconds": 0.06, "before_mb": 755, "peak_mb": 758}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_split_mapped_key_values", "seconds": 0.045, "before_mb": 758, "peak_mb": 761}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_split_unmapped_key", "seconds": 0.071, "before_mb": 761, "peak_mb": 760}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testNumpyAndXLAAgreeOnFloatEndianness0", "seconds": 0.022, "before_mb": 760, "peak_mb": 761, "params": "(dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint0", "seconds": 0.02, "before_mb": 761, "peak_mb": 761, "params": "(dtype=<class 'numpy.uint16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint1", "seconds": 0.013, "before_mb": 761, "peak_mb": 762, "params": "(dtype=<class 'numpy.uint8'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint2", "seconds": 0.679, "before_mb": 762, "peak_mb": 765, "params": "(dtype=<class 'numpy.int8'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint3", "seconds": 0.099, "before_mb": 765, "peak_mb": 765, "params": "(dtype=<class 'numpy.int32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint4", "seconds": 0.262, "before_mb": 765, "peak_mb": 768, "params": "(dtype=<class 'numpy.uint32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint5", "seconds": 0.132, "before_mb": 768, "peak_mb": 770, "params": "(dtype=<class 'numpy.int32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint6", "seconds": 0.042, "before_mb": 770, "peak_mb": 771, "params": "(dtype=<class 'numpy.int16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint7", "seconds": 0.014, "before_mb": 771, "peak_mb": 771, "params": "(dtype=<class 'numpy.uint32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint8", "seconds": 0.017, "before_mb": 771, "peak_mb": 771, "params": "(dtype=<class 'numpy.uint16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint9", "seconds": 0.013, "before_mb": 771, "peak_mb": 773, "params": "(dtype=<class 'numpy.int16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform0", "seconds": 0.102, "before_mb": 773, "peak_mb": 773, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform1", "seconds": 0.071, "before_mb": 773, "peak_mb": 775, "params": "(dtype=<class 'numpy.float16'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform2", "seconds": 0.013, "before_mb": 775, "peak_mb": 775, "params": "(dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform3", "seconds": 0.06, "before_mb": 775, "peak_mb": 777, "params": "(dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform4", "seconds": 0.209, "before_mb": 777, "peak_mb": 777, "params": "(dtype=<class 'numpy.float16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform5", "seconds": 0.021, "before_mb": 777, "peak_mb": 778, "params": "(dtype=<class 'ml_dtypes.bfloat16'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_cannot_add", "seconds": 0.012, "before_mb": 778, "peak_mb": 778}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_eval_shape_big_random_array", "seconds": 0.017, "before_mb": 778, "peak_mb": 778}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_grad_of_prng_key", "seconds": 0.025, "before_mb": 778, "peak_mb": 778}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_large_prng", "seconds": 0.034, "before_mb": 778, "peak_mb": 778}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_errors", "seconds": 0.014, "before_mb": 778, "peak_mb": 778}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance0", "seconds": 0.049, "before_mb": 778, "peak_mb": 779, "params": "(type_='int', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance1", "seconds": 0.027, "before_mb": 779, "peak_mb": 781, "params": "(type_='np.array', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance2", "seconds": 0.026, "before_mb": 781, "peak_mb": 782, "params": "(type_='jnp.array', seed=1)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance3", "seconds": 0.022, "before_mb": 782, "peak_mb": 783, "params": "(type_='jnp.array', seed=0)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance4", "seconds": 0.206, "before_mb": 783, "peak_mb": 784, "params": "(type_='int', seed=0)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance5", "seconds": 0.011, "before_mb": 784, "peak_mb": 784, "params": "(type_='np.array', seed=9223372036854775807)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance8", "seconds": 0.014, "before_mb": 784, "peak_mb": 784, "params": "(type_='jnp.array', seed=4294967295)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance9", "seconds": 0.029, "before_mb": 784, "peak_mb": 785, "params": "(type_='jnp.array', seed=-1)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_randint_out_of_range", "seconds": 0.006, "before_mb": 785, "peak_mb": 785}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_random_split_doesnt_device_put_during_tracing", "seconds": 0.007, "before_mb": 785, "peak_mb": 785}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_shape", "seconds": 0.107, "before_mb": 785, "peak_mb": 786}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape0", "seconds": 0.078, "before_mb": 786, "peak_mb": 789, "params": "(num=6)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape1", "seconds": 0.08, "before_mb": 789, "peak_mb": 792, "params": "(num=(2, 3, 4))"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape2", "seconds": 0.038, "before_mb": 792, "peak_mb": 792, "params": "(num=(6,))"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape3", "seconds": 0.088, "before_mb": 792, "peak_mb": 794, "params": "(num=None)"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape4", "seconds": 0.033, "before_mb": 794, "peak_mb": 798, "params": "(num=(2, 3))"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_fold_in_shape", "seconds": 0.257, "before_mb": 798, "peak_mb": 810}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_random_bits_distribution", "seconds": 0.105, "before_mb": 810, "peak_mb": 813}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_random_bits_shape", "seconds": 0.16, "before_mb": 813, "peak_mb": 819}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_random_bits_value", "seconds": 0.074, "before_mb": 819, "peak_mb": 823}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_split_mapped_key_shape", "seconds": 0.047, "before_mb": 823, "peak_mb": 827}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_split_mapped_key_values", "seconds": 0.022, "before_mb": 827, "peak_mb": 827}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_split_unmapped_key", "seconds": 0.015, "before_mb": 827, "peak_mb": 827}
+{"nodeid": "tests/random_lax_test.py::RandomUtilTest::test_check_broadcast_shapes_empty", "seconds": 0.022, "before_mb": 827, "peak_mb": 827}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance6", "seconds": 0.029, "before_mb": 130, "peak_mb": 130, "params": "(type_='np.array', seed=np.uint64(18446744073709551615))"}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance7", "seconds": 0.01, "before_mb": 130, "peak_mb": 130, "params": "(type_='int', seed=np.uint64(18446744073709551615))"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical0", "seconds": 0.827, "before_mb": 129, "peak_mb": 224, "params": "(p=[0.25, 0.25, 0.25, 0.25], axis=-1, sample_shape=(5000, 2), mode='high', dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical1", "seconds": 1.262, "before_mb": 224, "peak_mb": 246, "params": "(p=[[0.5, 0.5], [0.1, 0.9]], axis=1, sample_shape=(10000,), mode='highest', dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical2", "seconds": 0.246, "before_mb": 246, "peak_mb": 263, "params": "(p=[0.25, 0.25, 0.25, 0.25], axis=-1, sample_shape=(10000,), mode=None, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical3", "seconds": 0.521, "before_mb": 263, "peak_mb": 280, "params": "(p=[0.25, 0.25, 0.25, 0.25], axis=-1, sample_shape=(5000, 2), mode='low', dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical4", "seconds": 0.299, "before_mb": 280, "peak_mb": 293, "params": "(p=[0.1, 0.2, 0.3, 0.4], axis=-1, sample_shape=(5000, 2), mode=None, dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical5", "seconds": 0.137, "before_mb": 293, "peak_mb": 297, "params": "(p=[0.25, 0.25, 0.25, 0.25], axis=-1, sample_shape=(5000, 2), mode=None, dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical6", "seconds": 0.344, "before_mb": 297, "peak_mb": 309, "params": "(p=[0.25, 0.25, 0.25, 0.25], axis=-1, sample_shape=(10000,), mode='high', dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical7", "seconds": 0.023, "before_mb": 309, "peak_mb": 312, "params": "(p=[0.25, 0.25, 0.25, 0.25], axis=-1, sample_shape=(5000, 2), mode='low', dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical8", "seconds": 0.603, "before_mb": 312, "peak_mb": 324, "params": "(p=[0.1, 0.2, 0.3, 0.4], axis=-1, sample_shape=(10000,), mode='highest', dtype=<class 'numpy.float32'>, use_jit=False)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical9", "seconds": 0.551, "before_mb": 324, "peak_mb": 337, "params": "(p=[0.1, 0.2, 0.3, 0.4], axis=-1, sample_shape=(5000, 2), mode='highest', dtype=<class 'numpy.float32'>, use_jit=True)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy0", "seconds": 13.084, "before_mb": 337, "peak_mb": 1297, "params": "(categories=11, trials=11, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy1", "seconds": 8.453, "before_mb": 1297, "peak_mb": 1557, "params": "(categories=2, trials=3, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy2", "seconds": 9.571, "before_mb": 131, "peak_mb": 769, "params": "(categories=3, trials=7, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy3", "seconds": 7.574, "before_mb": 769, "peak_mb": 1034, "params": "(categories=1, trials=11, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy4", "seconds": 10.379, "before_mb": 1034, "peak_mb": 1625, "params": "(categories=7, trials=3, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy5", "seconds": 12.541, "before_mb": 130, "peak_mb": 706, "params": "(categories=2, trials=11, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy6", "seconds": 9.038, "before_mb": 706, "peak_mb": 1196, "params": "(categories=5, trials=5, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy7", "seconds": 7.279, "before_mb": 1196, "peak_mb": 1436, "params": "(categories=1, trials=3, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy8", "seconds": 7.957, "before_mb": 1436, "peak_mb": 1818, "params": "(categories=3, trials=2, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy9", "seconds": 11.18, "before_mb": 129, "peak_mb": 1169, "params": "(categories=11, trials=3, dtype=<class 'jax.numpy.float32'>)"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance6", "seconds": 0.014, "before_mb": 1169, "peak_mb": 1169, "params": "(type_='np.array', seed=np.uint64(18446744073709551615))"}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance7", "seconds": 0.011, "before_mb": 1169, "peak_mb": 1169, "params": "(type_='int', seed=np.uint64(18446744073709551615))"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance6", "seconds": 0.007, "before_mb": 1169, "peak_mb": 1169, "params": "(type_='np.array', seed=np.uint64(18446744073709551615))"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance7", "seconds": 0.016, "before_mb": 1169, "peak_mb": 1169, "params": "(type_='int', seed=np.uint64(18446744073709551615))"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance6", "seconds": 0.006, "before_mb": 1169, "peak_mb": 1169, "params": "(type_='np.array', seed=np.uint64(18446744073709551615))"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance7", "seconds": 0.006, "before_mb": 1169, "peak_mb": 1169, "params": "(type_='int', seed=np.uint64(18446744073709551615))"}

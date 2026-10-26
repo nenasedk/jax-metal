@@ -1,0 +1,16 @@
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_batching_with_aux", "seconds": 0.289, "before_mb": 78, "peak_mb": 169}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_complex", "seconds": 0.983, "before_mb": 169, "peak_mb": 205}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_errors", "seconds": 0.031, "before_mb": 205, "peak_mb": 205}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_lu", "seconds": 2.155, "before_mb": 205, "peak_mb": 280}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_new_remat", "seconds": 0.178, "before_mb": 280, "peak_mb": 289}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_nonsymmetric", "seconds": 0.696, "before_mb": 289, "peak_mb": 310}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_ordered_effects", "seconds": 0.316, "before_mb": 310, "peak_mb": 333}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_pytree", "seconds": 0.016, "before_mb": 333, "peak_mb": 333}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_pytree_with_aux", "seconds": 0.026, "before_mb": 333, "peak_mb": 334}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_symmetric", "seconds": 0.389, "before_mb": 334, "peak_mb": 345}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_without_transpose_solve", "seconds": 0.721, "before_mb": 345, "peak_mb": 380}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_zeros", "seconds": 0.015, "before_mb": 380, "peak_mb": 380}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_symbolic_zero_cotangents", "seconds": 0.715, "before_mb": 380, "peak_mb": 419}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_aux", "seconds": 0.957, "before_mb": 77, "peak_mb": 237}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_cholesky", "seconds": 0.204, "before_mb": 237, "peak_mb": 250}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_iterative", "seconds": 1.784, "before_mb": 250, "peak_mb": 379}

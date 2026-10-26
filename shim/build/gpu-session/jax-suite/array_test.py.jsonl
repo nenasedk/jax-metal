@@ -1,0 +1,238 @@
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_addressable_data", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_2d_shard_mesh_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_2d_shard_mesh_none_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_2d_shard_mesh_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_2d_shard_mesh_x_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_2d_shard_mesh_xy", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_2d_shard_mesh_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_addressable_shards", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_concurrent_shards_and_transfers", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_copy_to_host_async", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_copy_to_host_async_concurrent", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_delete", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_delete_idempotent", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_device_get", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_from_local_data_single_host_global_shape_full", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_from_local_data_single_host_global_shape_prefix", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_from_local_data_single_host_invalid_global_shape_global_shape_extra", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_from_local_data_single_host_invalid_global_shape_global_shape_full", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_from_local_data_single_host_invalid_global_shape_global_shape_prefix", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_from_local_data_single_host_no_global_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_fully_replicated_shard", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_getitem_compile_multi_device_sharding", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_getitem_mesh_pspec_sharding_multi_device", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_getitem_replicated_multi_device", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_impl_name", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_is_ready", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_iter_mesh_pspec_sharding_multi_device", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_iter_mesh_pspec_sharding_single_device", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_iter_pmap_sharding_last_dim_sharded", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_iter_replicated_multi_device0", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_iter_replicated_multi_device1", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_jnp_array_copy_multi_device", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_not_hashable", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_reversed0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_reversed1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_reversed2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_sharded_astype", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_array_shards_committed", "outcome": "skipped", "message": "Skipped: Test requires >= 2 devices."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_arrays_not_in_device_assignment", "outcome": "skipped", "message": "Skipped: Requires more than 4 devices"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_broadcast_one_to_all_single_host", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol_deletion", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_buffer_protocol_donation", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_copy_to_host_async_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_copy_to_host_async_fully_sharded", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_copy_to_host_async_non_contiguous_sharding", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_copy_to_host_async_partially_replicated", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_copy_to_host_async_string_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_defragment", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_deprecated_dtype_conversion", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_device_put", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_device_put_array_delete", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_device_put_to_cpu", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_different_devices_in_arrays_than_sharding", "outcome": "skipped", "message": "Skipped: Requires more than 3 devices"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_duplicated_devices_in_arrays", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_empty_repr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_fully_replicated_donated_array_is_deleted", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jax_array_value_mesh_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jax_array_value_mesh_none_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jax_array_value_mesh_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jax_array_value_mesh_x_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jax_array_value_mesh_xy", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jax_array_value_mesh_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jnp_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jnp_array_astype", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jnp_array_jit_add", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jnp_array_jnp_add", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_jnp_array_normal_add", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_large_array_repr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_make_array_from_callback_global_array", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_make_array_from_process_data_single_host_data_sharding", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_make_array_from_single_device_arrays_bad_dtype_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_make_array_from_single_device_arrays_no_dtype_error", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_mismatch_dtype", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_multi_device_array_usage_after_delete", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_on_device_size_in_bytes", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache10", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache11", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_pinned_host_npy_value_doesnt_cache9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_process_allgather_single_host", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_repr", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_sds_like", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shape_dtype_struct_sharding_jit", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shard_array_to_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shard_shape_mismatch_with_buffer_shape_mesh_none_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shard_shape_mismatch_with_buffer_shape_mesh_none_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shard_shape_mismatch_with_buffer_shape_mesh_replicated", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shard_shape_mismatch_with_buffer_shape_mesh_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shard_shape_mismatch_with_buffer_shape_mesh_x_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shard_shape_mismatch_with_buffer_shape_mesh_xy", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shard_shape_mismatch_with_buffer_shape_mesh_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_sharded_add", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_sharded_zeros_like", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype10", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype11", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_shards_have_correct_dtype9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_single_device_array_usage_after_delete", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_traced_iter_uses_unstack0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_traced_iter_uses_unstack1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_unreduced_printing", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_wrong_num_arrays", "outcome": "skipped", "message": "Skipped: Requires more than 4 devices"}
+{"nodeid": "tests/array_test.py::JaxArrayTest::test_zeros_like", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_abstract_mesh_is_equivalent_to", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_are_shardings_equivalent", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_aval_str_short", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_default_pmap_sharding_replicated", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_default_pmap_sharding_sharded_dim_0", "outcome": "skipped", "message": "Skipped: Test needs >= 4 devices."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_default_pmap_sharding_sharded_dim_1_0", "outcome": "skipped", "message": "Skipped: Test needs >= 4 devices."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_default_pmap_sharding_sharded_dim_1_1", "outcome": "skipped", "message": "Skipped: Test needs >= 4 devices."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_default_pmap_sharding_sharded_dim_2", "outcome": "skipped", "message": "Skipped: Test needs >= 4 devices."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_device_attr", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_devices_indices_map_good_error_message", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_hash_eq", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_repr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_2d_mesh_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_2d_mesh_none_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_2d_mesh_none_xy", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_2d_mesh_none_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_2d_mesh_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_2d_mesh_x_none", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_2d_mesh_x_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_2d_mesh_xy", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_2d_mesh_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh2_none_none_z", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh2_x_none_none", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_none_none_z", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_none_x_yz", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_none_y_none", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_none_y_xz", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_none_yz", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_x_none_none", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_x_none_yz", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_x_y_none", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_x_y_z", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_xy_none_z", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_xy_z", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_xz_none_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_xz_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_gspmd_sharding_shardy_lowering_3d_mesh_y_none_xz", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_hlo_sharding_get_axis_sizes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_compatible_error", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_3_tuple_empty", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_empty", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_none_none", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_p_none", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_tuple_empty", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_x", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_x_none", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_x_tuple_empty", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_x_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_2d_mesh_xy_none", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_3d_mesh2_x_none_none", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_3d_mesh2_x_y_none", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_fully_replicated_named_sharding_3d_mesh2_xy_none", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_is_subclass", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_make_array_from_callback_error", "outcome": "skipped", "message": "Skipped: Test requires 6 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_make_array_from_single_device_arrays_bad_inputs", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_make_array_from_single_device_arrays_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_make_array_from_single_device_arrays_nonlist_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_make_array_from_single_device_arrays_tuple", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_make_mesh_axis_types", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_manual_axis_type_frozen", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_memory_kind_with_abstract_mesh", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_mesh_axis_types_mismatch", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_mesh_caching_during_construction", "outcome": "skipped", "message": "Skipped: Requires >=2 devices"}
+{"nodeid": "tests/array_test.py::ShardingTest::test_mesh_pspec_sharding_interface", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_mesh_repr", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_mesh_str", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_mesh_with_axis_name_none", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_modify_spec_auto_unreduced", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_named_sharding_unreduced_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_nested_tuple_pspec_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_op_sharding_indices_mesh_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_op_sharding_indices_mesh_none_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_op_sharding_indices_mesh_none_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_op_sharding_indices_mesh_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_op_sharding_indices_mesh_x_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_op_sharding_indices_mesh_xy", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_op_sharding_indices_mesh_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_pmap_sharding_repr", "outcome": "skipped", "message": "Skipped: Test needs >= 2 devices."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_pspec_check", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_pspec_mix_axis_types", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_pspec_subclass_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_pspec_tuple", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_pspec_unreduced", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_scalar_input_wrong_pspec", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::ShardingTest::test_shard_shape_mesh_fully_replicated", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_shard_shape_mesh_none_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_shard_shape_mesh_none_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_shard_shape_mesh_x", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_shard_shape_mesh_x_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_shard_shape_mesh_xy", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_shard_shape_mesh_y", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_to_device", "outcome": "skipped", "message": "Skipped: Test requires 2 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_uneven_shard_error", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::ShardingTest::test_util_clear_cache", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_deleted_array_accessors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_empty_mesh_creation", "outcome": "passed", "message": ""}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_1d_3", "outcome": "skipped", "message": "Skipped: Test requires 3 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_1d_4", "outcome": "skipped", "message": "Skipped: Test requires 4 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_1d_5", "outcome": "skipped", "message": "Skipped: Test requires 5 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_2d_(2, 3)_P('x', 'y')", "outcome": "skipped", "message": "Skipped: Test requires 6 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_2d_(2, 3)_P('x', None)", "outcome": "skipped", "message": "Skipped: Test requires 6 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_2d_(2, 3)_P(None, 'y')", "outcome": "skipped", "message": "Skipped: Test requires 6 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_2d_(3, 2)_P('x', 'y')", "outcome": "skipped", "message": "Skipped: Test requires 6 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_2d_(3, 2)_P('x', None)", "outcome": "skipped", "message": "Skipped: Test requires 6 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_2d_(3, 2)_P(None, 'y')", "outcome": "skipped", "message": "Skipped: Test requires 6 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_2d_(4, 2)_P('x', 'y')", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_2d_(4, 2)_P('x', None)", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_random_bits_is_pure_map_2d_(4, 2)_P(None, 'y')", "outcome": "skipped", "message": "Skipped: Test requires 8 global devices and found 1."}
+{"nodeid": "tests/array_test.py::RngShardingTest::test_replace_with", "outcome": "passed", "message": ""}

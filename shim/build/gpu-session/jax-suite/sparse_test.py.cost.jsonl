@@ -1,0 +1,464 @@
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense0", "seconds": 1.068, "before_mb": 100, "peak_mb": 191, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense1", "seconds": 0.461, "before_mb": 191, "peak_mb": 201, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense2", "seconds": 0.438, "before_mb": 201, "peak_mb": 209, "params": "(shape=(5, 8), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense3", "seconds": 0.131, "before_mb": 209, "peak_mb": 214, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense4", "seconds": 0.192, "before_mb": 214, "peak_mb": 220, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense5", "seconds": 0.111, "before_mb": 220, "peak_mb": 223, "params": "(shape=(5, 5), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense6", "seconds": 0.181, "before_mb": 223, "peak_mb": 229, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense7", "seconds": 0.481, "before_mb": 229, "peak_mb": 238, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense8", "seconds": 0.096, "before_mb": 238, "peak_mb": 242, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense9", "seconds": 0.106, "before_mb": 242, "peak_mb": 246, "params": "(shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad0", "seconds": 0.436, "before_mb": 246, "peak_mb": 267, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad1", "seconds": 0.297, "before_mb": 267, "peak_mb": 283, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad2", "seconds": 0.095, "before_mb": 283, "peak_mb": 292, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad3", "seconds": 0.546, "before_mb": 292, "peak_mb": 307, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad4", "seconds": 0.34, "before_mb": 307, "peak_mb": 330, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad5", "seconds": 0.123, "before_mb": 330, "peak_mb": 332, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad6", "seconds": 0.085, "before_mb": 332, "peak_mb": 343, "params": "(shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad7", "seconds": 0.145, "before_mb": 343, "peak_mb": 349, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat0", "seconds": 0.537, "before_mb": 350, "peak_mb": 355, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat1", "seconds": 0.052, "before_mb": 355, "peak_mb": 356, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat2", "seconds": 0.076, "before_mb": 356, "peak_mb": 359, "params": "(shape=(5, 8), dtype=<class 'numpy.int32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat3", "seconds": 0.052, "before_mb": 359, "peak_mb": 363, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat4", "seconds": 0.07, "before_mb": 363, "peak_mb": 365, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat5", "seconds": 0.061, "before_mb": 365, "peak_mb": 367, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat6", "seconds": 0.041, "before_mb": 367, "peak_mb": 369, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat7", "seconds": 0.045, "before_mb": 369, "peak_mb": 372, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat8", "seconds": 0.084, "before_mb": 372, "peak_mb": 374, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat9", "seconds": 0.053, "before_mb": 374, "peak_mb": 375, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat_layout", "seconds": 0.109, "before_mb": 375, "peak_mb": 388}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad0", "seconds": 0.836, "before_mb": 388, "peak_mb": 425, "params": "(shape=(5, 8), bshape=(8,), transpose=False, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad1", "seconds": 0.837, "before_mb": 425, "peak_mb": 464, "params": "(shape=(5, 5), bshape=(5, 1), transpose=False, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad2", "seconds": 1.15, "before_mb": 464, "peak_mb": 499, "params": "(shape=(5, 8), bshape=(5, 3), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad3", "seconds": 3.591, "before_mb": 499, "peak_mb": 535, "params": "(shape=(8, 8), bshape=(8, 1), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad4", "seconds": 0.998, "before_mb": 535, "peak_mb": 547, "params": "(shape=(5, 8), bshape=(5,), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad5", "seconds": 0.16, "before_mb": 547, "peak_mb": 549, "params": "(shape=(5, 5), bshape=(5, 1), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad6", "seconds": 0.645, "before_mb": 549, "peak_mb": 569, "params": "(shape=(5, 5), bshape=(5,), transpose=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad7", "seconds": 0.342, "before_mb": 569, "peak_mb": 595, "params": "(shape=(8, 8), bshape=(8, 1), transpose=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad8", "seconds": 0.249, "before_mb": 595, "peak_mb": 616, "params": "(shape=(5, 8), bshape=(8, 1), transpose=False, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad9", "seconds": 0.511, "before_mb": 616, "peak_mb": 630, "params": "(shape=(5, 8), bshape=(5, 1), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec0", "seconds": 0.078, "before_mb": 630, "peak_mb": 633, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec1", "seconds": 0.044, "before_mb": 633, "peak_mb": 636, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec2", "seconds": 0.139, "before_mb": 636, "peak_mb": 638, "params": "(shape=(5, 8), dtype=<class 'numpy.int32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec3", "seconds": 0.044, "before_mb": 638, "peak_mb": 640, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec4", "seconds": 0.07, "before_mb": 640, "peak_mb": 642, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec5", "seconds": 0.073, "before_mb": 642, "peak_mb": 645, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec6", "seconds": 0.063, "before_mb": 645, "peak_mb": 647, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec7", "seconds": 0.038, "before_mb": 647, "peak_mb": 648, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec8", "seconds": 0.091, "before_mb": 648, "peak_mb": 651, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec9", "seconds": 0.038, "before_mb": 651, "peak_mb": 654, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_sorted_indices", "seconds": 0.557, "before_mb": 654, "peak_mb": 667}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_sorted_indices_gpu_lowerings", "seconds": 0.019, "before_mb": 667, "peak_mb": 667}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm0", "seconds": 0.011, "before_mb": 667, "peak_mb": 667, "params": "(shape=(5, 4), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm1", "seconds": 0.007, "before_mb": 667, "peak_mb": 667, "params": "(shape=(3, 4), dtype=<class 'numpy.float64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm2", "seconds": 0.028, "before_mb": 667, "peak_mb": 667, "params": "(shape=(4, 5), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm3", "seconds": 0.007, "before_mb": 667, "peak_mb": 667, "params": "(shape=(4, 5), dtype=<class 'numpy.complex64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm4", "seconds": 0.018, "before_mb": 667, "peak_mb": 668, "params": "(shape=(5, 4), dtype=<class 'numpy.complex128'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm5", "seconds": 0.007, "before_mb": 668, "peak_mb": 668, "params": "(shape=(4, 5), dtype=<class 'numpy.complex128'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm6", "seconds": 0.007, "before_mb": 668, "peak_mb": 668, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm7", "seconds": 0.014, "before_mb": 668, "peak_mb": 668, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm8", "seconds": 0.006, "before_mb": 668, "peak_mb": 668, "params": "(shape=(4, 5), dtype=<class 'numpy.complex128'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm9", "seconds": 0.01, "before_mb": 668, "peak_mb": 668, "params": "(shape=(5, 4), dtype=<class 'numpy.float64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv0", "seconds": 0.008, "before_mb": 668, "peak_mb": 668, "params": "(shape=(5, 4), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv1", "seconds": 0.007, "before_mb": 668, "peak_mb": 668, "params": "(shape=(3, 4), dtype=<class 'numpy.float64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv2", "seconds": 0.007, "before_mb": 668, "peak_mb": 668, "params": "(shape=(4, 5), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv3", "seconds": 0.008, "before_mb": 668, "peak_mb": 668, "params": "(shape=(4, 5), dtype=<class 'numpy.complex64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv4", "seconds": 0.015, "before_mb": 668, "peak_mb": 668, "params": "(shape=(5, 4), dtype=<class 'numpy.complex128'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv5", "seconds": 0.01, "before_mb": 668, "peak_mb": 668, "params": "(shape=(4, 5), dtype=<class 'numpy.complex128'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv6", "seconds": 0.015, "before_mb": 668, "peak_mb": 668, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv7", "seconds": 0.009, "before_mb": 668, "peak_mb": 668, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv8", "seconds": 0.008, "before_mb": 668, "peak_mb": 668, "params": "(shape=(4, 5), dtype=<class 'numpy.complex128'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv9", "seconds": 0.015, "before_mb": 668, "peak_mb": 668, "params": "(shape=(5, 4), dtype=<class 'numpy.float64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense0", "seconds": 0.06, "before_mb": 668, "peak_mb": 668, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense1", "seconds": 0.046, "before_mb": 668, "peak_mb": 670, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense2", "seconds": 0.037, "before_mb": 670, "peak_mb": 673, "params": "(shape=(5, 8), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense3", "seconds": 0.046, "before_mb": 673, "peak_mb": 674, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense4", "seconds": 0.029, "before_mb": 674, "peak_mb": 677, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense5", "seconds": 0.027, "before_mb": 677, "peak_mb": 678, "params": "(shape=(5, 5), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense6", "seconds": 0.029, "before_mb": 678, "peak_mb": 681, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense7", "seconds": 0.04, "before_mb": 681, "peak_mb": 684, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense8", "seconds": 0.027, "before_mb": 684, "peak_mb": 685, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense9", "seconds": 0.027, "before_mb": 685, "peak_mb": 687, "params": "(shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad0", "seconds": 0.05, "before_mb": 687, "peak_mb": 695, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad1", "seconds": 0.064, "before_mb": 695, "peak_mb": 696, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad2", "seconds": 0.032, "before_mb": 696, "peak_mb": 702, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad3", "seconds": 0.053, "before_mb": 702, "peak_mb": 702, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad4", "seconds": 0.061, "before_mb": 702, "peak_mb": 708, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad5", "seconds": 0.05, "before_mb": 708, "peak_mb": 706, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad6", "seconds": 0.059, "before_mb": 706, "peak_mb": 708, "params": "(shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad7", "seconds": 0.055, "before_mb": 708, "peak_mb": 711, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense0", "seconds": 0.332, "before_mb": 711, "peak_mb": 717, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense1", "seconds": 0.222, "before_mb": 717, "peak_mb": 728, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense2", "seconds": 0.156, "before_mb": 728, "peak_mb": 733, "params": "(shape=(5, 8), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense3", "seconds": 0.188, "before_mb": 733, "peak_mb": 738, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense4", "seconds": 0.174, "before_mb": 738, "peak_mb": 747, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense5", "seconds": 0.127, "before_mb": 747, "peak_mb": 750, "params": "(shape=(5, 5), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense6", "seconds": 0.443, "before_mb": 750, "peak_mb": 754, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense7", "seconds": 0.273, "before_mb": 754, "peak_mb": 757, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense8", "seconds": 0.109, "before_mb": 757, "peak_mb": 761, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense9", "seconds": 0.124, "before_mb": 761, "peak_mb": 764, "params": "(shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad0", "seconds": 0.169, "before_mb": 764, "peak_mb": 772, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad1", "seconds": 0.077, "before_mb": 772, "peak_mb": 775, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad2", "seconds": 0.082, "before_mb": 775, "peak_mb": 778, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad3", "seconds": 0.129, "before_mb": 778, "peak_mb": 779, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad4", "seconds": 0.117, "before_mb": 779, "peak_mb": 784, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad5", "seconds": 0.059, "before_mb": 784, "peak_mb": 787, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad6", "seconds": 0.03, "before_mb": 787, "peak_mb": 789, "params": "(shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad7", "seconds": 0.065, "before_mb": 789, "peak_mb": 787, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat0", "seconds": 0.146, "before_mb": 787, "peak_mb": 789, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat1", "seconds": 0.054, "before_mb": 789, "peak_mb": 790, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat2", "seconds": 0.101, "before_mb": 790, "peak_mb": 792, "params": "(shape=(5, 8), dtype=<class 'numpy.int32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat3", "seconds": 0.095, "before_mb": 792, "peak_mb": 794, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat4", "seconds": 0.129, "before_mb": 794, "peak_mb": 796, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat5", "seconds": 0.082, "before_mb": 796, "peak_mb": 798, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat6", "seconds": 0.102, "before_mb": 798, "peak_mb": 799, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat7", "seconds": 0.094, "before_mb": 800, "peak_mb": 802, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat8", "seconds": 0.158, "before_mb": 802, "peak_mb": 805, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat9", "seconds": 0.065, "before_mb": 805, "peak_mb": 807, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad0", "seconds": 0.294, "before_mb": 807, "peak_mb": 814, "params": "(shape=(5, 8), bshape=(8,), transpose=False, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad1", "seconds": 0.265, "before_mb": 814, "peak_mb": 821, "params": "(shape=(5, 5), bshape=(5, 1), transpose=False, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad2", "seconds": 0.117, "before_mb": 821, "peak_mb": 831, "params": "(shape=(5, 8), bshape=(5, 3), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad3", "seconds": 0.297, "before_mb": 831, "peak_mb": 841, "params": "(shape=(8, 8), bshape=(8, 1), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad4", "seconds": 0.152, "before_mb": 841, "peak_mb": 842, "params": "(shape=(5, 8), bshape=(5,), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad5", "seconds": 0.077, "before_mb": 842, "peak_mb": 846, "params": "(shape=(5, 5), bshape=(5, 1), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad6", "seconds": 0.383, "before_mb": 846, "peak_mb": 851, "params": "(shape=(5, 5), bshape=(5,), transpose=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad7", "seconds": 0.163, "before_mb": 851, "peak_mb": 859, "params": "(shape=(8, 8), bshape=(8, 1), transpose=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad8", "seconds": 0.147, "before_mb": 859, "peak_mb": 863, "params": "(shape=(5, 8), bshape=(8, 1), transpose=False, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad9", "seconds": 0.105, "before_mb": 863, "peak_mb": 866, "params": "(shape=(5, 8), bshape=(5, 1), transpose=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec0", "seconds": 0.085, "before_mb": 866, "peak_mb": 868, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec1", "seconds": 0.066, "before_mb": 868, "peak_mb": 870, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec2", "seconds": 0.072, "before_mb": 870, "peak_mb": 871, "params": "(shape=(5, 8), dtype=<class 'numpy.int32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec3", "seconds": 0.06, "before_mb": 871, "peak_mb": 873, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec4", "seconds": 0.091, "before_mb": 873, "peak_mb": 873, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec5", "seconds": 0.094, "before_mb": 873, "peak_mb": 875, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec6", "seconds": 0.073, "before_mb": 875, "peak_mb": 877, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec7", "seconds": 0.071, "before_mb": 877, "peak_mb": 882, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec8", "seconds": 0.082, "before_mb": 882, "peak_mb": 883, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec9", "seconds": 0.07, "before_mb": 883, "peak_mb": 886, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm0", "seconds": 0.009, "before_mb": 886, "peak_mb": 886, "params": "(shape=(5, 4), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm1", "seconds": 0.006, "before_mb": 886, "peak_mb": 886, "params": "(shape=(3, 4), dtype=<class 'numpy.float64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm2", "seconds": 0.019, "before_mb": 886, "peak_mb": 886, "params": "(shape=(4, 5), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm3", "seconds": 0.006, "before_mb": 886, "peak_mb": 886, "params": "(shape=(4, 5), dtype=<class 'numpy.complex64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm4", "seconds": 0.015, "before_mb": 886, "peak_mb": 886, "params": "(shape=(5, 4), dtype=<class 'numpy.complex128'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm5", "seconds": 0.007, "before_mb": 886, "peak_mb": 886, "params": "(shape=(4, 5), dtype=<class 'numpy.complex128'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm6", "seconds": 0.01, "before_mb": 886, "peak_mb": 886, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm7", "seconds": 0.006, "before_mb": 886, "peak_mb": 886, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm8", "seconds": 0.01, "before_mb": 886, "peak_mb": 886, "params": "(shape=(4, 5), dtype=<class 'numpy.complex128'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm9", "seconds": 0.006, "before_mb": 886, "peak_mb": 886, "params": "(shape=(5, 4), dtype=<class 'numpy.float64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv0", "seconds": 0.005, "before_mb": 886, "peak_mb": 886, "params": "(shape=(5, 4), dtype=<class 'numpy.complex64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv1", "seconds": 0.006, "before_mb": 886, "peak_mb": 886, "params": "(shape=(3, 4), dtype=<class 'numpy.float64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv2", "seconds": 0.006, "before_mb": 886, "peak_mb": 886, "params": "(shape=(4, 5), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv3", "seconds": 0.018, "before_mb": 886, "peak_mb": 886, "params": "(shape=(4, 5), dtype=<class 'numpy.complex64'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv4", "seconds": 0.006, "before_mb": 886, "peak_mb": 886, "params": "(shape=(5, 4), dtype=<class 'numpy.complex128'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv5", "seconds": 0.006, "before_mb": 886, "peak_mb": 886, "params": "(shape=(4, 5), dtype=<class 'numpy.complex128'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv6", "seconds": 0.023, "before_mb": 886, "peak_mb": 887, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv7", "seconds": 0.009, "before_mb": 887, "peak_mb": 887, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv8", "seconds": 0.005, "before_mb": 887, "peak_mb": 887, "params": "(shape=(4, 5), dtype=<class 'numpy.complex128'>, transpose=False)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv9", "seconds": 0.008, "before_mb": 887, "peak_mb": 887, "params": "(shape=(5, 4), dtype=<class 'numpy.float64'>, transpose=True)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense0", "seconds": 0.074, "before_mb": 887, "peak_mb": 890, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense1", "seconds": 0.069, "before_mb": 890, "peak_mb": 892, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense2", "seconds": 0.067, "before_mb": 892, "peak_mb": 892, "params": "(shape=(5, 8), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense3", "seconds": 0.082, "before_mb": 892, "peak_mb": 896, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense4", "seconds": 0.065, "before_mb": 896, "peak_mb": 898, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense5", "seconds": 0.057, "before_mb": 898, "peak_mb": 900, "params": "(shape=(5, 5), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense6", "seconds": 0.119, "before_mb": 900, "peak_mb": 903, "params": "(shape=(8, 5), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense7", "seconds": 0.091, "before_mb": 903, "peak_mb": 906, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense8", "seconds": 0.053, "before_mb": 906, "peak_mb": 908, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense9", "seconds": 0.06, "before_mb": 908, "peak_mb": 911, "params": "(shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad0", "seconds": 0.054, "before_mb": 911, "peak_mb": 921, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad1", "seconds": 0.064, "before_mb": 921, "peak_mb": 925, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad2", "seconds": 0.052, "before_mb": 925, "peak_mb": 927, "params": "(shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad3", "seconds": 0.033, "before_mb": 928, "peak_mb": 927, "params": "(shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad4", "seconds": 0.087, "before_mb": 927, "peak_mb": 935, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad5", "seconds": 0.062, "before_mb": 935, "peak_mb": 931, "params": "(shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad6", "seconds": 0.035, "before_mb": 931, "peak_mb": 934, "params": "(shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad7", "seconds": 0.059, "before_mb": 934, "peak_mb": 932, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_bcoo_dot_general_vmap_matvec_grad", "seconds": 1.445, "before_mb": 932, "peak_mb": 1001}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_grad0", "seconds": 0.652, "before_mb": 1001, "peak_mb": 1053, "params": "(has_aux=False)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_grad1", "seconds": 0.094, "before_mb": 1053, "peak_mb": 1059, "params": "(has_aux=True)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian0", "seconds": 0.741, "before_mb": 1059, "peak_mb": 1152, "params": "(has_aux=True, transform='jacrev')"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian1", "seconds": 0.066, "before_mb": 1152, "peak_mb": 1156, "params": "(has_aux=False, transform='jacrev')"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian2", "seconds": 0.086, "before_mb": 1156, "peak_mb": 1157, "params": "(has_aux=False, transform='jacobian')"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian3", "seconds": 0.406, "before_mb": 1157, "peak_mb": 1189, "params": "(has_aux=True, transform='jacfwd')"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian4", "seconds": 0.055, "before_mb": 1189, "peak_mb": 1194, "params": "(has_aux=True, transform='jacobian')"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian5", "seconds": 0.039, "before_mb": 1194, "peak_mb": 1198, "params": "(has_aux=False, transform='jacfwd')"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad0", "seconds": 0.102, "before_mb": 1198, "peak_mb": 1206, "params": "(has_aux=True, deep=True, arg0=True, bias=True)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad1", "seconds": 0.054, "before_mb": 1206, "peak_mb": 1211, "params": "(has_aux=False, deep=True, arg0=True, bias=True)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad2", "seconds": 0.048, "before_mb": 1211, "peak_mb": 1212, "params": "(has_aux=False, deep=True, arg0=False, bias=True)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad3", "seconds": 0.052, "before_mb": 1212, "peak_mb": 1214, "params": "(has_aux=True, deep=False, arg0=False, bias=False)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad4", "seconds": 0.042, "before_mb": 1214, "peak_mb": 1214, "params": "(has_aux=False, deep=True, arg0=False, bias=False)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad5", "seconds": 0.047, "before_mb": 1214, "peak_mb": 1215, "params": "(has_aux=False, deep=False, arg0=True, bias=False)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad6", "seconds": 0.045, "before_mb": 1215, "peak_mb": 1215, "params": "(has_aux=True, deep=True, arg0=True, bias=False)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad7", "seconds": 0.044, "before_mb": 1215, "peak_mb": 1216, "params": "(has_aux=False, deep=True, arg0=True, bias=False)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad8", "seconds": 0.046, "before_mb": 1216, "peak_mb": 1217, "params": "(has_aux=True, deep=False, arg0=True, bias=True)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad9", "seconds": 0.042, "before_mb": 1217, "peak_mb": 1217, "params": "(has_aux=False, deep=False, arg0=False, bias=False)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_value_and_grad0", "seconds": 0.056, "before_mb": 1217, "peak_mb": 1217, "params": "(has_aux=False)"}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_value_and_grad1", "seconds": 0.083, "before_mb": 1217, "peak_mb": 1218, "params": "(has_aux=True)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_BCOO", "seconds": 0.365, "before_mb": 1218, "peak_mb": 1244}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_BCSR", "seconds": 0.118, "before_mb": 1244, "peak_mb": 1256}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_COO", "seconds": 0.012, "before_mb": 1256, "peak_mb": 1256}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_CSC", "seconds": 0.042, "before_mb": 1256, "peak_mb": 1262}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_CSR", "seconds": 0.033, "before_mb": 1262, "peak_mb": 1264}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse0", "seconds": 0.086, "before_mb": 1264, "peak_mb": 1267, "params": "(cls=<class 'jax.experimental.sparse.bcsr.BCSR'>, input_type=<class 'scipy.sparse._csr.csr_matrix'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse1", "seconds": 0.102, "before_mb": 1267, "peak_mb": 1271, "params": "(cls=<class 'jax.experimental.sparse.bcoo.BCOO'>, input_type=<class 'scipy.sparse._csc.csc_matrix'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse2", "seconds": 0.036, "before_mb": 1271, "peak_mb": 1273, "params": "(cls=<class 'jax.experimental.sparse.bcoo.BCOO'>, input_type=<class 'scipy.sparse._csr.csr_matrix'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse3", "seconds": 0.088, "before_mb": 1273, "peak_mb": 1279, "params": "(cls=<class 'jax.experimental.sparse.bcsr.BCSR'>, input_type=<class 'scipy.sparse._coo.coo_matrix'>, shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse4", "seconds": 0.018, "before_mb": 1279, "peak_mb": 1282, "params": "(cls=<class 'jax.experimental.sparse.bcoo.BCOO'>, input_type=<class 'scipy.sparse._coo.coo_matrix'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse5", "seconds": 0.222, "before_mb": 1282, "peak_mb": 1283, "params": "(cls=<class 'jax.experimental.sparse.bcsr.BCSR'>, input_type=<class 'scipy.sparse._coo.coo_matrix'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse6", "seconds": 0.067, "before_mb": 1283, "peak_mb": 1282, "params": "(cls=<class 'jax.experimental.sparse.bcoo.BCOO'>, input_type=<class 'scipy.sparse._coo.coo_matrix'>, shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse7", "seconds": 0.05, "before_mb": 1282, "peak_mb": 1286, "params": "(cls=<class 'jax.experimental.sparse.bcsr.BCSR'>, input_type=<class 'scipy.sparse._coo.coo_matrix'>, shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse8", "seconds": 0.028, "before_mb": 1286, "peak_mb": 1287, "params": "(cls=<class 'jax.experimental.sparse.bcoo.BCOO'>, input_type=<class 'scipy.sparse._csc.csc_matrix'>, shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse9", "seconds": 0.017, "before_mb": 1287, "peak_mb": 1287, "params": "(cls=<class 'jax.experimental.sparse.bcsr.BCSR'>, input_type=<class 'scipy.sparse._coo.coo_matrix'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_methods", "seconds": 0.901, "before_mb": 1281, "peak_mb": 1358}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip0", "seconds": 0.588, "before_mb": 1358, "peak_mb": 1398, "params": "(shape=(3, 4, 5), n_batch=0, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip1", "seconds": 0.667, "before_mb": 1398, "peak_mb": 1418, "params": "(shape=(3, 4, 3, 2), n_batch=0, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip2", "seconds": 0.132, "before_mb": 1418, "peak_mb": 1425, "params": "(shape=(5, 8), n_batch=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip3", "seconds": 1.688, "before_mb": 1425, "peak_mb": 1485, "params": "(shape=(3, 4, 3, 2), n_batch=1, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip4", "seconds": 1.029, "before_mb": 100, "peak_mb": 270, "params": "(shape=(3, 4, 3, 2), n_batch=1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip5", "seconds": 0.724, "before_mb": 270, "peak_mb": 338, "params": "(shape=(8, 5), n_batch=0, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip6", "seconds": 0.523, "before_mb": 338, "peak_mb": 394, "params": "(shape=(3, 4, 5), n_batch=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip7", "seconds": 0.117, "before_mb": 394, "peak_mb": 400, "params": "(shape=(8, 5), n_batch=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip8", "seconds": 2.201, "before_mb": 400, "peak_mb": 479, "params": "(shape=(3, 4, 3, 2), n_batch=2, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip9", "seconds": 0.298, "before_mb": 479, "peak_mb": 497, "params": "(shape=(3, 4, 3, 2), n_batch=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_BCOO", "seconds": 0.157, "before_mb": 497, "peak_mb": 503}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_COO", "seconds": 0.107, "before_mb": 503, "peak_mb": 509}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_CSC", "seconds": 0.824, "before_mb": 509, "peak_mb": 513}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_CSR", "seconds": 0.173, "before_mb": 513, "peak_mb": 516}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip0", "seconds": 0.074, "before_mb": 516, "peak_mb": 524, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip1", "seconds": 0.179, "before_mb": 524, "peak_mb": 527, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip10", "seconds": 0.057, "before_mb": 527, "peak_mb": 535, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip11", "seconds": 0.278, "before_mb": 535, "peak_mb": 538, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip12", "seconds": 0.133, "before_mb": 538, "peak_mb": 542, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip13", "seconds": 0.066, "before_mb": 542, "peak_mb": 547, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip14", "seconds": 0.116, "before_mb": 547, "peak_mb": 550, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip15", "seconds": 0.13, "before_mb": 550, "peak_mb": 553, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip16", "seconds": 0.088, "before_mb": 553, "peak_mb": 556, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip17", "seconds": 0.088, "before_mb": 556, "peak_mb": 558, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip18", "seconds": 0.02, "before_mb": 558, "peak_mb": 560, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip19", "seconds": 0.098, "before_mb": 560, "peak_mb": 561, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip2", "seconds": 0.054, "before_mb": 561, "peak_mb": 566, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip20", "seconds": 0.057, "before_mb": 566, "peak_mb": 565, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip21", "seconds": 0.094, "before_mb": 565, "peak_mb": 568, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip22", "seconds": 0.066, "before_mb": 568, "peak_mb": 570, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip23", "seconds": 0.083, "before_mb": 570, "peak_mb": 573, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip24", "seconds": 0.045, "before_mb": 573, "peak_mb": 585, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip25", "seconds": 0.081, "before_mb": 585, "peak_mb": 586, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip26", "seconds": 0.031, "before_mb": 586, "peak_mb": 587, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip27", "seconds": 0.371, "before_mb": 587, "peak_mb": 624, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip28", "seconds": 0.218, "before_mb": 624, "peak_mb": 644, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip29", "seconds": 0.082, "before_mb": 644, "peak_mb": 650, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip3", "seconds": 0.016, "before_mb": 650, "peak_mb": 651, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip30", "seconds": 0.064, "before_mb": 651, "peak_mb": 657, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip31", "seconds": 0.094, "before_mb": 657, "peak_mb": 666, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip4", "seconds": 0.049, "before_mb": 666, "peak_mb": 673, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip5", "seconds": 0.109, "before_mb": 673, "peak_mb": 674, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip6", "seconds": 0.012, "before_mb": 674, "peak_mb": 677, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip7", "seconds": 0.042, "before_mb": 677, "peak_mb": 680, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip8", "seconds": 0.052, "before_mb": 680, "peak_mb": 688, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip9", "seconds": 0.055, "before_mb": 688, "peak_mb": 687, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_BCOO[2, 5]", "seconds": 0.072, "before_mb": 687, "peak_mb": 694}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_BCOO[5, 3]", "seconds": 0.018, "before_mb": 694, "peak_mb": 695}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_COO[2, 5]", "seconds": 0.023, "before_mb": 695, "peak_mb": 696}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_COO[5, 3]", "seconds": 0.015, "before_mb": 696, "peak_mb": 697}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSC[2, 5]", "seconds": 0.024, "before_mb": 697, "peak_mb": 698}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSC[5, 3]", "seconds": 0.049, "before_mb": 698, "peak_mb": 700}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSR[2, 5]", "seconds": 0.018, "before_mb": 700, "peak_mb": 700}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSR[5, 3]", "seconds": 0.022, "before_mb": 700, "peak_mb": 701}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_0_BCOO[2, 5]", "seconds": 0.009, "before_mb": 701, "peak_mb": 701}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_0_BCOO[5, 3]", "seconds": 0.008, "before_mb": 701, "peak_mb": 701}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_2_BCOO[2, 5]", "seconds": 0.111, "before_mb": 701, "peak_mb": 710}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_2_BCOO[5, 3]", "seconds": 0.022, "before_mb": 710, "peak_mb": 711}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, 3, -2)", "seconds": 0.1, "before_mb": 711, "peak_mb": 718}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, 3, 0)", "seconds": 0.163, "before_mb": 718, "peak_mb": 727}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, 3, 1)", "seconds": 0.293, "before_mb": 727, "peak_mb": 757}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, None, -2)", "seconds": 0.066, "before_mb": 758, "peak_mb": 761}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, None, 0)", "seconds": 0.059, "before_mb": 761, "peak_mb": 772}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, None, 1)", "seconds": 0.267, "before_mb": 772, "peak_mb": 783}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, 3, -2)", "seconds": 0.293, "before_mb": 783, "peak_mb": 797}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, 3, 0)", "seconds": 0.098, "before_mb": 797, "peak_mb": 805}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, 3, 1)", "seconds": 0.234, "before_mb": 805, "peak_mb": 808}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, None, -2)", "seconds": 0.259, "before_mb": 808, "peak_mb": 821}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, None, 0)", "seconds": 0.117, "before_mb": 821, "peak_mb": 829}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, None, 1)", "seconds": 0.264, "before_mb": 829, "peak_mb": 835}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, 3, -2)", "seconds": 0.025, "before_mb": 835, "peak_mb": 836}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, 3, 0)", "seconds": 0.052, "before_mb": 836, "peak_mb": 838}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, 3, 1)", "seconds": 0.225, "before_mb": 838, "peak_mb": 842}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, None, -2)", "seconds": 0.026, "before_mb": 842, "peak_mb": 842}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, None, 0)", "seconds": 0.047, "before_mb": 842, "peak_mb": 845}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, None, 1)", "seconds": 0.228, "before_mb": 845, "peak_mb": 843}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, 3, -2)", "seconds": 0.223, "before_mb": 843, "peak_mb": 845}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, 3, 0)", "seconds": 0.057, "before_mb": 845, "peak_mb": 848}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, 3, 1)", "seconds": 0.321, "before_mb": 848, "peak_mb": 851}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, None, -2)", "seconds": 0.227, "before_mb": 851, "peak_mb": 851}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, None, 0)", "seconds": 0.067, "before_mb": 851, "peak_mb": 853}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, None, 1)", "seconds": 0.258, "before_mb": 853, "peak_mb": 854}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, 3, -2)", "seconds": 0.067, "before_mb": 854, "peak_mb": 855}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, 3, 0)", "seconds": 0.358, "before_mb": 855, "peak_mb": 861}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, 3, 1)", "seconds": 0.213, "before_mb": 861, "peak_mb": 869}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, None, -2)", "seconds": 0.058, "before_mb": 869, "peak_mb": 870}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, None, 0)", "seconds": 0.115, "before_mb": 870, "peak_mb": 877}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, None, 1)", "seconds": 0.212, "before_mb": 877, "peak_mb": 876}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, 3, -2)", "seconds": 0.217, "before_mb": 876, "peak_mb": 879}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, 3, 0)", "seconds": 0.127, "before_mb": 879, "peak_mb": 885}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, 3, 1)", "seconds": 0.226, "before_mb": 885, "peak_mb": 886}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, None, -2)", "seconds": 0.227, "before_mb": 886, "peak_mb": 888}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, None, 0)", "seconds": 0.122, "before_mb": 888, "peak_mb": 895}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, None, 1)", "seconds": 0.239, "before_mb": 895, "peak_mb": 895}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, 3, -2)", "seconds": 0.053, "before_mb": 895, "peak_mb": 896}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, 3, 0)", "seconds": 0.079, "before_mb": 896, "peak_mb": 901}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, 3, 1)", "seconds": 0.238, "before_mb": 901, "peak_mb": 903}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, None, -2)", "seconds": 0.039, "before_mb": 903, "peak_mb": 903}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, None, 0)", "seconds": 0.068, "before_mb": 903, "peak_mb": 908}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, None, 1)", "seconds": 0.359, "before_mb": 908, "peak_mb": 908}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, 3, -2)", "seconds": 0.238, "before_mb": 908, "peak_mb": 910}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, 3, 0)", "seconds": 0.094, "before_mb": 910, "peak_mb": 915}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, 3, 1)", "seconds": 0.229, "before_mb": 915, "peak_mb": 916}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, None, -2)", "seconds": 0.211, "before_mb": 916, "peak_mb": 916}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, None, 0)", "seconds": 0.049, "before_mb": 916, "peak_mb": 919}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, None, 1)", "seconds": 0.268, "before_mb": 919, "peak_mb": 919}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_BCOO", "seconds": 0.011, "before_mb": 919, "peak_mb": 919}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_COO", "seconds": 0.012, "before_mb": 919, "peak_mb": 919}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_CSC", "seconds": 0.031, "before_mb": 919, "peak_mb": 919}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_CSR", "seconds": 0.031, "before_mb": 919, "peak_mb": 920}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul0", "seconds": 0.568, "before_mb": 920, "peak_mb": 924, "params": "(shape=(5, 5), bshape=(5, 4), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul1", "seconds": 0.348, "before_mb": 924, "peak_mb": 930, "params": "(shape=(8, 5), bshape=(5, 3), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul10", "seconds": 0.109, "before_mb": 930, "peak_mb": 934, "params": "(shape=(5, 5), bshape=(5, 4), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul11", "seconds": 0.4, "before_mb": 934, "peak_mb": 943, "params": "(shape=(8, 5), bshape=(5, 3), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul12", "seconds": 0.186, "before_mb": 943, "peak_mb": 953, "params": "(shape=(5, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul13", "seconds": 0.353, "before_mb": 953, "peak_mb": 961, "params": "(shape=(5, 5), bshape=(5,), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul14", "seconds": 0.183, "before_mb": 961, "peak_mb": 973, "params": "(shape=(8, 8), bshape=(8, 4), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul15", "seconds": 0.084, "before_mb": 973, "peak_mb": 980, "params": "(shape=(8, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul16", "seconds": 0.354, "before_mb": 980, "peak_mb": 998, "params": "(shape=(5, 8), bshape=(8, 3), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul17", "seconds": 0.111, "before_mb": 998, "peak_mb": 1005, "params": "(shape=(5, 8), bshape=(8, 3), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul18", "seconds": 0.266, "before_mb": 1005, "peak_mb": 1013, "params": "(shape=(8, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul19", "seconds": 0.25, "before_mb": 1013, "peak_mb": 1020, "params": "(shape=(8, 5), bshape=(5, 4), Obj=<class 'jax.experimental.sparse.csr.CSC'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul2", "seconds": 0.078, "before_mb": 1020, "peak_mb": 1029, "params": "(shape=(5, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul20", "seconds": 0.087, "before_mb": 1029, "peak_mb": 1032, "params": "(shape=(5, 5), bshape=(5, 4), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul21", "seconds": 0.136, "before_mb": 1032, "peak_mb": 1034, "params": "(shape=(8, 5), bshape=(5, 3), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul22", "seconds": 0.095, "before_mb": 1034, "peak_mb": 1038, "params": "(shape=(5, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul23", "seconds": 0.116, "before_mb": 1038, "peak_mb": 1041, "params": "(shape=(5, 5), bshape=(5,), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul24", "seconds": 0.119, "before_mb": 1041, "peak_mb": 1044, "params": "(shape=(8, 8), bshape=(8, 4), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul25", "seconds": 0.042, "before_mb": 1044, "peak_mb": 1046, "params": "(shape=(8, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul26", "seconds": 0.356, "before_mb": 1046, "peak_mb": 1050, "params": "(shape=(5, 8), bshape=(8, 3), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul27", "seconds": 0.049, "before_mb": 1050, "peak_mb": 1053, "params": "(shape=(5, 8), bshape=(8, 3), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul28", "seconds": 0.14, "before_mb": 1054, "peak_mb": 1057, "params": "(shape=(8, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul29", "seconds": 0.09, "before_mb": 1057, "peak_mb": 1061, "params": "(shape=(8, 5), bshape=(5, 4), Obj=<class 'jax.experimental.sparse.coo.COO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul3", "seconds": 0.126, "before_mb": 1061, "peak_mb": 1068, "params": "(shape=(5, 5), bshape=(5,), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul30", "seconds": 0.572, "before_mb": 1068, "peak_mb": 1102, "params": "(shape=(5, 5), bshape=(5, 4), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul31", "seconds": 0.472, "before_mb": 1102, "peak_mb": 1141, "params": "(shape=(8, 5), bshape=(5, 3), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul32", "seconds": 0.245, "before_mb": 1141, "peak_mb": 1152, "params": "(shape=(5, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul33", "seconds": 0.128, "before_mb": 1152, "peak_mb": 1159, "params": "(shape=(5, 5), bshape=(5,), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul34", "seconds": 0.346, "before_mb": 1159, "peak_mb": 1193, "params": "(shape=(8, 8), bshape=(8, 4), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul35", "seconds": 0.049, "before_mb": 1193, "peak_mb": 1196, "params": "(shape=(8, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul36", "seconds": 0.102, "before_mb": 1196, "peak_mb": 1202, "params": "(shape=(5, 8), bshape=(8, 3), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul37", "seconds": 0.061, "before_mb": 1202, "peak_mb": 1206, "params": "(shape=(5, 8), bshape=(8, 3), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul38", "seconds": 0.126, "before_mb": 1206, "peak_mb": 1212, "params": "(shape=(8, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul39", "seconds": 0.063, "before_mb": 1212, "peak_mb": 1218, "params": "(shape=(8, 5), bshape=(5, 4), Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul4", "seconds": 0.06, "before_mb": 1218, "peak_mb": 1221, "params": "(shape=(8, 8), bshape=(8, 4), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul5", "seconds": 0.056, "before_mb": 1221, "peak_mb": 1224, "params": "(shape=(8, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul6", "seconds": 0.104, "before_mb": 1224, "peak_mb": 1232, "params": "(shape=(5, 8), bshape=(8, 3), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul7", "seconds": 0.078, "before_mb": 1232, "peak_mb": 1237, "params": "(shape=(5, 8), bshape=(8, 3), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul8", "seconds": 0.183, "before_mb": 1237, "peak_mb": 1239, "params": "(shape=(8, 8), bshape=(8,), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul9", "seconds": 0.321, "before_mb": 1239, "peak_mb": 1241, "params": "(shape=(8, 5), bshape=(5, 4), Obj=<class 'jax.experimental.sparse.csr.CSR'>, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_BCOO", "seconds": 0.019, "before_mb": 1241, "peak_mb": 1241}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_BCSR", "seconds": 0.033, "before_mb": 1241, "peak_mb": 1243}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_COO", "seconds": 0.009, "before_mb": 1243, "peak_mb": 1243}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_CSC", "seconds": 0.019, "before_mb": 1243, "peak_mb": 1243}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_CSR", "seconds": 0.012, "before_mb": 1243, "peak_mb": 1243}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_BCOO", "seconds": 0.092, "before_mb": 1243, "peak_mb": 1243}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_COO", "seconds": 0.033, "before_mb": 1243, "peak_mb": 1244}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_CSC", "seconds": 0.178, "before_mb": 1244, "peak_mb": 1245}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_CSR", "seconds": 0.075, "before_mb": 1245, "peak_mb": 1245}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_ad_BCOO", "seconds": 0.985, "before_mb": 1245, "peak_mb": 1269}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_ad_array", "seconds": 0.019, "before_mb": 1269, "peak_mb": 1270}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_array", "seconds": 0.017, "before_mb": 1270, "peak_mb": 1271}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_batching_BCOO", "seconds": 0.709, "before_mb": 1271, "peak_mb": 1317}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_batching_array", "seconds": 0.017, "before_mb": 1317, "peak_mb": 1318}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_scalar", "seconds": 0.132, "before_mb": 1318, "peak_mb": 1320}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose0", "seconds": 0.054, "before_mb": 1320, "peak_mb": 1328, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose1", "seconds": 0.048, "before_mb": 1328, "peak_mb": 1332, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose10", "seconds": 0.044, "before_mb": 1332, "peak_mb": 1334, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose11", "seconds": 0.013, "before_mb": 1334, "peak_mb": 1333, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose12", "seconds": 0.055, "before_mb": 1333, "peak_mb": 1333, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose13", "seconds": 0.28, "before_mb": 1333, "peak_mb": 1333, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose14", "seconds": 0.016, "before_mb": 1333, "peak_mb": 1335, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose15", "seconds": 0.108, "before_mb": 1335, "peak_mb": 1333, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose16", "seconds": 0.063, "before_mb": 1333, "peak_mb": 1334, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose17", "seconds": 0.041, "before_mb": 1334, "peak_mb": 1334, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose18", "seconds": 0.023, "before_mb": 1334, "peak_mb": 1335, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose19", "seconds": 0.046, "before_mb": 1335, "peak_mb": 1335, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose2", "seconds": 0.054, "before_mb": 1335, "peak_mb": 1335, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose20", "seconds": 0.149, "before_mb": 1336, "peak_mb": 1337, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose21", "seconds": 0.199, "before_mb": 1337, "peak_mb": 1337, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose22", "seconds": 0.036, "before_mb": 1337, "peak_mb": 1338, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose23", "seconds": 0.034, "before_mb": 1338, "peak_mb": 1340, "params": "(Obj=<class 'jax.experimental.sparse.coo.COO'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose24", "seconds": 0.052, "before_mb": 1340, "peak_mb": 1341, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose25", "seconds": 0.029, "before_mb": 1341, "peak_mb": 1344, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose26", "seconds": 0.02, "before_mb": 1344, "peak_mb": 1349, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(5, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose27", "seconds": 0.148, "before_mb": 1349, "peak_mb": 1345, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose28", "seconds": 0.229, "before_mb": 1345, "peak_mb": 1347, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose29", "seconds": 0.123, "before_mb": 1347, "peak_mb": 1347, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose3", "seconds": 0.171, "before_mb": 1347, "peak_mb": 1347, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(8, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose30", "seconds": 0.194, "before_mb": 1347, "peak_mb": 1355, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose31", "seconds": 0.099, "before_mb": 1355, "peak_mb": 1349, "params": "(Obj=<class 'jax.experimental.sparse.bcoo.BCOO'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose4", "seconds": 0.162, "before_mb": 1349, "peak_mb": 1351, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose5", "seconds": 0.099, "before_mb": 1351, "peak_mb": 1351, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(5, 8), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose6", "seconds": 0.019, "before_mb": 1351, "peak_mb": 1352, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(8, 8), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose7", "seconds": 0.078, "before_mb": 1352, "peak_mb": 1352, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSR'>, shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose8", "seconds": 0.079, "before_mb": 1352, "peak_mb": 1353, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose9", "seconds": 0.077, "before_mb": 1353, "peak_mb": 1353, "params": "(Obj=<class 'jax.experimental.sparse.csr.CSC'>, shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_vmappable_BCOO", "seconds": 1.537, "before_mb": 1353, "peak_mb": 1378}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_vmappable_BCSR", "seconds": 0.263, "before_mb": 1378, "peak_mb": 1387}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo0", "seconds": 2.299, "before_mb": 1387, "peak_mb": 1425, "params": "(shape=(3, 4, 5), n_batch=1, n_dense=0, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo1", "seconds": 1.388, "before_mb": 1425, "peak_mb": 1444, "params": "(shape=(3, 4, 5), n_batch=0, n_dense=1, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo2", "seconds": 0.62, "before_mb": 1444, "peak_mb": 1460, "params": "(shape=(3, 4, 5), n_batch=0, n_dense=0, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo3", "seconds": 1.394, "before_mb": 1460, "peak_mb": 1489, "params": "(shape=(3, 4, 3, 2), n_batch=0, n_dense=1, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo4", "seconds": 1.308, "before_mb": 105, "peak_mb": 215, "params": "(shape=(5, 8), n_batch=0, n_dense=1, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo5", "seconds": 1.277, "before_mb": 215, "peak_mb": 263, "params": "(shape=(8, 5), n_batch=1, n_dense=0, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo6", "seconds": 2.453, "before_mb": 263, "peak_mb": 320, "params": "(shape=(3, 4, 3, 2), n_batch=3, n_dense=0, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo7", "seconds": 1.071, "before_mb": 320, "peak_mb": 351, "params": "(shape=(3, 4, 3, 2), n_batch=0, n_dense=2, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo8", "seconds": 1.179, "before_mb": 351, "peak_mb": 381, "params": "(shape=(3, 4, 3, 2), n_batch=4, n_dense=0, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo9", "seconds": 0.867, "before_mb": 381, "peak_mb": 418, "params": "(shape=(5, 8), n_batch=1, n_dense=0, dtype=<class 'numpy.float32'>, indices_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver0", "seconds": 0.026, "before_mb": 418, "peak_mb": 418, "params": "(size=100, reorder=2, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver1", "seconds": 0.021, "before_mb": 418, "peak_mb": 419, "params": "(size=50, reorder=1, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver2", "seconds": 0.008, "before_mb": 419, "peak_mb": 419, "params": "(size=20, reorder=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver3", "seconds": 0.01, "before_mb": 419, "peak_mb": 419, "params": "(size=20, reorder=2, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver4", "seconds": 0.011, "before_mb": 419, "peak_mb": 419, "params": "(size=100, reorder=3, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver5", "seconds": 0.009, "before_mb": 419, "peak_mb": 419, "params": "(size=20, reorder=3, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver6", "seconds": 0.026, "before_mb": 419, "peak_mb": 419, "params": "(size=50, reorder=0, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver7", "seconds": 0.006, "before_mb": 419, "peak_mb": 419, "params": "(size=50, reorder=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver8", "seconds": 0.009, "before_mb": 419, "peak_mb": 419, "params": "(size=20, reorder=3, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver9", "seconds": 0.03, "before_mb": 419, "peak_mb": 419, "params": "(size=100, reorder=1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver_grads0", "seconds": 0.015, "before_mb": 419, "peak_mb": 419, "params": "(size=10, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver_grads1", "seconds": 0.011, "before_mb": 419, "peak_mb": 419, "params": "(size=20, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver_grads2", "seconds": 0.01, "before_mb": 419, "peak_mb": 419, "params": "(size=50, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements0", "seconds": 0.147, "before_mb": 419, "peak_mb": 424, "params": "(n_batch=0, n_dense=0, expected_nse=4, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements1", "seconds": 0.074, "before_mb": 424, "peak_mb": 426, "params": "(n_batch=1, n_dense=0, expected_nse=2, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements2", "seconds": 0.13, "before_mb": 426, "peak_mb": 430, "params": "(n_batch=0, n_dense=1, expected_nse=2, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements3", "seconds": 0.072, "before_mb": 430, "peak_mb": 432, "params": "(n_batch=0, n_dense=2, expected_nse=1, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements4", "seconds": 0.125, "before_mb": 432, "peak_mb": 434, "params": "(n_batch=2, n_dense=0, expected_nse=1, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements5", "seconds": 0.077, "before_mb": 434, "peak_mb": 439, "params": "(n_batch=1, n_dense=0, expected_nse=2, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements6", "seconds": 0.027, "before_mb": 439, "peak_mb": 440, "params": "(n_batch=1, n_dense=1, expected_nse=1, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements7", "seconds": 0.014, "before_mb": 440, "peak_mb": 440, "params": "(n_batch=2, n_dense=0, expected_nse=1, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements8", "seconds": 0.012, "before_mb": 440, "peak_mb": 441, "params": "(n_batch=0, n_dense=2, expected_nse=1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements9", "seconds": 0.186, "before_mb": 441, "peak_mb": 441, "params": "(n_batch=0, n_dense=1, expected_nse=2, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty0", "seconds": 0.074, "before_mb": 441, "peak_mb": 444, "params": "(n_batch=0, n_dense=0, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty1", "seconds": 0.039, "before_mb": 444, "peak_mb": 446, "params": "(n_batch=0, n_dense=1, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty2", "seconds": 0.039, "before_mb": 446, "peak_mb": 448, "params": "(n_batch=0, n_dense=2, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty3", "seconds": 0.075, "before_mb": 448, "peak_mb": 450, "params": "(n_batch=2, n_dense=0, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty4", "seconds": 0.03, "before_mb": 450, "peak_mb": 452, "params": "(n_batch=1, n_dense=0, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty5", "seconds": 0.031, "before_mb": 452, "peak_mb": 454, "params": "(n_batch=0, n_dense=1, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty6", "seconds": 0.179, "before_mb": 454, "peak_mb": 455, "params": "(n_batch=1, n_dense=1, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty7", "seconds": 0.057, "before_mb": 455, "peak_mb": 455, "params": "(n_batch=1, n_dense=0, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty8", "seconds": 0.018, "before_mb": 455, "peak_mb": 455, "params": "(n_batch=2, n_dense=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty9", "seconds": 0.155, "before_mb": 455, "peak_mb": 455, "params": "(n_batch=0, n_dense=2, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch0", "seconds": 0.338, "before_mb": 455, "peak_mb": 459, "params": "(n_batch=0, n_dense=1, expected_nse=9, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch1", "seconds": 0.279, "before_mb": 459, "peak_mb": 460, "params": "(n_batch=1, n_dense=0, expected_nse=array([6, 8]), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch2", "seconds": 0.084, "before_mb": 460, "peak_mb": 463, "params": "(n_batch=0, n_dense=0, expected_nse=14, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch3", "seconds": 0.04, "before_mb": 463, "peak_mb": 463, "params": "(n_batch=0, n_dense=0, expected_nse=14, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch4", "seconds": 0.089, "before_mb": 463, "peak_mb": 465, "params": "(n_batch=1, n_dense=0, expected_nse=array([6, 8]), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch5", "seconds": 0.017, "before_mb": 465, "peak_mb": 467, "params": "(n_batch=0, n_dense=1, expected_nse=9, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch6", "seconds": 0.029, "before_mb": 467, "peak_mb": 465, "params": "(n_batch=1, n_dense=0, expected_nse=array([6, 8]), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch7", "seconds": 0.022, "before_mb": 465, "peak_mb": 466, "params": "(n_batch=2, n_dense=0, expected_nse=array([[3, 3],\n       [4, 4]]), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch8", "seconds": 0.008, "before_mb": 466, "peak_mb": 466, "params": "(n_batch=0, n_dense=0, expected_nse=14, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch9", "seconds": 0.072, "before_mb": 466, "peak_mb": 466, "params": "(n_batch=2, n_dense=0, expected_nse=array([[3, 3],\n       [4, 4]]), dtype=<class 'numpy.float32'>)"}

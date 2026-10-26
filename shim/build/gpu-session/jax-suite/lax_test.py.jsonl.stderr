@@ -1,0 +1,98 @@
+F....                                                                    [100%]
+=================================== FAILURES ===================================
+______________________________ LaxTest.testTopK4 _______________________________
+
+self = <tests.lax_test.LaxTest testMethod=testTopK4>, shape = (2000,)
+dtype = <class 'numpy.uint32'>, k = 1, axis = 0, is_stable = False
+
+    @jtu.sample_product(
+      dtype=[np.float32, np.int32, np.uint32],
+      shape=[(20,), (8, 20), (2000,)],
+      k=[1, 3, 8],
+      axis=[0, -1],
+      is_stable=[True, False]
+    )
+    def testTopK(self, shape, dtype, k, axis, is_stable):
+      rng = jtu.rand_some_equal(self.rng())
+      def args_maker():
+        return [rng(shape, dtype)]
+      op = lambda vs: lax.top_k(vs, k=k, axis=axis, is_stable=is_stable)
+      ref_op = lambda vs: lax_reference.top_k(vs, k=k, axis=axis, is_stable=is_stable)
+      if is_stable:
+        self._CheckAgainstNumpy(op, ref_op, args_maker)
+      else:
+        # Unstable sort. Validate the values match
+        args = args_maker()[0]
+        ref_values, _ = ref_op(args)
+        xla_values, xla_indices = op(args)
+>       self.assertAllClose(ref_values, xla_values)
+
+tests/lax_test.py:2855: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([300], dtype=uint32), b = array([255], dtype=uint32), atol = 0
+rtol = 0, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-07, atol=0
+E       
+E       Mismatched elements: 1 / 1 (100%)
+E       Mismatch at index:
+E        [0]: 300 (ACTUAL), 255 (DESIRED)
+E       Max absolute difference among violations: 45
+E       Max relative difference among violations: 0.17647059
+E        ACTUAL: array([300], dtype=uint32)
+E        DESIRED: array([255], dtype=uint32)
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:147: AssertionError
+=========================== short test summary info ============================
+FAILED tests/lax_test.py::LaxTest::testTopK4 - AssertionError: 
+1 failed, 4 passed, 2609 deselected in 3.58s
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793044786.437987 1341176 mps_client.h:209] MetalClient destroyed.

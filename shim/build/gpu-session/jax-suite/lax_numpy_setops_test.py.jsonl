@@ -1,0 +1,155 @@
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d2", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=0.001, atol=0.001\n\nMismatched elements: 1 / 3 (33.3%)\nMismatch at index:\n [2]: -5.0 (ACTUAL), -2.0 (DESIRED)\nMax absolute difference among violations: 3.\nMax relative difference among violations: 1.5\n ACTUAL: array([-8., -5., -5.], dtype=float16)\n DESIRED: array([-8., -5., -2.])"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d8", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-06, atol=1e-06\n\nMismatched elements: 4 / 5 (80%)\nMismatch at indices:\n [0]: -2.0 (ACTUAL), -1.0 (DESIRED)\n [1]: -2.0 (ACTUAL), 1.0 (DESIRED)\n [2]: -2.0 (ACTUAL), -1.0 (DESIRED)\n [3]: -2.0 (ACTUAL), -1.0 (DESIRED)\nMax absolute difference among violations: 3.\nMax relative difference among violations: 3.\n ACTUAL: array([-2., -2., -2., -2., -1.], dtype=float32)\n DESIRED: array([-1.,  1., -1., -1., -1.], dtype=float32)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1d9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIntersect1dSizeZero", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testIsin9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1d9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dAssumeUnique9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize0", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=0.001, atol=0.001\n\nMismatched elements: 1 / 5 (20%)\nMismatch at index:\n [3]: 3.0 (ACTUAL), 0.0 (DESIRED)\nMax absolute difference among violations: 3.\nMax relative difference among violations: inf\n ACTUAL: array([-3.,  0.,  3.,  3.,  0.], dtype=float16)\n DESIRED: array([-3.,  0.,  3.,  0.,  0.], dtype=float16)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize1", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-06, atol=1e-06\n\nMismatched elements: 1 / 10 (10%)\nMismatch at index:\n [2]: 0.0 (ACTUAL), -1.0 (DESIRED)\nMax absolute difference among violations: 1.\nMax relative difference among violations: 1.\n ACTUAL: array([-4.,  0.,  0., -1., -1., -1., -1., -1., -1., -1.], dtype=float32)\n DESIRED: array([-4.,  0., -1., -1., -1., -1., -1., -1., -1., -1.], dtype=float32)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize2", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 2 / 10 (20%)\nMismatch at indices:\n [1]: 0 (ACTUAL), 1 (DESIRED)\n [2]: 0 (ACTUAL), 2 (DESIRED)\nMax absolute difference among violations: 2\nMax relative difference among violations: 1.\n ACTUAL: array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int32)\n DESIRED: array([0, 1, 2, 0, 0, 0, 0, 0, 0, 0], dtype=int32)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSize9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetdiff1dSizeZero", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d1", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 1 / 2 (50%)\nMismatch at index:\n [0]: 99 (ACTUAL), 0 (DESIRED)\nMax absolute difference among violations: 99\nMax relative difference among violations: inf\n ACTUAL: array([99, 99], dtype=int16)\n DESIRED: array([ 0, 99], dtype=int16)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d5", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-06, atol=1e-06\n\nMismatched elements: 2 / 2 (100%)\nMismatch at indices:\n [0]: 99.0 (ACTUAL), 0.0 (DESIRED)\n [1]: 99.0 (ACTUAL), 3.0 (DESIRED)\nMax absolute difference among violations: 99.\nMax relative difference among violations: 32.\n ACTUAL: array([99., 99.], dtype=float32)\n DESIRED: array([0., 3.], dtype=float32)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1d9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testSetxor1dSizeZero", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1d9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize0", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-06, atol=1e-06\n\nMismatched elements: 5 / 10 (50%)\nMismatch at indices:\n [3]: 2.0 (ACTUAL), 4.0 (DESIRED)\n [4]: 4.0 (ACTUAL), 5.0 (DESIRED)\n [5]: 4.0 (ACTUAL), -1.0 (DESIRED)\n [6]: 4.0 (ACTUAL), -1.0 (DESIRED)\n [7]: 5.0 (ACTUAL), -1.0 (DESIRED)\nMax absolute difference among violations: 6.\nMax relative difference among violations: 6.\n ACTUAL: array([-6., -1.,  2.,  2.,  4.,  4.,  4.,  5., -1., -1.], dtype=float32)\n DESIRED: array([-6., -1.,  2.,  4.,"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize4", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 4 / 5 (80%)\nMismatch at indices:\n [1]: -4 (ACTUAL), -3 (DESIRED)\n [2]: -3 (ACTUAL), -2 (DESIRED)\n [3]: -3 (ACTUAL), -1 (DESIRED)\n [4]: -3 (ACTUAL), 0 (DESIRED)\nMax absolute difference among violations: 3\nMax relative difference among violations: 2.\n ACTUAL: array([-4, -4, -3, -3, -3], dtype=int16)\n DESIRED: array([-4, -3, -2, -1,  0], dtype=int16)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize5", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 5 / 10 (50%)\nMismatch at indices:\n [2]: 0 (ACTUAL), -1 (DESIRED)\n [3]: 0 (ACTUAL), -1 (DESIRED)\n [4]: 0 (ACTUAL), -1 (DESIRED)\n [5]: 0 (ACTUAL), -1 (DESIRED)\n [6]: 0 (ACTUAL), -1 (DESIRED)\nMax absolute difference among violations: 1\nMax relative difference among violations: 1.\n ACTUAL: array([-1,  0,  0,  0,  0,  0,  0, -1, -1, -1], dtype=int16)\n DESIRED: array([-1,  0, -1, -1, -1, -1, -1, -1, -1, -1], dtype=int16)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize6", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 1 / 5 (20%)\nMismatch at index:\n [1]: 0 (ACTUAL), -1 (DESIRED)\nMax absolute difference among violations: 1\nMax relative difference among violations: 1.\n ACTUAL: array([ 0,  0, -1, -1, -1], dtype=int32)\n DESIRED: array([ 0, -1, -1, -1, -1], dtype=int32)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnion1dSize9", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=0.001, atol=0.001\n\nMismatched elements: 4 / 5 (80%)\nMismatch at indices:\n [1]: -3.0 (ACTUAL), -2.0 (DESIRED)\n [2]: -2.0 (ACTUAL), -1.0 (DESIRED)\n [3]: -1.0 (ACTUAL), 0.0 (DESIRED)\n [4]: 0.0 (ACTUAL), 1.0 (DESIRED)\nMax absolute difference among violations: 1.\nMax relative difference among violations: 1.\n ACTUAL: array([-3., -3., -2., -1.,  0.], dtype=float16)\n DESIRED: array([-3., -2., -1.,  0.,  1.], dtype=float16)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique0", "outcome": "crashed", "message": "exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, jaxlib.cpu_feature_guard, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, nu"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique8", "outcome": "crashed", "message": "exit -6: Extension modules: numpy._core._multiarray_umath, numpy.linalg._umath_linalg, jaxlib.cpu_feature_guard, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._pcg64, numpy.random._generator, numpy.random._mt19937, numpy.random._philox, numpy.random._sfc64, nu"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUnique9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueAll9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueCounts9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan1", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=0.001, atol=0.001\n\nnan location mismatch:\n ACTUAL: array([    nan,     nan, -5.55  , -4.348 , -3.234 , -1.466 , -1.458 ,\n       -1.028 , -0.7114,  0.3687,  0.6553,  1.018 ,  1.752 ,  2.914 ,\n        3.26  ,  3.326 ,  3.92  ,  4.555 ,  6.09  ,     nan],\n      dtype=float16)\n DESIRED: array([-5.55  , -4.348 , -3.234 , -1.466 , -1.458 , -1.028 , -0.7114,\n        0.3687,  0.6553,  1.018 ,  1.752 ,  2.914 ,  3.26  ,  3.326 ,\n        3.92  ,  4.555 ,  6.09 "}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan2", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=0.01, atol=0.01\n\nnan location mismatch:\n ACTUAL: array([      nan, -8.8125  , -6.5625  , -6.46875 , -4.03125 , -3.359375,\n       -3.09375 , -2.296875, -1.578125, -1.109375, -0.878906, -0.523438,\n       -0.466797, -0.064453,  0.550781,  2.3125  ,  2.8125  ,  2.953125,\n        4.34375 ,  7.78125 ], dtype=float32)\n DESIRED: array([-8.8125  , -6.5625  , -6.46875 , -4.03125 , -3.359375, -3.09375 ,\n       -2.296875, -1.578125, -1.109375, -0.878906, -0.52343"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan4", "outcome": "failed", "message": "AssertionError: Tuples differ: (20,) != (19,)\n\nFirst differing element 0:\n20\n19\n\n- (20,)\n+ (19,)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueEqualNan7", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-06, atol=1e-06\n\nnan location mismatch:\n ACTUAL: array([      nan, -5.071523, -3.063007, -2.909769, -2.815169, -2.76334 ,\n       -2.64022 , -2.194715, -1.948821, -1.41041 ,  0.339098,  0.416586,\n        0.667823,  0.732106,  1.895228,  2.021947,  2.581045,  4.055312,\n        6.52845 , 11.315509], dtype=float32)\n DESIRED: array([-5.071523, -3.063007, -2.909769, -2.815169, -2.76334 , -2.64022 ,\n       -2.194715, -1.948821, -1.41041 ,  0.339098,  0.416"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueInverse9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueNans0", "outcome": "failed", "message": "AssertionError: Tuples differ: (4,) != (3,)\n\nFirst differing element 0:\n4\n3\n\n- (4,)\n?  ^\n\n+ (3,)\n?  ^"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueNans1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueNans2", "outcome": "failed", "message": "AssertionError: Tuples differ: (4,) != (3,)\n\nFirst differing element 0:\n4\n3\n\n- (4,)\n?  ^\n\n+ (3,)\n?  ^"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueNans3", "outcome": "failed", "message": "AssertionError: Tuples differ: (4,) != (3,)\n\nFirst differing element 0:\n4\n3\n\n- (4,)\n?  ^\n\n+ (3,)\n?  ^"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize0", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 3 / 5 (60%)\nMismatch at indices:\n [0, 1]: 51 (ACTUAL), 156 (DESIRED)\n [0, 2]: 51 (ACTUAL), 79 (DESIRED)\n [0, 3]: 156 (ACTUAL), 79 (DESIRED)\nMax absolute difference among violations: 105\nMax relative difference among violations: 0.97468354\n ACTUAL: array([[ 51,  51,  51, 156,  79]], dtype=uint32)\n DESIRED: array([[ 51, 156,  79,  79,  79]], dtype=uint32)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize1", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 2 / 5 (40%)\nMismatch at indices:\n [3]: 6 (ACTUAL), 7 (DESIRED)\n [4]: 6 (ACTUAL), 32 (DESIRED)\nMax absolute difference among violations: 26\nMax relative difference among violations: 0.8125\n ACTUAL: array([2, 3, 6, 6, 6], dtype=uint8)\n DESIRED: array([ 2,  3,  6,  7, 32], dtype=uint8)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize2", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 3 / 5 (60%)\nMismatch at indices:\n [1]: 15 (ACTUAL), 96 (DESIRED)\n [2]: 15 (ACTUAL), 0 (DESIRED)\n [3]: 96 (ACTUAL), 0 (DESIRED)\nMax absolute difference among violations: 96\nMax relative difference among violations: 0.84375\n ACTUAL: array([15, 15, 15, 96,  0], dtype=int8)\n DESIRED: array([15, 96,  0,  0,  0], dtype=int8)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize3", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 3 / 4 (75%)\nMismatch at indices:\n [1]: 1 (ACTUAL), 0 (DESIRED)\n [2]: 2 (ACTUAL), 0 (DESIRED)\n [3]: 3 (ACTUAL), 0 (DESIRED)\nMax absolute difference among violations: 3\nMax relative difference among violations: inf\n ACTUAL: array([0, 1, 2, 3], dtype=int32)\n DESIRED: array([0, 0, 0, 0], dtype=int32)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize4", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-07, atol=0\n\nMismatched elements: 2 / 4 (50%)\nMismatch at indices:\n [1]: 2 (ACTUAL), 1 (DESIRED)\n [3]: 3 (ACTUAL), 1 (DESIRED)\nMax absolute difference among violations: 2\nMax relative difference among violations: 2.\n ACTUAL: array([1, 2, 0, 3], dtype=int32)\n DESIRED: array([1, 1, 0, 1], dtype=int32)"}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize6", "outcome": "failed", "message": "AssertionError: \nNot equal to tolerance rtol=1e-06, atol=1e-06\n\nMismatched elements: 1 / 5 (20%)\nMismatch at index:\n [2, 0]: 98.34465026855469 (ACTUAL), -57.07207489013672 (DESIRED)\nMax absolute difference among violations: 155.41672\nMax relative difference among violations: 2.7231658\n ACTUAL: array([[-57.072075],\n       [ 98.34465 ],\n       [ 98.34465 ],...\n DESIRED: array([[-57.072075],\n       [ 98.34465 ],\n       [-57.072075],..."}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueSize9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/lax_numpy_setops_test.py::LaxNumpySetopsTest::testUniqueValues9", "outcome": "passed", "message": ""}

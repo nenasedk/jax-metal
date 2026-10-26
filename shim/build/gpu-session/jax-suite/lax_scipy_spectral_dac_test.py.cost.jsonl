@@ -1,0 +1,5 @@
+{"nodeid": "tests/lax_scipy_spectral_dac_test.py::LaxScipySpectralDacTest::test_spectral_dac_eigh0", "seconds": 0.003, "before_mb": 90, "peak_mb": 90, "params": "(linear_size=97, dtype=<class 'numpy.complex64'>, termination_size=19)"}
+{"nodeid": "tests/lax_scipy_spectral_dac_test.py::LaxScipySpectralDacTest::test_spectral_dac_eigh1", "seconds": 0.005, "before_mb": 90, "peak_mb": 90, "params": "(linear_size=16, dtype=<class 'numpy.complex64'>, termination_size=19)"}
+{"nodeid": "tests/lax_scipy_spectral_dac_test.py::LaxScipySpectralDacTest::test_spectral_dac_eigh3", "seconds": 0.005, "before_mb": 90, "peak_mb": 90, "params": "(linear_size=128, dtype=<class 'numpy.float32'>, termination_size=19)"}
+{"nodeid": "tests/lax_scipy_spectral_dac_test.py::LaxScipySpectralDacTest::test_spectral_dac_eigh7", "seconds": 0.01, "before_mb": 90, "peak_mb": 90, "params": "(linear_size=128, dtype=<class 'numpy.complex64'>, termination_size=19)"}
+{"nodeid": "tests/lax_scipy_spectral_dac_test.py::LaxScipySpectralDacTest::test_spectral_dac_eigh9", "seconds": 0.006, "before_mb": 90, "peak_mb": 90, "params": "(linear_size=97, dtype=<class 'numpy.float32'>, termination_size=19)"}

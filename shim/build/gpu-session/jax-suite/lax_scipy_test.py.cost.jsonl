@@ -1,0 +1,116 @@
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJn0", "seconds": 0.539, "before_mb": 113, "peak_mb": 186, "params": "(order=1, z=1.1, n_iter=20)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJn1", "seconds": 0.132, "before_mb": 186, "peak_mb": 189, "params": "(order=6, z=100.6, n_iter=200)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJn2", "seconds": 0.115, "before_mb": 189, "peak_mb": 191, "params": "(order=2, z=11.4, n_iter=50)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJn3", "seconds": 0.09, "before_mb": 191, "peak_mb": 194, "params": "(order=0, z=0.01, n_iter=5)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJn4", "seconds": 0.136, "before_mb": 194, "peak_mb": 196, "params": "(order=3, z=30.0, n_iter=80)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ0", "seconds": 0.333, "before_mb": 196, "peak_mb": 203, "params": "(order=3, shape=(2, 2, 3), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ1", "seconds": 0.207, "before_mb": 203, "peak_mb": 208, "params": "(order=4, shape=(2,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ2", "seconds": 0.066, "before_mb": 208, "peak_mb": 214, "params": "(order=4, shape=(4,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ3", "seconds": 0.048, "before_mb": 214, "peak_mb": 216, "params": "(order=3, shape=(2,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ4", "seconds": 0.185, "before_mb": 216, "peak_mb": 226, "params": "(order=4, shape=(3, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ5", "seconds": 0.048, "before_mb": 226, "peak_mb": 229, "params": "(order=3, shape=(3,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ6", "seconds": 0.051, "before_mb": 229, "peak_mb": 231, "params": "(order=4, shape=(2, 2, 3), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ7", "seconds": 0.06, "before_mb": 231, "peak_mb": 233, "params": "(order=3, shape=(4,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ8", "seconds": 0.042, "before_mb": 233, "peak_mb": 235, "params": "(order=4, shape=(3,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testBesselJnRandomPositiveZ9", "seconds": 0.049, "before_mb": 235, "peak_mb": 239, "params": "(order=3, shape=(3, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testGradOfEntrAtZero", "seconds": 0.326, "before_mb": 239, "peak_mb": 275}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testGradOfXlog1pyAtZero", "seconds": 0.363, "before_mb": 275, "peak_mb": 327}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testGradOfXlogyAtZero", "seconds": 0.103, "before_mb": 327, "peak_mb": 338}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid0", "seconds": 0.121, "before_mb": 338, "peak_mb": 340, "params": "(yshape=(3, 10), xshape=None, dx=3.0, axis=0, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid1", "seconds": 0.149, "before_mb": 340, "peak_mb": 342, "params": "(yshape=(3, 10), xshape=(10,), dx=1.0, axis=-1, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid2", "seconds": 0.091, "before_mb": 342, "peak_mb": 344, "params": "(yshape=(10,), xshape=None, dx=1.0, axis=-1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid3", "seconds": 0.125, "before_mb": 344, "peak_mb": 346, "params": "(yshape=(3, 10), xshape=(3, 10), dx=1.0, axis=-1, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid4", "seconds": 0.043, "before_mb": 346, "peak_mb": 349, "params": "(yshape=(3, 10), xshape=(3, 10), dx=1.0, axis=-1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid5", "seconds": 0.122, "before_mb": 349, "peak_mb": 351, "params": "(yshape=(3, 10), xshape=None, dx=2.0, axis=-1, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid6", "seconds": 0.035, "before_mb": 351, "peak_mb": 353, "params": "(yshape=(3, 10), xshape=None, dx=3.0, axis=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid7", "seconds": 0.034, "before_mb": 353, "peak_mb": 355, "params": "(yshape=(3, 10), xshape=None, dx=2.0, axis=-1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid8", "seconds": 0.163, "before_mb": 355, "peak_mb": 357, "params": "(yshape=(2, 3, 10), xshape=(3, 10), dx=1.0, axis=-2, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIntegrateTrapezoid9", "seconds": 0.034, "before_mb": 357, "peak_mb": 359, "params": "(yshape=(3, 10), xshape=(10,), dx=1.0, axis=-1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIssue13267", "seconds": 0.925, "before_mb": 359, "peak_mb": 408}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testIssue980", "seconds": 0.052, "before_mb": 408, "peak_mb": 411}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp0", "seconds": 1.54, "before_mb": 411, "peak_mb": 444, "params": "(shapes=((1, 4), (3, 1)), axis=-2, use_b=True, dtype=<class 'numpy.complex64'>, keepdims=True, return_sign=True)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp1", "seconds": 0.713, "before_mb": 444, "peak_mb": 471, "params": "(shapes=((2, 1, 4), (2, 1, 4)), axis=0, use_b=True, dtype=<class 'numpy.int32'>, keepdims=True, return_sign=False)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp2", "seconds": 1.295, "before_mb": 471, "peak_mb": 495, "params": "(shapes=((3, 1), (3, 1)), axis=0, use_b=True, dtype=<class 'numpy.complex64'>, keepdims=True, return_sign=False)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp3", "seconds": 0.478, "before_mb": 495, "peak_mb": 515, "params": "(shapes=((3, 4), (4,)), axis=-1, use_b=True, dtype=<class 'numpy.int32'>, keepdims=True, return_sign=True)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp4", "seconds": 0.377, "before_mb": 515, "peak_mb": 529, "params": "(shapes=((1, 4), (1, 4)), axis=1, use_b=True, dtype=<class 'numpy.int32'>, keepdims=True, return_sign=True)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp5", "seconds": 0.12, "before_mb": 529, "peak_mb": 535, "params": "(shapes=((3, 1),), axis=-1, use_b=False, dtype=<class 'numpy.float32'>, keepdims=True, return_sign=False)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp6", "seconds": 0.488, "before_mb": 535, "peak_mb": 551, "params": "(shapes=((2, 1, 4),), axis=2, use_b=False, dtype=<class 'numpy.int32'>, keepdims=False, return_sign=False)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp7", "seconds": 0.863, "before_mb": 551, "peak_mb": 568, "params": "(shapes=((3, 4), (4,)), axis=0, use_b=True, dtype=<class 'numpy.complex64'>, keepdims=True, return_sign=False)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp8", "seconds": 0.872, "before_mb": 568, "peak_mb": 589, "params": "(shapes=((4,), (4,)), axis=-1, use_b=True, dtype=<class 'numpy.complex64'>, keepdims=False, return_sign=False)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExp9", "seconds": 0.979, "before_mb": 589, "peak_mb": 616, "params": "(shapes=((2, 1, 4), (2, 1, 4)), axis=1, use_b=True, dtype=<class 'numpy.complex64'>, keepdims=True, return_sign=True)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpComplexSign", "seconds": 0.419, "before_mb": 616, "peak_mb": 638}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpInfs", "seconds": 0.069, "before_mb": 638, "peak_mb": 647}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpNans", "seconds": 0.158, "before_mb": 647, "peak_mb": 667}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpOnes", "seconds": 0.103, "before_mb": 667, "peak_mb": 673}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpWhere0", "seconds": 0.064, "before_mb": 673, "peak_mb": 678, "params": "(shape=(0,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpWhere1", "seconds": 0.116, "before_mb": 678, "peak_mb": 685, "params": "(shape=(1,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpWhere2", "seconds": 0.189, "before_mb": 685, "peak_mb": 690, "params": "(shape=(5,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpWhere3", "seconds": 0.05, "before_mb": 690, "peak_mb": 695, "params": "(shape=(2,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpWhere4", "seconds": 0.038, "before_mb": 695, "peak_mb": 697, "params": "(shape=(4,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpWhere5", "seconds": 0.066, "before_mb": 697, "peak_mb": 703, "params": "(shape=(3,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpWhereGrad", "seconds": 0.259, "before_mb": 703, "peak_mb": 719}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLogSumExpZeros", "seconds": 0.232, "before_mb": 719, "peak_mb": 731}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLpmn0", "seconds": 0.017, "before_mb": 731, "peak_mb": 731, "params": "(l_max=2, shape=(5,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLpmn1", "seconds": 0.032, "before_mb": 731, "peak_mb": 731, "params": "(l_max=2, shape=(10,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLpmn2", "seconds": 0.009, "before_mb": 731, "peak_mb": 731, "params": "(l_max=1, shape=(5,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLpmn3", "seconds": 0.008, "before_mb": 731, "peak_mb": 731, "params": "(l_max=6, shape=(10,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLpmn4", "seconds": 0.018, "before_mb": 731, "peak_mb": 731, "params": "(l_max=3, shape=(5,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLpmn5", "seconds": 0.007, "before_mb": 731, "peak_mb": 731, "params": "(l_max=1, shape=(10,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLpmn6", "seconds": 0.013, "before_mb": 731, "peak_mb": 731, "params": "(l_max=6, shape=(5,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testLpmn7", "seconds": 0.005, "before_mb": 731, "peak_mb": 731, "params": "(l_max=3, shape=(10,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln0", "seconds": 0.676, "before_mb": 731, "peak_mb": 759, "params": "(shape=(), dtype=<class 'numpy.float32'>, d=1)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln1", "seconds": 1.033, "before_mb": 759, "peak_mb": 785, "params": "(shape=(4,), dtype=<class 'numpy.float32'>, d=1)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln2", "seconds": 1.59, "before_mb": 785, "peak_mb": 820, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, d=2)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln3", "seconds": 2.868, "before_mb": 820, "peak_mb": 847, "params": "(shape=(2, 1, 4), dtype=<class 'numpy.float32'>, d=1)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln4", "seconds": 2.649, "before_mb": 847, "peak_mb": 881, "params": "(shape=(3, 1), dtype=<class 'numpy.float32'>, d=1)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln5", "seconds": 0.484, "before_mb": 881, "peak_mb": 908, "params": "(shape=(4,), dtype=<class 'numpy.float32'>, d=5)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln6", "seconds": 0.206, "before_mb": 908, "peak_mb": 917, "params": "(shape=(1, 4), dtype=<class 'numpy.float32'>, d=5)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln7", "seconds": 0.485, "before_mb": 917, "peak_mb": 940, "params": "(shape=(3, 1), dtype=<class 'numpy.float32'>, d=5)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln8", "seconds": 2.845, "before_mb": 940, "peak_mb": 967, "params": "(shape=(2, 1, 4), dtype=<class 'numpy.float32'>, d=2)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testMultigammaln9", "seconds": 2.67, "before_mb": 967, "peak_mb": 996, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>, d=1)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues0", "seconds": 0.022, "before_mb": 996, "peak_mb": 996, "params": "(l_max=3, shape=(2,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues1", "seconds": 0.018, "before_mb": 996, "peak_mb": 996, "params": "(l_max=4, shape=(2,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues2", "seconds": 0.01, "before_mb": 996, "peak_mb": 996, "params": "(l_max=4, shape=(3,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues3", "seconds": 0.007, "before_mb": 996, "peak_mb": 996, "params": "(l_max=6, shape=(64,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues4", "seconds": 0.016, "before_mb": 996, "peak_mb": 996, "params": "(l_max=4, shape=(64,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues5", "seconds": 0.006, "before_mb": 996, "peak_mb": 996, "params": "(l_max=32, shape=(4,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues6", "seconds": 0.006, "before_mb": 996, "peak_mb": 996, "params": "(l_max=3, shape=(4,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues7", "seconds": 0.015, "before_mb": 996, "peak_mb": 996, "params": "(l_max=4, shape=(4,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues8", "seconds": 0.005, "before_mb": 996, "peak_mb": 996, "params": "(l_max=6, shape=(2,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testNormalizedLpmnValues9", "seconds": 0.005, "before_mb": 996, "peak_mb": 996, "params": "(l_max=32, shape=(64,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar1", "seconds": 2.185, "before_mb": 112, "peak_mb": 229, "params": "(n_zero_sv=0, degeneracy=0, geometric_spectrum=True, max_sv=10.0, shape=(12, 16), method='svd', side='right', nonzero_condition_number=0.1, dtype=<class 'numpy.float32'>, seed=1)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar3", "seconds": 3.622, "before_mb": 111, "peak_mb": 229, "params": "(n_zero_sv=0, degeneracy=0, geometric_spectrum=False, max_sv=0.1, shape=(128, 128), method='svd', side='right', nonzero_condition_number=100000, dtype=<class 'numpy.float32'>, seed=10)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar5", "seconds": 0.763, "before_mb": 110, "peak_mb": 229, "params": "(n_zero_sv=0, degeneracy=0, geometric_spectrum=True, max_sv=10.0, shape=(16, 12), method='svd', side='left', nonzero_condition_number=0.1, dtype=<class 'numpy.float32'>, seed=10)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar7", "seconds": 1.41, "before_mb": 229, "peak_mb": 270, "params": "(n_zero_sv=4, degeneracy=0, geometric_spectrum=False, max_sv=0.1, shape=(12, 16), method='svd', side='left', nonzero_condition_number=100000, dtype=<class 'numpy.complex64'>, seed=10)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY0", "seconds": 3.053, "before_mb": 110, "peak_mb": 222, "params": "(l_max=8, num_z=7, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY1", "seconds": 0.851, "before_mb": 222, "peak_mb": 237, "params": "(l_max=3, num_z=6, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY2", "seconds": 0.363, "before_mb": 237, "peak_mb": 244, "params": "(l_max=1, num_z=2, dtype=<class 'numpy.int8'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY3", "seconds": 0.193, "before_mb": 244, "peak_mb": 247, "params": "(l_max=1, num_z=2, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY4", "seconds": 0.41, "before_mb": 247, "peak_mb": 257, "params": "(l_max=3, num_z=6, dtype=<class 'numpy.int16'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY5", "seconds": 0.354, "before_mb": 257, "peak_mb": 267, "params": "(l_max=8, num_z=7, dtype=<class 'numpy.int8'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY6", "seconds": 0.287, "before_mb": 267, "peak_mb": 272, "params": "(l_max=3, num_z=6, dtype=<class 'numpy.int8'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY7", "seconds": 1.66, "before_mb": 272, "peak_mb": 289, "params": "(l_max=10, num_z=8, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY8", "seconds": 0.157, "before_mb": 289, "peak_mb": 291, "params": "(l_max=1, num_z=2, dtype=<class 'numpy.int16'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testSphHarmY9", "seconds": 0.379, "before_mb": 291, "peak_mb": 299, "params": "(l_max=10, num_z=8, dtype=<class 'numpy.int16'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testXLogX", "seconds": 0.203, "before_mb": 299, "peak_mb": 323}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testXlog1pyPropagatesNaNInY", "seconds": 0.078, "before_mb": 323, "peak_mb": 332}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testXlog1pyShouldReturnZero", "seconds": 0.022, "before_mb": 332, "peak_mb": 332}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testXlogyPropagatesNaNInY", "seconds": 0.026, "before_mb": 332, "peak_mb": 332}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testXlogyShouldReturnZero", "seconds": 0.01, "before_mb": 332, "peak_mb": 332}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_spence0", "seconds": 0.853, "before_mb": 332, "peak_mb": 365, "params": "(shape=(), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_spence1", "seconds": 0.936, "before_mb": 365, "peak_mb": 380, "params": "(shape=(4,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_spence2", "seconds": 1.3, "before_mb": 380, "peak_mb": 401, "params": "(shape=(2, 1, 4), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_spence3", "seconds": 0.552, "before_mb": 401, "peak_mb": 416, "params": "(shape=(3, 4), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_spence4", "seconds": 0.575, "before_mb": 416, "peak_mb": 427, "params": "(shape=(1, 4), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_spence5", "seconds": 0.739, "before_mb": 427, "peak_mb": 447, "params": "(shape=(3, 1), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq0", "seconds": 0.411, "before_mb": 447, "peak_mb": 463, "params": "(n_obs=3, n_codes=1, n_feats=(2,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq1", "seconds": 0.295, "before_mb": 463, "peak_mb": 470, "params": "(n_obs=3, n_codes=2, n_feats=(2,), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq2", "seconds": 0.336, "before_mb": 470, "peak_mb": 481, "params": "(n_obs=1, n_codes=2, n_feats=(2,), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq3", "seconds": 0.105, "before_mb": 481, "peak_mb": 486, "params": "(n_obs=1, n_codes=2, n_feats=(1,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq4", "seconds": 0.295, "before_mb": 485, "peak_mb": 500, "params": "(n_obs=5, n_codes=4, n_feats=(1,), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq5", "seconds": 0.15, "before_mb": 500, "peak_mb": 508, "params": "(n_obs=5, n_codes=2, n_feats=(), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq6", "seconds": 0.048, "before_mb": 508, "peak_mb": 510, "params": "(n_obs=5, n_codes=4, n_feats=(1,), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq7", "seconds": 0.119, "before_mb": 510, "peak_mb": 516, "params": "(n_obs=3, n_codes=4, n_feats=(2,), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq8", "seconds": 0.059, "before_mb": 516, "peak_mb": 518, "params": "(n_obs=1, n_codes=2, n_feats=(), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::test_vq9", "seconds": 0.042, "before_mb": 518, "peak_mb": 520, "params": "(n_obs=5, n_codes=2, n_feats=(), dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_scipy_test.py::LaxBackedScipyTests::testPolar6", "seconds": 3.494, "before_mb": 112, "peak_mb": 244, "params": "(n_zero_sv=4, degeneracy=0, geometric_spectrum=True, max_sv=0.1, shape=(128, 128), method='svd', side='left', nonzero_condition_number=100000, dtype=<class 'numpy.complex64'>, seed=1)"}

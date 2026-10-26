@@ -1,0 +1,169 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+____________________ LaxBackedScipyTests.test_cg_as_solve0 _____________________
+
+>   jtu.check_grads(
+        lambda x, y: lax_cg(posify(x), y),
+        (a, b), order=2, rtol=2e-1)
+
+tests/lax_scipy_sparse_test.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:374: in check_grads
+    _check_grads(f, args, order)
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:357: in _check_grads
+    _check_grads(partial(api.jvp, f), (args, args), order - 1, fwd_msg)
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:361: in _check_grads
+    _check_vjp(f, partial(api.vjp, f), args, err_msg=rev_msg)
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:311: in check_vjp
+    v_out, vjpfun = f_vjp(*args)
+tests/lax_scipy_sparse_test.py:152: in <lambda>
+    lambda x, y: lax_cg(posify(x), y),
+tests/lax_scipy_sparse_test.py:51: in solver
+    x, _ = func(A, b, atol=atol, M=M, **kwargs)
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/scipy/sparse/linalg.py:286: in cg
+    return _isolve(_cg_solve,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   b, x0 = api.device_put((b, x0))
+E   jax._src.source_info_util.JaxStackTraceBeforeTransformation: jax.errors.JaxRuntimeError: INVALID_ARGUMENT: CopyToDevice cannot accept the same source and destination devices
+E   
+E   The preceding stack trace is the source of the JAX operation that, once transformed by JAX, triggered the following exception.
+E   
+E   --------------------
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/scipy/sparse/linalg.py:197: JaxStackTraceBeforeTransformation
+
+The above exception was the direct cause of the following exception:
+
+self = <tests.lax_scipy_sparse_test.LaxBackedScipyTests testMethod=test_cg_as_solve0>
+shape = (2, 2), dtype = <class 'numpy.complex64'>
+
+    @jtu.sample_product(
+      shape=[(2, 2)],
+      dtype=float_types + complex_types,
+    )
+    def test_cg_as_solve(self, shape, dtype):
+    
+      rng = jtu.rand_default(self.rng())
+      a = rng(shape, dtype)
+      b = rng(shape[:1], dtype)
+    
+      expected = np.linalg.solve(posify(a), b)
+      actual = lax_cg(posify(a), b)
+      self.assertAllClose(expected, actual, atol=1e-5, rtol=1e-5)
+    
+      actual = jit(lax_cg)(posify(a), b)
+      self.assertAllClose(expected, actual, atol=1e-5, rtol=1e-5)
+    
+      # numerical gradients are only well defined if ``a`` is guaranteed to be
+      # positive definite.
+>     jtu.check_grads(
+          lambda x, y: lax_cg(posify(x), y),
+          (a, b), order=2, rtol=2e-1)
+
+tests/lax_scipy_sparse_test.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:374: in check_grads
+    _check_grads(f, args, order)
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:357: in _check_grads
+    _check_grads(partial(api.jvp, f), (args, args), order - 1, fwd_msg)
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:361: in _check_grads
+    _check_vjp(f, partial(api.vjp, f), args, err_msg=rev_msg)
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/public_test_util.py:318: in check_vjp
+    cotangent_out = conj(vjpfun(conj(cotangent)))
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/api.py:2054: in __call__
+    return self.fun(self.in_tree, self.out_tree, self.args_res,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/tree_util.py:520: in __call__
+    return self.fun(*args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/api.py:1853: in _vjp3_bwd
+    logs = ad.backward_pass3(jaxpr, True, residuals, primals_in, cts_flat)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/ad.py:370: in backward_pass3
+    cts_out = rule(cts_in, *map(up, primals), **eqn.params)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:753: in _device_put_transpose
+    ys = device_put_p.bind(*dp_ct, devices=srcs, srcs=devices,
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:685: in batched_device_put_impl
+    return _batched_device_put_impl(
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/dispatch.py:666: in _batched_device_put_impl
+    shard_arg_results = pxla.shard_args(dsa_shardings, [None] * len(dsa_xs),
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/interpreters/pxla.py:102: in shard_args
+    return handler([arg], shardings, layouts, copy_semantics)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+xs = [Array([0.09370995+0.01121655j, 0.02696448-0.02852235j], dtype=complex64)]
+shardings = [SingleDeviceSharding(device=METAL(id=0), memory_kind=device)]
+layouts = [None], copy_semantics = [ArrayCopySemantics.ALWAYS_COPY]
+
+    def _array_shard_arg(xs, shardings, layouts, copy_semantics):
+      util.test_event("_array_shard_arg")
+      results = []
+      batch_xs, batch_devs, batch_shardings, batch_indices = [], [], [], []
+      batch_cs = []
+    
+      for i, (x, sharding, layout, cs) in enumerate(
+          safe_zip(xs, shardings, layouts, copy_semantics)):
+        x._check_if_deleted()
+        try:
+          same_sharding = _sharding_indices_and_eq(x.sharding, sharding, len(x.shape))
+        except NotImplementedError:
+          same_sharding = _fallback_check_via_indices(x.sharding, sharding, x.shape)
+        same_layout = True if layout is None else x.format.layout == layout
+    
+        if not x.is_fully_addressable:
+          if same_sharding and same_layout:
+            results.append(x)
+          else:
+            raise NotImplementedError(
+                "Cannot reshard an input that is not fully addressable")
+        else:
+          devices = sharding._internal_device_list.addressable_device_list
+          if same_sharding and same_layout:
+            # Add a placeholder result that will be filled in later.
+            results.append(None)
+            # Accumulate arguments to `batched_copy_array_to_devices_with_sharding`.
+            batch_xs.append(x)
+            batch_devs.append(devices)
+            batch_shardings.append(sharding)
+            batch_indices.append(i)
+            batch_cs.append(cs)
+          # Resharding starts here:
+          elif not same_layout:
+            results.append(api.device_put(x, Format(layout, sharding)))
+          else:
+            indices = sharding.addressable_devices_indices_map(x.shape).values()
+            if x.sharding.num_devices == 1:
+              results.append(shard_device_array(x, devices, indices, sharding))
+            else:
+              results.append(
+                  shard_sharded_device_array_slow_path(x, devices, indices, sharding))
+    
+      util.test_event("batched_copy_array")
+>     copy_outs = xc.batched_copy_array_to_devices_with_sharding(
+          batch_xs, batch_devs, batch_shardings, batch_cs)
+E     jax.errors.JaxRuntimeError: INVALID_ARGUMENT: CopyToDevice cannot accept the same source and destination devices
+
+../../../.venv-shim/lib/python3.12/site-packages/jax/_src/array.py:1329: JaxRuntimeError
+=========================== short test summary info ============================
+FAILED tests/lax_scipy_sparse_test.py::LaxBackedScipyTests::test_cg_as_solve0
+1 failed, 90 deselected in 5.19s
+
+systemMemory: 8.00 GB
+maxCacheSize: 2.67 GB
+
+I0000 00:00:1793045218.188271 1357984 mps_client.h:209] MetalClient destroyed.
