@@ -174,30 +174,37 @@ def run(command, *, cwd=None, env=None, stdout=None, stderr=None, mem_limit=None
     start = last_progress = time.time()
     reason = None
     peak = 0
-    while proc.poll() is None:
-        time.sleep(poll)
-        now = time.time()
-        used = group_footprint(proc.pid)
-        peak = max(peak, used)
-        if probe and probe.stalled_for() > gpu_stall:
-            reason = f"GPU unresponsive for {probe.stalled_for():.0f}s (job monopolizing it)"
-        elif used > mem_limit:
-            reason = f"memory {used / 2**30:.1f} GB > limit {mem_limit / 2**30:.1f} GB"
-        elif free_memory_percent() < min_free_percent and used > mem_limit // 4:
-            reason = (f"system memory low ({free_memory_percent()}% free) while the job "
-                      f"holds {used / 2**30:.1f} GB")
-        elif timeout and now - start > timeout:
-            reason = f"timeout after {timeout:.0f}s"
-        elif idle_timeout and progress_path:
-            try:
-                last_progress = max(last_progress, os.path.getmtime(progress_path))
-            except OSError:
-                pass
-            if now - last_progress > idle_timeout:
-                reason = f"no progress for {idle_timeout:.0f}s (hung?)"
-        if reason:
-            kill_group(proc)
-            break
+    try:
+        while proc.poll() is None:
+            time.sleep(poll)
+            now = time.time()
+            used = group_footprint(proc.pid)
+            peak = max(peak, used)
+            if probe and probe.stalled_for() > gpu_stall:
+                reason = f"GPU unresponsive for {probe.stalled_for():.0f}s (job monopolizing it)"
+            elif used > mem_limit:
+                reason = f"memory {used / 2**30:.1f} GB > limit {mem_limit / 2**30:.1f} GB"
+            elif free_memory_percent() < min_free_percent and used > mem_limit // 4:
+                reason = (f"system memory low ({free_memory_percent()}% free) while the job "
+                          f"holds {used / 2**30:.1f} GB")
+            elif timeout and now - start > timeout:
+                reason = f"timeout after {timeout:.0f}s"
+            elif idle_timeout and progress_path:
+                try:
+                    last_progress = max(last_progress, os.path.getmtime(progress_path))
+                except OSError:
+                    pass
+                if now - last_progress > idle_timeout:
+                    reason = f"no progress for {idle_timeout:.0f}s (hung?)"
+            if reason:
+                kill_group(proc)
+                break
+    except BaseException:  # e.g. Ctrl-C: the job has its own session and would outlive the guard
+        kill_group(proc)
+        proc.wait()
+        if probe:
+            probe.close()
+        raise
     proc.wait()
     if probe:
         if reason and probe.stalled_for() > gpu_stall:  # report whether the GPU recovered

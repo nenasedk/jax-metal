@@ -77,7 +77,7 @@ refuses sizes above 256. Try new algorithms on the CPU backend before running th
 
 Benchmarks use `guard.py --no-throttle --` so that timings run at normal priority.
 
-`tests/jax_suite/run_jax_tests.py JAX_SRC OUT_DIR files...` runs JAX's own test files on METAL.
+`tests/jax_suite/run_jax_tests.py JAX_SRC OUT_DIR TEST...` runs JAX's own test files on METAL.
 It applies the guard to each pytest process and also sets:
 
 - a 120 s per-test timeout;
@@ -85,6 +85,38 @@ It applies the guard to each pytest process and also sets:
 - a soft memory limit that restarts pytest between tests.
 
 A test that crashes, hangs or exceeds the cap is recorded as `crashed`, and the run continues.
+Ctrl-C stops the run and kills its pytest process; finished results are kept.
+
+Setup: JAX's tests at the installed version, plus pytest.
+
+```sh
+git clone --depth 1 --branch jax-v0.12.0.1 --filter=blob:none --sparse \
+  https://github.com/jax-ml/jax ../jax-src && git -C ../jax-src sparse-checkout set tests
+.venv-shim/bin/pip install pytest pytest-timeout absl-py
+```
+
+The files hold about 17,500 tests at the default `JAX_NUM_GENERATED_CASES=10`, so run them in
+batches:
+
+| Option | Effect |
+|---|---|
+| `-k EXPR` | pytest `-k` expression, applied to every TEST |
+| `--shard I/N` | only the I-th of N contiguous slices (1-based) of what `-k` leaves; slices are stable between runs |
+| `--resume` | skip tests that already have a result in OUT_DIR (crashed ones too) |
+| `--budget-minutes M` | stop between tests after M minutes; continue later with `--resume` |
+
+A TEST is a file under `tests/` or a node id prefix (`linalg_test.py::NumpyLinalgTest`).
+Results go to `OUT_DIR/<file>.jsonl`, one record per test, merged across runs: re-running a
+test replaces its record. `OUT_DIR/summary.md` covers every result in OUT_DIR and groups
+failures by message; crash logs are in `OUT_DIR/<file>.jsonl.crash-N.txt`. Keep OUT_DIR under
+`shim/build/` (git-ignored), for example:
+
+```sh
+R=".venv-shim/bin/python shim/tests/jax_suite/run_jax_tests.py ../jax-src shim/build/jax-suite"
+$R fft_test.py random_test.py                     # 365 tests
+$R linalg_test.py --shard 1/4                     # 250 of 1,000
+$R lax_test.py --shard 3/10 --budget-minutes 30   # then the same command with --resume
+```
 
 `make test` needs test data from `tests/gen_artifact.py` in `shim/build/testdata`
 (`.venv-latest/bin/python shim/tests/gen_artifact.py shim/build/testdata`).
