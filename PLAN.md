@@ -125,6 +125,11 @@ Correctness and coverage:
   arithmetic have not been swept the same way.
 - **Newer-than-0.19.4 features**: JAX programs using ops newer than StableHLO 0.19.4, or CHLO ops
   XLA serializes as composites without a METAL rule (`ragged_dot`, CHLO `scan`), fail.
+  Requested result accuracies and dot algorithms are dropped rather than failing.
+- **No METAL lowering**: `eig`, `schur`, `hessenberg`, `geqp3`, `ormqr`, `tridiagonal` and
+  `tridiagonal_solve` (JAX has only LAPACK/cuSOLVER lowerings for them).
+- **Types MPS lacks**: int4/uint4 and float8 variants (besides float64/complex128); uint64
+  cannot be a program input or output.
 - **bfloat16 is emulated in float32 by the plugin**: results are now exact, but there is no
   memory or speed benefit from bfloat16.
 

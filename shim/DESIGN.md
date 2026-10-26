@@ -140,7 +140,9 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     bits. bfloat16 arithmetic itself was already exact.
   - `rng_bit_generator` (`jax.random` with `impl="rbg"`): MPS's random kernel aborts the process
     for this op whatever integer type it is asked for, so METAL generates the bits with
-    Threefry-2x32 in counter mode. JAX defines these bits as backend-specific.
+    Threefry-2x32 in counter mode. JAX defines these bits as backend-specific. Each word
+    depends only on the key and its position, so a larger draw starts with the smaller one,
+    as with XLA's generator (JAX's `vmap` of the `unsafe_rbg` PRNG relies on it).
   - Accuracy fixes for MPS elementwise functions, found by `tests/accuracy_sweep.py`: MPS computes
     `expm1`/`log1p` naively (1.5e7 ulps off near 0), returns 1 for `tanh(NaN)` and loses
     small-argument `tanh`, and returns a number for `sign(NaN)`. METAL uses Kahan/Goldberg
@@ -150,13 +152,21 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     float16 and bfloat16 inputs in float32 (their formulas assume its range: x² overflows
     float16 above 256), and `tanh` is exactly odd.
   - Multi-key sorts (`lexsort`, complex sorts): the plugin's sort takes one key, so n keys become
-    n stable passes.
+    n stable passes. `top_k` (any dtype, bool included) is a stable sort on an order-reversing
+    key; `approx_max_k`/`approx_min_k`, whose generic lowering is an `ApproxTopK` custom call,
+    are computed exactly, which is a valid result.
   - `dot_general` with an integer or bool result: MPS matmul takes floating point only, so these
     are exact multiply-and-sum (wrapping like XLA; bool is OR of ANDs), over slices of the
     contraction that keep the broadcast product within 4M elements. A contraction over a
     zero-length dimension returns zeros (it aborts MPSGraph).
   - Every rule traces with `jax_numpy_rank_promotion="allow"`: rules broadcast with jnp-style
     operators, and a user's `"raise"` (which JAX's own tests set) must not reject them.
+  - Requests StableHLO 0.19.4 cannot express are dropped instead of failing the program: a
+    requested result accuracy (`lax.exp(x, accuracy=...)`, StableHLO 1.9) and a dot algorithm
+    (`precision=DotAlgorithmPreset...`, StableHLO 1.6). MPS has one float32 implementation of
+    each function, and float32 products are at least as precise as any algorithm preset.
+  - User `lax.composite` ops lower to their decomposition: nothing in the plugin's pipeline
+    expands `stablehlo.composite`.
 - **Registers complex support** (`_complex.py`, `_complex_io.py`), see "Complex numbers" below.
 
 ### Complex numbers and FFT
@@ -174,7 +184,8 @@ functions into raw `real`/`imag` ops. `_complex.py`:
   within 5e-6 relative of NumPy's complex128, on the cuts too). `sqrt` keeps the sign of a zero
   imaginary part, which picks the side of each branch cut;
 - applies `pad`, `gather`, `scatter`, `scatter_add`/`sub` and `dynamic_update_slice` to real and
-  imaginary parts separately, and sorts complex keys as (real, imag);
+  imaginary parts separately, and sorts complex keys as (real, imag); `scatter_mul`
+  (`x.at[i].multiply`, `.power`) multiplies magnitudes and adds angles, as real scatters;
 - implements `fft`/`ifft`/`rfft`/`irfft` (any rank) as a radix-2 transform with a direct DFT for
   odd lengths, with twiddle factors computed on the GPU from exact integer angles.
 
@@ -329,9 +340,7 @@ an integer-based IEEE mode only if users need the float64 exponent range.
   magnitudes 1e-12…1e4 and special values.
 - `tests/jax_suite/run_jax_tests.py`: JAX's own test files on METAL, in batches, crash-tolerant.
 - `tests/jax_suite/cpu_rules_plugin.py`: JAX's own tests on the CPU backend through these
-  lowering rules (any machine, no GPU). On CPU through the rules, `fft_test`, `linalg_test`,
-  `random_test`, `lax_test`, `lax_autodiff_test`, `lax_control_flow_test`,
-  `lax_numpy_reducers_test`, `lax_numpy_operators_test`, `nn_test` and
-  `lax_scipy_special_functions_test` pass (9,165 tests) except two `lax.composite` tests that
-  expect `chlo.top_k`, which the `top_k` rule replaces by design; what remains on METAL is MPS
-  behavior.
+  lowering rules, lowering the way METAL does (any machine, no GPU), with
+  `tests/jax_suite/metal_check.py` predicting what the plugin could not compile. Over 19 of
+  JAX's test files, 13,915 tests pass and 29 fail, every failure explained
+  (`re/findings/jax-suite-cpu.md`); what remains for METAL is MPS behavior.

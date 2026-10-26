@@ -264,6 +264,21 @@ def _scatter(apply, operand, indices, updates, *, dimension_numbers, indices_are
                        apply(im, indices, up_im, dimension_numbers, **kwargs))
 
 
+def _scatter_mul(operand, indices, updates, *, dimension_numbers, indices_are_sorted,
+                 unique_indices, mode, **_):
+    # A complex product does not split into real and imaginary parts, but into magnitude
+    # and angle: magnitudes multiply (a real scatter_mul) and angles add (a real
+    # scatter_add), repeated indices included. The operand is then scaled by the result.
+    kwargs = dict(indices_are_sorted=indices_are_sorted, unique_indices=unique_indices, mode=mode)
+    real_dtype = np.finfo(operand.dtype).dtype
+    magnitude = lax.scatter_mul(lax.full(operand.shape, 1, real_dtype), indices, lax.abs(updates),
+                                dimension_numbers, **kwargs)
+    angle = lax.scatter_add(lax.full(operand.shape, 0, real_dtype), indices,
+                            lax.atan2(lax.imag(updates), lax.real(updates)), dimension_numbers,
+                            **kwargs)
+    return operand * lax.complex(magnitude * lax.cos(angle), magnitude * lax.sin(angle))
+
+
 def _sort(*operands, dimension, is_stable, num_keys):
     # Complex keys sort lexicographically by (real, imag), like jnp.sort_complex. The
     # plugin's SortConverter takes a single key, so n keys become n stable single-key
@@ -434,7 +449,8 @@ def _integer_dot_general(lhs, rhs, *, dimension_numbers, out_dtype):
 
 
 def _dot_general_rule():
-    """dot_general for METAL: empty contractions, complex operands and integer results.
+    """dot_general for METAL: empty contractions, complex operands, integer results and
+    dot algorithms (dropped).
 
     A contraction over a zero-length dimension aborts MPSGraph ("MLIR pass manager failed");
     its result is all zeros. Complex operands become real products (see _bilinear). Integer
@@ -447,6 +463,10 @@ def _dot_general_rule():
     def rule(ctx, lhs, rhs, *, dimension_numbers, **params):
         (lhs_contract, _), _ = dimension_numbers
         out = ctx.avals_out[0]
+        if isinstance(params.get("precision"), (lax.DotAlgorithm, lax.DotAlgorithmPreset)):
+            # A dot algorithm (StableHLO 1.6) cannot be serialized for the plugin; METAL
+            # computes in float32, at least as precise as any preset asks for.
+            params["precision"] = None
         if any(ctx.avals_in[0].shape[d] == 0 for d in lhs_contract):
             empty = mlir.lower_fun(lambda lhs, rhs: lax.full(out.shape, 0, out.dtype),
                                    multiple_results=False)
@@ -568,6 +588,7 @@ def register():
         (slicing.scatter_p, partial(_scatter, lax.scatter), False),
         (slicing.scatter_add_p, partial(_scatter, lax.scatter_add), False),
         (slicing.scatter_sub_p, partial(_scatter, lax.scatter_sub), False),
+        (slicing.scatter_mul_p, _scatter_mul, False),
         (convolution.conv_general_dilated_p, _bilinear(convolution.conv_general_dilated_p), False),
     ]
     for primitive, fn, multiple_results in splits:

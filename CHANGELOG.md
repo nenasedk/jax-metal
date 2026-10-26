@@ -13,6 +13,10 @@ First release: current JAX on Apple GPUs through Apple's unmodified `jax-metal` 
   integer and bool matmul, `reduce_precision`, exact bfloat16 conversions, the `rbg` and
   philox PRNGs, multi-key sorts, and accuracy fixes for MPS's `expm1`, `log1p`, `tanh` and
   `sign`.
+- Programs that request a result accuracy or a dot algorithm, or use `lax.composite`, compile
+  on METAL (the requests are dropped; composites run as their decomposition).
+  `approx_max_k`/`approx_min_k` are computed exactly; complex `x.at[i].multiply`/`.power`
+  work.
 - `python -m jax_plugins.metal_shim fetch` downloads and verifies Apple's plugin library from
   PyPI into a per-user cache; `info` shows what is installed.
 - Test tooling: a guard for GPU test runs (memory cap, GPU-stall detection, timeouts), a

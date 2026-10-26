@@ -138,6 +138,18 @@ def _cases():
         "mulhi_int16_uint8": (lambda x, y: (lax.mulhi(x.astype(jnp.int16), y.astype(jnp.int16)),
                                             lax.mulhi(x.astype(jnp.uint8), y.astype(jnp.uint8))),
                               i32(16) * 600, i32(16) * 600),
+        # From the METAL-emulation run: approximate and bool top-k, complex scatter-multiply,
+        # dropped accuracy and dot-algorithm requests, a user composite
+        "approx_max_k": (lambda x: lax.approx_max_k(x, 3), f(32)),
+        "top_k_bool": (lambda x: lax.top_k(x > 0, 3), f(16)),
+        "complex_scatter_mul": (lambda z: [part for out in (z.at[jnp.array([0, 2, 2])].multiply(z[:3]),)
+                                           for part in (out.real, out.imag)],
+                                (f(6) + 1j * f(6)).astype(np.complex64)),
+        "accuracy_dot_algorithm": (lambda x: (lax.exp(x, accuracy=lax.AccuracyMode.HIGHEST),
+                                              lax.dot(x[:4].reshape(2, 2), x[4:8].reshape(2, 2),
+                                                      precision=lax.DotAlgorithmPreset.F32_F32_F32)),
+                                   f(16)),
+        "user_composite": (lambda x: lax.composite(lambda y: jnp.sin(y) * 2, name="my.op")(x), f(8)),
     }
 
 

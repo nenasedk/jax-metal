@@ -50,12 +50,12 @@ Environment variables:
 - `tests/test_jax_e2e.py`: 16 of 16 cases match the CPU, including grad, conv, sort,
   scatter, control flow and an MLP training step.
 - `tests/probe_jax_ops.py`: 88 of 88 JAX ops pass, including linear algebra
-  (`cholesky`, `solve`, `inv`), FFT, `reduce_precision`, bfloat16 and the `rbg` PRNG; 10 newer
-  cases (NaN semantics, integer matmul, empty matrices, complex inverse functions) await a
-  GPU run.
+  (`cholesky`, `solve`, `inv`), FFT, `reduce_precision`, bfloat16 and the `rbg` PRNG; 15 newer
+  cases (NaN semantics, integer matmul, empty matrices, complex inverse functions,
+  approximate top-k, user composites, ...) await a GPU run.
 - JAX's own tests on METAL: `fft_test` passes (109, 2 skipped); `linalg_test` has run in part
-  (`build/jax-suite/`). Through the METAL lowering rules on CPU, ten of JAX's test files pass
-  (9,165 tests; see `tests/jax_suite/cpu_rules_plugin.py`).
+  (`build/jax-suite/`). On CPU lowering the way METAL does, 13,915 tests of 19 files pass and
+  29 fail for known reasons (`re/findings/jax-suite-cpu.md`).
 - `tests/accuracy_sweep.py`: every float32 elementwise op is within 18 ulps of the CPU (most
   within 1–4), with matching NaN/inf behavior.
 - complex64 works throughout: inside jitted functions (arithmetic, transcendental functions,
@@ -90,14 +90,23 @@ monopolizes them can still stall WindowServer, whose watchdog then restarts it a
 user out. Prevention lives in the lowering rules: for example, Jacobi eigendecomposition
 refuses sizes above 256. Try new algorithms on the CPU backend before running them on METAL.
 
-`tests/jax_suite/cpu_rules_plugin.py` does that for JAX's own tests: it registers the shim's
-lowering rules for the CPU backend, so the tests run through them on any machine (Linux
-included), with no GPU at risk. It finds tracing errors and wrong algorithms; crashes and
-accuracy problems specific to MPS still need METAL.
+`tests/jax_suite/cpu_rules_plugin.py` does that for JAX's own tests, on any machine (Linux
+included) and with no GPU at risk. It makes the CPU backend lower programs the way METAL
+does: the shim's rules replace XLA's CPU lowerings, primitives without a METAL rule fall back
+to JAX's generic lowering (or fail, as on METAL), and tests are selected as for METAL. It
+finds tracing errors and wrong algorithms in the rules.
+
+It also predicts what Apple's plugin could not compile. Every program goes through
+`tests/jax_suite/metal_check.py`, which serializes it to StableHLO 0.19.4 as jaxlib does for
+the plugin and flags ops without an MPS pattern, `stablehlo.composite`, unknown custom calls,
+types MPS lacks and newer-than-0.19.4 features. Crashes and accuracy problems inside MPS still
+need METAL.
 
 ```sh
-cd re/work/jax-src && JAX_PLATFORMS=cpu PYTHONPATH=../../../shim/tests/jax_suite \
+cd re/work/jax-src && JAX_PLATFORMS=cpu JAX_METAL_CHECK_LOG=/tmp/check.jsonl \
+  PYTHONPATH=../../../shim/tests/jax_suite \
   ../../../.venv-shim/bin/python -m pytest -q -p cpu_rules_plugin tests/linalg_test.py
+../../../.venv-shim/bin/python ../../../shim/tests/jax_suite/metal_check.py /tmp/check.jsonl
 ```
 
 Benchmarks use `guard.py --no-throttle --` so that timings run at normal priority.

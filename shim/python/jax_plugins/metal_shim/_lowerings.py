@@ -9,7 +9,9 @@ from functools import partial
 
 import numpy as np
 from jax import lax
+from jax._src import core
 from jax._src.interpreters import mlir
+from jax._src.lax import ann
 from jax._src.lax import lax as lax_internal
 from jax._src.lax import linalg
 from jax._src.lax import special
@@ -198,6 +200,8 @@ def _mulhi(x, y, **_):
         return lax.convert_element_type(shift(product, wide.type(8 * dtype.itemsize)), dtype)
     if dtype.itemsize != 4:
         raise NotImplementedError(f"METAL mulhi supports integers up to 32 bits, got {dtype}")
+    import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
+    x, y = jnp.broadcast_arrays(x, y)  # lax broadcasts size-1 dimensions; select below does not
     u32 = np.uint32
     a, b = lax.bitcast_convert_type(x, u32), lax.bitcast_convert_type(y, u32)
     mask, shift = u32(0xFFFF), u32(16)
@@ -246,7 +250,7 @@ def _count_leading_zeros(x, **_):
 
 def _order_reversing(x):
     """A monotonically decreasing map of x that never overflows."""
-    if np.issubdtype(x.dtype, np.integer):
+    if np.issubdtype(x.dtype, np.integer) or x.dtype == np.bool_:
         return lax.bitwise_not(x)
     return lax.neg(x)
 
@@ -260,6 +264,29 @@ def _top_k(operand, *, k, axis, **_):
                            is_stable=True)
     values = _order_reversing(keys)
     return [lax.slice_in_dim(values, 0, k, axis=axis), lax.slice_in_dim(order, 0, k, axis=axis)]
+
+
+def _approx_top_k_rule():
+    """approx_max_k/approx_min_k as an exact top-k, which is a valid result.
+
+    Their generic lowering is an ApproxTopK custom call, which XLA's CPU and GPU compilers
+    rewrite but the plugin does not know. The output has as many entries as JAX's shape for
+    it: k when aggregated, more otherwise.
+    """
+    import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
+
+    def exact(operand, *, n, dimension, is_max_k):
+        moved = jnp.moveaxis(operand, dimension, -1)
+        values, indices = lax.top_k(moved if is_max_k else _order_reversing(moved), n)
+        values = values if is_max_k else _order_reversing(values)
+        return [jnp.moveaxis(values, -1, dimension), jnp.moveaxis(indices, -1, dimension)]
+
+    def rule(ctx, operand, *, reduction_dimension, is_max_k, **_):
+        n = ctx.avals_out[0].shape[reduction_dimension]
+        return mlir.lower_fun(partial(exact, n=n, dimension=reduction_dimension, is_max_k=is_max_k),
+                              multiple_results=True)(ctx, operand)
+
+    return rule
 
 
 # --- Linear algebra --------------------------------------------------------------
@@ -806,8 +833,13 @@ def _rng_bit_generator(key, *, shape, dtype, algorithm, **_):
     words_per_value = 2 if dtype.itemsize == 8 else 1
     count = int(np.prod(shape, dtype=np.int64)) * words_per_value
     padded = count + (count % 2)  # threefry hashes pairs of words
-    counter = lax.iota(np.uint32, padded) + key[2]
-    words = threefry_2x32((key[0], lax.bitwise_xor(key[1], key[3])), counter)[:count]
+    counter = (lax.iota(np.uint32, padded) + key[2]).reshape(-1, 2)
+    # threefry_2x32 pairs the first half of its input with the second; pairing consecutive
+    # counters instead makes word i depend only on the key and i, so a larger draw starts
+    # with the smaller one, as with XLA's generator (JAX's vmap of unsafe_rbg relies on it).
+    hashed = threefry_2x32((key[0], lax.bitwise_xor(key[1], key[3])),
+                           lax.concatenate([counter[:, 0], counter[:, 1]], 0))
+    words = hashed.reshape(2, -1).T.reshape(-1)[:count]
     if words_per_value == 2:
         pairs = lax.convert_element_type(words.reshape(-1, 2), np.uint64)
         values = lax.bitwise_or(lax.shift_left(pairs[:, 0], np.uint64(32)), pairs[:, 1])
@@ -850,6 +882,31 @@ _UNARY = (
 )
 
 
+# --- Requests StableHLO 0.19.4 cannot express --------------------------------------------
+# jaxlib serializes programs for the plugin at StableHLO 0.19.4, and one feature it cannot
+# express there fails the whole program. A requested result accuracy (lax.exp(x,
+# accuracy=...), StableHLO 1.9) is dropped: MPS has one float32 implementation per function.
+# (The METAL rules for expm1, log1p, tanh and cbrt ignore it already.)
+
+_ACCURACY = (lax_internal.exp_p, lax_internal.exp2_p, lax_internal.log_p,
+             lax_internal.logistic_p, lax_internal.sin_p, lax_internal.cos_p,
+             lax_internal.tan_p, lax_internal.sqrt_p, lax_internal.rsqrt_p)
+
+
+def _without_accuracy(rule):
+    def wrapped(ctx, *args, **params):
+        if params.get("accuracy") is not None:
+            params["accuracy"] = None
+        return rule(ctx, *args, **params)
+    return wrapped
+
+
+def _inline_composite(*args, call_jaxpr, **_):
+    # The plugin does not expand stablehlo.composite (nothing in its pipeline does), so a
+    # user's lax.composite runs as its decomposition, as on backends without the op.
+    return core.jaxpr_as_fun(call_jaxpr)(*args)
+
+
 def _real_or_complex(primitive, real_rule, complex_fn):
     """One METAL rule that picks the complex implementation when any input is complex."""
     complex_rule = mlir.lower_fun(lambda *args, **_: complex_fn(*args), multiple_results=False)
@@ -869,12 +926,13 @@ def register():
     real_rules = {primitive: mlir.lower_fun(_in_float32(fn), multiple_results=False)
                   for primitive, fn in _UNARY}
     real_rules[lax_internal.sign_p] = _with_nan_passthrough(lax_internal.sign_p)
-    for primitive in set(real_rules) | set(_complex.ELEMENTWISE):
-        real_rule = real_rules.get(primitive) or _default_rule(primitive)
+    for primitive in set(real_rules) | set(_complex.ELEMENTWISE) | set(_ACCURACY):
+        real_rule = real_rules.get(primitive) or _without_accuracy(_default_rule(primitive))
         if primitive in _complex.ELEMENTWISE:
             real_rule = _real_or_complex(primitive, real_rule, _complex.ELEMENTWISE[primitive])
         _register_rule(primitive, real_rule)
     _register(lax_internal.top_k_p, _top_k, multiple_results=True)
+    _register_rule(ann.approx_top_k_p, _approx_top_k_rule())
     _register(lax_internal.mulhi_p, _mulhi)
     _register(linalg.cholesky_p, _cholesky)
     _register(linalg.triangular_solve_p, _triangular_solve)
@@ -885,4 +943,5 @@ def register():
     _register(lax_internal.reduce_precision_p, _reduce_precision)
     _register_rule(lax_internal.convert_element_type_p, _convert_element_type)
     _register(lax_internal.rng_bit_generator_p, _rng_bit_generator, multiple_results=True)
+    _register(lax_internal.composite_p, _inline_composite, multiple_results=True)
     _complex.register()
