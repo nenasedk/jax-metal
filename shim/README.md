@@ -75,6 +75,24 @@ on an 8 GB Mac and kernel-panicked it. The guard:
 - applies a timeout and lowers the command's priority;
 - runs one GPU job at a time.
 
+On the Mac, one command runs every GPU test below, then JAX's own test files, all through the
+guard. It resumes where it stopped and writes everything to `shim/build/gpu-session/`
+(`summary.md`, logs, JAX results) and `re/findings/`:
+
+```sh
+make -C shim gpu-session                             # ARGS="--budget-minutes 60", "--dry-run", ...
+git add -f shim/build/gpu-session && git add re/findings   # then commit the results
+```
+
+Its steps: setup (JAX's tests, pytest, C++ test data), install check and a first METAL
+computation, C++ load tests, the regression tests, the op probe, both accuracy sweeps, then
+JAX's test files within a time budget (default 120 minutes per run; run it again to
+continue), the heaviest tests last. A finished step is not repeated (`--redo NAME`);
+`--bench` adds the benchmarks. It stops early if METAL does not work at all, or if the GPU has
+not recovered after the guard killed a job.
+
+The same steps by hand:
+
 ```sh
 G=".venv-shim/bin/python shim/tests/guard.py --"
 make -C shim test                                    # C++ load tests (plugin alone, then via shim)
@@ -83,6 +101,7 @@ $G .venv-shim/bin/python shim/tests/test_phase3.py   # linear algebra, precision
 $G .venv-shim/bin/python shim/tests/test_complex.py  # complex numbers and FFT
 $G .venv-shim/bin/python shim/tests/accuracy_sweep.py --strict
 $G .venv-shim/bin/python shim/tests/probe_jax_ops.py re/findings/jax-op-probe.md
+$G .venv-shim/bin/python shim/tests/accuracy_extended.py re/findings/accuracy-extended.md
 ```
 
 Killing a job does not free the GPU or the Metal compiler service immediately. A job that
@@ -139,6 +158,10 @@ batches:
 | `--resume` | skip tests that already have a result in OUT_DIR (crashed ones too) |
 | `--retry-failures` | like `--resume`, but run failed and crashed tests again (after a fix) |
 | `--budget-minutes M` | stop between tests after M minutes; continue later with `--resume` |
+| `--only FILE`, `--exclude FILE` | run only, or skip, the node ids listed in FILE (one per line) |
+| `--cpu [--workers N]` | run on the CPU backend in METAL emulation, on any machine (N pytest-xdist workers) |
+| `--compare-cpu CPU_DIR` | label each failure in `summary.md` by the same test's result in a `--cpu` run |
+| `--summary-only` | only rewrite `OUT_DIR/summary.md` |
 
 A TEST is a file under `tests/` or a node id prefix (`linalg_test.py::NumpyLinalgTest`).
 Results go to `OUT_DIR/<file>.jsonl`, one record per test, merged across runs: re-running a
@@ -151,6 +174,17 @@ R=".venv-shim/bin/python shim/tests/jax_suite/run_jax_tests.py re/work/jax-src s
 $R fft_test.py random_test.py                     # 365 tests
 $R linalg_test.py --shard 1/4                     # 250 of 1,000
 $R lax_test.py --shard 3/10 --budget-minutes 30   # then the same command with --resume
+```
+
+`shim/build/jax-suite-cpu/` holds the reference `--cpu` run of the 19 files: per-test results,
+predicted METAL issues (`*.check.jsonl`) and costs (`*.cost.jsonl`: seconds, memory, generated
+parameters). The GPU session compares METAL's results with it and takes its heaviest tests
+from it. To refresh it (Linux is fine):
+
+```sh
+.venv-shim/bin/pip install pytest-xdist
+.venv-shim/bin/python shim/tests/jax_suite/run_jax_tests.py re/work/jax-src shim/build/jax-suite-cpu \
+  --cpu --workers 3                  # no TEST: the 19 files (DEFAULT_FILES in run_jax_tests.py)
 ```
 
 `make test` needs test data from `tests/gen_artifact.py` in `shim/build/testdata`

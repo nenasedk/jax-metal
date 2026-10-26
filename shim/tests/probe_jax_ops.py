@@ -119,6 +119,11 @@ def _cases():
         "nan_max_min": (lambda x: (x.max(), x.min(), jnp.maximum(x, 0.0), jnp.minimum(x, 0.0),
                                    jnp.argmax(x), jnp.argmin(x)),
                         np.array([1, np.nan, -2, 3], np.float32)),
+        "nan_pool_clip_cummax": (lambda x: (
+            lax.reduce_window(x, -jnp.inf, lax.max, (2,), (1,), "VALID"),
+            lax.reduce_window(x, jnp.inf, lax.min, (2,), (1,), "VALID"),
+            jnp.clip(x, -1, 1), lax.cummax(x), lax.cummin(x)),
+            np.array([1, np.nan, -2, 3], np.float32)),
         "divide_by_zero": (lambda x: x / jnp.zeros_like(x), np.array([1, -1, 0], np.float32)),
         "singular_inv_cond": (lambda x: (jnp.linalg.inv(x), jnp.linalg.cond(x, np.inf),
                                          jnp.linalg.cond(x, 1)), np.zeros((2, 2), np.float32)),

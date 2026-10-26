@@ -18,10 +18,12 @@
 3. **CPU checks** (any machine): JAX's tests through the METAL rules on CPU
    (`shim/tests/jax_suite/cpu_rules_plugin.py`, see `shim/README.md`). Only known failures may
    remain.
-4. **GPU validation** on an Apple-silicon Mac, every command through `shim/tests/guard.py`:
-   `make -C shim test`, `test_jax_e2e.py`, `test_phase3.py`, `test_complex.py`,
-   `accuracy_sweep.py --strict`, `probe_jax_ops.py` (all PASS), and JAX's test files with
-   `run_jax_tests.py`. Commit the probe results and `shim/build/jax-suite/summary.md`.
+4. **GPU validation** on an Apple-silicon Mac: `make -C shim gpu-session` (repeat until it
+   has finished every step). It runs `make test`, `test_jax_e2e.py`, `test_phase3.py`,
+   `test_complex.py`, the op probe and both accuracy sweeps (all must pass), then JAX's test
+   files, every GPU job through `shim/tests/guard.py`. Review
+   `shim/build/gpu-session/jax-suite/summary.md`: failures labeled "also on CPU" are the
+   rules' to fix. Commit `shim/build/gpu-session` (`git add -f`) and `re/findings`.
 5. **Build and smoke-test locally** on the Mac:
 
    ```sh

@@ -19,6 +19,9 @@ WindowServer, waiting on the same GPU, was killed by its watchdog. The guard pre
 - one GPU job at a time, through a lock file shared by all guarded commands.
 
 Exit status is the command's own, or 137 when the guard killed it (the reason goes to stderr).
+
+Elsewhere (Linux), for CPU-only runs such as the METAL emulation of JAX's tests, memory is
+read from /proc and there is no GPU probe; the other protections apply unchanged.
 """
 
 import argparse
@@ -36,49 +39,75 @@ import time
 LOCK_PATH = os.path.join(tempfile.gettempdir(), "jax-metal-gpu.lock")
 KILLED = 137
 GPU_STALL_SECONDS = 5.0  # a killed job can hold the GPU ~6 s more; WindowServer gives up at 40 s
+GPU_LOST = "GPU still unresponsive"  # in the kill reason when the GPU did not recover
 SHIM_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROBE_SOURCE = os.path.join(SHIM_DIR, "tests", "gpu_probe.m")
 PROBE_BINARY = os.path.join(SHIM_DIR, "build", "gpu_probe")
 
-_libc = ctypes.CDLL(ctypes.util.find_library("c"), use_errno=True)
-_libproc = ctypes.CDLL("/usr/lib/libproc.dylib", use_errno=True)
+MACOS = sys.platform == "darwin"
 
+if MACOS:
+    _libc = ctypes.CDLL(ctypes.util.find_library("c"), use_errno=True)
+    _libproc = ctypes.CDLL("/usr/lib/libproc.dylib", use_errno=True)
 
-def _sysctl(name, ctype):
-    value, size = ctype(), ctypes.c_size_t(ctypes.sizeof(ctype))
-    if _libc.sysctlbyname(name.encode(), ctypes.byref(value), ctypes.byref(size), None, 0):
-        raise OSError(ctypes.get_errno(), f"sysctl {name}")
-    return value
+    def _sysctl(name, ctype):
+        value, size = ctype(), ctypes.c_size_t(ctypes.sizeof(ctype))
+        if _libc.sysctlbyname(name.encode(), ctypes.byref(value), ctypes.byref(size), None, 0):
+            raise OSError(ctypes.get_errno(), f"sysctl {name}")
+        return value
 
+    def physical_memory():
+        return _sysctl("hw.memsize", ctypes.c_uint64).value
 
-def physical_memory():
-    return _sysctl("hw.memsize", ctypes.c_uint64).value
+    def free_memory_percent():
+        """kern.memorystatus_level: the kernel's estimate of available memory, in percent."""
+        return _sysctl("kern.memorystatus_level", ctypes.c_uint32).value
 
+    class _RusageInfoV0(ctypes.Structure):
+        _fields_ = [("uuid", ctypes.c_uint8 * 16)] + [(name, ctypes.c_uint64) for name in (
+            "user_time", "system_time", "pkg_idle_wkups", "interrupt_wkups", "pageins",
+            "wired_size", "resident_size", "phys_footprint", "proc_start_abstime",
+            "proc_exit_abstime")]
 
-def free_memory_percent():
-    """kern.memorystatus_level: the kernel's estimate of available memory, in percent."""
-    return _sysctl("kern.memorystatus_level", ctypes.c_uint32).value
+    def footprint(pid):
+        """Physical footprint of one process in bytes (0 if it is gone)."""
+        info = _RusageInfoV0()
+        if _libproc.proc_pid_rusage(pid, 0, ctypes.byref(info)):
+            return 0
+        return info.phys_footprint
 
+    def group_pids(pgid):
+        buffer = (ctypes.c_int * 4096)()
+        count = _libproc.proc_listpgrppids(pgid, buffer, ctypes.sizeof(buffer))  # a pid count
+        return [pid for pid in buffer[:max(count, 0)] if pid > 0]
 
-class _RusageInfoV0(ctypes.Structure):
-    _fields_ = [("uuid", ctypes.c_uint8 * 16)] + [(name, ctypes.c_uint64) for name in (
-        "user_time", "system_time", "pkg_idle_wkups", "interrupt_wkups", "pageins",
-        "wired_size", "resident_size", "phys_footprint", "proc_start_abstime",
-        "proc_exit_abstime")]
+else:  # Linux, CPU-only runs: /proc
+    def physical_memory():
+        return os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES")
 
+    def free_memory_percent():
+        with open("/proc/meminfo", encoding="ascii") as handle:
+            info = dict(line.split(":", 1) for line in handle)
+        return int(100 * int(info["MemAvailable"].split()[0]) / int(info["MemTotal"].split()[0]))
 
-def footprint(pid):
-    """Physical footprint of one process in bytes (0 if it is gone)."""
-    info = _RusageInfoV0()
-    if _libproc.proc_pid_rusage(pid, 0, ctypes.byref(info)):
-        return 0
-    return info.phys_footprint
+    def footprint(pid):
+        """Resident set size of one process in bytes (0 if it is gone)."""
+        try:
+            with open(f"/proc/{pid}/statm", encoding="ascii") as handle:
+                return int(handle.read().split()[1]) * os.sysconf("SC_PAGE_SIZE")
+        except OSError:
+            return 0
 
-
-def group_pids(pgid):
-    buffer = (ctypes.c_int * 4096)()
-    count = _libproc.proc_listpgrppids(pgid, buffer, ctypes.sizeof(buffer))  # returns a pid count
-    return [pid for pid in buffer[:max(count, 0)] if pid > 0]
+    def group_pids(pgid):
+        pids = []
+        for name in os.listdir("/proc"):
+            if name.isdigit():
+                try:
+                    if os.getpgid(int(name)) == pgid:
+                        pids.append(int(name))
+                except OSError:
+                    pass
+        return pids
 
 
 def group_footprint(pgid):
@@ -97,13 +126,16 @@ def default_mem_limit():
 
 
 class GpuLock:
-    """Exclusive lock so that guarded GPU jobs never run concurrently."""
+    """Exclusive lock so that guarded GPU jobs never run concurrently (a no-op if disabled)."""
 
-    def __init__(self, wait=True):
+    def __init__(self, wait=True, enabled=True):
         self.wait = wait
+        self.enabled = enabled
         self.handle = None
 
     def __enter__(self):
+        if not self.enabled:
+            return self
         self.handle = open(LOCK_PATH, "a+")
         try:
             fcntl.flock(self.handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
@@ -121,6 +153,8 @@ class GpuLock:
         return self
 
     def __exit__(self, *exc):
+        if not self.enabled:
+            return
         self.handle.truncate(0)
         fcntl.flock(self.handle, fcntl.LOCK_UN)
         self.handle.close()
@@ -165,7 +199,7 @@ def run(command, *, cwd=None, env=None, stdout=None, stderr=None, mem_limit=None
     modification time of progress_path, which a test plugin updates as it goes.
     """
     mem_limit = mem_limit or default_mem_limit()
-    probe = GpuProbe() if gpu_stall else None
+    probe = GpuProbe() if gpu_stall and MACOS else None  # gpu_probe needs Metal
     if throttle and os.path.exists("/usr/sbin/taskpolicy"):
         command = ["/usr/sbin/taskpolicy", "-c", "utility"] + list(command)
     proc = subprocess.Popen(command, cwd=cwd, env=env, stdout=stdout, stderr=stderr,
@@ -212,7 +246,7 @@ def run(command, *, cwd=None, env=None, stdout=None, stderr=None, mem_limit=None
             while probe.stalled_for() > 1 and time.time() < deadline:
                 time.sleep(0.25)
             reason += ("; GPU recovered after the kill" if probe.stalled_for() <= 1
-                       else "; GPU still unresponsive 30s after the kill")
+                       else f"; {GPU_LOST} 30s after the kill")
         run.worst_gpu_ms = probe.worst_ms
         probe.close()
     run.peak_bytes = peak

@@ -1,6 +1,6 @@
 """Accuracy of METAL beyond elementwise float32: reductions, matmul, conv, f16/bf16, binary ops.
 
-    .venv-shim/bin/python shim/tests/accuracy_extended.py [OUT.md] [--strict]
+    .venv-shim/bin/python shim/tests/accuracy_extended.py [OUT.md] [--strict] [--device NAME]
 
 Every check measures METAL's error against a float64 (NumPy) reference and compares it with
 the CPU backend's error on the same float32/float16/bfloat16 inputs. A check is flagged when
@@ -16,7 +16,9 @@ import ml_dtypes
 import numpy as np
 from jax import lax
 
-METAL, CPU = jax.devices("METAL")[0], jax.devices("cpu")[0]
+# --device picks the device under test (default METAL; cpu to dry-run the script anywhere).
+DEVICE = sys.argv[sys.argv.index("--device") + 1] if "--device" in sys.argv else "METAL"
+METAL, CPU = jax.devices(DEVICE)[0], jax.devices("cpu")[0]
 RNG = np.random.default_rng(0)
 RATIO = 8.0
 rows = []

@@ -1,6 +1,6 @@
 """Time individual ops on METAL vs the CPU backend (median of repeated jitted calls).
 
-    .venv-shim/bin/python shim/benchmarks/op_bench.py OUT.json
+    .venv-shim/bin/python shim/benchmarks/op_bench.py OUT.json [--device NAME]
 
 Covers ops the shim implements with METAL lowering rules (cholesky, triangular_solve, FFT,
 cumsum, sort) next to native ones (matmul, conv) for reference.
@@ -63,8 +63,8 @@ def cases():
     return out
 
 
-def main(out_path):
-    metal, cpu = jax.devices("METAL")[0], jax.devices("cpu")[0]
+def main(out_path, device_name):
+    metal, cpu = jax.devices(device_name)[0], jax.devices("cpu")[0]
     results = {}
     for name, (fn, args) in cases().items():
         row = {}
@@ -83,4 +83,5 @@ def main(out_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    # --device picks the device under test (default METAL; cpu to dry-run the script anywhere)
+    main(sys.argv[1], sys.argv[sys.argv.index("--device") + 1] if "--device" in sys.argv else "METAL")

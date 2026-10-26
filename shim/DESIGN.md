@@ -167,6 +167,13 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     each function, and float32 products are at least as precise as any algorithm preset.
   - User `lax.composite` ops lower to their decomposition: nothing in the plugin's pipeline
     expands `stablehlo.composite`.
+  - NaN in `max`, `min`, `clamp`, `reduce_max`/`reduce_min`, `argmax`/`argmin` and max/min
+    pooling: XLA propagates it, the plugin does not. It builds `mps.reduction_max`/`min` with
+    their `propagate_nans` flag off and maps the elementwise ops onto MPS's non-propagating
+    `maximum`/`minimum`/`clamp` (`re/findings/mps-nan-semantics.md`, from the disassembly);
+    `cond` of a singular matrix came out 0 instead of inf. For floating-point inputs the rules
+    keep JAX's lowering and put NaN back where an input has one (a compare and a select, or
+    one extra reduction).
 - **Registers complex support** (`_complex.py`, `_complex_io.py`), see "Complex numbers" below.
 
 ### Complex numbers and FFT
@@ -311,10 +318,10 @@ an integer-based IEEE mode only if users need the float64 exponent range.
 7. **Single process, single device.** The plugin exposes one device. Multi-process or collective
    APIs are out of scope.
 8. **Licensing.** The shim and its tools are new code under Apache-2.0 (`LICENSE`), as are the
-   vendored PJRT headers
-   (see `third_party/*/SOURCE`). Apple's binary is not redistributed: each user fetches it from
-   PyPI. Its wheel carries an MIT-style license file (Apple copyright) while its metadata says
-   "All rights reserved", so bundling it would need that resolved first.
+   vendored PJRT headers (see `third_party/*/SOURCE`). Apple's binary is not redistributed:
+   each user fetches it from PyPI. Its wheel carries an MIT-style license file (Apple
+   copyright) while its metadata says "All rights reserved", so bundling it would need that
+   resolved first.
 
 9. **Remaining gaps** (`re/findings/jax-op-probe.md`: 88 of 88 probed JAX ops pass):
    - float64 (see below);
@@ -339,7 +346,14 @@ an integer-based IEEE mode only if users need the float64 exponent range.
   transfer to CPU, donation, no buffer leak over 500 calls).
 - `tests/accuracy_sweep.py --strict`: every float32 elementwise op against the CPU across
   magnitudes 1e-12…1e4 and special values.
+- `tests/accuracy_extended.py`: reductions, matmul, convolutions, float16/bfloat16 and binary
+  ops against a float64 reference, flagged where METAL is clearly worse than XLA's CPU.
 - `tests/jax_suite/run_jax_tests.py`: JAX's own test files on METAL, in batches, crash-tolerant.
+  With `--cpu` it runs the same files in METAL emulation (below) and records each test's
+  duration, memory and parameters; with `--compare-cpu`, its summary labels each METAL
+  failure "METAL only" (MPS behavior) or "also on CPU" (the rules, or the test).
+- `tests/gpu_session.py` (`make gpu-session`): all of the above on METAL in one resumable
+  command, every GPU job under `tests/guard.py`, JAX's heaviest tests (by the CPU run) last.
 - `tests/jax_suite/cpu_rules_plugin.py`: JAX's own tests on the CPU backend through these
   lowering rules, lowering the way METAL does (any machine, no GPU), with
   `tests/jax_suite/metal_check.py` predicting what the plugin could not compile. Over 19 of

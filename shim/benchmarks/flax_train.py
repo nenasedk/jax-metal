@@ -1,10 +1,11 @@
 """Train Flax (Linen) models with Optax on METAL and on the CPU and compare.
 
-    .venv-flax/bin/python shim/benchmarks/flax_train.py OUT.json [--steps N]
+    .venv-flax/bin/python shim/benchmarks/flax_train.py OUT.json [--steps N] [--device NAME]
 
 Both devices start from the same parameters and data, so their loss curves should track each
 other closely (they are not bit-identical: float32 reductions are ordered differently).
-Reports the largest relative gap between the curves, final losses and step times.
+Reports the largest relative gap between the curves, final losses and step times. --device
+picks the device under test (default METAL; cpu to dry-run the script anywhere).
 """
 
 import json
@@ -100,21 +101,23 @@ def train(model, x, y, device, steps):
     return {"compile_s": compile_s, "step_ms_median": 1e3 * float(np.median(times)), "losses": losses}
 
 
-def main(out_path, steps):
-    results = {"jax": jax.__version__, "steps": steps}
+def main(out_path, steps, device_name):
+    results = {"jax": jax.__version__, "steps": steps, "device": device_name}
     for name, model in (("cnn", CNN()), ("tiny_gpt", TinyGPT())):
         x, y = data(name, np.random.default_rng(0))
-        runs = {d: train(model, x, y, jax.devices(d)[0], steps) for d in ("METAL", "cpu")}
-        metal, cpu = np.array(runs["METAL"]["losses"]), np.array(runs["cpu"]["losses"])
-        gap = float(np.max(np.abs(metal - cpu) / np.maximum(np.abs(cpu), 1e-3)))
+        runs = {"device": train(model, x, y, jax.devices(device_name)[0], steps),
+                "cpu": train(model, x, y, jax.devices("cpu")[0], steps)}
+        device, cpu = np.array(runs["device"]["losses"]), np.array(runs["cpu"]["losses"])
+        gap = float(np.max(np.abs(device - cpu) / np.maximum(np.abs(cpu), 1e-3)))
         results[name] = {"runs": runs, "max_relative_loss_gap": gap}
-        print(f"{name:9} loss {cpu[0]:.3f} -> metal {metal[-1]:.4f} / cpu {cpu[-1]:.4f}  max gap {gap:.2e}  "
-              f"step metal {runs['METAL']['step_ms_median']:.2f} ms / cpu {runs['cpu']['step_ms_median']:.2f} ms",
-              flush=True)
+        print(f"{name:9} loss {cpu[0]:.3f} -> {device_name} {device[-1]:.4f} / cpu {cpu[-1]:.4f}  "
+              f"max gap {gap:.2e}  step {device_name} {runs['device']['step_ms_median']:.2f} ms / "
+              f"cpu {runs['cpu']['step_ms_median']:.2f} ms", flush=True)
     with open(out_path, "w", encoding="utf-8") as handle:
         json.dump(results, handle, indent=1)
 
 
 if __name__ == "__main__":
     steps = int(sys.argv[sys.argv.index("--steps") + 1]) if "--steps" in sys.argv else 100
-    main(sys.argv[1], steps)
+    device_name = sys.argv[sys.argv.index("--device") + 1] if "--device" in sys.argv else "METAL"
+    main(sys.argv[1], steps, device_name)

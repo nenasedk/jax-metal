@@ -15,6 +15,7 @@ from jax._src.lax import ann
 from jax._src.lax import lax as lax_internal
 from jax._src.lax import linalg
 from jax._src.lax import special
+from jax._src.lax import windowed_reductions
 from jax._src.lax.control_flow import loops
 from jax._src.random.threefry2x32 import threefry_2x32
 
@@ -92,6 +93,94 @@ def _with_nan_passthrough(primitive):
     def rule(ctx, x, **params):
         y, = default(ctx, x, **params)
         return fix(ctx.replace(avals_in=[ctx.avals_in[0], ctx.avals_out[0]]), x, y)
+
+    return rule
+
+
+# --- NaN propagation in max/min ------------------------------------------------------
+# XLA's max and min (elementwise, reductions, windows), clamp and argmax/argmin propagate NaN.
+# The plugin's do not (re/findings/mps-nan-semantics.md): it builds mps.reduction_max/min with
+# their propagate_nans flag off, and maps max, min and clamp one-to-one onto mps.maximum,
+# minimum and clamp, MPSGraph's non-propagating forms (PyTorch's MPS backend moved to the
+# ...NaNPropagation variants for this reason). On METAL, cond of a singular matrix came out 0
+# instead of inf. These rules run JAX's lowering, then put NaN back where an input had it;
+# integer inputs are left alone.
+
+def _is_floating_aval(aval):
+    return isinstance(aval.dtype, np.dtype) and np.issubdtype(aval.dtype, np.floating)
+
+
+def _nan_propagating(primitive, fix_fn):
+    """JAX's lowering of `primitive`, then fix_fn(*inputs, output) for floating inputs."""
+    default = _default_rule(primitive)
+
+    def rule(ctx, *args, **params):
+        out = default(ctx, *args, **params)
+        if not any(_is_floating_aval(aval) for aval in ctx.avals_in):
+            return out
+        fix = mlir.lower_fun(partial(fix_fn, **params), multiple_results=False)
+        # A fresh context: a lower_fun-based default (argmax) has set this one's tokens.
+        fix_ctx = ctx.replace(avals_in=[*ctx.avals_in, ctx.avals_out[0]], tokens_out=None)
+        return fix(fix_ctx, *args, *out)
+
+    return rule
+
+
+def _first_nan(*inputs_and_output, **_):
+    """The first NaN input, broadcast to the output, wherever there is one; else the output."""
+    import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
+    *inputs, out = inputs_and_output
+    for x in reversed(inputs):
+        x = jnp.broadcast_to(x, out.shape)
+        out = lax.select(lax.ne(x, x), x, out)
+    return out
+
+
+def _clamp_nan(low, x, high, out, **_):
+    return _first_nan(x, out)
+
+
+def _reduction_nan(x, out, *, axes, **_):
+    has_nan = lax.reduce_or(lax.ne(x, x), axes)
+    return lax.select(has_nan, lax.full_like(out, np.nan), out)
+
+
+def _arg_reduction_nan(x, out, *, axes, index_dtype, **_):
+    # The index of the first NaN, where there is one (argmax of the 0/1 NaN mask).
+    is_nan = lax.ne(x, x)
+    first = lax.argmax(lax.convert_element_type(is_nan, np.int32), axes[0], index_dtype)
+    return lax.select(lax.reduce_or(is_nan, axes), first, out)
+
+
+_NAN_PROPAGATING = (
+    (lax_internal.max_p, _first_nan), (lax_internal.min_p, _first_nan),
+    (lax_internal.clamp_p, _clamp_nan),
+    (lax_internal.reduce_max_p, _reduction_nan), (lax_internal.reduce_min_p, _reduction_nan),
+    (lax_internal.argmax_p, _arg_reduction_nan), (lax_internal.argmin_p, _arg_reduction_nan),
+)
+
+
+def _window_nan_propagating(primitive):
+    """Max/min pooling, then NaN for every window that holds one: the max pooling of the
+    0/1 NaN mask (NaN-free, so MPS's max is exact), lowered directly so that it does not
+    come back to this rule."""
+    default = _default_rule(primitive)
+    max_pool = _default_rule(windowed_reductions.reduce_window_max_p)
+    nan_mask = mlir.lower_fun(lambda x: lax.convert_element_type(lax.ne(x, x), x.dtype),
+                              multiple_results=False)
+    with_nan = mlir.lower_fun(
+        lambda has_nan, out: lax.select(lax.gt(has_nan, lax.full_like(has_nan, 0)),
+                                        lax.full_like(out, np.nan), out),
+        multiple_results=False)
+
+    def rule(ctx, x, **window):
+        out = default(ctx, x, **window)
+        if not _is_floating_aval(ctx.avals_in[0]):
+            return out
+        mask = nan_mask(ctx.replace(avals_out=ctx.avals_in, tokens_out=None), x)
+        has_nan = max_pool(ctx, *mask, **window)
+        pooled = ctx.avals_out[0]
+        return with_nan(ctx.replace(avals_in=[pooled, pooled], tokens_out=None), *has_nan, *out)
 
     return rule
 
@@ -944,4 +1033,9 @@ def register():
     _register_rule(lax_internal.convert_element_type_p, _convert_element_type)
     _register(lax_internal.rng_bit_generator_p, _rng_bit_generator, multiple_results=True)
     _register(lax_internal.composite_p, _inline_composite, multiple_results=True)
+    for primitive, fix_fn in _NAN_PROPAGATING:
+        _register_rule(primitive, _nan_propagating(primitive, fix_fn))
+    for primitive in (windowed_reductions.reduce_window_max_p,
+                      windowed_reductions.reduce_window_min_p):
+        _register_rule(primitive, _window_nan_propagating(primitive))
     _complex.register()
