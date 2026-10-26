@@ -127,6 +127,17 @@ def _cases():
         "linalg_empty": (lambda x: (jnp.linalg.inv(x), jnp.linalg.eigh(x)[0],
                                     jnp.linalg.cholesky(x)), np.zeros((0, 0), np.float32)),
         "qr_empty": (lambda x: jnp.linalg.qr(x, mode="complete"), np.zeros((2, 0), np.float32)),
+        # From lax_test: complex inverse functions (as real and imaginary parts), float16
+        # inverse hyperbolics and tanh, narrow mulhi
+        "complex_inverse_trig": (lambda z: [part for fn in (jnp.arcsin, jnp.arccos, jnp.arctan,
+                                                            jnp.arcsinh, jnp.arccosh, jnp.arctanh)
+                                            for part in (fn(z).real, fn(z).imag)],
+                                 (f(16) + 1j * f(16)).astype(np.complex64)),
+        "float16_asinh_acosh_tanh": (lambda x: (jnp.arcsinh(x), jnp.arccosh(jnp.abs(x) + 1),
+                                                jnp.tanh(x)), (f(16) * 300).astype(np.float16)),
+        "mulhi_int16_uint8": (lambda x, y: (lax.mulhi(x.astype(jnp.int16), y.astype(jnp.int16)),
+                                            lax.mulhi(x.astype(jnp.uint8), y.astype(jnp.uint8))),
+                              i32(16) * 600, i32(16) * 600),
     }
 
 

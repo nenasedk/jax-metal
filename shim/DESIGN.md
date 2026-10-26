@@ -124,7 +124,7 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
   - Empty matrices: the linear algebra rules return early, since `fori_loop` traces its body even
     for zero trips and the body cannot index an empty axis.
   - `mulhi` (philox PRNG), which XLA serializes as a CHLO composite: 32-bit products from 16-bit
-    limbs.
+    limbs; 8- and 16-bit products in 32 bits.
   - `reduce_precision`: XLA's bit-level algorithm (round to nearest even, flush subnormals) on
     the float32 or native float16 bit pattern.
   - `bfloat16` conversions: the plugin emulates bfloat16 in float32, so its own float↔bfloat16
@@ -139,7 +139,9 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     small-argument `tanh`, and returns a number for `sign(NaN)`. METAL uses Kahan/Goldberg
     `expm1`/`log1p` on MPS's accurate `exp`/`log`, `tanh` via `expm1`, XLA's float32 `erfc`,
     and a `log1p` form of `acosh`/`atanh`. Every float32 elementwise op is now within 18 ulps of
-    XLA's CPU results (most within 1–4) with matching NaN/inf behavior.
+    XLA's CPU results (most within 1–4) with matching NaN/inf behavior. These rules compute
+    float16 and bfloat16 inputs in float32 (their formulas assume its range: x² overflows
+    float16 above 256), and `tanh` is exactly odd.
   - Multi-key sorts (`lexsort`, complex sorts): the plugin's sort takes one key, so n keys become
     n stable passes.
   - `dot_general` with an integer or bool result: MPS matmul takes floating point only, so these
@@ -160,7 +162,10 @@ functions into raw `real`/`imag` ops. `_complex.py`:
 - builds `real` as a complex→real `convert` (MPS keeps the real part), `imag` as `real(z·(−i))`,
   and `complex(x, y)` as `convert(x) + convert(y)·i`;
 - expresses complex `exp`, `log`, `sqrt`, `sin`, `cos`, `tan`, `sinh`, `cosh`, `tanh`, `expm1`,
-  `log1p`, `sign`, `rsqrt` and `pow` in real arithmetic;
+  `log1p`, `sign`, `rsqrt` and `pow` in real arithmetic, and the inverse functions `asin`,
+  `acos`, `atan`, `asinh`, `acosh`, `atanh` with Kahan's branch-cut formulas (float32 results
+  within 5e-6 relative of NumPy's complex128, on the cuts too). `sqrt` keeps the sign of a zero
+  imaginary part, which picks the side of each branch cut;
 - applies `pad`, `gather`, `scatter`, `scatter_add`/`sub` and `dynamic_update_slice` to real and
   imaginary parts separately, and sorts complex keys as (real, imag);
 - implements `fft`/`ifft`/`rfft`/`irfft` (any rank) as a radix-2 transform with a direct DFT for
@@ -315,5 +320,9 @@ an integer-based IEEE mode only if users need the float64 exponent range.
   magnitudes 1e-12…1e4 and special values.
 - `tests/jax_suite/run_jax_tests.py`: JAX's own test files on METAL, in batches, crash-tolerant.
 - `tests/jax_suite/cpu_rules_plugin.py`: JAX's own tests on the CPU backend through these
-  lowering rules (any machine, no GPU). With it, `linalg_test`, `fft_test` and `random_test`
-  pass in full on CPU; what remains on METAL is MPS behavior.
+  lowering rules (any machine, no GPU). On CPU through the rules, `fft_test`, `linalg_test`,
+  `random_test`, `lax_test`, `lax_autodiff_test`, `lax_control_flow_test`,
+  `lax_numpy_reducers_test`, `lax_numpy_operators_test`, `nn_test` and
+  `lax_scipy_special_functions_test` pass (9,165 tests) except two `lax.composite` tests that
+  expect `chlo.top_k`, which the `top_k` rule replaces by design; what remains on METAL is MPS
+  behavior.

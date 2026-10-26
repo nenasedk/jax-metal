@@ -74,10 +74,12 @@ def _expm1(x, **_):
 
 
 def _tanh(x, **_):
-    # tanh(x) = expm1(2x) / (expm1(2x) + 2); |x| >= 10 is +-1 in float32.
-    clamped = lax.clamp(lax.full_like(x, -10.0), x, lax.full_like(x, 10.0))
+    # tanh(x) = expm1(2x) / (expm1(2x) + 2) on |x|, so that tanh(-x) = -tanh(x) exactly;
+    # |x| >= 10 is 1 in float32. NaN and +-0 pass through.
+    clamped = lax.min(lax.abs(x), lax.full_like(x, 10.0))
     e = _expm1(2 * clamped)
-    return lax.select(lax.ne(x, x), x, e / (e + 2))
+    t = e / (e + 2)
+    return lax.select(lax.ne(x, x) | (x == 0), x, lax.select(x < 0, -t, t))
 
 
 def _with_nan_passthrough(primitive):
@@ -189,8 +191,13 @@ def _cbrt(x, **_):
 
 def _mulhi(x, y, **_):
     dtype = np.dtype(x.dtype)
+    if dtype.itemsize < 4:  # the full product fits in 32 bits
+        wide = np.dtype(np.int32 if dtype.kind == "i" else np.uint32)
+        product = lax.convert_element_type(x, wide) * lax.convert_element_type(y, wide)
+        shift = lax.shift_right_arithmetic if dtype.kind == "i" else lax.shift_right_logical
+        return lax.convert_element_type(shift(product, wide.type(8 * dtype.itemsize)), dtype)
     if dtype.itemsize != 4:
-        raise NotImplementedError(f"METAL mulhi supports 32-bit integers, got {dtype}")
+        raise NotImplementedError(f"METAL mulhi supports integers up to 32 bits, got {dtype}")
     u32 = np.uint32
     a, b = lax.bitcast_convert_type(x, u32), lax.bitcast_convert_type(y, u32)
     mask, shift = u32(0xFFFF), u32(16)
@@ -814,6 +821,17 @@ def _rng_bit_generator(key, *, shape, dtype, algorithm, **_):
     return [new_key, values.reshape(shape)]
 
 
+def _in_float32(fn):
+    """fn computed in float32 for float16/bfloat16 inputs: the formulas above assume
+    float32's range (x * x overflows float16 above 256) and precision."""
+    def wrapped(x, **params):
+        if np.dtype(x.dtype) in (np.dtype(np.float16), _BFLOAT16):
+            wide = fn(lax.convert_element_type(x, np.float32), **params)
+            return lax.convert_element_type(wide, x.dtype)
+        return fn(x, **params)
+    return wrapped
+
+
 _UNARY = (
     (lax_internal.acos_p, _acos),
     (lax_internal.acosh_p, _acosh),
@@ -848,7 +866,8 @@ def register():
     for primitive, combine in _CUMULATIVE:
         _register(primitive, partial(_cumulative_scan, combine))
     # Real-dtype rules for elementwise primitives; complex inputs dispatch to _complex.
-    real_rules = {primitive: mlir.lower_fun(fn, multiple_results=False) for primitive, fn in _UNARY}
+    real_rules = {primitive: mlir.lower_fun(_in_float32(fn), multiple_results=False)
+                  for primitive, fn in _UNARY}
     real_rules[lax_internal.sign_p] = _with_nan_passthrough(lax_internal.sign_p)
     for primitive in set(real_rules) | set(_complex.ELEMENTWISE):
         real_rule = real_rules.get(primitive) or _default_rule(primitive)

@@ -105,16 +105,22 @@ def log(z):
     return lax.complex(lax.log(lax.abs(z)), lax.atan2(b, a))
 
 
+def _sign_bit(x):
+    """x < 0, and also true for -0.0 (whose sign picks the side of a branch cut)."""
+    return lax.bitcast_convert_type(x, np.int32) < 0
+
+
 def sqrt(z):
-    # Principal root without cancellation: t = sqrt((|a| + |z|) / 2).
+    # Principal root without cancellation: t = sqrt((|a| + |z|) / 2). The imaginary part
+    # takes b's sign, -0.0 included, as in C99's csqrt.
     a, b = _parts(z)
     t = lax.sqrt((lax.abs(a) + lax.abs(z)) / 2)
     safe_t = lax.select(t == 0, lax.full_like(t, 1), t)
     other = lax.abs(b) / (2 * safe_t)
     real = lax.select(a >= 0, t, other)
-    imag = lax.select(a >= 0, b / (2 * safe_t), lax.select(b < 0, -t, t))
+    imag = lax.select(a >= 0, b / (2 * safe_t), lax.select(_sign_bit(b), -t, t))
     zero = t == 0
-    return lax.complex(lax.select(zero, t, real), lax.select(zero, t, imag))
+    return lax.complex(lax.select(zero, t, real), lax.select(zero, b, imag))
 
 
 def sin(z):
@@ -167,6 +173,51 @@ def sign(z):
 
 def rsqrt(z):
     return lax.full_like(z, 1) / sqrt(z)
+
+
+# Inverse functions after Kahan ("Branch cuts for complex elementary functions"): no
+# cancellation and no early overflow. The 1 -+ z, z -+ 1 terms keep the sign of a zero
+# imaginary part, which picks the side of each branch cut.
+
+def asin(z):
+    a, b = _parts(z)
+    s1m, s1p = sqrt(lax.complex(1 - a, -b)), sqrt(lax.complex(1 + a, b))
+    return lax.complex(lax.atan2(a, lax.real(s1m * s1p)),
+                       lax.asinh(lax.imag(lax.conj(s1m) * s1p)))
+
+
+def acos(z):
+    a, b = _parts(z)
+    s1m, s1p = sqrt(lax.complex(1 - a, -b)), sqrt(lax.complex(1 + a, b))
+    return lax.complex(2 * lax.atan2(lax.real(s1m), lax.real(s1p)),
+                       lax.asinh(lax.imag(lax.conj(s1p) * s1m)))
+
+
+def acosh(z):
+    a, b = _parts(z)
+    szm, szp = sqrt(lax.complex(a - 1, b)), sqrt(lax.complex(a + 1, b))
+    return lax.complex(lax.asinh(lax.real(lax.conj(szm) * szp)),
+                       2 * lax.atan2(lax.imag(szm), lax.real(szp)))
+
+
+def atanh(z):
+    a, b = _parts(z)
+    return 0.5 * (log1p(z) - log1p(lax.complex(-a, -b)))
+
+
+def _rotated(f, z):
+    """-i f(i z): asinh from asin, atan from atanh."""
+    a, b = _parts(z)
+    w = f(lax.complex(-b, a))
+    return lax.complex(lax.imag(w), -lax.real(w))
+
+
+def asinh(z):
+    return _rotated(asin, z)
+
+
+def atan(z):
+    return _rotated(atanh, z)
 
 
 def pow(z, w):  # pylint: disable=redefined-builtin
@@ -533,5 +584,7 @@ ELEMENTWISE = {
     lax_internal.rsqrt_p: rsqrt, lax_internal.sin_p: sin, lax_internal.cos_p: cos,
     lax_internal.tan_p: tan, lax_internal.tanh_p: tanh, lax_internal.sinh_p: sinh,
     lax_internal.cosh_p: cosh, lax_internal.expm1_p: expm1, lax_internal.log1p_p: log1p,
-    lax_internal.sign_p: sign,
+    lax_internal.sign_p: sign, lax_internal.asin_p: asin, lax_internal.acos_p: acos,
+    lax_internal.atan_p: atan, lax_internal.asinh_p: asinh, lax_internal.acosh_p: acosh,
+    lax_internal.atanh_p: atanh,
 }
