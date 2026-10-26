@@ -1,0 +1,8 @@
+{"nodeid": "tests/api_test.py::JitTest::test_print_token_buffer_error", "outcome": "passed", "issues": ["op stablehlo.create_token"]}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning0", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning1", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning3", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_compute_on", "outcome": "passed", "issues": ["custom_call annotate_device_placement"]}
+{"nodeid": "tests/api_test.py::APITest::test_jit_returning_token", "outcome": "passed", "issues": ["op stablehlo.create_token"]}
+{"nodeid": "tests/api_test.py::APITest::test_jit_capturing_token", "outcome": "passed", "issues": ["op stablehlo.create_token"]}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_token_consuming_primitive", "outcome": "passed", "issues": ["op stablehlo.create_token"]}

@@ -129,11 +129,25 @@ def merge_run(log):
     os.remove(run_log)
 
 
+def prune_predictions(check_log, kept, ran):
+    """Drop the predictions older than the first `kept` records for tests that ran again: a
+    test logs predictions only when it has some."""
+    if not os.path.exists(check_log):
+        return
+    records = read_records(check_log)
+    records = [r for r in records[:kept] if r["nodeid"] not in ran] + records[kept:]
+    with open(check_log + ".tmp", "w", encoding="utf-8") as handle:
+        handle.writelines(json.dumps(r) + "\n" for r in records)
+    os.replace(check_log + ".tmp", check_log)
+
+
 def run_file(jax_src, out_dir, test, *, keyword, shard, skip_outcomes, deadline, only=None,
              exclude=(), cpu=False, workers=0):
     """Run one TEST; returns (this run's outcome records, whether the time budget ran out)."""
     log = log_path(out_dir, test)
     run_log = sibling(log, RUN_SUFFIX)
+    check_log = sibling(log, CHECK_SUFFIX)
+    predictions_before = len(read_records(check_log))
     skip_path, stderr_path = log + ".skip", log + ".stderr"
     merge_run(log)  # a run log left by a runner that was itself killed
     done_before = {r["nodeid"] for r in read_records(log) if r.get("outcome") in skip_outcomes}
@@ -163,7 +177,7 @@ def run_file(jax_src, out_dir, test, *, keyword, shard, skip_outcomes, deadline,
                        "-p", "progress_plugin", f"--timeout={TIMEOUT_SECONDS}",
                        "--timeout-method=thread", os.path.join("tests", test)]
             if cpu:
-                env.update(JAX_PLATFORMS="cpu", JAX_METAL_CHECK_LOG=sibling(log, CHECK_SUFFIX))
+                env.update(JAX_PLATFORMS="cpu", JAX_METAL_CHECK_LOG=check_log)
                 command += ["-p", "cpu_rules_plugin"]
             if workers:
                 command += ["-n", str(workers)]
@@ -217,6 +231,9 @@ def run_file(jax_src, out_dir, test, *, keyword, shard, skip_outcomes, deadline,
         # One per test (under xdist, workers and the controller both log each outcome).
         ran = list({r["nodeid"]: r for r in read_records(run_log) if "outcome" in r}.values())
     finally:
+        if cpu and os.path.exists(run_log):
+            prune_predictions(check_log, predictions_before,
+                              {r["nodeid"] for r in read_records(run_log) if "outcome" in r})
         merge_run(log)
         if os.path.exists(skip_path):
             os.remove(skip_path)

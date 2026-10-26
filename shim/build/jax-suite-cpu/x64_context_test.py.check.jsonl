@@ -1,0 +1,12 @@
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default3", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default1", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default2", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default0", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_mul", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_jit_cache", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_make_array1", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_custom_jvp", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_sin", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_while_loop0", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_while_loop1", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_custom_vjp", "outcome": "passed", "issues": ["type f64"]}

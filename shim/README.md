@@ -54,13 +54,19 @@ Environment variables:
   cases (NaN semantics, integer matmul, empty matrices, complex inverse functions,
   approximate top-k, user composites, ...) await a GPU run.
 - JAX's own tests on METAL: `fft_test` passes (109, 2 skipped); `linalg_test` has run in part
-  (`build/jax-suite/`). On CPU lowering the way METAL does, 13,915 tests of 19 files pass and
-  29 fail for known reasons (`re/findings/jax-suite-cpu.md`).
+  (`build/jax-suite/`). On CPU lowering the way METAL does, 19,608 tests of 56 files pass and
+  35 fail for known reasons (`re/findings/jax-suite-cpu.md`).
 - `tests/accuracy_sweep.py`: every float32 elementwise op is within 18 ulps of the CPU (most
   within 1–4), with matching NaN/inf behavior.
 - complex64 works throughout: inside jitted functions (arithmetic, transcendental functions,
   FFT) and as inputs/outputs of jitted functions and eager ops. A function returning complex
   values waits for completion before returning.
+- Awaiting their first GPU run (checked against LAPACK and XLA on the CPU): `eig`, `schur`,
+  `hessenberg`, `geqp3`, `tridiagonal`, `tridiagonal_solve`; collectives on the one device
+  (`shard_map`, `pmap`); uint64 inputs/outputs; float8, float4 and 2-/4-bit integers,
+  emulated with XLA's rounding (`tests/test_narrow.py --emulate` passes on CPU). The newer
+  narrow types (float8_e4m3, e3m4, e8m0fnu, float4_e2m1fn, int2, uint2) work inside jitted
+  functions but cannot be their inputs or outputs.
 - float64 is not supported (no float64 in MPS or Apple GPU hardware). Double-float emulation
   measures ~1e-14 relative error on the M3 (`experimental/double_float.py`); see DESIGN.md.
 
@@ -101,10 +107,15 @@ make -C shim test                                    # C++ load tests (plugin al
 $G .venv-shim/bin/python shim/tests/test_jax_e2e.py  # JAX end to end
 $G .venv-shim/bin/python shim/tests/test_phase3.py   # linear algebra, precision, bf16, rbg
 $G .venv-shim/bin/python shim/tests/test_complex.py  # complex numbers and FFT
+$G .venv-shim/bin/python shim/tests/test_narrow.py   # float8, float4, int4, int2
 $G .venv-shim/bin/python shim/tests/accuracy_sweep.py --strict
 $G .venv-shim/bin/python shim/tests/probe_jax_ops.py re/findings/jax-op-probe.md
 $G .venv-shim/bin/python shim/tests/accuracy_extended.py re/findings/accuracy-extended.md
 ```
+
+Two checks need no GPU: `make -C shim unit-test` runs the shim against a fake PJRT plugin
+(buffer retyping, boundary programs), and `python shim/tests/test_narrow.py --emulate` runs
+the narrow-type rewrite on the CPU against XLA.
 
 Killing a job does not free the GPU or the Metal compiler service immediately. A job that
 monopolizes them can still stall WindowServer, whose watchdog then restarts it and logs the
@@ -150,7 +161,7 @@ git clone --depth 1 --branch jax-v0.12.0.1 --filter=blob:none --sparse \
 .venv-shim/bin/pip install pytest pytest-timeout absl-py
 ```
 
-The files hold about 17,500 tests at the default `JAX_NUM_GENERATED_CASES=10`, so run them in
+The 56 files hold about 22,800 tests at the default `JAX_NUM_GENERATED_CASES=10`, so run them in
 batches:
 
 | Option | Effect |
@@ -178,7 +189,7 @@ $R linalg_test.py --shard 1/4                     # 250 of 1,000
 $R lax_test.py --shard 3/10 --budget-minutes 30   # then the same command with --resume
 ```
 
-`shim/build/jax-suite-cpu/` holds the reference `--cpu` run of the 19 files: per-test results,
+`shim/build/jax-suite-cpu/` holds the reference `--cpu` run of the 56 files: per-test results,
 predicted METAL issues (`*.check.jsonl`) and costs (`*.cost.jsonl`: seconds, memory, generated
 parameters). The GPU session compares METAL's results with it and takes its heaviest tests
 from it. To refresh it (Linux is fine):
@@ -186,7 +197,7 @@ from it. To refresh it (Linux is fine):
 ```sh
 .venv-shim/bin/pip install pytest-xdist
 .venv-shim/bin/python shim/tests/jax_suite/run_jax_tests.py re/work/jax-src shim/build/jax-suite-cpu \
-  --cpu --workers 3                  # no TEST: the 19 files (DEFAULT_FILES in run_jax_tests.py)
+  --cpu --workers 3                  # no TEST: the 56 files (DEFAULT_FILES in run_jax_tests.py)
 ```
 
 `make test` needs test data from `tests/gen_artifact.py` in `shim/build/testdata`

@@ -1,0 +1,4 @@
+{"nodeid": "tests/scipy_interpolate_test.py::LaxBackedScipyInterpolateTests::testRegularGridInterpolator2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_interpolate_test.py::LaxBackedScipyInterpolateTests::testRegularGridInterpolator1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_interpolate_test.py::LaxBackedScipyInterpolateTests::testRegularGridInterpolator0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_interpolate_test.py::LaxBackedScipyInterpolateTests::testRegularGridInterpolator3", "outcome": "passed", "message": ""}

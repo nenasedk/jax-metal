@@ -9,7 +9,7 @@ Steps, in order. Every command that uses the GPU runs under guard.py, one GPU jo
   setup              JAX's tests at the installed version (re/work/jax-src), pytest, C++ test data
   install            the package's install check, then a first METAL computation
   cxx                make test: the C++ load tests (Apple's plugin alone, then through the shim)
-  e2e, phase3, complex   the regression tests
+  e2e, phase3, complex, narrow   the regression tests
   probe              probe_jax_ops.py -> re/findings/jax-op-probe.md
   accuracy           accuracy_sweep.py --strict
   accuracy-extended  accuracy_extended.py -> re/findings/accuracy-extended.md
@@ -303,6 +303,7 @@ STEPS = {
     "e2e": script_step("e2e", "tests/test_jax_e2e.py"),
     "phase3": script_step("phase3", "tests/test_phase3.py"),
     "complex": script_step("complex", "tests/test_complex.py"),
+    "narrow": script_step("narrow", "tests/test_narrow.py"),
     "probe": script_step("probe", "tests/probe_jax_ops.py",
                          os.path.join(FINDINGS, "jax-op-probe.md"), timeout=3600),
     "accuracy": script_step("accuracy", "tests/accuracy_sweep.py", "--strict"),

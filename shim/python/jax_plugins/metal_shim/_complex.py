@@ -315,6 +315,20 @@ def _scatter_mul(operand, indices, updates, *, dimension_numbers, indices_are_so
     return operand * lax.complex(magnitude * lax.cos(angle), magnitude * lax.sin(angle))
 
 
+def _reduce_chooser(reduce, init, operand, *, axes, **_):
+    """reduce_max/min of complex values, ordered by real part, then imaginary part as XLA
+    compares them, from real reductions: JAX's lowering is a reduction whose body compares
+    the parts (nine ops), and the plugin recognizes a reduction by its one combining op."""
+    kept = [d for d in range(operand.ndim) if d not in axes]
+    if any(operand.shape[a] == 0 for a in axes):  # the identity, init + 0i
+        return lax.full([operand.shape[d] for d in kept], init, operand.dtype)
+    re, im = lax.real(operand), lax.imag(operand)
+    best_re = reduce(re, axes)
+    keep = lax.eq(re, lax.broadcast_in_dim(best_re, re.shape, kept))
+    best_im = reduce(lax.select(keep, im, lax.full_like(im, init)), axes)
+    return lax.complex(best_re, best_im)
+
+
 def _sort(*operands, dimension, is_stable, num_keys):
     # Complex keys sort lexicographically by (real, imag), like jnp.sort_complex. The
     # plugin's SortConverter takes a single key, so n keys become n stable single-key
@@ -520,9 +534,9 @@ def _dot_general_rule():
     return rule
 
 
-def _when_complex(primitive, complex_fn, multiple_results=False):
-    """Use complex_fn when any input is complex, JAX's default lowering otherwise."""
-    default = mlir._lowerings[primitive].rule  # pylint: disable=protected-access
+def _when_complex(primitive, complex_fn, multiple_results=False, default=None):
+    """Use complex_fn when any input is complex, `default` (JAX's default lowering) otherwise."""
+    default = default or mlir._lowerings[primitive].rule  # pylint: disable=protected-access
     complex_rule = mlir.lower_fun(complex_fn, multiple_results=multiple_results)
 
     def rule(ctx, *args, **params):
@@ -629,6 +643,10 @@ def register():
     ]
     for primitive, fn, multiple_results in splits:
         _register_rule(primitive, _when_complex(primitive, fn, multiple_results))
+    for primitive, reduce, init in ((lax_internal.reduce_max_p, lax.reduce_max, -np.inf),
+                                    (lax_internal.reduce_min_p, lax.reduce_min, np.inf)):
+        _register_rule(primitive, _when_complex(primitive, partial(_reduce_chooser, reduce, init),
+                                                default=current_rule(primitive)))
     _register_rule(lax_internal.sort_p, _sort_rule())
     _register_rule(lax_internal.dot_general_p, _dot_general_rule())
     from jax._src.lax.control_flow import loops  # pylint: disable=import-outside-toplevel

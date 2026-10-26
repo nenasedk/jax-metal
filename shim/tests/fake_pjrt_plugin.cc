@@ -2,8 +2,8 @@
 // retyping and boundary programs on any machine (shim_boundary_test.cc).
 //
 // Buffers are host memory. Compile remembers the program it was given; Execute records the
-// element types and shapes of its arguments and returns two outputs: int64[3] and
-// float32[3, 2].
+// element types and shapes of its arguments and returns three outputs: int64[3],
+// float32[3, 2] and uint8[3].
 
 #include <cstring>
 #include <memory>
@@ -132,6 +132,7 @@ PJRT_Error* Execute(PJRT_LoadedExecutable_Execute_Args* args) {
   }
   args->output_lists[0][0] = NewBuffer(PJRT_Buffer_Type_S64, {3});
   args->output_lists[0][1] = NewBuffer(PJRT_Buffer_Type_F32, {3, 2});
+  args->output_lists[0][2] = NewBuffer(PJRT_Buffer_Type_U8, {3});
   if (args->device_complete_events) args->device_complete_events[0] = &g_event;
   return nullptr;
 }

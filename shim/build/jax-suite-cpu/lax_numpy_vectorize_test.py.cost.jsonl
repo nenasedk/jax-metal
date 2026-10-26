@@ -1,0 +1,35 @@
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_exclude_errors", "seconds": 0.004, "before_mb": 169, "peak_mb": 169}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_exclude_first", "seconds": 0.071, "before_mb": 169, "peak_mb": 215}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_exclude_kwargs", "seconds": 0.106, "before_mb": 169, "peak_mb": 220}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_expand_dims_multiple_outputs_no_signature", "seconds": 0.032, "before_mb": 215, "peak_mb": 217}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_exclude_second", "seconds": 0.041, "before_mb": 221, "peak_mb": 222}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_bad_inputs", "seconds": 0.158, "before_mb": 169, "peak_mb": 221}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_inconsistent_output_size", "seconds": 0.081, "before_mb": 217, "peak_mb": 225}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_magnitude1", "seconds": 0.061, "before_mb": 222, "peak_mb": 226, "params": "(shape=(2, 3), result_shape=(2,))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_magnitude0", "seconds": 0.027, "before_mb": 225, "peak_mb": 227, "params": "(shape=(3,), result_shape=())"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_magnitude2", "seconds": 0.028, "before_mb": 226, "peak_mb": 226, "params": "(shape=(1, 2, 3), result_shape=(1, 2))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_matmat3", "seconds": 0.077, "before_mb": 227, "peak_mb": 229, "params": "(left_shape=(2, 3), right_shape=(3, 4), result_shape=(2, 4))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_center", "seconds": 0.154, "before_mb": 221, "peak_mb": 228}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_matmat0", "seconds": 0.092, "before_mb": 226, "peak_mb": 232, "params": "(left_shape=(2, 3), right_shape=(1, 3, 4), result_shape=(1, 2, 4))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_matvec0", "seconds": 0.054, "before_mb": 232, "peak_mb": 234, "params": "(left_shape=(2, 3), right_shape=(1, 3), result_shape=(1, 2))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_matmat4", "seconds": 0.088, "before_mb": 229, "peak_mb": 232, "params": "(left_shape=(5, 2, 3), right_shape=(1, 3, 4), result_shape=(5, 2, 4))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_matmat1", "seconds": 0.083, "before_mb": 228, "peak_mb": 232, "params": "(left_shape=(6, 5, 2, 3), right_shape=(3, 4), result_shape=(6, 5, 2, 4))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_matvec2", "seconds": 0.045, "before_mb": 232, "peak_mb": 234, "params": "(left_shape=(2, 3), right_shape=(3,), result_shape=(2,))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_matvec1", "seconds": 0.067, "before_mb": 234, "peak_mb": 239, "params": "(left_shape=(5, 4, 2, 3), right_shape=(1, 3), result_shape=(5, 4, 2))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_matmat2", "seconds": 0.088, "before_mb": 232, "peak_mb": 235, "params": "(left_shape=(1, 2, 3), right_shape=(1, 3, 4), result_shape=(1, 2, 4))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_mean0", "seconds": 0.052, "before_mb": 234, "peak_mb": 237, "params": "(shape=(3,), result_shape=())"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_mean1", "seconds": 0.003, "before_mb": 235, "peak_mb": 235, "params": "(shape=(2, 3), result_shape=(2,))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_matvec3", "seconds": 0.062, "before_mb": 239, "peak_mb": 241, "params": "(left_shape=(4, 2, 3), right_shape=(1, 3), result_shape=(4, 2))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_mean2", "seconds": 0.069, "before_mb": 237, "peak_mb": 238, "params": "(shape=(1, 2, 3, 4), result_shape=(1, 2, 3))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_none_arg_bad_signature", "seconds": 0.022, "before_mb": 238, "peak_mb": 240}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_none_arg", "seconds": 0.111, "before_mb": 235, "peak_mb": 239}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_stack_plus_minus1", "seconds": 0.062, "before_mb": 240, "peak_mb": 241, "params": "(shape=(), result_shape=(2,))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_vecmat0", "seconds": 0.027, "before_mb": 241, "peak_mb": 242, "params": "(left_shape=(3,), right_shape=(3,), result_shape=())"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_non_scalar_outputs_and_default_signature", "seconds": 0.16, "before_mb": 241, "peak_mb": 245}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_vecmat2", "seconds": 0.061, "before_mb": 242, "peak_mb": 244, "params": "(left_shape=(4, 2, 3), right_shape=(3,), result_shape=(4, 2))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_stack_plus_minus0", "seconds": 0.07, "before_mb": 245, "peak_mb": 248, "params": "(shape=(3,), result_shape=(3, 2))"}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_wrong_num_outputs", "seconds": 0.019, "before_mb": 244, "peak_mb": 245}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_wrong_output_shape", "seconds": 0.053, "before_mb": 248, "peak_mb": 248}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_wrong_output_type", "seconds": 0.048, "before_mb": 245, "peak_mb": 246}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_rank_promotion_error", "seconds": 0.274, "before_mb": 239, "peak_mb": 246}
+{"nodeid": "tests/lax_numpy_vectorize_test.py::VectorizeTest::test_vecmat1", "seconds": 0.076, "before_mb": 246, "peak_mb": 248, "params": "(left_shape=(2, 3), right_shape=(3,), result_shape=(2,))"}

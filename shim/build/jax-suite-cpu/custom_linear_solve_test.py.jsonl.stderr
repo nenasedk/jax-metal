@@ -1,0 +1,33 @@
+bringing up nodes...
+bringing up nodes...
+
+......F..ss.....                                                         [100%]
+=================================== FAILURES ===================================
+________ CustomLinearSolveTest.test_custom_linear_solve_ordered_effects ________
+[gw0] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.custom_linear_solve_test.CustomLinearSolveTest testMethod=test_custom_linear_solve_ordered_effects>
+
+    def test_custom_linear_solve_ordered_effects(self):
+      # See https://github.com/jax-ml/jax/issues/26087
+      def mat_vec(v):
+        jax.debug.callback(lambda: print("mat_vec"), ordered=True)
+        return v
+    
+      def solve(b):
+        return lax.custom_linear_solve(mat_vec, b, lambda matvec, x: matvec(x))
+    
+      b = self.rng().randn(24)
+      with jtu.capture_stdout() as output:
+        expected = solve(b)
+        jax.effects_barrier()
+>     self.assertEqual(output(), "mat_vec\n")
+E     AssertionError: 
+E     + mat_vec
+
+tests/custom_linear_solve_test.py:498: AssertionError
+----------------------------- Captured stdout call -----------------------------
+mat_vec
+=========================== short test summary info ============================
+FAILED tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_ordered_effects
+1 failed, 13 passed, 2 skipped in 11.66s

@@ -8,7 +8,10 @@ re/findings/mps-op-coverage.md:
 - ops without an MPS pattern;
 - stablehlo.composite: nothing in the pipeline expands it;
 - custom calls other than lapack_sgetrf, which the plugin maps to MPS's LU;
-- element types MPS lacks: float64, complex128, 4-, 6- and 8-bit floats, 2- and 4-bit ints;
+- element types MPS lacks: float64, complex128, 6-bit floats; and float8, float4, 2- and 4-bit
+  integer values outside the converts at a program's inputs and outputs (the METAL rules
+  rewrite the rest, see _narrow.py; the shim passes the older narrow types' bytes across
+  the program boundary, and the newer ones cannot cross it);
 - reductions, windows, scatters and all-reduces over one operand whose body is more than
   one op: the plugin's converters recognize the reduction by its single op;
 - complex values in ops whose MPS kernels or compiler fail on them (the METAL rules split
@@ -59,7 +62,21 @@ NO_COMPLEX = {"stablehlo.pad", "stablehlo.gather", "stablehlo.scatter",
 _SINGLE_OP_BODIES = {"stablehlo.reduce", "stablehlo.reduce_window", "stablehlo.scatter",
                      "stablehlo.all_reduce"}
 _ELEMENT = re.compile(r"^tensor<(?:[0-9?]+x)*(.+)>$")
-_UNSUPPORTED_ELEMENT = re.compile(r"^(f64|complex<f64>|f8E\w+|f6E\w+|f4E\w+|u?i[24])$")
+_UNSUPPORTED_ELEMENT = re.compile(r"^(f64|complex<f64>|f6E\w+)$")
+_NARROW_ELEMENT = re.compile(r"^(f8E\w+|f4E\w+|u?i[24])$")
+# Narrow types StableHLO 0.19.4 has: fine at the program edges, which the shim passes as bytes.
+_BOUNDARY_ELEMENT = re.compile(r"^(f8E5M2|f8E4M3FN|f8E4M3B11FNUZ|f8E5M2FNUZ|f8E4M3FNUZ|u?i4)$")
+
+def _at_edge(operation):
+    """Whether an op is a convert of a function argument or of a value only returned, or a
+    return: where the rewritten programs keep narrow types."""
+    from jax._src.lib.mlir import ir  # pylint: disable=import-outside-toplevel
+    if operation.name == "func.return":
+        return True
+    if operation.name != "stablehlo.convert":
+        return False
+    return (isinstance(operation.operands[0], ir.BlockArgument)
+            or all(use.owner.name == "func.return" for use in operation.results[0].uses))
 
 
 def _element(type_):
@@ -106,7 +123,8 @@ def program_issues(module):
             issues.add(f"run-time abort: {name} ({RUNTIME_ABORTS[name]})")
         elements = {_element(value.type) for value in (*operation.operands, *operation.results)}
         for element in elements - {None}:
-            if _UNSUPPORTED_ELEMENT.match(element):
+            if _UNSUPPORTED_ELEMENT.match(element) or (_NARROW_ELEMENT.match(element) and not (
+                    _BOUNDARY_ELEMENT.match(element) and _at_edge(operation))):
                 issues.add(f"type {element}")
         if name in NO_COMPLEX and any(e and e.startswith("complex") for e in elements):
             issues.add(f"complex {name}")

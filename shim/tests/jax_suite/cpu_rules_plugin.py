@@ -17,6 +17,10 @@ predicts what Apple's plugin could not compile (ops without an MPS pattern, comp
 types MPS lacks, ...). With $JAX_METAL_CHECK_LOG set, each test with predicted issues is
 appended there as a JSON line with its CPU outcome. MPS crashes and accuracy still need METAL.
 
+Programs with float8, float4 and 2-/4-bit integer values are rewritten as on METAL
+(_narrow.py); their narrow inputs and outputs stay, converted natively at the program edges,
+where METAL instead transfers their bytes (_boundary_io.py).
+
 real/imag/complex keep XLA's lowerings: the METAL rules build them from a complex->real
 convert, which MPS accepts (it keeps the real part) but which crashes XLA's CPU compiler.
 The package's __init__ (which registers the METAL plugin) is not run.
@@ -42,7 +46,7 @@ from jax._src import compiler  # noqa: E402
 import jax._src.test_util  # noqa: E402  (defines the jax_test_dut flag)
 from jax._src.interpreters import mlir  # noqa: E402
 from jax._src.lax import lax as lax_internal  # noqa: E402
-from jax_plugins.metal_shim import _complex, _lowerings  # noqa: E402
+from jax_plugins.metal_shim import _complex, _lowerings, _narrow  # noqa: E402
 
 import metal_check  # noqa: E402  (next to this file)
 
@@ -50,6 +54,7 @@ _cpu_rules = mlir._platform_specific_lowerings["cpu"]  # pylint: disable=protect
 _xla_cpu_rules = dict(_cpu_rules)
 _lowerings.PLATFORM = _complex.PLATFORM = "cpu"
 _lowerings.register()
+_narrow.register(platform="cpu")
 for _primitive, _rule in _xla_cpu_rules.items():
     # No METAL rule: generic lowering, as on METAL. Except threefry2x32: with its generic
     # (unrolled) lowering, XLA's CPU compiler never finishes some sampling programs once

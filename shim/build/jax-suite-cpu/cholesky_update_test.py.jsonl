@@ -1,0 +1,4 @@
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testUpperOnes0", "outcome": "skipped", "message": "Skipped: Test disabled for x32 mode"}
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testRandomMatrix0", "outcome": "skipped", "message": "Skipped: Test disabled for x32 mode"}
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testUpperOnes1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/cholesky_update_test.py::CholeskyUpdateTest::testRandomMatrix1", "outcome": "passed", "message": ""}

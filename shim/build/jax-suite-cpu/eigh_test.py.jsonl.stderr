@@ -1,0 +1,343 @@
+bringing up nodes...
+bringing up nodes...
+
+.........F.....F..........s.....Fssssssssss.F...............uu.......... [ 73%]
+..........F..............                                                [100%]
+=================================== FAILURES ===================================
+______________________________ EighTest.testEigh4 ______________________________
+[gw0] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.eigh_test.EighTest testMethod=testEigh4>, n = 50
+dtype = <class 'numpy.complex64'>, lower = True
+
+    @jtu.sample_product(
+        n=[0, 4, 5, 50, 512],
+        dtype=float_types + complex_types,
+        lower=[True, False],
+    )
+    def testEigh(self, n, dtype, lower):
+      if n == 512 and jtu.test_device_matches(["tpu"]):
+        self.skipTest("n=512 is slow on TPU")
+      rng = jtu.rand_default(self.rng())
+      eps = np.finfo(dtype).eps
+      args_maker = lambda: [rng((n, n), dtype)]
+    
+      uplo = "L" if lower else "U"
+    
+      a, = args_maker()
+      a = (a + np.conj(a.T)) / 2
+      w, v = jnp.linalg.eigh(np.tril(a) if lower else np.triu(a),
+                             UPLO=uplo, symmetrize_input=False)
+      w = w.astype(v.dtype)
+      tol = 2 * n * eps
+      self.assertAllClose(
+          np.eye(n, dtype=v.dtype),
+          np.matmul(np.conj(T(v)), v),
+          atol=tol,
+          rtol=tol,
+      )
+    
+      with jax.numpy_rank_promotion('allow'):
+        tol = 100 * eps
+        self.assertLessEqual(
+            np.linalg.norm(np.matmul(a, v) - w * v), tol * np.linalg.norm(a)
+        )
+    
+      self._CompileAndCheck(
+          partial(jnp.linalg.eigh, UPLO=uplo), args_maker, rtol=10 * eps
+      )
+    
+      # Compare eigenvalues against Numpy using double precision. We do not compare
+      # eigenvectors because they are not uniquely defined, but the two checks above
+      # guarantee that that they satisfy the conditions for being eigenvectors.
+      double_type = dtype
+      if dtype == np.float32:
+        double_type = np.float64
+      if dtype == np.complex64:
+        double_type = np.complex128
+      w_np = np.linalg.eigvalsh(a.astype(double_type))
+      tol = 8 * eps
+>     self.assertAllClose(
+          w_np.astype(w.dtype), w, atol=tol * np.linalg.norm(a), rtol=tol
+      )
+
+tests/eigh_test.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../venv-cpu/lib/python3.13/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([-42.206474  +0.j, -35.10033   +0.j, -33.897453  +0.j,
+       -32.336727  +0.j, -30.82868   +0.j, -27.976507  +0...      29.7052    +0.j,  30.911228  +0.j,  35.080555  +0.j,
+        36.681736  +0.j,  38.263023  +0.j], dtype=complex64)
+b = array([-42.20662   +0.j, -35.10044   +0.j, -33.8976    +0.j,
+       -32.33678   +0.j, -30.82878   +0.j, -27.976639  +0...      29.705261  +0.j,  30.911364  +0.j,  35.080654  +0.j,
+        36.681908  +0.j,  38.263226  +0.j], dtype=complex64)
+atol = np.float32(0.00014210679), rtol = np.float32(9.536743e-07), err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=9.53674e-07, atol=0.000142107
+E       
+E       Mismatched elements: 1 / 50 (2%)
+E       Mismatch at index:
+E        [49]: (38.263023376464844+0j) (ACTUAL), (38.26322555541992+0j) (DESIRED)
+E       Max absolute difference among violations: 0.00020218
+E       Max relative difference among violations: 5.2838973e-06
+E        ACTUAL: array([-42.206474+0.j, -35.10033 +0.j, -33.897453+0.j, -32.336727+0.j,
+E              -30.82868 +0.j, -27.976507+0.j, -27.039581+0.j, -24.469728+0.j,
+E              -22.89628 +0.j, -21.92248 +0.j, -20.232578+0.j, -18.597223+0.j,...
+E        DESIRED: array([-42.20662 +0.j, -35.10044 +0.j, -33.8976  +0.j, -32.33678 +0.j,
+E              -30.82878 +0.j, -27.976639+0.j, -27.039665+0.j, -24.469845+0.j,
+E              -22.896395+0.j, -21.92258 +0.j, -20.232653+0.j, -18.597292+0.j,...
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/public_test_util.py:147: AssertionError
+__________________________ EighTest.testEighBatching3 __________________________
+[gw1] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+>   v, w = lax_linalg.eigh(a, lower=lower)
+E   jax._src.source_info_util.JaxStackTraceBeforeTransformation: NotImplementedError: METAL: Jacobi eigendecomposition of size 300 exceeds 256 (larger ones can stall the GPU and WindowServer); complex eigh/SVD is limited to this size
+E   
+E   The preceding stack trace is the source of the JAX operation that, once transformed by JAX, triggered the following exception.
+E   
+E   --------------------
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/scipy/linalg.py:447: JaxStackTraceBeforeTransformation
+
+The above exception was the direct cause of the following exception:
+
+self = <tests.eigh_test.EighTest testMethod=testEighBatching3>
+shape = (10, 300, 300), dtype = <class 'numpy.complex64'>
+
+    @jtu.sample_product(
+      shape=[(1, 1), (4, 4), (5, 5), (300, 300)],
+      dtype=float_types + complex_types,
+    )
+    def testEighBatching(self, shape, dtype):
+      rng = jtu.rand_default(self.rng())
+      shape = (10,) + shape
+      args = rng(shape, dtype)
+      args = (args + np.conj(T(args))) / 2
+>     ws, vs = vmap(jsp.linalg.eigh)(args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/eigh_test.py:324: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/api.py:1241: in vmap_f
+    out_flat, inferred_out_axes = batching.batch(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/linear_util.py:212: in call_wrapped
+    return self.f_transformed(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/batching.py:328: in _batch_outer
+    outs, out_dim_srcs, trace = f(tag, in_dims, *in_vals)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/batching.py:347: in _batch_inner
+    outs = f(*in_tracers)
+           ^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/batching.py:122: in flatten_fun_for_vmap
+    ans = f(*py_args, **py_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/scipy/linalg.py:561: in eigh
+    return _eigh(a, b, lower, eigvals_only, eigvals, type)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:152: in _run_python_pjit
+    out_flat = jit_p.bind(*args_flat, **p.params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/batching.py:261: in process_primitive
+    val_out, dim_out = fancy_primitive_batchers[p](
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1462: in _pjit_batcher
+    vals_out = jit_p.bind(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/core.py:732: in bind
+    return self.bind_with_trace(prev_trace, args, avals, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/core.py:740: in bind_with_trace
+    return trace.process_primitive(self, args, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/core.py:1321: in process_primitive
+    return primitive.impl(*args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1221: in _pjit_call_impl
+    return _jax.pjit(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1197: in call_impl_cache_miss
+    out_flat, compiled, pgle_profiler, const_args = _pjit_call_impl_python(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1147: in _pjit_call_impl_python
+    computation = _resolve_and_lower(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1073: in _resolve_and_lower
+    return _pjit_lower(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1246: in _pjit_lower
+    return pxla.lower_sharding_computation(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py:1143: in lower_sharding_computation
+    tuple_args, shape_poly_state) = _cached_lowering_to_hlo(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py:756: in _cached_lowering_to_hlo
+    lowering_result = mlir.lower_jaxpr_to_module(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:1497: in lower_jaxpr_to_module
+    lower_jaxpr_to_fun(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2130: in lower_jaxpr_to_fun
+    out_vals, tokens_out = jaxpr_subcomp(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2308: in jaxpr_subcomp
+    cache_entry = _cached_lowering_miss(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2377: in _cached_lowering_miss
+    cache_entry = _emit_lowering_rule_as_fun(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2515: in _emit_lowering_rule_as_fun
+    outs = lowering_rule(sub_ctx, *unflattened_args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2550: in _uncached_lowering
+    ans = lower_per_platform(ctx, str(primitive), platform_rules, default_rule,
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2678: in lower_per_platform
+    output = type_cast(Sequence[IrValues], rule(ctx, *rule_args, **rule_kwargs))
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../snap/shim/python/jax_plugins/metal_shim/_complex.py:78: in wrapped
+    return rule(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2759: in f_lowered
+    jaxpr, _ = pe.trace_to_jaxpr(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/partial_eval.py:2174: in trace_to_jaxpr_nocache
+    ans_pytree = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+../snap/shim/python/jax_plugins/metal_shim/_lowerings.py:871: in _eigh
+    v, w = _jacobi_eigh(h, sort_eigenvalues or not full_range)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = JitTracer(complex64[10,300,300]), sort_eigenvalues = True
+
+    def _jacobi_eigh(a, sort_eigenvalues):
+        """Parallel cyclic Jacobi for a Hermitian matrix [..., n, n]: (eigenvectors, eigenvalues).
+    
+        Each round applies n/2 disjoint 2x2 rotations at once (round-robin pairing), as row and
+        column gathers, so a sweep is O(n^3). Indices with no coupling get identity rotations,
+        so padded identity blocks keep their positions (the QDWH base case relies on this).
+        """
+        n = a.shape[-1]
+        if n > JACOBI_MAX_SIZE:
+>           raise NotImplementedError(
+                f"METAL: Jacobi eigendecomposition of size {n} exceeds {JACOBI_MAX_SIZE} (larger "
+                "ones can stall the GPU and WindowServer); complex eigh/SVD is limited to this size")
+E           NotImplementedError: METAL: Jacobi eigendecomposition of size 300 exceeds 256 (larger ones can stall the GPU and WindowServer); complex eigh/SVD is limited to this size
+
+../snap/shim/python/jax_plugins/metal_shim/_lowerings.py:658: NotImplementedError
+_______________________ EighTest.testEighRankDeficient2 ________________________
+[gw1] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.eigh_test.EighTest testMethod=testEighRankDeficient2>, rank = 299
+
+    @jtu.sample_product(
+        rank=[1, 3, 299],
+    )
+    def testEighRankDeficient(self, rank):
+      rng = jtu.rand_default(self.rng())
+      eps = jnp.finfo(np.float32).eps
+      a = rng((300, rank), dtype=np.float32)
+      a = a @ np.conj(a.T)
+      w, v = jnp.linalg.eigh(a)
+      w = w.astype(v.dtype)
+      with jax.numpy_rank_promotion("allow"):
+>       self.assertLessEqual(
+            np.linalg.norm(np.matmul(a, v) - w * v),
+            85 * eps * np.linalg.norm(a),
+        )
+E       AssertionError: np.float32(0.82298934) not less than or equal to np.float32(0.66949904)
+
+tests/eigh_test.py:213: AssertionError
+__________________________ EighTest.testEighTinyNorm ___________________________
+[gw1] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.eigh_test.EighTest testMethod=testEighTinyNorm>
+
+    def testEighTinyNorm(self):
+      # Skip test on ROCm due to numerical error. Issue #34711
+      # TODO(GulsumGudukbay): Unskip once fixed.
+      if jtu.is_device_rocm():
+        self.skipTest("Skipped on ROCm due to numerical error.")
+      rng = jtu.rand_default(self.rng())
+      a = rng((300, 300), dtype=np.float32)
+      eps = jnp.finfo(a.dtype).eps
+      a = eps * (a + np.conj(a.T))
+      w, v = jnp.linalg.eigh(a)
+      w = w.astype(v.dtype)
+      with jax.numpy_rank_promotion("allow"):
+>       self.assertLessEqual(
+            np.linalg.norm(np.matmul(a, v) - w * v), 80 * eps * np.linalg.norm(a)
+        )
+E       AssertionError: np.float32(2.354201e-09) not less than or equal to np.float32(1.454411e-09)
+
+tests/eigh_test.py:198: AssertionError
+__________________________ EighTest.testEighBatching6 __________________________
+[gw2] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.eigh_test.EighTest testMethod=testEighBatching6>
+shape = (10, 300, 300), dtype = <class 'numpy.float32'>
+
+    @jtu.sample_product(
+      shape=[(1, 1), (4, 4), (5, 5), (300, 300)],
+      dtype=float_types + complex_types,
+    )
+    def testEighBatching(self, shape, dtype):
+      rng = jtu.rand_default(self.rng())
+      shape = (10,) + shape
+      args = rng(shape, dtype)
+      args = (args + np.conj(T(args))) / 2
+      ws, vs = vmap(jsp.linalg.eigh)(args)
+      ws = ws.astype(vs.dtype)
+      norm = np.max(np.linalg.norm(np.matmul(args, vs) - ws[..., None, :] * vs))
+>     self.assertLess(norm, 1.4e-2)
+E     AssertionError: np.float32(0.031038329) not less than 0.014
+
+tests/eigh_test.py:327: AssertionError
+=========================== short test summary info ============================
+FAILED tests/eigh_test.py::EighTest::testEigh4 - AssertionError: 
+FAILED tests/eigh_test.py::EighTest::testEighBatching3 - NotImplementedError:...
+FAILED tests/eigh_test.py::EighTest::testEighRankDeficient2 - AssertionError:...
+FAILED tests/eigh_test.py::EighTest::testEighTinyNorm - AssertionError: np.fl...
+FAILED tests/eigh_test.py::EighTest::testEighBatching6 - AssertionError: np.f...
+5 failed, 79 passed, 11 skipped, 2 subtests passed in 88.15s (0:01:28)

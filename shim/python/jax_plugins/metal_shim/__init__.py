@@ -18,6 +18,7 @@ import jaxlib
 
 from jax_plugins.metal_shim import _boundary_io
 from jax_plugins.metal_shim import _lowerings
+from jax_plugins.metal_shim import _narrow
 from jax_plugins.metal_shim import _plugin
 
 _HERE = Path(__file__).resolve().parent
@@ -57,6 +58,7 @@ def initialize():
         jax.config.update("jax_use_shardy_partitioner", False)
     xb.register_plugin("METAL", priority=500, library_path=str(SHIM_LIBRARY))
     _lowerings.register()
+    _narrow.register()  # before _boundary_io, whose hook calls it
     _boundary_io.register(SHIM_LIBRARY)
 
 

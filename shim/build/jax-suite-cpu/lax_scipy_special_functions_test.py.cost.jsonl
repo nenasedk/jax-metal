@@ -1,467 +1,467 @@
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN4", "seconds": 1.18, "before_mb": 190, "peak_mb": 294, "params": "(dtype=<class 'numpy.float32'>, n=5000)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testBetaIncBoundaryValues", "seconds": 1.268, "before_mb": 190, "peak_mb": 291}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_3x4_3x4_3x4_float32_float32_float32", "seconds": 1.269, "before_mb": 190, "peak_mb": 287}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnOutOfDomainAndInf0", "seconds": 0.595, "before_mb": 294, "peak_mb": 303, "params": "(dtype=<class 'numpy.float32'>)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testBetaIncResultDoesNotDependOnBatch0", "seconds": 0.967, "before_mb": 291, "peak_mb": 298, "params": "(dtype=<class 'numpy.float32'>)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_4_1x4_1x4_float32_float32_float32", "seconds": 1.144, "before_mb": 287, "peak_mb": 299}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnTracerLeaks", "seconds": 0.71, "before_mb": 303, "peak_mb": 324}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testBetaParameterDeprecation", "seconds": 0.7, "before_mb": 298, "peak_mb": 299}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_4_3x4_3x4_float32_float32_float32", "seconds": 1.018, "before_mb": 299, "peak_mb": 304}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testGammaIncBoundaryValues", "seconds": 0.943, "before_mb": 324, "peak_mb": 332}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testGammaIncCBoundaryValues", "seconds": 0.89, "before_mb": 332, "peak_mb": 341}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_1x4_2x1x4_float32_float32_float32", "seconds": 1.359, "before_mb": 304, "peak_mb": 321}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testBetalnHessianAtZero", "seconds": 2.056, "before_mb": 299, "peak_mb": 340}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testGammaSign", "seconds": 1.094, "before_mb": 341, "peak_mb": 343}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testCombBoundaryValues0", "seconds": 0.708, "before_mb": 340, "peak_mb": 361, "params": "([-1, -1, 5, 5], [0, 2, -1, 7], False)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_3x4_1x4_float32_float32_float32", "seconds": 0.985, "before_mb": 321, "peak_mb": 327}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testCombBoundaryValues1", "seconds": 0.837, "before_mb": 361, "peak_mb": 372, "params": "([0, 0], [0, 4], True)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_3x4_3x1_float32_float32_float32", "seconds": 1.021, "before_mb": 327, "peak_mb": 330}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testComplexGammaBranchCut", "seconds": 1.118, "before_mb": 372, "peak_mb": 378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_s_2x1x4_float32_float32_float32", "seconds": 1.205, "before_mb": 328, "peak_mb": 341}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testComplexGammaPoles", "seconds": 0.922, "before_mb": 378, "peak_mb": 392}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_s_s_float32_float32_float32", "seconds": 0.734, "before_mb": 341, "peak_mb": 341}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testDawsnLargeX", "seconds": 0.454, "before_mb": 392, "peak_mb": 401}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_1x4_1x4_float32_float32", "seconds": 0.957, "before_mb": 341, "peak_mb": 353}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testErfcinvDebugInfs0", "seconds": 0.9, "before_mb": 401, "peak_mb": 422, "params": "(True)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testErfcinvDebugInfs1", "seconds": 0.016, "before_mb": 422, "peak_mb": 422, "params": "(False)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testErfcinvExtremeValues", "seconds": 0.226, "before_mb": 422, "peak_mb": 431}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testHyp2f1SpecialCases", "seconds": 5.546, "before_mb": 343, "peak_mb": 507}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExp1BranchesTerminate0", "seconds": 0.798, "before_mb": 431, "peak_mb": 461, "params": "(dtype=<class 'numpy.float32'>)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_3x1_1x4_float32_float32", "seconds": 1.524, "before_mb": 353, "peak_mb": 362}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testNdtriDebugInfs0", "seconds": 1.048, "before_mb": 507, "peak_mb": 509, "params": "(True)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testNdtriDebugInfs1", "seconds": 0.019, "before_mb": 509, "peak_mb": 509, "params": "(False)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_3x1_2x1x4_float32_float32", "seconds": 1.313, "before_mb": 362, "peak_mb": 377}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpiDisableJit", "seconds": 1.641, "before_mb": 461, "peak_mb": 494}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testNdtriExtremeValues", "seconds": 1.041, "before_mb": 509, "peak_mb": 510}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpiZero", "seconds": 0.624, "before_mb": 494, "peak_mb": 500}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary0", "seconds": 0.361, "before_mb": 500, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=50)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_3x1_3x1_float32_float32", "seconds": 1.066, "before_mb": 377, "peak_mb": 389}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary1", "seconds": 0.004, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=0)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary2", "seconds": 0.004, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=4)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary3", "seconds": 0.004, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=-1)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary4", "seconds": 0.003, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=10)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary5", "seconds": 0.003, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=1)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary6", "seconds": 0.004, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=5000)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary7", "seconds": 0.004, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=3)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary8", "seconds": 0.004, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=2)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary9", "seconds": 0.004, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=5)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnBranchesTerminate0", "seconds": 0.009, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=1)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnBranchesTerminate1", "seconds": 0.004, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=10)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnBranchesTerminate2", "seconds": 0.004, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=0)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnBranchesTerminate3", "seconds": 0.005, "before_mb": 501, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>, n=2)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrDebugNansAndInfs0", "seconds": 0.687, "before_mb": 510, "peak_mb": 513, "params": "(op='rel_entr', with_jit=True)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrDebugNansAndInfs1", "seconds": 0.129, "before_mb": 513, "peak_mb": 513, "params": "(op='rel_entr', with_jit=False)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_3x4_3x4_float32_float32", "seconds": 0.473, "before_mb": 389, "peak_mb": 390}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnFloatNTruncation0", "seconds": 0.544, "before_mb": 501, "peak_mb": 503, "params": "(dtype=<class 'numpy.float32'>)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrDebugNansAndInfs2", "seconds": 0.386, "before_mb": 513, "peak_mb": 514, "params": "(op='kl_div', with_jit=True)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrDebugNansAndInfs3", "seconds": 0.148, "before_mb": 514, "peak_mb": 514, "params": "(op='kl_div', with_jit=False)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_4_3x1_float32_float32", "seconds": 0.542, "before_mb": 390, "peak_mb": 391}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrExtremeValues0", "seconds": 0.252, "before_mb": 514, "peak_mb": 514, "params": "('rel_entr')"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrExtremeValues1", "seconds": 0.304, "before_mb": 514, "peak_mb": 514, "params": "('kl_div')"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrPrecision0", "seconds": 0.283, "before_mb": 503, "peak_mb": 504, "params": "('rel_entr')"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrPrecision1", "seconds": 0.323, "before_mb": 504, "peak_mb": 504, "params": "('kl_div')"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_s_2x1x4_float32_float32", "seconds": 1.196, "before_mb": 391, "peak_mb": 402}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrSmallQGrad0", "seconds": 0.254, "before_mb": 504, "peak_mb": 504, "params": "(op='kl_div', dtype=<class 'numpy.float32'>)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrSmallQGrad1", "seconds": 0.154, "before_mb": 504, "peak_mb": 505, "params": "(op='rel_entr', dtype=<class 'numpy.float32'>)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli0", "seconds": 0.035, "before_mb": 505, "peak_mb": 505, "params": "(n=0)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli1", "seconds": 0.057, "before_mb": 505, "peak_mb": 505, "params": "(n=1)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_s_3x1_float32_float32", "seconds": 0.539, "before_mb": 402, "peak_mb": 406}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli2", "seconds": 0.924, "before_mb": 505, "peak_mb": 506, "params": "(n=50)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli3", "seconds": 0.016, "before_mb": 506, "peak_mb": 506, "params": "(n=2)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_s_4_float32_float32", "seconds": 1.17, "before_mb": 406, "peak_mb": 414}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli4", "seconds": 0.743, "before_mb": 506, "peak_mb": 507, "params": "(n=10)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli5", "seconds": 0.291, "before_mb": 507, "peak_mb": 508, "params": "(n=3)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_s_s_float32_float32", "seconds": 0.893, "before_mb": 414, "peak_mb": 422}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_1x4_1x4_float32_float32", "seconds": 1.137, "before_mb": 508, "peak_mb": 543}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_1x4_1x4_float32_float32", "seconds": 0.845, "before_mb": 422, "peak_mb": 423}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_3x1_1x4_float32_float32", "seconds": 0.794, "before_mb": 423, "peak_mb": 435}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_3x1_1x4_float32_float32", "seconds": 1.792, "before_mb": 543, "peak_mb": 558}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnGrads0", "seconds": 7.03, "before_mb": 503, "peak_mb": 641, "params": "(dtype=<class 'numpy.float32'>, n=1)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnGrads1", "seconds": 0.058, "before_mb": 638, "peak_mb": 638, "params": "(dtype=<class 'numpy.float32'>, n=3)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_3x1_2x1x4_float32_float32", "seconds": 1.246, "before_mb": 435, "peak_mb": 452}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnGrads2", "seconds": 0.06, "before_mb": 638, "peak_mb": 638, "params": "(dtype=<class 'numpy.float32'>, n=0)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnGrads3", "seconds": 0.058, "before_mb": 638, "peak_mb": 638, "params": "(dtype=<class 'numpy.float32'>, n=2)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN0", "seconds": 0.569, "before_mb": 638, "peak_mb": 639, "params": "(dtype=<class 'numpy.float32'>, n=100)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN1", "seconds": 0.005, "before_mb": 639, "peak_mb": 639, "params": "(dtype=<class 'numpy.float32'>, n=5001)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN2", "seconds": 0.005, "before_mb": 639, "peak_mb": 639, "params": "(dtype=<class 'numpy.float32'>, n=200)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN3", "seconds": 0.005, "before_mb": 639, "peak_mb": 639, "params": "(dtype=<class 'numpy.float32'>, n=40)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_3x1_3x1_float32_float32", "seconds": 0.679, "before_mb": 452, "peak_mb": 462}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_3x4_3x4_float32_float32", "seconds": 0.688, "before_mb": 462, "peak_mb": 473}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_3x1_2x1x4_float32_float32", "seconds": 1.673, "before_mb": 558, "peak_mb": 575}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_1x4_1x4_float32_float32", "seconds": 0.899, "before_mb": 639, "peak_mb": 640}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_4_3x1_float32_float32", "seconds": 0.474, "before_mb": 473, "peak_mb": 482}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_3x1_3x1_float32_float32", "seconds": 1.072, "before_mb": 575, "peak_mb": 584}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_s_2x1x4_float32_float32", "seconds": 0.679, "before_mb": 482, "peak_mb": 492}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_3x1_1x4_float32_float32", "seconds": 0.963, "before_mb": 640, "peak_mb": 643}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_s_3x1_float32_float32", "seconds": 0.289, "before_mb": 492, "peak_mb": 497}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_3x4_3x4_float32_float32", "seconds": 0.511, "before_mb": 584, "peak_mb": 585}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_s_4_float32_float32", "seconds": 0.772, "before_mb": 497, "peak_mb": 507}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_3x1_2x1x4_float32_float32", "seconds": 1.081, "before_mb": 643, "peak_mb": 650}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_4_3x1_float32_float32", "seconds": 0.663, "before_mb": 585, "peak_mb": 591}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_s_s_float32_float32", "seconds": 0.547, "before_mb": 507, "peak_mb": 517}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_1x4_1x4_float32_float32", "seconds": 0.209, "before_mb": 517, "peak_mb": 521}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_3x1_3x1_float32_float32", "seconds": 0.794, "before_mb": 650, "peak_mb": 657}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_3x1_1x4_float32_float32", "seconds": 0.182, "before_mb": 521, "peak_mb": 522}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_3x1_2x1x4_float32_float32", "seconds": 0.209, "before_mb": 522, "peak_mb": 525}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_3x1_3x1_float32_float32", "seconds": 0.113, "before_mb": 525, "peak_mb": 526}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_3x4_3x4_float32_float32", "seconds": 0.494, "before_mb": 657, "peak_mb": 660}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_3x4_3x4_float32_float32", "seconds": 0.177, "before_mb": 526, "peak_mb": 527}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_s_2x1x4_float32_float32", "seconds": 1.433, "before_mb": 591, "peak_mb": 604}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_4_3x1_float32_float32", "seconds": 0.078, "before_mb": 527, "peak_mb": 529}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_s_2x1x4_float32_float32", "seconds": 0.199, "before_mb": 529, "peak_mb": 529}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_s_3x1_float32_float32", "seconds": 0.08, "before_mb": 529, "peak_mb": 531}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_4_3x1_float32_float32", "seconds": 0.51, "before_mb": 660, "peak_mb": 662}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_s_4_float32_float32", "seconds": 0.071, "before_mb": 531, "peak_mb": 531}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_s_s_float32_float32", "seconds": 0.084, "before_mb": 531, "peak_mb": 532}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_s_3x1_float32_float32", "seconds": 0.562, "before_mb": 604, "peak_mb": 610}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_s_2x1x4_float32_float32", "seconds": 0.946, "before_mb": 662, "peak_mb": 671}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_s_3x1_float32_float32", "seconds": 0.494, "before_mb": 671, "peak_mb": 674}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_s_4_float32_float32", "seconds": 1.379, "before_mb": 610, "peak_mb": 623}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_s_float32", "seconds": 1.529, "before_mb": 532, "peak_mb": 562}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_s_4_float32_float32", "seconds": 0.841, "before_mb": 674, "peak_mb": 680}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_s_s_float32_float32", "seconds": 0.988, "before_mb": 623, "peak_mb": 627}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_s_s_float32_float32", "seconds": 0.726, "before_mb": 680, "peak_mb": 682}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_3x1_1x4_2x1x4_float32_float32_float32", "seconds": 1.292, "before_mb": 627, "peak_mb": 639}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_1x4_float32", "seconds": 0.861, "before_mb": 682, "peak_mb": 684}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_1x4_float32", "seconds": 2.781, "before_mb": 562, "peak_mb": 592}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_2x1x4_float32", "seconds": 0.69, "before_mb": 684, "peak_mb": 695}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_3x4_1x4_2x1x4_float32_float32_float32", "seconds": 1.215, "before_mb": 639, "peak_mb": 645}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_3x1_float32", "seconds": 0.763, "before_mb": 695, "peak_mb": 706}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_3x4_float32", "seconds": 0.401, "before_mb": 645, "peak_mb": 646}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_4_float32", "seconds": 0.27, "before_mb": 646, "peak_mb": 646}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_s_float32", "seconds": 0.275, "before_mb": 646, "peak_mb": 646}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_3x4_float32", "seconds": 0.922, "before_mb": 706, "peak_mb": 717}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_1x4_float32", "seconds": 0.388, "before_mb": 646, "peak_mb": 651}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_2x1x4_float32", "seconds": 0.396, "before_mb": 651, "peak_mb": 656}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_4_float32", "seconds": 0.734, "before_mb": 717, "peak_mb": 728}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_3x1_float32", "seconds": 0.358, "before_mb": 656, "peak_mb": 662}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_3x4_float32", "seconds": 0.111, "before_mb": 662, "peak_mb": 663}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_4_float32", "seconds": 0.101, "before_mb": 663, "peak_mb": 665}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_s_float32", "seconds": 0.088, "before_mb": 665, "peak_mb": 666}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_s_float32", "seconds": 0.514, "before_mb": 728, "peak_mb": 738}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_1x4_float32", "seconds": 0.241, "before_mb": 738, "peak_mb": 746}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_2x1x4_float32", "seconds": 3.464, "before_mb": 592, "peak_mb": 629}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_2x1x4_float32", "seconds": 0.217, "before_mb": 746, "peak_mb": 746}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_1x4_float32", "seconds": 0.662, "before_mb": 666, "peak_mb": 676}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_3x1_float32", "seconds": 0.207, "before_mb": 746, "peak_mb": 748}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_3x4_float32", "seconds": 0.206, "before_mb": 748, "peak_mb": 749}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_4_float32", "seconds": 0.227, "before_mb": 749, "peak_mb": 752}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_2x1x4_float32", "seconds": 0.625, "before_mb": 676, "peak_mb": 685}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_s_float32", "seconds": 0.202, "before_mb": 752, "peak_mb": 752}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_1x4_float32", "seconds": 0.227, "before_mb": 752, "peak_mb": 754}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_2x1x4_float32", "seconds": 0.237, "before_mb": 754, "peak_mb": 758}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_3x1_float32", "seconds": 0.652, "before_mb": 685, "peak_mb": 695}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_3x1_float32", "seconds": 0.245, "before_mb": 758, "peak_mb": 761}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_3x4_float32", "seconds": 0.247, "before_mb": 761, "peak_mb": 765}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_4_float32", "seconds": 0.227, "before_mb": 765, "peak_mb": 768}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_3x4_float32", "seconds": 0.65, "before_mb": 695, "peak_mb": 704}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_s_float32", "seconds": 0.207, "before_mb": 768, "peak_mb": 772}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_3x1_float32", "seconds": 2.675, "before_mb": 629, "peak_mb": 649}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_1x4_float32", "seconds": 0.371, "before_mb": 772, "peak_mb": 777}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_4_float32", "seconds": 0.608, "before_mb": 704, "peak_mb": 715}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_2x1x4_float32", "seconds": 0.36, "before_mb": 777, "peak_mb": 783}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_s_float32", "seconds": 0.475, "before_mb": 715, "peak_mb": 724}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_3x1_float32", "seconds": 0.335, "before_mb": 783, "peak_mb": 788}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_1x4_complex64", "seconds": 0.96, "before_mb": 724, "peak_mb": 740}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_1x4_float32", "seconds": 0.324, "before_mb": 740, "peak_mb": 744}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_4_complex64", "seconds": 1.346, "before_mb": 788, "peak_mb": 810}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_4_float32", "seconds": 0.618, "before_mb": 810, "peak_mb": 816}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_2x1x4_complex64", "seconds": 1.035, "before_mb": 744, "peak_mb": 757}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_2x1x4_float32", "seconds": 0.3, "before_mb": 757, "peak_mb": 763}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_s_complex64", "seconds": 0.789, "before_mb": 816, "peak_mb": 826}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_3x4_float32", "seconds": 3.653, "before_mb": 649, "peak_mb": 672}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_s_float32", "seconds": 0.436, "before_mb": 826, "peak_mb": 830}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_3x1_complex64", "seconds": 1.101, "before_mb": 763, "peak_mb": 773}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_1x4_1x4_float32_float32", "seconds": 1.351, "before_mb": 830, "peak_mb": 857}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_3x4_complex64", "seconds": 1.121, "before_mb": 773, "peak_mb": 786}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_3x4_float32", "seconds": 0.398, "before_mb": 786, "peak_mb": 792}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_4_float32", "seconds": 2.649, "before_mb": 671, "peak_mb": 687}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_4_complex64", "seconds": 0.979, "before_mb": 792, "peak_mb": 804}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_3x1_1x4_float32_float32", "seconds": 1.818, "before_mb": 857, "peak_mb": 878}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_4_float32", "seconds": 0.286, "before_mb": 804, "peak_mb": 809}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_s_float32", "seconds": 0.319, "before_mb": 809, "peak_mb": 813}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_1x4_float32", "seconds": 0.135, "before_mb": 813, "peak_mb": 813}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_2x1x4_float32", "seconds": 0.102, "before_mb": 813, "peak_mb": 813}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_3x1_float32", "seconds": 0.13, "before_mb": 813, "peak_mb": 813}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_3x4_float32", "seconds": 0.132, "before_mb": 813, "peak_mb": 815}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_4_float32", "seconds": 0.106, "before_mb": 815, "peak_mb": 815}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_s_float32", "seconds": 0.097, "before_mb": 815, "peak_mb": 817}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_s_float32", "seconds": 2.272, "before_mb": 687, "peak_mb": 712}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_1x4_float32", "seconds": 0.132, "before_mb": 712, "peak_mb": 712}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_2x1x4_float32", "seconds": 0.122, "before_mb": 712, "peak_mb": 712}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_3x1_float32", "seconds": 0.122, "before_mb": 712, "peak_mb": 712}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_3x4_float32", "seconds": 0.169, "before_mb": 712, "peak_mb": 712}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_4_float32", "seconds": 0.114, "before_mb": 712, "peak_mb": 712}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_s_float32", "seconds": 0.1, "before_mb": 712, "peak_mb": 713}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_3x1_2x1x4_float32_float32", "seconds": 2.383, "before_mb": 878, "peak_mb": 901}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_1x4_float32", "seconds": 2.588, "before_mb": 817, "peak_mb": 868}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_3x1_3x1_float32_float32", "seconds": 1.572, "before_mb": 901, "peak_mb": 933}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_1x4_1x4_int32_float32", "seconds": 2.912, "before_mb": 713, "peak_mb": 741}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_3x4_3x4_float32_float32", "seconds": 2.333, "before_mb": 933, "peak_mb": 947}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_2x1x4_float32", "seconds": 4.158, "before_mb": 868, "peak_mb": 891}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_4_3x1_float32_float32", "seconds": 2.43, "before_mb": 947, "peak_mb": 968}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_3x1_1x4_int32_float32", "seconds": 4.475, "before_mb": 741, "peak_mb": 771}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_s_2x1x4_float32_float32", "seconds": 2.542, "before_mb": 968, "peak_mb": 993}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_3x1_float32", "seconds": 3.49, "before_mb": 891, "peak_mb": 911}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_s_3x1_float32_float32", "seconds": 2.012, "before_mb": 993, "peak_mb": 1011}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_3x1_2x1x4_int32_float32", "seconds": 4.731, "before_mb": 771, "peak_mb": 802}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_s_4_float32_float32", "seconds": 1.886, "before_mb": 1011, "peak_mb": 1029}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_3x4_float32", "seconds": 3.899, "before_mb": 911, "peak_mb": 944}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_s_s_float32_float32", "seconds": 1.09, "before_mb": 1029, "peak_mb": 1034}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_3x1_3x1_int32_float32", "seconds": 2.668, "before_mb": 802, "peak_mb": 819}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_1x4_1x4_float32_float32", "seconds": 0.984, "before_mb": 1034, "peak_mb": 1058}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_4_float32", "seconds": 2.138, "before_mb": 944, "peak_mb": 964}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_3x1_1x4_float32_float32", "seconds": 0.986, "before_mb": 1058, "peak_mb": 1061}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_3x1_2x1x4_float32_float32", "seconds": 1.094, "before_mb": 1061, "peak_mb": 1071}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_4_1x4_1x4_float32_float32_float32", "seconds": 2.575, "before_mb": 964, "peak_mb": 974}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_3x4_3x4_int32_float32", "seconds": 3.227, "before_mb": 819, "peak_mb": 843}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_3x1_3x1_float32_float32", "seconds": 0.929, "before_mb": 1071, "peak_mb": 1080}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_3x4_3x4_float32_float32", "seconds": 0.943, "before_mb": 1080, "peak_mb": 1089}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_4_3x1_float32_float32", "seconds": 1.053, "before_mb": 1089, "peak_mb": 1098}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_4_3x4_3x4_float32_float32_float32", "seconds": 2.815, "before_mb": 974, "peak_mb": 994}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_s_2x1x4_float32_float32", "seconds": 0.855, "before_mb": 1098, "peak_mb": 1101}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_4_3x1_int32_float32", "seconds": 3.201, "before_mb": 843, "peak_mb": 868}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_s_3x1_float32_float32", "seconds": 0.878, "before_mb": 1101, "peak_mb": 1108}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_s_4_float32_float32", "seconds": 0.951, "before_mb": 1108, "peak_mb": 1116}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_1x4_2x1x4_float32_float32_float32", "seconds": 3.01, "before_mb": 994, "peak_mb": 1022}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_s_s_float32_float32", "seconds": 0.813, "before_mb": 1116, "peak_mb": 1120}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_1x4_float32", "seconds": 0.342, "before_mb": 1120, "peak_mb": 1120}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_s_2x1x4_int32_float32", "seconds": 2.857, "before_mb": 868, "peak_mb": 888}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_2x1x4_float32", "seconds": 0.206, "before_mb": 1120, "peak_mb": 1120}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_3x1_float32", "seconds": 0.24, "before_mb": 1120, "peak_mb": 1120}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_3x4_float32", "seconds": 0.218, "before_mb": 1120, "peak_mb": 1120}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_4_float32", "seconds": 0.181, "before_mb": 1120, "peak_mb": 1120}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_s_float32", "seconds": 0.129, "before_mb": 1120, "peak_mb": 1120}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_1x4_float32", "seconds": 0.248, "before_mb": 1120, "peak_mb": 1121}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_2x1x4_float32", "seconds": 0.387, "before_mb": 1121, "peak_mb": 1121}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_3x1_float32", "seconds": 0.241, "before_mb": 1121, "peak_mb": 1121}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_3x4_1x4_float32_float32_float32", "seconds": 2.736, "before_mb": 1022, "peak_mb": 1049}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_3x4_float32", "seconds": 0.407, "before_mb": 1121, "peak_mb": 1121}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_s_3x1_int32_float32", "seconds": 2.241, "before_mb": 888, "peak_mb": 912}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_4_float32", "seconds": 0.058, "before_mb": 1121, "peak_mb": 1122}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_s_float32", "seconds": 0.061, "before_mb": 1122, "peak_mb": 1122}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_s_4_int32_float32", "seconds": 2.599, "before_mb": 912, "peak_mb": 945}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_3x4_3x1_float32_float32_float32", "seconds": 2.868, "before_mb": 1049, "peak_mb": 1070}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_s_s_int32_float32", "seconds": 0.392, "before_mb": 945, "peak_mb": 945}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_3x1_1x4_2x1x4_float32_float32_float32", "seconds": 3.279, "before_mb": 1122, "peak_mb": 1160}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_1x4_float32", "seconds": 0.659, "before_mb": 945, "peak_mb": 946}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_2x1x4_float32", "seconds": 0.533, "before_mb": 946, "peak_mb": 946}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_3x1_float32", "seconds": 0.57, "before_mb": 946, "peak_mb": 947}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_s_2x1x4_float32_float32_float32", "seconds": 2.113, "before_mb": 1070, "peak_mb": 1085}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_3x4_float32", "seconds": 0.573, "before_mb": 946, "peak_mb": 947}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_4_float32", "seconds": 0.512, "before_mb": 947, "peak_mb": 952}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_3x4_1x4_2x1x4_float32_float32_float32", "seconds": 2.874, "before_mb": 1160, "peak_mb": 1183}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_s_s_float32_float32_float32", "seconds": 1.454, "before_mb": 1085, "peak_mb": 1098}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_s_float32", "seconds": 0.539, "before_mb": 952, "peak_mb": 958}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_1x4_float32", "seconds": 0.508, "before_mb": 958, "peak_mb": 969}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_2x1x4_float32", "seconds": 0.537, "before_mb": 968, "peak_mb": 976}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_3x1_float32", "seconds": 0.497, "before_mb": 976, "peak_mb": 982}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_3x4_3x4_3x4_float32_float32_float32", "seconds": 2.23, "before_mb": 1183, "peak_mb": 1200}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_3x4_float32", "seconds": 0.6, "before_mb": 982, "peak_mb": 991}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_1x4_float32", "seconds": 0.401, "before_mb": 1200, "peak_mb": 1200}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_4_float32", "seconds": 0.45, "before_mb": 991, "peak_mb": 995}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_2x1x4_float32", "seconds": 0.484, "before_mb": 1200, "peak_mb": 1202}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_s_float32", "seconds": 0.611, "before_mb": 995, "peak_mb": 1001}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_3x1_float32", "seconds": 0.41, "before_mb": 1202, "peak_mb": 1209}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_3x4_float32", "seconds": 0.434, "before_mb": 1209, "peak_mb": 1214}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_1x4_complex64", "seconds": 1.004, "before_mb": 1001, "peak_mb": 1021}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_4_float32", "seconds": 0.414, "before_mb": 1214, "peak_mb": 1223}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_s_float32", "seconds": 0.346, "before_mb": 1223, "peak_mb": 1228}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_1x4_float32", "seconds": 0.051, "before_mb": 1228, "peak_mb": 1230}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_1x4_float32", "seconds": 0.445, "before_mb": 1021, "peak_mb": 1026}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_2x1x4_float32", "seconds": 0.052, "before_mb": 1230, "peak_mb": 1230}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_3x1_float32", "seconds": 0.049, "before_mb": 1230, "peak_mb": 1230}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_3x4_float32", "seconds": 0.053, "before_mb": 1230, "peak_mb": 1230}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_4_float32", "seconds": 0.049, "before_mb": 1230, "peak_mb": 1230}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_s_float32", "seconds": 0.047, "before_mb": 1230, "peak_mb": 1230}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_1x4_1x4_float32_float32", "seconds": 0.577, "before_mb": 1230, "peak_mb": 1241}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_2x1x4_complex64", "seconds": 1.052, "before_mb": 1026, "peak_mb": 1038}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_3x1_1x4_float32_float32", "seconds": 0.658, "before_mb": 1241, "peak_mb": 1243}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_2x1x4_float32", "seconds": 0.574, "before_mb": 1038, "peak_mb": 1044}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_3x1_2x1x4_float32_float32", "seconds": 0.835, "before_mb": 1243, "peak_mb": 1248}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_3x1_complex64", "seconds": 1.054, "before_mb": 1044, "peak_mb": 1056}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_3x1_3x1_float32_float32", "seconds": 0.646, "before_mb": 1248, "peak_mb": 1252}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_3x1_float32", "seconds": 0.535, "before_mb": 1056, "peak_mb": 1062}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_3x4_3x4_float32_float32", "seconds": 0.545, "before_mb": 1252, "peak_mb": 1256}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_4_3x1_float32_float32", "seconds": 0.619, "before_mb": 1256, "peak_mb": 1262}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_3x4_complex64", "seconds": 1.153, "before_mb": 1062, "peak_mb": 1075}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_s_2x1x4_float32_float32", "seconds": 0.665, "before_mb": 1262, "peak_mb": 1265}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_3x4_float32", "seconds": 0.556, "before_mb": 1075, "peak_mb": 1081}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_s_3x1_float32_float32", "seconds": 0.538, "before_mb": 1265, "peak_mb": 1272}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_3x4_float32", "seconds": 0.83, "before_mb": 1081, "peak_mb": 1086}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_s_4_float32_float32", "seconds": 0.7, "before_mb": 1272, "peak_mb": 1273}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_4_float32", "seconds": 0.58, "before_mb": 1086, "peak_mb": 1095}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_s_s_float32_float32", "seconds": 0.416, "before_mb": 1273, "peak_mb": 1277}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_s_float32", "seconds": 0.351, "before_mb": 1095, "peak_mb": 1100}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_1x4_float32", "seconds": 0.324, "before_mb": 1277, "peak_mb": 1278}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_1x4_float32", "seconds": 0.274, "before_mb": 1100, "peak_mb": 1106}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_2x1x4_float32", "seconds": 0.355, "before_mb": 1278, "peak_mb": 1280}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_2x1x4_float32", "seconds": 0.287, "before_mb": 1106, "peak_mb": 1109}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_3x1_float32", "seconds": 0.309, "before_mb": 1280, "peak_mb": 1284}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_3x1_float32", "seconds": 0.254, "before_mb": 1109, "peak_mb": 1112}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_3x4_float32", "seconds": 0.09, "before_mb": 1284, "peak_mb": 1285}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_4_float32", "seconds": 0.085, "before_mb": 1285, "peak_mb": 1286}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_s_float32", "seconds": 0.093, "before_mb": 1286, "peak_mb": 1287}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_3x4_float32", "seconds": 0.287, "before_mb": 1112, "peak_mb": 1114}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_4_float32", "seconds": 0.325, "before_mb": 1114, "peak_mb": 1118}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_1x4_float32", "seconds": 0.625, "before_mb": 1287, "peak_mb": 1295}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_s_float32", "seconds": 0.248, "before_mb": 1118, "peak_mb": 1118}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_1x4_complex64", "seconds": 0.346, "before_mb": 1118, "peak_mb": 1123}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_2x1x4_float32", "seconds": 0.51, "before_mb": 1295, "peak_mb": 1303}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_1x4_float32", "seconds": 0.46, "before_mb": 1123, "peak_mb": 1126}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_3x1_float32", "seconds": 0.677, "before_mb": 1303, "peak_mb": 1309}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_3x1_1x4_1x4_1x4_float32_float32_float32_float32", "seconds": 14.425, "before_mb": 1098, "peak_mb": 1330}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_2x1x4_complex64", "seconds": 0.57, "before_mb": 1126, "peak_mb": 1129}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_2x1x4_float32", "seconds": 0.36, "before_mb": 1129, "peak_mb": 1132}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_3x1_complex64", "seconds": 0.314, "before_mb": 1132, "peak_mb": 1134}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_3x4_float32", "seconds": 0.943, "before_mb": 1309, "peak_mb": 1324}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_3x1_float32", "seconds": 0.366, "before_mb": 1134, "peak_mb": 1138}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_3x4_complex64", "seconds": 0.333, "before_mb": 1138, "peak_mb": 1141}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_4_float32", "seconds": 0.819, "before_mb": 1324, "peak_mb": 1338}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_3x4_float32", "seconds": 0.415, "before_mb": 1141, "peak_mb": 1143}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_4_complex64", "seconds": 0.404, "before_mb": 1143, "peak_mb": 1146}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_s_float32", "seconds": 0.814, "before_mb": 1338, "peak_mb": 1348}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_4_float32", "seconds": 0.499, "before_mb": 1146, "peak_mb": 1148}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_s_complex64", "seconds": 0.306, "before_mb": 1148, "peak_mb": 1151}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_1x4_float32", "seconds": 0.925, "before_mb": 1348, "peak_mb": 1360}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_s_float32", "seconds": 0.33, "before_mb": 1151, "peak_mb": 1153}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_1x4_float32", "seconds": 0.061, "before_mb": 1153, "peak_mb": 1153}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_2x1x4_float32", "seconds": 0.076, "before_mb": 1153, "peak_mb": 1153}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_3x1_float32", "seconds": 0.125, "before_mb": 1153, "peak_mb": 1154}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_2x1x4_float32", "seconds": 1.203, "before_mb": 1360, "peak_mb": 1372}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_3x1_float32", "seconds": 0.948, "before_mb": 1372, "peak_mb": 1384}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_4_3x1_float32_float32", "seconds": 2.019, "before_mb": 1154, "peak_mb": 1179}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_3x4_float32", "seconds": 1.117, "before_mb": 1384, "peak_mb": 1395}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_s_2x1x4_float32_float32", "seconds": 1.467, "before_mb": 1179, "peak_mb": 1198}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_4_float32", "seconds": 0.895, "before_mb": 1395, "peak_mb": 1406}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_s_3x1_float32_float32", "seconds": 1.074, "before_mb": 1198, "peak_mb": 1210}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_s_float32", "seconds": 0.872, "before_mb": 1406, "peak_mb": 1417}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_s_4_float32_float32", "seconds": 1.019, "before_mb": 1210, "peak_mb": 1223}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_1x4_1x4_float32_float32", "seconds": 0.884, "before_mb": 1417, "peak_mb": 1429}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_s_s_float32_float32", "seconds": 0.731, "before_mb": 1223, "peak_mb": 1231}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_3x1_1x4_float32_float32", "seconds": 0.995, "before_mb": 1429, "peak_mb": 1444}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_1x4_1x4_float32_float32", "seconds": 0.479, "before_mb": 1231, "peak_mb": 1243}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_3x1_1x4_float32_float32", "seconds": 0.705, "before_mb": 1243, "peak_mb": 1248}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_3x1_2x1x4_float32_float32", "seconds": 1.518, "before_mb": 1248, "peak_mb": 1258}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_3x1_2x1x4_float32_float32", "seconds": 2.692, "before_mb": 1444, "peak_mb": 1467}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_3x1_3x1_float32_float32", "seconds": 0.455, "before_mb": 1258, "peak_mb": 1265}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_3x4_3x4_float32_float32", "seconds": 0.433, "before_mb": 1265, "peak_mb": 1266}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_3x1_3x1_float32_float32", "seconds": 0.759, "before_mb": 1467, "peak_mb": 1478}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_4_3x1_float32_float32", "seconds": 0.581, "before_mb": 1266, "peak_mb": 1270}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_3x4_3x4_float32_float32", "seconds": 0.574, "before_mb": 1478, "peak_mb": 1486}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_1x4_1x4_int32_float32", "seconds": 0.238, "before_mb": 1486, "peak_mb": 1487}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_s_2x1x4_float32_float32", "seconds": 0.523, "before_mb": 1270, "peak_mb": 1270}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_3x1_1x4_int32_float32", "seconds": 0.335, "before_mb": 1487, "peak_mb": 1491}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_s_3x1_float32_float32", "seconds": 0.435, "before_mb": 1270, "peak_mb": 1273}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_3x1_2x1x4_int32_float32", "seconds": 0.371, "before_mb": 1491, "peak_mb": 1496}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_3x1_3x1_int32_float32", "seconds": 0.286, "before_mb": 1496, "peak_mb": 1496}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_s_4_float32_float32", "seconds": 0.491, "before_mb": 1273, "peak_mb": 1274}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_3x4_3x4_int32_float32", "seconds": 0.339, "before_mb": 1496, "peak_mb": 1496}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_s_s_float32_float32", "seconds": 0.283, "before_mb": 1274, "peak_mb": 1274}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_4_3x1_int32_float32", "seconds": 0.304, "before_mb": 1496, "peak_mb": 1498}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_s_2x1x4_int32_float32", "seconds": 0.129, "before_mb": 1498, "peak_mb": 1499}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_s_3x1_int32_float32", "seconds": 0.152, "before_mb": 1499, "peak_mb": 1500}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_3x4_3x4_float32_float32", "seconds": 0.585, "before_mb": 1274, "peak_mb": 1275}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_s_4_int32_float32", "seconds": 0.134, "before_mb": 1500, "peak_mb": 1500}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_s_s_int32_float32", "seconds": 0.128, "before_mb": 1500, "peak_mb": 1500}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_4_3x1_float32_float32", "seconds": 0.941, "before_mb": 1274, "peak_mb": 1278}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_1x4_1x4_float32_float32", "seconds": 0.731, "before_mb": 1500, "peak_mb": 1503}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_3x1_3x1_2x1x4_2x1x4_float32_float32_float32_float32", "seconds": 17.53, "before_mb": 1330, "peak_mb": 1453}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_s_2x1x4_float32_float32", "seconds": 0.637, "before_mb": 1278, "peak_mb": 1282}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_3x1_1x4_float32_float32", "seconds": 0.64, "before_mb": 1503, "peak_mb": 1507}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_s_3x1_float32_float32", "seconds": 0.518, "before_mb": 1282, "peak_mb": 1286}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_3x1_2x1x4_float32_float32", "seconds": 0.667, "before_mb": 1507, "peak_mb": 1511}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_s_4_float32_float32", "seconds": 0.636, "before_mb": 1286, "peak_mb": 1291}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_3x1_3x1_float32_float32", "seconds": 0.551, "before_mb": 1511, "peak_mb": 1515}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_s_s_float32_float32", "seconds": 0.455, "before_mb": 1291, "peak_mb": 1296}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_s_float32", "seconds": 1.011, "before_mb": 1515, "peak_mb": 1522}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_1x4_float32", "seconds": 1.184, "before_mb": 1296, "peak_mb": 1301}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_1x4_float32", "seconds": 1.014, "before_mb": 1522, "peak_mb": 1527}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_2x1x4_float32", "seconds": 1.025, "before_mb": 1301, "peak_mb": 1308}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_2x1x4_float32", "seconds": 0.978, "before_mb": 1527, "peak_mb": 1537}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_3x1_float32", "seconds": 0.849, "before_mb": 1308, "peak_mb": 1314}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_3x1_float32", "seconds": 0.893, "before_mb": 1537, "peak_mb": 1547}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_3x4_float32", "seconds": 1.181, "before_mb": 1314, "peak_mb": 1321}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_3x4_float32", "seconds": 0.994, "before_mb": 1547, "peak_mb": 1557}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_4_float32", "seconds": 1.048, "before_mb": 1321, "peak_mb": 1327}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_4_float32", "seconds": 0.92, "before_mb": 1557, "peak_mb": 1567}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_3x4_complex64", "seconds": 0.693, "before_mb": 1327, "peak_mb": 1331}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_s_float32", "seconds": 0.609, "before_mb": 1567, "peak_mb": 1575}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_4_complex64", "seconds": 0.741, "before_mb": 1331, "peak_mb": 1339}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_1x4_complex64", "seconds": 0.807, "before_mb": 1575, "peak_mb": 1588}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_s_complex64", "seconds": 0.539, "before_mb": 1339, "peak_mb": 1346}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_1x4_1x4_float32_float32", "seconds": 0.118, "before_mb": 1346, "peak_mb": 1347}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_3x1_1x4_float32_float32", "seconds": 0.298, "before_mb": 1347, "peak_mb": 1351}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_2x1x4_complex64", "seconds": 0.931, "before_mb": 1588, "peak_mb": 1595}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_3x1_2x1x4_float32_float32", "seconds": 0.557, "before_mb": 1351, "peak_mb": 1358}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_3x1_3x1_float32_float32", "seconds": 0.078, "before_mb": 1358, "peak_mb": 1358}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_3x4_3x4_float32_float32", "seconds": 0.236, "before_mb": 1358, "peak_mb": 1361}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_3x1_complex64", "seconds": 0.816, "before_mb": 1595, "peak_mb": 1604}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_3x1_2x1x4_float32_float32", "seconds": 0.083, "before_mb": 1361, "peak_mb": 1362}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_3x1_3x1_float32_float32", "seconds": 0.062, "before_mb": 1362, "peak_mb": 1363}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_3x4_3x4_float32_float32", "seconds": 0.055, "before_mb": 1363, "peak_mb": 1363}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_4_3x1_float32_float32", "seconds": 0.352, "before_mb": 1604, "peak_mb": 1606}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_4_3x1_float32_float32", "seconds": 0.285, "before_mb": 1363, "peak_mb": 1367}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_s_2x1x4_float32_float32", "seconds": 0.287, "before_mb": 1606, "peak_mb": 1609}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_s_2x1x4_float32_float32", "seconds": 0.216, "before_mb": 1367, "peak_mb": 1368}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_s_3x1_float32_float32", "seconds": 0.182, "before_mb": 1368, "peak_mb": 1371}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_s_3x1_float32_float32", "seconds": 0.26, "before_mb": 1609, "peak_mb": 1613}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_s_4_float32_float32", "seconds": 0.225, "before_mb": 1371, "peak_mb": 1375}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_s_4_float32_float32", "seconds": 0.231, "before_mb": 1613, "peak_mb": 1615}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_s_s_float32_float32", "seconds": 0.096, "before_mb": 1375, "peak_mb": 1376}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_s_s_float32_float32", "seconds": 0.165, "before_mb": 1615, "peak_mb": 1618}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_1x4_1x4_float32_float32", "seconds": 0.103, "before_mb": 1618, "peak_mb": 1618}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_3x1_1x4_float32_float32", "seconds": 0.301, "before_mb": 1618, "peak_mb": 1623}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_3x4_3x4_3x4_2x1x4_float32_float32_float32_float32", "seconds": 14.237, "before_mb": 1453, "peak_mb": 1570}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_1x4_1x4_float32_float32", "seconds": 3.051, "before_mb": 1376, "peak_mb": 1412}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_4_3x1_float32_float32", "seconds": 3.702, "before_mb": 1623, "peak_mb": 1660}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_3x1_1x4_float32_float32", "seconds": 3.257, "before_mb": 1412, "peak_mb": 1445}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_s_2x1x4_float32_float32", "seconds": 3.646, "before_mb": 1660, "peak_mb": 1698}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_3x1_2x1x4_float32_float32", "seconds": 3.607, "before_mb": 1445, "peak_mb": 1487}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_s_3x1_float32_float32", "seconds": 2.646, "before_mb": 1698, "peak_mb": 1726}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_3x1_3x1_float32_float32", "seconds": 2.373, "before_mb": 1487, "peak_mb": 1515}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_s_4_float32_float32", "seconds": 2.713, "before_mb": 1726, "peak_mb": 1755}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_3x4_3x4_float32_float32", "seconds": 1.646, "before_mb": 1515, "peak_mb": 1531}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciRaiseOnComplexInput", "seconds": 0.088, "before_mb": 1531, "peak_mb": 1532}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges0", "seconds": 0.249, "before_mb": 1532, "peak_mb": 1539, "params": "(scale=1, shape=(5,))"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges1", "seconds": 0.004, "before_mb": 1539, "peak_mb": 1539, "params": "(scale=10, shape=(5,))"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges2", "seconds": 0.211, "before_mb": 1539, "peak_mb": 1541, "params": "(scale=1000000000.0, shape=(10,))"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges3", "seconds": 0.004, "before_mb": 1541, "peak_mb": 1541, "params": "(scale=1000000000.0, shape=(5,))"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges4", "seconds": 0.004, "before_mb": 1541, "peak_mb": 1541, "params": "(scale=10, shape=(10,))"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges5", "seconds": 0.003, "before_mb": 1541, "peak_mb": 1541, "params": "(scale=1, shape=(10,))"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_s_s_float32_float32", "seconds": 2.224, "before_mb": 1755, "peak_mb": 1781}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testWofzAccuracy", "seconds": 0.954, "before_mb": 1541, "peak_mb": 1546}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciEdgeCases", "seconds": 0.228, "before_mb": 1781, "peak_mb": 1784}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testWofzJvp", "seconds": 1.113, "before_mb": 1546, "peak_mb": 1555}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testWofzLowerHalfPlane", "seconds": 0.93, "before_mb": 1784, "peak_mb": 1790}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_gammaln_grad", "seconds": 0.401, "before_mb": 1790, "peak_mb": 1794}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_gammaln_exact_zeros_and_special_values", "seconds": 0.72, "before_mb": 1555, "peak_mb": 1563}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_gammaln_sweep_ulp", "seconds": 0.443, "before_mb": 1794, "peak_mb": 1799}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_gammaln_negative_roots_ulp", "seconds": 0.516, "before_mb": 1563, "peak_mb": 1567}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i0_gradients0", "seconds": 0.488, "before_mb": 1798, "peak_mb": 1800, "params": "(1)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_4_3x4_3x1_2x1x4_float32_float32_float32_float32", "seconds": 15.893, "before_mb": 1570, "peak_mb": 1711}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i0_gradients1", "seconds": 0.952, "before_mb": 1567, "peak_mb": 1577, "params": "(2)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i0_gradients2", "seconds": 1.216, "before_mb": 1800, "peak_mb": 1814, "params": "(3)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i1_gradients0", "seconds": 0.141, "before_mb": 1814, "peak_mb": 1815, "params": "(1)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i0_gradients3", "seconds": 1.668, "before_mb": 1577, "peak_mb": 1595, "params": "(4)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i1_gradients2", "seconds": 1.307, "before_mb": 1815, "peak_mb": 1826, "params": "(3)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i1_gradients1", "seconds": 0.257, "before_mb": 1595, "peak_mb": 1595, "params": "(2)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i1_gradients3", "seconds": 2.291, "before_mb": 1826, "peak_mb": 1845, "params": "(4)"}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_4_3x4_3x4_1x4_float32_float32_float32_float32", "seconds": 14.742, "before_mb": 1711, "peak_mb": 1828}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_4_4_3x1_2x1x4_float32_float32_float32_float32", "seconds": 12.877, "before_mb": 1791, "peak_mb": 1950}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_s_1x4_1x4_2x1x4_float32_float32_float32_float32", "seconds": 11.178, "before_mb": 1950, "peak_mb": 2062}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_s_3x4_1x4_2x1x4_float32_float32_float32_float32", "seconds": 13.781, "before_mb": 2062, "peak_mb": 2198}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_s_4_3x1_1x4_float32_float32_float32_float32", "seconds": 14.526, "before_mb": 2198, "peak_mb": 2311}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_s_s_1x4_2x1x4_float32_float32_float32_float32", "seconds": 11.007, "before_mb": 2303, "peak_mb": 2420}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_1x4_float32", "seconds": 0.291, "before_mb": 2377, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_2x1x4_float32", "seconds": 0.233, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_3x1_float32", "seconds": 0.246, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_3x4_float32", "seconds": 0.252, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_4_float32", "seconds": 0.231, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_s_float32", "seconds": 0.21, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_1x4_float32", "seconds": 0.181, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_2x1x4_float32", "seconds": 0.174, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_3x1_float32", "seconds": 0.176, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_3x4_float32", "seconds": 0.177, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_4_float32", "seconds": 0.18, "before_mb": 2378, "peak_mb": 2378}
-{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_s_float32", "seconds": 0.173, "before_mb": 2378, "peak_mb": 2378}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN4", "seconds": 1.106, "before_mb": 190, "peak_mb": 297, "params": "(dtype=<class 'numpy.float32'>, n=5000)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_3x4_3x4_3x4_float32_float32_float32", "seconds": 1.178, "before_mb": 190, "peak_mb": 285}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testBetaIncBoundaryValues", "seconds": 1.279, "before_mb": 190, "peak_mb": 286}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnOutOfDomainAndInf0", "seconds": 0.624, "before_mb": 297, "peak_mb": 305, "params": "(dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testBetaIncResultDoesNotDependOnBatch0", "seconds": 1.005, "before_mb": 286, "peak_mb": 296, "params": "(dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_4_1x4_1x4_float32_float32_float32", "seconds": 1.168, "before_mb": 285, "peak_mb": 297}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnTracerLeaks", "seconds": 0.665, "before_mb": 305, "peak_mb": 322}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testBetaParameterDeprecation", "seconds": 0.702, "before_mb": 296, "peak_mb": 297}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testGammaIncBoundaryValues", "seconds": 1.014, "before_mb": 322, "peak_mb": 332}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_4_3x4_3x4_float32_float32_float32", "seconds": 1.09, "before_mb": 297, "peak_mb": 303}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testGammaIncCBoundaryValues", "seconds": 0.897, "before_mb": 332, "peak_mb": 342}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_1x4_2x1x4_float32_float32_float32", "seconds": 1.274, "before_mb": 303, "peak_mb": 321}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testBetalnHessianAtZero", "seconds": 2.032, "before_mb": 297, "peak_mb": 338}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testGammaSign", "seconds": 1.127, "before_mb": 342, "peak_mb": 344}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_3x4_1x4_float32_float32_float32", "seconds": 0.99, "before_mb": 321, "peak_mb": 323}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testCombBoundaryValues0", "seconds": 0.736, "before_mb": 338, "peak_mb": 359, "params": "([-1, -1, 5, 5], [0, 2, -1, 7], False)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testCombBoundaryValues1", "seconds": 0.775, "before_mb": 359, "peak_mb": 372, "params": "([0, 0], [0, 4], True)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_3x4_3x1_float32_float32_float32", "seconds": 0.984, "before_mb": 323, "peak_mb": 327}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testComplexGammaBranchCut", "seconds": 1.089, "before_mb": 372, "peak_mb": 378}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_s_2x1x4_float32_float32_float32", "seconds": 1.075, "before_mb": 327, "peak_mb": 339}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testComplexGammaPoles", "seconds": 0.693, "before_mb": 378, "peak_mb": 392}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_s_s_s_float32_float32_float32", "seconds": 0.901, "before_mb": 339, "peak_mb": 341}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testDawsnLargeX", "seconds": 0.433, "before_mb": 392, "peak_mb": 401}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testErfcinvDebugInfs0", "seconds": 0.78, "before_mb": 401, "peak_mb": 421, "params": "(True)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testErfcinvDebugInfs1", "seconds": 0.013, "before_mb": 421, "peak_mb": 421, "params": "(False)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_1x4_1x4_float32_float32", "seconds": 0.923, "before_mb": 341, "peak_mb": 352}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testErfcinvExtremeValues", "seconds": 0.265, "before_mb": 421, "peak_mb": 430}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExp1BranchesTerminate0", "seconds": 0.709, "before_mb": 430, "peak_mb": 449, "params": "(dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_3x1_1x4_float32_float32", "seconds": 1.261, "before_mb": 352, "peak_mb": 366}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testHyp2f1SpecialCases", "seconds": 5.441, "before_mb": 344, "peak_mb": 500}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testNdtriDebugInfs0", "seconds": 1.038, "before_mb": 500, "peak_mb": 502, "params": "(True)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testNdtriDebugInfs1", "seconds": 0.014, "before_mb": 502, "peak_mb": 502, "params": "(False)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_3x1_2x1x4_float32_float32", "seconds": 1.143, "before_mb": 366, "peak_mb": 381}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpiDisableJit", "seconds": 1.631, "before_mb": 449, "peak_mb": 482}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpiZero", "seconds": 0.613, "before_mb": 482, "peak_mb": 494}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testNdtriExtremeValues", "seconds": 0.924, "before_mb": 502, "peak_mb": 504}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_3x1_3x1_float32_float32", "seconds": 1.133, "before_mb": 381, "peak_mb": 389}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary0", "seconds": 0.364, "before_mb": 494, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=50)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary1", "seconds": 0.003, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=0)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary2", "seconds": 0.003, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=4)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary3", "seconds": 0.004, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=-1)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary4", "seconds": 0.003, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=10)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary5", "seconds": 0.003, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=1)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary6", "seconds": 0.003, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=5000)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary7", "seconds": 0.003, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=3)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary8", "seconds": 0.011, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=2)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnAtZeroBoundary9", "seconds": 0.007, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=5)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnBranchesTerminate0", "seconds": 0.004, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=1)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnBranchesTerminate1", "seconds": 0.005, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=10)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnBranchesTerminate2", "seconds": 0.005, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=0)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnBranchesTerminate3", "seconds": 0.004, "before_mb": 495, "peak_mb": 495, "params": "(dtype=<class 'numpy.float32'>, n=2)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrDebugNansAndInfs0", "seconds": 0.631, "before_mb": 504, "peak_mb": 507, "params": "(op='rel_entr', with_jit=True)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_3x4_3x4_float32_float32", "seconds": 0.472, "before_mb": 389, "peak_mb": 390}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrDebugNansAndInfs1", "seconds": 0.16, "before_mb": 507, "peak_mb": 507, "params": "(op='rel_entr', with_jit=False)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnFloatNTruncation0", "seconds": 0.533, "before_mb": 495, "peak_mb": 501, "params": "(dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrDebugNansAndInfs2", "seconds": 0.364, "before_mb": 496, "peak_mb": 496, "params": "(op='kl_div', with_jit=True)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_4_3x1_float32_float32", "seconds": 0.519, "before_mb": 390, "peak_mb": 391}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrDebugNansAndInfs3", "seconds": 0.127, "before_mb": 496, "peak_mb": 497, "params": "(op='kl_div', with_jit=False)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrExtremeValues0", "seconds": 0.334, "before_mb": 497, "peak_mb": 497, "params": "('rel_entr')"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrExtremeValues1", "seconds": 0.203, "before_mb": 497, "peak_mb": 497, "params": "('kl_div')"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrPrecision0", "seconds": 0.283, "before_mb": 497, "peak_mb": 498, "params": "('rel_entr')"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrPrecision1", "seconds": 0.258, "before_mb": 498, "peak_mb": 498, "params": "('kl_div')"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_s_2x1x4_float32_float32", "seconds": 1.233, "before_mb": 391, "peak_mb": 403}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrSmallQGrad0", "seconds": 0.258, "before_mb": 498, "peak_mb": 498, "params": "(op='kl_div', dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testRelEntrSmallQGrad1", "seconds": 0.186, "before_mb": 498, "peak_mb": 499, "params": "(op='rel_entr', dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli0", "seconds": 0.079, "before_mb": 499, "peak_mb": 499, "params": "(n=0)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli1", "seconds": 0.051, "before_mb": 499, "peak_mb": 499, "params": "(n=1)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_s_3x1_float32_float32", "seconds": 0.556, "before_mb": 401, "peak_mb": 402}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli2", "seconds": 0.755, "before_mb": 499, "peak_mb": 500, "params": "(n=50)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli3", "seconds": 0.014, "before_mb": 500, "peak_mb": 500, "params": "(n=2)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_s_4_float32_float32", "seconds": 1.165, "before_mb": 402, "peak_mb": 412}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli4", "seconds": 0.797, "before_mb": 500, "peak_mb": 501, "params": "(n=10)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFunBernoulli5", "seconds": 0.266, "before_mb": 501, "peak_mb": 502, "params": "(n=3)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betaln_s_s_float32_float32", "seconds": 0.885, "before_mb": 412, "peak_mb": 420}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_1x4_1x4_float32_float32", "seconds": 0.804, "before_mb": 420, "peak_mb": 422}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_1x4_1x4_float32_float32", "seconds": 1.188, "before_mb": 502, "peak_mb": 534}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_3x1_1x4_float32_float32", "seconds": 0.881, "before_mb": 422, "peak_mb": 435}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_3x1_1x4_float32_float32", "seconds": 1.751, "before_mb": 534, "peak_mb": 553}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnGrads0", "seconds": 7.103, "before_mb": 501, "peak_mb": 646, "params": "(dtype=<class 'numpy.float32'>, n=1)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_3x1_2x1x4_float32_float32", "seconds": 1.214, "before_mb": 435, "peak_mb": 450}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnGrads1", "seconds": 0.063, "before_mb": 642, "peak_mb": 642, "params": "(dtype=<class 'numpy.float32'>, n=3)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnGrads2", "seconds": 0.055, "before_mb": 642, "peak_mb": 642, "params": "(dtype=<class 'numpy.float32'>, n=0)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnGrads3", "seconds": 0.082, "before_mb": 642, "peak_mb": 642, "params": "(dtype=<class 'numpy.float32'>, n=2)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_3x1_3x1_float32_float32", "seconds": 0.633, "before_mb": 450, "peak_mb": 461}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN0", "seconds": 0.589, "before_mb": 642, "peak_mb": 644, "params": "(dtype=<class 'numpy.float32'>, n=100)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN1", "seconds": 0.005, "before_mb": 644, "peak_mb": 644, "params": "(dtype=<class 'numpy.float32'>, n=5001)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN2", "seconds": 0.007, "before_mb": 644, "peak_mb": 644, "params": "(dtype=<class 'numpy.float32'>, n=200)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testExpnLargeN3", "seconds": 0.006, "before_mb": 644, "peak_mb": 644, "params": "(dtype=<class 'numpy.float32'>, n=40)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_3x1_2x1x4_float32_float32", "seconds": 1.56, "before_mb": 553, "peak_mb": 568}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_3x4_3x4_float32_float32", "seconds": 0.672, "before_mb": 461, "peak_mb": 472}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_1x4_1x4_float32_float32", "seconds": 0.849, "before_mb": 644, "peak_mb": 646}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_4_3x1_float32_float32", "seconds": 0.498, "before_mb": 472, "peak_mb": 480}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_3x1_3x1_float32_float32", "seconds": 1.135, "before_mb": 568, "peak_mb": 580}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_s_2x1x4_float32_float32", "seconds": 0.644, "before_mb": 480, "peak_mb": 490}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_3x1_1x4_float32_float32", "seconds": 0.978, "before_mb": 645, "peak_mb": 647}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_s_3x1_float32_float32", "seconds": 0.28, "before_mb": 490, "peak_mb": 495}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_3x4_3x4_float32_float32", "seconds": 0.493, "before_mb": 580, "peak_mb": 581}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_s_4_float32_float32", "seconds": 0.668, "before_mb": 495, "peak_mb": 506}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_4_3x1_float32_float32", "seconds": 0.664, "before_mb": 581, "peak_mb": 584}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_3x1_2x1x4_float32_float32", "seconds": 0.98, "before_mb": 647, "peak_mb": 659}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox1p_s_s_float32_float32", "seconds": 0.587, "before_mb": 506, "peak_mb": 515}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_1x4_1x4_float32_float32", "seconds": 0.166, "before_mb": 515, "peak_mb": 517}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_3x1_1x4_float32_float32", "seconds": 0.197, "before_mb": 517, "peak_mb": 521}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_3x1_3x1_float32_float32", "seconds": 0.771, "before_mb": 659, "peak_mb": 663}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_3x1_2x1x4_float32_float32", "seconds": 0.193, "before_mb": 521, "peak_mb": 523}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_3x1_3x1_float32_float32", "seconds": 0.071, "before_mb": 523, "peak_mb": 524}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_3x4_3x4_float32_float32", "seconds": 0.219, "before_mb": 524, "peak_mb": 526}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_3x4_3x4_float32_float32", "seconds": 0.531, "before_mb": 663, "peak_mb": 664}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_s_2x1x4_float32_float32", "seconds": 1.349, "before_mb": 584, "peak_mb": 598}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_4_3x1_float32_float32", "seconds": 0.079, "before_mb": 526, "peak_mb": 527}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_s_2x1x4_float32_float32", "seconds": 0.161, "before_mb": 527, "peak_mb": 527}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_s_3x1_float32_float32", "seconds": 0.09, "before_mb": 527, "peak_mb": 530}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_s_4_float32_float32", "seconds": 0.058, "before_mb": 530, "peak_mb": 530}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_boxcox_s_s_float32_float32", "seconds": 0.094, "before_mb": 530, "peak_mb": 531}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_4_3x1_float32_float32", "seconds": 0.537, "before_mb": 664, "peak_mb": 671}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_s_3x1_float32_float32", "seconds": 0.624, "before_mb": 598, "peak_mb": 604}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_s_2x1x4_float32_float32", "seconds": 0.982, "before_mb": 671, "peak_mb": 679}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_s_4_float32_float32", "seconds": 1.292, "before_mb": 604, "peak_mb": 614}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_s_float32", "seconds": 1.574, "before_mb": 531, "peak_mb": 563}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_s_3x1_float32_float32", "seconds": 0.556, "before_mb": 679, "peak_mb": 681}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_beta_s_s_float32_float32", "seconds": 0.917, "before_mb": 614, "peak_mb": 623}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_s_4_float32_float32", "seconds": 0.889, "before_mb": 681, "peak_mb": 685}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_comb_s_s_float32_float32", "seconds": 0.677, "before_mb": 685, "peak_mb": 687}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_3x1_1x4_2x1x4_float32_float32_float32", "seconds": 1.178, "before_mb": 623, "peak_mb": 636}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_1x4_float32", "seconds": 0.807, "before_mb": 687, "peak_mb": 689}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_1x4_float32", "seconds": 2.783, "before_mb": 563, "peak_mb": 589}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_2x1x4_float32", "seconds": 0.82, "before_mb": 689, "peak_mb": 700}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_betainc_3x4_1x4_2x1x4_float32_float32_float32", "seconds": 1.241, "before_mb": 635, "peak_mb": 643}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_3x4_float32", "seconds": 0.395, "before_mb": 643, "peak_mb": 643}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_4_float32", "seconds": 0.343, "before_mb": 643, "peak_mb": 643}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_3x1_float32", "seconds": 0.777, "before_mb": 700, "peak_mb": 712}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_s_float32", "seconds": 0.32, "before_mb": 643, "peak_mb": 643}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_1x4_float32", "seconds": 0.356, "before_mb": 643, "peak_mb": 646}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_3x4_float32", "seconds": 0.796, "before_mb": 712, "peak_mb": 723}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_2x1x4_float32", "seconds": 0.4, "before_mb": 646, "peak_mb": 652}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_3x1_float32", "seconds": 0.373, "before_mb": 652, "peak_mb": 657}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_4_float32", "seconds": 0.718, "before_mb": 723, "peak_mb": 734}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_3x4_float32", "seconds": 0.111, "before_mb": 657, "peak_mb": 659}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_4_float32", "seconds": 0.173, "before_mb": 659, "peak_mb": 660}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfc_s_float32", "seconds": 0.143, "before_mb": 660, "peak_mb": 661}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_2x1x4_float32", "seconds": 3.257, "before_mb": 589, "peak_mb": 630}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_dawsn_s_float32", "seconds": 0.514, "before_mb": 734, "peak_mb": 744}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_1x4_float32", "seconds": 0.198, "before_mb": 744, "peak_mb": 749}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_2x1x4_float32", "seconds": 0.199, "before_mb": 749, "peak_mb": 751}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_1x4_float32", "seconds": 0.585, "before_mb": 661, "peak_mb": 671}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_3x1_float32", "seconds": 0.249, "before_mb": 751, "peak_mb": 755}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_3x4_float32", "seconds": 0.226, "before_mb": 755, "peak_mb": 757}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_4_float32", "seconds": 0.18, "before_mb": 757, "peak_mb": 758}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_2x1x4_float32", "seconds": 0.645, "before_mb": 671, "peak_mb": 680}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_digamma_s_float32", "seconds": 0.224, "before_mb": 758, "peak_mb": 758}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_1x4_float32", "seconds": 0.212, "before_mb": 758, "peak_mb": 760}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_3x1_float32", "seconds": 0.631, "before_mb": 680, "peak_mb": 690}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_2x1x4_float32", "seconds": 0.237, "before_mb": 760, "peak_mb": 764}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_3x1_float32", "seconds": 0.243, "before_mb": 764, "peak_mb": 767}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_3x4_float32", "seconds": 0.22, "before_mb": 767, "peak_mb": 771}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_3x4_float32", "seconds": 0.712, "before_mb": 690, "peak_mb": 700}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_4_float32", "seconds": 0.254, "before_mb": 771, "peak_mb": 774}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_3x1_float32", "seconds": 2.572, "before_mb": 630, "peak_mb": 646}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_entr_s_float32", "seconds": 0.229, "before_mb": 774, "peak_mb": 778}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_4_float32", "seconds": 0.578, "before_mb": 700, "peak_mb": 710}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_1x4_float32", "seconds": 0.315, "before_mb": 778, "peak_mb": 783}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_2x1x4_float32", "seconds": 0.372, "before_mb": 783, "peak_mb": 789}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcinv_s_float32", "seconds": 0.589, "before_mb": 710, "peak_mb": 718}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erf_3x1_float32", "seconds": 0.377, "before_mb": 789, "peak_mb": 795}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_1x4_complex64", "seconds": 0.775, "before_mb": 718, "peak_mb": 734}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_1x4_float32", "seconds": 0.285, "before_mb": 734, "peak_mb": 739}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_3x4_complex64", "seconds": 1.092, "before_mb": 795, "peak_mb": 816}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_3x4_float32", "seconds": 0.565, "before_mb": 816, "peak_mb": 824}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_2x1x4_complex64", "seconds": 0.986, "before_mb": 739, "peak_mb": 751}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_2x1x4_float32", "seconds": 0.391, "before_mb": 751, "peak_mb": 757}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_3x4_float32", "seconds": 3.634, "before_mb": 646, "peak_mb": 680}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_4_complex64", "seconds": 0.905, "before_mb": 824, "peak_mb": 835}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_3x1_complex64", "seconds": 0.824, "before_mb": 757, "peak_mb": 768}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_4_float32", "seconds": 0.531, "before_mb": 835, "peak_mb": 841}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_s_complex64", "seconds": 0.734, "before_mb": 841, "peak_mb": 851}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_3x4_complex64", "seconds": 1.138, "before_mb": 768, "peak_mb": 782}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_s_float32", "seconds": 0.448, "before_mb": 851, "peak_mb": 855}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_3x4_float32", "seconds": 0.407, "before_mb": 782, "peak_mb": 787}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_4_float32", "seconds": 2.416, "before_mb": 680, "peak_mb": 693}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_1x4_1x4_float32_float32", "seconds": 1.296, "before_mb": 855, "peak_mb": 881}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_4_complex64", "seconds": 0.949, "before_mb": 787, "peak_mb": 799}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_4_float32", "seconds": 0.347, "before_mb": 799, "peak_mb": 804}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfcx_s_float32", "seconds": 0.304, "before_mb": 804, "peak_mb": 807}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_1x4_float32", "seconds": 0.132, "before_mb": 807, "peak_mb": 808}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_2x1x4_float32", "seconds": 0.131, "before_mb": 808, "peak_mb": 808}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_3x1_float32", "seconds": 0.145, "before_mb": 808, "peak_mb": 808}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_3x4_float32", "seconds": 0.132, "before_mb": 808, "peak_mb": 810}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expi_s_float32", "seconds": 2.041, "before_mb": 693, "peak_mb": 705}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_4_float32", "seconds": 0.109, "before_mb": 810, "peak_mb": 810}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_1x4_float32", "seconds": 0.119, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_erfinv_s_float32", "seconds": 0.072, "before_mb": 810, "peak_mb": 812}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_2x1x4_float32", "seconds": 0.117, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_3x1_float32", "seconds": 0.103, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_3x1_1x4_float32_float32", "seconds": 1.666, "before_mb": 881, "peak_mb": 901}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_3x4_float32", "seconds": 0.117, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_4_float32", "seconds": 0.176, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expit_s_float32", "seconds": 0.092, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_1x4_float32", "seconds": 2.714, "before_mb": 812, "peak_mb": 861}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_1x4_1x4_int32_float32", "seconds": 2.316, "before_mb": 705, "peak_mb": 741}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_3x1_2x1x4_float32_float32", "seconds": 2.665, "before_mb": 901, "peak_mb": 925}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_3x1_3x1_float32_float32", "seconds": 1.404, "before_mb": 925, "peak_mb": 956}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_2x1x4_float32", "seconds": 3.145, "before_mb": 861, "peak_mb": 888}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_3x4_3x4_float32_float32", "seconds": 1.865, "before_mb": 956, "peak_mb": 975}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_3x1_1x4_int32_float32", "seconds": 3.338, "before_mb": 741, "peak_mb": 776}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_4_3x1_float32_float32", "seconds": 1.834, "before_mb": 975, "peak_mb": 997}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_3x1_float32", "seconds": 2.748, "before_mb": 888, "peak_mb": 920}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_s_2x1x4_float32_float32", "seconds": 1.904, "before_mb": 997, "peak_mb": 1017}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_3x1_2x1x4_int32_float32", "seconds": 3.692, "before_mb": 776, "peak_mb": 802}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_s_3x1_float32_float32", "seconds": 1.492, "before_mb": 1017, "peak_mb": 1035}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_3x4_float32", "seconds": 3.516, "before_mb": 920, "peak_mb": 948}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_3x1_3x1_int32_float32", "seconds": 2.729, "before_mb": 802, "peak_mb": 822}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_s_4_float32_float32", "seconds": 1.923, "before_mb": 1035, "peak_mb": 1061}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_exp1_4_float32", "seconds": 2.04, "before_mb": 948, "peak_mb": 958}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammainc_s_s_float32_float32", "seconds": 1.124, "before_mb": 1061, "peak_mb": 1061}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_1x4_1x4_float32_float32", "seconds": 1.021, "before_mb": 1061, "peak_mb": 1079}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_3x4_3x4_int32_float32", "seconds": 3.071, "before_mb": 822, "peak_mb": 852}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_3x1_1x4_float32_float32", "seconds": 1.001, "before_mb": 1079, "peak_mb": 1088}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_3x1_2x1x4_float32_float32", "seconds": 1.251, "before_mb": 1088, "peak_mb": 1095}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_3x4_1x4_2x1x4_float32_float32_float32", "seconds": 3.83, "before_mb": 958, "peak_mb": 980}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_3x1_3x1_float32_float32", "seconds": 0.836, "before_mb": 1095, "peak_mb": 1105}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_4_3x1_int32_float32", "seconds": 3.085, "before_mb": 852, "peak_mb": 869}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_3x4_3x4_float32_float32", "seconds": 1.017, "before_mb": 1105, "peak_mb": 1111}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_4_3x1_float32_float32", "seconds": 0.996, "before_mb": 1111, "peak_mb": 1122}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_3x4_3x4_3x4_float32_float32_float32", "seconds": 2.633, "before_mb": 980, "peak_mb": 999}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_s_2x1x4_float32_float32", "seconds": 0.892, "before_mb": 1122, "peak_mb": 1125}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_s_2x1x4_int32_float32", "seconds": 2.735, "before_mb": 869, "peak_mb": 891}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_s_3x1_float32_float32", "seconds": 0.843, "before_mb": 1125, "peak_mb": 1132}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_4_1x4_1x4_float32_float32_float32", "seconds": 2.328, "before_mb": 999, "peak_mb": 1020}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_s_4_float32_float32", "seconds": 0.817, "before_mb": 1132, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaincc_s_s_float32_float32", "seconds": 0.685, "before_mb": 1144, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_s_3x1_int32_float32", "seconds": 2.319, "before_mb": 891, "peak_mb": 922}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_1x4_float32", "seconds": 0.193, "before_mb": 1144, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_2x1x4_float32", "seconds": 0.289, "before_mb": 1144, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_3x1_float32", "seconds": 0.215, "before_mb": 1144, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_3x4_float32", "seconds": 0.245, "before_mb": 1144, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_4_float32", "seconds": 0.172, "before_mb": 1144, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammaln_s_float32", "seconds": 0.17, "before_mb": 1144, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_1x4_float32", "seconds": 0.354, "before_mb": 1144, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_4_3x4_3x4_float32_float32_float32", "seconds": 2.633, "before_mb": 1020, "peak_mb": 1044}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_2x1x4_float32", "seconds": 0.245, "before_mb": 1144, "peak_mb": 1144}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_3x1_float32", "seconds": 0.351, "before_mb": 1144, "peak_mb": 1145}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_3x4_float32", "seconds": 0.083, "before_mb": 1145, "peak_mb": 1145}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_s_4_int32_float32", "seconds": 2.386, "before_mb": 922, "peak_mb": 949}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_4_float32", "seconds": 0.059, "before_mb": 1145, "peak_mb": 1145}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gammasgn_s_float32", "seconds": 0.067, "before_mb": 1145, "peak_mb": 1145}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_expn_s_s_int32_float32", "seconds": 0.407, "before_mb": 948, "peak_mb": 949}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_1x4_float32", "seconds": 0.617, "before_mb": 949, "peak_mb": 949}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_2x1x4_float32", "seconds": 0.631, "before_mb": 949, "peak_mb": 949}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_1x4_2x1x4_float32_float32_float32", "seconds": 2.574, "before_mb": 1044, "peak_mb": 1067}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_3x1_float32", "seconds": 0.54, "before_mb": 949, "peak_mb": 950}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_3x4_float32", "seconds": 0.578, "before_mb": 950, "peak_mb": 950}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_3x1_1x4_2x1x4_float32_float32_float32", "seconds": 3.074, "before_mb": 1145, "peak_mb": 1183}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_4_float32", "seconds": 0.215, "before_mb": 1183, "peak_mb": 1183}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_4_float32", "seconds": 0.596, "before_mb": 950, "peak_mb": 953}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_s_float32", "seconds": 0.171, "before_mb": 1183, "peak_mb": 1183}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_factorial_s_float32", "seconds": 0.484, "before_mb": 953, "peak_mb": 960}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_1x4_float32", "seconds": 0.39, "before_mb": 1183, "peak_mb": 1184}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_2x1x4_float32", "seconds": 0.428, "before_mb": 1184, "peak_mb": 1185}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_1x4_float32", "seconds": 0.57, "before_mb": 960, "peak_mb": 971}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_3x4_1x4_float32_float32_float32", "seconds": 2.644, "before_mb": 1066, "peak_mb": 1094}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_3x1_float32", "seconds": 0.41, "before_mb": 1185, "peak_mb": 1191}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_2x1x4_float32", "seconds": 0.559, "before_mb": 971, "peak_mb": 977}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_3x4_float32", "seconds": 0.508, "before_mb": 1191, "peak_mb": 1197}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_3x1_float32", "seconds": 0.572, "before_mb": 977, "peak_mb": 983}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_4_float32", "seconds": 0.338, "before_mb": 1197, "peak_mb": 1202}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1_s_float32", "seconds": 0.248, "before_mb": 1202, "peak_mb": 1205}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_1x4_float32", "seconds": 0.058, "before_mb": 1205, "peak_mb": 1206}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_2x1x4_float32", "seconds": 0.058, "before_mb": 1206, "peak_mb": 1206}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_3x1_float32", "seconds": 0.062, "before_mb": 1206, "peak_mb": 1207}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_3x4_float32", "seconds": 0.068, "before_mb": 1207, "peak_mb": 1207}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_3x4_float32", "seconds": 0.539, "before_mb": 983, "peak_mb": 993}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_4_float32", "seconds": 0.068, "before_mb": 1207, "peak_mb": 1208}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i1e_s_float32", "seconds": 0.058, "before_mb": 1208, "peak_mb": 1208}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_4_float32", "seconds": 0.53, "before_mb": 993, "peak_mb": 997}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_1x4_1x4_float32_float32", "seconds": 0.518, "before_mb": 1208, "peak_mb": 1218}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_3x4_3x1_float32_float32_float32", "seconds": 2.609, "before_mb": 1094, "peak_mb": 1117}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_fresnel_s_float32", "seconds": 0.559, "before_mb": 997, "peak_mb": 1005}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_3x1_1x4_float32_float32", "seconds": 0.619, "before_mb": 1218, "peak_mb": 1224}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_3x1_2x1x4_float32_float32", "seconds": 0.654, "before_mb": 1224, "peak_mb": 1225}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_1x4_complex64", "seconds": 1.259, "before_mb": 1005, "peak_mb": 1023}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_3x1_3x1_float32_float32", "seconds": 0.485, "before_mb": 1225, "peak_mb": 1231}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_1x4_float32", "seconds": 0.524, "before_mb": 1023, "peak_mb": 1028}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_3x4_3x4_float32_float32", "seconds": 0.626, "before_mb": 1231, "peak_mb": 1234}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_s_2x1x4_float32_float32_float32", "seconds": 2.114, "before_mb": 1117, "peak_mb": 1137}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_4_3x1_float32_float32", "seconds": 0.647, "before_mb": 1234, "peak_mb": 1239}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_2x1x4_complex64", "seconds": 1.074, "before_mb": 1028, "peak_mb": 1040}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_s_2x1x4_float32_float32", "seconds": 0.584, "before_mb": 1239, "peak_mb": 1246}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_2x1x4_float32", "seconds": 0.553, "before_mb": 1040, "peak_mb": 1046}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp1f1_s_s_s_float32_float32_float32", "seconds": 1.522, "before_mb": 1137, "peak_mb": 1146}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_s_3x1_float32_float32", "seconds": 0.493, "before_mb": 1246, "peak_mb": 1249}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_s_4_float32_float32", "seconds": 0.505, "before_mb": 1249, "peak_mb": 1254}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_3x1_complex64", "seconds": 0.939, "before_mb": 1046, "peak_mb": 1058}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_kl_div_s_s_float32_float32", "seconds": 0.552, "before_mb": 1254, "peak_mb": 1255}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_gamma_3x1_float32", "seconds": 0.466, "before_mb": 1058, "peak_mb": 1065}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_1x4_float32", "seconds": 0.304, "before_mb": 1255, "peak_mb": 1255}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_3x1_float32", "seconds": 0.548, "before_mb": 1065, "peak_mb": 1070}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_2x1x4_float32", "seconds": 0.349, "before_mb": 1255, "peak_mb": 1259}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_3x1_float32", "seconds": 0.149, "before_mb": 1259, "peak_mb": 1260}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_3x4_float32", "seconds": 0.098, "before_mb": 1260, "peak_mb": 1261}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_4_float32", "seconds": 0.084, "before_mb": 1261, "peak_mb": 1262}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_s_float32", "seconds": 0.075, "before_mb": 1262, "peak_mb": 1263}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_3x4_float32", "seconds": 0.753, "before_mb": 1070, "peak_mb": 1078}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_1x4_float32", "seconds": 0.576, "before_mb": 1263, "peak_mb": 1270}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_4_float32", "seconds": 0.763, "before_mb": 1078, "peak_mb": 1088}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_2x1x4_float32", "seconds": 0.562, "before_mb": 1270, "peak_mb": 1278}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_ndtr_s_float32", "seconds": 0.377, "before_mb": 1088, "peak_mb": 1094}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_3x1_float32", "seconds": 0.594, "before_mb": 1278, "peak_mb": 1288}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_1x4_float32", "seconds": 0.267, "before_mb": 1094, "peak_mb": 1100}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_2x1x4_float32", "seconds": 0.33, "before_mb": 1100, "peak_mb": 1103}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_3x1_float32", "seconds": 0.266, "before_mb": 1103, "peak_mb": 1105}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_3x4_float32", "seconds": 0.321, "before_mb": 1105, "peak_mb": 1108}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_3x4_float32", "seconds": 0.976, "before_mb": 1288, "peak_mb": 1302}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_4_float32", "seconds": 0.395, "before_mb": 1108, "peak_mb": 1110}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_log_softmax_s_float32", "seconds": 0.199, "before_mb": 1110, "peak_mb": 1111}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_1x4_complex64", "seconds": 0.309, "before_mb": 1111, "peak_mb": 1116}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_4_float32", "seconds": 1.022, "before_mb": 1302, "peak_mb": 1315}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_1x4_float32", "seconds": 0.601, "before_mb": 1116, "peak_mb": 1119}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtr_s_float32", "seconds": 0.744, "before_mb": 1315, "peak_mb": 1326}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_2x1x4_complex64", "seconds": 0.358, "before_mb": 1119, "peak_mb": 1123}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_2x1x4_float32", "seconds": 0.389, "before_mb": 1123, "peak_mb": 1125}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_1x4_float32", "seconds": 0.723, "before_mb": 1326, "peak_mb": 1339}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_3x1_complex64", "seconds": 0.435, "before_mb": 1125, "peak_mb": 1129}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_3x1_float32", "seconds": 0.354, "before_mb": 1129, "peak_mb": 1131}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_2x1x4_float32", "seconds": 0.795, "before_mb": 1339, "peak_mb": 1353}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_3x4_complex64", "seconds": 0.363, "before_mb": 1131, "peak_mb": 1134}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_3x4_float32", "seconds": 0.484, "before_mb": 1134, "peak_mb": 1137}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_3x1_float32", "seconds": 0.886, "before_mb": 1353, "peak_mb": 1362}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_4_complex64", "seconds": 0.353, "before_mb": 1137, "peak_mb": 1141}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_4_float32", "seconds": 0.461, "before_mb": 1141, "peak_mb": 1143}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_s_complex64", "seconds": 0.452, "before_mb": 1143, "peak_mb": 1145}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_3x4_float32", "seconds": 1.102, "before_mb": 1362, "peak_mb": 1373}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_loggamma_s_float32", "seconds": 0.339, "before_mb": 1145, "peak_mb": 1147}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_1x4_float32", "seconds": 0.065, "before_mb": 1147, "peak_mb": 1147}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_logit_2x1x4_float32", "seconds": 0.07, "before_mb": 1147, "peak_mb": 1147}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_4_float32", "seconds": 0.799, "before_mb": 1373, "peak_mb": 1384}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_3x4_3x4_float32_float32", "seconds": 0.942, "before_mb": 1147, "peak_mb": 1162}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_ndtri_s_float32", "seconds": 0.711, "before_mb": 1384, "peak_mb": 1394}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_1x4_1x4_float32_float32", "seconds": 0.911, "before_mb": 1394, "peak_mb": 1407}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_4_3x1_float32_float32", "seconds": 1.292, "before_mb": 1162, "peak_mb": 1181}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_3x1_1x4_float32_float32", "seconds": 1.149, "before_mb": 1407, "peak_mb": 1421}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_3x1_1x4_1x4_1x4_float32_float32_float32_float32", "seconds": 13.859, "before_mb": 1146, "peak_mb": 1374}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_s_2x1x4_float32_float32", "seconds": 1.439, "before_mb": 1181, "peak_mb": 1198}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_s_3x1_float32_float32", "seconds": 0.575, "before_mb": 1198, "peak_mb": 1207}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_s_4_float32_float32", "seconds": 0.931, "before_mb": 1207, "peak_mb": 1221}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_3x1_2x1x4_float32_float32", "seconds": 2.02, "before_mb": 1421, "peak_mb": 1445}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_s_s_float32_float32", "seconds": 0.666, "before_mb": 1221, "peak_mb": 1230}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_owens_t_3x1_3x1_float32_float32", "seconds": 0.748, "before_mb": 1445, "peak_mb": 1454}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_1x4_1x4_int32_float32", "seconds": 0.24, "before_mb": 1454, "peak_mb": 1459}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_1x4_1x4_float32_float32", "seconds": 0.454, "before_mb": 1230, "peak_mb": 1240}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_3x1_1x4_int32_float32", "seconds": 0.425, "before_mb": 1459, "peak_mb": 1462}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_3x1_1x4_float32_float32", "seconds": 0.789, "before_mb": 1240, "peak_mb": 1248}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_3x1_2x1x4_int32_float32", "seconds": 0.39, "before_mb": 1462, "peak_mb": 1466}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_3x1_3x1_int32_float32", "seconds": 0.195, "before_mb": 1466, "peak_mb": 1466}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_3x4_3x4_int32_float32", "seconds": 0.255, "before_mb": 1466, "peak_mb": 1467}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_4_3x1_int32_float32", "seconds": 0.262, "before_mb": 1467, "peak_mb": 1470}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_s_2x1x4_int32_float32", "seconds": 0.135, "before_mb": 1470, "peak_mb": 1471}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_s_3x1_int32_float32", "seconds": 0.133, "before_mb": 1471, "peak_mb": 1472}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_s_4_int32_float32", "seconds": 0.107, "before_mb": 1472, "peak_mb": 1472}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_polygamma_s_s_int32_float32", "seconds": 0.094, "before_mb": 1472, "peak_mb": 1472}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_3x1_2x1x4_float32_float32", "seconds": 1.387, "before_mb": 1248, "peak_mb": 1255}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_1x4_1x4_float32_float32", "seconds": 0.469, "before_mb": 1472, "peak_mb": 1480}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_3x1_3x1_float32_float32", "seconds": 0.47, "before_mb": 1255, "peak_mb": 1261}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_3x1_1x4_float32_float32", "seconds": 0.649, "before_mb": 1480, "peak_mb": 1480}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_3x4_3x4_float32_float32", "seconds": 0.501, "before_mb": 1261, "peak_mb": 1264}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_3x1_2x1x4_float32_float32", "seconds": 0.727, "before_mb": 1480, "peak_mb": 1484}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_4_3x1_float32_float32", "seconds": 0.699, "before_mb": 1264, "peak_mb": 1268}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_3x1_3x1_float32_float32", "seconds": 0.546, "before_mb": 1484, "peak_mb": 1486}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_s_2x1x4_float32_float32", "seconds": 0.579, "before_mb": 1268, "peak_mb": 1269}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_s_3x1_float32_float32", "seconds": 0.4, "before_mb": 1269, "peak_mb": 1271}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_3x4_3x4_float32_float32", "seconds": 0.542, "before_mb": 1486, "peak_mb": 1489}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_s_4_float32_float32", "seconds": 0.506, "before_mb": 1271, "peak_mb": 1271}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_4_3x1_float32_float32", "seconds": 0.528, "before_mb": 1489, "peak_mb": 1494}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_poch_s_s_float32_float32", "seconds": 0.35, "before_mb": 1271, "peak_mb": 1271}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_s_2x1x4_float32_float32", "seconds": 0.555, "before_mb": 1494, "peak_mb": 1498}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_s_3x1_float32_float32", "seconds": 0.514, "before_mb": 1498, "peak_mb": 1502}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_3x1_float32", "seconds": 0.866, "before_mb": 1271, "peak_mb": 1274}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_s_4_float32_float32", "seconds": 0.625, "before_mb": 1502, "peak_mb": 1504}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_3x4_float32", "seconds": 0.986, "before_mb": 1274, "peak_mb": 1282}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_rel_entr_s_s_float32_float32", "seconds": 0.429, "before_mb": 1504, "peak_mb": 1510}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_4_float32", "seconds": 0.886, "before_mb": 1282, "peak_mb": 1287}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_1x4_float32", "seconds": 1.033, "before_mb": 1510, "peak_mb": 1518}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_s_float32", "seconds": 0.775, "before_mb": 1287, "peak_mb": 1293}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_sici_2x1x4_float32", "seconds": 0.84, "before_mb": 1518, "peak_mb": 1525}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_1x4_float32", "seconds": 0.702, "before_mb": 1293, "peak_mb": 1299}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_1x4_complex64", "seconds": 0.681, "before_mb": 1525, "peak_mb": 1528}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_2x1x4_float32", "seconds": 0.737, "before_mb": 1299, "peak_mb": 1309}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_2x1x4_complex64", "seconds": 0.708, "before_mb": 1528, "peak_mb": 1537}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_3x1_float32", "seconds": 0.808, "before_mb": 1309, "peak_mb": 1320}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_3x1_complex64", "seconds": 0.643, "before_mb": 1537, "peak_mb": 1546}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_3x4_complex64", "seconds": 0.536, "before_mb": 1546, "peak_mb": 1552}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_3x4_float32", "seconds": 0.851, "before_mb": 1320, "peak_mb": 1330}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_4_complex64", "seconds": 0.722, "before_mb": 1552, "peak_mb": 1558}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_3x1_3x1_2x1x4_2x1x4_float32_float32_float32_float32", "seconds": 15.857, "before_mb": 1374, "peak_mb": 1499}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_4_float32", "seconds": 0.825, "before_mb": 1330, "peak_mb": 1340}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_wofz_s_complex64", "seconds": 0.415, "before_mb": 1558, "peak_mb": 1560}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_1x4_1x4_float32_float32", "seconds": 0.146, "before_mb": 1560, "peak_mb": 1561}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_softmax_s_float32", "seconds": 0.447, "before_mb": 1340, "peak_mb": 1346}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_3x1_1x4_float32_float32", "seconds": 0.305, "before_mb": 1561, "peak_mb": 1565}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_s_s_float32_float32", "seconds": 0.12, "before_mb": 1565, "peak_mb": 1566}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_1x4_1x4_float32_float32", "seconds": 0.066, "before_mb": 1566, "peak_mb": 1567}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_3x1_1x4_float32_float32", "seconds": 0.062, "before_mb": 1567, "peak_mb": 1568}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_3x1_2x1x4_float32_float32", "seconds": 0.381, "before_mb": 1346, "peak_mb": 1352}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_3x1_3x1_float32_float32", "seconds": 0.135, "before_mb": 1352, "peak_mb": 1354}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_3x1_2x1x4_float32_float32", "seconds": 0.367, "before_mb": 1568, "peak_mb": 1573}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_3x4_3x4_float32_float32", "seconds": 0.14, "before_mb": 1354, "peak_mb": 1356}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_3x1_3x1_float32_float32", "seconds": 0.065, "before_mb": 1573, "peak_mb": 1573}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_3x4_3x4_float32_float32", "seconds": 0.075, "before_mb": 1573, "peak_mb": 1574}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_4_3x1_float32_float32", "seconds": 0.348, "before_mb": 1356, "peak_mb": 1362}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_4_3x1_float32_float32", "seconds": 0.261, "before_mb": 1574, "peak_mb": 1578}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_s_2x1x4_float32_float32", "seconds": 0.209, "before_mb": 1362, "peak_mb": 1365}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_s_2x1x4_float32_float32", "seconds": 0.217, "before_mb": 1578, "peak_mb": 1581}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_s_3x1_float32_float32", "seconds": 0.168, "before_mb": 1365, "peak_mb": 1367}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_s_3x1_float32_float32", "seconds": 0.174, "before_mb": 1581, "peak_mb": 1583}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_s_4_float32_float32", "seconds": 0.192, "before_mb": 1583, "peak_mb": 1585}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlog1py_s_4_float32_float32", "seconds": 0.27, "before_mb": 1367, "peak_mb": 1370}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_xlogy_s_s_float32_float32", "seconds": 0.063, "before_mb": 1585, "peak_mb": 1586}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_1x4_1x4_float32_float32", "seconds": 2.667, "before_mb": 1370, "peak_mb": 1408}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_3x4_3x4_float32_float32", "seconds": 2.655, "before_mb": 1586, "peak_mb": 1622}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_4_3x1_float32_float32", "seconds": 1.935, "before_mb": 1622, "peak_mb": 1641}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_3x1_1x4_float32_float32", "seconds": 2.702, "before_mb": 1408, "peak_mb": 1439}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_s_2x1x4_float32_float32", "seconds": 3.695, "before_mb": 1641, "peak_mb": 1680}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_3x1_2x1x4_float32_float32", "seconds": 3.879, "before_mb": 1439, "peak_mb": 1482}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_3x4_3x4_3x4_2x1x4_float32_float32_float32_float32", "seconds": 13.26, "before_mb": 1499, "peak_mb": 1612}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_s_3x1_float32_float32", "seconds": 2.586, "before_mb": 1680, "peak_mb": 1707}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_3x1_3x1_float32_float32", "seconds": 2.588, "before_mb": 1482, "peak_mb": 1509}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciEdgeCases", "seconds": 0.258, "before_mb": 1509, "peak_mb": 1514}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciRaiseOnComplexInput", "seconds": 0.044, "before_mb": 1514, "peak_mb": 1515}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges0", "seconds": 0.203, "before_mb": 1515, "peak_mb": 1517, "params": "(scale=1, shape=(5,))"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges1", "seconds": 0.009, "before_mb": 1517, "peak_mb": 1517, "params": "(scale=10, shape=(5,))"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges2", "seconds": 0.252, "before_mb": 1517, "peak_mb": 1520, "params": "(scale=1000000000.0, shape=(10,))"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges3", "seconds": 0.008, "before_mb": 1520, "peak_mb": 1520, "params": "(scale=1000000000.0, shape=(5,))"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges4", "seconds": 0.003, "before_mb": 1520, "peak_mb": 1520, "params": "(scale=10, shape=(10,))"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testSiciValueRanges5", "seconds": 0.003, "before_mb": 1520, "peak_mb": 1520, "params": "(scale=1, shape=(10,))"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_s_4_float32_float32", "seconds": 2.702, "before_mb": 1707, "peak_mb": 1736}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testWofzAccuracy", "seconds": 1.077, "before_mb": 1520, "peak_mb": 1526}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testWofzJvp", "seconds": 1.098, "before_mb": 1526, "peak_mb": 1535}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_gammaln_exact_zeros_and_special_values", "seconds": 0.538, "before_mb": 1535, "peak_mb": 1543}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_gammaln_grad", "seconds": 0.383, "before_mb": 1543, "peak_mb": 1548}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_zeta_s_s_float32_float32", "seconds": 2.232, "before_mb": 1736, "peak_mb": 1765}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_gammaln_negative_roots_ulp", "seconds": 0.492, "before_mb": 1548, "peak_mb": 1551}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_gammaln_sweep_ulp", "seconds": 0.306, "before_mb": 1551, "peak_mb": 1554}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testWofzLowerHalfPlane", "seconds": 0.919, "before_mb": 1765, "peak_mb": 1770}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i0_gradients0", "seconds": 0.322, "before_mb": 1770, "peak_mb": 1774, "params": "(1)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i0_gradients1", "seconds": 1.119, "before_mb": 1554, "peak_mb": 1564, "params": "(2)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i0_gradients2", "seconds": 0.731, "before_mb": 1564, "peak_mb": 1572, "params": "(3)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i1_gradients1", "seconds": 0.25, "before_mb": 1572, "peak_mb": 1573, "params": "(2)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i0_gradients3", "seconds": 2.447, "before_mb": 1774, "peak_mb": 1799, "params": "(4)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i1_gradients0", "seconds": 0.143, "before_mb": 1799, "peak_mb": 1799, "params": "(1)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i1_gradients2", "seconds": 1.045, "before_mb": 1573, "peak_mb": 1582, "params": "(3)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::test_i1_gradients3", "seconds": 2.126, "before_mb": 1582, "peak_mb": 1601, "params": "(4)"}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_4_3x4_3x1_2x1x4_float32_float32_float32_float32", "seconds": 14.565, "before_mb": 1612, "peak_mb": 1750}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_4_3x4_3x4_1x4_float32_float32_float32_float32", "seconds": 14.385, "before_mb": 1750, "peak_mb": 1866}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_4_4_3x1_2x1x4_float32_float32_float32_float32", "seconds": 12.863, "before_mb": 1830, "peak_mb": 1989}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_s_1x4_1x4_2x1x4_float32_float32_float32_float32", "seconds": 11.913, "before_mb": 1989, "peak_mb": 2099}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_s_3x4_1x4_2x1x4_float32_float32_float32_float32", "seconds": 13.126, "before_mb": 2099, "peak_mb": 2236}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_s_4_3x1_1x4_float32_float32_float32_float32", "seconds": 15.326, "before_mb": 2236, "peak_mb": 2350}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_hyp2f1_s_s_1x4_2x1x4_float32_float32_float32_float32", "seconds": 11.144, "before_mb": 2340, "peak_mb": 2458}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_1x4_float32", "seconds": 0.361, "before_mb": 2414, "peak_mb": 2414}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_2x1x4_float32", "seconds": 0.244, "before_mb": 2414, "peak_mb": 2414}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_3x1_float32", "seconds": 0.268, "before_mb": 2414, "peak_mb": 2414}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_3x4_float32", "seconds": 0.238, "before_mb": 2414, "peak_mb": 2414}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_4_float32", "seconds": 0.235, "before_mb": 2414, "peak_mb": 2414}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0_s_float32", "seconds": 0.205, "before_mb": 2414, "peak_mb": 2414}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_1x4_float32", "seconds": 0.29, "before_mb": 2414, "peak_mb": 2414}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_2x1x4_float32", "seconds": 0.302, "before_mb": 2414, "peak_mb": 2414}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_3x1_float32", "seconds": 0.304, "before_mb": 2414, "peak_mb": 2414}
+{"nodeid": "tests/lax_scipy_special_functions_test.py::LaxScipySpecialFunctionsTest::testScipySpecialFun_i0e_3x4_float32", "seconds": 0.304, "before_mb": 2414, "peak_mb": 2414}

@@ -14,9 +14,10 @@
 //      to the equivalent device call before reaching the plugin.
 //   4. Programs with inputs/outputs of types the plugin rejects at a program boundary
 //      are compiled from a version without them (complex64 as float32[..., 2] pairs,
-//      uint64 as int64), with buffers relabeled at execution (see below).
-//   5. uint64 buffers live in the plugin as int64, which holds the same bytes; the shim
-//      reports their type as uint64.
+//      uint64 as int64, float8 and 4-bit integers as their bytes), with buffers relabeled
+//      at execution (see below).
+//   5. uint64, float8, float4 and 2-/4-bit integer buffers live in the plugin as a type
+//      holding the same bytes (int64, uint8, int8); the shim reports their own type.
 // Every other entry is the plugin's own function pointer.
 
 #include <dlfcn.h>
@@ -224,12 +225,28 @@ PJRT_Error* ShimBufferMemory(PJRT_Buffer_Memory_Args* args) {
 // ---------------------------------------------------------------------------
 // Retyped buffers: types the plugin cannot take at a program boundary but whose bytes a type
 // it supports holds unchanged. Such buffers live in the plugin as the physical type; the
-// shim remembers the logical type and reports it to the framework.
+// shim remembers the logical type and reports it to the framework. Narrow types are one
+// value per byte, the code in the low bits: frameworks transfer them unpacked.
 
 PJRT_Buffer_Type PhysicalType(PJRT_Buffer_Type type) {
   switch (type) {
     case PJRT_Buffer_Type_U64:
       return PJRT_Buffer_Type_S64;
+    case PJRT_Buffer_Type_F8E5M2:
+    case PJRT_Buffer_Type_F8E4M3FN:
+    case PJRT_Buffer_Type_F8E4M3B11FNUZ:
+    case PJRT_Buffer_Type_F8E5M2FNUZ:
+    case PJRT_Buffer_Type_F8E4M3FNUZ:
+    case PJRT_Buffer_Type_F8E4M3:
+    case PJRT_Buffer_Type_F8E3M4:
+    case PJRT_Buffer_Type_F8E8M0FNU:
+    case PJRT_Buffer_Type_F4E2M1FN:
+    case PJRT_Buffer_Type_U4:
+    case PJRT_Buffer_Type_U2:
+      return PJRT_Buffer_Type_U8;
+    case PJRT_Buffer_Type_S4:
+    case PJRT_Buffer_Type_S2:
+      return PJRT_Buffer_Type_S8;
     default:
       return type;
   }
@@ -315,23 +332,27 @@ PJRT_Error* ShimCreateViewOfDeviceBuffer(PJRT_Client_CreateViewOfDeviceBuffer_Ar
 // ---------------------------------------------------------------------------
 // Program inputs and outputs of types the plugin rejects at a program boundary.
 //
-// The plugin rejects programs whose signature mentions complex or uint64 types. For such a
-// METAL program the shim's Python package lowers two versions: the original, which jaxlib
-// compiles and takes its metadata from, and a boundary version where each complex64 value is
-// a float32[..., 2] (real, imag) pair and each uint64 value an int64 holding the same bits.
-// Right before compiling it hands the shim the serialized boundary program and the positions
-// and kinds of the changed values (JaxMetalShim_SetBoundaryIo); the shim compiles the
-// boundary program instead. At execution, complex64 inputs are passed as float32[..., 2]
-// views of the same device memory and pair outputs are returned as complex64 views that own
-// the pair buffers; uint64 buffers already live as int64 (see "Retyped buffers") and int64
-// outputs are retyped as uint64. Buffers always match what jaxlib expects and nothing is
-// copied.
+// The plugin rejects programs whose signature mentions complex, uint64, float8 or 4-bit
+// integer types. For such a METAL program the shim's Python package lowers two versions: the
+// original, which jaxlib compiles and takes its metadata from, and a boundary version where
+// each complex64 value is a float32[..., 2] (real, imag) pair and each value of a retyped
+// type (see "Retyped buffers") is its physical type, holding the same bytes. Right before
+// compiling it hands the shim the serialized boundary program and the positions and kinds
+// of the changed values (JaxMetalShim_SetBoundaryIo); the shim compiles the boundary program
+// instead. At execution, complex64 inputs are passed as float32[..., 2] views of the same
+// device memory and pair outputs are returned as complex64 views that own the pair buffers;
+// retyped buffers already live as their physical type and such outputs are retyped. Buffers
+// always match what jaxlib expects and nothing is copied.
 
 // Kinds of boundary values; the Python package passes the same numbers.
 enum BoundaryKind : int32_t {
-  kComplexPairs = 1,   // complex64 <-> float32[..., 2]
-  kUint64AsInt64 = 2,  // uint64 <-> int64
+  kComplexPairs = 1,  // complex64 <-> float32[..., 2]
+  kRetyped = 0x100,   // | a PJRT_Buffer_Type T: T <-> PhysicalType(T)
 };
+
+PJRT_Buffer_Type RetypedType(int32_t kind) {
+  return static_cast<PJRT_Buffer_Type>(kind & 0xFF);
+}
 
 struct BoundaryValue {
   int32_t position;
@@ -485,8 +506,8 @@ PJRT_Error* ShimExecute(PJRT_LoadedExecutable_Execute_Args* args) {
   std::shared_ptr<BoundaryIo> io = IoFor(args->executable);
   if (!io) return g_plugin->PJRT_LoadedExecutable_Execute(args);
 
-  // Swap complex64 inputs for float32[..., 2] views, and any uint64 buffer the plugin holds
-  // as uint64 (one the shim did not create) for an int64 view.
+  // Swap complex64 inputs for float32[..., 2] views, and any retyped-type buffer the plugin
+  // holds as that type (one the shim did not create) for a view as its physical type.
   auto views = new InputViews();
   std::vector<std::vector<PJRT_Buffer*>> lists(args->num_devices);
   std::vector<PJRT_Buffer* const*> list_pointers(args->num_devices);
@@ -503,8 +524,9 @@ PJRT_Error* ShimExecute(PJRT_LoadedExecutable_Execute_Args* args) {
       PJRT_Buffer_Type view_type;
       if (input.kind == kComplexPairs && type.type == PJRT_Buffer_Type_C64) {
         view_type = PJRT_Buffer_Type_F32;
-      } else if (input.kind == kUint64AsInt64 && type.type == PJRT_Buffer_Type_U64) {
-        view_type = PJRT_Buffer_Type_S64;
+      } else if ((input.kind & kRetyped) && type.type == RetypedType(input.kind) &&
+                 PhysicalType(type.type) != type.type) {
+        view_type = PhysicalType(type.type);
       } else {
         continue;
       }
@@ -573,12 +595,12 @@ PJRT_Error* ShimExecute(PJRT_LoadedExecutable_Execute_Args* args) {
 
   // Return float32[..., 2] outputs as complex64 views that own the pair buffers. Waiting
   // for the output first makes these programs synchronous: a view is ready on creation.
-  // int64 outputs standing for uint64 are retyped in place.
+  // Outputs of retyped types are retyped in place.
   for (size_t device = 0; device < args->num_devices; ++device) {
     for (const BoundaryValue& output : io->outputs) {
       PJRT_Buffer*& buffer = args->output_lists[device][output.position];
-      if (output.kind == kUint64AsInt64) {
-        Retype(buffer, PJRT_Buffer_Type_U64);
+      if (output.kind & kRetyped) {
+        Retype(buffer, RetypedType(output.kind));
         continue;
       }
       std::vector<int64_t> dims = Dimensions(buffer, &error);

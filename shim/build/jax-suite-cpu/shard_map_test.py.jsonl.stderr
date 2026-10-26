@@ -1,0 +1,42 @@
+bringing up nodes...
+bringing up nodes...
+
+ssssssssssssssssssssssssssssssssss.ssssssss.ssssssssssssssssssssssss.sss [ 14%]
+sssssssssssssssssss.ssssssssssssss.ss.sssssss.ssssssssssssssssssFsssssss [ 29%]
+ss.sssssssss.sssssssssssssssssssssssssssssssssssssssssss.sssssssssssssss [ 44%]
+.sssssssssssssssssss.ssssssssssssss.sssssssssssssssssssssssssssss..sss.s [ 59%]
+ssssssssssssssssssssssssssss.sssssssssssssssssssssssssssssssssssssss.sss [ 73%]
+ssssssssssssssssssssssssssssss....ss..s.ss.....ssssssss.ssssss.ss....... [ 88%]
+....s.........s...ss.s..ssssss.s..sssssssss.ss.s..s.s.ss                 [100%]
+=================================== FAILURES ===================================
+_____________________ ShardMapTest.test_debug_print_eager ______________________
+[gw2] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.shard_map_test.ShardMapTest testMethod=test_debug_print_eager>
+
+    def test_debug_print_eager(self):
+      mesh = Mesh(jax.devices(), ('i',))
+    
+      @partial(shard_map, mesh=mesh, in_specs=P('i'), out_specs=P('i'))
+      def f(x):
+        jax.debug.print("x={x}", x=x)
+        y = jnp.cos(x)
+        jax.debug.print("y={y}", y=y)
+        return y
+    
+      x = jnp.arange(2 * len(jax.devices()))
+    
+      with jtu.capture_stdout() as output:
+        f(x)
+        jax.effects_barrier()
+      for i in range(len(jax.devices())):
+>       self.assertIn(f'x=[{2*i} {2*i+1}]', output())
+E       AssertionError: 'x=[0 1]' not found in ''
+
+tests/shard_map_test.py:1592: AssertionError
+----------------------------- Captured stdout call -----------------------------
+x=[0 1]
+y=[1.        0.5403023]
+=========================== short test summary info ============================
+FAILED tests/shard_map_test.py::ShardMapTest::test_debug_print_eager - Assert...
+1 failed, 67 passed, 420 skipped in 55.00s

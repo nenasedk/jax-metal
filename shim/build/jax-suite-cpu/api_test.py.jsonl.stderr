@@ -1,0 +1,250 @@
+bringing up nodes...
+bringing up nodes...
+
+...................s......sss......s...........s.....ss.........ssFss... [  7%]
+.....ss......................Fuuuuu........F........s..sssss..ss......s. [ 13%]
+.......u.uu.................s........s...............................s.. [ 20%]
+s....sss.................sss.ssssssss.ss.sssss.sss.ss.sssssssssssss.ss.s [ 27%]
+sss.ssss.ss.sss.sssssssssssssss.sssssssss.ssssss.s.ss.s................. [ 34%]
+...................................................s.......sssssssssssss [ 41%]
+s..ssssssssssssss.ssssss.ssssssssss...................s................. [ 48%]
+.............................................................s.....s.... [ 55%]
+......s...s......................................................ss..... [ 63%]
+........................................................................ [ 70%]
+..................................................ss.................... [ 77%]
+..........................s.............s............................... [ 84%]
+........................................................................ [ 91%]
+........................ss.....................s.F.s.................... [ 98%]
+...............                                                          [100%]
+=================================== FAILURES ===================================
+_____________ JitTest.test_device_to_device_copy_between_backends ______________
+[gw0] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.api_test.JitTest testMethod=test_device_to_device_copy_between_backends>
+
+    @jtu.skip_on_devices("cpu")
+    def test_device_to_device_copy_between_backends(self):
+      # b/186624243
+      f = lambda x: x + 1
+      with jtu.ignore_warning(category=DeprecationWarning,
+                              message="backend and device argument"):
+        jitted_f = jax.jit(f, backend=jtu.device_under_test())
+        jitted_f_cpu = jax.jit(f, backend="cpu")
+    
+      x = np.arange(30).reshape(1, 10, 3)
+>     result = jitted_f(x)
+               ^^^^^^^^^^^
+
+tests/api_test.py:983: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:270: in cache_miss
+    p, args_flat = _infer_params(fun, jit_info, args, kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:652: in _infer_params
+    p = _trace_for_jit(fun, ji, ctx_mesh, dbg_fn(), avals, args, kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:520: in _trace_for_jit
+    sharding = _create_sharding_with_device_backend(ji.device, ji.backend)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:755: in _create_sharding_with_device_backend
+    xb.get_backend(backend).local_devices()[0])
+    ^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/xla_bridge.py:983: in get_backend
+    return _get_backend_uncached(platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+platform = 'METAL'
+
+    def _get_backend_uncached(
+        platform: None | str | xla_client.Client = None
+    ) -> xla_client.Client:
+      # TODO(mattjj,skyewm): remove this input polymorphism after we clean up how
+      # 'backend' values are handled
+      if platform is not None and not isinstance(platform, str):
+        return platform
+    
+      platform = (platform or _XLA_BACKEND.value or _PLATFORM_NAME.value or None)
+    
+      bs = backends()
+      if platform is not None:
+        platform = canonicalize_platform(platform)
+        backend = bs.get(platform, None)
+        if backend is None:
+          if platform in _backend_errors:
+            raise RuntimeError(f"Backend '{platform}' failed to initialize: "
+                               f"{_backend_errors[platform]}. "
+                               f'Available backends are {list(bs)}')
+>         raise RuntimeError(
+              f"Unknown backend {platform}. Available backends are {list(bs)}")
+E         RuntimeError: Unknown backend METAL. Available backends are ['cpu']
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/xla_bridge.py:971: RuntimeError
+________________________ JitTest.test_explicit_backend _________________________
+[gw0] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.api_test.JitTest testMethod=test_explicit_backend>
+
+    @jtu.skip_on_devices("cpu")
+    def test_explicit_backend(self):
+      f = lambda x: x + 1
+      with jtu.ignore_warning(category=DeprecationWarning,
+                              message="backend and device argument"):
+        jitted_f = jax.jit(f, backend=jtu.device_under_test())
+        jitted_f_cpu = jax.jit(f, backend="cpu")
+    
+>     result = jitted_f(1.)
+               ^^^^^^^^^^^^
+
+tests/api_test.py:968: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:270: in cache_miss
+    p, args_flat = _infer_params(fun, jit_info, args, kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:652: in _infer_params
+    p = _trace_for_jit(fun, ji, ctx_mesh, dbg_fn(), avals, args, kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:520: in _trace_for_jit
+    sharding = _create_sharding_with_device_backend(ji.device, ji.backend)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:755: in _create_sharding_with_device_backend
+    xb.get_backend(backend).local_devices()[0])
+    ^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/xla_bridge.py:983: in get_backend
+    return _get_backend_uncached(platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+platform = 'METAL'
+
+    def _get_backend_uncached(
+        platform: None | str | xla_client.Client = None
+    ) -> xla_client.Client:
+      # TODO(mattjj,skyewm): remove this input polymorphism after we clean up how
+      # 'backend' values are handled
+      if platform is not None and not isinstance(platform, str):
+        return platform
+    
+      platform = (platform or _XLA_BACKEND.value or _PLATFORM_NAME.value or None)
+    
+      bs = backends()
+      if platform is not None:
+        platform = canonicalize_platform(platform)
+        backend = bs.get(platform, None)
+        if backend is None:
+          if platform in _backend_errors:
+            raise RuntimeError(f"Backend '{platform}' failed to initialize: "
+                               f"{_backend_errors[platform]}. "
+                               f'Available backends are {list(bs)}')
+>         raise RuntimeError(
+              f"Unknown backend {platform}. Available backends are {list(bs)}")
+E         RuntimeError: Unknown backend METAL. Available backends are ['cpu']
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/xla_bridge.py:971: RuntimeError
+___________________ JitTest.test_mismatched_nested_backends ____________________
+[gw1] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.api_test.JitTest testMethod=test_mismatched_nested_backends>
+
+    @jtu.skip_on_devices("cpu")
+    @jtu.ignore_warning(category=DeprecationWarning,
+                        message="backend and device argument")
+    def test_mismatched_nested_backends(self):
+      @jax.jit(backend=jtu.device_under_test())
+      def f(x):
+        return jax.jit(lambda x: x + 1, backend="cpu")(x)
+    
+      msg = 'Received incompatible devices for jitted computation'
+      with self.assertRaisesRegex(ValueError, msg):
+>       f(1.)
+
+tests/api_test.py:1000: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/traceback_util.py:194: in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)  # pyrefly: ignore[not-callable]
+           ^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:270: in cache_miss
+    p, args_flat = _infer_params(fun, jit_info, args, kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:652: in _infer_params
+    p = _trace_for_jit(fun, ji, ctx_mesh, dbg_fn(), avals, args, kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:520: in _trace_for_jit
+    sharding = _create_sharding_with_device_backend(ji.device, ji.backend)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:755: in _create_sharding_with_device_backend
+    xb.get_backend(backend).local_devices()[0])
+    ^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/xla_bridge.py:983: in get_backend
+    return _get_backend_uncached(platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def _get_backend_uncached(
+        platform: None | str | xla_client.Client = None
+    ) -> xla_client.Client:
+      # TODO(mattjj,skyewm): remove this input polymorphism after we clean up how
+      # 'backend' values are handled
+      if platform is not None and not isinstance(platform, str):
+        return platform
+    
+      platform = (platform or _XLA_BACKEND.value or _PLATFORM_NAME.value or None)
+    
+      bs = backends()
+      if platform is not None:
+        platform = canonicalize_platform(platform)
+        backend = bs.get(platform, None)
+        if backend is None:
+          if platform in _backend_errors:
+            raise RuntimeError(f"Backend '{platform}' failed to initialize: "
+                               f"{_backend_errors[platform]}. "
+                               f'Available backends are {list(bs)}')
+>         raise RuntimeError(
+              f"Unknown backend {platform}. Available backends are {list(bs)}")
+E         RuntimeError: Unknown backend METAL. Available backends are ['cpu']
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/xla_bridge.py:971: RuntimeError
+_______________ EnvironmentInfoTest.test_print_environment_info1 _______________
+[gw2] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.api_test.EnvironmentInfoTest testMethod=test_print_environment_info1>
+return_string = False
+
+    @parameterized.parameters([True, False])
+    @jtu.thread_unsafe_test()
+    def test_print_environment_info(self, return_string):
+      # Flush stdout buffer before checking.
+      sys.stdout.flush()
+      with jtu.capture_stdout() as stdout:
+        result = jax.print_environment_info(return_string=return_string)
+      if return_string:
+        self.assertEmpty(stdout())
+      else:
+        self.assertIsNone(result)
+        result = stdout()
+>     assert f"jax:    {jax.__version__}" in result
+E     AssertionError: assert 'jax:    0.12.0.1' in ''
+
+tests/api_test.py:9970: AssertionError
+----------------------------- Captured stdout call -----------------------------
+jax:    0.12.0.1
+jaxlib: 0.12.0.1
+numpy:  2.5.4
+python: 3.13.17 (main, Oct 22 2026, 14:06:04) [GCC 13.3.0]
+device info: cpu-1, 1 local devices"
+process_count: 1
+platform: uname_result(system='Linux', node='vm', release='6.18.44-fc-v153', version='#1 SMP PREEMPT_DYNAMIC @0', machine='x86_64')
+JAX_SUITE_TIMEOUT=300
+JAX_SUITE_LOG=/tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/baseline2/api_test.py.run.jsonl
+JAX_SUITE_SKIP=/tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/baseline2/api_test.py.jsonl.skip
+JAX_SUITE_COST_LOG=/tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/baseline2/api_test.py.cost.jsonl
+JAX_SUITE_SOFT_MEM=2530920652
+JAX_NUM_GENERATED_CASES=10
+JAX_PLATFORMS=cpu
+JAX_METAL_CHECK_LOG=/tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/baseline2/api_test.py.check.jsonl
+=========================== short test summary info ============================
+FAILED tests/api_test.py::JitTest::test_device_to_device_copy_between_backends
+FAILED tests/api_test.py::JitTest::test_explicit_backend - RuntimeError: Unkn...
+FAILED tests/api_test.py::JitTest::test_mismatched_nested_backends - RuntimeE...
+FAILED tests/api_test.py::EnvironmentInfoTest::test_print_environment_info1
+4 failed, 836 passed, 175 skipped, 8 subtests passed in 54.06s

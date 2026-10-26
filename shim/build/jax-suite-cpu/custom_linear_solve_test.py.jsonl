@@ -1,0 +1,16 @@
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_aux", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_batching_with_aux", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_new_remat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_cholesky", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_nonsymmetric", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_ordered_effects", "outcome": "failed", "message": "AssertionError: \n+ mat_vec"}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_pytree_with_aux", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_complex", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_pytree", "outcome": "skipped", "message": "Skipped: Test is too slow (> 2 minutes at time of writing)"}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_zeros", "outcome": "skipped", "message": "Skipped: Test is too slow (> 1 minute at time of writing)"}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_symmetric", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_without_transpose_solve", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_symbolic_zero_cotangents", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_iterative", "outcome": "passed", "message": ""}
+{"nodeid": "tests/custom_linear_solve_test.py::CustomLinearSolveTest::test_custom_linear_solve_lu", "outcome": "passed", "message": ""}

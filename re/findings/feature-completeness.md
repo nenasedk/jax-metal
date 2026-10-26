@@ -2,9 +2,10 @@
 
 What it would take for JAX 0.12 on an Apple GPU to offer what JAX offers on a single CUDA
 GPU, the most complete GPU backend: what Apple's jax-metal lacked, what the shim adds, what
-can still be added, and what the hardware rules out. Analysis of 2026-10-26; "works in
-emulation" means the METAL rules on the CPU backend (`shim/tests/jax_suite/cpu_rules_plugin.py`)
-with `metal_check.py` predicting no plugin issue, not yet confirmed on a GPU.
+can still be added, and what the hardware rules out. Analysis of 2026-10-26, updated the same
+day after items 1 and 3–5 of the suggested order landed; "works in emulation" means the
+METAL rules on the CPU backend (`shim/tests/jax_suite/cpu_rules_plugin.py`) with
+`metal_check.py` predicting no plugin issue, not yet confirmed on a GPU.
 
 ## Summary
 
@@ -42,17 +43,22 @@ with `metal_check.py` predicting no plugin issue, not yet confirmed on a GPU.
 The shim fixes all of these, adds complex64 throughout (inside programs and at their
 boundary), and runs current JAX (0.12). See `shim/DESIGN.md` for each rule.
 
-## Remaining gaps and what each needs
+Added since this analysis was first written (all working in emulation, awaiting the GPU):
+`eig`, `schur`, `hessenberg`, `geqp3`, `tridiagonal` and a pivoting `tridiagonal_solve`
+with LAPACK's conventions; collectives on one device (`shard_map`, `pmap`); uint64,
+float8 and int4/uint4 program inputs and outputs; emulated float8, float4 and 2-/4-bit
+integer arithmetic; complex `max`/`min` reductions the plugin can lower.
+
+## Gaps: closed and remaining
 
 | Feature | Status | Possible | How (rough effort) |
 |---|---|---|---|
-| `eig`, `eigvals`, `jnp.roots` | no lowering (JAX has LAPACK/cuSOLVER only) | yes, rules | Hessenberg reduction and shifted QR iteration in loops, complex results (1–2 weeks) |
-| `schur`, `hessenberg`, `sqrtm`, `funm` | no lowering | yes, rules | same machinery as `eig` |
-| QR with pivoting (`geqp3`), `tridiagonal` | no lowering | yes, rules | Householder loops like the existing QR (days) |
-| `ormqr`, `tridiagonal_solve`, `cholesky_update`, `symmetric_product` | JAX's generic lowerings | works in emulation | — |
-| `all_gather`, `ppermute`, `all_to_all`, `reduce_scatter`, `axis_index` on one device | no plugin pattern (`all_reduce` has one) | yes, rules | identities and reshapes on a mesh of size 1, so `shard_map`/`pmap` code runs (days) |
-| uint64 program inputs/outputs | the plugin rejects them | yes, shim | relabel as int64, as complex64 is relabeled as float32 pairs (days) |
-| int4/uint4, float8 variants | rejected; some cannot even be serialized for StableHLO 0.19.4 | emulation | 8-bit storage at the boundary, exact rounding inside programs, arithmetic in float16/float32; correct, not faster (1–2 weeks) |
+| `eig`, `eigvals`, `jnp.roots`, `schur`, `hessenberg`, `sqrtm`, `funm` | done: Francis double-shift QR (`_decompositions.py`) | works in emulation | — |
+| QR with pivoting (`geqp3`), `tridiagonal`, `tridiagonal_solve` | done: Householder loops, `gtsv` with pivoting | works in emulation | — |
+| `ormqr`, `cholesky_update`, `symmetric_product` | JAX's generic lowerings | works in emulation | — |
+| `all_gather`, `ppermute`, `all_to_all`, `reduce_scatter`, `axis_index` on one device | done: identities, reshapes and zeros on a one-device axis (`_collectives.py`) | works in emulation | — |
+| uint64 program inputs/outputs | done: int64 in the plugin, relabeled by the shim | unit-tested against a fake plugin | — |
+| int4/uint4, int2/uint2, float8 variants, float4 | done: carriers with XLA's rounding inside programs (`_narrow.py`); float8 (older five) and int4/uint4 inputs/outputs as bytes | works in emulation, bit-exact conversions | the newer types (float8_e4m3, e3m4, e8m0fnu, float4, int2) cannot be program inputs or outputs: StableHLO 0.19.4 lacks them |
 | `jax.debug.print`, `pure_callback`, `io_callback` | JAX refuses them on METAL ("EmitPythonCallback not supported") | partly | split programs at callback sites, outside loops only; inside `scan`/`while` impossible with this plugin (2–4 weeks) |
 | memory kinds, host offloading | not reported | yes, cosmetic | unified memory makes it moot: report a `pinned_host` space aliasing device memory, drop placement annotations (about a week, low value) |
 | profiler traces | host side only | partly | a shim profiler extension with per-execution timings; per-kernel detail only in Instruments (about a week) |
@@ -80,7 +86,8 @@ sparse BCOO, `cumlogsumexp`, `psum` in `shard_map`/`pmap` on one device.
   GPU; a 1008 × 1008 Jacobi eigendecomposition got WindowServer killed. Iterative algorithms
   must stay bounded (the Jacobi rule refuses n > 256) or be split.
 - **8- and 4-bit floating-point arithmetic.** The plugin cannot express these types, so only
-  emulation is possible; whatever newer Apple GPUs add, only an open backend could use it.
+  emulation is possible (now done: correct, not faster); whatever newer Apple GPUs add, only
+  an open backend could use it.
 
 ## Possible on the hardware, blocked by Apple's plugin
 
@@ -93,17 +100,17 @@ Reaching today's coverage that way is plausibly 3–6 months; Pallas comes on to
 
 ## Validation gap
 
-JAX has 163 test files under `tests/`. 19 run in emulation as the GPU session's baseline
-(`shim/build/jax-suite-cpu`, `jax-suite-cpu.md`); on METAL, only `fft_test` and part of
-`linalg_test` have run. The next files are in "Emulation of further test files" below.
+JAX has 163 test files under `tests/`. 56 run in emulation as the GPU session's baseline
+(`shim/build/jax-suite-cpu`, `jax-suite-cpu.md`: 19,608 pass, 35 fail, every failure
+explained); on METAL, only `fft_test` and part of `linalg_test` have run.
 
 ## Suggested order
 
-1. Run more of JAX's test files in emulation (no GPU needed) to find gaps.
+1. ~~Run more of JAX's test files in emulation (no GPU needed) to find gaps.~~ Done: 56 files.
 2. Run the GPU session (`make -C shim gpu-session`).
-3. Single-device collectives and uint64 program inputs/outputs.
-4. `geqp3`, `tridiagonal`, `hessenberg`, then `eig` and `schur`.
-5. Narrow-dtype emulation (int4/uint4, float8).
+3. ~~Single-device collectives and uint64 program inputs/outputs.~~ Done.
+4. ~~`geqp3`, `tridiagonal`, `hessenberg`, then `eig` and `schur`.~~ Done.
+5. ~~Narrow-dtype emulation (int4/uint4, float8).~~ Done.
 6. Callbacks by program splitting.
 7. `df64.jit` if users need float64.
 8. Decide whether an open backend is worth building.

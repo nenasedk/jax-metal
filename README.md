@@ -16,10 +16,14 @@ print(jax.jit(lambda x: jnp.sin(x) @ x.T)(jnp.ones((4, 4))))
 - Works: jit, grad, control flow, convolutions, sorting, scatter/gather, random numbers,
   linear algebra (Cholesky, solve, inverse, QR, eigh, SVD), FFT, bfloat16/float16, complex64
   (inside programs and as inputs/outputs), and training loops.
+- New, not yet run on a GPU (checked on the CPU): `eig`, `schur` and other LAPACK-only
+  decompositions, `shard_map`/`pmap` on the one device, uint64 inputs/outputs, and float8,
+  float4 and 4-/2-bit integer types (emulated).
 - Accuracy: every float32 elementwise op is within 18 ulps of XLA on the CPU; several MPS
   accuracy bugs are corrected by the lowering rules.
 - Not supported: float64 and complex128 (no float64 in MPS or Apple GPUs), multiple devices
-  or processes, and JAX operations newer than StableHLO 0.19.4 that have no rule yet.
+  or processes, host callbacks (`jax.debug.print`, `pure_callback`), and JAX operations newer
+  than StableHLO 0.19.4 that have no rule yet.
 - Not yet measured: speed, against the CPU and against the old jax 0.4.34 + jax-metal setup.
 
 See [PLAN.md](PLAN.md) for the full list of limitations and the roadmap.

@@ -1,0 +1,14 @@
+{"nodeid": "tests/ode_test.py::ODETest::test_forward_mode_error", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_closure_nondiff", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_grad_closure", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_grad_closure_with_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_decay", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_disable_jit_odeint_with_vmap", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_odeint_vmap_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_complex_odeint", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_hmax", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_pytree_state", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_pend_grads", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_weird_time_pendulum_grads", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_swoop", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ode_test.py::ODETest::test_swoop_bigger", "outcome": "passed", "message": ""}

@@ -1,0 +1,220 @@
+bringing up nodes...
+bringing up nodes...
+
+ss.s.sF.sF                                                               [100%]
+=================================== FAILURES ===================================
+_______________ LaxScipySpectralDacTest.test_spectral_dac_eigh4 ________________
+[gw2] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.lax_scipy_spectral_dac_test.LaxScipySpectralDacTest testMethod=test_spectral_dac_eigh4>
+linear_size = 128, dtype = <class 'numpy.complex64'>, termination_size = 1
+
+    @jtu.sample_product(
+      linear_size=linear_sizes,
+      dtype=jtu.dtypes.floating + jtu.dtypes.complex,
+      termination_size=[1, 19],
+    )
+    def test_spectral_dac_eigh(self, linear_size, dtype, termination_size):
+      if not jtu.test_device_matches(["tpu"]) and termination_size != 1:
+        raise unittest.SkipTest(
+            "Termination sizes greater than 1 only work on TPU")
+    
+      rng = self.rng()
+      H = rng.randn(linear_size, linear_size)
+      H = jnp.array(0.5 * (H + H.conj().T)).astype(dtype)
+      if jnp.dtype(dtype).name in ("bfloat16", "float16"):
+        self.assertRaises(
+          NotImplementedError, lax_eigh.eigh, H)
+        return
+      evs, V = lax_eigh.eigh(H, termination_size=termination_size)
+      ev_exp, _ = jnp.linalg.eigh(H)
+      HV = jnp.dot(H, V, precision=lax.Precision.HIGHEST)
+      vV = evs.astype(V.dtype)[None, :] * V
+      eps = jnp.finfo(H.dtype).eps
+      atol = jnp.linalg.norm(H) * eps
+>     self.assertAllClose(ev_exp, jnp.sort(evs), atol=20 * atol)
+
+tests/lax_scipy_spectral_dac_test.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../venv-cpu/lib/python3.13/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([-1.5109183e+01, -1.4390053e+01, -1.4006161e+01, -1.3597229e+01,
+       -1.3384514e+01, -1.3062843e+01, -1.27514...99342e+01,  1.3597320e+01,
+        1.4032988e+01,  1.4646550e+01,  1.4994950e+01,  1.6094408e+01],
+      dtype=float32)
+b = array([-1.51089573e+01, -1.43898411e+01, -1.40059071e+01, -1.35970535e+01,
+       -1.33843451e+01, -1.30626554e+01, -1...e+01,  1.35971184e+01,
+        1.40328131e+01,  1.46463194e+01,  1.49947472e+01,  1.60944366e+01],
+      dtype=float32)
+atol = Array(0.00021561, dtype=float32), rtol = 1e-06, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-06, atol=0.00021561
+E       
+E       Mismatched elements: 2 / 128 (1.56%)
+E       Mismatch at indices:
+E        [2]: -14.006160736083984 (ACTUAL), -14.00590705871582 (DESIRED)
+E        [125]: 14.646550178527832 (ACTUAL), 14.646319389343262 (DESIRED)
+E       Max absolute difference among violations: 0.00025368
+E       Max relative difference among violations: 1.811217e-05
+E        ACTUAL: array([-1.510918e+01, -1.439005e+01, -1.400616e+01, -1.359723e+01,
+E              -1.338451e+01, -1.306284e+01, -1.275142e+01, -1.231026e+01,
+E              -1.222877e+01, -1.199275e+01, -1.161015e+01, -1.153334e+01,...
+E        DESIRED: array([-1.510896e+01, -1.438984e+01, -1.400591e+01, -1.359705e+01,
+E              -1.338435e+01, -1.306266e+01, -1.275120e+01, -1.231010e+01,
+E              -1.222860e+01, -1.199255e+01, -1.160998e+01, -1.153318e+01,...
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/public_test_util.py:147: AssertionError
+_______________ LaxScipySpectralDacTest.test_spectral_dac_eigh5 ________________
+[gw2] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+self = <tests.lax_scipy_spectral_dac_test.LaxScipySpectralDacTest testMethod=test_spectral_dac_eigh5>
+linear_size = 128, dtype = <class 'numpy.float32'>, termination_size = 1
+
+    @jtu.sample_product(
+      linear_size=linear_sizes,
+      dtype=jtu.dtypes.floating + jtu.dtypes.complex,
+      termination_size=[1, 19],
+    )
+    def test_spectral_dac_eigh(self, linear_size, dtype, termination_size):
+      if not jtu.test_device_matches(["tpu"]) and termination_size != 1:
+        raise unittest.SkipTest(
+            "Termination sizes greater than 1 only work on TPU")
+    
+      rng = self.rng()
+      H = rng.randn(linear_size, linear_size)
+      H = jnp.array(0.5 * (H + H.conj().T)).astype(dtype)
+      if jnp.dtype(dtype).name in ("bfloat16", "float16"):
+        self.assertRaises(
+          NotImplementedError, lax_eigh.eigh, H)
+        return
+      evs, V = lax_eigh.eigh(H, termination_size=termination_size)
+      ev_exp, _ = jnp.linalg.eigh(H)
+      HV = jnp.dot(H, V, precision=lax.Precision.HIGHEST)
+      vV = evs.astype(V.dtype)[None, :] * V
+      eps = jnp.finfo(H.dtype).eps
+      atol = jnp.linalg.norm(H) * eps
+>     self.assertAllClose(ev_exp, jnp.sort(evs), atol=20 * atol)
+
+tests/lax_scipy_spectral_dac_test.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/test_util.py:1362: in assertAllClose
+    self.assertArraysAllClose(actual, desired, check_dtypes=False, atol=atol, rtol=rtol,
+../venv-cpu/lib/python3.13/site-packages/jax/_src/test_util.py:1325: in assertArraysAllClose
+    _assert_numpy_allclose(actual, desired, atol=atol, rtol=rtol, err_msg=err_msg)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+a = array([-15.003909  , -14.443146  , -14.098006  , -13.485047  ,
+       -13.225192  , -12.965556  , -12.466172  , -12.25...327  ,  13.202385  ,  13.70364   ,
+        14.153396  ,  14.490506  ,  14.794976  ,  15.495862  ],
+      dtype=float32)
+b = array([-15.003674  , -14.44295   , -14.097776  , -13.484853  ,
+       -13.22494   , -12.965333  , -12.465978  , -12.25...124  ,  13.202181  ,  13.703409  ,
+        14.153164  ,  14.4903    ,  14.794768  ,  15.495626  ],
+      dtype=float32)
+atol = Array(0.00021509, dtype=float32), rtol = 1e-06, err_msg = ''
+
+    def _assert_numpy_allclose(a, b, atol=None, rtol=None, err_msg=''):
+      if a.dtype == b.dtype == _dtypes.float0:
+        np.testing.assert_array_equal(a, b, err_msg=err_msg)
+        return
+    
+      custom_float_dtypes = [
+        _dtypes.float4_e2m1fn,
+        _dtypes.float8_e8m0fnu,
+        _dtypes.float8_e3m4,
+        _dtypes.float8_e4m3,
+        _dtypes.float8_e4m3b11fnuz,
+        _dtypes.float8_e4m3fn,
+        _dtypes.float8_e4m3fnuz,
+        _dtypes.float8_e5m2,
+        _dtypes.float8_e5m2fnuz,
+        _dtypes.bfloat16,
+      ]
+    
+      def maybe_upcast(x):
+        if x.dtype in custom_float_dtypes:
+          return x.astype(np.float32)
+        # TODO(reedwm): Upcasting int2/int4 to int8 will no longer be necessary once
+        # JAX depends on a version of ml_dtypes which contains
+        # https://github.com/jax-ml/ml_dtypes/commit/348fd3704306cae97f617c38045cee6bc416bf10.
+        if x.dtype in _dtypes._intn_dtypes:
+          return x.astype(np.int8 if _dtypes.iinfo(x.dtype).min < 0 else np.uint8)
+        return x
+    
+      a = maybe_upcast(a)
+      b = maybe_upcast(b)
+    
+      kw = {}
+      if atol: kw["atol"] = atol
+      if rtol: kw["rtol"] = rtol
+      with np.errstate(invalid='ignore'):
+        # TODO(phawkins): surprisingly, assert_allclose sometimes reports invalid
+        # value errors. It should not do that.
+>       np.testing.assert_allclose(a, b, **kw, err_msg=err_msg)
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-06, atol=0.000215092
+E       
+E       Mismatched elements: 7 / 128 (5.47%)
+E       First 5 mismatches are at indices:
+E        [0]: -15.00390911102295 (ACTUAL), -15.003673553466797 (DESIRED)
+E        [2]: -14.098006248474121 (ACTUAL), -14.097776412963867 (DESIRED)
+E        [4]: -13.225192070007324 (ACTUAL), -13.224940299987793 (DESIRED)
+E        [119]: 12.166424751281738 (ACTUAL), 12.16618824005127 (DESIRED)
+E        [123]: 13.70363998413086 (ACTUAL), 13.703409194946289 (DESIRED)
+E       Max absolute difference among violations: 0.00025177
+E       Max relative difference among violations: 1.9440044e-05
+E        ACTUAL: array([-15.003909, -14.443146, -14.098006, -13.485047, -13.225192,
+E              -12.965556, -12.466172, -12.253681, -12.031814, -12.008706,
+E              -11.512548, -11.299329, -10.748441, -10.643992, -10.541399,...
+E        DESIRED: array([-15.003674, -14.44295 , -14.097776, -13.484853, -13.22494 ,
+E              -12.965333, -12.465978, -12.253482, -12.031641, -12.008533,
+E              -11.512383, -11.299168, -10.748252, -10.643834, -10.54123 ,...
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/public_test_util.py:147: AssertionError
+=========================== short test summary info ============================
+FAILED tests/lax_scipy_spectral_dac_test.py::LaxScipySpectralDacTest::test_spectral_dac_eigh4
+FAILED tests/lax_scipy_spectral_dac_test.py::LaxScipySpectralDacTest::test_spectral_dac_eigh5
+2 failed, 3 passed, 5 skipped in 21.82s

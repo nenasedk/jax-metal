@@ -1,0 +1,46 @@
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility0", "seconds": 1.296, "before_mb": 169, "peak_mb": 283, "params": "(m=8, n=4, padding=None, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility6", "seconds": 1.451, "before_mb": 169, "peak_mb": 307, "params": "(m=8, n=4, padding=(3, 2), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility3", "seconds": 2.696, "before_mb": 169, "peak_mb": 323, "params": "(m=8, n=4, padding=(3, 2), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility1", "seconds": 2.275, "before_mb": 283, "peak_mb": 325, "params": "(m=8, n=4, padding=None, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility7", "seconds": 2.567, "before_mb": 307, "peak_mb": 336, "params": "(m=6, n=6, padding=(3, 2), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility4", "seconds": 1.461, "before_mb": 323, "peak_mb": 346, "params": "(m=6, n=6, padding=(3, 2), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility2", "seconds": 1.422, "before_mb": 325, "peak_mb": 326, "params": "(m=6, n=6, padding=None, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput0", "seconds": 1.049, "before_mb": 336, "peak_mb": 338, "params": "(m=12, n=8, r=5, log_cond=np.float64(0.6666666666666666), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhJitCompatibility5", "seconds": 2.066, "before_mb": 346, "peak_mb": 355, "params": "(m=6, n=6, padding=None, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput1", "seconds": 1.884, "before_mb": 326, "peak_mb": 339, "params": "(m=8, n=8, r=7, log_cond=np.float64(0.3333333333333333), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput6", "seconds": 1.827, "before_mb": 338, "peak_mb": 359, "params": "(m=8, n=8, r=7, log_cond=np.float64(0.0), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape0", "seconds": 0.73, "before_mb": 355, "peak_mb": 356, "params": "(shape=(5, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput7", "seconds": 0.808, "before_mb": 359, "peak_mb": 362, "params": "(m=8, n=8, r=7, log_cond=np.float64(0.0), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput2", "seconds": 1.122, "before_mb": 339, "peak_mb": 350, "params": "(m=10, n=10, r=8, log_cond=np.float64(0.0), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape1", "seconds": 1.238, "before_mb": 356, "peak_mb": 384, "params": "(shape=(5, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape2", "seconds": 0.097, "before_mb": 384, "peak_mb": 384, "params": "(shape=(2, 2), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape3", "seconds": 0.219, "before_mb": 384, "peak_mb": 384, "params": "(shape=(10, 10), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape4", "seconds": 0.261, "before_mb": 384, "peak_mb": 384, "params": "(shape=(8, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape5", "seconds": 0.268, "before_mb": 384, "peak_mb": 384, "params": "(shape=(2, 2), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape6", "seconds": 0.133, "before_mb": 384, "peak_mb": 384, "params": "(shape=(10, 10), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithDynamicShape7", "seconds": 0.262, "before_mb": 384, "peak_mb": 384, "params": "(shape=(8, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput8", "seconds": 1.786, "before_mb": 362, "peak_mb": 378, "params": "(m=10, n=10, r=8, log_cond=np.float64(1.0), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput9", "seconds": 0.009, "before_mb": 378, "peak_mb": 378, "params": "(m=12, n=8, r=5, log_cond=np.float64(0.3333333333333333), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput3", "seconds": 1.611, "before_mb": 350, "peak_mb": 381, "params": "(m=10, n=10, r=8, log_cond=np.float64(0.6666666666666666), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput4", "seconds": 0.962, "before_mb": 381, "peak_mb": 383, "params": "(m=12, n=8, r=5, log_cond=np.float64(1.0), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhOnRankDeficientInput5", "seconds": 0.011, "before_mb": 383, "peak_mb": 383, "params": "(m=10, n=10, r=8, log_cond=np.float64(1.0), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix0", "seconds": 2.233, "before_mb": 384, "peak_mb": 399, "params": "(shape=(10, 10), log_cond=np.float64(1.0), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix2", "seconds": 2.539, "before_mb": 378, "peak_mb": 408, "params": "(shape=(8, 6), log_cond=np.float64(0.6666666666666666), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix4", "seconds": 2.118, "before_mb": 383, "peak_mb": 417, "params": "(shape=(8, 6), log_cond=np.float64(0.6666666666666666), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix3", "seconds": 1.87, "before_mb": 408, "peak_mb": 437, "params": "(shape=(10, 10), log_cond=np.float64(0.0), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix7", "seconds": 0.02, "before_mb": 437, "peak_mb": 437, "params": "(shape=(10, 10), log_cond=np.float64(0.6666666666666666), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix5", "seconds": 2.308, "before_mb": 417, "peak_mb": 439, "params": "(shape=(10, 10), log_cond=np.float64(0.6666666666666666), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix8", "seconds": 0.011, "before_mb": 439, "peak_mb": 439, "params": "(shape=(8, 6), log_cond=np.float64(1.0), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix9", "seconds": 2.121, "before_mb": 437, "peak_mb": 456, "params": "(shape=(8, 6), log_cond=np.float64(0.0), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithTinyElement1", "seconds": 1.206, "before_mb": 439, "peak_mb": 441, "params": "(m=5, n=2, r=0, c=0, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithTinyElement0", "seconds": 0.669, "before_mb": 456, "peak_mb": 458, "params": "(m=5, n=2, r=0, c=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithTinyElement2", "seconds": 0.593, "before_mb": 441, "peak_mb": 442, "params": "(m=4, n=3, r=1, c=1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithUpperTriangularInputAllOnes0", "seconds": 0.059, "before_mb": 442, "peak_mb": 442, "params": "(shape=(8, 6), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithTinyElement3", "seconds": 1.005, "before_mb": 458, "peak_mb": 459, "params": "(m=4, n=3, r=1, c=1, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithUpperTriangularInputAllOnes2", "seconds": 1.563, "before_mb": 442, "peak_mb": 449, "params": "(shape=(20, 18), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithUpperTriangularInputAllOnes1", "seconds": 0.792, "before_mb": 459, "peak_mb": 460, "params": "(shape=(10, 10), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithUpperTriangularInputAllOnes4", "seconds": 0.045, "before_mb": 460, "peak_mb": 460, "params": "(shape=(10, 10), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithUpperTriangularInputAllOnes3", "seconds": 0.702, "before_mb": 449, "peak_mb": 461, "params": "(shape=(20, 18), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithUpperTriangularInputAllOnes5", "seconds": 1.026, "before_mb": 461, "peak_mb": 469, "params": "(shape=(8, 6), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix1", "seconds": 9.193, "before_mb": 399, "peak_mb": 541, "params": "(shape=(300, 300), log_cond=np.float64(1.0), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/qdwh_test.py::QdwhTest::testQdwhWithRandomMatrix6", "seconds": 2.34, "before_mb": 540, "peak_mb": 542, "params": "(shape=(20, 18), log_cond=np.float64(1.0), dtype=<class 'numpy.complex64'>)"}

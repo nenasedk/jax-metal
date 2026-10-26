@@ -1,0 +1,71 @@
+{"nodeid": "tests/stax_test.py::StaxTest::testBatchNormNoScaleOrCenter", "seconds": 0.578, "before_mb": 169, "peak_mb": 238}
+{"nodeid": "tests/stax_test.py::StaxTest::testBatchNormShapeNCHW", "seconds": 0.238, "before_mb": 238, "peak_mb": 238}
+{"nodeid": "tests/stax_test.py::StaxTest::testBatchNormShapeNHWC", "seconds": 0.077, "before_mb": 238, "peak_mb": 240}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape2", "seconds": 1.071, "before_mb": 169, "peak_mb": 254, "params": "(channels=2, filter_shape=(2,), padding='SAME', strides=(2,), input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape7", "seconds": 1.248, "before_mb": 169, "peak_mb": 249, "params": "(channels=2, filter_shape=(1,), padding='SAME', strides=(1,), input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape3", "seconds": 0.325, "before_mb": 254, "peak_mb": 263, "params": "(channels=2, filter_shape=(1,), padding='VALID', strides=(2,), input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape8", "seconds": 0.548, "before_mb": 249, "peak_mb": 261, "params": "(channels=2, filter_shape=(2,), padding='VALID', strides=None, input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape4", "seconds": 0.47, "before_mb": 263, "peak_mb": 270, "params": "(channels=2, filter_shape=(3,), padding='SAME', strides=(1,), input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape0", "seconds": 0.992, "before_mb": 240, "peak_mb": 267, "params": "(channels=3, filter_shape=(3,), padding='VALID', strides=(2,), input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape1", "seconds": 0.418, "before_mb": 267, "peak_mb": 276, "params": "(channels=3, filter_shape=(1,), padding='SAME', strides=(1,), input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape9", "seconds": 0.95, "before_mb": 261, "peak_mb": 271, "params": "(channels=3, filter_shape=(3,), padding='SAME', strides=(1,), input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape5", "seconds": 0.904, "before_mb": 270, "peak_mb": 278, "params": "(channels=3, filter_shape=(1,), padding='VALID', strides=(2,), input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape2", "seconds": 0.784, "before_mb": 276, "peak_mb": 284, "params": "(channels=3, filter_shape=(1, 1), padding='VALID', strides=None, input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConv1DTransposeShape6", "seconds": 0.456, "before_mb": 278, "peak_mb": 286, "params": "(channels=3, filter_shape=(2,), padding='VALID', strides=(1,), input_shape=(2, 10, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape0", "seconds": 0.808, "before_mb": 271, "peak_mb": 281, "params": "(channels=2, filter_shape=(1, 1), padding='SAME', strides=None, input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape3", "seconds": 0.668, "before_mb": 284, "peak_mb": 292, "params": "(channels=2, filter_shape=(2, 3), padding='VALID', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape4", "seconds": 0.048, "before_mb": 292, "peak_mb": 292, "params": "(channels=3, filter_shape=(1, 1), padding='VALID', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape9", "seconds": 0.947, "before_mb": 286, "peak_mb": 290, "params": "(channels=3, filter_shape=(2, 3), padding='VALID', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape5", "seconds": 0.563, "before_mb": 292, "peak_mb": 300, "params": "(channels=3, filter_shape=(2, 3), padding='SAME', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape1", "seconds": 0.851, "before_mb": 281, "peak_mb": 290, "params": "(channels=3, filter_shape=(1, 1), padding='SAME', strides=None, input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape0", "seconds": 0.479, "before_mb": 290, "peak_mb": 298, "params": "(channels=3, filter_shape=(3, 3), padding='VALID', strides=(2, 2), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape6", "seconds": 0.321, "before_mb": 300, "peak_mb": 302, "params": "(channels=2, filter_shape=(1, 1), padding='SAME', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape7", "seconds": 0.004, "before_mb": 302, "peak_mb": 302, "params": "(channels=3, filter_shape=(1, 1), padding='SAME', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvShape8", "seconds": 0.042, "before_mb": 302, "peak_mb": 302, "params": "(channels=2, filter_shape=(2, 3), padding='SAME', strides=None, input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape6", "seconds": 0.48, "before_mb": 290, "peak_mb": 298, "params": "(channels=3, filter_shape=(2, 3), padding='VALID', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape7", "seconds": 0.063, "before_mb": 298, "peak_mb": 298, "params": "(channels=2, filter_shape=(1, 1), padding='SAME', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape1", "seconds": 0.363, "before_mb": 298, "peak_mb": 300, "params": "(channels=3, filter_shape=(1, 1), padding='SAME', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testDenseShape2", "seconds": 0.397, "before_mb": 302, "peak_mb": 309, "params": "(out_dim=3, input_shape=(2, 3))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape8", "seconds": 0.36, "before_mb": 298, "peak_mb": 302, "params": "(channels=2, filter_shape=(2, 3), padding='VALID', strides=None, input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testDenseShape3", "seconds": 0.237, "before_mb": 309, "peak_mb": 313, "params": "(out_dim=3, input_shape=(3, 4))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testDropoutShape0", "seconds": 0.216, "before_mb": 313, "peak_mb": 316, "params": "(input_shape=(2, 5, 6, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape2", "seconds": 0.616, "before_mb": 298, "peak_mb": 304, "params": "(channels=2, filter_shape=(2, 3), padding='SAME', strides=(2, 2), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape9", "seconds": 0.466, "before_mb": 302, "peak_mb": 308, "params": "(channels=3, filter_shape=(3, 3), padding='SAME', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testDropoutShape1", "seconds": 0.189, "before_mb": 316, "peak_mb": 317, "params": "(input_shape=(3, 4))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testFanInConcat0", "seconds": 0.04, "before_mb": 317, "peak_mb": 317, "params": "(input_shapes=[(2, 3), (2, 1)], axis=1)"}
+{"nodeid": "tests/stax_test.py::StaxTest::testFanInConcat1", "seconds": 0.003, "before_mb": 317, "peak_mb": 317, "params": "(input_shapes=[(2, 3), (2, 1)], axis=-1)"}
+{"nodeid": "tests/stax_test.py::StaxTest::testFanInConcat2", "seconds": 0.056, "before_mb": 317, "peak_mb": 317, "params": "(input_shapes=[(1, 2, 4), (1, 1, 4)], axis=1)"}
+{"nodeid": "tests/stax_test.py::StaxTest::testFanInSum0", "seconds": 0.003, "before_mb": 317, "peak_mb": 317, "params": "(input_shape=(2, 5, 6, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testFanInSum1", "seconds": 0.003, "before_mb": 317, "peak_mb": 317, "params": "(input_shape=(3, 4))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testFlattenShape0", "seconds": 0.002, "before_mb": 317, "peak_mb": 317, "params": "(input_shape=(2, 3, 4))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testFlattenShape1", "seconds": 0.002, "before_mb": 317, "peak_mb": 317, "params": "(input_shape=(2, 3))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape3", "seconds": 0.304, "before_mb": 304, "peak_mb": 308, "params": "(channels=2, filter_shape=(1, 1), padding='VALID', strides=(2, 2), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testDenseShape0", "seconds": 0.449, "before_mb": 308, "peak_mb": 313, "params": "(out_dim=4, input_shape=(2, 3))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testGlorotInitShape0", "seconds": 0.342, "before_mb": 317, "peak_mb": 325, "params": "(shape=(2, 3, 4))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape4", "seconds": 0.36, "before_mb": 308, "peak_mb": 311, "params": "(channels=2, filter_shape=(3, 3), padding='SAME', strides=(2, 1), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testConvTransposeShape5", "seconds": 0.05, "before_mb": 311, "peak_mb": 311, "params": "(channels=3, filter_shape=(1, 1), padding='VALID', strides=(2, 2), input_shape=(2, 10, 11, 1))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testNonlinearShape3", "seconds": 0.036, "before_mb": 311, "peak_mb": 311, "params": "(input_shape=(2, 3, 4), nonlinear='LeakyRelu')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testNonlinearShape4", "seconds": 0.03, "before_mb": 311, "peak_mb": 311, "params": "(input_shape=(2, 3), nonlinear='Sigmoid')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testGlorotInitShape1", "seconds": 0.193, "before_mb": 325, "peak_mb": 326, "params": "(shape=(2, 3))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testDenseShape1", "seconds": 0.285, "before_mb": 313, "peak_mb": 317, "params": "(out_dim=4, input_shape=(3, 4))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testNonlinearShape5", "seconds": 0.068, "before_mb": 311, "peak_mb": 313, "params": "(input_shape=(2, 3), nonlinear='Elu')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testNonlinearShape6", "seconds": 0.037, "before_mb": 313, "peak_mb": 313, "params": "(input_shape=(2, 3, 4), nonlinear='Sigmoid')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testNonlinearShape7", "seconds": 0.037, "before_mb": 313, "peak_mb": 313, "params": "(input_shape=(2, 3), nonlinear='LeakyRelu')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testNonlinearShape1", "seconds": 0.081, "before_mb": 317, "peak_mb": 317, "params": "(input_shape=(2, 3, 4), nonlinear='Elu')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testIssue182", "seconds": 0.145, "before_mb": 326, "peak_mb": 326}
+{"nodeid": "tests/stax_test.py::StaxTest::testNonlinearShape2", "seconds": 0.039, "before_mb": 317, "peak_mb": 317, "params": "(input_shape=(2, 3), nonlinear='Relu')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape0", "seconds": 0.051, "before_mb": 313, "peak_mb": 315, "params": "(window_shape=(2, 3), padding='VALID', strides=None, input_shape=(2, 5, 6, 4), max_pool=True, spec='WHCN')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testNonlinearShape0", "seconds": 0.042, "before_mb": 326, "peak_mb": 326, "params": "(input_shape=(2, 3, 4), nonlinear='Relu')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape1", "seconds": 0.052, "before_mb": 315, "peak_mb": 315, "params": "(window_shape=(2, 3), padding='VALID', strides=(2, 1), input_shape=(2, 5, 6, 4), max_pool=True, spec='NCHW')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape2", "seconds": 0.128, "before_mb": 317, "peak_mb": 321, "params": "(window_shape=(1, 1), padding='VALID', strides=None, input_shape=(2, 5, 6, 4), max_pool=False, spec='WHCN')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape3", "seconds": 0.131, "before_mb": 326, "peak_mb": 330, "params": "(window_shape=(2, 3), padding='VALID', strides=None, input_shape=(2, 5, 6, 4), max_pool=False, spec='WHNC')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape6", "seconds": 0.051, "before_mb": 330, "peak_mb": 331, "params": "(window_shape=(1, 1), padding='VALID', strides=(2, 1), input_shape=(2, 5, 6, 4), max_pool=True, spec='WHCN')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape5", "seconds": 0.148, "before_mb": 315, "peak_mb": 317, "params": "(window_shape=(2, 3), padding='VALID', strides=None, input_shape=(2, 5, 6, 4), max_pool=False, spec='NCHW')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape4", "seconds": 0.101, "before_mb": 321, "peak_mb": 323, "params": "(window_shape=(1, 1), padding='VALID', strides=None, input_shape=(2, 5, 6, 4), max_pool=False, spec='NCHW')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape8", "seconds": 0.039, "before_mb": 323, "peak_mb": 323, "params": "(window_shape=(1, 1), padding='VALID', strides=None, input_shape=(2, 5, 6, 4), max_pool=True, spec='NCHW')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape9", "seconds": 0.125, "before_mb": 331, "peak_mb": 334, "params": "(window_shape=(1, 1), padding='VALID', strides=None, input_shape=(2, 5, 6, 4), max_pool=False, spec='NHWC')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testPoolingShape7", "seconds": 0.129, "before_mb": 317, "peak_mb": 321, "params": "(window_shape=(2, 3), padding='VALID', strides=None, input_shape=(2, 5, 6, 4), max_pool=False, spec='WHCN')"}
+{"nodeid": "tests/stax_test.py::StaxTest::testRandnInitShape1", "seconds": 0.228, "before_mb": 321, "peak_mb": 325, "params": "(shape=(2, 3))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testRandnInitShape0", "seconds": 0.248, "before_mb": 334, "peak_mb": 338, "params": "(shape=(5,))"}
+{"nodeid": "tests/stax_test.py::StaxTest::testSerialComposeLayersShape0", "seconds": 0.762, "before_mb": 323, "peak_mb": 333, "params": "(input_shape=(2, 5, 6, 1), spec=[(<function GeneralConv.<locals>.init_fun at 0x7f1ea3305a80>, <function GeneralConv.<locals>.apply_fun at 0x7f1ea3305b20>), (<function Flatten.<locals>.init_fun at 0x7f1ea33045e0>, <function Flatten.<locals>.apply_fun at 0x7f1ea3304680>), (<function Dense.<locals>.ini"}
+{"nodeid": "tests/stax_test.py::StaxTest::testSerialComposeLayersShape1", "seconds": 0.095, "before_mb": 333, "peak_mb": 336, "params": "(input_shape=(2, 5, 6, 1), spec=[(<function GeneralConv.<locals>.init_fun at 0x7f1ea33058a0>, <function GeneralConv.<locals>.apply_fun at 0x7f1ea3305940>)])"}

@@ -102,7 +102,10 @@ composite-wrapped CHLO ops, `cbrt`/`popcnt`/`clz`, `cholesky`/`triangular_solve`
 `solve`/`inv`), `reduce_precision`, exact bfloat16 conversions, the `rbg` PRNG (MPS aborts on
 it), MPS accuracy bugs (`expm1`, `log1p`, `tanh`, `sign(NaN)`), multi-key sorts, and complex64
 inside programs including FFT, and complex64 values at program boundaries (dual pair/complex
-programs with zero-copy buffer views). Remaining: float64 (no MPS support; double-float
+programs with zero-copy buffer views). Since then: `eig`, `schur`, `hessenberg`, `geqp3`,
+`tridiagonal` and a pivoting `tridiagonal_solve`; collectives on one device; uint64, float8
+and int4/uint4 program inputs and outputs; emulated float8, float4 and 2-/4-bit integer
+arithmetic; complex `max`/`min` reductions. Remaining: float64 (no MPS support; double-float
 emulation measured, see `shim/DESIGN.md`).
 
 ### Phase 4: open-source reimplementation (only if Phases 2–3 stall)
@@ -110,16 +113,18 @@ emulation measured, see `shim/DESIGN.md`).
 Use the reverse-engineered behavior as a spec for a new MPSGraph-based plugin. Multi-month effort
 with ongoing maintenance.
 
-## Limitations (as of 2026-10-24)
+## Limitations (as of 2026-10-26)
 
 Correctness and coverage:
 
 - **float64 / complex128**: unavailable; MPS has no float64 type. Double-float emulation is
   measured (~1e-14 relative error, float32 exponent range) but not wired into JAX.
 - **Test coverage is mostly our own**: 16 end-to-end cases, an op probe, an elementwise float32
-  accuracy sweep, linear algebra, complex/FFT and precision suites. Of JAX's own tests, only
-  `fft_test` (109 passed, 2 skipped) and part of `linalg_test` have run on METAL
-  (`shim/build/jax-suite/`); real models (Flax/Optax training, transformers) have not.
+  accuracy sweep, linear algebra, complex/FFT, precision and narrow-type suites. Of JAX's own
+  tests, only `fft_test` (109 passed, 2 skipped) and part of `linalg_test` have run on METAL
+  (`shim/build/jax-suite/`); real models (Flax/Optax training, transformers) have not. In
+  METAL emulation on the CPU, 56 of JAX's test files run with 19,608 passing and 35 failing
+  for known reasons (`re/findings/jax-suite-cpu.md`).
 - **Accuracy beyond elementwise ops is unmeasured**: the sweep found silent MPS errors in
   `expm1`/`log1p`/`tanh`/`sign`; reductions, matmul precision, convolutions and float16/bfloat16
   arithmetic have not been swept the same way.
@@ -127,11 +132,15 @@ Correctness and coverage:
   XLA serializes as composites without a METAL rule, fail. Requested result accuracies and dot
   algorithms are dropped rather than failing. (`ragged_dot` lowers to plain ops in
   emulation.)
-- **No METAL lowering**: `eig`, `schur`, `hessenberg`, `geqp3` and `tridiagonal` (JAX has only
-  LAPACK/cuSOLVER lowerings for them). `ormqr` and `tridiagonal_solve` use JAX's generic
-  lowerings and work in emulation.
-- **Types MPS lacks**: int4/uint4 and float8 variants (besides float64/complex128); uint64
-  cannot be a program input or output.
+- **Rules awaiting the GPU**: the newest rules (`eig`, `schur`, `hessenberg`, `geqp3`,
+  `tridiagonal`, `tridiagonal_solve`, collectives, narrow types, uint64 and narrow program
+  inputs/outputs) are checked against LAPACK/XLA on the CPU and in emulation only.
+- **Narrow types are emulated**: float8, float4, int4 and int2 values run in float32 or
+  8-bit integer carriers with XLA's rounding; correct, not faster. The newer ones
+  (float8_e4m3, e3m4, e8m0fnu, float4_e2m1fn, int2, uint2) cannot be program inputs or
+  outputs (StableHLO 0.19.4 has no such types); float6 is unsupported.
+- **No host callbacks**: `jax.debug.print`, `pure_callback`, `io_callback` and checkify's
+  runtime checks (the plugin has no send/recv).
 - **bfloat16 is emulated in float32 by the plugin**: results are now exact, but there is no
   memory or speed benefit from bfloat16.
 
@@ -147,7 +156,8 @@ Performance:
 
 Platform and maintenance:
 
-- **Single device, single process**; no collectives or multi-process.
+- **Single device, single process**: collectives work on the one device (`shard_map`,
+  `pmap`), but there is no multi-device or multi-process execution.
 - **Pinned to jax/jaxlib 0.12**: the package hooks private JAX internals
   (`mlir.lower_jaxpr_to_module`, `compiler.compile_or_get_cached`, lowering-rule registries,
   `threefry_2x32`); `pyproject.toml` pins `<0.13` until a newer release is tested.
@@ -166,7 +176,7 @@ plugin lacked, what is possible with rules and the shim, what needs an open back
 the hardware rules out.
 
 1. **Run JAX's own tests on METAL**: ready as `make -C shim gpu-session`, which also runs
-   every other GPU check. The same 19 files already pass through the METAL rules on the CPU
+   every other GPU check. The same 56 files already pass through the METAL rules on the CPU
    (`shim/build/jax-suite-cpu/`), so each METAL failure is labeled "METAL only" (MPS behavior
    or a plugin limit) or "also on CPU" (the rules); fix the rules or document the limits.
 2. **Real workloads and benchmarks**: `shim/benchmarks/` (plain-JAX MLP/CNN/transformer

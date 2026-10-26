@@ -1,0 +1,92 @@
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdOnTinyElement0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdOnTinyElement1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdOnTinyElement2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: tpu, rocm"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithSkinnyTallInput0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithSkinnyTallInput1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals3", "outcome": "passed", "message": ""}

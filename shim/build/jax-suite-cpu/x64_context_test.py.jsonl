@@ -1,0 +1,25 @@
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_convert_element_type", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_correctly_capture_default0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_explicit_x64_dtypes_allow_reduce", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_explicit_x64_dtypes_allow_shape_dtype_struct", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_explicit_x64_dtypes_allow_reduce_initial", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_make_array0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_mul", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_near_singular_inverse0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_near_singular_inverse1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu"}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_python_scalar", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_scan_with_contextmanager0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_jit_cache", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_make_array1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_thread_safety", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_custom_jvp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_scan_with_contextmanager1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_sin", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_while_loop0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_while_loop1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_custom_vjp", "outcome": "passed", "message": ""}
+{"nodeid": "tests/x64_context_test.py::X64ContextTests::test_explicit_x64_dtypes_allow", "outcome": "passed", "message": ""}

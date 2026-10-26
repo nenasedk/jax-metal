@@ -1,0 +1,240 @@
+bringing up nodes...
+bringing up nodes...
+
+ss.........................................................ss........... [ 61%]
+..........F..........................F........                           [100%]
+=================================== FAILURES ===================================
+_____________ AssertPrimitiveTests.test_assert_primitive_lowering ______________
+[gw1] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+>   checkify.check(False, "hi")
+E   jax._src.source_info_util.JaxStackTraceBeforeTransformation: NotImplementedError: MLIR translation rule for primitive 'check' not found for platform cpu
+E   
+E   The preceding stack trace is the source of the JAX operation that, once transformed by JAX, triggered the following exception.
+E   
+E   --------------------
+
+tests/checkify_test.py:1097: JaxStackTraceBeforeTransformation
+
+The above exception was the direct cause of the following exception:
+
+self = <tests.checkify_test.AssertPrimitiveTests testMethod=test_assert_primitive_lowering>
+
+    def test_assert_primitive_lowering(self):
+      @jax.jit
+      def f():
+        checkify.check(False, "hi")
+    
+      with self.assertRaisesRegex(ValueError, "Cannot abstractly evaluate"):
+>       f()
+
+tests/checkify_test.py:1100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/traceback_util.py:194: in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)  # pyrefly: ignore[not-callable]
+           ^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1147: in _pjit_call_impl_python
+    computation = _resolve_and_lower(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1073: in _resolve_and_lower
+    return _pjit_lower(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1246: in _pjit_lower
+    return pxla.lower_sharding_computation(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py:1143: in lower_sharding_computation
+    tuple_args, shape_poly_state) = _cached_lowering_to_hlo(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py:756: in _cached_lowering_to_hlo
+    lowering_result = mlir.lower_jaxpr_to_module(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:1497: in lower_jaxpr_to_module
+    lower_jaxpr_to_fun(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2130: in lower_jaxpr_to_fun
+    out_vals, tokens_out = jaxpr_subcomp(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2308: in jaxpr_subcomp
+    cache_entry = _cached_lowering_miss(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2377: in _cached_lowering_miss
+    cache_entry = _emit_lowering_rule_as_fun(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2515: in _emit_lowering_rule_as_fun
+    outs = lowering_rule(sub_ctx, *unflattened_args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2550: in _uncached_lowering
+    ans = lower_per_platform(ctx, str(primitive), platform_rules, default_rule,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def lower_per_platform(ctx: LoweringRuleContext,
+                           description: str,
+                           platform_rules: dict[str, LoweringRule],
+                           default_rule: LoweringRule | None,
+                           effects: effects_lib.Effects,
+                           *rule_args: ir.Value | tuple[ir.Value, ...],
+                           **rule_kwargs) -> Sequence[ir.Value]:
+      """Emits code for a primitive for the current lowering platform(s).
+    
+      For example, given
+          platform_rules = dict(tpu=rule0, cpu=rule0)
+          default_rule = rule1
+    
+      and
+          ctx.module_context.lowering_parameters.platforms = ("cpu",)
+    
+      emits:
+          rule0(ctx, *rule_args, **rule_kwargs)
+    
+      In case of multi-platform lowering, e.g., if
+          ctx.module_context.lowering_parameters.platforms = ("cpu", "cuda", "tpu")
+    
+      emits:
+        rule_idx = case current_platform_idx:
+                       0: return 0  # cpu rule index
+                       1: return 1  # cuda rule index
+                       2: return 0  # tpu rule index
+        output = case rule_idx
+                   0: return rule0(*rule_args, **rule_kwargs)
+                   1: return rule1(*rule_args, **rule_kwargs)
+    
+      Args:
+       ctx: lowering context.
+       description: a string to include in error messages.
+       platform_rules: map platform names, e.g., "cpu", "cuda", to
+         `LoweringRule`s, for the platforms that have non-default lowering.
+       default_rule: an optional rule to use for platforms not in `platform_rules`.
+       effects: the set of effects for the current primitive.
+       rule_args: the args of the lowering rules.
+       rule_kwargs: the kwargs of the lowering rules.
+      """
+      platforms: Sequence[str] = _platforms_for_eqn(ctx)
+      # Special case the common case (single-platform lowering)
+      if len(platforms) == 1:
+        rule = platform_rules.get(platforms[0], default_rule)
+        if rule is None:
+>         raise NotImplementedError(
+            f"MLIR translation rule for primitive '{description}' not "
+            f"found for platform {platforms[0]}")
+E         NotImplementedError: MLIR translation rule for primitive 'check' not found for platform cpu
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2650: NotImplementedError
+__________________ AssertPrimitiveTests.test_debug_check_noop __________________
+[gw2] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+>   checkify.debug_check(jnp.all(x != x), "{x} cannot be {x}", x=x)
+E   jax._src.source_info_util.JaxStackTraceBeforeTransformation: NotImplementedError: MLIR translation rule for primitive 'check' not found for platform cpu
+E   
+E   The preceding stack trace is the source of the JAX operation that, once transformed by JAX, triggered the following exception.
+E   
+E   --------------------
+
+tests/checkify_test.py:1448: JaxStackTraceBeforeTransformation
+
+The above exception was the direct cause of the following exception:
+
+self = <tests.checkify_test.AssertPrimitiveTests testMethod=test_debug_check_noop>
+
+    def test_debug_check_noop(self):
+      def f(x):
+        checkify.debug_check(jnp.all(x != x), "{x} cannot be {x}", x=x)
+        return x
+      x = jnp.ones(())
+      f(x)  # no error.
+>     jax.jit(f)(x)  # no error.
+      ^^^^^^^^^^^^^
+
+tests/checkify_test.py:1452: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1147: in _pjit_call_impl_python
+    computation = _resolve_and_lower(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1073: in _resolve_and_lower
+    return _pjit_lower(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1246: in _pjit_lower
+    return pxla.lower_sharding_computation(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py:1143: in lower_sharding_computation
+    tuple_args, shape_poly_state) = _cached_lowering_to_hlo(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py:756: in _cached_lowering_to_hlo
+    lowering_result = mlir.lower_jaxpr_to_module(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:1497: in lower_jaxpr_to_module
+    lower_jaxpr_to_fun(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2130: in lower_jaxpr_to_fun
+    out_vals, tokens_out = jaxpr_subcomp(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2308: in jaxpr_subcomp
+    cache_entry = _cached_lowering_miss(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2377: in _cached_lowering_miss
+    cache_entry = _emit_lowering_rule_as_fun(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2515: in _emit_lowering_rule_as_fun
+    outs = lowering_rule(sub_ctx, *unflattened_args, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2550: in _uncached_lowering
+    ans = lower_per_platform(ctx, str(primitive), platform_rules, default_rule,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ctx = LoweringRuleContext(module_context=ModuleContext(context=<jax._src.interpreters.mlir.JaxIrContext object at 0x7efcf847..._mode=LayoutMode.AUTO, remove_size_one_mesh_axis=False, no_collectives=frozenset(), xla_metadata=None), platforms=None)
+description = 'check', platform_rules = {}, default_rule = None
+effects = {ErrorEffect(error_type=<class 'jax._src.checkify.FailedCheckError'>, shape_dtypes=(ShapeDtypeStruct(shape=(), dtype=float32),))}
+rule_args = (<jaxlib.mlir._mlir_libs._mlir.ir.BlockArgument object at 0x7efcf83160f0>, <jaxlib.mlir._mlir_libs._mlir.ir.BlockArgument object at 0x7efcf8316230>, <jaxlib.mlir._mlir_libs._mlir.ir.BlockArgument object at 0x7efcf8316270>)
+rule_kwargs = {'err_tree': PyTreeDef(CustomNode(Error[{0: PyTreeDef(CustomNode(FailedCheckError[(<jaxlib._jax.Traceback object at 0x...x._src.checkify.FailedCheckError'>, shape_dtypes=(ShapeDtypeStruct(shape=(), dtype=float32),)): [*]}])), 'debug': True}
+
+    def lower_per_platform(ctx: LoweringRuleContext,
+                           description: str,
+                           platform_rules: dict[str, LoweringRule],
+                           default_rule: LoweringRule | None,
+                           effects: effects_lib.Effects,
+                           *rule_args: ir.Value | tuple[ir.Value, ...],
+                           **rule_kwargs) -> Sequence[ir.Value]:
+      """Emits code for a primitive for the current lowering platform(s).
+    
+      For example, given
+          platform_rules = dict(tpu=rule0, cpu=rule0)
+          default_rule = rule1
+    
+      and
+          ctx.module_context.lowering_parameters.platforms = ("cpu",)
+    
+      emits:
+          rule0(ctx, *rule_args, **rule_kwargs)
+    
+      In case of multi-platform lowering, e.g., if
+          ctx.module_context.lowering_parameters.platforms = ("cpu", "cuda", "tpu")
+    
+      emits:
+        rule_idx = case current_platform_idx:
+                       0: return 0  # cpu rule index
+                       1: return 1  # cuda rule index
+                       2: return 0  # tpu rule index
+        output = case rule_idx
+                   0: return rule0(*rule_args, **rule_kwargs)
+                   1: return rule1(*rule_args, **rule_kwargs)
+    
+      Args:
+       ctx: lowering context.
+       description: a string to include in error messages.
+       platform_rules: map platform names, e.g., "cpu", "cuda", to
+         `LoweringRule`s, for the platforms that have non-default lowering.
+       default_rule: an optional rule to use for platforms not in `platform_rules`.
+       effects: the set of effects for the current primitive.
+       rule_args: the args of the lowering rules.
+       rule_kwargs: the kwargs of the lowering rules.
+      """
+      platforms: Sequence[str] = _platforms_for_eqn(ctx)
+      # Special case the common case (single-platform lowering)
+      if len(platforms) == 1:
+        rule = platform_rules.get(platforms[0], default_rule)
+        if rule is None:
+>         raise NotImplementedError(
+            f"MLIR translation rule for primitive '{description}' not "
+            f"found for platform {platforms[0]}")
+E         NotImplementedError: MLIR translation rule for primitive 'check' not found for platform cpu
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2650: NotImplementedError
+=========================== short test summary info ============================
+FAILED tests/checkify_test.py::AssertPrimitiveTests::test_assert_primitive_lowering
+FAILED tests/checkify_test.py::AssertPrimitiveTests::test_debug_check_noop - ...
+2 failed, 112 passed, 4 skipped in 8.11s

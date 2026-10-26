@@ -1,0 +1,2 @@
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_enable_x64_inner_scope0", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/checkify_test.py::AssertPrimitiveTests::test_enable_x64_inner_scope1", "outcome": "passed", "issues": ["type f64"]}

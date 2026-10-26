@@ -1,0 +1,464 @@
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matvec9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_sorted_indices", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_sorted_indices_gpu_lowerings", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmm9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_spmv9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_todense_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_fromdense_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmat_layout", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_fromdense_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmat6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matmul_ad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_bcoo_dot_general_vmap_matvec_grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_coo_matmul_ad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_grad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_grad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_matvec9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmm9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_spmv9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: gpu"}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_jacobian5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_pytree_grad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_value_and_grad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseGradTest::test_sparse_value_and_grad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_BCSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_CSC", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_attrs_CSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_bcsr_from_scipy_sparse9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::cuSparseTest::test_csr_todense_ad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_CSC", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_methods", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, 3, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_block_until_ready_CSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip10", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, None, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip11", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_bcoo_to_bcsr_round_trip2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip12", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip13", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, 3, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip14", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_BCOO[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_BCOO[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_COO[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_COO[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip15", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSC[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip17", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSC[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip18", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(5, None, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSR[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip19", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_CSR[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_0_BCOO[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_0_BCOO[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip20", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip21", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, 3, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip22", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip23", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_2_BCOO[2, 5]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip24", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_empty_nse_2_BCOO[5, 3]", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip25", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip26", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(2, None, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_BCOO(2, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, 3, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_COO(5, None, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip27", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, 3, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip28", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip29", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, None, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip31", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_dense_round_trip4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(2, None, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, 3, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, None, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSC(5, 3, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_CSC", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_jit_lower_CSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(2, None, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, 3, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, 3, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, 3, 1)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul17", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, None, -2)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul10", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_eye_CSR(5, None, 0)", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul18", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul11", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_BCSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul19", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_CSC", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_pytree_flattening_CSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_COO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_CSC", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_CSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul12", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul20", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul13", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul21", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_ad_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_ad_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul22", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul14", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul23", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul15", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul24", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul25", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul26", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_batching_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_batching_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_todense_scalar", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul27", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose10", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul35", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose11", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul28", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose12", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose13", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose14", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose15", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose17", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose18", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul29", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose19", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose20", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose21", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose22", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose23", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose24", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose25", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose26", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul36", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul37", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul38", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose27", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul39", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose28", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose29", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose30", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose31", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_transpose9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul31", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul32", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul33", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_vmappable_BCOO", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver3", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver4", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver5", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver6", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver7", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver8", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver9", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver_grads0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver_grads1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver_grads2", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_matmul34", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseObjectTest::test_vmappable_BCSR", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_empty9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseUtilTest::test_count_stored_elements_per_batch9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseRandomTest::test_random_bcoo9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver0", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}
+{"nodeid": "tests/sparse_test.py::SparseSolverTest::test_sparse_qr_linear_solver1", "outcome": "skipped", "message": "Skipped: Skipped unless running on devices with tags: cpu, cuda"}

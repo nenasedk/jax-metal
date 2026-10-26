@@ -1,0 +1,193 @@
+bringing up nodes...
+bringing up nodes...
+
+................F......                                                  [100%]
+=================================== FAILURES ===================================
+_______________ CustomRootTest.test_custom_root_solve_runs_once ________________
+[gw1] linux -- Python 3.13.17 /tmp/claude-0/-home-user-jax-metal/ba6f151a-f997-5fd9-8d7c-700f22d252d2/scratchpad/venv-cpu/bin/python
+
+ctx = ModuleContext(context=<jax._src.interpreters.mlir.JaxIrContext object at 0x7fbe00155050>, module=<jaxlib.mlir._mlir_li...onstant_computation=False, for_export=False, export_ignore_forward_compatibility=False, hoist_constants_as_args=False))
+fn_name = 'eval_jaxpr'
+call_jaxpr = { lambda ; a:f32[]. let
+    debug_callback[
+      callback=<function debug_callback.<locals>._debug_callback.<locals>....t_callback at 0xXXXXXXXXXXXX>
+      effect=OrderedDebug
+      partitioned=False
+    ] 
+    b:f32[] = sqrt a
+  in (b,) }
+num_const_args = 0
+effects = [<jax._src.debugging.OrderedDebugEffect object at 0x7fbe1667da90>]
+in_avals = (ShapedArray(float32[], weak_type=True),)
+out_avals = (ShapedArray(float32[], weak_type=True),), arg_names = None
+result_names = None, detached = True
+
+    def _lower_jaxpr_to_fun_cached(
+        ctx: ModuleContext, fn_name, call_jaxpr: core.Jaxpr,
+        num_const_args: int, effects, in_avals, out_avals, arg_names=None,
+        result_names=None, detached=False):
+      assert num_const_args + len(call_jaxpr.in_avals) == len(in_avals)
+      if arg_names is result_names is None:
+        # Cacheable.
+        key = (fn_name, call_jaxpr, tuple(effects), detached)
+        try:
+>         func_op = ctx.cached_primitive_lowerings[key]
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E         KeyError: ('eval_jaxpr', { lambda ; a:f32[]. let
+E             debug_callback[
+E               callback=<function debug_callback.<locals>._debug_callback.<locals>._flat_callback at 0xXXXXXXXXXXXX>
+E               effect=OrderedDebug
+E               partitioned=False
+E             ] 
+E             b:f32[] = sqrt a
+E           in (b,) }, (<jax._src.debugging.OrderedDebugEffect object at 0x7fbe1667da90>,), True)
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2797: KeyError
+
+During handling of the above exception, another exception occurred:
+
+>   jax.debug.callback(lambda: print('solve'), ordered=True)
+
+tests/custom_root_test.py:392: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/debugging.py:519: in debug_callback
+    _debug_callback(callback, *args, **kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+>   debug_callback_p.bind(
+        *dyn_args,
+        callback=_flat_callback,
+        effect=effect,
+        partitioned=partitioned,
+    )
+E   jax._src.source_info_util.JaxStackTraceBeforeTransformation: NotImplementedError: MLIR translation rule for primitive 'debug_callback' not found for platform cpu
+E   
+E   The preceding stack trace is the source of the JAX operation that, once transformed by JAX, triggered the following exception.
+E   
+E   --------------------
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/debugging.py:511: JaxStackTraceBeforeTransformation
+
+The above exception was the direct cause of the following exception:
+
+self = <tests.custom_root_test.CustomRootTest testMethod=test_custom_root_solve_runs_once>
+
+    def test_custom_root_solve_runs_once(self):
+      def root(a):
+        def solve(f, x):
+          jax.debug.callback(lambda: print('solve'), ordered=True)
+          return jnp.sqrt(a)
+        return lax.custom_root(lambda x: x**2 - a, 1., solve,
+                               lambda g, y: y / g(1.))
+    
+      with jtu.capture_stdout() as output:
+>       value, grad = jax.jit(jax.value_and_grad(root))(4.)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/custom_root_test.py:398: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:272: in cache_miss
+    executable, pgle_profiler, const_args) = _run_python_pjit(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:149: in _run_python_pjit
+    out_flat, compiled, profiler, const_args = _pjit_call_impl_python(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1147: in _pjit_call_impl_python
+    computation = _resolve_and_lower(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1073: in _resolve_and_lower
+    return _pjit_lower(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/pjit.py:1246: in _pjit_lower
+    return pxla.lower_sharding_computation(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/profiler.py:588: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py:1143: in lower_sharding_computation
+    tuple_args, shape_poly_state) = _cached_lowering_to_hlo(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/pxla.py:756: in _cached_lowering_to_hlo
+    lowering_result = mlir.lower_jaxpr_to_module(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:1497: in lower_jaxpr_to_module
+    lower_jaxpr_to_fun(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2130: in lower_jaxpr_to_fun
+    out_vals, tokens_out = jaxpr_subcomp(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2333: in jaxpr_subcomp
+    out_nodes = _uncached_lowering(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2550: in _uncached_lowering
+    ans = lower_per_platform(ctx, str(primitive), platform_rules, default_rule,
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2678: in lower_per_platform
+    output = type_cast(Sequence[IrValues], rule(ctx, *rule_args, **rule_kwargs))
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2890: in core_call_lowering
+    out_nodes, tokens = call_lowering(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2863: in call_lowering
+    func_op, output_types, effects = lower_called_computation(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2838: in lower_called_computation
+    func_op = _lower_jaxpr_to_fun_cached(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2799: in _lower_jaxpr_to_fun_cached
+    func_op = lower_jaxpr_to_fun(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2130: in lower_jaxpr_to_fun
+    out_vals, tokens_out = jaxpr_subcomp(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2333: in jaxpr_subcomp
+    out_nodes = _uncached_lowering(
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2550: in _uncached_lowering
+    ans = lower_per_platform(ctx, str(primitive), platform_rules, default_rule,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ctx = LoweringRuleContext(module_context=ModuleContext(context=<jax._src.interpreters.mlir.JaxIrContext object at 0x7fbe0015..._mode=LayoutMode.AUTO, remove_size_one_mesh_axis=False, no_collectives=frozenset(), xla_metadata=None), platforms=None)
+description = 'debug_callback', platform_rules = {}, default_rule = None
+effects = {<jax._src.debugging.OrderedDebugEffect object at 0x7fbe1667da90>}
+rule_args = ()
+rule_kwargs = {'callback': <function debug_callback.<locals>._debug_callback.<locals>._flat_callback at 0x7fbe0015cd60>, 'effect': <jax._src.debugging.OrderedDebugEffect object at 0x7fbe1667da90>, 'partitioned': False}
+
+    def lower_per_platform(ctx: LoweringRuleContext,
+                           description: str,
+                           platform_rules: dict[str, LoweringRule],
+                           default_rule: LoweringRule | None,
+                           effects: effects_lib.Effects,
+                           *rule_args: ir.Value | tuple[ir.Value, ...],
+                           **rule_kwargs) -> Sequence[ir.Value]:
+      """Emits code for a primitive for the current lowering platform(s).
+    
+      For example, given
+          platform_rules = dict(tpu=rule0, cpu=rule0)
+          default_rule = rule1
+    
+      and
+          ctx.module_context.lowering_parameters.platforms = ("cpu",)
+    
+      emits:
+          rule0(ctx, *rule_args, **rule_kwargs)
+    
+      In case of multi-platform lowering, e.g., if
+          ctx.module_context.lowering_parameters.platforms = ("cpu", "cuda", "tpu")
+    
+      emits:
+        rule_idx = case current_platform_idx:
+                       0: return 0  # cpu rule index
+                       1: return 1  # cuda rule index
+                       2: return 0  # tpu rule index
+        output = case rule_idx
+                   0: return rule0(*rule_args, **rule_kwargs)
+                   1: return rule1(*rule_args, **rule_kwargs)
+    
+      Args:
+       ctx: lowering context.
+       description: a string to include in error messages.
+       platform_rules: map platform names, e.g., "cpu", "cuda", to
+         `LoweringRule`s, for the platforms that have non-default lowering.
+       default_rule: an optional rule to use for platforms not in `platform_rules`.
+       effects: the set of effects for the current primitive.
+       rule_args: the args of the lowering rules.
+       rule_kwargs: the kwargs of the lowering rules.
+      """
+      platforms: Sequence[str] = _platforms_for_eqn(ctx)
+      # Special case the common case (single-platform lowering)
+      if len(platforms) == 1:
+        rule = platform_rules.get(platforms[0], default_rule)
+        if rule is None:
+>         raise NotImplementedError(
+            f"MLIR translation rule for primitive '{description}' not "
+            f"found for platform {platforms[0]}")
+E         NotImplementedError: MLIR translation rule for primitive 'debug_callback' not found for platform cpu
+
+../venv-cpu/lib/python3.13/site-packages/jax/_src/interpreters/mlir.py:2650: NotImplementedError
+=========================== short test summary info ============================
+FAILED tests/custom_root_test.py::CustomRootTest::test_custom_root_solve_runs_once
+1 failed, 22 passed in 17.28s

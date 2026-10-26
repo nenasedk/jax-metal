@@ -1,9 +1,4 @@
 {"nodeid": "tests/lax_numpy_operators_test.py::JaxNumpyOperatorTests::testIsinfNonstandardDtypes0", "outcome": "passed", "issues": ["serialize to StableHLO 0.19.4: INVALID_ARGUMENT: Failed to serialize StableHLO to plugin version 0.19.4;"]}
-{"nodeid": "tests/lax_numpy_operators_test.py::JaxNumpyOperatorTests::testIsinfNonstandardDtypes1", "outcome": "passed", "issues": ["type f8E4M3B11FNUZ"]}
-{"nodeid": "tests/lax_numpy_operators_test.py::JaxNumpyOperatorTests::testIsinfNonstandardDtypes2", "outcome": "passed", "issues": ["type f8E5M2FNUZ"]}
 {"nodeid": "tests/lax_numpy_operators_test.py::JaxNumpyOperatorTests::testIsinfNonstandardDtypes4", "outcome": "passed", "issues": ["serialize to StableHLO 0.19.4: INVALID_ARGUMENT: Failed to serialize StableHLO to plugin version 0.19.4;"]}
-{"nodeid": "tests/lax_numpy_operators_test.py::JaxNumpyOperatorTests::testIsinfNonstandardDtypes5", "outcome": "passed", "issues": ["type f8E4M3FN"]}
 {"nodeid": "tests/lax_numpy_operators_test.py::JaxNumpyOperatorTests::testIsinfNonstandardDtypes6", "outcome": "passed", "issues": ["serialize to StableHLO 0.19.4: INVALID_ARGUMENT: Failed to serialize StableHLO to plugin version 0.19.4;"]}
-{"nodeid": "tests/lax_numpy_operators_test.py::JaxNumpyOperatorTests::testIsinfNonstandardDtypes7", "outcome": "passed", "issues": ["type f8E5M2"]}
-{"nodeid": "tests/lax_numpy_operators_test.py::JaxNumpyOperatorTests::testIsinfNonstandardDtypes8", "outcome": "passed", "issues": ["type f8E4M3FNUZ"]}
 {"nodeid": "tests/lax_numpy_operators_test.py::JaxNumpyOperatorTests::testIsinfNonstandardDtypes9", "outcome": "passed", "issues": ["serialize to StableHLO 0.19.4: INVALID_ARGUMENT: Failed to serialize StableHLO to plugin version 0.19.4;"]}

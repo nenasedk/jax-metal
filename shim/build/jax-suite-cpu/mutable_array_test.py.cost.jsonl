@@ -1,0 +1,218 @@
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_after_last_read", "seconds": 0.101, "before_mb": 170, "peak_mb": 215}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_cond", "seconds": 0.005, "before_mb": 215, "peak_mb": 215}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_jit", "seconds": 0.025, "before_mb": 215, "peak_mb": 218}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic0", "seconds": 0.145, "before_mb": 170, "peak_mb": 225, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic_vjp32", "seconds": 0.159, "before_mb": 170, "peak_mb": 224, "params": "(jit=True, has_aux=False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_one_cond_branch_read_in_other", "seconds": 0.065, "before_mb": 218, "peak_mb": 224}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic_vjp33", "seconds": 0.06, "before_mb": 224, "peak_mb": 226, "params": "(jit=True, has_aux=True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic1", "seconds": 0.114, "before_mb": 225, "peak_mb": 229, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic_aot", "seconds": 0.041, "before_mb": 229, "peak_mb": 231}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_cond0", "seconds": 0.092, "before_mb": 226, "peak_mb": 229, "params": "(False, False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic_aot_closure", "seconds": 0.04, "before_mb": 231, "peak_mb": 233}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_basic_sharded_aot", "seconds": 0.003, "before_mb": 233, "peak_mb": 233}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_can_dce_internal_ref_effect", "seconds": 0.015, "before_mb": 233, "peak_mb": 233}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_remat0", "seconds": 0.161, "before_mb": 224, "peak_mb": 228, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_closed_over_basic0", "seconds": 0.046, "before_mb": 233, "peak_mb": 233, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_cond1", "seconds": 0.099, "before_mb": 229, "peak_mb": 231, "params": "(False, True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_closed_over_basic1", "seconds": 0.008, "before_mb": 233, "peak_mb": 233, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_remat1", "seconds": 0.084, "before_mb": 228, "peak_mb": 229, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_scan0", "seconds": 0.004, "before_mb": 229, "peak_mb": 229, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_write_in_scan1", "seconds": 0.005, "before_mb": 229, "peak_mb": 229, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_cond2", "seconds": 0.062, "before_mb": 231, "peak_mb": 232, "params": "(True, False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_closed_over_nested0", "seconds": 0.075, "before_mb": 233, "peak_mb": 237, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_scan_ref_liveness_fixpoint", "seconds": 0.07, "before_mb": 229, "peak_mb": 233}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_closed_over_nested1", "seconds": 0.065, "before_mb": 237, "peak_mb": 241, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_cond3", "seconds": 0.086, "before_mb": 232, "peak_mb": 233, "params": "(True, True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_differentiated_ref0", "seconds": 0.022, "before_mb": 241, "peak_mb": 241, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_defensive_copy", "seconds": 0.074, "before_mb": 233, "peak_mb": 236}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_deref_after_free_ref_raises", "seconds": 0.008, "before_mb": 236, "peak_mb": 237}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_double_free_ref_raises", "seconds": 0.005, "before_mb": 237, "peak_mb": 237}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan0", "seconds": 0.092, "before_mb": 233, "peak_mb": 236, "params": "(False, False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_differentiated_ref1", "seconds": 0.071, "before_mb": 241, "peak_mb": 241, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_double_jit_mutable_array", "seconds": 0.068, "before_mb": 237, "peak_mb": 240}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_empty_ref_basic", "seconds": 0.014, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan1", "seconds": 0.078, "before_mb": 236, "peak_mb": 237, "params": "(False, True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_empty_ref_grad", "seconds": 0.045, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_empty_ref_jvp", "seconds": 0.024, "before_mb": 240, "peak_mb": 241}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan2", "seconds": 0.083, "before_mb": 237, "peak_mb": 239, "params": "(True, False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_explicit_sharding_after_indexing", "seconds": 0.068, "before_mb": 241, "peak_mb": 244}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_free_ref_basic", "seconds": 0.032, "before_mb": 244, "peak_mb": 245}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan3", "seconds": 0.105, "before_mb": 239, "peak_mb": 239, "params": "(True, True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing0", "seconds": 0.445, "before_mb": 241, "peak_mb": 254, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_scan_vjp3", "seconds": 0.196, "before_mb": 239, "peak_mb": 243}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_internal_ref0", "seconds": 0.03, "before_mb": 243, "peak_mb": 243, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing1", "seconds": 0.09, "before_mb": 254, "peak_mb": 258, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_internal_ref1", "seconds": 0.041, "before_mb": 243, "peak_mb": 243, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vmap_discharge_internal_ref", "seconds": 0.083, "before_mb": 243, "peak_mb": 246}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vmap_discharge_ref_across_boundary", "seconds": 0.005, "before_mb": 246, "peak_mb": 246}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_dead_ref_writes", "seconds": 0.004, "before_mb": 246, "peak_mb": 246}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic0", "seconds": 0.113, "before_mb": 258, "peak_mb": 259, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_keeps_ref_write_read_by_next_scan_iteration", "seconds": 0.072, "before_mb": 246, "peak_mb": 248}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_dce_ref_input_liveness", "seconds": 0.003, "before_mb": 248, "peak_mb": 248}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic1", "seconds": 0.066, "before_mb": 259, "peak_mb": 260, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic_vjp30", "seconds": 0.008, "before_mb": 260, "peak_mb": 260, "params": "(jit=False, has_aux=False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_custom_vjp_grad_stats_plumbing_basic_vjp31", "seconds": 0.006, "before_mb": 260, "peak_mb": 260, "params": "(jit=False, has_aux=True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns3", "seconds": 0.049, "before_mb": 248, "peak_mb": 251, "params": "(shape=(2, 3, 4), indexer=(Ellipsis, 0))"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_free_ref_grad", "seconds": 0.052, "before_mb": 260, "peak_mb": 260}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns4", "seconds": 0.054, "before_mb": 251, "peak_mb": 253, "params": "(shape=(3, 4), indexer=(array([0, 1]), array([0, 1])))"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_free_ref_jvp", "seconds": 0.037, "before_mb": 260, "peak_mb": 260}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns5", "seconds": 0.03, "before_mb": 253, "peak_mb": 253, "params": "(shape=(2, 3, 4), indexer=(slice(None, None, None), 1))"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_freeze_insertion0", "seconds": 0.054, "before_mb": 260, "peak_mb": 260, "params": "(False, True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_internal_mutarray_basic0", "seconds": 0.033, "before_mb": 253, "peak_mb": 254, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_freeze_insertion1", "seconds": 0.047, "before_mb": 260, "peak_mb": 261, "params": "(False, True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_internal_mutarray_basic1", "seconds": 0.107, "before_mb": 254, "peak_mb": 258, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_isinstance", "seconds": 0.012, "before_mb": 258, "peak_mb": 258}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly0", "seconds": 0.003, "before_mb": 258, "peak_mb": 258, "params": "(seed=3, num_consts=2, num_args=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly1", "seconds": 0.003, "before_mb": 258, "peak_mb": 258, "params": "(seed=4, num_consts=4, num_args=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly2", "seconds": 0.002, "before_mb": 258, "peak_mb": 258, "params": "(seed=2, num_consts=2, num_args=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly3", "seconds": 0.003, "before_mb": 258, "peak_mb": 258, "params": "(seed=1, num_consts=5, num_args=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly4", "seconds": 0.002, "before_mb": 258, "peak_mb": 258, "params": "(seed=0, num_consts=2, num_args=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly5", "seconds": 0.002, "before_mb": 258, "peak_mb": 258, "params": "(seed=1, num_consts=4, num_args=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly6", "seconds": 0.002, "before_mb": 258, "peak_mb": 258, "params": "(seed=0, num_consts=4, num_args=0)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly7", "seconds": 0.002, "before_mb": 258, "peak_mb": 258, "params": "(seed=1, num_consts=5, num_args=0)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly8", "seconds": 0.002, "before_mb": 258, "peak_mb": 258, "params": "(seed=4, num_consts=2, num_args=0)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_jit_vjp_systematic_readonly9", "seconds": 0.002, "before_mb": 258, "peak_mb": 258, "params": "(seed=1, num_consts=2, num_args=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_len_mutable_array0", "seconds": 0.037, "before_mb": 258, "peak_mb": 259, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_len_mutable_array1", "seconds": 0.011, "before_mb": 259, "peak_mb": 259, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit_readonly_2", "seconds": 0.971, "before_mb": 245, "peak_mb": 253}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_gather_with_vjp30", "seconds": 0.332, "before_mb": 261, "peak_mb": 270, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_mutable_array0", "seconds": 0.072, "before_mb": 253, "peak_mb": 253, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_multiple_inputs_and_outputs0", "seconds": 0.207, "before_mb": 259, "peak_mb": 266, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_mutable_array1", "seconds": 0.057, "before_mb": 253, "peak_mb": 255, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_gather_with_vjp31", "seconds": 0.08, "before_mb": 270, "peak_mb": 273, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_of_constant_ref_set", "seconds": 0.076, "before_mb": 255, "peak_mb": 255}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_multiple_inputs_and_outputs1", "seconds": 0.136, "before_mb": 266, "peak_mb": 267, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_none_index", "seconds": 0.006, "before_mb": 267, "peak_mb": 267}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_optimization_barrier_with_refs", "seconds": 0.041, "before_mb": 267, "peak_mb": 267}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_of_constant_ref_set_indexed", "seconds": 0.101, "before_mb": 255, "peak_mb": 259}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_gather_with_vjp3_general_fallback", "seconds": 0.221, "before_mb": 273, "peak_mb": 277}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_arg0", "seconds": 0.084, "before_mb": 267, "peak_mb": 269, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_scan0", "seconds": 0.136, "before_mb": 259, "peak_mb": 262, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_arg1", "seconds": 0.06, "before_mb": 269, "peak_mb": 271, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_closed_over0", "seconds": 0.049, "before_mb": 271, "peak_mb": 271, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_scan1", "seconds": 0.077, "before_mb": 262, "peak_mb": 262, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_closed_over1", "seconds": 0.062, "before_mb": 271, "peak_mb": 273, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_gather_with_vjp3_multidim", "seconds": 0.266, "before_mb": 277, "peak_mb": 285}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_scan_extensive", "seconds": 0.106, "before_mb": 262, "peak_mb": 264}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_closed_over_nested", "seconds": 0.077, "before_mb": 273, "peak_mb": 274}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_internal0", "seconds": 0.01, "before_mb": 274, "peak_mb": 274, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_implicit_bitcast_regression", "seconds": 0.036, "before_mb": 264, "peak_mb": 265}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_get_transpose_uninstantiated_grad_ref", "seconds": 0.066, "before_mb": 285, "peak_mb": 286}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_basic_internal1", "seconds": 0.052, "before_mb": 274, "peak_mb": 274, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_implicit_cast_in_swap", "seconds": 0.064, "before_mb": 265, "peak_mb": 267}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_get_transformed_ref", "seconds": 0.061, "before_mb": 286, "peak_mb": 287}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns0", "seconds": 0.036, "before_mb": 267, "peak_mb": 269, "params": "(shape=(3, 4), indexer=(1,))"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_grad_stats_plumbing_basic", "seconds": 0.074, "before_mb": 274, "peak_mb": 276}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns1", "seconds": 0.026, "before_mb": 269, "peak_mb": 270, "params": "(shape=(3, 4), indexer=(slice(1, 4, None),))"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_remat_while_loop_residuals", "seconds": 0.02, "before_mb": 276, "peak_mb": 276}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_indexing_patterns2", "seconds": 0.038, "before_mb": 270, "peak_mb": 271, "params": "(shape=(3, 4), indexer=(array([0, 1]), Ellipsis, array([0, 1])))"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit0", "seconds": 0.079, "before_mb": 287, "peak_mb": 288, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_closed_over_mut_array1", "seconds": 0.074, "before_mb": 271, "peak_mb": 274, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit1", "seconds": 0.075, "before_mb": 288, "peak_mb": 289, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_rng_key", "seconds": 0.128, "before_mb": 276, "peak_mb": 283}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_grad_doesnt_hoist_mutable_stuff", "seconds": 0.032, "before_mb": 274, "peak_mb": 274}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_closed_over_mut_array0", "seconds": 0.057, "before_mb": 283, "peak_mb": 284, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit_readonly0", "seconds": 0.106, "before_mb": 289, "peak_mb": 290, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_grad_doesnt_hoist_mutable_stuff2", "seconds": 0.087, "before_mb": 274, "peak_mb": 275}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_internal_mut_array0", "seconds": 0.038, "before_mb": 275, "peak_mb": 277, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_internal_mut_array1", "seconds": 0.044, "before_mb": 277, "peak_mb": 277, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_reverse", "seconds": 0.174, "before_mb": 284, "peak_mb": 285}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds0", "seconds": 0.003, "before_mb": 285, "peak_mb": 285, "params": "(seed=5, num_params=2, reverse=True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds1", "seconds": 0.003, "before_mb": 285, "peak_mb": 285, "params": "(seed=8, num_params=2, reverse=True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_scanned_mut_array0", "seconds": 0.053, "before_mb": 277, "peak_mb": 279, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds2", "seconds": 0.003, "before_mb": 285, "peak_mb": 285, "params": "(seed=1, num_params=4, reverse=True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds3", "seconds": 0.003, "before_mb": 285, "peak_mb": 285, "params": "(seed=15, num_params=3, reverse=False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds4", "seconds": 0.003, "before_mb": 285, "peak_mb": 285, "params": "(seed=14, num_params=1, reverse=True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds5", "seconds": 0.003, "before_mb": 285, "peak_mb": 285, "params": "(seed=9, num_params=2, reverse=False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds6", "seconds": 0.003, "before_mb": 285, "peak_mb": 285, "params": "(seed=1, num_params=2, reverse=True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit_readonly1", "seconds": 0.163, "before_mb": 290, "peak_mb": 294, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds7", "seconds": 0.002, "before_mb": 285, "peak_mb": 285, "params": "(seed=11, num_params=3, reverse=False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_scanned_mut_array1", "seconds": 0.048, "before_mb": 279, "peak_mb": 279, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_static_slicing_with_vjp3", "seconds": 0.368, "before_mb": 285, "peak_mb": 297}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_ref_grads_for_val_primals", "seconds": 0.003, "before_mb": 297, "peak_mb": 297}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_grad_jit_readonly_1", "seconds": 0.396, "before_mb": 294, "peak_mb": 300}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds8", "seconds": 0.003, "before_mb": 300, "peak_mb": 300, "params": "(seed=0, num_params=2, reverse=True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_systematic_accum_kinds9", "seconds": 0.003, "before_mb": 300, "peak_mb": 300, "params": "(seed=2, num_params=4, reverse=True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly0", "seconds": 0.002, "before_mb": 300, "peak_mb": 300, "params": "(seed=3, num_consts=5, num_carry=3, num_ext_in=0, num_iters=1)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly1", "seconds": 0.002, "before_mb": 300, "peak_mb": 300, "params": "(seed=4, num_consts=4, num_carry=3, num_ext_in=0, num_iters=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly2", "seconds": 0.002, "before_mb": 300, "peak_mb": 300, "params": "(seed=4, num_consts=2, num_carry=3, num_ext_in=3, num_iters=1)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly3", "seconds": 0.002, "before_mb": 300, "peak_mb": 300, "params": "(seed=5, num_consts=5, num_carry=3, num_ext_in=0, num_iters=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly4", "seconds": 0.002, "before_mb": 300, "peak_mb": 300, "params": "(seed=5, num_consts=4, num_carry=0, num_ext_in=0, num_iters=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly5", "seconds": 0.002, "before_mb": 300, "peak_mb": 300, "params": "(seed=3, num_consts=3, num_carry=3, num_ext_in=3, num_iters=3)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_scan_const_and_xs_error", "seconds": 0.015, "before_mb": 300, "peak_mb": 300}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_aliased_args0", "seconds": 0.077, "before_mb": 297, "peak_mb": 299, "params": "('jit')"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_basic", "seconds": 0.102, "before_mb": 300, "peak_mb": 300}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_aliased_args1", "seconds": 0.109, "before_mb": 299, "peak_mb": 300, "params": "('scan')"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_closed_over_ref0", "seconds": 0.069, "before_mb": 300, "peak_mb": 301, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_aliased_args2", "seconds": 0.042, "before_mb": 300, "peak_mb": 301, "params": "('cond')"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_mixed_accum_kinds_consts0", "seconds": 0.616, "before_mb": 279, "peak_mb": 295, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_closed_over_ref1", "seconds": 0.036, "before_mb": 301, "peak_mb": 301, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_aliased_sparse_reads", "seconds": 0.205, "before_mb": 301, "peak_mb": 305}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vjp3_with_refs_same_ref_for_two_inputs", "seconds": 0.034, "before_mb": 305, "peak_mb": 305}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref0", "seconds": 0.251, "before_mb": 301, "peak_mb": 304, "params": "(jit=True, axis=1)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_closed_over_read_only", "seconds": 0.068, "before_mb": 305, "peak_mb": 305}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_create_ref_from_unbatched_value", "seconds": 0.062, "before_mb": 305, "peak_mb": 307}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_mixed_accum_kinds_consts1", "seconds": 0.366, "before_mb": 294, "peak_mb": 302, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_extensive_inputs", "seconds": 0.063, "before_mb": 307, "peak_mb": 307}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref1", "seconds": 0.23, "before_mb": 304, "peak_mb": 306, "params": "(jit=True, axis=2)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_with_vjp3", "seconds": 0.138, "before_mb": 307, "peak_mb": 311}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_what_if_you_lower_fun_something_with_internal_effects", "seconds": 0.023, "before_mb": 311, "peak_mb": 312}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_with_refs_basic", "seconds": 0.059, "before_mb": 312, "peak_mb": 312}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_checkpoint0", "seconds": 0.006, "before_mb": 312, "peak_mb": 313, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_checkpoint1", "seconds": 0.004, "before_mb": 313, "peak_mb": 313, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_cond", "seconds": 0.003, "before_mb": 313, "peak_mb": 313}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_fwd0", "seconds": 0.008, "before_mb": 313, "peak_mb": 313, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_fwd1", "seconds": 0.004, "before_mb": 313, "peak_mb": 313, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_primal0", "seconds": 0.002, "before_mb": 313, "peak_mb": 313, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_primal1", "seconds": 0.003, "before_mb": 313, "peak_mb": 313, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref2", "seconds": 0.191, "before_mb": 306, "peak_mb": 310, "params": "(jit=False, axis=1)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_custom_vjp_under_jit", "seconds": 0.003, "before_mb": 313, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_jit", "seconds": 0.002, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_scan", "seconds": 0.003, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck0", "seconds": 0.004, "before_mb": 314, "peak_mb": 314, "params": "('jit')"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck1", "seconds": 0.006, "before_mb": 314, "peak_mb": 314, "params": "('scan')"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck2", "seconds": 0.006, "before_mb": 314, "peak_mb": 314, "params": "('cond')"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck3", "seconds": 0.005, "before_mb": 314, "peak_mb": 314, "params": "('while')"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck4", "seconds": 0.004, "before_mb": 314, "peak_mb": 314, "params": "('custom_jvp')"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_argument_aliases_typecheck5", "seconds": 0.004, "before_mb": 314, "peak_mb": 314, "params": "('custom_vjp')"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_checkpoint0", "seconds": 0.003, "before_mb": 314, "peak_mb": 314, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_checkpoint1", "seconds": 0.004, "before_mb": 314, "peak_mb": 314, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_cond", "seconds": 0.004, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_custom_vjp", "seconds": 0.003, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_jit", "seconds": 0.003, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_scan", "seconds": 0.003, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_closure_and_argument_aliases_shard_map", "seconds": 0.007, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_cond_both_branches_close_over_same_mutable_array0", "seconds": 0.034, "before_mb": 314, "peak_mb": 315, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref3", "seconds": 0.141, "before_mb": 310, "peak_mb": 312, "params": "(jit=False, axis=2)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_cond_both_branches_close_over_same_mutable_array1", "seconds": 0.03, "before_mb": 315, "peak_mb": 316, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_jnp_function_on_ref_error", "seconds": 0.006, "before_mb": 316, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_jvp_closed_over_ref_error", "seconds": 0.006, "before_mb": 317, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_over_ref_leading_axis", "seconds": 0.027, "before_mb": 312, "peak_mb": 313}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_empty_ref_message", "seconds": 0.003, "before_mb": 317, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_cond", "seconds": 0.003, "before_mb": 317, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_fwd0", "seconds": 0.006, "before_mb": 317, "peak_mb": 317, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_fwd1", "seconds": 0.017, "before_mb": 317, "peak_mb": 317, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_primal0", "seconds": 0.003, "before_mb": 317, "peak_mb": 317, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_primal1", "seconds": 0.003, "before_mb": 317, "peak_mb": 317, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_primal_nondiff_argnum0", "seconds": 0.003, "before_mb": 317, "peak_mb": 317, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_custom_vjp_primal_nondiff_argnum1", "seconds": 0.004, "before_mb": 317, "peak_mb": 317, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_jit", "seconds": 0.003, "before_mb": 317, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_jit_arg", "seconds": 0.007, "before_mb": 317, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_jit_closure", "seconds": 0.003, "before_mb": 317, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_jit_pytree", "seconds": 0.003, "before_mb": 317, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_return_from_scan", "seconds": 0.003, "before_mb": 317, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_mixed_accum_kinds_xs0", "seconds": 0.582, "before_mb": 302, "peak_mb": 309, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_vmap_aliased_arguments", "seconds": 0.036, "before_mb": 317, "peak_mb": 318}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_ref_extensive_inputs0", "seconds": 0.125, "before_mb": 313, "peak_mb": 315, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_axes_scan_ref_extensive_inputs1", "seconds": 0.03, "before_mb": 315, "peak_mb": 315, "params": "(False)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_vmap_closed_over_ref_write", "seconds": 0.032, "before_mb": 318, "peak_mb": 319}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayErrorsTest::test_while_same_ref_in_cond_and_body_typechecks", "seconds": 0.005, "before_mb": 319, "peak_mb": 319}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_vmap_basic", "seconds": 0.091, "before_mb": 315, "peak_mb": 317}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp3_mixed_accum_kinds_xs1", "seconds": 0.391, "before_mb": 309, "peak_mb": 314, "params": "(True)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly6", "seconds": 0.003, "before_mb": 314, "peak_mb": 314, "params": "(seed=3, num_consts=4, num_carry=0, num_ext_in=0, num_iters=1)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly7", "seconds": 0.002, "before_mb": 314, "peak_mb": 314, "params": "(seed=0, num_consts=5, num_carry=0, num_ext_in=0, num_iters=1)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly8", "seconds": 0.002, "before_mb": 314, "peak_mb": 314, "params": "(seed=4, num_consts=4, num_carry=0, num_ext_in=0, num_iters=1)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_scan_vjp_systematic_readonly9", "seconds": 0.002, "before_mb": 314, "peak_mb": 314, "params": "(seed=3, num_consts=3, num_carry=0, num_ext_in=0, num_iters=1)"}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_sharded_aot_mutable_sds", "seconds": 0.002, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_sharding_persists", "seconds": 0.052, "before_mb": 314, "peak_mb": 314}
+{"nodeid": "tests/mutable_array_test.py::MutableArrayTest::test_slicing_with_vjp3", "seconds": 0.061, "before_mb": 314, "peak_mb": 316}

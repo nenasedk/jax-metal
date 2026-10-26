@@ -69,11 +69,18 @@ changes.
      manufactures `PJRT_Error`s.
    - `PJRT_Memory_Kind_Id` stays null; for a 0.47 plugin jaxlib derives the kind id from the kind
      string.
-6. **complex64 program inputs and outputs.** See "Complex values at the program boundary"
-   below. The shim wraps `PJRT_Client_Compile` (substitutes the pair program),
-   `PJRT_Executable_DeserializeAndLoad`, `PJRT_LoadedExecutable_Execute` (buffer views) and
-   `PJRT_LoadedExecutable_Destroy`, and exports `JaxMetalShim_SetComplexIo` for the package.
-7. **Tracing (opt-in).** `JAX_METAL_SHIM_TRACE=1` logs shim initialization and attribute queries
+6. **Program inputs and outputs of types the plugin rejects** (complex64, uint64, float8,
+   int4, uint4). See "Values at the program boundary" below. The shim wraps
+   `PJRT_Client_Compile` (substitutes the boundary program),
+   `PJRT_Executable_DeserializeAndLoad`, `PJRT_LoadedExecutable_Execute` (buffer views and
+   relabeling) and `PJRT_LoadedExecutable_Destroy`, and exports `JaxMetalShim_SetBoundaryIo`
+   for the package.
+7. **Retyped buffers.** uint64, float8, float4 and 2-/4-bit integer buffers live in the plugin
+   as a type holding the same bytes (int64; uint8; int8 for the signed narrow integers, one
+   value per byte as frameworks transfer them). `PJRT_Client_BufferFromHostBuffer` creates
+   them as that type, and `PJRT_Buffer_ElementType` reports the type the framework asked for
+   (also after `PJRT_Buffer_CopyToDevice`; `PJRT_Buffer_Destroy` forgets the buffer).
+8. **Tracing (opt-in).** `JAX_METAL_SHIM_TRACE=1` logs shim initialization and attribute queries
    to stderr.
 
 Everything else is forwarded untouched: the remaining entries are the plugin's own function
@@ -177,7 +184,28 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     `cond` of a singular matrix came out 0 instead of inf. For floating-point inputs the rules
     keep JAX's lowering and put NaN back where an input has one (a compare and a select, or
     one extra reduction).
-- **Registers complex support** (`_complex.py`, `_complex_io.py`), see "Complex numbers" below.
+  - Collectives on one device (`_collectives.py`): the plugin has one device and patterns for
+    almost no collectives, so `psum`/`pmax`/`pmin`, `all_gather`, `all_to_all`,
+    `reduce_scatter`, `ppermute`, `pbroadcast`, `axis_index` and `ragged_all_to_all` become
+    what they compute on a one-device axis (identities, reshapes, zeros, 0). `shard_map` and
+    `pmap` programs then run on METAL.
+  - Decompositions JAX lowers only to LAPACK or cuSOLVER (`_decompositions.py`), with LAPACK's
+    conventions and packed outputs: `geqp3` (QR with column pivoting), `hessenberg` (gehrd),
+    `tridiagonal` (sytrd/hetrd), `schur` (Francis double-shift QR with LAPACK's deflation
+    criteria and standardized 2 × 2 blocks; NaN after 30·n iterations without convergence),
+    `eig` (from the real Schur form, eigenvectors normalized as `geev` does) and
+    `tridiagonal_solve` (Gaussian elimination with partial pivoting, as `gtsv`, plus the
+    `dlagts` perturbation JAX requests). Checked against LAPACK: same packed outputs, pivots
+    and residuals.
+  - NaN rules never apply inside reduction, window, scatter or all-reduce bodies: the plugin's
+    converters recognize those by a single combining op. `scatter_max`/`scatter_min` propagate
+    NaN with a scattered mask instead.
+  - Every rule traces with standard dtype promotion and without varying manual axes, so rules
+    work under `jax_numpy_dtype_promotion="strict"` and inside `shard_map`; JAX's generic `lu`,
+    `lu_pivots_to_permutation` and `cholesky_update` go through the same wrapper.
+- **Rewrites float8, float4 and 2-/4-bit integer programs** (`_narrow.py`), see "Narrow types"
+  below.
+- **Registers complex support** (`_complex.py`, `_boundary_io.py`), see "Complex numbers" below.
 
 ### Complex numbers and FFT
 
@@ -196,44 +224,88 @@ functions into raw `real`/`imag` ops. `_complex.py`:
 - applies `pad`, `gather`, `scatter`, `scatter_add`/`sub` and `dynamic_update_slice` to real and
   imaginary parts separately, and sorts complex keys as (real, imag); `scatter_mul`
   (`x.at[i].multiply`, `.power`) multiplies magnitudes and adds angles, as real scatters;
+- computes complex `reduce_max`/`reduce_min` (`jnp.max`, `nanmax`, `ptp`, ...), which order by
+  real part and then imaginary part, with real reductions: JAX lowers them to a reduction
+  whose body compares the parts (nine ops), and the plugin recognizes a reduction by its one
+  combining op;
 - implements `fft`/`ifft`/`rfft`/`irfft` (any rank) as a radix-2 transform with a direct DFT for
   odd lengths, with twiddle factors computed on the GPU from exact integer angles.
 
-### Complex values at the program boundary
+### Values at the program boundary
 
-The plugin rejects any compiled function whose signature mentions complex types, including
-the small programs behind eager complex ops. `_complex_io.py` and the shim lift this without
-copies:
+The plugin rejects any compiled function whose signature mentions complex, uint64, float8 or
+4-bit integer types, including the small programs behind eager ops. `_boundary_io.py` and the
+shim lift this without copies:
 
-1. **Two programs.** For a METAL program with complex64 inputs or outputs, the package hooks
-   `mlir.lower_jaxpr_to_module` and lowers the original (complex signature) plus a pair version
-   in which each complex64 input/output is a float32[..., 2] (real, imag) pair, converted
-   inside the program. The pair version is serialized as a StableHLO 0.19.4 portable artifact
-   with XLA's own serializer (`_jax.mlir.serialize_portable_artifact`) and attached to the
-   original module.
+1. **Two programs.** For a METAL program with such inputs or outputs, the package hooks
+   `mlir.lower_jaxpr_to_module` and lowers the original (its own signature) plus a boundary
+   version in which each complex64 input/output is a float32[..., 2] (real, imag) pair, each
+   uint64 one an int64 with the same bits, and each float8/int4/uint4 one its bytes (uint8, or
+   int8 for int4), converted inside the program. The boundary version is serialized as a
+   StableHLO 0.19.4 portable artifact with XLA's own serializer
+   (`_jax.mlir.serialize_portable_artifact`) and attached to the original module.
 2. **jaxlib compiles the original.** IFRT takes output dtypes, shapes and layouts from the MLIR
    module it is given (`ResultShapesOfModule`), not from the executable, so jaxlib must see the
-   complex signature.
-3. **The plugin compiles the pair program.** A `compiler.compile_or_get_cached` hook strips the
-   attachment and calls `JaxMetalShim_SetComplexIo` (thread-local) with the pair program and the
-   complex positions; the shim's `PJRT_Client_Compile` compiles the pair program instead.
+   real signature.
+3. **The plugin compiles the boundary program.** A `compiler.compile_or_get_cached` hook strips
+   the attachment and calls `JaxMetalShim_SetBoundaryIo` (thread-local) with the boundary
+   program and the positions and kinds of the changed values: 1 for complex pairs, `0x100 | T`
+   for a retyped type `T` (a `PJRT_Buffer_Type`). The shim's `PJRT_Client_Compile` compiles the
+   boundary program instead.
 4. **Buffers are relabeled at execution.** The plugin checks argument shapes strictly, so
    complex64 inputs are passed as float32[..., 2] views of the same device memory
    (`PJRT_Client_CreateViewOfDeviceBuffer`; views are released when execution completes).
    Pair outputs are returned as complex64 views that own the pair buffers (deleting the view
-   destroys the original). Buffers then always match jaxlib's metadata, so every JAX path
-   (host transfer, device_put to CPU, `addressable_data`, indexing, chaining) sees ordinary
-   complex64 arrays.
+   destroys the original). Retyped buffers already live as their bytes ("Retyped buffers"
+   above); outputs of those kinds are relabeled with their type, and a buffer of such a type
+   the plugin holds as that type (one the shim did not create) goes in as a view. Buffers
+   then always match jaxlib's metadata, so every JAX path (host transfer, device_put to CPU,
+   `addressable_data`, indexing, chaining) sees ordinary arrays of their own types.
 
 Costs and limits:
 
 - A program with complex outputs waits for completion before returning: a view counts as
   ready as soon as it exists, so the shim awaits the pair output first.
-- Complex inputs are never donated (donation is optional in JAX).
+- Inputs of these types are never donated (donation is optional in JAX).
 - Each such program is lowered and serialized twice at compile time.
+- The newer narrow types (float8_e4m3, e3m4, e8m0fnu, float4_e2m1fn, int2, uint2) cannot be
+  program inputs or outputs on METAL: StableHLO 0.19.4 has no such types, so jaxlib cannot
+  serialize the original module. The package raises a `NotImplementedError` that says to
+  convert inside the program. Their buffers do transfer (as uint8/int8).
 - Rejected approaches, for the record: relabeling buffers alone (jaxlib's metadata then
   contradicts the buffers), pair-backed arrays with patched host fetches (leaks float32 pairs
   through `addressable_data`), and DLPack import (jaxlib refuses DLPack for METAL devices).
+
+### Narrow types
+
+MPS has no float8, float4, int4 or int2 types, and the plugin rejects programs that use them.
+`_narrow.py` rewrites every METAL program with such values before lowering, interpreting its
+jaxpr:
+
+- **Carriers.** Each narrow value is held in a type the plugin has: float32 for the
+  floating-point formats, int8/uint8 for the integers, always an exact value of the format.
+- **Rounding per operation.** An operation with a narrow result runs on carriers and rounds
+  once, the way XLA converts to the type: round to nearest even with subnormals; overflow to
+  inf (e5m2, e4m3, e3m4), NaN (the `fn`/`fnuz` formats, e8m0fnu) or the largest value
+  (float4_e2m1fn, whose NaN becomes -0); no -0 in `fnuz` formats; e8m0fnu as XLA (ties up,
+  no 0); integers wrap, and from floating point truncate and saturate (NaN gives 0). The
+  rounding works on bits, so backends that flush float32 subnormals (e8m0fnu's 2^-127 is one)
+  do not change it. Conversions from float32, float16 and bfloat16 match XLA's CPU backend
+  bit for bit for every format and value class.
+- **No rounding where none is needed.** Data movement (reshape, slice, gather, select, sort,
+  max/min, ...) keeps carriers as they are; reductions, windows and scatters combine in the
+  carrier type and round their result once; cumulative sums and products round each partial
+  result of a parallel scan.
+- **Bits.** `bitcast_convert_type` encodes and decodes each format exactly (sign of NaN
+  included); integer shifts, `population_count`, `clz` and `nextafter` work on the format's
+  own bits.
+- **Control flow.** `while`, `scan` and `cond` are rebuilt with carrier bodies; `jit`,
+  `checkpoint`, `custom_jvp`/`custom_vjp` calls are inlined.
+
+XLA's CPU and GPU backends compute float8 arithmetic in float16 and may keep excess precision
+across operations, so results can differ from theirs in the last bit, and cumulative sums by
+the order of rounding (XLA's CPU backend sums sequentially). Over JAX's narrow-type tests in
+METAL emulation, see `re/findings/jax-suite-cpu.md`.
 
 ### float64
 
@@ -309,7 +381,9 @@ an integer-based IEEE mode only if users need the float64 exponent range.
 3. **Data types.** float64 is not available: MPS has no float64 type (not even for constants
    inside a program) and Apple GPUs have no float64 hardware; see "float64" below. complex64
    works inside programs and at their boundary (see above); complex128 needs float64. int64
-   works; uint64 cannot be a program input or output.
+   and uint64 work. float8, float4, int4 and int2 are emulated ("Narrow types"); the newer of
+   them cannot be program inputs or outputs. float6 is out of scope (XLA's CPU backend
+   crashes on it, so there is no reference).
 4. **Shardy.** Handled by turning the Shardy partitioner off (see the Python package section).
    If a future JAX removes the GSPMD path, the shim would have to strip `sdy` attributes, which
    needs MLIR in the shim.
@@ -318,8 +392,9 @@ an integer-based IEEE mode only if users need the float64 exponent range.
 6. **Framework drift.** The design relies on the PJRT append-only rule and on jaxlib's version and
    null guards. A newer jaxlib that adds unguarded calls past 0.47 would need a shim update; the
    padded table makes such calls hit null rather than garbage.
-7. **Single process, single device.** The plugin exposes one device. Multi-process or collective
-   APIs are out of scope.
+7. **Single process, single device.** The plugin exposes one device. Collectives work on that
+   device (they are identities on a one-device axis); multi-device and multi-process
+   execution are out of scope.
 8. **Licensing.** The shim and its tools are new code under Apache-2.0 (`LICENSE`), as are the
    vendored PJRT headers (see `third_party/*/SOURCE`). Apple's binary is not redistributed:
    each user fetches it from PyPI. Its wheel carries an MIT-style license file (Apple
@@ -336,6 +411,9 @@ an integer-based IEEE mode only if users need the float64 exponent range.
 - `tests/direct_load.cc`: plugin alone, StableHLO 0.19.4 artifact, GPU vs CPU result.
 - `tests/shim_load.cc`: same flow through the shim; also checks the attributes and that slots past
   the plugin's table are null.
+- `tests/shim_boundary_test.cc` (`make unit-test`, any machine): the shim against a fake PJRT
+  0.47 plugin (`tests/fake_pjrt_plugin.cc`): retyped buffers, boundary program substitution,
+  complex views and relabeled outputs.
 - `tests/test_jax_e2e.py`: current JAX with the shim installed as the `METAL` plugin. Runs
   jit, grad, matmul, conv, sort, scatter, control flow, PRNG and an MLP training step on the GPU
   and compares with CPU (16 of 16 pass).
@@ -347,6 +425,10 @@ an integer-based IEEE mode only if users need the float64 exponent range.
   7–4096, multi-dimensional FFTs, FFT convolution, gradients through `rfft`; complex64 arrays
   in and out of programs (pytrees, scalars, loops, gradients, empty arrays, chaining, eager ops,
   transfer to CPU, donation, no buffer leak over 500 calls).
+- `tests/test_narrow.py`: float8, float4, int4 and int2 conversions (each format's values,
+  midpoints and neighbours, specials) bit for bit, arithmetic, reductions, matmul, bitcasts of
+  every width, control flow and narrow program inputs/outputs, against XLA's CPU backend
+  (rounding after every operation). `--emulate` runs the rewrite on the CPU instead.
 - `tests/accuracy_sweep.py --strict`: every float32 elementwise op against the CPU across
   magnitudes 1e-12…1e4 and special values.
 - `tests/accuracy_extended.py`: reductions, matmul, convolutions, float16/bfloat16 and binary
@@ -359,6 +441,6 @@ an integer-based IEEE mode only if users need the float64 exponent range.
   command, every GPU job under `tests/guard.py`, JAX's heaviest tests (by the CPU run) last.
 - `tests/jax_suite/cpu_rules_plugin.py`: JAX's own tests on the CPU backend through these
   lowering rules, lowering the way METAL does (any machine, no GPU), with
-  `tests/jax_suite/metal_check.py` predicting what the plugin could not compile. Over 19 of
-  JAX's test files, 13,915 tests pass and 29 fail, every failure explained
+  `tests/jax_suite/metal_check.py` predicting what the plugin could not compile. Over 56 of
+  JAX's test files, 19,608 tests pass and 35 fail, every failure explained
   (`re/findings/jax-suite-cpu.md`); what remains for METAL is MPS behavior.

@@ -1,0 +1,232 @@
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=0_vmap=3", "seconds": 0.069, "before_mb": 170, "peak_mb": 218}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllGatherOfConst", "seconds": 0.177, "before_mb": 170, "peak_mb": 224}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=1_vmap=0", "seconds": 0.113, "before_mb": 218, "peak_mb": 224}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=2_vmap=2", "seconds": 0.21, "before_mb": 170, "peak_mb": 224}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=1_vmap=1", "seconds": 0.027, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=1_vmap=2", "seconds": 0.016, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=2_vmap=3", "seconds": 0.026, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=1_vmap=3", "seconds": 0.028, "before_mb": 224, "peak_mb": 225}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllGatherTiled", "seconds": 0.093, "before_mb": 224, "peak_mb": 228}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllGatherToUnmapped", "seconds": 0.05, "before_mb": 228, "peak_mb": 230}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=2_vmap=0", "seconds": 0.085, "before_mb": 225, "peak_mb": 227}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=0_vmap=0", "seconds": 0.115, "before_mb": 224, "peak_mb": 227}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllGatherVjp", "seconds": 0.036, "before_mb": 230, "peak_mb": 232}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=2_vmap=1", "seconds": 0.035, "before_mb": 227, "peak_mb": 227}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=0_vmap=1", "seconds": 0.032, "before_mb": 227, "peak_mb": 227}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=2_vmap=2", "seconds": 0.033, "before_mb": 227, "peak_mb": 229}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=0_vmap=2", "seconds": 0.035, "before_mb": 227, "peak_mb": 229}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=2_vmap=3", "seconds": 0.014, "before_mb": 229, "peak_mb": 229}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=0_vmap=3", "seconds": 0.034, "before_mb": 229, "peak_mb": 229}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=1_vmap=0", "seconds": 0.057, "before_mb": 229, "peak_mb": 230}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=0_vmap=0", "seconds": 0.108, "before_mb": 229, "peak_mb": 232}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=1_vmap=1", "seconds": 0.027, "before_mb": 230, "peak_mb": 230}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=0_vmap=1", "seconds": 0.024, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=1_vmap=2", "seconds": 0.029, "before_mb": 230, "peak_mb": 232}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=0_vmap=0", "seconds": 0.216, "before_mb": 232, "peak_mb": 240}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=0_vmap=2", "seconds": 0.024, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=1_vmap=3", "seconds": 0.026, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=0_vmap=1", "seconds": 0.034, "before_mb": 240, "peak_mb": 240}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=0_vmap=3", "seconds": 0.028, "before_mb": 232, "peak_mb": 233}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=2_vmap=0", "seconds": 0.029, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=1_vmap=0", "seconds": 0.027, "before_mb": 233, "peak_mb": 234}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=2_vmap=1", "seconds": 0.025, "before_mb": 232, "peak_mb": 232}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=0_vmap=2", "seconds": 0.049, "before_mb": 240, "peak_mb": 242}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=1_vmap=1", "seconds": 0.024, "before_mb": 234, "peak_mb": 234}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=2_vmap=2", "seconds": 0.025, "before_mb": 232, "peak_mb": 233}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=1_vmap=2", "seconds": 0.029, "before_mb": 234, "peak_mb": 235}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=2_concat=2_vmap=3", "seconds": 0.028, "before_mb": 233, "peak_mb": 234}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=1_vmap=3", "seconds": 0.029, "before_mb": 235, "peak_mb": 235}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAny", "seconds": 0.039, "before_mb": 234, "peak_mb": 236}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=2_vmap=0", "seconds": 0.084, "before_mb": 235, "peak_mb": 237}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=1_concat=2_vmap=1", "seconds": 0.027, "before_mb": 237, "peak_mb": 238}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=1_vmap=0", "seconds": 0.265, "before_mb": 242, "peak_mb": 249}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=1_vmap=1", "seconds": 0.028, "before_mb": 249, "peak_mb": 249}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=0_concat=1_vmap=2", "seconds": 0.018, "before_mb": 249, "peak_mb": 249}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[5,8]_axis=0_collective=pargmax", "seconds": 0.236, "before_mb": 236, "peak_mb": 249}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[7]_axis=0_collective=pargmax", "seconds": 0.192, "before_mb": 238, "peak_mb": 250}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[5,8]_axis=0_collective=pargmin", "seconds": 0.085, "before_mb": 249, "peak_mb": 251}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[7]_axis=0_collective=pargmin", "seconds": 0.075, "before_mb": 250, "peak_mb": 252}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=0_vmap=0", "seconds": 0.253, "before_mb": 249, "peak_mb": 257}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=0_vmap=1", "seconds": 0.026, "before_mb": 257, "peak_mb": 257}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=0_vmap=2", "seconds": 0.025, "before_mb": 257, "peak_mb": 257}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[5,8]_axis=1_collective=pargmax", "seconds": 0.273, "before_mb": 251, "peak_mb": 258}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[5,8]_axis=0_collective=pargmax", "seconds": 0.24, "before_mb": 252, "peak_mb": 257}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[5,8]_axis=0_collective=pargmin", "seconds": 0.038, "before_mb": 257, "peak_mb": 257}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=float32[5,8]_axis=1_collective=pargmin", "seconds": 0.092, "before_mb": 258, "peak_mb": 261}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=1_vmap=0", "seconds": 0.195, "before_mb": 257, "peak_mb": 260}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=1_vmap=1", "seconds": 0.032, "before_mb": 260, "peak_mb": 262}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAllSplitAxis_split=1_concat=1_vmap=2", "seconds": 0.024, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=0_vmap=0", "seconds": 0.034, "before_mb": 262, "peak_mb": 263}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=0_vmap=1", "seconds": 0.012, "before_mb": 263, "peak_mb": 263}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAllToAll_split=0_concat=0_vmap=2", "seconds": 0.026, "before_mb": 263, "peak_mb": 263}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ij_collective_names=j", "seconds": 0.194, "before_mb": 261, "peak_mb": 263}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[5,8]_axis=1_collective=pargmax", "seconds": 0.248, "before_mb": 257, "peak_mb": 263}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[5,8]_axis=1_collective=pargmin", "seconds": 0.033, "before_mb": 263, "peak_mb": 263}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ij_collective_names=ji", "seconds": 0.113, "before_mb": 263, "peak_mb": 265}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=kij", "seconds": 0.151, "before_mb": 263, "peak_mb": 268}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[7]_axis=0_collective=pargmax", "seconds": 0.091, "before_mb": 263, "peak_mb": 265}
+{"nodeid": "tests/batching_test.py::BatchingTest::testArgAllReduce_shape=int32[7]_axis=0_collective=pargmin", "seconds": 0.034, "before_mb": 265, "peak_mb": 266}
+{"nodeid": "tests/batching_test.py::BatchingTest::testAxisIndex", "seconds": 0.05, "before_mb": 266, "peak_mb": 267}
+{"nodeid": "tests/batching_test.py::BatchingTest::testBatchOfCompile", "seconds": 0.028, "before_mb": 267, "peak_mb": 268}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=kj", "seconds": 0.146, "before_mb": 268, "peak_mb": 271}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=i", "seconds": 0.164, "before_mb": 265, "peak_mb": 268}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=kji", "seconds": 0.029, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/batching_test.py::BatchingTest::testBatchedAllGather", "seconds": 0.08, "before_mb": 268, "peak_mb": 270}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ij", "seconds": 0.059, "before_mb": 268, "peak_mb": 270}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=i_collective_names=i", "seconds": 0.1, "before_mb": 271, "peak_mb": 274}
+{"nodeid": "tests/batching_test.py::BatchingTest::testBatchedAllGatherTiled", "seconds": 0.099, "before_mb": 270, "peak_mb": 272}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ijk", "seconds": 0.097, "before_mb": 270, "peak_mb": 272}
+{"nodeid": "tests/batching_test.py::BatchingTest::testBatchingPreservesWeakType", "seconds": 0.012, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ij_collective_names=i", "seconds": 0.098, "before_mb": 274, "peak_mb": 275}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ik", "seconds": 0.097, "before_mb": 272, "peak_mb": 274}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ikj", "seconds": 0.03, "before_mb": 274, "peak_mb": 274}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=i_collective_names=i", "seconds": 0.147, "before_mb": 272, "peak_mb": 276}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ij_collective_names=ij", "seconds": 0.103, "before_mb": 275, "peak_mb": 277}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=j", "seconds": 0.055, "before_mb": 274, "peak_mb": 276}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ji", "seconds": 0.028, "before_mb": 276, "peak_mb": 277}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ij_collective_names=i", "seconds": 0.09, "before_mb": 276, "peak_mb": 278}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=jik", "seconds": 0.031, "before_mb": 277, "peak_mb": 277}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ij_collective_names=j", "seconds": 0.109, "before_mb": 277, "peak_mb": 280}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ij_collective_names=ji", "seconds": 0.028, "before_mb": 280, "peak_mb": 280}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ij_collective_names=ij", "seconds": 0.1, "before_mb": 278, "peak_mb": 280}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=jk", "seconds": 0.102, "before_mb": 277, "peak_mb": 279}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=i", "seconds": 0.051, "before_mb": 280, "peak_mb": 280}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=jki", "seconds": 0.03, "before_mb": 279, "peak_mb": 280}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ij", "seconds": 0.052, "before_mb": 280, "peak_mb": 282}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ijk", "seconds": 0.058, "before_mb": 282, "peak_mb": 283}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ji", "seconds": 0.133, "before_mb": 280, "peak_mb": 283}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=k", "seconds": 0.131, "before_mb": 280, "peak_mb": 282}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmax_vmap_names=ijk_collective_names=ki", "seconds": 0.032, "before_mb": 282, "peak_mb": 283}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ik", "seconds": 0.098, "before_mb": 283, "peak_mb": 285}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=jik", "seconds": 0.101, "before_mb": 283, "peak_mb": 285}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ikj", "seconds": 0.028, "before_mb": 285, "peak_mb": 286}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=j", "seconds": 0.05, "before_mb": 286, "peak_mb": 286}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=jk", "seconds": 0.124, "before_mb": 285, "peak_mb": 288}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=jki", "seconds": 0.036, "before_mb": 288, "peak_mb": 288}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=k", "seconds": 0.12, "before_mb": 288, "peak_mb": 291}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=ki", "seconds": 0.117, "before_mb": 291, "peak_mb": 293}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=kij", "seconds": 0.033, "before_mb": 293, "peak_mb": 294}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=kj", "seconds": 0.031, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_pmin_vmap_names=ijk_collective_names=kji", "seconds": 0.033, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ij_collective_names=j", "seconds": 0.617, "before_mb": 283, "peak_mb": 297}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=jki", "seconds": 0.519, "before_mb": 286, "peak_mb": 297}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=i_collective_names=i", "seconds": 0.544, "before_mb": 294, "peak_mb": 305}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ij_collective_names=ji", "seconds": 0.593, "before_mb": 297, "peak_mb": 307}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=k", "seconds": 0.676, "before_mb": 297, "peak_mb": 316}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ij_collective_names=i", "seconds": 0.626, "before_mb": 305, "peak_mb": 317}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=i", "seconds": 0.662, "before_mb": 307, "peak_mb": 318}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ki", "seconds": 0.666, "before_mb": 316, "peak_mb": 327}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=kij", "seconds": 0.084, "before_mb": 327, "peak_mb": 327}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ij_collective_names=ij", "seconds": 0.565, "before_mb": 317, "peak_mb": 327}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDot2", "seconds": 0.033, "before_mb": 327, "peak_mb": 327}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDot3", "seconds": 0.072, "before_mb": 327, "peak_mb": 329}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDot4", "seconds": 0.02, "before_mb": 329, "peak_mb": 329}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ij", "seconds": 0.537, "before_mb": 318, "peak_mb": 327}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=kj", "seconds": 0.595, "before_mb": 327, "peak_mb": 336}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDotGeneral", "seconds": 0.252, "before_mb": 329, "peak_mb": 340}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=kji", "seconds": 0.085, "before_mb": 336, "peak_mb": 336}
+{"nodeid": "tests/batching_test.py::BatchingTest::testConcatenate", "seconds": 0.107, "before_mb": 336, "peak_mb": 337}
+{"nodeid": "tests/batching_test.py::BatchingTest::testConstantFunction", "seconds": 0.021, "before_mb": 337, "peak_mb": 337}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ijk", "seconds": 0.509, "before_mb": 327, "peak_mb": 332}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDynamicSlice", "seconds": 0.379, "before_mb": 340, "peak_mb": 350}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDynamicUpdateSlice", "seconds": 0.105, "before_mb": 350, "peak_mb": 353}
+{"nodeid": "tests/batching_test.py::BatchingTest::testEmptyTuples", "seconds": 0.026, "before_mb": 353, "peak_mb": 353}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=float32[10,2]_op_axis=1_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.071, "before_mb": 353, "peak_mb": 354}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=float32[10,5,2]_op_axis=2_idxs_axis=0_idxs=[[[0 2]\n  [1 0]]\n\n [[1 0]\n  [2 0]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.06, "before_mb": 354, "peak_mb": 354}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=float32[2,10,5]_op_axis=0_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.085, "before_mb": 354, "peak_mb": 356}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=float32[2,5]_op_axis=0_idxs_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.069, "before_mb": 356, "peak_mb": 356}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=int32[10,5]_axis=0_idxs=[[[0 1]\n  [2 0]]\n\n [[1 0]\n  [2 3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.052, "before_mb": 356, "peak_mb": 357}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ik", "seconds": 0.649, "before_mb": 332, "peak_mb": 344}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=int32[10,5]_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.051, "before_mb": 357, "peak_mb": 359}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=int32[10]_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.048, "before_mb": 359, "peak_mb": 359}
+{"nodeid": "tests/batching_test.py::BatchingTest::testConvGeneralDilated", "seconds": 0.777, "before_mb": 337, "peak_mb": 360}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ikj", "seconds": 0.083, "before_mb": 344, "peak_mb": 344}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=int32[5]_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.062, "before_mb": 359, "peak_mb": 361}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=float32[10,3,5]_axis=1_idxs=[[0]\n [2]\n [1]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.026, "before_mb": 361, "peak_mb": 361}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=float32[10,3]_axis=1_idxs=[[0]\n [0]\n [0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.025, "before_mb": 361, "peak_mb": 362}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=float32[10,5,3]_axis=2_idxs=[[0 2]\n [1 0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.028, "before_mb": 362, "peak_mb": 362}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=float32[3,5]_axis=0_idxs=[[0]\n [2]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.031, "before_mb": 362, "peak_mb": 362}
+{"nodeid": "tests/batching_test.py::BatchingTest::testConvGeneralDilatedBatchNotMajor", "seconds": 0.191, "before_mb": 360, "peak_mb": 364}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCumProd", "seconds": 0.184, "before_mb": 364, "peak_mb": 367}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedBoth_shape=float32[2,5]_op_axis=0_idxs_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.317, "before_mb": 362, "peak_mb": 370}
+{"nodeid": "tests/batching_test.py::BatchingTest::testDot", "seconds": 0.181, "before_mb": 367, "peak_mb": 371}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=j", "seconds": 0.591, "before_mb": 344, "peak_mb": 353}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=int32[10,2]_op_axis=1_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.08, "before_mb": 371, "peak_mb": 372}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=int32[10,5,2]_op_axis=2_idxs_axis=0_idxs=[[[0 2]\n  [1 0]]\n\n [[1 0]\n  [2 0]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.057, "before_mb": 372, "peak_mb": 373}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=ji", "seconds": 0.119, "before_mb": 353, "peak_mb": 353}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=int32[2,10,5]_op_axis=0_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.06, "before_mb": 373, "peak_mb": 373}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedBoth_shape=int32[2,5]_op_axis=0_idxs_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.047, "before_mb": 373, "peak_mb": 375}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=jik", "seconds": 0.095, "before_mb": 353, "peak_mb": 353}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float32[10,5]_axis=0_idxs=[[[0 1]\n  [2 0]]\n\n [[1 0]\n  [2 3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.378, "before_mb": 370, "peak_mb": 377}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=float32[10,5]_axis=0_idxs=[[[0 1]\n  [2 0]]\n\n [[1 0]\n  [2 3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.066, "before_mb": 375, "peak_mb": 376}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=float32[10,5]_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.047, "before_mb": 376, "peak_mb": 376}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=float32[10]_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.081, "before_mb": 376, "peak_mb": 378}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedIndices_shape=float32[5]_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.051, "before_mb": 378, "peak_mb": 379}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float32[10,5]_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.281, "before_mb": 377, "peak_mb": 382}
+{"nodeid": "tests/batching_test.py::BatchingTest::testCommAssocCollective_psum_vmap_names=ijk_collective_names=jk", "seconds": 0.581, "before_mb": 353, "peak_mb": 362}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float64[10,5]_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.408, "before_mb": 379, "peak_mb": 385}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=int32[10,3,5]_axis=1_idxs=[[0]\n [2]\n [1]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.068, "before_mb": 362, "peak_mb": 362}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float32[10]_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.363, "before_mb": 382, "peak_mb": 388}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=int32[10,3]_axis=1_idxs=[[0]\n [0]\n [0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.054, "before_mb": 362, "peak_mb": 362}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float32[5]_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.053, "before_mb": 388, "peak_mb": 390}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float64[10,5]_axis=0_idxs=[[[0 1]\n  [2 0]]\n\n [[1 0]\n  [2 3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.011, "before_mb": 390, "peak_mb": 390}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=int32[10,5,3]_axis=2_idxs=[[0 2]\n [1 0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.065, "before_mb": 362, "peak_mb": 363}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherBatchedOperand_shape=int32[3,5]_axis=0_idxs=[[0]\n [2]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.048, "before_mb": 363, "peak_mb": 365}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float32[3,5]_axis=0_idxs=[[0]\n [2]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.196, "before_mb": 390, "peak_mb": 394}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float64[10]_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.32, "before_mb": 385, "peak_mb": 391}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float64[10,3,5]_axis=1_idxs=[[0]\n [2]\n [1]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.23, "before_mb": 394, "peak_mb": 397}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedBoth_shape=float32[10,2]_op_axis=1_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[0]\n  [2]]\n\n [[0]\n  [1]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.439, "before_mb": 365, "peak_mb": 372}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedIndices_shape=float64[5]_axis=0_idxs=[[[0]\n  [2]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.313, "before_mb": 391, "peak_mb": 398}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float64[10,3]_axis=1_idxs=[[0]\n [0]\n [0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.182, "before_mb": 397, "peak_mb": 400}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float32[10,3,5]_axis=1_idxs=[[0]\n [2]\n [1]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.237, "before_mb": 398, "peak_mb": 402}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float64[10,5,3]_axis=2_idxs=[[0 2]\n [1 0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.176, "before_mb": 400, "peak_mb": 403}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float64[3,5]_axis=0_idxs=[[0]\n [2]]_dnums=GatherDimensionNumbers(offset_dims=(), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1,)", "seconds": 0.017, "before_mb": 403, "peak_mb": 403}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedBoth_shape=float32[10,5,2]_op_axis=2_idxs_axis=0_idxs=[[[0 2]\n  [1 0]]\n\n [[1 0]\n  [2 0]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.37, "before_mb": 372, "peak_mb": 379}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float32[10,3]_axis=1_idxs=[[0]\n [0]\n [0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(2,)", "seconds": 0.215, "before_mb": 402, "peak_mb": 405}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGradOfPsum", "seconds": 0.189, "before_mb": 403, "peak_mb": 405}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedBoth_shape=float32[2,10,5]_op_axis=0_idxs_axis=1_idxs=[[[0]\n  [0]]\n\n [[2]\n  [3]]\n\n [[1]\n  [3]]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0,), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.348, "before_mb": 379, "peak_mb": 385}
+{"nodeid": "tests/batching_test.py::BatchingTest::testGatherGradBatchedOperand_shape=float32[10,5,3]_axis=2_idxs=[[0 2]\n [1 0]]_dnums=GatherDimensionNumbers(offset_dims=(1,), collapsed_slice_dims=(0,), start_index_map=(0, 1), operand_batching_dims=(), start_indices_batching_dims=())_slice_sizes=(1, 3)", "seconds": 0.285, "before_mb": 405, "peak_mb": 409}
+{"nodeid": "tests/batching_test.py::BatchingTest::testHessian", "seconds": 0.877, "before_mb": 405, "peak_mb": 424}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIndexAddBatchedIndexesOnly", "seconds": 0.101, "before_mb": 424, "peak_mb": 428}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue1170", "seconds": 0.083, "before_mb": 428, "peak_mb": 429}
+{"nodeid": "tests/batching_test.py::BatchingTest::testLaxLinalgTridiagonalSolve", "seconds": 1.135, "before_mb": 409, "peak_mb": 434}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue6096", "seconds": 1.234, "before_mb": 385, "peak_mb": 426}
+{"nodeid": "tests/batching_test.py::BatchingTest::testMinMaxPool_op=max", "seconds": 0.421, "before_mb": 432, "peak_mb": 440}
+{"nodeid": "tests/batching_test.py::BatchingTest::testJacobianIssue54", "seconds": 0.742, "before_mb": 426, "peak_mb": 428}
+{"nodeid": "tests/batching_test.py::BatchingTest::testMinMaxPool_op=min", "seconds": 0.432, "before_mb": 440, "peak_mb": 441}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNegativeAxes", "seconds": 0.201, "before_mb": 441, "peak_mb": 442}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNestedBatchingMatMat", "seconds": 0.027, "before_mb": 442, "peak_mb": 442}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNonJaxTypedOutput", "seconds": 0.003, "before_mb": 442, "peak_mb": 442}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNpGtrThan", "seconds": 0.03, "before_mb": 442, "peak_mb": 442}
+{"nodeid": "tests/batching_test.py::BatchingTest::testJacobians", "seconds": 0.334, "before_mb": 428, "peak_mb": 441}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue354", "seconds": 1.507, "before_mb": 429, "peak_mb": 458}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNpMaximum", "seconds": 0.043, "before_mb": 442, "peak_mb": 442}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue3883", "seconds": 0.169, "before_mb": 458, "peak_mb": 460}
+{"nodeid": "tests/batching_test.py::BatchingTest::testLaxLinalgCholesky", "seconds": 0.455, "before_mb": 441, "peak_mb": 448}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNpMaximumPerExampleGrad", "seconds": 0.463, "before_mb": 442, "peak_mb": 452}
+{"nodeid": "tests/batching_test.py::BatchingTest::testIssue489", "seconds": 0.301, "before_mb": 460, "peak_mb": 466}
+{"nodeid": "tests/batching_test.py::BatchingTest::testLaxLinalgTriangularSolve", "seconds": 0.376, "before_mb": 448, "peak_mb": 459}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNumpyIndexing2", "seconds": 0.354, "before_mb": 466, "peak_mb": 473}
+{"nodeid": "tests/batching_test.py::BatchingTest::testNumpyIndexing1", "seconds": 0.366, "before_mb": 452, "peak_mb": 461}
+{"nodeid": "tests/batching_test.py::BatchingTest::testPPermute", "seconds": 0.012, "before_mb": 473, "peak_mb": 473}
+{"nodeid": "tests/batching_test.py::BatchingTest::testPpermuteBatcherTrivial", "seconds": 0.102, "before_mb": 461, "peak_mb": 464}
+{"nodeid": "tests/batching_test.py::BatchingTest::testReduceScatterAutodiff", "seconds": 0.127, "before_mb": 473, "peak_mb": 475}
+{"nodeid": "tests/batching_test.py::BatchingTest::testPad", "seconds": 0.183, "before_mb": 459, "peak_mb": 459}
+{"nodeid": "tests/batching_test.py::BatchingTest::testRevLax", "seconds": 0.045, "before_mb": 475, "peak_mb": 476}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSelect", "seconds": 0.211, "before_mb": 476, "peak_mb": 481}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSliceNumpy", "seconds": 0.045, "before_mb": 481, "peak_mb": 482}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSort", "seconds": 0.072, "before_mb": 482, "peak_mb": 484}
+{"nodeid": "tests/batching_test.py::BatchingTest::testRandom", "seconds": 0.485, "before_mb": 464, "peak_mb": 473}
+{"nodeid": "tests/batching_test.py::BatchingTest::testRevNumpy", "seconds": 0.051, "before_mb": 473, "peak_mb": 473}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSortKeyVal", "seconds": 0.122, "before_mb": 484, "peak_mb": 487}
+{"nodeid": "tests/batching_test.py::BatchingTest::testPerExampleGradients", "seconds": 0.513, "before_mb": 459, "peak_mb": 467}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSliceLax", "seconds": 0.025, "before_mb": 467, "peak_mb": 468}
+{"nodeid": "tests/batching_test.py::BatchingTest::testTranspose", "seconds": 0.048, "before_mb": 473, "peak_mb": 473}
+{"nodeid": "tests/batching_test.py::BatchingTest::testTransposePermutation", "seconds": 0.085, "before_mb": 473, "peak_mb": 474}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_basic0", "seconds": 0.109, "before_mb": 468, "peak_mb": 470, "params": "(False)"}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_basic1", "seconds": 0.027, "before_mb": 470, "peak_mb": 470, "params": "(True)"}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_from_elt_that_binds_primitives", "seconds": 0.072, "before_mb": 474, "peak_mb": 474}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_types_with_same_spec", "seconds": 0.052, "before_mb": 470, "peak_mb": 472}
+{"nodeid": "tests/batching_test.py::VmappableTest::test_to_elt_that_binds_primitives", "seconds": 0.034, "before_mb": 474, "peak_mb": 475}
+{"nodeid": "tests/batching_test.py::BatchingTest::testSumPool", "seconds": 0.957, "before_mb": 487, "peak_mb": 507}
+{"nodeid": "tests/batching_test.py::BatchingTest::testVmapKwargs", "seconds": 0.04, "before_mb": 507, "peak_mb": 507}

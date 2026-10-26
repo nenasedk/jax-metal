@@ -1,0 +1,1 @@
+{"nodeid": "tests/pjit_test.py::ArrayPjitTest::test_jit_token_input", "outcome": "passed", "issues": ["op stablehlo.create_token"]}

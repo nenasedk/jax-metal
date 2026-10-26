@@ -1,0 +1,14 @@
+{"nodeid": "tests/ode_test.py::ODETest::test_forward_mode_error", "seconds": 0.38, "before_mb": 204, "peak_mb": 263}
+{"nodeid": "tests/ode_test.py::ODETest::test_closure_nondiff", "seconds": 0.812, "before_mb": 204, "peak_mb": 284}
+{"nodeid": "tests/ode_test.py::ODETest::test_grad_closure", "seconds": 1.35, "before_mb": 263, "peak_mb": 304}
+{"nodeid": "tests/ode_test.py::ODETest::test_grad_closure_with_vmap", "seconds": 1.258, "before_mb": 304, "peak_mb": 327}
+{"nodeid": "tests/ode_test.py::ODETest::test_decay", "seconds": 3.303, "before_mb": 204, "peak_mb": 322}
+{"nodeid": "tests/ode_test.py::ODETest::test_disable_jit_odeint_with_vmap", "seconds": 1.352, "before_mb": 322, "peak_mb": 347}
+{"nodeid": "tests/ode_test.py::ODETest::test_odeint_vmap_grad", "seconds": 1.733, "before_mb": 327, "peak_mb": 347}
+{"nodeid": "tests/ode_test.py::ODETest::test_complex_odeint", "seconds": 4.419, "before_mb": 284, "peak_mb": 361}
+{"nodeid": "tests/ode_test.py::ODETest::test_hmax", "seconds": 0.433, "before_mb": 361, "peak_mb": 365}
+{"nodeid": "tests/ode_test.py::ODETest::test_pytree_state", "seconds": 2.609, "before_mb": 347, "peak_mb": 380}
+{"nodeid": "tests/ode_test.py::ODETest::test_pend_grads", "seconds": 3.409, "before_mb": 347, "peak_mb": 382}
+{"nodeid": "tests/ode_test.py::ODETest::test_weird_time_pendulum_grads", "seconds": 3.327, "before_mb": 365, "peak_mb": 397}
+{"nodeid": "tests/ode_test.py::ODETest::test_swoop", "seconds": 3.686, "before_mb": 380, "peak_mb": 434}
+{"nodeid": "tests/ode_test.py::ODETest::test_swoop_bigger", "seconds": 3.807, "before_mb": 382, "peak_mb": 422}

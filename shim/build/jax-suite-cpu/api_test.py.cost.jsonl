@@ -1,0 +1,1015 @@
+{"nodeid": "tests/api_test.py::JitTest::test_jit_of_nonweakreferenceable_function", "seconds": 0.009, "before_mb": 175, "peak_mb": 177}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_on_all_devices", "seconds": 0.053, "before_mb": 177, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handler_mro", "seconds": 0.078, "before_mb": 175, "peak_mb": 222}
+{"nodeid": "tests/api_test.py::JitTest::testBuffersAreFreedPromptly", "seconds": 0.088, "before_mb": 175, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_bfloat16", "seconds": 0.011, "before_mb": 222, "peak_mb": 222}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_bool", "seconds": 0.012, "before_mb": 222, "peak_mb": 222}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_python_builtin", "seconds": 0.051, "before_mb": 223, "peak_mb": 228}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_raises_on_first_invocation_on_non_hashable_static_argnum", "seconds": 0.003, "before_mb": 228, "peak_mb": 228}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_complex64", "seconds": 0.016, "before_mb": 222, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_float16", "seconds": 0.012, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::JitTest::test_cache_key_defaults", "seconds": 0.047, "before_mb": 223, "peak_mb": 227}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_float32", "seconds": 0.012, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_int16", "seconds": 0.012, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_reference_dropping", "seconds": 0.05, "before_mb": 228, "peak_mb": 230}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_replica_attributes", "seconds": 0.005, "before_mb": 230, "peak_mb": 230}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_int32", "seconds": 0.014, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_repr", "seconds": 0.002, "before_mb": 230, "peak_mb": 230}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_repr_errors", "seconds": 0.002, "before_mb": 230, "peak_mb": 230}
+{"nodeid": "tests/api_test.py::JitTest::test_caches_depend_on_axis_env", "seconds": 0.044, "before_mb": 227, "peak_mb": 228}
+{"nodeid": "tests/api_test.py::JitTest::test_caches_dont_depend_on_unnamed_axis_env", "seconds": 0.002, "before_mb": 228, "peak_mb": 228}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_int8", "seconds": 0.011, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_shallow_copy", "seconds": 0.011, "before_mb": 230, "peak_mb": 230}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_uint16", "seconds": 0.014, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::JitTest::test_compile_options_jit", "seconds": 0.025, "before_mb": 228, "peak_mb": 229}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_uint32", "seconds": 0.011, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::APITest::test_constant_handlers_uint8", "seconds": 0.013, "before_mb": 223, "peak_mb": 223}
+{"nodeid": "tests/api_test.py::APITest::test_constants_not_in_lowering_cond", "seconds": 0.004, "before_mb": 223, "peak_mb": 224}
+{"nodeid": "tests/api_test.py::APITest::test_constants_not_in_lowering_jit", "seconds": 0.002, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/api_test.py::APITest::test_constants_not_in_lowering_scan", "seconds": 0.002, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async", "seconds": 0.003, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_does_not_hide_attribute_error", "seconds": 0.002, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_non_array", "seconds": 0.002, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_pytree", "seconds": 0.006, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/api_test.py::JitTest::test_complex_support", "seconds": 0.047, "before_mb": 229, "peak_mb": 230}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_pytree_deleted_array", "seconds": 0.003, "before_mb": 224, "peak_mb": 224}
+{"nodeid": "tests/api_test.py::APITest::test_copy_to_host_async_string_and_numeric_arrays", "seconds": 0.002, "before_mb": 224, "peak_mb": 225}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_static_argnums_requires_type_equality", "seconds": 0.087, "before_mb": 230, "peak_mb": 233}
+{"nodeid": "tests/api_test.py::APITest::test_dce_sink_in_custom_jvp_and_vjp", "seconds": 0.103, "before_mb": 225, "peak_mb": 232}
+{"nodeid": "tests/api_test.py::APITest::test_dce_sink_vmap", "seconds": 0.019, "before_mb": 232, "peak_mb": 233}
+{"nodeid": "tests/api_test.py::APITest::test_default_backend", "seconds": 0.002, "before_mb": 233, "peak_mb": 233}
+{"nodeid": "tests/api_test.py::JitTest::test_concurrent_jit", "seconds": 0.147, "before_mb": 230, "peak_mb": 266}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_static_args0", "seconds": 0.123, "before_mb": 233, "peak_mb": 238, "params": "(1, 2, 3, 4, 5)"}
+{"nodeid": "tests/api_test.py::JitTest::test_cpp_jit_raises_on_non_hashable_static_argnum", "seconds": 0.047, "before_mb": 266, "peak_mb": 267}
+{"nodeid": "tests/api_test.py::JitTest::test_cpp_jit_raises_other_exceptions_when_hashing_fails", "seconds": 0.003, "before_mb": 267, "peak_mb": 267}
+{"nodeid": "tests/api_test.py::APITest::test_default_device", "seconds": 0.076, "before_mb": 233, "peak_mb": 235}
+{"nodeid": "tests/api_test.py::JitTest::test_cpp_jitted_function_returns_PyBuffer", "seconds": 0.024, "before_mb": 267, "peak_mb": 268}
+{"nodeid": "tests/api_test.py::JitTest::test_device_put_aliasing", "seconds": 0.005, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/api_test.py::JitTest::test_device_put_aliasing_with_diff_compatible_sharding", "seconds": 0.004, "before_mb": 268, "peak_mb": 269}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_static_args1", "seconds": 0.116, "before_mb": 238, "peak_mb": 239, "params": "(array(1, dtype=int32), array(2, dtype=int32), array(3, dtype=int32), array(4, dtype=int32), array(5, dtype=int32))"}
+{"nodeid": "tests/api_test.py::APITest::test_deferred_primal_with_direct_linearize", "seconds": 0.076, "before_mb": 235, "peak_mb": 240}
+{"nodeid": "tests/api_test.py::APITest::test_device_array_hash", "seconds": 0.028, "before_mb": 240, "peak_mb": 242}
+{"nodeid": "tests/api_test.py::APITest::test_device_array_repr", "seconds": 0.02, "before_mb": 242, "peak_mb": 242}
+{"nodeid": "tests/api_test.py::APITest::test_device_get_scalar", "seconds": 0.003, "before_mb": 242, "peak_mb": 242}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_across_devices0", "seconds": 0.003, "before_mb": 242, "peak_mb": 242, "params": "((3,))"}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_across_devices1", "seconds": 0.002, "before_mb": 242, "peak_mb": 242, "params": "((2, 0))"}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_across_platforms", "seconds": 0.015, "before_mb": 242, "peak_mb": 243}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_and_get", "seconds": 0.003, "before_mb": 243, "peak_mb": 243}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_custom_type_not_accepting_none_leaves", "seconds": 0.002, "before_mb": 243, "peak_mb": 243}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_literals", "seconds": 0.002, "before_mb": 243, "peak_mb": 243}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_mismatched_tree_shows_all_mismatches", "seconds": 0.036, "before_mb": 243, "peak_mb": 245}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_mismatched_tree_shows_mismatch_detail", "seconds": 0.003, "before_mb": 245, "peak_mb": 245}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_on_multi_device_donated_buffer_fails", "seconds": 0.022, "before_mb": 245, "peak_mb": 245}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_on_single_device_donated_buffer_fails", "seconds": 0.043, "before_mb": 245, "peak_mb": 247}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding", "seconds": 0.003, "before_mb": 247, "peak_mb": 247}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding_mismatched_tree_different_leaf_count", "seconds": 0.002, "before_mb": 247, "peak_mb": 247}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding_mismatched_tree_same_leaf_count", "seconds": 0.002, "before_mb": 247, "peak_mb": 247}
+{"nodeid": "tests/api_test.py::JitTest::test_device_to_device_copy_between_backends", "seconds": 0.254, "before_mb": 269, "peak_mb": 318}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding_tree", "seconds": 0.003, "before_mb": 247, "peak_mb": 247}
+{"nodeid": "tests/api_test.py::APITest::test_device_put_sharding_tree_prefix", "seconds": 0.002, "before_mb": 247, "peak_mb": 247}
+{"nodeid": "tests/api_test.py::JitTest::test_dict_donation_argnames", "seconds": 0.004, "before_mb": 283, "peak_mb": 283}
+{"nodeid": "tests/api_test.py::APITest::test_devicearray_block_until_ready", "seconds": 0.002, "before_mb": 247, "peak_mb": 247}
+{"nodeid": "tests/api_test.py::JitTest::test_dict_donation_argnums", "seconds": 0.003, "before_mb": 283, "peak_mb": 283}
+{"nodeid": "tests/api_test.py::APITest::test_devicearray_delete", "seconds": 0.002, "before_mb": 247, "peak_mb": 247}
+{"nodeid": "tests/api_test.py::JitTest::test_dict_donation_args_kwargs_argnames", "seconds": 0.003, "before_mb": 283, "peak_mb": 283}
+{"nodeid": "tests/api_test.py::JitTest::test_dict_donation_args_kwargs_argnums", "seconds": 0.003, "before_mb": 283, "peak_mb": 283}
+{"nodeid": "tests/api_test.py::JitTest::test_disable_jit", "seconds": 0.013, "before_mb": 283, "peak_mb": 283}
+{"nodeid": "tests/api_test.py::JitTest::test_donate_argnames_signature_fail", "seconds": 0.003, "before_mb": 283, "peak_mb": 283}
+{"nodeid": "tests/api_test.py::JitTest::test_donate_argnames_with_args", "seconds": 0.003, "before_mb": 283, "peak_mb": 283}
+{"nodeid": "tests/api_test.py::JitTest::test_donate_argnums_with_kwargs", "seconds": 0.002, "before_mb": 283, "peak_mb": 283}
+{"nodeid": "tests/api_test.py::JitTest::test_donate_args_info_aot", "seconds": 0.006, "before_mb": 283, "peak_mb": 283}
+{"nodeid": "tests/api_test.py::APITest::test_devicearray_repr", "seconds": 0.067, "before_mb": 247, "peak_mb": 248}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_many_args_works", "seconds": 0.313, "before_mb": 239, "peak_mb": 251}
+{"nodeid": "tests/api_test.py::APITest::test_devicearray_weakref_friendly", "seconds": 0.035, "before_mb": 248, "peak_mb": 248}
+{"nodeid": "tests/api_test.py::JitTest::test_double_donation", "seconds": 0.069, "before_mb": 283, "peak_mb": 285}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_mismatched_static_argnames", "seconds": 0.049, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/api_test.py::JitTest::test_effort_level_as_strings_compiler_option", "seconds": 0.037, "before_mb": 285, "peak_mb": 285}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_pruned_args0", "seconds": 0.021, "before_mb": 251, "peak_mb": 251, "params": "(2)"}
+{"nodeid": "tests/api_test.py::JitTest::test_effort_level_compiler_option", "seconds": 0.021, "before_mb": 285, "peak_mb": 285}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_pruned_args1", "seconds": 0.023, "before_mb": 251, "peak_mb": 251, "params": "(3)"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_pruned_args2", "seconds": 0.02, "before_mb": 251, "peak_mb": 251, "params": "(4)"}
+{"nodeid": "tests/api_test.py::APITest::test_disallowed_bf16_reductions", "seconds": 0.097, "before_mb": 248, "peak_mb": 254}
+{"nodeid": "tests/api_test.py::APITest::test_dot_mismatch", "seconds": 0.004, "before_mb": 254, "peak_mb": 254}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_with_static_argnames", "seconds": 0.019, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_wrapped_attributes", "seconds": 0.002, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/api_test.py::JitTest::test_jnp_array_copy_argnames", "seconds": 0.032, "before_mb": 251, "peak_mb": 252}
+{"nodeid": "tests/api_test.py::JitTest::test_jnp_array_copy_argnums", "seconds": 0.024, "before_mb": 252, "peak_mb": 251}
+{"nodeid": "tests/api_test.py::APITest::test_dot_precision_context_manager", "seconds": 0.108, "before_mb": 254, "peak_mb": 257}
+{"nodeid": "tests/api_test.py::APITest::test_dot_precision_flag", "seconds": 0.006, "before_mb": 257, "peak_mb": 257}
+{"nodeid": "tests/api_test.py::JitTest::test_lower_compile_with_compiler_options_multiple", "seconds": 0.069, "before_mb": 250, "peak_mb": 250}
+{"nodeid": "tests/api_test.py::APITest::test_dot_precision_forces_retrace", "seconds": 0.162, "before_mb": 257, "peak_mb": 262}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_from_builtin_types", "seconds": 0.03, "before_mb": 262, "peak_mb": 262}
+{"nodeid": "tests/api_test.py::JitTest::test_explicit_backend", "seconds": 0.367, "before_mb": 285, "peak_mb": 322}
+{"nodeid": "tests/api_test.py::JitTest::test_fun_name", "seconds": 0.005, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/api_test.py::JitTest::test_infer_argnums_and_argnames", "seconds": 0.002, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/api_test.py::JitTest::test_intersecting_static_and_donate_argnames", "seconds": 0.002, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_argnames_validation0", "seconds": 0.004, "before_mb": 290, "peak_mb": 290, "params": "('static_argnames')"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_argnames_validation1", "seconds": 0.003, "before_mb": 290, "peak_mb": 290, "params": "('donate_argnames')"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_argnums_overflow_error0", "seconds": 0.003, "before_mb": 290, "peak_mb": 290, "params": "('static_argnums')"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_argnums_overflow_error1", "seconds": 0.003, "before_mb": 290, "peak_mb": 290, "params": "('donate_argnums')"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_bad_input", "seconds": 0.003, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/api_test.py::JitTest::test_mismatched_nested_backends", "seconds": 0.299, "before_mb": 250, "peak_mb": 292}
+{"nodeid": "tests/api_test.py::JitTest::test_new_static_argnum_on_keyword_arguments", "seconds": 0.013, "before_mb": 261, "peak_mb": 261}
+{"nodeid": "tests/api_test.py::JitTest::test_new_static_argnum_with_default_arguments", "seconds": 0.012, "before_mb": 261, "peak_mb": 261}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_cache_clear", "seconds": 0.128, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/api_test.py::JitTest::test_no_execution", "seconds": 0.045, "before_mb": 261, "peak_mb": 261}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_compile_with_compiler_options_multiple", "seconds": 0.045, "before_mb": 290, "peak_mb": 292}
+{"nodeid": "tests/api_test.py::JitTest::test_no_tracing", "seconds": 0.049, "before_mb": 261, "peak_mb": 262}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_decorator_factory", "seconds": 0.029, "before_mb": 292, "peak_mb": 292}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_deep_copy", "seconds": 0.013, "before_mb": 292, "peak_mb": 292}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_default_device", "seconds": 0.004, "before_mb": 292, "peak_mb": 292}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_default_platform", "seconds": 0.052, "before_mb": 292, "peak_mb": 293}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_device", "seconds": 0.019, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_argnames_kwargs_static_argnums", "seconds": 0.002, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_invalidates_input_argnames", "seconds": 0.002, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_invalidates_input_argnums", "seconds": 0.002, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_static_argnums_donate_argnames", "seconds": 0.002, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_static_argnums_donate_argnums", "seconds": 0.002, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_warning_raised_argnames", "seconds": 0.051, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_warning_raised_argnums", "seconds": 0.031, "before_mb": 293, "peak_mb": 294}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_weak_type_argnames", "seconds": 0.003, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_donate_weak_type_argnums", "seconds": 0.002, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_enum_as_dict_keys_fails", "seconds": 0.002, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_global_cache", "seconds": 0.011, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/api_test.py::JitTest::test_omnistaging", "seconds": 0.265, "before_mb": 262, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_pe_close_jaxpr_identity", "seconds": 0.006, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_print_token_buffer_error", "seconds": 0.012, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_resolve_argnums_signature_fail", "seconds": 0.002, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_specify_donate_argnums_and_argnames", "seconds": 0.002, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_static_argnum_on_method", "seconds": 0.022, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_kwargs0", "seconds": 0.095, "before_mb": 294, "peak_mb": 296, "params": "(1, 2, 3)"}
+{"nodeid": "tests/api_test.py::JitTest::test_static_argnum_on_static_method_is_not_supported", "seconds": 0.002, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_static_args_equality", "seconds": 0.023, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_staticmethod_is_not_supported", "seconds": 0.003, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_kwargs1", "seconds": 0.07, "before_mb": 296, "peak_mb": 296, "params": "(array(1, dtype=int32), array(2, dtype=int32), array(3, dtype=int32))"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_as_text", "seconds": 0.009, "before_mb": 296, "peak_mb": 296}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning0", "seconds": 0.66, "before_mb": 262, "peak_mb": 280, "params": "(explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>, enable_x64=True)"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile", "seconds": 0.029, "before_mb": 296, "peak_mb": 296}
+{"nodeid": "tests/api_test.py::JitTest::test_sum_of_closed_over_bools", "seconds": 0.098, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_arg_type_mismatch", "seconds": 0.053, "before_mb": 296, "peak_mb": 297}
+{"nodeid": "tests/api_test.py::JitTest::test_trivial_computations", "seconds": 0.039, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_trivial_computations_with_tokens", "seconds": 0.012, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::APITest::test_abstract_error_message", "seconds": 0.005, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_as_text", "seconds": 0.031, "before_mb": 297, "peak_mb": 297}
+{"nodeid": "tests/api_test.py::APITest::test_ad_weak_types_grad", "seconds": 0.016, "before_mb": 271, "peak_mb": 271}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_compiler_ir", "seconds": 0.022, "before_mb": 297, "peak_mb": 297}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_cost_analysis", "seconds": 0.035, "before_mb": 297, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_executable", "seconds": 0.037, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_in_tree_mismatch", "seconds": 0.023, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_memory_analysis", "seconds": 0.032, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::APITest::test_ad_weak_types_jacfwd", "seconds": 0.162, "before_mb": 271, "peak_mb": 275}
+{"nodeid": "tests/api_test.py::APITest::test_ad_weak_types_jacrev", "seconds": 0.005, "before_mb": 275, "peak_mb": 275}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_multi_arg", "seconds": 0.023, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_sharding_computation", "seconds": 0.012, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::APITest::test_arange_jit", "seconds": 0.027, "before_mb": 275, "peak_mb": 277}
+{"nodeid": "tests/api_test.py::APITest::test_asarray_no_copy_np", "seconds": 0.003, "before_mb": 277, "peak_mb": 277}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_trivial", "seconds": 0.011, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::APITest::test_backward_pass_ref_dropping", "seconds": 0.004, "before_mb": 277, "peak_mb": 277}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_trivial_in_tree_mismatch", "seconds": 0.012, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::APITest::test_bad_input", "seconds": 0.005, "before_mb": 277, "peak_mb": 277}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_trivial_multi_arg", "seconds": 0.014, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_vmap", "seconds": 0.048, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_with_compiler_options", "seconds": 0.022, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_with_compiler_options_invalid", "seconds": 0.014, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compile_with_individually_defined_outputs", "seconds": 0.003, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::APITest::test_basic_vjp3", "seconds": 0.111, "before_mb": 277, "peak_mb": 279}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_compiler_ir", "seconds": 0.009, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_cost_analysis", "seconds": 0.01, "before_mb": 299, "peak_mb": 299}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_donate_argnums_available", "seconds": 0.023, "before_mb": 299, "peak_mb": 300}
+{"nodeid": "tests/api_test.py::APITest::test_binop_mismatch", "seconds": 0.039, "before_mb": 279, "peak_mb": 279}
+{"nodeid": "tests/api_test.py::APITest::test_block_until_ready_function", "seconds": 0.013, "before_mb": 279, "peak_mb": 279}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_duck_typing", "seconds": 0.023, "before_mb": 300, "peak_mb": 300}
+{"nodeid": "tests/api_test.py::APITest::test_block_until_ready_mixed", "seconds": 0.005, "before_mb": 279, "peak_mb": 279}
+{"nodeid": "tests/api_test.py::APITest::test_block_until_ready_numpy_arrays", "seconds": 0.004, "before_mb": 279, "peak_mb": 279}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_no_pruning", "seconds": 0.06, "before_mb": 300, "peak_mb": 300}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_trivial_compile_compiler_ir", "seconds": 0.017, "before_mb": 300, "peak_mb": 300}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_lower_trivial_compiler_ir", "seconds": 0.006, "before_mb": 300, "peak_mb": 300}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_masked_array", "seconds": 0.008, "before_mb": 300, "peak_mb": 300}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning1", "seconds": 0.62, "before_mb": 280, "peak_mb": 296, "params": "(explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>, enable_x64=True)"}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_nan_times_zero", "seconds": 0.029, "before_mb": 300, "peak_mb": 301}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_nested_donate_ignored", "seconds": 0.055, "before_mb": 301, "peak_mb": 302}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_of_generator", "seconds": 0.005, "before_mb": 302, "peak_mb": 302}
+{"nodeid": "tests/api_test.py::JitTest::test_jit_of_noncallable", "seconds": 0.003, "before_mb": 302, "peak_mb": 302}
+{"nodeid": "tests/api_test.py::APITest::test_is_instance", "seconds": 0.062, "before_mb": 302, "peak_mb": 303}
+{"nodeid": "tests/api_test.py::APITest::test_is_subclass", "seconds": 0.003, "before_mb": 303, "peak_mb": 303}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning2", "seconds": 0.658, "before_mb": 296, "peak_mb": 308, "params": "(explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>, enable_x64=False)"}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning3", "seconds": 1.102, "before_mb": 308, "peak_mb": 324, "params": "(explicit_x64_dtypes=<ExplicitX64Mode.ALLOW: 3>, enable_x64=True)"}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning4", "seconds": 0.53, "before_mb": 324, "peak_mb": 335, "params": "(explicit_x64_dtypes=<ExplicitX64Mode.ERROR: 2>, enable_x64=False)"}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_are_thread_safe", "seconds": 2.443, "before_mb": 279, "peak_mb": 416}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_closure_convert", "seconds": 0.03, "before_mb": 415, "peak_mb": 417}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_compute_on", "seconds": 0.054, "before_mb": 417, "peak_mb": 418}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_custom_gradient", "seconds": 0.049, "before_mb": 418, "peak_mb": 418}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_custom_partitioning", "seconds": 0.047, "before_mb": 418, "peak_mb": 420}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_custom_vmap", "seconds": 0.005, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_first_miss", "seconds": 0.013, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_linear_call", "seconds": 0.047, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_multiple_changes", "seconds": 0.002, "before_mb": 420, "peak_mb": 420}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_new_function_in_loop", "seconds": 0.052, "before_mb": 420, "peak_mb": 422}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_no_source_info", "seconds": 0.029, "before_mb": 422, "peak_mb": 422}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_arg_passed_as_kwarg", "seconds": 0.002, "before_mb": 422, "peak_mb": 422}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_dtype", "seconds": 0.025, "before_mb": 422, "peak_mb": 422}
+{"nodeid": "tests/api_test.py::APITest::test_dtype_warning5", "seconds": 0.413, "before_mb": 335, "peak_mb": 345, "params": "(explicit_x64_dtypes=<ExplicitX64Mode.WARN: 1>, enable_x64=False)"}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_in_tree", "seconds": 0.024, "before_mb": 422, "peak_mb": 422}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_shape", "seconds": 0.064, "before_mb": 422, "peak_mb": 423}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_shape_explain_closest", "seconds": 0.003, "before_mb": 423, "peak_mb": 423}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_static_argnames", "seconds": 0.002, "before_mb": 423, "peak_mb": 423}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_static_argnums", "seconds": 0.002, "before_mb": 423, "peak_mb": 423}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_tracing_config", "seconds": 0.044, "before_mb": 423, "peak_mb": 423}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_other_weak_type", "seconds": 0.072, "before_mb": 423, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_dunder_jax_array", "seconds": 0.265, "before_mb": 345, "peak_mb": 352}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_run_state", "seconds": 0.06, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_run_state_reference", "seconds": 0.007, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_dunder_jax_array_bug", "seconds": 0.046, "before_mb": 352, "peak_mb": 353}
+{"nodeid": "tests/api_test.py::APITest::test_dunder_jax_array_warnings", "seconds": 0.02, "before_mb": 353, "peak_mb": 354}
+{"nodeid": "tests/api_test.py::APITest::test_cache_miss_explanations_skip_internals", "seconds": 0.074, "before_mb": 425, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_cast_int", "seconds": 0.004, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_casts", "seconds": 0.004, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_clear_cache", "seconds": 0.213, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_compiler_ir", "seconds": 0.012, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_complex_grad_raises_error", "seconds": 0.076, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_complex_input_jacfwd_raises_error", "seconds": 0.003, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_complex_output_jacrev_raises_error", "seconds": 0.003, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_compute_with_large_transfer", "seconds": 0.091, "before_mb": 427, "peak_mb": 432}
+{"nodeid": "tests/api_test.py::APITest::test_concurrent_device_get_and_put", "seconds": 0.192, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness23", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 1, 1, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness24", "seconds": 0.004, "before_mb": 429, "peak_mb": 429, "params": "(False, 1, 2, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness25", "seconds": 0.007, "before_mb": 429, "peak_mb": 429, "params": "(False, 1, 2, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_issue1372", "seconds": 3.544, "before_mb": 303, "peak_mb": 380}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness26", "seconds": 0.008, "before_mb": 429, "peak_mb": 429, "params": "(False, 1, 2, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness27", "seconds": 0.01, "before_mb": 429, "peak_mb": 429, "params": "(False, 1, 2, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness28", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 1, 3, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness29", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 1, 3, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness3", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 0, 0, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness30", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 1, 3, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness31", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 1, 3, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness32", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 0, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_ensure_compile_time_eval_no_leaks", "seconds": 0.704, "before_mb": 354, "peak_mb": 384}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness33", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 0, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness34", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 0, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_error_for_invalid_dtype", "seconds": 0.003, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness35", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 0, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness36", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 1, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness37", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 1, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness38", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 1, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness39", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 1, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracer_omnistaging", "seconds": 0.016, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness4", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 0, 1, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness40", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 2, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness41", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 2, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_issue_871", "seconds": 0.065, "before_mb": 380, "peak_mb": 381}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness42", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 2, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness43", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 2, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracer_omnistaging_top_trace", "seconds": 0.015, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness44", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 3, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness45", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 3, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness46", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 3, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness47", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 2, 3, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness48", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 0, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness49", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 0, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness5", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 0, 1, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness50", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 0, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness51", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 0, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness52", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 1, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness53", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 1, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness54", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 1, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness55", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 1, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracer_shape_dtype", "seconds": 0.036, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness56", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 2, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness57", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 2, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_cant_lift", "seconds": 0.005, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness58", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 2, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness59", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 2, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness6", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 0, 1, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_cant_lift_sublevels", "seconds": 0.013, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness60", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 3, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness61", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 3, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness62", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 3, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness63", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 3, 3, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness64", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 0, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_different_top_level_traces", "seconds": 0.019, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness65", "seconds": 0.005, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 0, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness66", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 0, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_incompatible_sublevel", "seconds": 0.004, "before_mb": 384, "peak_mb": 384}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness67", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 0, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness68", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 1, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness69", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 1, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_not_among_input_tracers", "seconds": 0.005, "before_mb": 384, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness7", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 0, 1, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_escaped_tracers_tracer_from_higher_level", "seconds": 0.002, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness70", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 1, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness71", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 1, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness72", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 2, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness73", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 2, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness74", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 2, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness75", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 2, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness76", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 3, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness77", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 3, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness78", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 3, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness79", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(True, 0, 3, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness8", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 0, 2, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness80", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 0, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness81", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 0, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_eval_context", "seconds": 0.04, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness82", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 0, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness83", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 0, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness84", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 1, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness85", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 1, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness86", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 1, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness87", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 1, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness88", "seconds": 0.003, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 2, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness89", "seconds": 0.006, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 2, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness9", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(False, 0, 2, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness90", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 2, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jacfwd_and_aux_basic", "seconds": 0.175, "before_mb": 381, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness91", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 2, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness92", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 3, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness93", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 3, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness94", "seconds": 0.004, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 3, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness95", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 1, 3, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape", "seconds": 0.053, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness96", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 2, 0, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_constants", "seconds": 0.004, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness97", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 2, 0, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness98", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 2, 0, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_duck_typing", "seconds": 0.004, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness99", "seconds": 0.002, "before_mb": 429, "peak_mb": 429, "params": "(True, 2, 0, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_duck_typing2", "seconds": 0.002, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_error_bad_output", "seconds": 0.003, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_nested_jit_sds", "seconds": 0.003, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_out_shardings", "seconds": 0.008, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_output_dict", "seconds": 0.025, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_grad_of_int", "seconds": 0.05, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jit_inline", "seconds": 0.006, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jit_inline_multistate", "seconds": 0.007, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_shape_error", "seconds": 0.026, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_trace_cache_share", "seconds": 0.011, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_tuple_itemgetting", "seconds": 0.004, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_item", "seconds": 0.034, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_tuple_unpacking", "seconds": 0.005, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_eval_shape_weak_type", "seconds": 0.003, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_fastpath_cache_confusion", "seconds": 0.029, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_jvp_of_int", "seconds": 0.036, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_fastpath_cache_confusion2", "seconds": 0.026, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_float0_error", "seconds": 0.013, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_float0_reshape", "seconds": 0.046, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_forwarding_bug", "seconds": 0.024, "before_mb": 385, "peak_mb": 385}
+{"nodeid": "tests/api_test.py::APITest::test_jit_negative_static_argnums", "seconds": 0.145, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jit_of_grad", "seconds": 0.035, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jit_returning_token", "seconds": 0.015, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jit_vjp_of_int", "seconds": 0.013, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jacfwd_and_aux_nested", "seconds": 0.388, "before_mb": 385, "peak_mb": 393}
+{"nodeid": "tests/api_test.py::APITest::test_jacfwd_of_complex_errors", "seconds": 0.002, "before_mb": 393, "peak_mb": 393}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_and_aux_basic", "seconds": 0.071, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_asarray_returns_array", "seconds": 0.003, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_jit_cached", "seconds": 0.044, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_mismatched_arguments", "seconds": 0.03, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_non_tuple_arguments", "seconds": 0.004, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_frexp_sharded", "seconds": 0.258, "before_mb": 385, "peak_mb": 388}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_of_convert_element_type", "seconds": 0.054, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_of_int_add", "seconds": 0.004, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jvp_of_int_identity", "seconds": 0.003, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd", "seconds": 0.075, "before_mb": 388, "peak_mb": 396}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd_kwargs0", "seconds": 0.152, "before_mb": 396, "peak_mb": 400, "params": "(has_aux=True, jitted=False)"}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd_kwargs1", "seconds": 0.066, "before_mb": 400, "peak_mb": 402, "params": "(has_aux=True, jitted=True)"}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd_kwargs2", "seconds": 0.009, "before_mb": 402, "peak_mb": 402, "params": "(has_aux=False, jitted=False)"}
+{"nodeid": "tests/api_test.py::APITest::test_fwd_and_bwd_kwargs3", "seconds": 0.064, "before_mb": 402, "peak_mb": 402, "params": "(has_aux=False, jitted=True)"}
+{"nodeid": "tests/api_test.py::APITest::test_jacobian", "seconds": 0.533, "before_mb": 393, "peak_mb": 406}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_basic", "seconds": 0.071, "before_mb": 402, "peak_mb": 403}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_constant", "seconds": 0.01, "before_mb": 403, "peak_mb": 403}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_error", "seconds": 0.005, "before_mb": 403, "peak_mb": 403}
+{"nodeid": "tests/api_test.py::APITest::test_large_device_constant", "seconds": 0.583, "before_mb": 429, "peak_mb": 530}
+{"nodeid": "tests/api_test.py::APITest::test_large_python_ints", "seconds": 0.005, "before_mb": 439, "peak_mb": 439}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_nested", "seconds": 0.275, "before_mb": 403, "peak_mb": 407}
+{"nodeid": "tests/api_test.py::APITest::test_grad_and_aux_no_tracers", "seconds": 0.027, "before_mb": 407, "peak_mb": 407}
+{"nodeid": "tests/api_test.py::APITest::test_grad_argnums", "seconds": 0.135, "before_mb": 407, "peak_mb": 411}
+{"nodeid": "tests/api_test.py::APITest::test_grad_bad_input", "seconds": 0.003, "before_mb": 411, "peak_mb": 411}
+{"nodeid": "tests/api_test.py::APITest::test_grad_complex_result_errors", "seconds": 0.026, "before_mb": 411, "peak_mb": 411}
+{"nodeid": "tests/api_test.py::APITest::test_grad_conj_symbolic_zeros", "seconds": 0.052, "before_mb": 411, "peak_mb": 412}
+{"nodeid": "tests/api_test.py::APITest::test_grad_does_not_unflatten_tree_with_none", "seconds": 0.005, "before_mb": 412, "peak_mb": 412}
+{"nodeid": "tests/api_test.py::APITest::test_grad_item", "seconds": 0.046, "before_mb": 412, "peak_mb": 413}
+{"nodeid": "tests/api_test.py::APITest::test_jacobian_on_pytrees", "seconds": 0.688, "before_mb": 406, "peak_mb": 422}
+{"nodeid": "tests/api_test.py::APITest::test_jacrev_and_aux_basic", "seconds": 0.012, "before_mb": 422, "peak_mb": 422}
+{"nodeid": "tests/api_test.py::APITest::test_grad_negative_argnums", "seconds": 0.337, "before_mb": 413, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_grad_nonscalar_output", "seconds": 0.003, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_jacrev_and_aux_nested", "seconds": 0.329, "before_mb": 422, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_grad_nonscalar_output_hint", "seconds": 0.05, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_grad_object_array_error", "seconds": 0.003, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_bool", "seconds": 0.018, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_lax_empty_batching_bug", "seconds": 0.803, "before_mb": 439, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_bool_vjp3", "seconds": 0.014, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_jit_boundmethod_reference_cycle", "seconds": 0.061, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_int", "seconds": 0.003, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_int_errors", "seconds": 0.003, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_lax_empty_vmap", "seconds": 0.026, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_lax_logistic", "seconds": 0.002, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_jit_capturing_token", "seconds": 0.036, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_lax_real_empty", "seconds": 0.03, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_int_index", "seconds": 0.063, "before_mb": 425, "peak_mb": 426}
+{"nodeid": "tests/api_test.py::APITest::test_jit_compilation_time_logging", "seconds": 0.049, "before_mb": 425, "peak_mb": 425}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_jit", "seconds": 0.054, "before_mb": 426, "peak_mb": 426}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positive_custom_jvp", "seconds": 0.088, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_jit_custom_floats_bfloat16", "seconds": 0.068, "before_mb": 425, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness0", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(False, 0, 0, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness1", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(False, 0, 0, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness10", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(False, 0, 2, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness100", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 1, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness101", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 1, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness102", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 1, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness103", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 1, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness104", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 2, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness105", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 2, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness106", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 2, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness107", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 2, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness108", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 3, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness109", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 3, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness11", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(False, 0, 2, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives", "seconds": 0.078, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_jit_compilation_caching", "seconds": 0.089, "before_mb": 426, "peak_mb": 428}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness110", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 3, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness111", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 2, 3, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness112", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 0, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness113", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 0, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness114", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 0, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness115", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 0, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness116", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 1, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness117", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 1, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness118", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 1, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness119", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 1, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness12", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(False, 0, 3, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness120", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 2, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness121", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 2, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness122", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 2, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_remat3_jit", "seconds": 0.05, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness123", "seconds": 0.004, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 2, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness124", "seconds": 0.007, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 3, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness125", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 3, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness126", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 3, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness127", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(True, 3, 3, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness13", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(False, 0, 3, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_jit_compilation_caching2", "seconds": 0.073, "before_mb": 428, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness14", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(False, 0, 3, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness15", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(False, 0, 3, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness16", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(False, 1, 0, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness17", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(False, 1, 0, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness18", "seconds": 0.004, "before_mb": 427, "peak_mb": 427, "params": "(False, 1, 0, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness19", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(False, 1, 0, 3)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness2", "seconds": 0.004, "before_mb": 427, "peak_mb": 427, "params": "(False, 0, 0, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness20", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(False, 1, 1, 0)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness21", "seconds": 0.003, "before_mb": 427, "peak_mb": 427, "params": "(False, 1, 1, 1)"}
+{"nodeid": "tests/api_test.py::APITest::test_jit_forwarding_correctness22", "seconds": 0.002, "before_mb": 427, "peak_mb": 427, "params": "(False, 1, 1, 2)"}
+{"nodeid": "tests/api_test.py::APITest::test_traced_effects", "seconds": 0.015, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_grad_of_token_consuming_primitive", "seconds": 0.053, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_traced_with_consts_as_arg_cache_hit", "seconds": 0.004, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_grad_tuple_output", "seconds": 0.003, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_tree_map_rest_prefix_err", "seconds": 0.002, "before_mb": 427, "peak_mb": 427}
+{"nodeid": "tests/api_test.py::APITest::test_grad_unit_output", "seconds": 0.004, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_grad_without_enough_args_error_message", "seconds": 0.004, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_grad_wrap_grad", "seconds": 0.024, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_trivial_computations", "seconds": 0.035, "before_mb": 427, "peak_mb": 428}
+{"nodeid": "tests/api_test.py::APITest::test_unimplemented_interpreter_rules", "seconds": 0.018, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/api_test.py::APITest::test_unwrapped_numpy", "seconds": 0.003, "before_mb": 428, "peak_mb": 428}
+{"nodeid": "tests/api_test.py::APITest::test_grad_wrap_jacfwd", "seconds": 0.031, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_remat3_scan_transpose", "seconds": 0.171, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_grad_wrap_jacref", "seconds": 0.026, "before_mb": 429, "peak_mb": 429}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_scan", "seconds": 0.026, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_scan_jvp", "seconds": 0.016, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_grad_wrt_ref_arg_error", "seconds": 0.056, "before_mb": 429, "peak_mb": 431}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_scan_vmap", "seconds": 0.026, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_avoids_false_positives_scan_vmap_2", "seconds": 0.012, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_grad_leak", "seconds": 0.002, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_use_direct_linearize", "seconds": 0.209, "before_mb": 428, "peak_mb": 433}
+{"nodeid": "tests/api_test.py::APITest::test_user_context_global", "seconds": 0.002, "before_mb": 433, "peak_mb": 433}
+{"nodeid": "tests/api_test.py::APITest::test_user_trace_context_hooks", "seconds": 0.047, "before_mb": 433, "peak_mb": 433}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_jit_leak", "seconds": 0.199, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_value_and_grad_argnums", "seconds": 0.183, "before_mb": 433, "peak_mb": 438}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_dont_want", "seconds": 0.149, "before_mb": 438, "peak_mb": 441}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_pmap_leak", "seconds": 0.278, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_hessian", "seconds": 0.551, "before_mb": 431, "peak_mb": 445}
+{"nodeid": "tests/api_test.py::APITest::test_hessian_aux", "seconds": 0.011, "before_mb": 445, "peak_mb": 446}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_dont_want_bilinear", "seconds": 0.086, "before_mb": 441, "peak_mb": 444}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_scan_leak", "seconds": 0.112, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_ref_arg_needs_with_refs_errors", "seconds": 0.113, "before_mb": 444, "peak_mb": 446}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_a_sublevel_leak", "seconds": 0.183, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_with_refs_aval_mismatch_errors", "seconds": 0.128, "before_mb": 446, "peak_mb": 448}
+{"nodeid": "tests/api_test.py::APITest::test_vjp3_with_refs_tree_errors", "seconds": 0.029, "before_mb": 448, "peak_mb": 449}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_bad_cotangent_shape", "seconds": 0.036, "before_mb": 449, "peak_mb": 449}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_fun_jit", "seconds": 0.059, "before_mb": 449, "peak_mb": 450}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_mismatched_arguments", "seconds": 0.029, "before_mb": 450, "peak_mb": 451}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_multiple_arguments_error_message", "seconds": 0.002, "before_mb": 451, "peak_mb": 451}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_of_int_fulllike", "seconds": 0.032, "before_mb": 451, "peak_mb": 451}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_catches_linearize_tracer_escape", "seconds": 0.239, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_of_int_index", "seconds": 0.094, "before_mb": 451, "peak_mb": 453}
+{"nodeid": "tests/api_test.py::APITest::test_hessian_holomorphic", "seconds": 0.562, "before_mb": 446, "peak_mb": 460}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_of_int_shapes", "seconds": 0.035, "before_mb": 453, "peak_mb": 454}
+{"nodeid": "tests/api_test.py::APITest::test_vjp_too_many_args", "seconds": 0.002, "before_mb": 454, "peak_mb": 454}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_internal_error", "seconds": 0.258, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_reference_chain", "seconds": 0.319, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_hessian_on_pytrees", "seconds": 0.546, "before_mb": 460, "peak_mb": 475}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_remat3_linearize_zero_tangent_output", "seconds": 0.103, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_remat3_zero_tangent_output_stays_concrete", "seconds": 0.05, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_leak_checker_reports_frame_locals", "seconds": 0.072, "before_mb": 440, "peak_mb": 440}
+{"nodeid": "tests/api_test.py::APITest::test_heterogeneous_grad", "seconds": 0.19, "before_mb": 475, "peak_mb": 477}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_caching", "seconds": 0.728, "before_mb": 454, "peak_mb": 471}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_empty_arguments", "seconds": 0.003, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_explicit_axis_size_mismatch", "seconds": 0.042, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_bool_error", "seconds": 0.004, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_leaf_types", "seconds": 0.007, "before_mb": 471, "peak_mb": 471}
+{"nodeid": "tests/api_test.py::APITest::test_leaked_tracer_issue_7613", "seconds": 0.126, "before_mb": 440, "peak_mb": 447}
+{"nodeid": "tests/api_test.py::APITest::test_legacy_devicearray_repr", "seconds": 0.002, "before_mb": 447, "peak_mb": 447}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_list", "seconds": 0.103, "before_mb": 471, "peak_mb": 473}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_abstract", "seconds": 0.074, "before_mb": 447, "peak_mb": 447}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_non_tuple_error", "seconds": 0.003, "before_mb": 473, "peak_mb": 473}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_tree_prefix_error", "seconds": 0.008, "before_mb": 473, "peak_mb": 473}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_tuple_with_kwargs_error", "seconds": 0.012, "before_mb": 473, "peak_mb": 473}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_complex", "seconds": 0.051, "before_mb": 447, "peak_mb": 447}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_tuple_with_kwonly_error", "seconds": 0.052, "before_mb": 473, "peak_mb": 475}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_dce", "seconds": 0.037, "before_mb": 447, "peak_mb": 447}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_in_axes_wrong_length_tuple_error", "seconds": 0.024, "before_mb": 475, "peak_mb": 475}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_inconsistent_sizes_constructs_proper_error_message", "seconds": 0.003, "before_mb": 475, "peak_mb": 475}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_error", "seconds": 0.035, "before_mb": 447, "peak_mb": 447}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_inconsistent_sizes_constructs_proper_error_message_kwargs", "seconds": 0.021, "before_mb": 475, "peak_mb": 475}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_inconsistent_sizes_constructs_proper_error_message_starargs", "seconds": 0.003, "before_mb": 475, "peak_mb": 475}
+{"nodeid": "tests/api_test.py::APITest::test_heterogeneous_jacfwd", "seconds": 0.343, "before_mb": 477, "peak_mb": 486}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_make_jaxpr_close_over_tracer", "seconds": 0.055, "before_mb": 475, "peak_mb": 476}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_mismatched_axis_sizes_error_message_issue_705", "seconds": 0.008, "before_mb": 476, "peak_mb": 476}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float00", "seconds": 0.078, "before_mb": 447, "peak_mb": 448, "params": "(jit=False, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_mismatched_keyword", "seconds": 0.016, "before_mb": 476, "peak_mb": 477}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_out_axes_leaf_types", "seconds": 0.003, "before_mb": 477, "peak_mb": 477}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_preserves_docstr", "seconds": 0.002, "before_mb": 477, "peak_mb": 477}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_scalar", "seconds": 0.004, "before_mb": 477, "peak_mb": 477}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float01", "seconds": 0.042, "before_mb": 448, "peak_mb": 448, "params": "(jit=False, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float02", "seconds": 0.038, "before_mb": 448, "peak_mb": 449, "params": "(jit=False, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_structured_in_axes", "seconds": 0.066, "before_mb": 477, "peak_mb": 479}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_unbatched_object_passthrough_issue_183", "seconds": 0.042, "before_mb": 479, "peak_mb": 479}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float03", "seconds": 0.06, "before_mb": 449, "peak_mb": 453, "params": "(jit=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/api_test.py::APITest::test_vmap_unmapped_last", "seconds": 0.033, "before_mb": 479, "peak_mb": 480}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float04", "seconds": 0.057, "before_mb": 453, "peak_mb": 453, "params": "(jit=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/api_test.py::APITest::test_while_jvp_debug_info_crash", "seconds": 0.089, "before_mb": 480, "peak_mb": 481}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float05", "seconds": 0.059, "before_mb": 453, "peak_mb": 453, "params": "(jit=True, dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_only0", "seconds": 0.004, "before_mb": 453, "peak_mb": 453, "params": "(False)"}
+{"nodeid": "tests/api_test.py::APITest::test_heterogeneous_jacrev", "seconds": 0.352, "before_mb": 486, "peak_mb": 495}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_only1", "seconds": 0.029, "before_mb": 453, "peak_mb": 453, "params": "(True)"}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_zero_map0", "seconds": 0.004, "before_mb": 453, "peak_mb": 453, "params": "(jit=False, float0_input=False)"}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_zero_map1", "seconds": 0.004, "before_mb": 453, "peak_mb": 453, "params": "(jit=False, float0_input=True)"}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_zero_map2", "seconds": 0.034, "before_mb": 453, "peak_mb": 453, "params": "(jit=True, float0_input=False)"}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_float0_zero_map3", "seconds": 0.028, "before_mb": 453, "peak_mb": 453, "params": "(jit=True, float0_input=True)"}
+{"nodeid": "tests/api_test.py::APITest::test_why_alive_ref_chain_ending_in_frame_local", "seconds": 0.125, "before_mb": 481, "peak_mb": 481}
+{"nodeid": "tests/api_test.py::APITest::test_wrong_output_abstract_eval", "seconds": 0.004, "before_mb": 481, "peak_mb": 481}
+{"nodeid": "tests/api_test.py::APITest::test_xla_constant_dedup", "seconds": 0.002, "before_mb": 481, "peak_mb": 481}
+{"nodeid": "tests/api_test.py::APITest::test_holomorphic_grad", "seconds": 0.115, "before_mb": 495, "peak_mb": 497}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_fun_jit", "seconds": 0.034, "before_mb": 453, "peak_mb": 453}
+{"nodeid": "tests/api_test.py::APITest::test_holomorphic_grad_of_float_errors", "seconds": 0.004, "before_mb": 497, "peak_mb": 497}
+{"nodeid": "tests/api_test.py::APITest::test_holomorphic_jacfwd_of_float_errors", "seconds": 0.003, "before_mb": 497, "peak_mb": 497}
+{"nodeid": "tests/api_test.py::APITest::test_holomorphic_jacrev_of_float_errors", "seconds": 0.003, "before_mb": 497, "peak_mb": 497}
+{"nodeid": "tests/api_test.py::APITest::test_implicit_dce_linearize_jaxpr", "seconds": 0.002, "before_mb": 497, "peak_mb": 497}
+{"nodeid": "tests/api_test.py::RematTest::test_checkpoint_dropvars", "seconds": 0.036, "before_mb": 481, "peak_mb": 482}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_integer", "seconds": 0.035, "before_mb": 453, "peak_mb": 453}
+{"nodeid": "tests/api_test.py::APITest::test_linear_transpose_zeros", "seconds": 0.003, "before_mb": 453, "peak_mb": 453}
+{"nodeid": "tests/api_test.py::RematTest::test_checkpoint_dropvars_new", "seconds": 0.037, "before_mb": 482, "peak_mb": 482}
+{"nodeid": "tests/api_test.py::RematTest::test_checkpoint_dropvars_policy", "seconds": 0.039, "before_mb": 482, "peak_mb": 483}
+{"nodeid": "tests/api_test.py::APITest::test_inline_optimized_hlo", "seconds": 0.101, "before_mb": 497, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::APITest::test_inline_return_twice", "seconds": 0.006, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::APITest::test_linearize_aux", "seconds": 0.09, "before_mb": 453, "peak_mb": 453}
+{"nodeid": "tests/api_test.py::APITest::test_inlined_literals_with_error", "seconds": 0.005, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::APITest::test_linearize_aval_error", "seconds": 0.005, "before_mb": 453, "peak_mb": 453}
+{"nodeid": "tests/api_test.py::APITest::test_inner_jit_forwarded_consts_stay_const", "seconds": 0.003, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::APITest::test_linearize_fun_jit", "seconds": 0.037, "before_mb": 453, "peak_mb": 454}
+{"nodeid": "tests/api_test.py::APITest::test_inner_jit_function_retracing", "seconds": 0.078, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::RematTest::test_name_pytree", "seconds": 0.041, "before_mb": 454, "peak_mb": 454}
+{"nodeid": "tests/api_test.py::APITest::test_internal_device_put_assembled", "seconds": 0.006, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::RematTest::test_name_saveable_input", "seconds": 0.011, "before_mb": 454, "peak_mb": 454}
+{"nodeid": "tests/api_test.py::APITest::test_internal_device_put_with_device", "seconds": 0.034, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::APITest::test_invalid_value_device_put", "seconds": 0.021, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::RematTest::test_checkpoint_name_vmap", "seconds": 0.2, "before_mb": 483, "peak_mb": 486}
+{"nodeid": "tests/api_test.py::RematTest::test_concreteness_error_includes_user_code", "seconds": 0.005, "before_mb": 486, "peak_mb": 486}
+{"nodeid": "tests/api_test.py::APITest::test_linearize_instantiates_zero_outputs", "seconds": 0.026, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::RematTest::test_concreteness_error_includes_user_code_with_static_argnums", "seconds": 0.004, "before_mb": 486, "peak_mb": 486}
+{"nodeid": "tests/api_test.py::APITest::test_list_index_err", "seconds": 0.012, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::APITest::test_lowering_platform_aot", "seconds": 0.004, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::APITest::test_make_jaxpr_deduplicates_consts", "seconds": 0.003, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::APITest::test_make_jaxpr_name", "seconds": 0.002, "before_mb": 498, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::APITest::test_make_jaxpr_static_argnums_order", "seconds": 0.024, "before_mb": 498, "peak_mb": 499}
+{"nodeid": "tests/api_test.py::APITest::test_make_jaxpr_weakref", "seconds": 0.006, "before_mb": 499, "peak_mb": 499}
+{"nodeid": "tests/api_test.py::APITest::test_mesh_creation_error_message", "seconds": 0.007, "before_mb": 499, "peak_mb": 499}
+{"nodeid": "tests/api_test.py::APITest::test_namedtuple_subclass_transparency", "seconds": 0.031, "before_mb": 499, "peak_mb": 500}
+{"nodeid": "tests/api_test.py::RematTest::test_const_in_jvp_cond", "seconds": 0.176, "before_mb": 486, "peak_mb": 489}
+{"nodeid": "tests/api_test.py::RematTest::test_name_stack_annotation", "seconds": 0.296, "before_mb": 454, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::APITest::test_namedtuple_transparency", "seconds": 0.115, "before_mb": 500, "peak_mb": 502}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_on_primals", "seconds": 0.019, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::APITest::test_nested_jit_hoisting", "seconds": 0.03, "before_mb": 502, "peak_mb": 502}
+{"nodeid": "tests/api_test.py::APITest::test_no_double_dots_in_error_message", "seconds": 0.004, "before_mb": 502, "peak_mb": 502}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_on_primals_new", "seconds": 0.019, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::APITest::test_none_in_sds_shape_error", "seconds": 0.003, "before_mb": 502, "peak_mb": 502}
+{"nodeid": "tests/api_test.py::RematTest::test_const_in_jvp_cond_new", "seconds": 0.095, "before_mb": 489, "peak_mb": 492}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_on_primals_policy", "seconds": 0.017, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_with_prevent_cse_false", "seconds": 0.02, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::RematTest::test_no_cse_widget_with_prevent_cse_false_new", "seconds": 0.016, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_basic", "seconds": 0.029, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_basic_policy", "seconds": 0.006, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::RematTest::test_const_in_jvp_scan", "seconds": 0.078, "before_mb": 492, "peak_mb": 492}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_binomial_checkpointing", "seconds": 0.064, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::RematTest::test_const_in_jvp_scan_new", "seconds": 0.072, "before_mb": 492, "peak_mb": 494}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_binomial_checkpointing_new", "seconds": 0.022, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::RematTest::test_constants_not_hoisted", "seconds": 0.019, "before_mb": 494, "peak_mb": 494}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_binomial_checkpointing_policy", "seconds": 0.019, "before_mb": 462, "peak_mb": 462}
+{"nodeid": "tests/api_test.py::APITest::test_nonholomorphic_grad", "seconds": 0.204, "before_mb": 502, "peak_mb": 505}
+{"nodeid": "tests/api_test.py::RematTest::test_dce_keeps_effectful_remat_with_no_used_outputs_remat", "seconds": 0.055, "before_mb": 494, "peak_mb": 494}
+{"nodeid": "tests/api_test.py::RematTest::test_dce_keeps_effectful_remat_with_no_used_outputs_remat3", "seconds": 0.028, "before_mb": 494, "peak_mb": 494}
+{"nodeid": "tests/api_test.py::RematTest::test_dce_keeps_eqns_with_used_outputs_but_no_used_inputs", "seconds": 0.067, "before_mb": 494, "peak_mb": 496}
+{"nodeid": "tests/api_test.py::RematTest::test_escaped_tracer_remat", "seconds": 0.005, "before_mb": 496, "peak_mb": 496}
+{"nodeid": "tests/api_test.py::RematTest::test_escaped_tracer_remat_new", "seconds": 0.004, "before_mb": 496, "peak_mb": 496}
+{"nodeid": "tests/api_test.py::RematTest::test_escaped_tracer_remat_policy", "seconds": 0.004, "before_mb": 496, "peak_mb": 496}
+{"nodeid": "tests/api_test.py::RematTest::test_excess_precision_hell", "seconds": 0.362, "before_mb": 496, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::APITest::test_nonholomorphic_jacrev", "seconds": 0.518, "before_mb": 505, "peak_mb": 514}
+{"nodeid": "tests/api_test.py::APITest::test_num_cpu_devices_called_after_initialization", "seconds": 0.008, "before_mb": 514, "peak_mb": 514}
+{"nodeid": "tests/api_test.py::APITest::test_pmap_empty_arguments", "seconds": 0.003, "before_mb": 514, "peak_mb": 514}
+{"nodeid": "tests/api_test.py::RematTest::test_fwd_caching", "seconds": 0.061, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_fwd_caching_static_argnums", "seconds": 0.033, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_linearize_caching", "seconds": 0.05, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_name_allowlist", "seconds": 0.018, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_name_denylist", "seconds": 0.018, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_freevars", "seconds": 0.207, "before_mb": 504, "peak_mb": 505}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_freevars_policy", "seconds": 0.012, "before_mb": 505, "peak_mb": 505}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_grad_accum_refs", "seconds": 0.108, "before_mb": 505, "peak_mb": 507}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_grad_python_control_flow_static_argnums", "seconds": 0.002, "before_mb": 507, "peak_mb": 507}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_grad_python_control_flow_unhashable_static_argnums", "seconds": 0.002, "before_mb": 507, "peak_mb": 507}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_ad_preserves_remat_primitive_basic", "seconds": 0.2, "before_mb": 507, "peak_mb": 510}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_inside_cond", "seconds": 1.611, "before_mb": 462, "peak_mb": 482}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_ad_preserves_remat_primitive_cond", "seconds": 0.467, "before_mb": 510, "peak_mb": 519}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_autodiff", "seconds": 0.025, "before_mb": 519, "peak_mb": 519}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_autodiff_new", "seconds": 0.019, "before_mb": 519, "peak_mb": 519}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_higher_order_autodiff_policy", "seconds": 0.021, "before_mb": 519, "peak_mb": 519}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit", "seconds": 0.092, "before_mb": 519, "peak_mb": 519}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit2", "seconds": 0.028, "before_mb": 519, "peak_mb": 519}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit2_new", "seconds": 0.023, "before_mb": 519, "peak_mb": 519}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit2_policy", "seconds": 0.025, "before_mb": 519, "peak_mb": 520}
+{"nodeid": "tests/api_test.py::APITest::test_pmap_global_cache", "seconds": 1.676, "before_mb": 514, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::APITest::test_pmap_in_axes_bool_error", "seconds": 0.003, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::APITest::test_pmap_static_kwarg_error_message", "seconds": 0.02, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit3", "seconds": 0.39, "before_mb": 520, "peak_mb": 529}
+{"nodeid": "tests/api_test.py::APITest::test_primitive_compilation_cache", "seconds": 0.177, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::APITest::test_range_err", "seconds": 0.032, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit3_new", "seconds": 0.135, "before_mb": 529, "peak_mb": 530}
+{"nodeid": "tests/api_test.py::APITest::test_rank_promotion_forces_retrace", "seconds": 0.157, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit3_policy", "seconds": 0.128, "before_mb": 530, "peak_mb": 530}
+{"nodeid": "tests/api_test.py::APITest::test_remat_of_jit_input_to_output_forwarding", "seconds": 0.01, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_returned_non_jaxtype", "seconds": 0.005, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit_new", "seconds": 0.104, "before_mb": 530, "peak_mb": 530}
+{"nodeid": "tests/api_test.py::APITest::test_scalar_conversion_errors", "seconds": 0.09, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct0", "seconds": 0.003, "before_mb": 558, "peak_mb": 558, "params": "(1)"}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct1", "seconds": 0.003, "before_mb": 558, "peak_mb": 558, "params": "(2)"}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct2", "seconds": 0.002, "before_mb": 558, "peak_mb": 558, "params": "(3)"}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_dtype_none", "seconds": 0.002, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_hash", "seconds": 0.002, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_invalid_shape", "seconds": 0.003, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_non_jax_dtypes", "seconds": 0.002, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_shape_dtype_struct_scalar", "seconds": 0.002, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_sharding_attr_on_tracer_error", "seconds": 0.057, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit_policy", "seconds": 0.104, "before_mb": 530, "peak_mb": 530}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_jit_static_argnum_omnistaging", "seconds": 0.039, "before_mb": 530, "peak_mb": 530}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_no_redundant_flops", "seconds": 0.058, "before_mb": 530, "peak_mb": 530}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_no_redundant_flops_new", "seconds": 0.06, "before_mb": 530, "peak_mb": 530}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_no_redundant_flops_policy", "seconds": 0.056, "before_mb": 530, "peak_mb": 530}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_inside_scan", "seconds": 1.456, "before_mb": 481, "peak_mb": 482}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_nontrivial_env", "seconds": 0.182, "before_mb": 530, "peak_mb": 532}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_nontrivial_env_new", "seconds": 0.053, "before_mb": 532, "peak_mb": 532}
+{"nodeid": "tests/api_test.py::APITest::test_std_basis", "seconds": 0.727, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_deduped_by_jit", "seconds": 0.137, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_deduped_by_scan", "seconds": 0.266, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond", "seconds": 0.889, "before_mb": 532, "peak_mb": 547}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_jit_old_remat", "seconds": 1.226, "before_mb": 482, "peak_mb": 484}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_deduped_by_shard_map", "seconds": 0.339, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_input_forwarded_by_jit", "seconds": 0.058, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_structured_residuals_input_forwarded_by_scan", "seconds": 0.089, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_switch_value_jit", "seconds": 0.076, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::APITest::test_traced_closure_convert", "seconds": 0.048, "before_mb": 558, "peak_mb": 558}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_new_remat", "seconds": 0.325, "before_mb": 484, "peak_mb": 484}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_old_remat", "seconds": 0.125, "before_mb": 484, "peak_mb": 484}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_layered_outermost_policy_wins", "seconds": 0.542, "before_mb": 558, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_offload_names_in_fwd_jaxpr", "seconds": 0.051, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_saved_residual_is_vjp_pytree_leaf", "seconds": 0.211, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_with_checkpoint_name_in_fwd", "seconds": 0.519, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_outside_cond", "seconds": 1.41, "before_mb": 484, "peak_mb": 498}
+{"nodeid": "tests/api_test.py::Remat3Test::test_custom_vjp_with_checkpoint_name_in_fwd_static_argnums", "seconds": 0.304, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_dce_keeps_effectful_remat_with_no_used_outputs_remat", "seconds": 0.077, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_dce_keeps_effectful_remat_with_no_used_outputs_remat3", "seconds": 0.029, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_dce_keeps_eqns_with_used_outputs_but_no_used_inputs", "seconds": 0.066, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond_funky_custom_jvp", "seconds": 2.237, "before_mb": 547, "peak_mb": 585}
+{"nodeid": "tests/api_test.py::Remat3Test::test_defremat_nested_remat", "seconds": 0.046, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_escaped_tracer_remat", "seconds": 0.009, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_escaped_tracer_remat_new", "seconds": 0.005, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_escaped_tracer_remat_policy", "seconds": 0.005, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_excess_precision_hell", "seconds": 0.336, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_fwd_caching", "seconds": 0.067, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_fwd_caching_static_argnums", "seconds": 0.033, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_linearize_caching", "seconds": 0.058, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_allowlist", "seconds": 0.026, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_denylist", "seconds": 0.024, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_pytree", "seconds": 0.031, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_saveable_input", "seconds": 0.008, "before_mb": 559, "peak_mb": 559}
+{"nodeid": "tests/api_test.py::Remat3Test::test_name_stack_annotation", "seconds": 0.318, "before_mb": 559, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_on_primals", "seconds": 0.018, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_on_primals_new", "seconds": 0.018, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_on_primals_policy", "seconds": 0.016, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_with_prevent_cse_false", "seconds": 0.016, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_no_cse_widget_with_prevent_cse_false_new", "seconds": 0.019, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_basic", "seconds": 0.048, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_basic_policy", "seconds": 0.007, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_binomial_checkpointing", "seconds": 0.104, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_binomial_checkpointing_new", "seconds": 0.016, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_binomial_checkpointing_policy", "seconds": 0.018, "before_mb": 560, "peak_mb": 560}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_outside_scan", "seconds": 1.592, "before_mb": 497, "peak_mb": 497}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_saves_convs", "seconds": 0.848, "before_mb": 497, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond_funky_custom_jvp2", "seconds": 2.193, "before_mb": 585, "peak_mb": 630}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims2_new_remat", "seconds": 0.49, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims2_old_remat", "seconds": 0.148, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims_new_remat", "seconds": 0.132, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_inside_cond", "seconds": 1.741, "before_mb": 560, "peak_mb": 564}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond_new", "seconds": 0.85, "before_mb": 630, "peak_mb": 646}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims_old_remat", "seconds": 0.128, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_checkpoint_dots_with_no_batch_dims_skips_convs", "seconds": 0.138, "before_mb": 504, "peak_mb": 504}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_symbolic_zeros_new", "seconds": 0.474, "before_mb": 646, "peak_mb": 651}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap", "seconds": 0.329, "before_mb": 651, "peak_mb": 657}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_new", "seconds": 0.016, "before_mb": 657, "peak_mb": 657}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_not_leading_dim", "seconds": 0.059, "before_mb": 657, "peak_mb": 659}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_not_leading_dim_new", "seconds": 0.005, "before_mb": 659, "peak_mb": 659}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_not_leading_dim_policy", "seconds": 0.004, "before_mb": 659, "peak_mb": 659}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_vmap_policy", "seconds": 0.017, "before_mb": 659, "peak_mb": 659}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_wrapped_kwarg_with_static_argnums", "seconds": 0.008, "before_mb": 659, "peak_mb": 659}
+{"nodeid": "tests/api_test.py::RematTest::test_saved_residuals_utility", "seconds": 0.007, "before_mb": 659, "peak_mb": 659}
+{"nodeid": "tests/api_test.py::RematTest::test_saved_residuals_utility_jit", "seconds": 0.01, "before_mb": 659, "peak_mb": 659}
+{"nodeid": "tests/api_test.py::RematTest::test_vjp_caching", "seconds": 0.064, "before_mb": 659, "peak_mb": 660}
+{"nodeid": "tests/api_test.py::RematTest::test_vjp_caching_static_argnums", "seconds": 0.064, "before_mb": 660, "peak_mb": 661}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_dropvars", "seconds": 0.05, "before_mb": 661, "peak_mb": 661}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_dropvars_new", "seconds": 0.031, "before_mb": 661, "peak_mb": 663}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_dropvars_policy", "seconds": 0.025, "before_mb": 663, "peak_mb": 663}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_inside_scan", "seconds": 1.483, "before_mb": 564, "peak_mb": 565}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_name_combined_policy", "seconds": 0.543, "before_mb": 663, "peak_mb": 674}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_jvp_linear_policy", "seconds": 1.765, "before_mb": 504, "peak_mb": 528}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_name_vmap", "seconds": 0.313, "before_mb": 674, "peak_mb": 681}
+{"nodeid": "tests/api_test.py::Remat3Test::test_checkpoint_name_zero_tangent_residuals", "seconds": 0.388, "before_mb": 681, "peak_mb": 689}
+{"nodeid": "tests/api_test.py::Remat3Test::test_concreteness_error_includes_user_code", "seconds": 0.013, "before_mb": 689, "peak_mb": 689}
+{"nodeid": "tests/api_test.py::Remat3Test::test_concreteness_error_includes_user_code_with_static_argnums", "seconds": 0.008, "before_mb": 689, "peak_mb": 689}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_jit_old_remat", "seconds": 1.158, "before_mb": 565, "peak_mb": 566}
+{"nodeid": "tests/api_test.py::Remat3Test::test_const_in_jvp_cond", "seconds": 0.164, "before_mb": 689, "peak_mb": 693}
+{"nodeid": "tests/api_test.py::Remat3Test::test_const_in_jvp_cond_new", "seconds": 0.091, "before_mb": 693, "peak_mb": 694}
+{"nodeid": "tests/api_test.py::Remat3Test::test_const_in_jvp_scan", "seconds": 0.095, "before_mb": 694, "peak_mb": 696}
+{"nodeid": "tests/api_test.py::Remat3Test::test_const_in_jvp_scan_new", "seconds": 0.085, "before_mb": 696, "peak_mb": 696}
+{"nodeid": "tests/api_test.py::Remat3Test::test_constants_not_hoisted", "seconds": 0.039, "before_mb": 696, "peak_mb": 697}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_new_remat", "seconds": 0.393, "before_mb": 565, "peak_mb": 565}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_old_remat", "seconds": 0.146, "before_mb": 565, "peak_mb": 565}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_freevars_policy", "seconds": 0.253, "before_mb": 697, "peak_mb": 702}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_grad_accum_refs", "seconds": 0.131, "before_mb": 702, "peak_mb": 704}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_grad_python_control_flow_static_argnums", "seconds": 0.002, "before_mb": 704, "peak_mb": 704}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_grad_python_control_flow_unhashable_static_argnums", "seconds": 0.003, "before_mb": 704, "peak_mb": 704}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_ad_preserves_remat_primitive_basic", "seconds": 0.205, "before_mb": 704, "peak_mb": 709}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_ad_preserves_remat_primitive_cond", "seconds": 0.469, "before_mb": 709, "peak_mb": 718}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_autodiff", "seconds": 0.02, "before_mb": 718, "peak_mb": 718}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_autodiff_new", "seconds": 0.022, "before_mb": 718, "peak_mb": 718}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_higher_order_autodiff_policy", "seconds": 0.017, "before_mb": 718, "peak_mb": 718}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit", "seconds": 0.118, "before_mb": 718, "peak_mb": 719}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit2", "seconds": 0.026, "before_mb": 719, "peak_mb": 719}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit2_new", "seconds": 0.036, "before_mb": 719, "peak_mb": 719}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit2_policy", "seconds": 0.032, "before_mb": 719, "peak_mb": 719}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_jvp_policy", "seconds": 2.355, "before_mb": 528, "peak_mb": 564}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_outside_cond", "seconds": 1.481, "before_mb": 565, "peak_mb": 569}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit3", "seconds": 0.42, "before_mb": 719, "peak_mb": 726}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit3_new", "seconds": 0.108, "before_mb": 726, "peak_mb": 728}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_policy_save_anything_new_remat", "seconds": 0.602, "before_mb": 564, "peak_mb": 574}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit3_policy", "seconds": 0.106, "before_mb": 728, "peak_mb": 729}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_policy_save_cos", "seconds": 0.041, "before_mb": 574, "peak_mb": 574}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit_new", "seconds": 0.105, "before_mb": 729, "peak_mb": 730}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit_policy", "seconds": 0.107, "before_mb": 730, "peak_mb": 731}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_jit_static_argnum_omnistaging", "seconds": 0.026, "before_mb": 731, "peak_mb": 731}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_no_redundant_flops", "seconds": 0.053, "before_mb": 731, "peak_mb": 732}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_no_redundant_flops_new", "seconds": 0.05, "before_mb": 732, "peak_mb": 732}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_no_redundant_flops_policy", "seconds": 0.063, "before_mb": 732, "peak_mb": 732}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_nontrivial_env", "seconds": 0.222, "before_mb": 732, "peak_mb": 735}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_policy_save_nothing_new_remat", "seconds": 0.662, "before_mb": 574, "peak_mb": 577}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_nontrivial_env_new", "seconds": 0.042, "before_mb": 735, "peak_mb": 735}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_outside_scan", "seconds": 1.491, "before_mb": 568, "peak_mb": 569}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_policy_save_sin_new_remat", "seconds": 0.611, "before_mb": 577, "peak_mb": 579}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_saves_convs", "seconds": 0.752, "before_mb": 569, "peak_mb": 569}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond", "seconds": 1.282, "before_mb": 735, "peak_mb": 761}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims2_new_remat", "seconds": 0.467, "before_mb": 569, "peak_mb": 569}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_custom_vjp_policy", "seconds": 1.147, "before_mb": 579, "peak_mb": 587}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_dce_unused_output", "seconds": 0.028, "before_mb": 587, "peak_mb": 587}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_dropvar_policy_new_remat", "seconds": 0.005, "before_mb": 587, "peak_mb": 587}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_dropvar_policy_old_remat", "seconds": 0.005, "before_mb": 587, "peak_mb": 587}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_eval_counter", "seconds": 0.032, "before_mb": 587, "peak_mb": 587}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims2_old_remat", "seconds": 0.137, "before_mb": 569, "peak_mb": 569}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims_new_remat", "seconds": 0.141, "before_mb": 569, "peak_mb": 570}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_cond_policy", "seconds": 0.278, "before_mb": 587, "peak_mb": 594}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims_old_remat", "seconds": 0.142, "before_mb": 570, "peak_mb": 570}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_checkpoint_dots_with_no_batch_dims_skips_convs", "seconds": 0.151, "before_mb": 570, "peak_mb": 570}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_jit_residual_forwarding", "seconds": 0.197, "before_mb": 594, "peak_mb": 598}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_combined_dots_and_names_policy", "seconds": 0.34, "before_mb": 570, "peak_mb": 572}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_computed_residuals_cse_prevention", "seconds": 0.052, "before_mb": 572, "peak_mb": 573}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_cse_prevention_no_cotangents_flag", "seconds": 0.021, "before_mb": 573, "peak_mb": 573}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan", "seconds": 0.611, "before_mb": 598, "peak_mb": 606}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond_funky_custom_jvp", "seconds": 2.378, "before_mb": 761, "peak_mb": 805}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond_funky_custom_jvp2", "seconds": 0.003, "before_mb": 805, "peak_mb": 805}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_jvp_linear_policy", "seconds": 1.813, "before_mb": 573, "peak_mb": 601}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond_new", "seconds": 1.299, "before_mb": 805, "peak_mb": 829}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_cond_policy", "seconds": 0.488, "before_mb": 829, "peak_mb": 838}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_funky_custom_jvp", "seconds": 2.598, "before_mb": 606, "peak_mb": 649}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_jit_output_to_residual_forwarding", "seconds": 0.236, "before_mb": 838, "peak_mb": 842}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_jit_residual_forwarding", "seconds": 0.234, "before_mb": 842, "peak_mb": 847}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan", "seconds": 0.702, "before_mb": 847, "peak_mb": 859}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_jvp_policy", "seconds": 2.332, "before_mb": 601, "peak_mb": 643}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_policy_save_anything_new_remat", "seconds": 0.565, "before_mb": 643, "peak_mb": 651}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_policy_save_cos", "seconds": 0.23, "before_mb": 651, "peak_mb": 651}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_policy_save_nothing_new_remat", "seconds": 0.714, "before_mb": 651, "peak_mb": 660}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_funky_custom_jvp2", "seconds": 3.221, "before_mb": 649, "peak_mb": 695}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_funky_custom_jvp", "seconds": 2.222, "before_mb": 859, "peak_mb": 892}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_funky_custom_jvp2", "seconds": 0.003, "before_mb": 892, "peak_mb": 892}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_policy_save_sin_new_remat", "seconds": 0.714, "before_mb": 660, "peak_mb": 671}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_new", "seconds": 0.575, "before_mb": 695, "peak_mb": 703}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_new", "seconds": 0.658, "before_mb": 892, "peak_mb": 901}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_policy", "seconds": 0.424, "before_mb": 703, "peak_mb": 709}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_policy", "seconds": 0.428, "before_mb": 901, "peak_mb": 909}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_scan_unused_extensive_output_grad", "seconds": 0.456, "before_mb": 709, "peak_mb": 718}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_while_loop", "seconds": 0.064, "before_mb": 718, "peak_mb": 718}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_while_loop_new", "seconds": 0.049, "before_mb": 718, "peak_mb": 718}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_of_while_loop_policy", "seconds": 0.032, "before_mb": 718, "peak_mb": 720}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_scan_unused_extensive_output_grad", "seconds": 0.471, "before_mb": 909, "peak_mb": 918}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_custom_vjp_policy", "seconds": 1.429, "before_mb": 671, "peak_mb": 691}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_while_loop", "seconds": 0.086, "before_mb": 918, "peak_mb": 918}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_dce_input_to_output_forwarding", "seconds": 0.029, "before_mb": 691, "peak_mb": 692}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_dce_unused_output", "seconds": 0.033, "before_mb": 692, "peak_mb": 692}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_dropvar_policy_new_remat", "seconds": 0.005, "before_mb": 692, "peak_mb": 692}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_while_loop_new", "seconds": 0.068, "before_mb": 918, "peak_mb": 919}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_dropvar_policy_old_remat", "seconds": 0.004, "before_mb": 692, "peak_mb": 692}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_eqn_dce", "seconds": 0.031, "before_mb": 692, "peak_mb": 692}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_of_while_loop_policy", "seconds": 0.037, "before_mb": 919, "peak_mb": 919}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_eval_counter", "seconds": 0.071, "before_mb": 692, "peak_mb": 694}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_expand_stages_call_without_inlining", "seconds": 0.005, "before_mb": 694, "peak_mb": 694}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_expand_stages_call_without_inlining_high_jaxpr", "seconds": 0.006, "before_mb": 694, "peak_mb": 694}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_offload_convs", "seconds": 0.36, "before_mb": 720, "peak_mb": 727}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_offload_dot_with_no_batch_dims_jaxpr", "seconds": 0.073, "before_mb": 727, "peak_mb": 727}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_offload_names_jaxpr", "seconds": 0.047, "before_mb": 727, "peak_mb": 729}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_freevars", "seconds": 0.124, "before_mb": 694, "peak_mb": 696}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_offload_names_of_scan_jaxpr", "seconds": 0.021, "before_mb": 729, "peak_mb": 729}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_partial_cse_prevention", "seconds": 0.018, "before_mb": 729, "peak_mb": 729}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_partial_cse_prevention_all_false", "seconds": 0.016, "before_mb": 729, "peak_mb": 729}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_partial_cse_prevention_pytree", "seconds": 0.014, "before_mb": 729, "peak_mb": 729}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_recursive_checkpoint_recompute_counts", "seconds": 0.098, "before_mb": 729, "peak_mb": 730}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_residual_logging", "seconds": 0.171, "before_mb": 730, "peak_mb": 732}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_retracing", "seconds": 0.004, "before_mb": 732, "peak_mb": 732}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_new", "seconds": 0.384, "before_mb": 696, "peak_mb": 703}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_not_leading_dim", "seconds": 0.053, "before_mb": 703, "peak_mb": 705}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_not_leading_dim_new", "seconds": 0.004, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_not_leading_dim_policy", "seconds": 0.004, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_policy", "seconds": 0.012, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_wrapped_kwarg_with_static_argnums", "seconds": 0.037, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/api_test.py::Remat3Test::test_saved_residuals_utility", "seconds": 0.011, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/api_test.py::Remat3Test::test_saved_residuals_utility_jit", "seconds": 0.01, "before_mb": 705, "peak_mb": 705}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_offload_convs", "seconds": 0.79, "before_mb": 919, "peak_mb": 933}
+{"nodeid": "tests/api_test.py::Remat3Test::test_vjp_caching", "seconds": 0.06, "before_mb": 705, "peak_mb": 706}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_offload_dot_with_no_batch_dims_jaxpr", "seconds": 0.072, "before_mb": 933, "peak_mb": 934}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_scan", "seconds": 0.305, "before_mb": 732, "peak_mb": 738}
+{"nodeid": "tests/api_test.py::Remat3Test::test_vjp_caching_static_argnums", "seconds": 0.059, "before_mb": 706, "peak_mb": 707}
+{"nodeid": "tests/api_test.py::JaxprTest::test_abstract_inputs", "seconds": 0.003, "before_mb": 707, "peak_mb": 707}
+{"nodeid": "tests/api_test.py::JaxprTest::test_cond", "seconds": 0.006, "before_mb": 707, "peak_mb": 707}
+{"nodeid": "tests/api_test.py::JaxprTest::test_const", "seconds": 0.006, "before_mb": 707, "peak_mb": 707}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_offload_names_jaxpr", "seconds": 0.042, "before_mb": 934, "peak_mb": 934}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_scan2", "seconds": 0.047, "before_mb": 738, "peak_mb": 739}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_offload_names_of_scan_jaxpr", "seconds": 0.017, "before_mb": 934, "peak_mb": 934}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_scan2_new", "seconds": 0.052, "before_mb": 739, "peak_mb": 739}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_output_to_residual_forwarding", "seconds": 0.113, "before_mb": 934, "peak_mb": 936}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_partial_cse_prevention", "seconds": 0.048, "before_mb": 936, "peak_mb": 936}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_partial_cse_prevention_all_false", "seconds": 0.017, "before_mb": 936, "peak_mb": 936}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_partial_cse_prevention_pytree", "seconds": 0.018, "before_mb": 936, "peak_mb": 936}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_partial_cse_prevention_pytree_prefix_forms", "seconds": 0.04, "before_mb": 936, "peak_mb": 936}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_recursive_checkpoint_recompute_counts", "seconds": 0.092, "before_mb": 936, "peak_mb": 938}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_residual_logging", "seconds": 0.003, "before_mb": 938, "peak_mb": 938}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_scan_new", "seconds": 0.302, "before_mb": 739, "peak_mb": 745}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_retracing", "seconds": 0.007, "before_mb": 938, "peak_mb": 938}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_static_agnums_retracing", "seconds": 0.004, "before_mb": 745, "peak_mb": 745}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_scan", "seconds": 0.319, "before_mb": 938, "peak_mb": 943}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_scan2", "seconds": 0.051, "before_mb": 943, "peak_mb": 944}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_scan2_new", "seconds": 0.044, "before_mb": 944, "peak_mb": 944}
+{"nodeid": "tests/api_test.py::RematTest::test_remat_symbolic_zeros", "seconds": 0.556, "before_mb": 745, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::JaxprTest::test_convert_element_type_literal_constant_folding", "seconds": 0.003, "before_mb": 754, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::JaxprTest::test_elide_trivial_broadcasts", "seconds": 0.003, "before_mb": 754, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::JaxprTest::test_elide_trivial_convert_element_types", "seconds": 0.003, "before_mb": 754, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::JaxprTest::test_eqn_repr_with_no_lhs", "seconds": 0.003, "before_mb": 754, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_extensive_input", "seconds": 0.961, "before_mb": 707, "peak_mb": 721}
+{"nodeid": "tests/api_test.py::JaxprTest::test_make_jaxpr_axis_env", "seconds": 0.006, "before_mb": 754, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::JaxprTest::test_make_jaxpr_return_shape", "seconds": 0.003, "before_mb": 754, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::JaxprTest::test_make_jaxpr_static_argnums", "seconds": 0.003, "before_mb": 754, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::JaxprTest::test_non_scalar_const", "seconds": 0.023, "before_mb": 754, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::JaxprTest::test_scalar_literals", "seconds": 0.003, "before_mb": 754, "peak_mb": 754}
+{"nodeid": "tests/api_test.py::JaxprTest::test_weak_type_jit_invariance", "seconds": 0.062, "before_mb": 754, "peak_mb": 756}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_scan_new", "seconds": 0.304, "before_mb": 944, "peak_mb": 950}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_static_agnums_retracing", "seconds": 0.006, "before_mb": 950, "peak_mb": 950}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_symbolic_zeros", "seconds": 0.556, "before_mb": 950, "peak_mb": 959}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_symbolic_zeros_new", "seconds": 0.109, "before_mb": 959, "peak_mb": 960}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_unhashable_static_argnums", "seconds": 0.103, "before_mb": 960, "peak_mb": 962}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_nontrivial_fixedpoint_carry", "seconds": 1.076, "before_mb": 721, "peak_mb": 747}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap", "seconds": 0.349, "before_mb": 962, "peak_mb": 969}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_cond_nontrivial", "seconds": 1.613, "before_mb": 756, "peak_mb": 788}
+{"nodeid": "tests/api_test.py::Remat3Test::test_remat_vmap_checkpoint_name_and_custom_vjp", "seconds": 0.574, "before_mb": 969, "peak_mb": 979}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects5", "seconds": 0.134, "before_mb": 979, "peak_mb": 983, "params": "(where='body', effect='read')"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects_only_fixpoint", "seconds": 0.043, "before_mb": 983, "peak_mb": 983}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_cond_trivial", "seconds": 0.399, "before_mb": 788, "peak_mb": 795}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_nontrivial_fixedpoint_carry_2", "seconds": 1.204, "before_mb": 747, "peak_mb": 766}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_nontrivial_fixedpoint_extensive_output", "seconds": 0.395, "before_mb": 766, "peak_mb": 774}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_overpruning", "seconds": 0.04, "before_mb": 774, "peak_mb": 775}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_const_in_jvp", "seconds": 0.635, "before_mb": 795, "peak_mb": 806}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_scan_results", "seconds": 0.076, "before_mb": 775, "peak_mb": 776}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_chain_fixpoint2", "seconds": 0.059, "before_mb": 806, "peak_mb": 807, "params": "(10)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_cond_dependency", "seconds": 0.039, "before_mb": 807, "peak_mb": 810}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while", "seconds": 0.081, "before_mb": 776, "peak_mb": 778}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_dead_ref_write0", "seconds": 0.054, "before_mb": 810, "peak_mb": 811, "params": "(True)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_dead_ref_write1", "seconds": 0.004, "before_mb": 811, "peak_mb": 811, "params": "(False)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_attached_consts", "seconds": 0.065, "before_mb": 778, "peak_mb": 779}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_chain_fixpoint0", "seconds": 0.051, "before_mb": 779, "peak_mb": 781, "params": "(2)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects0", "seconds": 0.087, "before_mb": 811, "peak_mb": 814, "params": "(where='cond', effect='write')"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_chain_fixpoint1", "seconds": 0.052, "before_mb": 781, "peak_mb": 782, "params": "(5)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects1", "seconds": 0.064, "before_mb": 814, "peak_mb": 815, "params": "(where='cond', effect='accum')"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects2", "seconds": 0.085, "before_mb": 815, "peak_mb": 817, "params": "(where='cond', effect='read')"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects3", "seconds": 0.064, "before_mb": 817, "peak_mb": 818, "params": "(where='body', effect='write')"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_effects4", "seconds": 0.072, "before_mb": 818, "peak_mb": 819, "params": "(where='body', effect='accum')"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random2", "seconds": 0.192, "before_mb": 819, "peak_mb": 821, "params": "(num_carry=4, num_consts=0, seed=2)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_000", "seconds": 1.532, "before_mb": 983, "peak_mb": 983}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random3", "seconds": 0.128, "before_mb": 821, "peak_mb": 824, "params": "(num_carry=6, num_consts=1, seed=3)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random4", "seconds": 0.031, "before_mb": 824, "peak_mb": 824, "params": "(num_carry=1, num_consts=0, seed=2)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random5", "seconds": 0.059, "before_mb": 824, "peak_mb": 824, "params": "(num_carry=2, num_consts=0, seed=3)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random6", "seconds": 0.03, "before_mb": 824, "peak_mb": 826, "params": "(num_carry=1, num_consts=0, seed=1)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random7", "seconds": 0.156, "before_mb": 826, "peak_mb": 828, "params": "(num_carry=6, num_consts=1, seed=1)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random8", "seconds": 0.031, "before_mb": 828, "peak_mb": 828, "params": "(num_carry=1, num_consts=1, seed=0)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random9", "seconds": 0.061, "before_mb": 828, "peak_mb": 830, "params": "(num_carry=2, num_consts=0, seed=2)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_ref_effect", "seconds": 0.075, "before_mb": 830, "peak_mb": 833}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_ref_liveness_fixpoint", "seconds": 0.064, "before_mb": 833, "peak_mb": 833}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_shared_const", "seconds": 0.068, "before_mb": 833, "peak_mb": 834}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_111", "seconds": 1.159, "before_mb": 782, "peak_mb": 782}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_jvp", "seconds": 0.051, "before_mb": 782, "peak_mb": 784}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_keeps_ref_write_read_by_cond", "seconds": 0.006, "before_mb": 784, "peak_mb": 784}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_vmap_batched_predicate", "seconds": 0.101, "before_mb": 834, "peak_mb": 837}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_keeps_ref_write_read_by_next_iteration", "seconds": 0.056, "before_mb": 784, "peak_mb": 785}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_nested", "seconds": 0.056, "before_mb": 785, "peak_mb": 786}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_while_jit_prunes_args", "seconds": 0.09, "before_mb": 837, "peak_mb": 840}
+{"nodeid": "tests/api_test.py::BufferDonationTest::test_pmap_donate_argnums_invalidates_input", "seconds": 0.003, "before_mb": 840, "peak_mb": 840}
+{"nodeid": "tests/api_test.py::BufferDonationTest::test_pmap_nested_donate_ignored", "seconds": 0.003, "before_mb": 840, "peak_mb": 840}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow0", "seconds": 0.019, "before_mb": 840, "peak_mb": 840, "params": "(func='identity_trivial', jit=<function jit at 0x7fe6bf2d9d00>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow1", "seconds": 0.015, "before_mb": 840, "peak_mb": 840, "params": "(func='identity', jit=<function jit at 0x7fe6bf2d9d00>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow2", "seconds": 0.018, "before_mb": 840, "peak_mb": 840, "params": "(func='closure_trivial', jit=<function jit at 0x7fe6bf2d9d00>)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random0", "seconds": 0.119, "before_mb": 786, "peak_mb": 789, "params": "(num_carry=6, num_consts=0, seed=2)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow3", "seconds": 0.044, "before_mb": 840, "peak_mb": 841, "params": "(func='closure_trivial', jit=<function <lambda> at 0x7fe6be77cb80>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow9", "seconds": 0.003, "before_mb": 841, "peak_mb": 841, "params": "(func='device_put', jit=<function <lambda> at 0x7fe6be77cb80>)"}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_random1", "seconds": 0.03, "before_mb": 789, "peak_mb": 789, "params": "(num_carry=1, num_consts=1, seed=3)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow4", "seconds": 0.019, "before_mb": 789, "peak_mb": 789, "params": "(func='closure', jit=<function jit at 0x7ff69c16dd00>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_jax_transforms0", "seconds": 0.057, "before_mb": 841, "peak_mb": 841, "params": "(<function jit at 0x7fe6bf2d9d00>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow5", "seconds": 0.048, "before_mb": 789, "peak_mb": 791, "params": "(func='closure', jit=<function <lambda> at 0x7ff69b5e0b80>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_jax_transforms1", "seconds": 0.051, "before_mb": 841, "peak_mb": 843, "params": "(<function grad at 0x7fe6bf2d9f80>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow6", "seconds": 0.014, "before_mb": 791, "peak_mb": 791, "params": "(func='asarray', jit=<function jit at 0x7ff69c16dd00>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_jax_transforms2", "seconds": 0.015, "before_mb": 843, "peak_mb": 843, "params": "(<function vmap at 0x7fe6bf2dae80>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow7", "seconds": 0.017, "before_mb": 791, "peak_mb": 791, "params": "(func='asarray', jit=<function <lambda> at 0x7ff69b5e0b80>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_jax_transforms3", "seconds": 0.014, "before_mb": 843, "peak_mb": 843, "params": "(<function remat at 0x7fe6bebfdee0>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_integer_overflow8", "seconds": 0.014, "before_mb": 791, "peak_mb": 791, "params": "(func='device_put', jit=<function jit at 0x7ff69c16dd00>)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_non_jaxtype_arg", "seconds": 0.012, "before_mb": 843, "peak_mb": 843}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_partial_eval", "seconds": 0.014, "before_mb": 843, "peak_mb": 844}
+{"nodeid": "tests/api_test.py::CleanupTest::test_call_wrapped_second_phase_cleanup", "seconds": 0.027, "before_mb": 791, "peak_mb": 793}
+{"nodeid": "tests/api_test.py::EnvironmentInfoTest::test_print_environment_info0", "seconds": 0.004, "before_mb": 793, "peak_mb": 793, "params": "(True)"}
+{"nodeid": "tests/api_test.py::NamedCallTest::test_static_argnums", "seconds": 0.012, "before_mb": 844, "peak_mb": 844}
+{"nodeid": "tests/api_test.py::BackendsTest::test_no_backend_warning_on_cpu_if_platform_specified", "seconds": 0.002, "before_mb": 844, "peak_mb": 844}
+{"nodeid": "tests/api_test.py::GarbageCollectionTest::test_xla_gc_callback", "seconds": 0.15, "before_mb": 844, "peak_mb": 844}
+{"nodeid": "tests/api_test.py::OverrideLoweringTest::test_sharding_constraint_as_noop", "seconds": 0.004, "before_mb": 844, "peak_mb": 844}
+{"nodeid": "tests/api_test.py::EnvironmentInfoTest::test_print_environment_info1", "seconds": 0.164, "before_mb": 793, "peak_mb": 841, "params": "(False)"}
+{"nodeid": "tests/api_test.py::AutodidaxTest::test_autodidax_smoketest", "seconds": 0.003, "before_mb": 799, "peak_mb": 799}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_opaque_vjp3", "seconds": 0.004, "before_mb": 799, "peak_mb": 799}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_pass_through_jit", "seconds": 0.027, "before_mb": 799, "peak_mb": 799}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_pytree_error", "seconds": 0.005, "before_mb": 799, "peak_mb": 799}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_unused_vjp3", "seconds": 0.005, "before_mb": 799, "peak_mb": 799}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic", "seconds": 0.048, "before_mb": 844, "peak_mb": 845}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_doesnt_leak_symbolic_zeros", "seconds": 0.003, "before_mb": 799, "peak_mb": 799}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_basic_opaque_cond_vjp3", "seconds": 0.071, "before_mb": 845, "peak_mb": 848}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_fsdp_error", "seconds": 0.102, "before_mb": 799, "peak_mb": 801}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_001", "seconds": 1.435, "before_mb": 983, "peak_mb": 983}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_broadcasts", "seconds": 0.107, "before_mb": 801, "peak_mb": 802}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_isomorphic_trees", "seconds": 0.052, "before_mb": 802, "peak_mb": 804}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_fsdp_vjp3", "seconds": 0.258, "before_mb": 848, "peak_mb": 851}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_basic", "seconds": 0.008, "before_mb": 851, "peak_mb": 851}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_structure_errors", "seconds": 0.003, "before_mb": 851, "peak_mb": 851}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_unused_arg_stays_not_needed", "seconds": 0.005, "before_mb": 851, "peak_mb": 851}
+{"nodeid": "tests/api_test.py::TracebackTest::test_cond_traceback", "seconds": 0.02, "before_mb": 851, "peak_mb": 852}
+{"nodeid": "tests/api_test.py::TracebackTest::test_custom_vjp_traceback", "seconds": 0.018, "before_mb": 852, "peak_mb": 852}
+{"nodeid": "tests/api_test.py::TracebackTest::test_grad_traceback", "seconds": 0.008, "before_mb": 852, "peak_mb": 852}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_loose_prefix", "seconds": 0.142, "before_mb": 804, "peak_mb": 806}
+{"nodeid": "tests/api_test.py::TracebackTest::test_jit_traceback", "seconds": 0.019, "before_mb": 852, "peak_mb": 852}
+{"nodeid": "tests/api_test.py::TracebackTest::test_scan_traceback", "seconds": 0.038, "before_mb": 852, "peak_mb": 853}
+{"nodeid": "tests/api_test.py::TracebackTest::test_vmap_traceback", "seconds": 0.01, "before_mb": 853, "peak_mb": 854}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_grad", "seconds": 0.028, "before_mb": 854, "peak_mb": 855}
+{"nodeid": "tests/api_test.py::InputSavedVJPTest::test_saveable_args_pass_through_jit", "seconds": 0.105, "before_mb": 806, "peak_mb": 809}
+{"nodeid": "tests/api_test.py::TracebackTest::test_traceback_test", "seconds": 0.012, "before_mb": 809, "peak_mb": 809}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_impl", "seconds": 0.027, "before_mb": 855, "peak_mb": 855}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_jit", "seconds": 0.023, "before_mb": 855, "peak_mb": 856}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_jvp", "seconds": 0.097, "before_mb": 809, "peak_mb": 811}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_vmap", "seconds": 0.065, "before_mb": 856, "peak_mb": 856}
+{"nodeid": "tests/api_test.py::EvalJaxprPrimitiveTest::test_eval_jaxpr_linearize_of_while", "seconds": 0.119, "before_mb": 811, "peak_mb": 812}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_010", "seconds": 1.414, "before_mb": 983, "peak_mb": 983}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_011", "seconds": 1.353, "before_mb": 983, "peak_mb": 983}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_100", "seconds": 1.414, "before_mb": 983, "peak_mb": 983}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_101", "seconds": 1.323, "before_mb": 983, "peak_mb": 983}
+{"nodeid": "tests/api_test.py::DCETest::test_dce_jaxpr_while_exhaustive_cond_reads_110", "seconds": 1.281, "before_mb": 983, "peak_mb": 983}

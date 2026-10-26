@@ -1,0 +1,14 @@
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_args_must_be_tuple", "seconds": 0.183, "before_mb": 203, "peak_mb": 258}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize0", "seconds": 0.528, "before_mb": 203, "peak_mb": 277, "params": "(maxiter=None, func_and_init=(<function himmelblau at 0x7f6a021bc720>, array([1., 1.], dtype=float32)))"}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize2", "seconds": 0.75, "before_mb": 203, "peak_mb": 278, "params": "(maxiter=None, func_and_init=(<function rosenbrock at 0x7f53d7040680>, array([0., 0.], dtype=float32)))"}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize3", "seconds": 0.406, "before_mb": 277, "peak_mb": 284, "params": "(maxiter=None, func_and_init=(<function matyas at 0x7f53d70407c0>, array([6., 6.])))"}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize1", "seconds": 0.769, "before_mb": 277, "peak_mb": 289, "params": "(maxiter=None, func_and_init=(<function eggholder at 0x7f6a021bc860>, array([100., 100.])))"}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_fixes4594", "seconds": 1.118, "before_mb": 258, "peak_mb": 289}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_zakharov", "seconds": 0.008, "before_mb": 287, "peak_mb": 287}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize1", "seconds": 0.773, "before_mb": 287, "peak_mb": 291, "params": "(maxiter=None, func_and_init=(<function eggholder at 0x7f6a021bc860>, array([100., 100.])))"}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_complex_rosenbrock", "seconds": 1.063, "before_mb": 284, "peak_mb": 307}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize_bad_initial_values", "seconds": 1.18, "before_mb": 289, "peak_mb": 305}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize0", "seconds": 0.569, "before_mb": 305, "peak_mb": 306, "params": "(maxiter=None, func_and_init=(<function himmelblau at 0x7f53d7040720>, array([0., 0.])))"}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize3", "seconds": 0.729, "before_mb": 290, "peak_mb": 291, "params": "(maxiter=None, func_and_init=(<function matyas at 0x7f6a021bc7c0>, array([6., 6.])))"}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize2", "seconds": 0.598, "before_mb": 305, "peak_mb": 329, "params": "(maxiter=None, func_and_init=(<function rosenbrock at 0x7fa3f061c680>, array([0., 0.])))"}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize_complex_sphere", "seconds": 0.868, "before_mb": 291, "peak_mb": 307}

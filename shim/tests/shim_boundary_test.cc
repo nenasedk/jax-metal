@@ -3,10 +3,11 @@
 //
 //   make -C shim unit-test
 //
-// uint64 buffers must live in the plugin as int64 and be reported as uint64; the program the
-// plugin compiles must be the boundary program; at execution complex64 arguments must reach
-// the plugin as float32[..., 2] views, stray uint64 buffers as int64 views, and outputs at
-// boundary positions must come back as uint64 and complex64.
+// uint64 buffers must live in the plugin as int64, float8 and narrow-integer ones as uint8 or
+// int8, and be reported with their own type; the program the plugin compiles must be the
+// boundary program; at execution complex64 arguments must reach the plugin as
+// float32[..., 2] views, stray uint64 buffers as int64 views, and outputs at boundary
+// positions must come back as uint64, complex64 and float8_e4m3fn.
 
 #include <dlfcn.h>
 
@@ -119,6 +120,24 @@ int main(int argc, char** argv) {
   PJRT_Buffer* c64 = FromHost(pairs, PJRT_Buffer_Type_C64, 3, device);
   CHECK(TypeOf(c64) == PJRT_Buffer_Type_C64);
 
+  // Narrow types: one value per byte, held as uint8 (int8 for the signed integers).
+  const unsigned char bytes[3] = {0x38, 0x0F, 0x7F};
+  const struct {
+    PJRT_Buffer_Type type, physical;
+  } narrow[] = {{PJRT_Buffer_Type_F8E4M3FN, PJRT_Buffer_Type_U8},
+                {PJRT_Buffer_Type_F8E5M2FNUZ, PJRT_Buffer_Type_U8},
+                {PJRT_Buffer_Type_F8E8M0FNU, PJRT_Buffer_Type_U8},
+                {PJRT_Buffer_Type_F4E2M1FN, PJRT_Buffer_Type_U8},
+                {PJRT_Buffer_Type_S4, PJRT_Buffer_Type_S8},
+                {PJRT_Buffer_Type_U4, PJRT_Buffer_Type_U8},
+                {PJRT_Buffer_Type_S2, PJRT_Buffer_Type_S8}};
+  for (const auto& entry : narrow) {
+    PJRT_Buffer* buffer = FromHost(bytes, entry.type, 3, device);
+    CHECK(plugin_type(buffer) == entry.physical);
+    CHECK(TypeOf(buffer) == entry.type);
+    Destroy(buffer);
+  }
+
   // Copies keep the logical type.
   PJRT_Buffer_CopyToDevice_Args copy{};
   copy.struct_size = PJRT_Buffer_CopyToDevice_Args_STRUCT_SIZE;
@@ -128,11 +147,13 @@ int main(int argc, char** argv) {
   CHECK(TypeOf(copy.dst_buffer) == PJRT_Buffer_Type_U64);
   Destroy(copy.dst_buffer);
 
-  // The plugin compiles the boundary program handed over for this compilation.
-  const int32_t in_positions[] = {0, 1}, in_kinds[] = {2, 1};
-  const int32_t out_positions[] = {0, 1}, out_kinds[] = {2, 1};
+  // The plugin compiles the boundary program handed over for this compilation. Kinds:
+  // 0x100 | type for retyped types (here uint64 and float8_e4m3fn), 1 for complex pairs.
+  const int32_t in_positions[] = {0, 1}, in_kinds[] = {0x100 | PJRT_Buffer_Type_U64, 1};
+  const int32_t out_positions[] = {0, 1, 2};
+  const int32_t out_kinds[] = {0x100 | PJRT_Buffer_Type_U64, 1, 0x100 | PJRT_Buffer_Type_F8E4M3FN};
   const char boundary[] = "boundary program";
-  set_io(in_positions, in_kinds, 2, out_positions, out_kinds, 2, boundary, sizeof(boundary) - 1);
+  set_io(in_positions, in_kinds, 2, out_positions, out_kinds, 3, boundary, sizeof(boundary) - 1);
   char original[] = "original program";
   PJRT_Program program{};
   program.struct_size = PJRT_Program_STRUCT_SIZE;
@@ -146,7 +167,7 @@ int main(int argc, char** argv) {
   CHECK(std::strcmp(last_program(), boundary) == 0);
 
   // Execution: complex64 goes in as a float32[3, 2] view, the int64-held uint64 as is, and
-  // the outputs come back as uint64[3] and complex64[3].
+  // the outputs come back as uint64[3], complex64[3] and float8_e4m3fn[3].
   auto execute = [&](PJRT_Buffer* first, PJRT_Buffer* second, PJRT_Buffer** outputs) {
     PJRT_Buffer* arguments[] = {first, second};
     PJRT_Buffer* const* argument_lists[] = {arguments};
@@ -160,7 +181,7 @@ int main(int argc, char** argv) {
     run.output_lists = output_lists;
     CHECK(g_api->PJRT_LoadedExecutable_Execute(&run) == nullptr);
   };
-  PJRT_Buffer* outputs[2] = {};
+  PJRT_Buffer* outputs[3] = {};
   execute(u64, c64, outputs);
   CHECK(last_arg_type(0) == PJRT_Buffer_Type_S64);
   CHECK(last_arg_type(1) == PJRT_Buffer_Type_F32);
@@ -169,17 +190,17 @@ int main(int argc, char** argv) {
   CHECK(DimsOf(outputs[0]) == "3");
   CHECK(TypeOf(outputs[1]) == PJRT_Buffer_Type_C64);
   CHECK(DimsOf(outputs[1]) == "3");
+  CHECK(TypeOf(outputs[2]) == PJRT_Buffer_Type_F8E4M3FN);
+  CHECK(plugin_type(outputs[2]) == PJRT_Buffer_Type_U8);
   CHECK(TypeOf(c64) == PJRT_Buffer_Type_C64);  // the argument itself is unchanged
-  Destroy(outputs[0]);
-  Destroy(outputs[1]);
+  for (PJRT_Buffer* output : outputs) Destroy(output);
 
   // A uint64 buffer the plugin holds as uint64 (not made through the shim) goes in as an
   // int64 view.
   PJRT_Buffer* stray = new_buffer(PJRT_Buffer_Type_U64, 3);
   execute(stray, c64, outputs);
   CHECK(last_arg_type(0) == PJRT_Buffer_Type_S64);
-  Destroy(outputs[0]);
-  Destroy(outputs[1]);
+  for (PJRT_Buffer* output : outputs) Destroy(output);
   Destroy(stray);
 
   // Destroyed buffers are forgotten: a new buffer at a reused address is not misreported.

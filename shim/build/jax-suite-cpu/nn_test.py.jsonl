@@ -15,9 +15,9 @@
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testLogMeanExp3", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testLogMeanExp4", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testLogMeanExp5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionMask5", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testLogMeanExp6", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testLogMeanExp7", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionMask5", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testLogMeanExp8", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testLogMeanExp9", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention1", "outcome": "passed", "message": ""}
@@ -36,43 +36,45 @@
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput16", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput17", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput18", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput19", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput2", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMishGrad", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMishGradNan", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMishGradNegInf", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMishGradZero", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMishValue", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testMishZero0", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput19", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput2", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput20", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput21", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testMishZero0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput22", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMishZero1", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMxQuantize0", "outcome": "skipped", "message": "Skipped: Test requires GPU."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMxQuantize1", "outcome": "skipped", "message": "Skipped: Test requires GPU."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMxQuantize2", "outcome": "skipped", "message": "Skipped: Test requires GPU."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testMxQuantize3", "outcome": "skipped", "message": "Skipped: Test requires GPU."}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput22", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput23", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHot", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput24", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHot", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput25", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotAxis", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotConcretizationError", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput26", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotAxis", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotConcretizationError", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotCustomDtype", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotNonArrayInput", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput4", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotNonInteger", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput5", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput6", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotOutOfBound", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput7", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention11", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention12", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotNonInteger", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testOneHotOutOfBound", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput7", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput8", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDtypeMatchesInput9", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testRelu6Grad", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention13", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention14", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testReluGrad", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testReluGradAtZero", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledDotGeneral0", "outcome": "skipped", "message": "Skipped: Test requires GPU."}
@@ -95,10 +97,8 @@
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul10", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul11", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul12", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention13", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul13", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul14", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention14", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul15", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul16", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul17", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
@@ -120,8 +120,8 @@
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testEluMemory", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testEluValue", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention15", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testGelu0", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention16", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testGelu0", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testGelu1", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul2", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testScaledMatmul20", "outcome": "skipped", "message": "Skipped: Test requires GPU or CPU."}
@@ -148,119 +148,118 @@
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSquareplusZero1", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testStandardizeNegativeVariance", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testStandardizeStableAlgorithm", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testStandardizeWhereMask", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testTanhExists", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention17", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention18", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testStandardizeWhereMask", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testTanhExists", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftmaxGrad", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftmaxGradFlag", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftmaxGradResiduals", "outcome": "skipped", "message": "Skipped: only applies when upgrade flag enabled"}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testAccidentalUpcasting", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testIdentity", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer0", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer1", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftmaxWhereGrad0", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention19", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention2", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention20", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftmaxWhereGrad0", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftmaxWhereGrad1", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer10", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftmaxWhereMask0", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftmaxWhereMask1", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer100", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention21", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention22", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer100", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer101", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer102", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention23", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer103", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer104", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention4", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer105", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftplusGrad", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftplusGradInf", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testSoftplusGradNan", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention3", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention4", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer106", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer107", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer108", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer109", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer11", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer13", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer110", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer111", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer112", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer113", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer114", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer115", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer14", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer13", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer12", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer14", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer5", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer50", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention5", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention6", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer50", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer15", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer16", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention7", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention8", "outcome": "skipped", "message": "Skipped: Needs compute capability 8.0 or higher."}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer51", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttention9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer51", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer16", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer52", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer53", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer17", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer54", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer18", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer55", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer18", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionBiasGradient0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer56", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer19", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer2", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer56", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionBiasGradient0", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer20", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer57", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer20", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionBiasGradient1", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer21", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer58", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer22", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer21", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer59", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer6", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer23", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer22", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer60", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer23", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer61", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer62", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionBiasGradient2", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer24", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer63", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer25", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer24", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer64", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer25", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer65", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer26", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionBiasGradient3", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer27", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer28", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer66", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer26", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer67", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer27", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer68", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer28", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer69", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer29", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer3", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer30", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer69", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer84", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer7", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer70", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionFloat64MaskDebugInfs", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer84", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer85", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer71", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionMask0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer71", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionMask1", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer72", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer86", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer73", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer74", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionMask1", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer86", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer75", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer76", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionMask2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer76", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer87", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer77", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer88", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer89", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer9", "outcome": "passed", "message": ""}
@@ -295,12 +294,14 @@
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider13", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider14", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionMask3", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer78", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionMask4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer77", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer78", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer79", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider15", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider16", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider17", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer31", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider18", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider19", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider2", "outcome": "passed", "message": ""}
@@ -326,8 +327,8 @@
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider38", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider39", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer32", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider40", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer8", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider41", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider42", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider43", "outcome": "passed", "message": ""}
@@ -344,6 +345,7 @@
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider53", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider54", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider55", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer8", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider56", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider57", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider58", "outcome": "passed", "message": ""}
@@ -354,15 +356,13 @@
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider62", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider63", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider64", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer31", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider65", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider66", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider67", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider68", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider69", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer33", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer80", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer32", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer81", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider7", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider70", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider71", "outcome": "passed", "message": ""}
@@ -371,28 +371,28 @@
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider74", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider75", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider76", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer33", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer82", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer81", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider77", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer82", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer83", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer98", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider78", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer99", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer34", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize0", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider79", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize1", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer35", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize2", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer34", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider8", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider80", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer36", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider81", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer35", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize4", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize5", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize6", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider82", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer36", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider83", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider84", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider85", "outcome": "passed", "message": ""}
@@ -413,6 +413,7 @@
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider99", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testVarianceScalingBatchAxis", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer37", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize8", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testVarianceScalingDivisionByZero0", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testVarianceScalingDivisionByZero1", "outcome": "passed", "message": ""}
@@ -425,7 +426,6 @@
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testVarianceScalingDivisionByZero8", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testVarianceScalingError", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testVarianceScalingMultiAxis", "outcome": "passed", "message": ""}
-{"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer37", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerOrthogonalZeroSize9", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializerProvider0", "outcome": "passed", "message": ""}
 {"nodeid": "tests/nn_test.py::NNInitializersTest::testInitializer38", "outcome": "passed", "message": ""}

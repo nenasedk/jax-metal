@@ -1,0 +1,92 @@
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm0", "seconds": 0.017, "before_mb": 184, "peak_mb": 187, "params": "(shape=(16, 12), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm7", "seconds": 0.015, "before_mb": 184, "peak_mb": 187, "params": "(shape=(32, 32), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm1", "seconds": 0.003, "before_mb": 188, "peak_mb": 188, "params": "(shape=(16, 12), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm2", "seconds": 0.003, "before_mb": 188, "peak_mb": 188, "params": "(shape=(8, 8), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm3", "seconds": 0.003, "before_mb": 188, "peak_mb": 188, "params": "(shape=(64, 48), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm4", "seconds": 0.003, "before_mb": 188, "peak_mb": 188, "params": "(shape=(32, 32), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm5", "seconds": 0.003, "before_mb": 188, "peak_mb": 188, "params": "(shape=(8, 8), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testGesddRocm6", "seconds": 0.003, "before_mb": 188, "peak_mb": 188, "params": "(shape=(64, 48), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero3", "seconds": 2.524, "before_mb": 188, "peak_mb": 313, "params": "(m=2, n=4, full_matrices=True, compute_uv=False, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero4", "seconds": 2.134, "before_mb": 313, "peak_mb": 334, "params": "(m=8, n=6, full_matrices=False, compute_uv=False, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues6", "seconds": 5.178, "before_mb": 184, "peak_mb": 377, "params": "(m=10, n=10, log_cond=np.float64(4.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues0", "seconds": 5.314, "before_mb": 188, "peak_mb": 401, "params": "(m=8, n=6, log_cond=np.float64(4.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero5", "seconds": 1.351, "before_mb": 334, "peak_mb": 335, "params": "(m=2, n=4, full_matrices=False, compute_uv=False, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero6", "seconds": 3.784, "before_mb": 335, "peak_mb": 384, "params": "(m=4, n=4, full_matrices=True, compute_uv=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues7", "seconds": 6.653, "before_mb": 377, "peak_mb": 406, "params": "(m=8, n=6, log_cond=np.float64(3.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero7", "seconds": 2.374, "before_mb": 384, "peak_mb": 387, "params": "(m=4, n=4, full_matrices=True, compute_uv=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues1", "seconds": 7.417, "before_mb": 401, "peak_mb": 447, "params": "(m=20, n=18, log_cond=np.float64(4.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero8", "seconds": 2.187, "before_mb": 386, "peak_mb": 395, "params": "(m=2, n=4, full_matrices=False, compute_uv=False, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues8", "seconds": 4.864, "before_mb": 405, "peak_mb": 425, "params": "(m=2, n=4, log_cond=np.float64(4.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero9", "seconds": 2.732, "before_mb": 395, "peak_mb": 402, "params": "(m=8, n=6, full_matrices=False, compute_uv=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues2", "seconds": 4.747, "before_mb": 445, "peak_mb": 448, "params": "(m=2, n=4, log_cond=np.float64(3.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues0", "seconds": 1.204, "before_mb": 402, "peak_mb": 407, "params": "(m=4, n=4, fill_value=inf, full_matrices=True, compute_uv=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues9", "seconds": 1.722, "before_mb": 425, "peak_mb": 425, "params": "(m=2, n=4, log_cond=np.float64(1.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues3", "seconds": 2.333, "before_mb": 446, "peak_mb": 451, "params": "(m=8, n=6, log_cond=np.float64(1.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero0", "seconds": 2.422, "before_mb": 425, "peak_mb": 427, "params": "(m=8, n=6, full_matrices=True, compute_uv=False, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues1", "seconds": 3.488, "before_mb": 407, "peak_mb": 426, "params": "(m=8, n=6, fill_value=nan, full_matrices=True, compute_uv=False, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues2", "seconds": 1.707, "before_mb": 426, "peak_mb": 426, "params": "(m=2, n=4, fill_value=-inf, full_matrices=True, compute_uv=False, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues4", "seconds": 4.356, "before_mb": 451, "peak_mb": 463, "params": "(m=2, n=4, log_cond=np.float64(3.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero1", "seconds": 3.66, "before_mb": 427, "peak_mb": 460, "params": "(m=4, n=4, full_matrices=False, compute_uv=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues3", "seconds": 2.383, "before_mb": 426, "peak_mb": 437, "params": "(m=2, n=4, fill_value=-inf, full_matrices=True, compute_uv=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdAllZero2", "seconds": 2.046, "before_mb": 460, "peak_mb": 461, "params": "(m=2, n=4, full_matrices=True, compute_uv=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex4", "seconds": 0.011, "before_mb": 461, "peak_mb": 461, "params": "(start=1, end=65)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex5", "seconds": 0.007, "before_mb": 461, "peak_mb": 461, "params": "(start=127, end=2)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex6", "seconds": 0.011, "before_mb": 461, "peak_mb": 461, "params": "(start=126, end=65)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex7", "seconds": 0.004, "before_mb": 461, "peak_mb": 461, "params": "(start=1, end=1)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex8", "seconds": 0.003, "before_mb": 461, "peak_mb": 461, "params": "(start=64, end=128)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex9", "seconds": 0.007, "before_mb": 461, "peak_mb": 461, "params": "(start=0, end=2)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad0", "seconds": 0.008, "before_mb": 461, "peak_mb": 461, "params": "(subset_by_index=(0, 4), shape=(8, 16))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad1", "seconds": 0.007, "before_mb": 461, "peak_mb": 461, "params": "(subset_by_index=(0, 4), shape=(16, 16))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad2", "seconds": 0.007, "before_mb": 461, "peak_mb": 461, "params": "(subset_by_index=(1, 4), shape=(16, 8))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad3", "seconds": 0.003, "before_mb": 461, "peak_mb": 461, "params": "(subset_by_index=(0, 1), shape=(16, 16))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad4", "seconds": 0.003, "before_mb": 461, "peak_mb": 461, "params": "(subset_by_index=(1, 4), shape=(8, 16))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad5", "seconds": 0.003, "before_mb": 461, "peak_mb": 461, "params": "(subset_by_index=(1, 4), shape=(16, 16))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad6", "seconds": 0.009, "before_mb": 461, "peak_mb": 461, "params": "(subset_by_index=(0, 4), shape=(16, 8))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad7", "seconds": 0.002, "before_mb": 461, "peak_mb": 461, "params": "(subset_by_index=(0, 1), shape=(16, 8))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndexGrad8", "seconds": 0.004, "before_mb": 461, "peak_mb": 461, "params": "(subset_by_index=(0, 1), shape=(8, 16))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues4", "seconds": 1.743, "before_mb": 436, "peak_mb": 437, "params": "(m=4, n=4, fill_value=-inf, full_matrices=False, compute_uv=False, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSingularValues5", "seconds": 5.858, "before_mb": 463, "peak_mb": 488, "params": "(m=8, n=6, log_cond=np.float64(3.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput0", "seconds": 3.399, "before_mb": 461, "peak_mb": 465, "params": "(m=8, r=7, log_cond=np.float64(3.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput1", "seconds": 0.058, "before_mb": 465, "peak_mb": 465, "params": "(m=8, r=5, log_cond=np.float64(3.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput2", "seconds": 0.056, "before_mb": 465, "peak_mb": 465, "params": "(m=8, r=3, log_cond=np.float64(1.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput3", "seconds": 0.005, "before_mb": 465, "peak_mb": 465, "params": "(m=8, r=3, log_cond=np.float64(3.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput4", "seconds": 0.005, "before_mb": 465, "peak_mb": 465, "params": "(m=8, r=5, log_cond=np.float64(2.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput5", "seconds": 0.004, "before_mb": 465, "peak_mb": 465, "params": "(m=8, r=7, log_cond=np.float64(1.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput6", "seconds": 0.004, "before_mb": 465, "peak_mb": 465, "params": "(m=8, r=5, log_cond=np.float64(1.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues5", "seconds": 4.626, "before_mb": 437, "peak_mb": 494, "params": "(m=8, n=6, fill_value=inf, full_matrices=False, compute_uv=True, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues9", "seconds": 3.069, "before_mb": 488, "peak_mb": 488, "params": "(m=2, n=4, fill_value=-inf, full_matrices=True, compute_uv=False, dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput7", "seconds": 2.898, "before_mb": 465, "peak_mb": 493, "params": "(m=10, r=9, log_cond=np.float64(3.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput8", "seconds": 0.005, "before_mb": 493, "peak_mb": 493, "params": "(m=8, r=3, log_cond=np.float64(2.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInput9", "seconds": 0.005, "before_mb": 493, "peak_mb": 493, "params": "(m=10, r=9, log_cond=np.float64(2.0))"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns0", "seconds": 0.843, "before_mb": 493, "peak_mb": 494, "params": "(m=8, r=5)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdOnTinyElement0", "seconds": 1.284, "before_mb": 488, "peak_mb": 489, "params": "(m=2, n=4, r=1, c=1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues6", "seconds": 2.136, "before_mb": 494, "peak_mb": 495, "params": "(m=4, n=4, fill_value=-inf, full_matrices=False, compute_uv=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns1", "seconds": 1.396, "before_mb": 494, "peak_mb": 505, "params": "(m=10, r=9)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns2", "seconds": 0.005, "before_mb": 505, "peak_mb": 505, "params": "(m=8, r=3)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithOnRankDeficientInputZeroColumns3", "seconds": 0.011, "before_mb": 505, "peak_mb": 505, "params": "(m=8, r=7)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues7", "seconds": 1.028, "before_mb": 495, "peak_mb": 495, "params": "(m=4, n=4, fill_value=nan, full_matrices=False, compute_uv=False, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdOnTinyElement1", "seconds": 1.111, "before_mb": 489, "peak_mb": 490, "params": "(m=4, n=4, r=0, c=0, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdOnTinyElement2", "seconds": 0.978, "before_mb": 490, "peak_mb": 504, "params": "(m=8, n=6, r=1, c=1, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex0", "seconds": 0.005, "before_mb": 504, "peak_mb": 504, "params": "(start=126, end=2)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex1", "seconds": 0.007, "before_mb": 504, "peak_mb": 504, "params": "(start=1, end=127)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex2", "seconds": 0.006, "before_mb": 504, "peak_mb": 504, "params": "(start=0, end=1)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdSubsetByIndex3", "seconds": 0.004, "before_mb": 504, "peak_mb": 504, "params": "(start=126, end=128)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdNonFiniteValues8", "seconds": 1.544, "before_mb": 495, "peak_mb": 495, "params": "(m=2, n=4, fill_value=inf, full_matrices=False, compute_uv=True, dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput0", "seconds": 2.573, "before_mb": 505, "peak_mb": 538, "params": "(m=8, n=6, log_cond=np.float64(4.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput3", "seconds": 2.911, "before_mb": 504, "peak_mb": 543, "params": "(m=8, n=6, log_cond=np.float64(1.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput2", "seconds": 3.955, "before_mb": 495, "peak_mb": 501, "params": "(m=2, n=4, log_cond=np.float64(3.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput4", "seconds": 2.507, "before_mb": 543, "peak_mb": 547, "params": "(m=2, n=4, log_cond=np.float64(3.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput7", "seconds": 2.483, "before_mb": 546, "peak_mb": 547, "params": "(m=8, n=6, log_cond=np.float64(3.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput1", "seconds": 6.433, "before_mb": 536, "peak_mb": 592, "params": "(m=20, n=18, log_cond=np.float64(4.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput9", "seconds": 1.712, "before_mb": 547, "peak_mb": 547, "params": "(m=2, n=4, log_cond=np.float64(1.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput5", "seconds": 5.294, "before_mb": 501, "peak_mb": 540, "params": "(m=8, n=6, log_cond=np.float64(3.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput6", "seconds": 2.604, "before_mb": 590, "peak_mb": 592, "params": "(m=10, n=10, log_cond=np.float64(4.0), full_matrices=False)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithSkinnyTallInput0", "seconds": 1.773, "before_mb": 547, "peak_mb": 548, "params": "(m=6, n=60)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithSkinnyTallInput1", "seconds": 1.31, "before_mb": 589, "peak_mb": 590, "params": "(m=50, n=3)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals2", "seconds": 1.498, "before_mb": 590, "peak_mb": 592, "params": "(shape=(2, 3, 4, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdWithRectangularInput8", "seconds": 3.733, "before_mb": 539, "peak_mb": 540, "params": "(m=2, n=4, log_cond=np.float64(4.0), full_matrices=True)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals0", "seconds": 2.355, "before_mb": 547, "peak_mb": 550, "params": "(shape=(4, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals4", "seconds": 1.353, "before_mb": 592, "peak_mb": 593, "params": "(shape=(3, 4, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals1", "seconds": 2.04, "before_mb": 540, "peak_mb": 543, "params": "(shape=(3, 4, 5), dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals5", "seconds": 0.941, "before_mb": 593, "peak_mb": 593, "params": "(shape=(4, 5), dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/svd_test.py::SvdTest::testSvdvals3", "seconds": 2.2, "before_mb": 550, "peak_mb": 550, "params": "(shape=(2, 3, 4, 5), dtype=<class 'numpy.float32'>)"}

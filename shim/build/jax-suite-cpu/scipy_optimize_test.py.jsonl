@@ -1,0 +1,14 @@
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_args_must_be_tuple", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_fixes4594", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_zakharov", "outcome": "skipped", "message": "Skipped: test_zakharov not supported when FLAGS.jax_enable_x64 is False"}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_complex_rosenbrock", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestBFGS::test_minimize_bad_initial_values", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/scipy_optimize_test.py::TestLBFGS::test_minimize_complex_sphere", "outcome": "passed", "message": ""}

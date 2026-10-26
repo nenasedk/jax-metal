@@ -1,12 +1,1 @@
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testAstypeIntN2", "outcome": "passed", "issues": ["type i4"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testDtypeWrappers1", "outcome": "passed", "issues": ["type ui4"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testDtypeWrappers5", "outcome": "passed", "issues": ["type i4"]}
 {"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testArrayExplicitDtypes", "outcome": "passed", "issues": ["type complex<f64>", "type f64"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testFlushSubnormals3", "outcome": "passed", "issues": ["type f8E5M2"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testFrexpBitExact3", "outcome": "passed", "issues": ["type f8E5M2"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testLdexpBitExact3", "outcome": "passed", "issues": ["type f8E5M2"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testView1", "outcome": "passed", "issues": ["type i4"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testView3", "outcome": "passed", "issues": ["type ui4"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testView5", "outcome": "passed", "issues": ["type ui4"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testView6", "outcome": "passed", "issues": ["type ui4"]}
-{"nodeid": "tests/lax_numpy_test.py::LaxBackedNumpyTests::testView8", "outcome": "passed", "issues": ["type ui4"]}
