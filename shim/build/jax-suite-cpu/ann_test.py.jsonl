@@ -1,0 +1,46 @@
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_max_k9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_approx_min_k3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap0", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap2", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap3", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap4", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap5", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap6", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap7", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap8", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap9", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_pmap1", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_sharded_sorted_input1", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_sharded_sorted_input0", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_sharded_sorted_input3", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_sharded_sorted_input2", "outcome": "skipped", "message": "Skipped: Works only when number of devices is a multiple of 2."}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_vmap_before", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_vmap_after", "outcome": "passed", "message": ""}
+{"nodeid": "tests/ann_test.py::AnnTest::test_autodiff9", "outcome": "passed", "message": ""}

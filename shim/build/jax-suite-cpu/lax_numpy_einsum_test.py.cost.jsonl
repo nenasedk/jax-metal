@@ -1,0 +1,176 @@
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_batch_and_contraction_broadcasting", "seconds": 0.08, "before_mb": 169, "peak_mb": 223}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes2", "seconds": 0.096, "before_mb": 169, "peak_mb": 216, "params": "(signature='i->', shapes=[(3,)], optimize=True, dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision9", "seconds": 0.101, "before_mb": 169, "peak_mb": 220, "params": "(lhs_dtype=<class 'numpy.complex64'>, rhs_dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_batch_broadcasting", "seconds": 0.046, "before_mb": 223, "peak_mb": 226}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes0", "seconds": 0.05, "before_mb": 220, "peak_mb": 223, "params": "(signature='i->', shapes=[(3,)], optimize='optimal', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes3", "seconds": 0.06, "before_mb": 216, "peak_mb": 218, "params": "(signature='ij,jk', shapes=[(3, 4), (4, 3)], optimize='greedy', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_broadcasting_issue_2189", "seconds": 0.049, "before_mb": 226, "peak_mb": 227}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes1", "seconds": 0.027, "before_mb": 223, "peak_mb": 224, "params": "(signature='i->', shapes=[(3,)], optimize='greedy', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes2", "seconds": 0.023, "before_mb": 224, "peak_mb": 224, "params": "(signature='i->', shapes=[(3,)], optimize=True, dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_contraction_broadcasting", "seconds": 0.039, "before_mb": 227, "peak_mb": 229}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes3", "seconds": 0.051, "before_mb": 224, "peak_mb": 224, "params": "(signature='ij,jk', shapes=[(3, 4), (4, 3)], optimize='greedy', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes4", "seconds": 0.102, "before_mb": 218, "peak_mb": 231, "params": "(signature='ij,jkl,klm', shapes=[(2, 2), (2, 3, 4), (3, 4, 2)], optimize='optimal', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_kpmurphy_example", "seconds": 0.076, "before_mb": 229, "peak_mb": 237}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes5", "seconds": 0.058, "before_mb": 231, "peak_mb": 232, "params": "(signature='ii->i', shapes=[(4, 4)], optimize='optimal', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision0", "seconds": 0.038, "before_mb": 237, "peak_mb": 238, "params": "(lhs_dtype=<class 'numpy.float32'>, rhs_dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes6", "seconds": 0.031, "before_mb": 232, "peak_mb": 232, "params": "(signature='ii->i', shapes=[(4, 4)], optimize='auto', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes4", "seconds": 0.096, "before_mb": 224, "peak_mb": 234, "params": "(signature='ij,jkl,klm', shapes=[(2, 2), (2, 3, 4), (3, 4, 2)], optimize='optimal', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision1", "seconds": 0.035, "before_mb": 238, "peak_mb": 239, "params": "(lhs_dtype=<class 'numpy.int32'>, rhs_dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes7", "seconds": 0.03, "before_mb": 232, "peak_mb": 233, "params": "(signature='ii->i', shapes=[(4, 4)], optimize=True, dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision2", "seconds": 0.028, "before_mb": 239, "peak_mb": 240, "params": "(lhs_dtype=<class 'numpy.int32'>, rhs_dtype=<class 'numpy.int32'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes8", "seconds": 0.031, "before_mb": 233, "peak_mb": 233, "params": "(signature='ii->i', shapes=[(4, 4)], optimize='eager', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes5", "seconds": 0.059, "before_mb": 234, "peak_mb": 236, "params": "(signature='ii->i', shapes=[(4, 4)], optimize='optimal', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes6", "seconds": 0.028, "before_mb": 236, "peak_mb": 236, "params": "(signature='ii->i', shapes=[(4, 4)], optimize='auto', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes9", "seconds": 0.029, "before_mb": 233, "peak_mb": 233, "params": "(signature='ii->i', shapes=[(4, 4)], optimize=False, dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision3", "seconds": 0.062, "before_mb": 240, "peak_mb": 241, "params": "(lhs_dtype=<class 'numpy.uint32'>, rhs_dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes7", "seconds": 0.026, "before_mb": 236, "peak_mb": 236, "params": "(signature='ii->i', shapes=[(4, 4)], optimize=True, dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_unsupported_optimization", "seconds": 0.033, "before_mb": 233, "peak_mb": 234}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes8", "seconds": 0.027, "before_mb": 236, "peak_mb": 236, "params": "(signature='ii->i', shapes=[(4, 4)], optimize='eager', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_...ab->...a_dtype=bool", "seconds": 0.04, "before_mb": 234, "peak_mb": 237}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision4", "seconds": 0.049, "before_mb": 241, "peak_mb": 243, "params": "(lhs_dtype=<class 'numpy.int32'>, rhs_dtype=<class 'numpy.complex64'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_optimization_modes9", "seconds": 0.029, "before_mb": 236, "peak_mb": 237, "params": "(signature='ii->i', shapes=[(4, 4)], optimize=False, dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path", "seconds": 0.003, "before_mb": 237, "peak_mb": 237}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes0", "seconds": 0.025, "before_mb": 237, "peak_mb": 237, "params": "(signature='i->', shapes=[(3,)], optimize='optimal', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_...ab->...a_dtype=complex64", "seconds": 0.041, "before_mb": 237, "peak_mb": 238}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision5", "seconds": 0.047, "before_mb": 243, "peak_mb": 243, "params": "(lhs_dtype=<class 'numpy.complex64'>, rhs_dtype=<class 'numpy.uint32'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_path_optimization_modes1", "seconds": 0.028, "before_mb": 237, "peak_mb": 237, "params": "(signature='i->', shapes=[(3,)], optimize='greedy', dtype=dtype('float32'))"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_...ab->...a_dtype=float32", "seconds": 0.04, "before_mb": 238, "peak_mb": 239}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision6", "seconds": 0.034, "before_mb": 243, "peak_mb": 243, "params": "(lhs_dtype=<class 'numpy.float32'>, rhs_dtype=<class 'numpy.uint32'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_...ab->...a_dtype=int32", "seconds": 0.038, "before_mb": 239, "peak_mb": 240}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision7", "seconds": 0.052, "before_mb": 243, "peak_mb": 244, "params": "(lhs_dtype=<class 'numpy.int32'>, rhs_dtype=<class 'numpy.uint32'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_einsum_mixed_precision8", "seconds": 0.036, "before_mb": 244, "peak_mb": 244, "params": "(lhs_dtype=<class 'numpy.uint32'>, rhs_dtype=<class 'numpy.float32'>)"}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_...abc,...abcd->...d_dtype=complex64", "seconds": 0.11, "before_mb": 237, "peak_mb": 247}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_...abc,...abcd->...d_dtype=bool", "seconds": 0.06, "before_mb": 240, "peak_mb": 241}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a_dtype=complex64", "seconds": 0.038, "before_mb": 244, "peak_mb": 246}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a...a->a..._dtype=bool", "seconds": 0.034, "before_mb": 241, "peak_mb": 243}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_...abc,...abcd->...d_dtype=float32", "seconds": 0.047, "before_mb": 247, "peak_mb": 247}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a_dtype=float32", "seconds": 0.03, "before_mb": 246, "peak_mb": 246}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a...a->a..._dtype=complex64", "seconds": 0.031, "before_mb": 243, "peak_mb": 243}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a_dtype=int32", "seconds": 0.032, "before_mb": 246, "peak_mb": 247}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_...abc,...abcd->...d_dtype=int32", "seconds": 0.06, "before_mb": 247, "peak_mb": 247}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a...a->a..._dtype=float32", "seconds": 0.034, "before_mb": 243, "peak_mb": 243}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a...a->a..._dtype=int32", "seconds": 0.028, "before_mb": 243, "peak_mb": 244}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a->_dtype=bool", "seconds": 0.036, "before_mb": 247, "peak_mb": 248}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,b,c_dtype=bool", "seconds": 0.064, "before_mb": 247, "peak_mb": 250}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a...a_dtype=bool", "seconds": 0.028, "before_mb": 244, "peak_mb": 244}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a->_dtype=complex64", "seconds": 0.035, "before_mb": 248, "peak_mb": 248}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a...a_dtype=complex64", "seconds": 0.029, "before_mb": 244, "peak_mb": 246}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a->_dtype=float32", "seconds": 0.033, "before_mb": 248, "peak_mb": 249}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a...a_dtype=float32", "seconds": 0.027, "before_mb": 246, "peak_mb": 246}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,b,c_dtype=complex64", "seconds": 0.069, "before_mb": 250, "peak_mb": 252}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a->_dtype=int32", "seconds": 0.036, "before_mb": 249, "peak_mb": 249}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a...a_dtype=int32", "seconds": 0.027, "before_mb": 246, "peak_mb": 246}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a_dtype=bool", "seconds": 0.023, "before_mb": 246, "peak_mb": 246}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a->a_dtype=bool", "seconds": 0.029, "before_mb": 249, "peak_mb": 249}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,b,c_dtype=float32", "seconds": 0.043, "before_mb": 252, "peak_mb": 252}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a_dtype=complex64", "seconds": 0.026, "before_mb": 246, "peak_mb": 247}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a->a_dtype=complex64", "seconds": 0.028, "before_mb": 249, "peak_mb": 250}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a_dtype=float32", "seconds": 0.023, "before_mb": 247, "peak_mb": 248}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a->a_dtype=float32", "seconds": 0.025, "before_mb": 250, "peak_mb": 251}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,b,c_dtype=int32", "seconds": 0.059, "before_mb": 252, "peak_mb": 255}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a_dtype=int32", "seconds": 0.022, "before_mb": 248, "peak_mb": 248}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a->a_dtype=int32", "seconds": 0.028, "before_mb": 251, "peak_mb": 252}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,a_dtype=bool", "seconds": 0.003, "before_mb": 252, "peak_mb": 252}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,b_dtype=bool", "seconds": 0.032, "before_mb": 255, "peak_mb": 255}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aa->a_dtype=bool", "seconds": 0.039, "before_mb": 248, "peak_mb": 251}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aa_dtype=int32", "seconds": 0.036, "before_mb": 252, "peak_mb": 252}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,b_dtype=complex64", "seconds": 0.031, "before_mb": 255, "peak_mb": 255}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,b_dtype=float32", "seconds": 0.023, "before_mb": 255, "peak_mb": 255}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aa->a_dtype=complex64", "seconds": 0.035, "before_mb": 251, "peak_mb": 251}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_a,b_dtype=int32", "seconds": 0.031, "before_mb": 255, "peak_mb": 257}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aa->a_dtype=float32", "seconds": 0.033, "before_mb": 251, "peak_mb": 252}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aab,bc->ac_dtype=bool", "seconds": 0.063, "before_mb": 252, "peak_mb": 256}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aa->a_dtype=int32", "seconds": 0.038, "before_mb": 252, "peak_mb": 253}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab,ab,c->c_dtype=bool", "seconds": 0.046, "before_mb": 257, "peak_mb": 260}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aa_dtype=bool", "seconds": 0.041, "before_mb": 253, "peak_mb": 254}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aab,bc->ac_dtype=complex64", "seconds": 0.086, "before_mb": 256, "peak_mb": 259}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab,ab,c->c_dtype=complex64", "seconds": 0.07, "before_mb": 260, "peak_mb": 267}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aa_dtype=complex64", "seconds": 0.034, "before_mb": 254, "peak_mb": 254}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aab,bc->ac_dtype=float32", "seconds": 0.051, "before_mb": 259, "peak_mb": 259}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aa_dtype=float32", "seconds": 0.026, "before_mb": 254, "peak_mb": 254}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab,ab,c->c_dtype=float32", "seconds": 0.048, "before_mb": 267, "peak_mb": 267}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab...,b->ab..._dtype=bool", "seconds": 0.053, "before_mb": 254, "peak_mb": 256}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aab,bc->ac_dtype=int32", "seconds": 0.061, "before_mb": 259, "peak_mb": 260}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab,ab,c->c_dtype=int32", "seconds": 0.039, "before_mb": 267, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab,b_dtype=bool", "seconds": 0.027, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab...,b->ab..._dtype=complex64", "seconds": 0.049, "before_mb": 256, "peak_mb": 257}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aab,bcc->ac_dtype=bool", "seconds": 0.053, "before_mb": 260, "peak_mb": 263}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab...,b->ab..._dtype=float32", "seconds": 0.025, "before_mb": 257, "peak_mb": 257}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab,b_dtype=complex64", "seconds": 0.073, "before_mb": 268, "peak_mb": 275}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab...,b->ab..._dtype=int32", "seconds": 0.049, "before_mb": 257, "peak_mb": 258}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab,b_dtype=float32", "seconds": 0.029, "before_mb": 275, "peak_mb": 275}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aab,bcc->ac_dtype=complex64", "seconds": 0.087, "before_mb": 263, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab,b_dtype=int32", "seconds": 0.033, "before_mb": 275, "peak_mb": 275}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab...,bc...->ac..._dtype=bool", "seconds": 0.051, "before_mb": 258, "peak_mb": 260}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aab,bcc->ac_dtype=float32", "seconds": 0.044, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abc...->cba..._dtype=float32", "seconds": 0.038, "before_mb": 275, "peak_mb": 275}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_aab,bcc->ac_dtype=int32", "seconds": 0.065, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abc...->cba..._dtype=int32", "seconds": 0.057, "before_mb": 275, "peak_mb": 275}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab...,bc...->ac..._dtype=complex64", "seconds": 0.093, "before_mb": 260, "peak_mb": 266}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab...,bc...->ac..._dtype=int32", "seconds": 0.054, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ab...,bc...->ac..._dtype=float32", "seconds": 0.055, "before_mb": 266, "peak_mb": 267}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abcdef,bcdfg->abcdeg_dtype=bool", "seconds": 0.073, "before_mb": 275, "peak_mb": 275}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ba,b->_dtype=bool", "seconds": 0.046, "before_mb": 267, "peak_mb": 267}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abc,bad->abcd_dtype=bool", "seconds": 0.075, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abc,bad->abcd_dtype=complex64", "seconds": 0.046, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abcdef,bcdfg->abcdeg_dtype=complex64", "seconds": 0.095, "before_mb": 275, "peak_mb": 280}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ba,b->_dtype=complex64", "seconds": 0.056, "before_mb": 267, "peak_mb": 267}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ba,b->_dtype=float32", "seconds": 0.025, "before_mb": 267, "peak_mb": 267}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abc,bad->abcd_dtype=float32", "seconds": 0.039, "before_mb": 268, "peak_mb": 270}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abcdef,bcdfg->abcdeg_dtype=float32", "seconds": 0.059, "before_mb": 280, "peak_mb": 280}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ba,b->_dtype=int32", "seconds": 0.037, "before_mb": 267, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abc,bad->abcd_dtype=int32", "seconds": 0.051, "before_mb": 270, "peak_mb": 270}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ba,b_dtype=bool", "seconds": 0.03, "before_mb": 268, "peak_mb": 268}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abcdef,bcdfg->abcdeg_dtype=int32", "seconds": 0.051, "before_mb": 280, "peak_mb": 280}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abc...->cba..._dtype=bool", "seconds": 0.04, "before_mb": 270, "peak_mb": 272}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ba,b_dtype=float32", "seconds": 0.031, "before_mb": 280, "peak_mb": 280}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ba,b_dtype=complex64", "seconds": 0.06, "before_mb": 268, "peak_mb": 278}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_abc...->cba..._dtype=complex64", "seconds": 0.027, "before_mb": 272, "peak_mb": 272}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ba,b_dtype=int32", "seconds": 0.03, "before_mb": 280, "peak_mb": 280}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_defab,fedbc->defac_dtype=int32", "seconds": 0.057, "before_mb": 278, "peak_mb": 278}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_defab,fedbc->defac_dtype=bool", "seconds": 0.052, "before_mb": 280, "peak_mb": 282}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_fdf,cdd,ccd,afe->ae_dtype=bool", "seconds": 0.094, "before_mb": 272, "peak_mb": 276}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ea,fb,abcd,gc,hd->efgh_dtype=bool", "seconds": 0.112, "before_mb": 278, "peak_mb": 280}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_defab,fedbc->defac_dtype=complex64", "seconds": 0.104, "before_mb": 282, "peak_mb": 288}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_defab,fedbc->defac_dtype=float32", "seconds": 0.052, "before_mb": 288, "peak_mb": 288}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_fdf,cdd,ccd,afe->ae_dtype=complex64", "seconds": 0.199, "before_mb": 276, "peak_mb": 289}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_fff,fae,bef,def->abd_dtype=bool", "seconds": 0.126, "before_mb": 288, "peak_mb": 288}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ea,fb,abcd,gc,hd->efgh_dtype=complex64", "seconds": 0.2, "before_mb": 280, "peak_mb": 292}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_fdf,cdd,ccd,afe->ae_dtype=float32", "seconds": 0.128, "before_mb": 289, "peak_mb": 289}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ea,fb,abcd,gc,hd->efgh_dtype=float32", "seconds": 0.107, "before_mb": 292, "peak_mb": 292}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_fff,fae,bef,def->abd_dtype=complex64", "seconds": 0.139, "before_mb": 288, "peak_mb": 296}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_fdf,cdd,ccd,afe->ae_dtype=int32", "seconds": 0.1, "before_mb": 289, "peak_mb": 290}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_ea,fb,abcd,gc,hd->efgh_dtype=int32", "seconds": 0.082, "before_mb": 292, "peak_mb": 293}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_fff,fae,bef,def->abd_dtype=float32", "seconds": 0.095, "before_mb": 296, "peak_mb": 296}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_inf_nan", "seconds": 0.045, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_no_unnecessary_transpose", "seconds": 0.005, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_11", "seconds": 0.04, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_1", "seconds": 0.034, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_12", "seconds": 0.034, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_10", "seconds": 0.036, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_13", "seconds": 0.04, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_from_dask_fff,fae,bef,def->abd_dtype=int32", "seconds": 0.1, "before_mb": 296, "peak_mb": 297}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_2", "seconds": 0.028, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_4", "seconds": 0.039, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_3", "seconds": 0.025, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_6", "seconds": 0.003, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_14", "seconds": 0.048, "before_mb": 297, "peak_mb": 297}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_8", "seconds": 0.023, "before_mb": 290, "peak_mb": 290}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_5", "seconds": 0.041, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_15", "seconds": 0.032, "before_mb": 297, "peak_mb": 297}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_16", "seconds": 0.019, "before_mb": 297, "peak_mb": 297}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_9", "seconds": 0.041, "before_mb": 290, "peak_mb": 291}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_one_operand_7", "seconds": 0.038, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_preferred_element_type", "seconds": 0.005, "before_mb": 293, "peak_mb": 294}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_ordered_front_batch_dim_case", "seconds": 0.031, "before_mb": 291, "peak_mb": 291}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_tf_unsupported_1", "seconds": 0.06, "before_mb": 297, "peak_mb": 302}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_three_operands_1", "seconds": 0.054, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_three_operands_2", "seconds": 0.005, "before_mb": 294, "peak_mb": 294}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_tf_unsupported_3", "seconds": 0.049, "before_mb": 291, "peak_mb": 292}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_tf_unsupported_2", "seconds": 0.037, "before_mb": 302, "peak_mb": 303}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_two_operands_1", "seconds": 0.033, "before_mb": 292, "peak_mb": 293}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_two_operands_3", "seconds": 0.043, "before_mb": 294, "peak_mb": 297}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_two_operands_2", "seconds": 0.035, "before_mb": 303, "peak_mb": 303}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_two_operands_5", "seconds": 0.025, "before_mb": 293, "peak_mb": 293}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_two_operands_4", "seconds": 0.025, "before_mb": 297, "peak_mb": 297}
+{"nodeid": "tests/lax_numpy_einsum_test.py::EinsumTest::test_two_operands_6", "seconds": 0.036, "before_mb": 303, "peak_mb": 303}

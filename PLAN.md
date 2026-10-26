@@ -159,23 +159,27 @@ Platform and maintenance:
 
 ## Recommended next steps
 
-1. **Run JAX's own tests on METAL** (`lax_test`, `lax_numpy_test`, `linalg_test`, `fft_test`,
-   `random_test`, `lax_autodiff_test`) to find remaining gaps systematically; triage failures
-   into METAL lowering rules, accuracy fixes or documented limits.
-2. **Real workloads and benchmarks**: train small Flax/Optax models (MLP, CNN, transformer),
-   compare speed and loss curves with the CPU and with the jax 0.4.34 + jax-metal baseline.
-3. **Extend the accuracy sweep** to reductions, matmul/conv precision and float16/bfloat16
-   arithmetic, and add strict-mode checks to the test suite.
+1. **Run JAX's own tests on METAL**: ready as `make -C shim gpu-session`, which also runs
+   every other GPU check. The same 19 files already pass through the METAL rules on the CPU
+   (`shim/build/jax-suite-cpu/`), so each METAL failure is labeled "METAL only" (MPS behavior
+   or a plugin limit) or "also on CPU" (the rules); fix the rules or document the limits.
+2. **Real workloads and benchmarks**: `shim/benchmarks/` (plain-JAX MLP/CNN/transformer
+   training, Flax/Optax models, single ops) run on the CPU; run them on METAL
+   (`gpu-session --bench`) and against the jax 0.4.34 + jax-metal baseline.
+3. **Accuracy beyond elementwise ops**: `shim/tests/accuracy_extended.py` (reductions,
+   matmul/conv, float16/bfloat16, binary ops) runs on the CPU; its first METAL run is part of
+   the GPU session.
 4. **Performance work where benchmarks point**: blocked Cholesky/triangular solve built on
    matmuls, a larger-radix FFT with Bluestein for prime lengths, asynchronous complex outputs.
 5. **CI on a self-hosted Apple-silicon runner** running the C++ tests, the probe, the accuracy
    sweep and the JAX test subset, to catch JAX/macOS drift before users do.
 6. **float64 via an explicit `df64.jit` transform** if users need it (estimated 2–4 weeks).
-7. **Packaging**: a macOS arm64 wheel for the shim that fetches and verifies Apple's library on
-   first use; a version check that warns on untested JAX releases.
+7. **Packaging**: done (`shim/pyproject.toml`, `RELEASING.md`); the first release waits on the
+   GPU session.
 8. **Report the MPS bugs** found here to Apple (Feedback Assistant): naive `expm1`/`log1p`,
    `tanh(NaN) = 1`, `sign(NaN)`, the `rng_bit_generator` abort, the missing complex `pad`
-   kernel (`padOp_cf`), and the bfloat16 cast behavior.
+   kernel (`padOp_cf`), the bfloat16 cast behavior, and max/min that drop NaN
+   (`re/findings/mps-nan-semantics.md`).
 
 ## Complexity estimate
 

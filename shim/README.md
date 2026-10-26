@@ -87,8 +87,10 @@ git add -f shim/build/gpu-session && git add re/findings   # then commit the res
 Its steps: setup (JAX's tests, pytest, C++ test data), install check and a first METAL
 computation, C++ load tests, the regression tests, the op probe, both accuracy sweeps, then
 JAX's test files within a time budget (default 120 minutes per run; run it again to
-continue), the heaviest tests last. A finished step is not repeated (`--redo NAME`);
-`--bench` adds the benchmarks. It stops early if METAL does not work at all, or if the GPU has
+continue), the heaviest tests last (about 1%: over 5 s or 100 MB in the CPU run, or an array
+dimension of 1000 or more). A finished step is not repeated (`--redo NAME`;
+`--retry-failures` re-runs JAX's failed and crashed tests after a fix); `--bench` adds the
+benchmarks. It stops early if METAL does not work at all, or if the GPU has
 not recovered after the guard killed a job.
 
 The same steps by hand:

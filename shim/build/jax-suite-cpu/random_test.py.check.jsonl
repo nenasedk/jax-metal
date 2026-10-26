@@ -1,0 +1,4 @@
+{"nodeid": "tests/random_test.py::PrngTest::testRngRandomBitsShapeDtype0", "outcome": "passed", "issues": ["uint64 program input or output"]}
+{"nodeid": "tests/random_test.py::PrngTest::testRngRandomBitsShapeDtype2", "outcome": "passed", "issues": ["uint64 program input or output"]}
+{"nodeid": "tests/random_test.py::PrngTest::testRngRandomBitsShapeDtype3", "outcome": "passed", "issues": ["uint64 program input or output"]}
+{"nodeid": "tests/random_test.py::PrngTest::testRngRandomBitsShapeDtype5", "outcome": "passed", "issues": ["uint64 program input or output"]}

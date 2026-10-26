@@ -1,0 +1,709 @@
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testNumpyAndXLAAgreeOnFloatEndianness0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.uint8'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_rayleigh_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_rayleigh_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_rayleigh_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_t_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_orthogonal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_pareto", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_permutation", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngRandint9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_t_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_poisson", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::testRngUniform5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_eval_shape_big_random_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_large_prng", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_rademacher", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance5", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance6", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance7", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance8", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_prng_jit_invariance9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_randint", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_rayleigh", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_t_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_triangular_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CommonRandomTest::test_split_size_shape4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_triangular_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_triangular_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_truncated_normal_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_truncated_normal_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_truncated_normal_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_uniform_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_t", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_uniform_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_triangular", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_uniform_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_wald_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_ball", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_truncated_normal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_wald_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_uniform", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_bernoulli", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_wald", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_wald_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_weibull_min_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_beta_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_weibull_min_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_weibull_min_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_beta", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_bits", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_categorical_1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_beta_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_categorical_2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_f_broadcasted_parameters", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_categorical_3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_categorical_4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_cauchy", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_beta_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_binomial_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_beta", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_chisquare", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_binomial_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_binomial", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_binomial_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_chisquare_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_dirichlet", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_exponential", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_chisquare", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_chisquare_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_f", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_chisquare_approx", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_chisquare_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_dirichlet_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_gamma", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_f", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_generalized_normal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_geometric", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_gumbel", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_laplace", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_dirichlet_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_gamma", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_gamma_approx", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_loggamma", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_geometric", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_logistic", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_lognormal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_maxwell", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_dirichlet_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_double_sided_maxwell_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_double_sided_maxwell_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_multivariate_normal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_loggamma", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomOutShardingTest::test_out_sharding_normal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS4", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS5", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS6", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS7", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS8", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS9", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_double_sided_maxwell_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_f_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_loggamma_approx", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulli9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_lognormal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulliShape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_pareto", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_f_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_poisson", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_poisson_approx", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_f_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_gamma_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_randint", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_rayleigh", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBernoulliSmallProbabilty", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta0", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta1", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta2", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta3", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta4", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta5", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta6", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta7", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta8", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBeta9", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBetaInvalidMethod", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_gamma_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_t", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_triangular", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_gamma_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.int16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.int32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.int8'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.uint16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.uint32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_geometric_<class 'numpy.uint8'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_loggamma_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBetaSmallParameters0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_truncated_normal", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_uniform", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBetaSmallParameters1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_wald", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomShapeTest::test_shape_weibull_min", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_loggamma_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialCornerCases", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_loggamma_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_lognormal_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_lognormal_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_lognormal_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_pareto_<class 'ml_dtypes.bfloat16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_pareto_<class 'numpy.float16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBinomialSample9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_pareto_<class 'numpy.float32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.int16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.int32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.int8'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.uint16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.uint32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_poisson_<class 'numpy.uint8'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.int16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.int32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.int8'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.uint16'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomDtypeTest::test_dtype_randint_<class 'numpy.uint32'>", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoiceShapeIsNotSequenceError", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDirichlet0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDirichlet1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDirichletSmallAlpha", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDoublesidedMaxwellSample0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDoublesidedMaxwellSample1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDoublesidedMaxwellSample2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDoublesidedMaxwellSample3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testDtypeErrorMessage", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testExponential5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBall9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS0", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS1", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS2", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testBallKS3", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18932"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testF9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testFoldIn", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testFoldInBig", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategorical9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradApproximate5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGradType", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaInvalidMethod", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGamma9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaVsLogGamma5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCategoricalWithoutReplacement8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGammaGrad2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS4", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS5", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS6", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testCauchy5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS7", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare0", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare1", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS8", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare2", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare3", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS9", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare4", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare5", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare6", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare7", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare8", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquare9", "outcome": "skipped", "message": "Skipped: skip test except on X64"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChisquareInvalidMethod", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeometric9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGumbel0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGumbel1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testIssue1789", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testIssue222", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testIssue756", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLaplace5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormal9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS0", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS1", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS2", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testGeneralizedNormalKS3", "outcome": "skipped", "message": "Skipped: sensitive to random key - https://github.com/jax-ml/jax/issues/18941"}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogNormal7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testChoice9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLogistic5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testLowProbabilityGumbel", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMaxwellSample0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMaxwellSample1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalSingularCovariance0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialBatchShape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalSingularCovariance1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalSingularCovariance2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormalBfloat16", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormalComplex0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testNormalComplex1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialDtype9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialExample", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testOrthogonal9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPareto5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testParetoShape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutation9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPermutationErrors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoisson9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateRngImpl", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialShape8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonApproximateTotalVariation4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonBatched", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormal9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalCovariance", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonCornerCases", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonInvalidMethod", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultinomialNumpy6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonShape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonWithoutShape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testMultivariateNormalShapes3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testT5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonZeros0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTriangular9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWeibullSample0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWeibullSample1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWeibullSample2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWeibullSample3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_batched_key_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_binomial_dtypes", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testPoissonZeros1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRadamacher0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRadamacher1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testTruncatedNormal5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRandomBroadcast", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testRayleigh9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testWald8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_cannot_add", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_eval_shape_big_random_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_grad_of_prng_key", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_large_prng", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testSafeIntToFloat", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::testStaticShapeErrors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance5", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance6", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance7", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance8", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_prng_jit_invariance9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_categorical_shape_argument9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_geometric_avoids_infs", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_bounds5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_narrow_int_bias0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_split_size_shape4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_narrow_int_bias1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_narrow_int_bias2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_narrow_int_bias3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngUniform4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::DistributionsTest::test_randint_out_of_range", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testNumpyAndXLAAgreeOnFloatEndianness0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_vmap_fold_in_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::test_vmap_split_mapped_key", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::CustomPRNGTest::testRngRandint2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testNumpyAndXLAAgreeOnFloatEndianness0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngUniform5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_cannot_add", "outcome": "skipped", "message": "Skipped: relies on typed key arrays"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_eval_shape_big_random_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance5", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance6", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance7", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance8", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_grad_of_prng_key", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_large_prng", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_randint_out_of_range", "outcome": "skipped", "message": "Skipped: 8-bit types not supported with RBG PRNG"}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_random_split_doesnt_device_put_during_tracing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_prng_jit_invariance3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_random_bits_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_random_bits_value", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::testRngRandint6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testNumpyAndXLAAgreeOnFloatEndianness0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_split_mapped_key_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_split_mapped_key_values", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_split_unmapped_key", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_split_size_shape4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint6", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint7", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint8", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_fold_in_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngUniform5", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_cannot_add", "outcome": "skipped", "message": "Skipped: relies on typed key arrays"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_eval_shape_big_random_array", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_grad_of_prng_key", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance5", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance6", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance7", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance8", "outcome": "skipped", "message": "Skipped: Expected failure: Python int too large."}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::testRngRandint9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance9", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_randint_out_of_range", "outcome": "skipped", "message": "Skipped: 8-bit types not supported with RBG PRNG"}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_large_prng", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_random_split_doesnt_device_put_during_tracing", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_errors", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RBGPRNGTest::test_vmap_random_bits_distribution", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_prng_jit_invariance3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape1", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape0", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape2", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape4", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_split_size_shape3", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_random_bits_distribution", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_random_bits_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_split_mapped_key_values", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::RandomUtilTest::test_check_broadcast_shapes_empty", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_fold_in_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_split_mapped_key_shape", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_random_bits_value", "outcome": "passed", "message": ""}
+{"nodeid": "tests/random_lax_test.py::UnsafeRBGPRNGTest::test_vmap_split_unmapped_key", "outcome": "passed", "message": ""}

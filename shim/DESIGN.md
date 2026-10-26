@@ -122,7 +122,10 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     `CustomCallConverter` only knows LU).
   - `eigh`: parallel cyclic Jacobi (round-robin pairs, one gather per round) for n ≤ 256 and for
     complex inputs; JAX's QDWH spectral divide-and-conquer, always batched, above. Jacobi refuses
-    n > 256 at trace time: a 1008 × 1008 one stalled the GPU and WindowServer.
+    n > 256 at trace time: a 1008 × 1008 one stalled the GPU and WindowServer. The other rules'
+    programs stay small, so no other cap is set: in StableHLO ops, QDWH `eigh` grows from
+    2,300 (n = 257) to 7,000 (n = 2048), real SVD is 1,500 (64) to 4,900 (512), and Cholesky
+    and QR are about 100–200 at any size (one loop each).
   - SVD: real inputs use JAX's generic QDWH SVD, always batched (unbatched, its `lax.cond`s inside
     a while loop crash MPSGraph at run time, `GPU::WhileOpHandler`). Complex inputs reduce to a
     min(m, n) square core with QR, then take the Jacobi eigendecomposition of [[0, A], [Aᴴ, 0]]

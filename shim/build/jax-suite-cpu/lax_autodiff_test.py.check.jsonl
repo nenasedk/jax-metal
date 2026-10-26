@@ -1,0 +1,2 @@
+{"nodeid": "tests/lax_autodiff_test.py::LaxAutodiffTest::testAsinhAcoshGradLargeValuesFloat640", "outcome": "passed", "issues": ["type f64"]}
+{"nodeid": "tests/lax_autodiff_test.py::LaxAutodiffTest::testAsinhAcoshGradLargeValuesFloat641", "outcome": "passed", "issues": ["type f64"]}

@@ -5,13 +5,17 @@ Generated from a run of `shim/tests/jax_suite/cpu_rules_plugin.py` (jax 0.12.0.1
 rules, JAX's generic lowerings, METAL test selection), and `metal_check.py` predicts what
 Apple's plugin could not compile. Predictions are confirmed or refuted by a METAL run.
 
-Run on 2026-10-26 on Linux, one file at a time:
+Run on 2026-10-26 on Linux with the runner, three pytest-xdist workers; the results, the
+predictions and each test's cost (seconds, memory, parameters) are in
+`shim/build/jax-suite-cpu/`, which the GPU session compares METAL's results with:
 
 ```sh
-cd re/work/jax-src && JAX_PLATFORMS=cpu JAX_NUM_GENERATED_CASES=10 \
-  JAX_METAL_CHECK_LOG=out/<file>.jsonl PYTHONPATH=../../../shim/tests/jax_suite \
-  python -m pytest -q -p cpu_rules_plugin -n 3 --timeout=300 tests/<file>.py
+python shim/tests/jax_suite/run_jax_tests.py re/work/jax-src shim/build/jax-suite-cpu \
+  --cpu --workers 3        # JAX_SUITE_TIMEOUT=300 for slow machines
 ```
+
+The counts below were the same before and after the NaN-propagation rules for max/min
+(`re/findings/mps-nan-semantics.md`), which are no-ops where max already propagates NaN.
 
 ## What remains, and why
 

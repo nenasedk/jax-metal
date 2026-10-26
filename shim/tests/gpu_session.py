@@ -2,7 +2,7 @@
 
     make -C shim gpu-session [ARGS="--budget-minutes 90"]
     .venv-shim/bin/python shim/tests/gpu_session.py [--budget-minutes M] [--steps A,B]
-        [--skip A,B] [--redo A,B] [--bench] [--restart] [--dry-run]
+        [--skip A,B] [--redo A,B] [--retry-failures] [--bench] [--restart] [--dry-run]
 
 Steps, in order. Every command that uses the GPU runs under guard.py, one GPU job at a time.
 
@@ -19,7 +19,8 @@ Steps, in order. Every command that uses the GPU runs under guard.py, one GPU jo
 
 A step that has finished, whatever its result, is not run again (--redo NAME runs it again);
 setup and install are cheap checks and always run. The JAX steps stop when the time budget
-(--budget-minutes, default 120) is used up and continue where they stopped the next time.
+(--budget-minutes, default 120) is used up and continue where they stopped the next time;
+after a fix, --retry-failures runs JAX's failed and crashed tests again.
 The session stops early if the first METAL computation fails, or if the GPU has not
 recovered after the guard killed a job.
 
@@ -111,7 +112,7 @@ def plain(name, command, *, append=False):
 
 
 # --- steps --------------------------------------------------------------------------------
-# Each returns (status, note); status is passed, failed, killed or partial.
+# Each returns (status, note); status is passed, failed, killed, partial or done (JAX steps).
 
 def _result(code, reason, note=""):
     if reason:
@@ -230,13 +231,14 @@ def write_heavy():
     return heavy
 
 
-def run_suite(name, files, selection, deadline):
+def run_suite(name, files, selection, deadline, retry_failures):
     """run_jax_tests.py over `files`; it guards each pytest process and takes the GPU lock."""
     minutes = (deadline - time.time()) / 60
     if minutes < 1:
         return "partial", "no time left in the budget"
     command = [PY, os.path.join(TESTS, "jax_suite", "run_jax_tests.py"), JAX_SRC, SUITE_OUT,
-               *files, *selection, "--resume", "--budget-minutes", f"{minutes:.1f}"]
+               *files, *selection, "--retry-failures" if retry_failures else "--resume",
+               "--budget-minutes", f"{minutes:.1f}"]
     if os.path.isdir(CPU_DIR):
         command += ["--compare-cpu", CPU_DIR]
     with open(log_path(name), "a", encoding="utf-8") as out:
@@ -254,22 +256,22 @@ def run_suite(name, files, selection, deadline):
                     "going on")
     if code == run_jax_tests.BUDGET_EXIT:
         return "partial", "time budget used up"
-    return ("passed" if code == 0 else "failed"), ("" if code == 0 else f"exit {code}")
+    # Test failures are results, in jax-suite/summary.md; "failed" is the runner's own.
+    return ("done" if code == 0 else "failed"), ("" if code == 0 else f"exit {code}")
 
 
 def step_jax_suite(args, deadline):
-    del args
     write_heavy()
-    return run_suite("jax-suite", JAX_FILES, ["--exclude", HEAVY], deadline)
+    return run_suite("jax-suite", JAX_FILES, ["--exclude", HEAVY], deadline,
+                     args.retry_failures)
 
 
 def step_jax_heavy(args, deadline):
-    del args
     heavy = write_heavy()
     files = [f for f in JAX_FILES if any(n.startswith(f"tests/{f}::") for n in heavy)]
     if not files:
         return "passed", "no heavy tests"
-    return run_suite("jax-heavy", files, ["--only", HEAVY], deadline)
+    return run_suite("jax-heavy", files, ["--only", HEAVY], deadline, args.retry_failures)
 
 
 def step_bench(args):
@@ -365,9 +367,14 @@ def write_summary(state):
             lines.append(f"| {name} | {record['status']} | {record['seconds'] / 60:.1f} | "
                          f"{record['finished']} | {record['note'].replace('|', '/')[:200]} | "
                          f"`logs/{name}.log` |")
-    lines += ["", "JAX's tests: [jax-suite/summary.md](jax-suite/summary.md); op probe: "
-              "`re/findings/jax-op-probe.md`; extended accuracy: "
-              "`re/findings/accuracy-extended.md`."]
+    suite_summary = os.path.join(SUITE_OUT, "summary.md")
+    if os.path.exists(suite_summary):
+        with open(suite_summary, encoding="utf-8") as handle:
+            table = [line for line in handle if line.startswith(("| File", "|---", "| **total"))]
+        lines += ["", "JAX's tests so far:", "", *(line.rstrip("\n") for line in table[:3])]
+    lines += ["", "Details: [jax-suite/summary.md](jax-suite/summary.md) (each failure labeled "
+              "METAL only or also on CPU); op probe: `re/findings/jax-op-probe.md`; extended "
+              "accuracy: `re/findings/accuracy-extended.md`."]
     with open(os.path.join(SESSION, "summary.md"), "w", encoding="utf-8") as handle:
         handle.write("\n".join(lines) + "\n")
 
@@ -389,12 +396,18 @@ def parse_args(argv):
     parser.add_argument("--skip", type=names, default=[], metavar="A,B", help="leave these out")
     parser.add_argument("--redo", type=names, default=[], metavar="A,B",
                         help="run these again even if they have finished")
+    parser.add_argument("--retry-failures", action="store_true",
+                        help="run JAX's failed and crashed tests again (after a fix); implies "
+                             "--redo jax-suite,jax-heavy")
     parser.add_argument("--bench", action="store_true", help="also run the benchmarks")
     parser.add_argument("--restart", action="store_true",
                         help="forget earlier progress: delete shim/build/gpu-session first")
     parser.add_argument("--dry-run", action="store_true",
                         help="show what would run, without running anything")
-    return parser.parse_args(argv)
+    args = parser.parse_args(argv)
+    if args.retry_failures:
+        args.redo = [*args.redo, *BUDGETED]
+    return args
 
 
 def plan(args, state):

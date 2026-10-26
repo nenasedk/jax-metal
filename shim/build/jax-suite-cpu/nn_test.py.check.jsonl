@@ -1,0 +1,1 @@
+{"nodeid": "tests/nn_test.py::NNFunctionsTest::testDotProductAttentionFloat64MaskDebugInfs", "outcome": "passed", "issues": ["type f64"]}
