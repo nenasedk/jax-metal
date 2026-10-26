@@ -9,8 +9,8 @@
 CPU then lowers programs the way METAL does: the shim's METAL rules are registered for "cpu",
 and XLA's other CPU-specific lowerings (LAPACK custom calls, threefry, ...) are removed, so
 primitives without a METAL rule use JAX's generic lowering, or have none, as on METAL. Tests
-are also selected as for METAL (jax_test_dut=METAL). This finds tracing errors and wrong
-algorithms in the rules.
+are also selected as for METAL (jax_test_dut=METAL, one device). This finds tracing errors
+and wrong algorithms in the rules.
 
 Every program about to compile also goes through metal_check.metal_issues(), which
 predicts what Apple's plugin could not compile (ops without an MPS pattern, composites,
@@ -59,9 +59,25 @@ for _primitive, _rule in _xla_cpu_rules.items():
         del _cpu_rules[_primitive]
 for _primitive in (lax_internal.real_p, lax_internal.imag_p, lax_internal.complex_p):
     _cpu_rules.pop(_primitive, None)
+
+_register_lowering = mlir.register_lowering
+
+
+def _register_lowering_except_cpu(primitive, rule, platform=None, *args, **kwargs):
+    # Modules imported later (jax.experimental.sparse, ...) register CPU-specific lowerings
+    # too; METAL has none of them.
+    if platform == "cpu":
+        return None
+    return _register_lowering(primitive, rule, platform, *args, **kwargs)
+
+
+mlir.register_lowering = _register_lowering_except_cpu
 if "JAX_USE_SHARDY_PARTITIONER" not in os.environ:  # as the package's initialize() does
     jax.config.update("jax_use_shardy_partitioner", False)
 jax.config.update("jax_test_dut", "METAL")  # defined by test_util, imported above
+# METAL has one device. Multi-device test files ask for 8 CPU devices at import; keep one, so
+# their multi-device tests skip as they do on METAL instead of running on a mesh METAL lacks.
+jax._src.test_util.request_cpu_devices = lambda nr_devices: None
 
 _LOG = os.environ.get("JAX_METAL_CHECK_LOG")
 _current = {"nodeid": None, "issues": set()}

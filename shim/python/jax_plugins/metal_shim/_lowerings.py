@@ -5,6 +5,7 @@ re/findings/mps-op-coverage.md for what the plugin can lower and
 re/findings/jax-op-probe.md for what fails without these rules.
 """
 
+import threading
 from functools import partial
 
 import numpy as np
@@ -14,18 +15,22 @@ from jax._src.interpreters import mlir
 from jax._src.lax import ann
 from jax._src.lax import lax as lax_internal
 from jax._src.lax import linalg
+from jax._src.lax import parallel
+from jax._src.lax import slicing
 from jax._src.lax import special
 from jax._src.lax import windowed_reductions
 from jax._src.lax.control_flow import loops
 from jax._src.random.threefry2x32 import threefry_2x32
 
+from jax_plugins.metal_shim import _collectives
 from jax_plugins.metal_shim import _complex
 
 PLATFORM = "METAL"
 
 
 def _register_rule(primitive, rule):
-    mlir.register_lowering(primitive, _complex.allow_rank_promotion(rule), platform=PLATFORM)
+    _complex.PLATFORM = PLATFORM
+    _complex.register_rule(primitive, rule)
 
 
 def _register(primitive, fn, multiple_results=False):
@@ -110,13 +115,77 @@ def _is_floating_aval(aval):
     return isinstance(aval.dtype, np.dtype) and np.issubdtype(aval.dtype, np.floating)
 
 
+def _scatter_nan_propagating(primitive):
+    """scatter_max/scatter_min, then NaN wherever the operand or an update scattered there is
+    NaN: the update mask is scattered with scatter_max on 0/1 values (NaN-free, exact)."""
+    default = _default_rule(primitive)
+    scatter_max = _default_rule(slicing.scatter_max_p)
+    nan_masks = mlir.lower_fun(
+        lambda operand, updates: (lax.full_like(operand, 0),
+                                  lax.convert_element_type(lax.ne(updates, updates), updates.dtype)),
+        multiple_results=True)
+    with_nan = mlir.lower_fun(
+        lambda operand, hit, out: lax.select(
+            lax.ne(operand, operand) | lax.gt(hit, lax.full_like(hit, 0)),
+            lax.full_like(out, np.nan), out),
+        multiple_results=False)
+
+    def rule(ctx, operand, indices, updates, **params):
+        out = default(ctx, operand, indices, updates, **params)
+        if not _is_floating_aval(ctx.avals_in[0]):
+            return out
+        operand_aval, _, updates_aval = ctx.avals_in
+        zeros, update_nan = nan_masks(
+            ctx.replace(avals_in=[operand_aval, updates_aval],
+                        avals_out=[operand_aval, updates_aval], tokens_out=None),
+            operand, updates)
+        # The mask always combines with max (scatter_min's own body would lose hits).
+        max_jaxpr, max_consts = lax_internal._reduction_jaxpr(  # pylint: disable=protected-access
+            lax.max, core.ShapedArray((), operand_aval.dtype))
+        hit = scatter_max(ctx.replace(tokens_out=None), zeros, indices, update_nan,
+                          **dict(params, update_jaxpr=max_jaxpr, update_consts=max_consts))
+        return with_nan(ctx.replace(avals_in=[operand_aval, operand_aval, operand_aval],
+                                    tokens_out=None), operand, *hit, *out)
+
+    return rule
+
+
+# Region bodies (the combiner of a reduce, reduce_window, scatter or all-reduce) must stay a
+# single max or min: the plugin's converters recognize the reduction by that op and reject a
+# compare-and-select body. Lowering such a primitive marks its body as inside a region, where
+# the NaN rules keep JAX's plain lowering.
+_region = threading.local()
+
+
+def _in_region():
+    return getattr(_region, "depth", 0) > 0
+
+
+def _marking_region_bodies(rule):
+    def wrapped(ctx, *args, **params):
+        _region.depth = getattr(_region, "depth", 0) + 1
+        try:
+            return rule(ctx, *args, **params)
+        finally:
+            _region.depth -= 1
+    return wrapped
+
+
+_REGION_PRIMITIVES = (
+    lax_internal.reduce_p, windowed_reductions.reduce_window_p,
+    windowed_reductions.select_and_scatter_p, slicing.scatter_p, slicing.scatter_add_p,
+    slicing.scatter_sub_p, slicing.scatter_mul_p, slicing.scatter_min_p, slicing.scatter_max_p,
+    parallel.psum_p, parallel.pmax_p, parallel.pmin_p,
+)
+
+
 def _nan_propagating(primitive, fix_fn):
     """JAX's lowering of `primitive`, then fix_fn(*inputs, output) for floating inputs."""
     default = _default_rule(primitive)
 
     def rule(ctx, *args, **params):
         out = default(ctx, *args, **params)
-        if not any(_is_floating_aval(aval) for aval in ctx.avals_in):
+        if _in_region() or not any(_is_floating_aval(aval) for aval in ctx.avals_in):
             return out
         fix = mlir.lower_fun(partial(fix_fn, **params), multiple_results=False)
         # A fresh context: a lower_fun-based default (argmax) has set this one's tokens.
@@ -131,8 +200,8 @@ def _first_nan(*inputs_and_output, **_):
     import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
     *inputs, out = inputs_and_output
     for x in reversed(inputs):
-        x = jnp.broadcast_to(x, out.shape)
-        out = lax.select(lax.ne(x, x), x, out)
+        # jnp.where broadcasts a scalar operand with the output's sharding (explicit meshes).
+        out = jnp.where(lax.ne(x, x), x, out)
     return out
 
 
@@ -175,7 +244,7 @@ def _window_nan_propagating(primitive):
 
     def rule(ctx, x, **window):
         out = default(ctx, x, **window)
-        if not _is_floating_aval(ctx.avals_in[0]):
+        if _in_region() or not _is_floating_aval(ctx.avals_in[0]):
             return out
         mask = nan_mask(ctx.replace(avals_out=ctx.avals_in, tokens_out=None), x)
         has_nan = max_pool(ctx, *mask, **window)
@@ -502,33 +571,34 @@ def _householder(col, j):
     return v, tau, beta_out
 
 
+def _qr_column(a, taus, j):
+    """One step of Householder QR in LAPACK's packed form: reduce column j of a [..., m, n]
+    below the diagonal, apply the reflector to the later columns, store it below the
+    diagonal and its tau in taus[..., j]."""
+    rows = lax.broadcasted_iota(np.int32, a.shape[:-1], a.ndim - 2)
+    cols = lax.broadcasted_iota(np.int32, (*a.shape[:-2], a.shape[-1]), a.ndim - 2)
+    col = lax.dynamic_index_in_dim(a, j, axis=a.ndim - 1, keepdims=False)
+    v, tau, beta = _householder(col, j)
+    w = _batch_matvec(a, _conj(v))  # v^H a, one entry per column
+    update = (_conj(tau)[..., None, None] * v[..., :, None]) * w[..., None, :]
+    a = lax.select(lax.broadcast_in_dim(cols > j, a.shape, (*range(a.ndim - 2), a.ndim - 1)),
+                   a - update, a)
+    new_col = lax.select(rows < j, col, lax.select(rows == j, lax.broadcast_in_dim(
+        beta, col.shape, tuple(range(beta.ndim))), v))
+    a = lax.dynamic_update_index_in_dim(a, new_col[..., None], j, axis=a.ndim - 1)
+    taus = lax.dynamic_update_index_in_dim(taus, tau[..., None], j, axis=taus.ndim - 1)
+    return a, taus
+
+
 def _geqrf(a, **_):
     # Householder QR in LAPACK's packed form: R on and above the diagonal, reflectors below,
     # taus separately. The generic lowering emits XLA's "Qr" custom call, which aborts the
     # plugin (its CustomCallConverter only knows LU).
     m, n = a.shape[-2:]
-    k = min(m, n)
-    rows = lax.broadcasted_iota(np.int32, a.shape[:-1], a.ndim - 2)
-    cols = lax.broadcasted_iota(np.int32, (*a.shape[:-2], n), a.ndim - 2)
-    taus = lax.full(a.shape[:-2] + (k,), 0, a.dtype)
+    taus = lax.full(a.shape[:-2] + (min(m, n),), 0, a.dtype)
     if a.size == 0:
         return [a, taus]
-
-    def step(j, carry):
-        a, taus = carry
-        col = lax.dynamic_index_in_dim(a, j, axis=a.ndim - 1, keepdims=False)
-        v, tau, beta = _householder(col, j)
-        w = _batch_matvec(a, _conj(v))  # v^H a, one entry per column
-        update = (_conj(tau)[..., None, None] * v[..., :, None]) * w[..., None, :]
-        a = lax.select(lax.broadcast_in_dim(cols > j, a.shape, (*range(a.ndim - 2), a.ndim - 1)),
-                       a - update, a)
-        new_col = lax.select(rows < j, col, lax.select(rows == j, lax.broadcast_in_dim(
-            beta, col.shape, tuple(range(beta.ndim))), v))
-        a = lax.dynamic_update_index_in_dim(a, new_col[..., None], j, axis=a.ndim - 1)
-        taus = lax.dynamic_update_index_in_dim(taus, tau[..., None], j, axis=taus.ndim - 1)
-        return a, taus
-
-    return list(lax.fori_loop(0, k, step, (a, taus)))
+    return list(lax.fori_loop(0, min(m, n), lambda j, carry: _qr_column(*carry, j), (a, taus)))
 
 
 def _householder_product(a, taus, **_):
@@ -1038,4 +1108,16 @@ def register():
     for primitive in (windowed_reductions.reduce_window_max_p,
                       windowed_reductions.reduce_window_min_p):
         _register_rule(primitive, _window_nan_propagating(primitive))
+    for primitive in (slicing.scatter_max_p, slicing.scatter_min_p):
+        _register_rule(primitive, _scatter_nan_propagating(primitive))
+    _collectives.register(_register_rule)
+    from jax_plugins.metal_shim import _decompositions  # pylint: disable=import-outside-toplevel
+    _decompositions.register(_register_rule)
     _complex.register()
+    # JAX's generic loop-based lowerings, traced the way this package's rules are (no
+    # varying-axes checks inside shard_map; see _complex.allow_rank_promotion).
+    for primitive in (linalg.lu_p, linalg.lu_pivots_to_permutation_p, linalg.cholesky_update_p):
+        _register_rule(primitive, _complex.current_rule(primitive))
+    # Last, so that it wraps the final rule of each primitive.
+    for primitive in _REGION_PRIMITIVES:
+        _register_rule(primitive, _marking_region_bodies(_complex.current_rule(primitive)))

@@ -12,8 +12,11 @@
 //      none, but current frameworks route every host-to-device transfer through
 //      the device's default memory space. Calls that take a memory are rewritten
 //      to the equivalent device call before reaching the plugin.
-//   4. Programs with complex64 inputs/outputs are compiled from a float32[..., 2]
-//      pair version, with buffers relabeled at execution (see below).
+//   4. Programs with inputs/outputs of types the plugin rejects at a program boundary
+//      are compiled from a version without them (complex64 as float32[..., 2] pairs,
+//      uint64 as int64), with buffers relabeled at execution (see below).
+//   5. uint64 buffers live in the plugin as int64, which holds the same bytes; the shim
+//      reports their type as uint64.
 // Every other entry is the plugin's own function pointer.
 
 #include <dlfcn.h>
@@ -218,17 +221,74 @@ PJRT_Error* ShimBufferMemory(PJRT_Buffer_Memory_Args* args) {
   return nullptr;
 }
 
+// ---------------------------------------------------------------------------
+// Retyped buffers: types the plugin cannot take at a program boundary but whose bytes a type
+// it supports holds unchanged. Such buffers live in the plugin as the physical type; the
+// shim remembers the logical type and reports it to the framework.
+
+PJRT_Buffer_Type PhysicalType(PJRT_Buffer_Type type) {
+  switch (type) {
+    case PJRT_Buffer_Type_U64:
+      return PJRT_Buffer_Type_S64;
+    default:
+      return type;
+  }
+}
+
+std::mutex g_retyped_mutex;
+std::unordered_map<PJRT_Buffer*, PJRT_Buffer_Type> g_retyped;
+
+void Retype(PJRT_Buffer* buffer, PJRT_Buffer_Type logical) {
+  if (!buffer || PhysicalType(logical) == logical) return;
+  std::lock_guard<std::mutex> lock(g_retyped_mutex);
+  g_retyped[buffer] = logical;
+}
+
+// The logical type of a retyped buffer, else `fallback`.
+PJRT_Buffer_Type LogicalType(PJRT_Buffer* buffer, PJRT_Buffer_Type fallback) {
+  std::lock_guard<std::mutex> lock(g_retyped_mutex);
+  auto found = g_retyped.find(buffer);
+  return found == g_retyped.end() ? fallback : found->second;
+}
+
+void Forget(PJRT_Buffer* buffer) {
+  std::lock_guard<std::mutex> lock(g_retyped_mutex);
+  g_retyped.erase(buffer);
+}
+
+PJRT_Error* ShimBufferElementType(PJRT_Buffer_ElementType_Args* args) {
+  PJRT_Error* error = g_plugin->PJRT_Buffer_ElementType(args);
+  if (!error) args->type = LogicalType(args->buffer, args->type);
+  return error;
+}
+
+PJRT_Error* ShimBufferDestroy(PJRT_Buffer_Destroy_Args* args) {
+  Forget(args->buffer);
+  return g_plugin->PJRT_Buffer_Destroy(args);
+}
+
 PJRT_Error* ShimBufferFromHostBuffer(PJRT_Client_BufferFromHostBuffer_Args* args) {
-  ShimMemory* memory = AsShimMemory(args->memory);
-  if (!memory) return g_plugin->PJRT_Client_BufferFromHostBuffer(args);
-  // The plugin only understands devices; restore the caller's input afterwards.
+  // The plugin only understands devices and physical types; restore the caller's input
+  // afterwards.
+  PJRT_Buffer_Type logical = args->type;
   PJRT_Device* device = args->device;
   PJRT_Memory* requested = args->memory;
-  args->device = memory->device;
-  args->memory = nullptr;
+  if (ShimMemory* memory = AsShimMemory(args->memory)) {
+    args->device = memory->device;
+    args->memory = nullptr;
+  }
+  args->type = PhysicalType(logical);
   PJRT_Error* error = g_plugin->PJRT_Client_BufferFromHostBuffer(args);
+  args->type = logical;
   args->device = device;
   args->memory = requested;
+  if (!error) Retype(args->buffer, logical);
+  return error;
+}
+
+PJRT_Error* ShimBufferCopyToDevice(PJRT_Buffer_CopyToDevice_Args* args) {
+  PJRT_Error* error = g_plugin->PJRT_Buffer_CopyToDevice(args);
+  if (!error) Retype(args->dst_buffer, LogicalType(args->buffer, PJRT_Buffer_Type_INVALID));
   return error;
 }
 
@@ -239,7 +299,7 @@ PJRT_Error* ShimBufferCopyToMemory(PJRT_Buffer_CopyToMemory_Args* args) {
   copy.struct_size = PJRT_Buffer_CopyToDevice_Args_STRUCT_SIZE;
   copy.buffer = args->buffer;
   copy.dst_device = memory->device;
-  PJRT_Error* error = g_plugin->PJRT_Buffer_CopyToDevice(&copy);
+  PJRT_Error* error = ShimBufferCopyToDevice(&copy);
   args->dst_buffer = copy.dst_buffer;
   return error;
 }
@@ -253,37 +313,50 @@ PJRT_Error* ShimCreateViewOfDeviceBuffer(PJRT_Client_CreateViewOfDeviceBuffer_Ar
 }
 
 // ---------------------------------------------------------------------------
-// complex64 program inputs and outputs.
+// Program inputs and outputs of types the plugin rejects at a program boundary.
 //
-// The plugin rejects programs whose signature mentions complex types. For a METAL program
-// with complex64 inputs or outputs, the shim's Python package lowers two versions: the
-// original (complex signature), which jaxlib compiles and takes its metadata from, and a
-// pair version where each complex64 value is a float32[..., 2] (real, imag) pair. Right
-// before compiling it hands the shim the serialized pair program and the complex
-// positions (JaxMetalShim_SetComplexIo); the shim compiles the pair program instead.
-// At execution, complex64 inputs are passed as float32[..., 2] views of the same device
-// memory, and pair outputs are returned as complex64 views that own the pair buffers, so
-// buffers always match what jaxlib expects and nothing is copied.
+// The plugin rejects programs whose signature mentions complex or uint64 types. For such a
+// METAL program the shim's Python package lowers two versions: the original, which jaxlib
+// compiles and takes its metadata from, and a boundary version where each complex64 value is
+// a float32[..., 2] (real, imag) pair and each uint64 value an int64 holding the same bits.
+// Right before compiling it hands the shim the serialized boundary program and the positions
+// and kinds of the changed values (JaxMetalShim_SetBoundaryIo); the shim compiles the
+// boundary program instead. At execution, complex64 inputs are passed as float32[..., 2]
+// views of the same device memory and pair outputs are returned as complex64 views that own
+// the pair buffers; uint64 buffers already live as int64 (see "Retyped buffers") and int64
+// outputs are retyped as uint64. Buffers always match what jaxlib expects and nothing is
+// copied.
 
-struct ComplexIo {
-  std::vector<int32_t> inputs;   // argument positions holding complex64 values
-  std::vector<int32_t> outputs;  // output positions holding complex64 values
-  std::string program;           // serialized pair program (pending only)
+// Kinds of boundary values; the Python package passes the same numbers.
+enum BoundaryKind : int32_t {
+  kComplexPairs = 1,   // complex64 <-> float32[..., 2]
+  kUint64AsInt64 = 2,  // uint64 <-> int64
+};
+
+struct BoundaryValue {
+  int32_t position;
+  int32_t kind;
+};
+
+struct BoundaryIo {
+  std::vector<BoundaryValue> inputs;   // argument positions and kinds
+  std::vector<BoundaryValue> outputs;  // output positions and kinds
+  std::string program;                 // serialized boundary program (pending only)
   PJRT_Client* client = nullptr;
 };
 
-thread_local std::shared_ptr<ComplexIo> t_pending_io;
+thread_local std::shared_ptr<BoundaryIo> t_pending_io;
 std::mutex g_io_mutex;
-std::unordered_map<PJRT_LoadedExecutable*, std::shared_ptr<ComplexIo>> g_loaded_io;
+std::unordered_map<PJRT_LoadedExecutable*, std::shared_ptr<BoundaryIo>> g_loaded_io;
 
-std::shared_ptr<ComplexIo> IoFor(PJRT_LoadedExecutable* executable) {
+std::shared_ptr<BoundaryIo> IoFor(PJRT_LoadedExecutable* executable) {
   std::lock_guard<std::mutex> lock(g_io_mutex);
   auto found = g_loaded_io.find(executable);
   return found == g_loaded_io.end() ? nullptr : found->second;
 }
 
 void Remember(PJRT_LoadedExecutable* executable, PJRT_Client* client) {
-  auto io = std::make_shared<ComplexIo>();
+  auto io = std::make_shared<BoundaryIo>();
   io->inputs = t_pending_io->inputs;
   io->outputs = t_pending_io->outputs;
   io->client = client;
@@ -372,7 +445,7 @@ std::vector<int64_t> Dimensions(PJRT_Buffer* buffer, PJRT_Error** error) {
 
 PJRT_Error* ShimCompile(PJRT_Client_Compile_Args* args) {
   if (!t_pending_io) return g_plugin->PJRT_Client_Compile(args);
-  // Compile the pair program instead of the complex-signature one jaxlib serialized.
+  // Compile the boundary program instead of the one jaxlib serialized.
   PJRT_Program program = *args->program;
   program.code = t_pending_io->program.data();
   program.code_size = t_pending_io->program.size();
@@ -385,7 +458,7 @@ PJRT_Error* ShimCompile(PJRT_Client_Compile_Args* args) {
 }
 
 // Executables loaded from JAX's persistent compilation cache skip PJRT_Client_Compile;
-// they were compiled from the pair program.
+// they were compiled from the boundary program.
 PJRT_Error* ShimDeserializeAndLoad(PJRT_Executable_DeserializeAndLoad_Args* args) {
   PJRT_Error* error = g_plugin->PJRT_Executable_DeserializeAndLoad(args);
   if (!error && t_pending_io) Remember(args->loaded_executable, args->client);
@@ -409,31 +482,39 @@ struct InputViews {
 };
 
 PJRT_Error* ShimExecute(PJRT_LoadedExecutable_Execute_Args* args) {
-  std::shared_ptr<ComplexIo> io = IoFor(args->executable);
+  std::shared_ptr<BoundaryIo> io = IoFor(args->executable);
   if (!io) return g_plugin->PJRT_LoadedExecutable_Execute(args);
 
-  // Swap complex64 inputs for float32[..., 2] views.
+  // Swap complex64 inputs for float32[..., 2] views, and any uint64 buffer the plugin holds
+  // as uint64 (one the shim did not create) for an int64 view.
   auto views = new InputViews();
   std::vector<std::vector<PJRT_Buffer*>> lists(args->num_devices);
   std::vector<PJRT_Buffer* const*> list_pointers(args->num_devices);
   PJRT_Error* error = nullptr;
   for (size_t device = 0; device < args->num_devices && !error; ++device) {
     lists[device].assign(args->argument_lists[device], args->argument_lists[device] + args->num_args);
-    for (int32_t input : io->inputs) {
-      if (static_cast<size_t>(input) >= args->num_args) continue;
-      PJRT_Buffer* buffer = lists[device][input];
+    for (const BoundaryValue& input : io->inputs) {
+      if (static_cast<size_t>(input.position) >= args->num_args) continue;
+      PJRT_Buffer* buffer = lists[device][input.position];
       PJRT_Buffer_ElementType_Args type{};
       type.struct_size = PJRT_Buffer_ElementType_Args_STRUCT_SIZE;
       type.buffer = buffer;
-      if ((error = g_plugin->PJRT_Buffer_ElementType(&type))) break;
-      if (type.type != PJRT_Buffer_Type_C64) continue;
+      if ((error = g_plugin->PJRT_Buffer_ElementType(&type))) break;  // the physical type
+      PJRT_Buffer_Type view_type;
+      if (input.kind == kComplexPairs && type.type == PJRT_Buffer_Type_C64) {
+        view_type = PJRT_Buffer_Type_F32;
+      } else if (input.kind == kUint64AsInt64 && type.type == PJRT_Buffer_Type_U64) {
+        view_type = PJRT_Buffer_Type_S64;
+      } else {
+        continue;
+      }
       std::vector<int64_t> dims = Dimensions(buffer, &error);
       if (error || (error = AwaitReady(buffer))) break;
-      dims.push_back(2);
+      if (input.kind == kComplexPairs) dims.push_back(2);
       PJRT_Buffer* view = nullptr;
-      if ((error = MakeView(io->client, buffer, PJRT_Buffer_Type_F32, dims, nullptr, &view))) break;
+      if ((error = MakeView(io->client, buffer, view_type, dims, nullptr, &view))) break;
       views->views.push_back(view);
-      lists[device][input] = view;
+      lists[device][input.position] = view;
     }
     list_pointers[device] = lists[device].data();
   }
@@ -492,9 +573,14 @@ PJRT_Error* ShimExecute(PJRT_LoadedExecutable_Execute_Args* args) {
 
   // Return float32[..., 2] outputs as complex64 views that own the pair buffers. Waiting
   // for the output first makes these programs synchronous: a view is ready on creation.
+  // int64 outputs standing for uint64 are retyped in place.
   for (size_t device = 0; device < args->num_devices; ++device) {
-    for (int32_t output : io->outputs) {
-      PJRT_Buffer*& buffer = args->output_lists[device][output];
+    for (const BoundaryValue& output : io->outputs) {
+      PJRT_Buffer*& buffer = args->output_lists[device][output.position];
+      if (output.kind == kUint64AsInt64) {
+        Retype(buffer, PJRT_Buffer_Type_U64);
+        continue;
+      }
       std::vector<int64_t> dims = Dimensions(buffer, &error);
       if (error) return error;
       if (dims.empty() || dims.back() != 2) continue;
@@ -567,7 +653,10 @@ void Initialize() {
   api->PJRT_Memory_AddressableByDevices = ShimMemoryAddressableByDevices;
   api->PJRT_Buffer_Memory = ShimBufferMemory;
   api->PJRT_Client_BufferFromHostBuffer = ShimBufferFromHostBuffer;
+  api->PJRT_Buffer_CopyToDevice = ShimBufferCopyToDevice;
   api->PJRT_Buffer_CopyToMemory = ShimBufferCopyToMemory;
+  api->PJRT_Buffer_ElementType = ShimBufferElementType;
+  api->PJRT_Buffer_Destroy = ShimBufferDestroy;
   api->PJRT_Client_CreateViewOfDeviceBuffer = ShimCreateViewOfDeviceBuffer;
   api->PJRT_Client_Compile = ShimCompile;
   api->PJRT_Executable_DeserializeAndLoad = ShimDeserializeAndLoad;
@@ -587,18 +676,20 @@ void Initialize() {
 }  // namespace
 
 // Called by the shim's Python package (ctypes) around compilation: the next executable
-// compiled or loaded on this thread has complex64 values at these input/output positions,
-// and `program` is its serialized pair version. Pass a null program to clear.
-extern "C" __attribute__((visibility("default"))) void JaxMetalShim_SetComplexIo(
-    const int32_t* inputs, size_t num_inputs, const int32_t* outputs, size_t num_outputs,
+// compiled or loaded on this thread has boundary values of these kinds (BoundaryKind) at
+// these input/output positions, and `program` is its serialized boundary version. Pass a
+// null program to clear.
+extern "C" __attribute__((visibility("default"))) void JaxMetalShim_SetBoundaryIo(
+    const int32_t* inputs, const int32_t* input_kinds, size_t num_inputs,
+    const int32_t* outputs, const int32_t* output_kinds, size_t num_outputs,
     const char* program, size_t program_size) {
   if (!program) {
     t_pending_io.reset();
     return;
   }
-  auto io = std::make_shared<ComplexIo>();
-  io->inputs.assign(inputs, inputs + num_inputs);
-  io->outputs.assign(outputs, outputs + num_outputs);
+  auto io = std::make_shared<BoundaryIo>();
+  for (size_t i = 0; i < num_inputs; ++i) io->inputs.push_back({inputs[i], input_kinds[i]});
+  for (size_t i = 0; i < num_outputs; ++i) io->outputs.push_back({outputs[i], output_kinds[i]});
   io->program.assign(program, program_size);
   t_pending_io = io;
 }

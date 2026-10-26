@@ -124,10 +124,12 @@ Correctness and coverage:
   `expm1`/`log1p`/`tanh`/`sign`; reductions, matmul precision, convolutions and float16/bfloat16
   arithmetic have not been swept the same way.
 - **Newer-than-0.19.4 features**: JAX programs using ops newer than StableHLO 0.19.4, or CHLO ops
-  XLA serializes as composites without a METAL rule (`ragged_dot`, CHLO `scan`), fail.
-  Requested result accuracies and dot algorithms are dropped rather than failing.
-- **No METAL lowering**: `eig`, `schur`, `hessenberg`, `geqp3`, `ormqr`, `tridiagonal` and
-  `tridiagonal_solve` (JAX has only LAPACK/cuSOLVER lowerings for them).
+  XLA serializes as composites without a METAL rule, fail. Requested result accuracies and dot
+  algorithms are dropped rather than failing. (`ragged_dot` lowers to plain ops in
+  emulation.)
+- **No METAL lowering**: `eig`, `schur`, `hessenberg`, `geqp3` and `tridiagonal` (JAX has only
+  LAPACK/cuSOLVER lowerings for them). `ormqr` and `tridiagonal_solve` use JAX's generic
+  lowerings and work in emulation.
 - **Types MPS lacks**: int4/uint4 and float8 variants (besides float64/complex128); uint64
   cannot be a program input or output.
 - **bfloat16 is emulated in float32 by the plugin**: results are now exact, but there is no
@@ -158,6 +160,10 @@ Platform and maintenance:
   re-imports the binary every session; its snapshot does not keep the Ghidra database).
 
 ## Recommended next steps
+
+`re/findings/feature-completeness.md` analyzes what full JAX on METAL would take: what Apple's
+plugin lacked, what is possible with rules and the shim, what needs an open backend, and what
+the hardware rules out.
 
 1. **Run JAX's own tests on METAL**: ready as `make -C shim gpu-session`, which also runs
    every other GPU check. The same 19 files already pass through the METAL rules on the CPU

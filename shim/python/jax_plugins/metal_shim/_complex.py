@@ -23,6 +23,7 @@ from functools import partial, wraps
 import jax
 import numpy as np
 from jax import lax
+from jax._src import config
 from jax._src import core
 from jax._src.interpreters import mlir
 from jax._src.lax import convolution
@@ -45,21 +46,56 @@ def is_complex_aval(aval):
     return isinstance(dtype, np.dtype) and np.issubdtype(dtype, np.complexfloating)
 
 
-def allow_rank_promotion(rule):
-    """`rule`, traced with jax_numpy_rank_promotion="allow".
+def _invariant(aval):
+    """aval without shard_map's varying-manual-axes type."""
+    mat = getattr(aval, "manual_axis_type", None)
+    if mat is not None and mat.varying:
+        return aval.update(manual_axis_type=mat.update(varying=frozenset()))
+    return aval
 
-    Rules broadcast with jnp-style operators (a batched [b, n, n] times an [n, n] mask); a
-    user's "raise" or "warn" setting, which JAX's own tests use, must not apply to them.
+
+def allow_rank_promotion(rule):
+    """`rule`, traced with jax_numpy_rank_promotion="allow", standard dtype promotion and
+    avals without varying manual axes.
+
+    Rules broadcast with jnp-style operators (a batched [b, n, n] times an [n, n] mask) and
+    mix real and complex operands; a user's "raise"/"warn" rank promotion or "strict" dtype
+    promotion, which JAX's own tests use, must not apply to them. Inside shard_map, a loop
+    carry that starts from a constant (an identity, zeros, a counter) would not match the
+    varying type of what the loop computes from the inputs. That type does not change the
+    lowered program, so rules trace without it.
     """
     @wraps(rule)
     def wrapped(*args, **kwargs):
-        with jax.numpy_rank_promotion("allow"):
+        if args and isinstance(args[0], mlir.LoweringRuleContext):
+            ctx = args[0]
+            ctx = ctx.replace(avals_in=[_invariant(a) for a in ctx.avals_in],
+                              avals_out=[_invariant(a) for a in ctx.avals_out]
+                              if ctx.avals_out is not None else None)
+            args = (ctx, *args[1:])
+        with jax.numpy_rank_promotion("allow"), jax.numpy_dtype_promotion("standard"), \
+                config._check_vma(False):  # pylint: disable=protected-access
             return rule(*args, **kwargs)
     return wrapped
 
 
-def _register_rule(primitive, rule):
-    mlir.register_lowering(primitive, allow_rank_promotion(rule), platform=PLATFORM)
+# Every METAL rule this package registers, by primitive (the latest one wins, as in JAX).
+REGISTERED = {}
+
+
+def register_rule(primitive, rule):
+    REGISTERED[primitive] = allow_rank_promotion(rule)
+    mlir.register_lowering(primitive, REGISTERED[primitive], platform=PLATFORM)
+
+
+def current_rule(primitive):
+    """The rule METAL lowers `primitive` with: this package's, else JAX's generic one."""
+    if primitive in REGISTERED:
+        return REGISTERED[primitive]
+    return mlir._lowerings[primitive].rule  # pylint: disable=protected-access
+
+
+_register_rule = register_rule
 
 
 # --- real / imag / complex ---------------------------------------------------------

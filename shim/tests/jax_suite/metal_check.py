@@ -9,7 +9,8 @@ re/findings/mps-op-coverage.md:
 - stablehlo.composite: nothing in the pipeline expands it;
 - custom calls other than lapack_sgetrf, which the plugin maps to MPS's LU;
 - element types MPS lacks: float64, complex128, 4-, 6- and 8-bit floats, 2- and 4-bit ints;
-- uint64 program inputs and outputs;
+- reductions, windows, scatters and all-reduces over one operand whose body is more than
+  one op: the plugin's converters recognize the reduction by its single op;
 - complex values in ops whose MPS kernels or compiler fail on them (the METAL rules split
   these, so one here means a rule missed a path);
 - ops MPS lowers but aborts on at run time;
@@ -54,6 +55,9 @@ RUNTIME_ABORTS = {"stablehlo.rng_bit_generator": "MPS's random kernel aborts the
 NO_COMPLEX = {"stablehlo.pad", "stablehlo.gather", "stablehlo.scatter",
               "stablehlo.dynamic_update_slice", "stablehlo.sort", "stablehlo.fft",
               "stablehlo.dot_general", "stablehlo.convolution"}
+# Ops whose body the plugin matches as one combining op (add, maximum, ...), for one operand.
+_SINGLE_OP_BODIES = {"stablehlo.reduce", "stablehlo.reduce_window", "stablehlo.scatter",
+                     "stablehlo.all_reduce"}
 _ELEMENT = re.compile(r"^tensor<(?:[0-9?]+x)*(.+)>$")
 _UNSUPPORTED_ELEMENT = re.compile(r"^(f64|complex<f64>|f8E\w+|f6E\w+|f4E\w+|u?i[24])$")
 
@@ -106,10 +110,11 @@ def program_issues(module):
                 issues.add(f"type {element}")
         if name in NO_COMPLEX and any(e and e.startswith("complex") for e in elements):
             issues.add(f"complex {name}")
-        if name == "func.func" and _symbol(operation) == "main":
-            signature = str(operation.attributes["function_type"])
-            if re.search(r"[<x]ui64>", signature):  # tensor<ui64> or tensor<...xui64>
-                issues.add("uint64 program input or output")
+        if name in _SINGLE_OP_BODIES and len(operation.results) == 1:
+            body = [op.operation.name for op in operation.regions[0].blocks[0].operations
+                    if op.operation.name != "stablehlo.return"]
+            if len(body) > 1:
+                issues.add(f"{name} body of {len(body)} ops ({', '.join(sorted(set(body)))})")
     return sorted(issues)
 
 

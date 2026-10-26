@@ -57,8 +57,9 @@ GPU_LOST_EXIT = 4
 RESTART_EXIT = 75  # pytest exits with these (progress_plugin.py): restart it, or stop for the budget
 STOP_EXIT = 76
 # JAX's test files the shim is checked against, the most coverage per minute and least risk
-# first (the order gpu_session.py runs them on METAL).
-DEFAULT_FILES = (
+# first (the order gpu_session.py runs them on METAL): the core files, then the rest of what
+# runs on one device (sharding, sparse, SciPy wrappers, decompositions, transformations).
+CORE_FILES = (
     "fft_test.py", "random_test.py", "lax_test.py", "lax_numpy_operators_test.py",
     "lax_numpy_reducers_test.py", "lax_numpy_indexing_test.py", "lax_autodiff_test.py",
     "lax_control_flow_test.py", "nn_test.py", "lax_vmap_test.py", "lax_vmap_op_test.py",
@@ -66,6 +67,20 @@ DEFAULT_FILES = (
     "lax_scipy_test.py", "scipy_signal_test.py", "ann_test.py", "linalg_test.py",
     "lax_numpy_test.py",
 )
+EXTENDED_FILES = (
+    "lax_numpy_ufuncs_test.py", "lax_numpy_setops_test.py", "lax_numpy_vectorize_test.py",
+    "batching_test.py", "checkify_test.py", "custom_linear_solve_test.py",
+    "custom_root_test.py", "x64_context_test.py", "dtypes_test.py", "random_impl_test.py",
+    "mutable_array_test.py", "image_test.py", "ode_test.py", "stax_test.py",
+    "optimizers_test.py", "experimental_rnn_test.py", "scipy_stats_test.py",
+    "scipy_fft_test.py", "scipy_ndimage_test.py", "scipy_interpolate_test.py",
+    "scipy_optimize_test.py", "scipy_spatial_test.py", "lax_scipy_sparse_test.py",
+    "sparse_test.py", "sparse_bcoo_bcsr_test.py", "polynomial_test.py", "eigh_test.py",
+    "svd_test.py", "qdwh_test.py", "lobpcg_test.py", "lax_scipy_spectral_dac_test.py",
+    "cholesky_update_test.py", "shard_map_test.py", "pmap_test.py", "pjit_test.py",
+    "array_test.py", "api_test.py",
+)
+DEFAULT_FILES = CORE_FILES + EXTENDED_FILES
 
 
 class GpuLost(Exception):
@@ -315,7 +330,7 @@ def parse_args(argv):
     parser.add_argument("out_dir", metavar="OUT_DIR")
     parser.add_argument("tests", metavar="TEST", nargs="*",
                         help="file under JAX_SRC/tests, or a node id prefix within one "
-                             "(default: the 19 files in DEFAULT_FILES)")
+                             "(default: DEFAULT_FILES, 56 files)")
     parser.add_argument("-k", dest="keyword", metavar="EXPR",
                         help="pytest -k expression applied to every TEST")
     parser.add_argument("--shard", type=_shard, metavar="I/N",

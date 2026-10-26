@@ -16,7 +16,7 @@ import jax
 import jax._src.xla_bridge as xb
 import jaxlib
 
-from jax_plugins.metal_shim import _complex_io
+from jax_plugins.metal_shim import _boundary_io
 from jax_plugins.metal_shim import _lowerings
 from jax_plugins.metal_shim import _plugin
 
@@ -57,7 +57,7 @@ def initialize():
         jax.config.update("jax_use_shardy_partitioner", False)
     xb.register_plugin("METAL", priority=500, library_path=str(SHIM_LIBRARY))
     _lowerings.register()
-    _complex_io.register(SHIM_LIBRARY)
+    _boundary_io.register(SHIM_LIBRARY)
 
 
 def version():
