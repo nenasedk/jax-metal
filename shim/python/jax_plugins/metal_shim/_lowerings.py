@@ -1114,6 +1114,10 @@ def register():
     from jax_plugins.metal_shim import _decompositions  # pylint: disable=import-outside-toplevel
     _decompositions.register(_register_rule)
     _complex.register()
+    from jax_plugins.metal_shim import _indexing  # pylint: disable=import-outside-toplevel
+    _indexing.register(_register_rule)
+    from jax_plugins.metal_shim import _ordering  # pylint: disable=import-outside-toplevel
+    _ordering.register(_register_rule)
     # JAX's generic loop-based lowerings, traced the way this package's rules are (no
     # varying-axes checks inside shard_map; see _complex.allow_rank_promotion).
     for primitive in (linalg.lu_p, linalg.lu_pivots_to_permutation_p, linalg.cholesky_update_p):
