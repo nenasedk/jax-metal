@@ -137,5 +137,64 @@ def test_gather_bounds_and_fill(mode, dtype):
     np.testing.assert_array_equal(fn(x, indices), reference)
 
 
+@pytest.mark.parametrize("operation", [lax.scatter, lax.scatter_add, lax.scatter_mul,
+                                       lax.scatter_min, lax.scatter_max])
+@pytest.mark.parametrize("mode", ["fill", "clip"])
+def test_scatter_drops_partial_windows(operation, mode):
+    x = np.arange(10, dtype=np.float32)
+    indices = np.array([[-1], [4], [9]], np.int32)
+    updates = np.arange(6, dtype=np.float32).reshape(3, 2) + 11
+    dnums = lax.ScatterDimensionNumbers(update_window_dims=(1,), inserted_window_dims=(),
+                                        scatter_dims_to_operand_dims=(0,))
+    fn = jax.jit(lambda x, i, u: operation(x, i, u, dnums, mode=mode))
+    with jax.default_device(jax.devices("cpu")[0]):
+        expected = np.asarray(fn(x, indices, updates))
+    np.testing.assert_array_equal(fn(x, indices, updates), expected)
+
+
+@pytest.mark.parametrize("dtype", [np.int32, np.float32, np.bool_, np.complex64])
+@pytest.mark.parametrize("shape,permutation", [
+    ((3, 2, 2, 5), (1, 2, 0, 3)),
+    ((3, 7, 2, 5), (3, 1, 2, 0)),
+    ((4, 3, 1, 2, 5), (0, 3, 1, 4, 2)),
+])
+def test_broadcast_transpose_preserves_layout(dtype, shape, permutation):
+    x = np.arange(30).reshape(3, 1, 2, 5).astype(dtype)
+    if dtype == np.bool_:
+        x = np.arange(30).reshape(3, 1, 2, 5) % 3 == 0
+    fn = jax.jit(lambda x: jnp.broadcast_to(x, shape).transpose(permutation).reshape(-1))
+    expected = np.broadcast_to(x, shape).transpose(permutation).reshape(-1)
+    np.testing.assert_array_equal(fn(x), expected)
+
+
+@pytest.mark.parametrize("function", [jnp.square, jnp.sin, jnp.negative])
+def test_scatter_apply_repeats_unary_function(function):
+    x = np.array([1., 2., 3., 4., 5.], np.float32)
+    indices = np.array([1, 1, 3, 9], np.int32)
+    fn = jax.jit(lambda x, i: x.at[i].apply(function, mode="drop"))
+    with jax.default_device(jax.devices("cpu")[0]):
+        expected = np.asarray(fn(x, indices))
+    np.testing.assert_allclose(fn(x, indices), expected, rtol=1e-6)
+
+
+@pytest.mark.parametrize("dtype", [np.bool_, np.int8, np.uint8, np.int16, np.uint16])
+def test_pad_runtime_fill(dtype):
+    x = np.array([0, 1, 0], dtype)
+    fill = np.array(7, dtype)
+    fn = jax.jit(lambda x, fill: lax.pad(x, fill, [(1, 2, 0)]))
+    np.testing.assert_array_equal(fn(x, fill), np.pad(x, (1, 2), constant_values=fill))
+
+
+@pytest.mark.parametrize("values", [[True], [False], [True, False, True], [False, True, False]])
+def test_boolean_scan_result_updates(values):
+    x = np.array(values, bool)
+    fn = jax.jit(lambda x: (
+        lax.scan(lambda i, _: (i + 1, x[i]), np.int32(0), None, length=x.size)[1],
+        jnp.bitwise_or.accumulate(x)))
+    copied, accumulated = fn(x)
+    np.testing.assert_array_equal(copied, x)
+    np.testing.assert_array_equal(accumulated, np.bitwise_or.accumulate(x))
+
+
 if __name__ == "__main__":
     raise SystemExit(pytest.main([__file__, "-q", "--tb=short", "-p", "no:cacheprovider"]))
