@@ -39,6 +39,7 @@ from jax._src import core
 from jax._src.interpreters import mlir
 from jax._src.lib import _jax
 from jax._src.lib.mlir import ir
+from jax_plugins.metal_shim import _compiler_ir
 from jax_plugins.metal_shim import _narrow
 
 PLATFORM = "METAL"
@@ -166,6 +167,7 @@ def _lower_jaxpr_to_module(original):
                            ("out_layouts", out_kinds), ("result_shardings", out_kinds)):
             boundary_kwargs[key] = _masked(kwargs.get(key), kinds, None)
         boundary_module = original(module_name, boundary_jaxpr, **boundary_kwargs).module
+        boundary_module = _compiler_ir.prepare_module(boundary_module)
         program = _jax.mlir.serialize_portable_artifact(boundary_module, STABLEHLO_TARGET, True)
         positions = lambda kinds: ",".join(f"{i}:{kind}" for i, kind in enumerate(kinds) if kind)
         with result.module.context:

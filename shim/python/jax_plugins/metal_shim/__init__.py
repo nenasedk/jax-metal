@@ -17,6 +17,7 @@ import jax._src.xla_bridge as xb
 import jaxlib
 
 from jax_plugins.metal_shim import _boundary_io
+from jax_plugins.metal_shim import _compiler_ir
 from jax_plugins.metal_shim import _lowerings
 from jax_plugins.metal_shim import _narrow
 from jax_plugins.metal_shim import _plugin
@@ -59,6 +60,7 @@ def initialize():
     xb.register_plugin("METAL", priority=500, library_path=str(SHIM_LIBRARY))
     _lowerings.register()
     _narrow.register()  # before _boundary_io, whose hook calls it
+    _compiler_ir.register()
     _boundary_io.register(SHIM_LIBRARY)
 
 

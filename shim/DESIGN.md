@@ -207,6 +207,26 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
   below.
 - **Registers complex support** (`_complex.py`, `_boundary_io.py`), see "Complex numbers" below.
 
+### Compilation IR repairs
+
+`_compiler_ir.py` prepares a private copy immediately before compilation on METAL,
+and before serializing the alternate boundary program. This catches StableHLO
+emitted directly by JAX internals as well as ordinary primitive lowerings, while
+leaving the public `lower().compiler_ir()` module intact.
+
+- Apple's `OptBarrierConverter` reads only operand zero and replaces the entire
+  optimization barrier with one `mps.identity`. Additional results become null.
+  Variadic barriers now pack their operands into a single tensor, cross one
+  barrier, then unpack. Non-complex tensors use bytes to preserve every bit;
+  mixed complex barriers keep complex values intact and embed other tensors'
+  bytes as exact complex values. Packing preserves the dependency of every
+  output on every input, including checkpoint barriers. It adds buffer packing
+  and unpacking work; its performance has not yet been measured.
+- The plugin's final canonicalizer folds trivial `scf.if` results into
+  `arith.select`, which its MPS serializer cannot handle. Unary barriers on
+  conditional branch results keep these results inside their branches and
+  prevent that fold. Branches retain lazy execution.
+
 ### Complex numbers and FFT
 
 The plugin computes complex64 arithmetic (add, multiply, divide, `dot`, sums, `abs`) but has no

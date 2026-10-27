@@ -208,7 +208,52 @@ negation and select, including NaN representations and signed zeros.
 All 205 permanent regressions for the numerical fixes pass together on the M3
 (peak footprint 0.58 GB under the guard).
 
-In total, 183 of the original 183 numerical assertions pass in focused reruns (21 from
+The combined rerun passes **all 183 original numerical assertions**, in batches
+of eight under the memory guard (peak footprint 1.55 GB). Per-test results and
+logs are in `shim/build/numerical-final-verification/`.
+
+The fixes account for 21 failures from
 boolean scatter, 104 from interior padding, 19 from index clamping, and 21 from
-ordering/payload precision, plus 18 from the causes above).
-The remaining baseline failure groups have not yet been resolved.
+ordering/payload precision, plus 18 from the causes above.
+## Variadic optimization barriers — resolved
+
+The next group contains 125 `null operand found` failures, mostly checkpoint
+derivatives, plus direct barriers, mutable refs and control flow. All 125 still
+failed after the numerical fixes. A one-input barrier works on the M3; two or
+more inputs fail. Apple's `OptBarrierConverter::matchAndRewrite` (`0x58f50`)
+explicitly reads operand zero (`0x58f84`), creates one `mps.IdentityOp`
+(`0x58f9c`), then replaces the entire source operation with that one result
+(`0x58fb4`). Other results become null operands in their consumers.
+
+`_compiler_ir.py` packs the inputs into a single tensor, crosses one barrier,
+and unpacks each result. Non-complex inputs use their byte representations;
+complex inputs remain intact, with other inputs' bytes embedded as exact
+complex values. This preserves NaN payloads, subnormals, signed zeros and wide
+integer bits, as well as the shared dependency on all inputs. Splitting into
+unrelated unary barriers would lose that dependency.
+
+The rewrite works on a private compilation copy, catching barriers emitted
+directly by remat as well as the ordinary primitive. It also prepares the
+alternate boundary program before serialization. Public lowered IR and CPU
+compilation keep their existing behavior.
+
+This clears the null-operand error in all 125 cases. Four then exposed a second
+compiler defect: trivial conditional results become `arith.select` during the
+plugin's final canonicalization, but its MPS serializer cannot handle that op.
+The pre-serialization MPS dump shows the unsupported selects; an equivalent
+conditional with a multiply in one branch remains `scf.if` and works.
+Unary barriers on branch returns prevent this fold, preserving lazy branch
+execution. All six isolated conditional reproductions now pass.
+
+All **125 original null-operand failures pass together** after both fixes.
+Results are in `shim/build/null-operand-final-verification/`; peak footprint
+was 0.44 GB and worst GPU probe latency was 3 ms. The 20 permanent barrier tests
+include exhaustive 8-/16-bit patterns, wide integers, mixed types, complex and
+narrow boundaries, empty inputs, checkpoint gradients and unchanged public IR.
+All 51 new barrier/control-flow regressions pass, including both conditional
+branches, multi-way switches, nested scans and repeated IR preparation. All
+205 earlier numerical regressions also pass with the compiler repairs enabled.
+All 350 previously passing upstream checkpoint/remat/barrier cases still pass
+(`shim/build/barrier-passing-verification/`, peak footprint 0.51 GB).
+
+Later baseline failure groups remain to be investigated.
