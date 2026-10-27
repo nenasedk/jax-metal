@@ -15,7 +15,10 @@ from jax import lax
 @pytest.mark.parametrize("dtype", [np.float32, np.float16, jnp.bfloat16, np.complex64])
 @pytest.mark.parametrize("layout", ["NCHW", "NHWC"])
 @pytest.mark.parametrize("stride,dilation", [(1, 2), (2, 1), (2, 2)])
-def test_convolution_and_transpose_derivatives(dtype, layout, stride, dilation):
+@pytest.mark.parametrize("padding,rhs_dilation", [(((0, 0), (1, 1)), (1, 1)),
+                                                 (((1, 0), (0, 1)), (2, 2))])
+def test_convolution_and_transpose_derivatives(dtype, layout, stride, dilation,
+                                               padding, rhs_dilation):
     x = (np.arange(48).reshape(2, 2, 3, 4) % 5 - 2).astype(dtype)
     w = (np.arange(12).reshape(3, 2, 1, 2) % 3 - 1).astype(dtype)
     if dtype == np.complex64:
@@ -28,7 +31,7 @@ def test_convolution_and_transpose_derivatives(dtype, layout, stride, dilation):
 
     def conv(x, w):
         return lax.conv_general_dilated(
-            x, w, (stride, 1), ((0, 0), (1, 1)), lhs_dilation=(dilation, 1),
+            x, w, (stride, 1), padding, lhs_dilation=(dilation, 1), rhs_dilation=rhs_dilation,
             dimension_numbers=(layout, kernel, layout))
 
     @jax.jit

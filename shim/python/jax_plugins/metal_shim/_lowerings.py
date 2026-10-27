@@ -9,6 +9,7 @@ import threading
 from functools import partial
 
 import numpy as np
+import jax
 from jax import lax
 from jax._src import core
 from jax._src.interpreters import mlir
@@ -24,6 +25,7 @@ from jax._src.random.threefry2x32 import threefry_2x32
 
 from jax_plugins.metal_shim import _collectives
 from jax_plugins.metal_shim import _complex
+from jax_plugins.metal_shim import _precision
 
 PLATFORM = "METAL"
 
@@ -460,6 +462,78 @@ def _batch_matvec(matrix, vector):
                            precision=lax.Precision.HIGHEST)
 
 
+def _lu_compensated(a):
+    if a.ndim > 2:
+        return jax.vmap(_lu_compensated)(a)
+    m, n = a.shape
+    pivots = lax.full((min(m, n),), 0, np.int32)
+    permutation = lax.iota(np.int32, m)
+    if min(m, n) == 0:
+        return a, pivots, permutation
+    rows, cols = lax.iota(np.int32, m), lax.iota(np.int32, n)
+
+    def step(k, state):
+        matrix, pivots, permutation = state
+        column = matrix[:, k]
+        pivot = lax.argmax(lax.select(rows >= k, lax.abs(column),
+                                      lax.full_like(column, -np.inf)), 0, np.int32)
+        pivots = pivots.at[k].set(pivot)
+        matrix = matrix.at[k].set(matrix[pivot]).at[pivot].set(matrix[k])
+        permutation = permutation.at[k].set(permutation[pivot]).at[pivot].set(permutation[k])
+        diagonal = matrix[k, k]
+        column = lax.select((rows > k) & (diagonal != 0), matrix[:, k] / diagonal,
+                            matrix[:, k])
+        matrix = matrix.at[:, k].set(column)
+        updated = _precision.subtract_product(matrix, column[:, None], matrix[k, None, :])
+        matrix = lax.select((rows[:, None] > k) & (cols[None, :] > k), updated, matrix)
+        return matrix, pivots, permutation
+
+    return lax.fori_loop(0, min(m, n), step, (a, pivots, permutation))
+
+
+def _lu_rule():
+    default = _complex.current_rule(linalg.lu_p)
+    compensated = mlir.lower_fun(_lu_compensated, multiple_results=True)
+
+    def rule(ctx, a):
+        aval = ctx.avals_in[0]
+        if aval.dtype == np.float32 and min(aval.shape[-2:]) <= 128:
+            return compensated(ctx, a)
+        return default(ctx, a)
+
+    return rule
+
+
+def _cholesky_compensated(a):
+    n = a.shape[-1]
+    rows = lax.broadcasted_iota(np.int32, a.shape[:-1], a.ndim - 2)
+
+    def column(j, state):
+        high, low = state
+        row = tuple(lax.dynamic_index_in_dim(part, j, axis=a.ndim - 2, keepdims=False)
+                    for part in state)
+        matrix = tuple(_swap_last(part) for part in state)
+        product = _precision.multiply_pairs(matrix, (row[0][..., :, None], row[1][..., :, None]))
+        total = _precision.sum_pairs(*product, a.ndim - 2)
+        a_col = lax.dynamic_index_in_dim(a, j, axis=a.ndim - 1, keepdims=False)
+        value = _precision.add_pairs((a_col, lax.full_like(a_col, 0)), (-total[0], -total[1]))
+        pivot = tuple(lax.dynamic_index_in_dim(part, j, axis=part.ndim - 1, keepdims=True)
+                      for part in value)
+        diagonal = _precision.sqrt_pair(pivot)
+        divided = _precision.divide_pairs(value, diagonal)
+        output = []
+        for matrix_part, quotient, diag in zip((high, low), divided, diagonal):
+            col = lax.select(rows > j, quotient, lax.select(
+                rows == j, lax.broadcast_in_dim(diag, quotient.shape, tuple(range(diag.ndim))),
+                lax.full_like(quotient, 0)))
+            output.append(lax.dynamic_update_index_in_dim(matrix_part, col[..., None], j,
+                                                          axis=a.ndim - 1))
+        return tuple(output)
+
+    high, low = lax.fori_loop(0, n, column, (lax.full_like(a, 0), lax.full_like(a, 0)))
+    return high + low
+
+
 def _cholesky(a, **_):
     # Column-by-column Cholesky-Banachiewicz on the lower triangle (Hermitian for complex:
     # l[i, j] = (a[i, j] - sum_k l[i, k] conj(l[j, k])) / l[j, j], with a real diagonal).
@@ -476,7 +550,8 @@ def _cholesky(a, **_):
         l_row = lax.dynamic_index_in_dim(l, j, axis=row_axis, keepdims=False)
         if complex_input:
             l_row = lax.conj(l_row)
-        v = a_col - _batch_matvec(lax.transpose(l, (*range(a.ndim - 2), col_axis, row_axis)), l_row)
+        matrix = lax.transpose(l, (*range(a.ndim - 2), col_axis, row_axis))
+        v = a_col - _batch_matvec(matrix, l_row)
         pivot = lax.dynamic_index_in_dim(v, j, axis=v.ndim - 1, keepdims=True)
         if complex_input:
             d = lax.complex(lax.sqrt(lax.real(pivot)), lax.full_like(lax.real(pivot), 0))
@@ -486,7 +561,8 @@ def _cholesky(a, **_):
             d, v.shape, tuple(range(v.ndim))), lax.full_like(v, 0)))
         return lax.dynamic_update_index_in_dim(l, col[..., None], j, axis=col_axis)
 
-    l = lax.fori_loop(0, n, column, lax.full_like(a, 0))
+    l = (_cholesky_compensated(a) if a.dtype == np.float32 and n <= 128 else
+         lax.fori_loop(0, n, column, lax.full_like(a, 0)))
     # Like JAX on CPU and GPU, a matrix that is not positive definite gives all NaN (here
     # NaN would only start at the failing column).
     diagonal = jnp_diagonal(l)
@@ -512,7 +588,8 @@ def _forward_substitution(a, b, unit_diagonal):
         rhs = lax.dynamic_index_in_dim(b, i, axis=b.ndim - 2, keepdims=False)
         xi = rhs - _batch_matvec(x, strict)
         if not unit_diagonal:
-            xi = xi / lax.dynamic_index_in_dim(a_row, i, axis=a_row.ndim - 1, keepdims=True)
+            diagonal = lax.dynamic_index_in_dim(a_row, i, axis=a_row.ndim - 1, keepdims=True)
+            xi = xi / diagonal
         return lax.dynamic_update_index_in_dim(x, xi[..., None, :], i, axis=x.ndim - 2)
 
     return lax.fori_loop(0, m, row, lax.full_like(b, 0))
@@ -954,6 +1031,42 @@ def _from_bfloat16(x, dtype):
     return wide if np.dtype(dtype) == np.float32 else lax.convert_element_type(wide, dtype)
 
 
+def _bfloat16_sign_rule(primitive):
+    default = _complex.current_rule(primitive)
+
+    def change_sign(x):
+        bits = lax.bitcast_convert_type(x, np.uint16)
+        bits = (lax.bitwise_and(bits, np.uint16(0x7fff)) if primitive is lax_internal.abs_p
+                else lax.bitwise_xor(bits, np.uint16(0x8000)))
+        return lax.bitcast_convert_type(bits, _BFLOAT16)
+
+    exact = mlir.lower_fun(change_sign, multiple_results=False)
+
+    def rule(ctx, x):
+        if ctx.avals_in[0].dtype == _BFLOAT16:
+            return exact(ctx, x)
+        return default(ctx, x)
+
+    return rule
+
+
+def _bfloat16_select_rule():
+    default = _complex.current_rule(lax_internal.select_n_p)
+
+    def select_bits(selector, *cases):
+        chosen = lax.select_n(selector, *(lax.bitcast_convert_type(x, np.uint16) for x in cases))
+        return lax.bitcast_convert_type(chosen, _BFLOAT16)
+
+    exact = mlir.lower_fun(select_bits, multiple_results=False)
+
+    def rule(ctx, *args):
+        if ctx.avals_out[0].dtype == _BFLOAT16:
+            return exact(ctx, *args)
+        return default(ctx, *args)
+
+    return rule
+
+
 def _convert_element_type(ctx, operand, *, new_dtype, **params):
     # The plugin emulates bfloat16 in float32. Its own float<->bfloat16 casts do not round
     # when the result stays in the program, and flush subnormals at buffer boundaries.
@@ -1094,6 +1207,7 @@ def register():
     _register_rule(ann.approx_top_k_p, _approx_top_k_rule())
     _register(lax_internal.mulhi_p, _mulhi)
     _register(linalg.cholesky_p, _cholesky)
+    _register_rule(linalg.lu_p, _lu_rule())
     _register(linalg.triangular_solve_p, _triangular_solve)
     _register(linalg.geqrf_p, _geqrf, multiple_results=True)
     _register(linalg.householder_product_p, _householder_product)
@@ -1114,6 +1228,9 @@ def register():
     from jax_plugins.metal_shim import _decompositions  # pylint: disable=import-outside-toplevel
     _decompositions.register(_register_rule)
     _complex.register()
+    for primitive in (lax_internal.abs_p, lax_internal.neg_p):
+        _register_rule(primitive, _bfloat16_sign_rule(primitive))
+    _register_rule(lax_internal.select_n_p, _bfloat16_select_rule())
     from jax_plugins.metal_shim import _indexing  # pylint: disable=import-outside-toplevel
     _indexing.register(_register_rule)
     from jax_plugins.metal_shim import _ordering  # pylint: disable=import-outside-toplevel
