@@ -59,6 +59,32 @@ def _cases(operation):
             if op.name == "stablehlo.case" and any(_unprotected_returns(op)))
 
 
+def _packing_barriers(value):
+    """Find barriers reachable through the lossless packing operations below."""
+    pending, visited, barriers = [value], set(), set()
+    while pending:
+        value = pending.pop()
+        if value in visited:
+            continue
+        visited.add(value)
+        for use in value.uses:
+            op = use.owner
+            if op.name == "stablehlo.optimization_barrier":
+                barriers.add(op)
+            elif op.name in ("stablehlo.reshape", "stablehlo.bitcast_convert",
+                             "stablehlo.convert", "stablehlo.concatenate"):
+                pending.extend(op.results)
+    return barriers
+
+
+def _loop_values(operation):
+    body = operation.regions[1].blocks[0]
+    returned = list(body.operations)[-1].operands
+    values = [r for r, arg, ret in zip(operation.results, body.arguments, returned)
+              if arg != ret]
+    return values if any(list(v.uses) for v in values) else list(operation.results)
+
+
 def _loops(operation):
     for op in _walk(operation):
         if op.name != "stablehlo.while":
@@ -66,20 +92,20 @@ def _loops(operation):
         body = op.regions[1].blocks[0]
         returned = list(body.operations)[-1].operands
         if (any(list(result.uses) for result in op.results)
-                and any(arg != ret and not list(result.uses)
+                and any(arg != ret and (not list(arg.uses) or not list(result.uses))
                         for arg, ret, result in zip(body.arguments, returned, op.results))):
-            yield op
+            # Function inlining can discard uses that are still present here.
+            # An unused body argument therefore needs protection even when its
+            # result currently has uses. Recognize an existing shared barrier
+            # after packing so preparing a module twice is idempotent.
+            if not set.intersection(*(_packing_barriers(v) for v in _loop_values(op))):
+                yield op
 
 
 def _protect_loop_results(operation):
-    body = operation.regions[1].blocks[0]
-    returned = list(body.operations)[-1].operands
     # Invariant captures can be removed safely and need not be copied. Changed
     # state includes the otherwise-unused status and a result consumed outside.
-    values = [r for r, arg, ret in zip(operation.results, body.arguments, returned)
-              if arg != ret]
-    if not any(list(value.uses) for value in values):
-        values = list(operation.results)
+    values = _loop_values(operation)
     uses = [list(value.uses) for value in values]
     with ir.InsertionPoint(operation), operation.location:
         barrier = hlo.OptimizationBarrierOp(values)

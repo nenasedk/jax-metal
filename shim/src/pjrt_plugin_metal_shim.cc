@@ -2,7 +2,7 @@
 //
 // The plugin (pjrt_plugin_metal_14.dylib) implements PJRT C API 0.47 and reads
 // StableHLO up to 0.19.4. This shim exposes the plugin's own function table with
-// two changes (see shim/DESIGN.md):
+// compatibility repairs (see shim/DESIGN.md):
 //   1. The table lives in a zero-filled block far larger than the plugin's 808
 //      bytes, so frameworks that read newer entry points without a version check
 //      see null instead of whatever follows the plugin's table.
@@ -18,6 +18,10 @@
 //      at execution (see below).
 //   5. uint64, float8, float4 and 2-/4-bit integer buffers live in the plugin as a type
 //      holding the same bytes (int64, uint8, int8); the shim reports their own type.
+//   6. Empty input tensors use one-byte placeholders; their logical values are
+//      reconstructed from metadata in the boundary program.
+//   7. An optional memory-statistics entry returns UNIMPLEMENTED instead of being null.
+//   8. One native client survives framework resets, avoiding a dangling compute stream.
 // Every other entry is the plugin's own function pointer.
 
 #include <dlfcn.h>
@@ -60,6 +64,75 @@ std::once_flag g_init_once;
 const PJRT_Api* g_api = nullptr;
 const PJRT_Api* g_plugin = nullptr;  // The plugin's own table, for forwarding.
 bool g_trace = false;
+
+// This optional entry is just beyond Apple's 808-byte table. Current jaxlib
+// calls it without checking for null. Report unavailable statistics through
+// PJRT's normal error contract; inventing zero byte counts would be misleading.
+PJRT_Error g_memory_stats_unavailable{nullptr};
+constexpr char kMemoryStatsUnavailable[] =
+    "Apple's Metal plugin does not provide compiled memory statistics";
+
+PJRT_Error* ShimCompiledMemoryStats(PJRT_Executable_GetCompiledMemoryStats_Args*) {
+  return &g_memory_stats_unavailable;
+}
+
+void ShimErrorDestroy(PJRT_Error_Destroy_Args* args) {
+  if (args->error != &g_memory_stats_unavailable) g_plugin->PJRT_Error_Destroy(args);
+}
+
+void ShimErrorMessage(PJRT_Error_Message_Args* args) {
+  if (args->error != &g_memory_stats_unavailable) {
+    g_plugin->PJRT_Error_Message(args);
+    return;
+  }
+  args->message = kMemoryStatsUnavailable;
+  args->message_size = sizeof(kMemoryStatsUnavailable) - 1;
+}
+
+PJRT_Error* ShimErrorGetCode(PJRT_Error_GetCode_Args* args) {
+  if (args->error != &g_memory_stats_unavailable) return g_plugin->PJRT_Error_GetCode(args);
+  args->code = PJRT_Error_Code_UNIMPLEMENTED;
+  return nullptr;
+}
+
+// MetalStream::gComputeStream survives client destruction and points at a freed
+// stream. Recreating a backend then dereferences it in memcpy_htod. Keep one
+// native client across framework resets, rather than retaining a new client on
+// every reset. Apple's create function ignores options and uses process-wide
+// configuration; framework clients/devices are still recreated by jaxlib.
+std::mutex g_client_mutex;
+PJRT_Client* g_retained_client = nullptr;
+
+void ReleaseRetainedClient() {
+  if (!g_retained_client) return;
+  PJRT_Client_Destroy_Args destroy{};
+  destroy.struct_size = PJRT_Client_Destroy_Args_STRUCT_SIZE;
+  destroy.client = g_retained_client;
+  if (PJRT_Error* error = g_plugin->PJRT_Client_Destroy(&destroy)) {
+    PJRT_Error_Destroy_Args drop{};
+    drop.struct_size = PJRT_Error_Destroy_Args_STRUCT_SIZE;
+    drop.error = error;
+    g_plugin->PJRT_Error_Destroy(&drop);
+  }
+  g_retained_client = nullptr;
+}
+
+PJRT_Error* ShimClientCreate(PJRT_Client_Create_Args* args) {
+  std::lock_guard<std::mutex> lock(g_client_mutex);
+  if (!g_retained_client) {
+    if (PJRT_Error* error = g_plugin->PJRT_Client_Create(args)) return error;
+    g_retained_client = args->client;
+    std::atexit(ReleaseRetainedClient);
+  }
+  args->client = g_retained_client;
+  return nullptr;
+}
+
+PJRT_Error* ShimClientDestroy(PJRT_Client_Destroy_Args* args) {
+  std::lock_guard<std::mutex> lock(g_client_mutex);
+  if (args->client == g_retained_client) return nullptr;
+  return g_plugin->PJRT_Client_Destroy(args);
+}
 
 // StableHLO versions the plugin deserializes (from VhloToVersionPass in the
 // plugin: current 0.19.4, minimum 0.9.0; see re/FINDINGS.md).
@@ -347,6 +420,7 @@ PJRT_Error* ShimCreateViewOfDeviceBuffer(PJRT_Client_CreateViewOfDeviceBuffer_Ar
 // Kinds of boundary values; the Python package passes the same numbers.
 enum BoundaryKind : int32_t {
   kComplexPairs = 1,  // complex64 <-> float32[..., 2]
+  kEmptyInput = 2,    // empty tensor <-> unused scalar uint8 placeholder
   kRetyped = 0x100,   // | a PJRT_Buffer_Type T: T <-> PhysicalType(T)
 };
 
@@ -502,6 +576,28 @@ struct InputViews {
   }
 };
 
+// Empty input values are reconstructed from shape/type metadata in the boundary
+// program. MPSGraph still needs a nonempty argument buffer in their positions.
+PJRT_Error* EmptyInputPlaceholder(PJRT_Client* client, PJRT_Buffer* original,
+                                 PJRT_Buffer** result) {
+  PJRT_Buffer_Device_Args device{};
+  device.struct_size = PJRT_Buffer_Device_Args_STRUCT_SIZE;
+  device.buffer = original;
+  if (PJRT_Error* error = g_plugin->PJRT_Buffer_Device(&device)) return error;
+  static const uint8_t zero = 0;
+  PJRT_Client_BufferFromHostBuffer_Args create{};
+  create.struct_size = PJRT_Client_BufferFromHostBuffer_Args_STRUCT_SIZE;
+  create.client = client;
+  create.data = &zero;
+  create.type = PJRT_Buffer_Type_U8;
+  create.device = device.device;
+  create.host_buffer_semantics = PJRT_HostBufferSemantics_kImmutableOnlyDuringCall;
+  if (PJRT_Error* error = g_plugin->PJRT_Client_BufferFromHostBuffer(&create)) return error;
+  if (create.done_with_host_buffer) DestroyEvent(create.done_with_host_buffer);
+  *result = create.buffer;
+  return nullptr;
+}
+
 PJRT_Error* ShimExecute(PJRT_LoadedExecutable_Execute_Args* args) {
   std::shared_ptr<BoundaryIo> io = IoFor(args->executable);
   if (!io) return g_plugin->PJRT_LoadedExecutable_Execute(args);
@@ -517,6 +613,13 @@ PJRT_Error* ShimExecute(PJRT_LoadedExecutable_Execute_Args* args) {
     for (const BoundaryValue& input : io->inputs) {
       if (static_cast<size_t>(input.position) >= args->num_args) continue;
       PJRT_Buffer* buffer = lists[device][input.position];
+      if (input.kind == kEmptyInput) {
+        PJRT_Buffer* placeholder = nullptr;
+        if ((error = EmptyInputPlaceholder(io->client, buffer, &placeholder))) break;
+        views->views.push_back(placeholder);
+        lists[device][input.position] = placeholder;
+        continue;
+      }
       PJRT_Buffer_ElementType_Args type{};
       type.struct_size = PJRT_Buffer_ElementType_Args_STRUCT_SIZE;
       type.buffer = buffer;
@@ -664,6 +767,12 @@ void Initialize() {
   std::memset(g_table, 0, sizeof(g_table));
   std::memcpy(g_table, plugin, kPluginStructSize);
   auto* api = reinterpret_cast<PJRT_Api*>(g_table);
+  api->PJRT_Error_Destroy = ShimErrorDestroy;
+  api->PJRT_Error_Message = ShimErrorMessage;
+  api->PJRT_Error_GetCode = ShimErrorGetCode;
+  api->PJRT_Executable_GetCompiledMemoryStats = ShimCompiledMemoryStats;
+  api->PJRT_Client_Create = ShimClientCreate;
+  api->PJRT_Client_Destroy = ShimClientDestroy;
   api->PJRT_Plugin_Attributes = ShimPluginAttributes;
   api->PJRT_Client_AddressableMemories = ShimClientAddressableMemories;
   api->PJRT_Device_AddressableMemories = ShimDeviceAddressableMemories;

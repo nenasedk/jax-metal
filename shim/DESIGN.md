@@ -35,13 +35,13 @@ From `xla/pjrt/pjrt_api.cc` and `xla/pjrt/c_api_client/pjrt_c_api_client.cc` at 
 
 ## Design
 
-`pjrt_plugin_metal_shim.dylib` exports `GetPjrtApi` and presents the plugin's own table with two
-changes.
+`pjrt_plugin_metal_shim.dylib` exports `GetPjrtApi` and presents the plugin's own table with
+the following compatibility repairs.
 
 1. **Zero-padded table.** The shim owns a `PJRT_Api` laid out per the 0.116 header, embedded in a
    larger zero-filled block (room for 512 entries) so frameworks newer than 0.116 also read null
    past the end. It copies the plugin's 808 bytes (header plus 97 entries) into it. Every slot
-   the plugin lacks stays null, so null-guarded call sites take their fallbacks.
+   the plugin lacks stays null unless the shim implements it, so null-guarded call sites take their fallbacks.
 2. **Truthful version.** It reports PJRT 0.47 and `struct_size` 808, the plugin's real
    capabilities, so jaxlib's `minor_version` guards keep choosing the old paths.
 3. **Attributes.** `PJRT_Plugin_Attributes` is replaced with a function that returns:
@@ -65,8 +65,7 @@ changes.
      `PJRT_Client_BufferFromHostBuffer` (memory → device), `PJRT_Buffer_CopyToMemory` (→
      `PJRT_Buffer_CopyToDevice`) and `PJRT_Client_CreateViewOfDeviceBuffer`.
    - Shim memories start with a null `vtable`, since jaxlib reads `memory->vtable`.
-   - Memory pointers the shim did not create go to the plugin unchanged, so the shim never
-     manufactures `PJRT_Error`s.
+   - Memory pointers the shim did not create go to the plugin unchanged.
    - `PJRT_Memory_Kind_Id` stays null; for a 0.47 plugin jaxlib derives the kind id from the kind
      string.
 6. **Program inputs and outputs of types the plugin rejects** (complex64, uint64, float8,
@@ -82,9 +81,20 @@ changes.
    (also after `PJRT_Buffer_CopyToDevice`; `PJRT_Buffer_Destroy` forgets the buffer).
 8. **Tracing (opt-in).** `JAX_METAL_SHIM_TRACE=1` logs shim initialization and attribute queries
    to stderr.
+9. **Optional memory statistics.** `PJRT_Executable_GetCompiledMemoryStats` lies just beyond
+   Apple's table, but current jaxlib calls it without a null check. The shim returns
+   UNIMPLEMENTED; JAX's public `memory_analysis()` returns `None`. Error code, message and
+   destruction wrappers recognize that immutable shim error and forward plugin errors.
+10. **Backend resets.** Destroying Apple's client leaves `MetalStream::gComputeStream`
+    dangling. Recreating a backend crashes in `memcpy_htod` when it dereferences that
+    stream. The shim reuses one native client across framework client lifetimes and
+    destroys it at process exit, before the plugin's own static teardown. JAX still
+    recreates its clients/devices and clears its caches. The native allocator and stream
+    remain alive across resets; they do not accumulate another client per reset. Apple's
+    create entry ignores create options and uses process-wide configuration.
 
 Everything else is forwarded untouched: the remaining entries are the plugin's own function
-pointers, and PJRT errors, events, buffers and executables stay plugin objects.
+pointers, and events, buffers and executables stay plugin objects.
 
 ### Python package
 
@@ -133,10 +143,9 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     programs stay small, so no other cap is set: in StableHLO ops, QDWH `eigh` grows from
     2,300 (n = 257) to 7,000 (n = 2048), real SVD is 1,500 (64) to 4,900 (512), and Cholesky
     and QR are about 100–200 at any size (one loop each).
-  - SVD: real inputs use JAX's generic QDWH SVD, always batched (unbatched, its `lax.cond`s inside
-    a while loop crash MPSGraph at run time, `GPU::WhileOpHandler`). Complex inputs reduce to a
+  - SVD: real inputs use JAX's generic QDWH SVD, always batched. Complex inputs reduce to a
     min(m, n) square core with QR, then take the Jacobi eigendecomposition of [[0, A], [Aᴴ, 0]]
-    (complex QDWH crashes MPSGraph). A requested SVD `algorithm` is a hint, and METAL uses its
+    (the established path predates the QDWH loop and padding repairs below). A requested SVD `algorithm` is a hint, and METAL uses its
     own (JAX's generic SVD would reject anything but POLAR).
   - Empty matrices: the linear algebra rules return early, since `fori_loop` traces its body even
     for zero trips and the body cannot index an empty axis.
@@ -226,6 +235,19 @@ leaving the public `lower().compiler_ir()` module intact.
   `arith.select`, which its MPS serializer cannot handle. Unary barriers on
   conditional branch results keep these results inside their branches and
   prevent that fold. Branches retain lazy execution.
+- SCF canonicalization removes unused mutable loop results and their body
+  arguments, even when the condition still needs those inputs. MPSGraph crashes
+  when the resulting loop has different input and output arities. A shared
+  barrier on changed loop results keeps them linked to consumed outputs.
+  Invariant captures need no protection. Detection includes unused body
+  arguments: uses of their results can disappear later during function inlining,
+  as in the QDWH helper inside the large-matrix SVD eigensolver. Existing packed
+  barriers are recognized so repeated preparation adds no copies.
+
+Edge padding also uses concatenation and cropping for every dtype. Native float
+padding followed by dynamic update in a complex QDWH loop crashes the GPU driver
+in `encodeEndWhile`. Equivalent concatenation followed by the same update and QR
+works; the replacement also preserves runtime fill values and floating bit patterns.
 
 ### Complex numbers and FFT
 
@@ -252,6 +274,16 @@ functions into raw `real`/`imag` ops. `_complex.py`:
   odd lengths, with twiddle factors computed on the GPU from exact integer angles.
 
 ### Values at the program boundary
+
+Empty input tensors use scalar uint8 placeholders in the private boundary
+program. Apple's `RemoveZeroDim` pass removes empty computations and outputs
+but leaves empty input arguments; MPSGraph aborts when specializing their
+zero-sized shapes. Empty values contain no data and are reconstructed from
+their static shape and dtype. The shim supplies one byte in each affected input
+position, keeps it alive through execution, then releases it. Empty outputs
+retain their original shapes and dtypes. Empty scatters return their operand
+before native conversion can turn a zero-sized update window into an invalid
+size-one window.
 
 The plugin rejects any compiled function whose signature mentions complex, uint64, float8 or
 4-bit integer types, including the small programs behind eager ops. `_boundary_io.py` and the

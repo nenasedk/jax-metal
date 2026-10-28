@@ -31,9 +31,22 @@ namespace {
 
 PJRT_Device g_device;
 PJRT_Event g_event;
+int g_client_creates = 0, g_client_destroys = 0;
 std::string g_last_program;
 std::vector<PJRT_Buffer_Type> g_last_arg_types;
 std::vector<std::vector<int64_t>> g_last_arg_dims;
+
+PJRT_Error* ClientCreate(PJRT_Client_Create_Args* args) {
+  ++g_client_creates;
+  args->client = new PJRT_Client;
+  return nullptr;
+}
+
+PJRT_Error* ClientDestroy(PJRT_Client_Destroy_Args* args) {
+  if (args->client) ++g_client_destroys;
+  delete args->client;
+  return nullptr;
+}
 
 size_t ElementSize(PJRT_Buffer_Type type) {
   switch (type) {
@@ -53,7 +66,9 @@ PJRT_Buffer* NewBuffer(PJRT_Buffer_Type type, std::vector<int64_t> dims) {
 
 PJRT_Error* BufferFromHostBuffer(PJRT_Client_BufferFromHostBuffer_Args* args) {
   PJRT_Buffer* buffer = NewBuffer(args->type, {args->dims, args->dims + args->num_dims});
-  std::memcpy(buffer->data->data(), args->data, buffer->data->size());
+  if (!buffer->data->empty()) {
+    std::memcpy(buffer->data->data(), args->data, buffer->data->size());
+  }
   args->buffer = buffer;
   args->done_with_host_buffer = nullptr;
   return nullptr;
@@ -145,6 +160,8 @@ PJRT_Api MakeApi() {
   api.PJRT_Error_Destroy = ErrorDestroy;
   api.PJRT_Event_Destroy = EventDestroy;
   api.PJRT_Event_Await = EventAwait;
+  api.PJRT_Client_Create = ClientCreate;
+  api.PJRT_Client_Destroy = ClientDestroy;
   api.PJRT_Client_BufferFromHostBuffer = BufferFromHostBuffer;
   api.PJRT_Client_CreateViewOfDeviceBuffer = CreateView;
   api.PJRT_Client_Compile = Compile;
@@ -180,3 +197,5 @@ extern "C" __attribute__((visibility("default"))) PJRT_Buffer* FakePlugin_NewBuf
   return NewBuffer(static_cast<PJRT_Buffer_Type>(type), {n});
 }
 extern "C" __attribute__((visibility("default"))) PJRT_Device* FakePlugin_Device() { return &g_device; }
+extern "C" __attribute__((visibility("default"))) int FakePlugin_ClientCreates() { return g_client_creates; }
+extern "C" __attribute__((visibility("default"))) int FakePlugin_ClientDestroys() { return g_client_destroys; }

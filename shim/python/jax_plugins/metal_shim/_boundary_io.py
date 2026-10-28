@@ -1,4 +1,4 @@
-"""complex64, uint64 and narrow-typed values as METAL program inputs and outputs.
+"""Empty inputs and complex64, uint64 and narrow values at METAL program boundaries.
 
 The plugin rejects any compiled function whose signature mentions complex, uint64, float8 or
 4-bit integer types. For a METAL program with such inputs or outputs this module lowers two
@@ -18,6 +18,11 @@ complex64 inputs as float32[..., 2] views and returns pair outputs as complex64 
 same device memory; uint64 and narrow buffers already live in the plugin as their bytes
 (int64, uint8, int8) and such outputs are relabeled with their type. JAX only ever sees
 genuine complex64, uint64 and narrow arrays, and nothing is copied.
+
+Empty inputs use a scalar uint8 placeholder because MPSGraph rejects zero-sized
+input shapes. Their values are reconstructed from shape/type metadata; the shim
+allocates a one-byte placeholder and releases it after execution. Empty outputs
+already work natively and retain their original shape and type.
 
 The newer narrow types (float8_e4m3, e3m4, e8m0fnu, float4_e2m1fn, int2, uint2) work inside
 METAL programs but cannot be their inputs or outputs: jaxlib cannot serialize a signature
@@ -50,6 +55,7 @@ _PROGRAM = "jax_metal.boundary_program"
 # Kinds of boundary values; the shim (BoundaryKind in pjrt_plugin_metal_shim.cc) uses the
 # same numbers.
 COMPLEX_PAIRS = 1  # complex64 as float32[..., 2]
+EMPTY_INPUT = 2  # an empty tensor needs no data; pass a scalar uint8 placeholder
 RETYPED = 0x100  # | a PJRT_Buffer_Type: a value of that type as the bytes the plugin holds
 # PJRT_Buffer_Type numbers (pjrt_c_api.h) of the types passed as their bytes.
 _PJRT_TYPES = {np.dtype(np.uint64): 9,
@@ -80,6 +86,8 @@ def _kind(aval):
 
 
 def _physical_aval(aval, kind):
+    if kind == EMPTY_INPUT:
+        return core.ShapedArray((), np.uint8)
     if kind == COMPLEX_PAIRS:
         return core.ShapedArray(tuple(aval.shape) + (2,), np.float32)
     if kind & RETYPED:
@@ -102,6 +110,8 @@ def _to_physical(value, kind, aval):
 
 def _from_physical(value, kind, aval):
     """An input from its boundary form (narrow values: their carriers)."""
+    if kind == EMPTY_INPUT:
+        return lax.full(aval.shape, 0, aval.dtype)
     if kind == COMPLEX_PAIRS:
         return lax.complex(lax.index_in_dim(value, 0, value.ndim - 1, keepdims=False),
                            lax.index_in_dim(value, 1, value.ndim - 1, keepdims=False))
@@ -141,7 +151,12 @@ def _lower_jaxpr_to_module(original):
         in_avals, out_avals = kwargs["in_avals"], kwargs["out_avals"]
         if tuple(kwargs["platforms"]) != (PLATFORM,):
             return original(module_name, jaxpr, **kwargs)
-        in_kinds = [_kind(a) for a in in_avals]
+        # Apple's RemoveZeroDim pass removes empty computations/outputs, but
+        # leaves empty input arguments. MPSGraph asserts when specializing them.
+        # Reconstruct empty values from their static metadata inside the program.
+        in_kinds = [EMPTY_INPUT if isinstance(a, core.ShapedArray)
+                    and core.is_constant_shape(a.shape) and 0 in a.shape
+                    and isinstance(a.dtype, np.dtype) else _kind(a) for a in in_avals]
         out_kinds = [_kind(a) for a in out_avals]
         applicable = ((any(in_kinds) or any(out_kinds))
                       and kwargs.get("num_const_args", 0) == 0

@@ -93,6 +93,8 @@ int main(int argc, char** argv) {
   auto last_arg_dim = reinterpret_cast<int64_t (*)(size_t, size_t)>(dlsym(fake, "FakePlugin_LastArgDim"));
   auto new_buffer = reinterpret_cast<PJRT_Buffer* (*)(int, int64_t)>(dlsym(fake, "FakePlugin_NewBuffer"));
   auto fake_device = reinterpret_cast<PJRT_Device* (*)()>(dlsym(fake, "FakePlugin_Device"));
+  auto client_creates = reinterpret_cast<int (*)()>(dlsym(fake, "FakePlugin_ClientCreates"));
+  auto client_destroys = reinterpret_cast<int (*)()>(dlsym(fake, "FakePlugin_ClientDestroys"));
   g_api = get_api ? get_api() : nullptr;
   if (!g_api || !set_io) {
     std::fprintf(stderr, "the shim did not load the fake plugin\n");
@@ -107,6 +109,49 @@ int main(int argc, char** argv) {
     return args.type;
   };
   PJRT_Device* device = fake_device();
+
+  // Repeated framework lifetimes share one native client. Destroying one
+  // framework client cannot invalidate another or allocate a client per reset.
+  PJRT_Client* retained = nullptr;
+  for (int i = 0; i < 5; ++i) {
+    PJRT_Client_Create_Args create{};
+    create.struct_size = PJRT_Client_Create_Args_STRUCT_SIZE;
+    CHECK(g_api->PJRT_Client_Create(&create) == nullptr);
+    if (!retained) retained = create.client;
+    CHECK(create.client == retained);
+    PJRT_Client_Destroy_Args destroy{};
+    destroy.struct_size = PJRT_Client_Destroy_Args_STRUCT_SIZE;
+    destroy.client = create.client;
+    CHECK(g_api->PJRT_Client_Destroy(&destroy) == nullptr);
+  }
+  CHECK(client_creates() == 1);
+  CHECK(client_destroys() == 0);  // release is deferred to process exit
+
+  // A missing optional API returns a readable UNIMPLEMENTED error, never a
+  // null function pointer or fabricated memory statistics. Repeated requests
+  // and destruction must leave the error valid for another caller.
+  for (int i = 0; i < 3; ++i) {
+    PJRT_Executable_GetCompiledMemoryStats_Args stats{};
+    stats.struct_size = PJRT_Executable_GetCompiledMemoryStats_Args_STRUCT_SIZE;
+    CHECK(g_api->PJRT_Executable_GetCompiledMemoryStats != nullptr);
+    PJRT_Error* error = g_api->PJRT_Executable_GetCompiledMemoryStats(&stats);
+    CHECK(error != nullptr);
+    PJRT_Error_GetCode_Args code{};
+    code.struct_size = PJRT_Error_GetCode_Args_STRUCT_SIZE;
+    code.error = error;
+    CHECK(g_api->PJRT_Error_GetCode(&code) == nullptr);
+    CHECK(code.code == PJRT_Error_Code_UNIMPLEMENTED);
+    PJRT_Error_Message_Args message{};
+    message.struct_size = PJRT_Error_Message_Args_STRUCT_SIZE;
+    message.error = error;
+    g_api->PJRT_Error_Message(&message);
+    CHECK(std::string(message.message, message.message_size).find("memory statistics") !=
+          std::string::npos);
+    PJRT_Error_Destroy_Args drop_error{};
+    drop_error.struct_size = PJRT_Error_Destroy_Args_STRUCT_SIZE;
+    drop_error.error = error;
+    g_api->PJRT_Error_Destroy(&drop_error);
+  }
 
   // uint64 lives in the plugin as int64 and is reported as uint64; other types are untouched.
   const uint64_t words[3] = {1, 1ull << 63, ~0ull};
@@ -203,6 +248,27 @@ int main(int argc, char** argv) {
   for (PJRT_Buffer* output : outputs) Destroy(output);
   Destroy(stray);
 
+  PJRT_LoadedExecutable_Destroy_Args drop{};
+  drop.struct_size = PJRT_LoadedExecutable_Destroy_Args_STRUCT_SIZE;
+  drop.executable = compile.executable;
+  CHECK(g_api->PJRT_LoadedExecutable_Destroy(&drop) == nullptr);
+
+  // Empty input buffers keep their logical metadata, while the native program
+  // receives a nonempty scalar placeholder in the same argument position.
+  const int32_t empty_position = 0, empty_kind = 2;
+  set_io(&empty_position, &empty_kind, 1, nullptr, nullptr, 0,
+         boundary, sizeof(boundary) - 1);
+  CHECK(g_api->PJRT_Client_Compile(&compile) == nullptr);
+  set_io(nullptr, nullptr, 0, nullptr, nullptr, 0, nullptr, 0);
+  PJRT_Buffer* empty = FromHost(ints, PJRT_Buffer_Type_S32, 0, device);
+  execute(empty, s64, outputs);
+  CHECK(last_arg_type(0) == PJRT_Buffer_Type_U8);
+  CHECK(last_arg_dim(0, 0) == -1);  // scalar
+  CHECK(TypeOf(empty) == PJRT_Buffer_Type_S32);
+  CHECK(DimsOf(empty) == "0");
+  for (PJRT_Buffer* output : outputs) Destroy(output);
+  Destroy(empty);
+
   // Destroyed buffers are forgotten: a new buffer at a reused address is not misreported.
   Destroy(u64);
   PJRT_Buffer* fresh = FromHost(ints, PJRT_Buffer_Type_S64, 3, device);
@@ -211,8 +277,6 @@ int main(int argc, char** argv) {
   Destroy(s64);
   Destroy(c64);
 
-  PJRT_LoadedExecutable_Destroy_Args drop{};
-  drop.struct_size = PJRT_LoadedExecutable_Destroy_Args_STRUCT_SIZE;
   drop.executable = compile.executable;
   CHECK(g_api->PJRT_LoadedExecutable_Destroy(&drop) == nullptr);
 

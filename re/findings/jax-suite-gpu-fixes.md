@@ -256,4 +256,107 @@ branches, multi-way switches, nested scans and repeated IR preparation. All
 All 350 previously passing upstream checkpoint/remat/barrier cases still pass
 (`shim/build/barrier-passing-verification/`, peak footprint 0.51 GB).
 
-Later baseline failure groups remain to be investigated.
+## Decomposition crashes: loop arity and edge padding — resolved
+
+Of the next 106-crash group, 91 cases exercise SVD, QDWH and spectral
+divide-and-conquer. Two independent native defects caused their crashes:
+
+- SCF canonicalization removes unused loop results and their body arguments,
+  while retaining inputs needed by the condition. The resulting SCF is valid,
+  but MPSGraph crashes on the unequal input/output arities. Returning all four
+  QDWH outputs works; returning only its two matrices crashes. Native compiler
+  dumps show the final convergence loop changing from three inputs/three
+  outputs to three inputs/two outputs (`qdwh-mps-stage-{4,5}.log`).
+- Complex QDWH's padded QR update crashes the GPU driver in
+  `AGXG15GFamilyComputeContext::encodeEndWhile`. Replacing native edge padding
+  with concatenation, keeping the same dynamic update and QR, removes the
+  crash. `_indexing.py` now expresses all edge padding as concatenation/cropping,
+  extending the earlier narrow-integer repair to floating types as well.
+
+`_compiler_ir.py` joins changed loop results with a shared packed barrier.
+Invariant captures are excluded. A result that is used in the initial module
+may become dead after function inlining: this occurs inside the eigensolver
+for 300×300 SVD. Detection also covers unused body arguments, so those results
+remain protected when their current consumers disappear. Recognition of the
+packed dependency makes preparation idempotent without adding attributes that
+the plugin's old StableHLO reader cannot deserialize.
+
+The first isolated rerun passed 90/91 decomposition cases
+(`shim/build/decomposition-crash-verification/`). After extending protection
+across inlining, the remaining upstream case,
+`QdwhTest::testQdwhWithRandomMatrix1`, passes with all three subtests
+(`shim/build/qdwh-large-final.log`). Its 300×300 SVD reconstruction error is
+6.2e-6. All **282 permanent regression tests pass together**, including new
+real/complex QDWH, unused convergence state, large SVD accuracy and floating
+padding bit-pattern checks (`shim/build/compiler-fixes-regressions.log`;
+peak footprint 0.79 GB, worst GPU probe latency 2 ms).
+
+## Sparse empty arrays — resolved
+
+Twelve cases in the crash group exercise sparse concatenation, reversal and
+slicing. Layouts with no sparse index components have zero-sized index arrays.
+Apple's `RemoveZeroDim` pass removes empty computations and outputs but leaves
+empty input arguments in the MPS function. At execution, MPSGraph aborts in
+`convertMPSGraphShapesToMLIRTypes`. A dense reproducer returning concatenated
+nonempty data alongside concatenated empty indices has the same failure;
+returning a constant empty output without an empty input succeeds.
+
+`_boundary_io.py` now represents empty inputs as unused scalar uint8 arguments
+and reconstructs their logical values from static metadata. The C++ shim
+supplies one-byte placeholders, preserving argument positions and retaining
+them until execution completes. Existing empty-output handling works unchanged,
+including complex and narrow types. There is no host numerical computation.
+
+Two sparse slices also hit native conversion of empty scatters: a zero-sized
+update window becomes size one and exceeds the empty operand dimension, or
+crashes conversion. Scatters with empty operands or updates now return their
+operand before entering the native converter.
+
+All **12 original sparse cases pass together**
+(`shim/build/sparse-crash-final-verification/`, peak 0.34 GB, worst GPU probe
+2 ms). All 42 new empty-array regressions and 20 existing barrier tests pass
+together (`shim/build/empty-array-regressions.log`), covering seven dtypes,
+donation, gradients, sparse layouts and all five scatter combiners. The C++
+fake-plugin boundary test also verifies the scalar placeholder and unchanged
+logical input metadata.
+
+## Optional compiled-memory statistics — resolved
+
+Two crashes, under `jit` and `pmap`, call `memory_analysis()`. The requested
+`PJRT_Executable_GetCompiledMemoryStats` entry is at byte offset 808, exactly
+beyond Apple's 808-byte API table. Current jaxlib calls the null slot without
+checking it. The plugin binary contains an unregistered implementation that
+only returns UNIMPLEMENTED; it provides no memory statistics.
+
+The shim installs an entry returning a readable UNIMPLEMENTED error. JAX's
+documented public behavior then returns `None`; no fabricated byte counts are
+reported. Error code/message/destruction wrappers recognize this immutable
+shim error and forward other errors to Apple. Both upstream cases and two
+permanent regressions pass (`shim/build/memory-analysis-verification.log`),
+including repeated calls, direct runtime errors and execution after querying.
+The C++ fake-plugin test checks the error contract independently.
+
+## Backend reset leaves a dangling native compute stream — resolved
+
+The final case clears JAX's backends, creates a fresh one, then executes `pmap`.
+Its native stack crashes in `metal_plugin::memcpy_htod + 140`, at the virtual
+call through `MetalStream::gComputeStream` (binary offset `0x5d60f90`). The
+pointer survives destruction of its owning client and refers to freed memory.
+The transfer worker dereferences it while preparing the next host-to-GPU copy.
+
+The shim keeps one native client across framework client lifetimes and releases
+it at process exit, before the plugin's static teardown. JAX still recreates its
+own client/device wrappers and clears its caches. This retains one native
+allocator/stream across resets, rather than leaking a new client on each reset.
+Apple's `PJRT_Client_Create` ignores create options and calls `GetMetalClient()`
+using process-wide configuration, so sharing does not discard per-client options.
+
+The upstream test passes (`shim/build/clear-backends-verification.log`). The
+three runtime API regressions pass together, including five reset cycles with
+mapped execution and complex/empty boundary values; peak footprint is 0.17 GB
+and final teardown logs one MetalClient destruction
+(`shim/build/runtime-api-regressions.log`). The C++ fake-plugin test verifies
+that five create/destroy cycles allocate exactly one native client.
+
+A combined rerun of all 106 original crash cases is in progress. Later baseline
+failure groups have not yet been taken up.

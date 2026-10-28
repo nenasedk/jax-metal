@@ -140,22 +140,39 @@ def test_nested_qdwh_loops(dtype, shape, keep_status):
         assert bool(result[3])
 
 
-def test_loop_preparation_is_idempotent():
+@pytest.mark.parametrize("keep_status", [False, True])
+def test_loop_preparation_is_idempotent(keep_status):
     from jax_plugins.metal_shim import _compiler_ir
 
     def fn(x):
         def body(state):
             x, _ = state
             return x + 1, x < 3
-        return lax.while_loop(lambda state: state[1], body, (x, True))[0]
+        result = lax.while_loop(lambda state: state[1], body, (x, True))
+        return result if keep_status else result[0]
 
     module = jax.jit(fn).lower(np.float32(0)).compiler_ir()
     before = str(module)
     prepared = _compiler_ir.prepare_module(module)
+    assert prepared is not module
     assert _compiler_ir.prepare_module(prepared) is prepared
     assert str(module) == before
     assert prepared.operation.verify()
     assert not list(_compiler_ir._loops(prepared.operation))
+
+
+def test_svd_with_inlined_convergence_loop():
+    # Above 256, SVD's eigensolver uses spectral divide-and-conquer. Its QDWH
+    # helper returns a status that becomes unused only after native inlining;
+    # dropping that loop result used to crash MPSGraph at compilation.
+    x = np.random.default_rng(2).uniform(size=(300, 300)).astype(np.float32)
+    u, s, vh = map(np.asarray, jax.jit(
+        lambda x: jnp.linalg.svd(x, full_matrices=False))(x))
+    np.testing.assert_allclose(s, np.linalg.svd(x.astype(np.float64), compute_uv=False),
+                               rtol=2e-4, atol=2e-5)
+    assert np.linalg.norm((u * s) @ vh - x) / np.linalg.norm(x) < 2e-5
+    np.testing.assert_allclose(u.T @ u, np.eye(300), atol=2e-5)
+    np.testing.assert_allclose(vh @ vh.T, np.eye(300), atol=2e-5)
 
 
 if __name__ == "__main__":

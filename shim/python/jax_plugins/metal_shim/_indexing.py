@@ -190,6 +190,11 @@ def _scatter_bounds_rule(primitive):
     default = _complex.current_rule(primitive)
 
     def rule(ctx, operand, indices, updates, *, dimension_numbers, mode, **params):
+        # Removing zero dimensions inside the plugin can turn an empty update
+        # window into size one, invalid for a zero-sized operand dimension.
+        # Either empty tensor makes the scatter a no-op for every combiner.
+        if 0 in ctx.avals_in[0].shape or 0 in ctx.avals_in[2].shape:
+            return [operand]
         dnums = dimension_numbers
         if mode == lax.GatherScatterMode.CLIP or not dnums.update_window_dims:
             return default(ctx, operand, indices, updates, dimension_numbers=dnums,
