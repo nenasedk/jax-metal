@@ -287,6 +287,8 @@ functions into raw `real`/`imag` ops. `_complex.py`:
   real part and then imaginary part, with real reductions: JAX lowers them to a reduction
   whose body compares the parts (nine ops), and the plugin recognizes a reduction by its one
   combining op;
+- builds a complex `iota` (`k + 0j`, used by `gamma` and `dct`) from a float32 `iota`: the
+  plugin cannot legalize a complex `mhlo.iota`;
 - computes complex elementwise `max`/`min` (`jnp.maximum`, `logaddexp`, reductions with
   `initial`) with the same order from `real`/`imag` and selects: JAX's lowering
   (`mlir._minmax_hlo`) emits `stablehlo.real`/`imag` itself, bypassing the rules above. A
@@ -312,6 +314,14 @@ position, keeps it alive through execution, then releases it. Empty outputs
 retain their original shapes and dtypes. Empty scatters return their operand
 before native conversion can turn a zero-sized update window into an invalid
 size-one window.
+
+Tokens (`!mhlo.token`: `lax.create_token`, a token passed to or returned from `jit`) are
+rejected in a signature too. They are retyped values (`0x100 | PJRT_Buffer_Type_TOKEN`) whose
+physical form is an unread scalar uint8: a token output is the program's uint8 scalar,
+reported to jaxlib as a token buffer (so reading it raises jaxlib's own "token-shape buffer"
+error), and a token input becomes a fresh `create_token` in the program while the shim passes
+a one-byte placeholder in its position, whatever buffer JAX holds for it (a `bool[0]`, or
+another program's token output). A token orders nothing on METAL's single stream.
 
 The plugin rejects any compiled function whose signature mentions complex, uint64, float8 or
 4-bit integer types, including the small programs behind eager ops. `_boundary_io.py` and the

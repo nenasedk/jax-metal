@@ -19,6 +19,10 @@ same device memory; uint64 and narrow buffers already live in the plugin as thei
 (int64, uint8, int8) and such outputs are relabeled with their type. JAX only ever sees
 genuine complex64, uint64 and narrow arrays, and nothing is copied.
 
+Tokens (`!mhlo.token`, which the plugin also rejects in a signature) are scalar uint8
+values that nothing reads: an output is relabeled as a token buffer, and an input becomes a
+fresh create_token inside the program. On METAL's single stream a token orders nothing.
+
 Empty inputs use a scalar uint8 placeholder because MPSGraph rejects zero-sized
 input shapes. Their values are reconstructed from shape/type metadata; the shim
 allocates a one-byte placeholder and releases it after execution. Empty outputs
@@ -63,12 +67,15 @@ _PJRT_TYPES = {np.dtype(np.uint64): 9,
                    (ml_dtypes.float8_e5m2, 16), (ml_dtypes.float8_e4m3fn, 17),
                    (ml_dtypes.float8_e4m3b11fnuz, 18), (ml_dtypes.float8_e5m2fnuz, 19),
                    (ml_dtypes.float8_e4m3fnuz, 20), (ml_dtypes.int4, 21), (ml_dtypes.uint4, 22))}}
+_PJRT_TOKEN = 23  # PJRT_Buffer_Type_TOKEN: a scalar uint8 that nothing reads
 
 _set_boundary_io = None
 
 
 def _kind(aval):
     """The boundary kind of a program input/output, or 0 if the plugin takes it as is."""
+    if isinstance(aval, core.AbstractToken):  # the plugin rejects !mhlo.token arguments
+        return RETYPED | _PJRT_TOKEN
     # Extended dtypes (PRNG keys) are not NumPy dtypes and need nothing.
     dtype = getattr(aval, "dtype", None)
     if not isinstance(aval, core.ShapedArray) or not isinstance(dtype, np.dtype):
@@ -90,6 +97,8 @@ def _physical_aval(aval, kind):
         return core.ShapedArray((), np.uint8)
     if kind == COMPLEX_PAIRS:
         return core.ShapedArray(tuple(aval.shape) + (2,), np.float32)
+    if kind == RETYPED | _PJRT_TOKEN:
+        return core.ShapedArray((), np.uint8)
     if kind & RETYPED:
         fmt = _narrow.narrow_format(aval.dtype)
         return core.ShapedArray(aval.shape, fmt.storage if fmt else np.int64)
@@ -102,6 +111,8 @@ def _to_physical(value, kind, aval):
         real, imag = lax.real(value), lax.imag(value)
         return lax.concatenate([lax.expand_dims(real, (real.ndim,)),
                                 lax.expand_dims(imag, (imag.ndim,))], real.ndim)
+    if kind == RETYPED | _PJRT_TOKEN:
+        return lax.full((), 0, np.uint8)
     if kind & RETYPED:
         fmt = _narrow.narrow_format(aval.dtype)
         return _narrow.encode(value, fmt) if fmt else lax.bitcast_convert_type(value, np.int64)
@@ -115,6 +126,8 @@ def _from_physical(value, kind, aval):
     if kind == COMPLEX_PAIRS:
         return lax.complex(lax.index_in_dim(value, 0, value.ndim - 1, keepdims=False),
                            lax.index_in_dim(value, 1, value.ndim - 1, keepdims=False))
+    if kind == RETYPED | _PJRT_TOKEN:
+        return lax.create_token()
     if kind & RETYPED:
         fmt = _narrow.narrow_format(aval.dtype)
         return _narrow.decode(value, fmt) if fmt else lax.bitcast_convert_type(value, np.uint64)

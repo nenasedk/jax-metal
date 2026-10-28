@@ -41,3 +41,27 @@ def test_repeated_backend_resets():
             del result, result_empty, mapped, fn
         api.clear_backends()
         gc.collect()
+
+
+def test_tokens_cross_program_boundaries():
+    # The plugin rejects !mhlo.token in a signature; tokens are unread uint8 placeholders
+    # that the shim reports as PJRT token buffers.
+    from jax._src import core
+
+    with jax.default_device(jax.devices("METAL")[0]):
+        token = jax.lax.create_token()
+        assert isinstance(token, core.Token)
+        with pytest.raises(RuntimeError, match="Cannot convert a token-shape buffer"):
+            token._buf._value
+        x = np.arange(4, dtype=np.float32)
+        doubled, out = jax.jit(lambda x, t: (x * 2, t))(x, token)  # token in and out
+        np.testing.assert_array_equal(doubled, x * 2)
+        assert isinstance(out, core.Token) and out is not token
+        chained = jax.jit(lambda t, x: (t, x + 1))(out, x)  # an output token as an input
+        np.testing.assert_array_equal(chained[1], x + 1)
+        assert isinstance(jax.jit(jax.lax.create_token)(1.0), core.Token)
+        _, captured = jax.jit(lambda x: (x + 2, token))(7)
+        assert isinstance(captured, core.Token)
+        captured.block_until_ready()
+        mixed = jax.jit(lambda z, t: (z * 1j, t))((x + 1j).astype(np.complex64), token)
+        np.testing.assert_array_equal(mixed[0], (x + 1j).astype(np.complex64) * 1j)

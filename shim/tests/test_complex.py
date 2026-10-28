@@ -181,6 +181,10 @@ check_complex_io("second derivative of complex tan",
                  jax.grad(lambda z: jax.grad(lambda w: jnp.tan(w * 0.3).real)(z).real), zc[0])
 check_exact("complex -> bfloat16/float16/float32", lambda z: (z.astype(jnp.bfloat16), z.astype(jnp.float16),
                                                               z.astype(jnp.float32)), zc)
+# A complex iota (gamma, dct) emits a complex mhlo.iota the plugin cannot legalize.
+check_exact("complex iota", lambda: (jax.lax.iota(np.complex64, 8),
+                                     jax.lax.broadcasted_iota(np.complex64, (3, 4), 1)))
+check_complex_io("complex gamma", jax.scipy.special.gamma, (zc[:8] * 0.5 + 1).astype(np.complex64))
 check_complex_io("complex logaddexp", jnp.logaddexp, zc, wc)
 check_complex_io("complex logaddexp2", jnp.logaddexp2, zc, wc)
 check_complex_io("grad of complex logaddexp",

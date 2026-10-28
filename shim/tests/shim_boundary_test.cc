@@ -268,6 +268,34 @@ int main(int argc, char** argv) {
   CHECK(DimsOf(empty) == "0");
   for (PJRT_Buffer* output : outputs) Destroy(output);
   Destroy(empty);
+  drop.executable = compile.executable;
+  CHECK(g_api->PJRT_LoadedExecutable_Destroy(&drop) == nullptr);
+
+  // Tokens: an input (JAX's bool[0], or another program's token output) goes in as an
+  // unread scalar uint8 placeholder; an output (the program's scalar uint8) is reported as a
+  // token buffer.
+  const int32_t token_kind = 0x100 | PJRT_Buffer_Type_TOKEN;
+  const int32_t token_in = 1, token_out = 2;
+  set_io(&token_in, &token_kind, 1, &token_out, &token_kind, 1, boundary,
+         sizeof(boundary) - 1);
+  CHECK(g_api->PJRT_Client_Compile(&compile) == nullptr);
+  set_io(nullptr, nullptr, 0, nullptr, nullptr, 0, nullptr, 0);
+  PJRT_Buffer* jax_token = FromHost(ints, PJRT_Buffer_Type_PRED, 0, device);
+  execute(s64, jax_token, outputs);
+  CHECK(last_arg_type(1) == PJRT_Buffer_Type_U8);
+  CHECK(last_arg_dim(1, 0) == -1);  // scalar
+  CHECK(TypeOf(outputs[2]) == PJRT_Buffer_Type_TOKEN);
+  CHECK(plugin_type(outputs[2]) == PJRT_Buffer_Type_U8);
+  CHECK(TypeOf(outputs[0]) == PJRT_Buffer_Type_S64);  // other outputs untouched
+  PJRT_Buffer* program_token = outputs[2];
+  PJRT_Buffer* more[3] = {};
+  execute(s64, program_token, more);  // a token output fed back in
+  CHECK(last_arg_type(1) == PJRT_Buffer_Type_U8);
+  CHECK(last_arg_dim(1, 0) == -1);
+  CHECK(TypeOf(more[2]) == PJRT_Buffer_Type_TOKEN);
+  for (PJRT_Buffer* output : outputs) Destroy(output);
+  for (PJRT_Buffer* output : more) Destroy(output);
+  Destroy(jax_token);
 
   // Destroyed buffers are forgotten: a new buffer at a reused address is not misreported.
   Destroy(u64);

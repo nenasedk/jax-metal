@@ -365,6 +365,21 @@ def _chooser(compare, x, y):
     return lax.select(pick_x, x, y)
 
 
+def _iota_rule():
+    """Complex iota (k + 0j; jax.scipy.special.gamma, dct) as a float iota converted to
+    complex: the plugin cannot legalize a complex mhlo.iota."""
+    default = current_rule(lax_internal.iota_p)
+
+    def rule(ctx, *, dtype, shape, dimension, sharding):
+        if np.dtype(dtype).kind != "c":
+            return default(ctx, dtype=dtype, shape=shape, dimension=dimension, sharding=sharding)
+        parts = np.finfo(dtype).dtype
+        return mlir.lower_fun(lambda: lax.convert_element_type(
+            lax.broadcasted_iota(parts, shape, dimension), dtype), multiple_results=False)(ctx)
+
+    return rule
+
+
 def _sort(*operands, dimension, is_stable, num_keys):
     # Complex keys sort lexicographically by (real, imag), like jnp.sort_complex. The
     # plugin's SortConverter takes a single key, so n keys become n stable single-key
@@ -686,6 +701,7 @@ def register():
     for primitive, compare in ((lax_internal.max_p, lax.gt), (lax_internal.min_p, lax.lt)):
         _register_rule(primitive, _when_complex(primitive, partial(_chooser, compare),
                                                 default=current_rule(primitive)))
+    _register_rule(lax_internal.iota_p, _iota_rule())
     _register_rule(lax_internal.sort_p, _sort_rule())
     _register_rule(lax_internal.dot_general_p, _dot_general_rule())
     from jax._src.lax.control_flow import loops  # pylint: disable=import-outside-toplevel

@@ -299,7 +299,8 @@ PJRT_Error* ShimBufferMemory(PJRT_Buffer_Memory_Args* args) {
 // Retyped buffers: types the plugin cannot take at a program boundary but whose bytes a type
 // it supports holds unchanged. Such buffers live in the plugin as the physical type; the
 // shim remembers the logical type and reports it to the framework. Narrow types are one
-// value per byte, the code in the low bits: frameworks transfer them unpacked.
+// value per byte, the code in the low bits: frameworks transfer them unpacked. A token is a
+// scalar uint8 that nothing reads.
 
 PJRT_Buffer_Type PhysicalType(PJRT_Buffer_Type type) {
   switch (type) {
@@ -320,6 +321,8 @@ PJRT_Buffer_Type PhysicalType(PJRT_Buffer_Type type) {
     case PJRT_Buffer_Type_S4:
     case PJRT_Buffer_Type_S2:
       return PJRT_Buffer_Type_S8;
+    case PJRT_Buffer_Type_TOKEN:  // a scalar uint8 placeholder: a token carries no data
+      return PJRT_Buffer_Type_U8;
     default:
       return type;
   }
@@ -423,6 +426,9 @@ enum BoundaryKind : int32_t {
   kEmptyInput = 2,    // empty tensor <-> unused scalar uint8 placeholder
   kRetyped = 0x100,   // | a PJRT_Buffer_Type T: T <-> PhysicalType(T)
 };
+
+// A token: a scalar uint8 placeholder in the program (see PhysicalType).
+constexpr int32_t kTokenKind = kRetyped | static_cast<int32_t>(PJRT_Buffer_Type_TOKEN);
 
 PJRT_Buffer_Type RetypedType(int32_t kind) {
   return static_cast<PJRT_Buffer_Type>(kind & 0xFF);
@@ -613,7 +619,9 @@ PJRT_Error* ShimExecute(PJRT_LoadedExecutable_Execute_Args* args) {
     for (const BoundaryValue& input : io->inputs) {
       if (static_cast<size_t>(input.position) >= args->num_args) continue;
       PJRT_Buffer* buffer = lists[device][input.position];
-      if (input.kind == kEmptyInput) {
+      // A token arrives as whatever buffer JAX holds for it (a bool[0] from JAX, or a
+      // scalar uint8 output of another program); the program takes an unread uint8 scalar.
+      if (input.kind == kEmptyInput || input.kind == kTokenKind) {
         PJRT_Buffer* placeholder = nullptr;
         if ((error = EmptyInputPlaceholder(io->client, buffer, &placeholder))) break;
         views->views.push_back(placeholder);

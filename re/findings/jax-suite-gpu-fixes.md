@@ -547,5 +547,61 @@ Verification:
 All other permanent regression files pass on the M3 against the source tree.
 The exception is `test_narrow.py`'s unsigned 4- and 2-bit shift checks, which
 already failed before these changes and in the GPU session's `narrow` step.
-Later baseline groups (token arguments, multi-op reductions, `mhlo.map`,
-`mhlo.dot_general` legalization, ...) have not yet been taken up.
+## Unsupported signature types: tokens and complex iota — resolved (21 of 24)
+
+The next group has 74 failures with one message, `'func.func' op One or more
+function input/output data types are not supported`. It has three causes, told
+apart by the types in each failing signature:
+
+- **50 float64 programs** (x64-context tests, float64 LOBPCG, dtype warnings):
+  Apple GPUs and MPS have no float64. This is a known hardware limitation and
+  is not addressed here.
+- **6 token programs**: `!mhlo.token` in the signature, from
+  `lax.create_token`, or a token passed to, returned from or captured by `jit`.
+- **18 complex64 programs**: complex signatures should never reach the plugin,
+  since the boundary rewrite makes them float32 pairs. Against the current code:
+  - 4 already pass;
+  - 11 fail first on a complex `mhlo.iota` (`gamma`, `dctn`), which the plugin
+    cannot legalize;
+  - 2 fail on `mhlo.map`, the subject of a later group;
+  - 1 hits the non-finite complex limitation described above.
+
+  The complex-signature errors are secondary. The compile hook strips the
+  boundary attributes from the module it compiles, and when compilation fails,
+  JAX's lowering cache then hands the stripped module to the next attempt.
+
+**Tokens.** A JAX token is a PJRT buffer of type `TOKEN`. Tokens become one more
+retyped boundary kind (`0x100 | PJRT_Buffer_Type_TOKEN`), physically an unread
+scalar uint8:
+
+- A token output is the boundary program's uint8 scalar, reported to jaxlib as
+  a token buffer. Reading it raises jaxlib's own "Cannot convert a token-shape
+  buffer" error, as the upstream test expects.
+- A token input becomes a fresh `create_token` inside the program. The shim
+  passes a one-byte placeholder in its position, because JAX hands a token to an
+  executable as whatever buffer it holds: a `bool[0]` it made itself, or
+  another program's token output. On METAL's single stream a token orders
+  nothing.
+
+**Complex iota** is a float32 iota converted to complex64 (`k + 0j`). That
+gives the CPU's values exactly.
+
+Verification:
+
+- On the M3, all 6 token tests pass, as do 15 of the 18 complex ones; the
+  other three are `mhlo.map` and the known limitation.
+- 649 previously passing upstream tests that involve tokens, effects, `iota`,
+  complex, empty or uint64 values also still pass. With the targets, that is
+  one guarded run of 673 tests (`shim/build/datatype-final-verification/`,
+  peak 0.75 GB, worst GPU probe latency 13 ms).
+- The C++ fake-plugin test checks the token placeholder for both kinds of
+  incoming token buffer, and that token outputs report the token type.
+- `test_runtime_api.py` adds a token round trip (in, out, captured,
+  chained, alongside complex values).
+- `test_complex.py` adds exact complex `iota` and complex `gamma`.
+- All permanent regression files pass against the source tree, apart from the
+  earlier unsigned narrow-shift checks in `test_narrow.py`. The C++ load tests
+  (`make test`) pass on the M3, and `make unit-test` passes.
+
+Later baseline groups (multi-op `reduce`, `mhlo.map`, `mhlo.dot_general`
+legalization, ...) have not yet been taken up.
