@@ -1081,7 +1081,7 @@ def _convert_element_type(ctx, operand, *, new_dtype, **params):
     if source == _BFLOAT16 and target != _BFLOAT16 and real(target):
         return mlir.lower_fun(partial(_from_bfloat16, dtype=target), multiple_results=False)(
             ctx, operand)
-    if source.kind == "c" and real(target):
+    if source.kind == "c" and target.kind != "c":  # bfloat16 (kind "V") included
         # JAX's own rule emits mhlo.real, which the plugin cannot lower; use the METAL real_p.
         return mlir.lower_fun(lambda z: lax.convert_element_type(lax.real(z), target),
                               multiple_results=False)(ctx, operand)

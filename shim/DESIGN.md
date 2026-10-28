@@ -258,8 +258,9 @@ functions into raw `real`/`imag` ops. `_complex.py`:
 
 - builds `real` as a complex→real `convert` (MPS keeps the real part), `imag` as `real(z·(−i))`,
   and `complex(x, y)` as `convert(x) + convert(y)·i`;
-- expresses complex `exp`, `log`, `sqrt`, `sin`, `cos`, `tan`, `sinh`, `cosh`, `tanh`, `expm1`,
-  `log1p`, `sign`, `rsqrt` and `pow` in real arithmetic, and the inverse functions `asin`,
+- expresses complex `exp`, `exp2`, `log`, `log2`, `sqrt`, `square`, `sin`, `cos`, `tan`, `sinh`,
+  `cosh`, `tanh`, `expm1`, `log1p`, `sign`, `rsqrt` and `pow` in real arithmetic (`square`
+  follows CHLO's decomposition, which XLA's CPU backend matches bit for bit), and the inverse functions `asin`,
   `acos`, `atan`, `asinh`, `acosh`, `atanh` with Kahan's branch-cut formulas (float32 results
   within 5e-6 relative of NumPy's complex128, on the cuts too). `sqrt` keeps the sign of a zero
   imaginary part, which picks the side of each branch cut;
@@ -270,8 +271,19 @@ functions into raw `real`/`imag` ops. `_complex.py`:
   real part and then imaginary part, with real reductions: JAX lowers them to a reduction
   whose body compares the parts (nine ops), and the plugin recognizes a reduction by its one
   combining op;
+- computes complex elementwise `max`/`min` (`jnp.maximum`, `logaddexp`, reductions with
+  `initial`) with the same order from `real`/`imag` and selects: JAX's lowering
+  (`mlir._minmax_hlo`) emits `stablehlo.real`/`imag` itself, bypassing the rules above. A
+  complex→bfloat16 `convert` likewise goes through the METAL `real`;
 - implements `fft`/`ifft`/`rfft`/`irfft` (any rank) as a radix-2 transform with a direct DFT for
   odd lengths, with twiddle factors computed on the GPU from exact integer angles.
+
+Building and splitting complex values by multiplying with ±i is not exact: the product
+computes `a·0`, so a non-finite component turns the other one into NaN (`complex(1, inf)` has a
+NaN real part; `imag(inf + 0j)` is NaN), and the sign of a zero component can be lost. Program
+inputs and outputs go through the same rules, so this applies there too. StableHLO forbids
+bitcasts between complex and real types, so no exact data movement replaces the multiplies;
+see `re/findings/jax-suite-gpu-fixes.md`.
 
 ### Values at the program boundary
 

@@ -141,6 +141,29 @@ def log(z):
     return lax.complex(lax.log(lax.abs(z)), lax.atan2(b, a))
 
 
+def exp2(z):
+    # JAX's formula, exp(z * ln 2) with a complex ln 2: its lowering is a complex
+    # stablehlo.exponential, which XLA's serializer expands into real/imag ops.
+    return exp(z * lax.full_like(z, np.log(2)))
+
+
+def log2(z):
+    # JAX's formula, log(z) / ln 2 per part: its lowering emits stablehlo.real/imag itself.
+    a, b = _parts(z)
+    scale = np.float32(1 / np.log(2))
+    return lax.complex(lax.log(lax.abs(z)) * scale, lax.atan2(b, a) * scale)
+
+
+def square(z):
+    # CHLO's decomposition, which XLA's CPU backend matches bit for bit: the real part is
+    # (a - b)(a + b), without cancellation, and exactly 0 when |a| == |b| (finite);
+    # chlo.square on complex values expands into real/imag ops the plugin cannot lower.
+    a, b = _parts(z)
+    cancels = lax.is_finite(a) & lax.eq(lax.abs(a), lax.abs(b))
+    re = lax.select(cancels, lax.full_like(a, 0), (a - b) * (a + b))
+    return lax.complex(re, 2 * (a * b))
+
+
 def _sign_bit(x):
     """x < 0, and also true for -0.0 (whose sign picks the side of a branch cut)."""
     return lax.bitcast_convert_type(x, np.int32) < 0
@@ -327,6 +350,19 @@ def _reduce_chooser(reduce, init, operand, *, axes, **_):
     keep = lax.eq(re, lax.broadcast_in_dim(best_re, re.shape, kept))
     best_im = reduce(lax.select(keep, im, lax.full_like(im, init)), axes)
     return lax.complex(best_re, best_im)
+
+
+def _chooser(compare, x, y):
+    """max/min of complex values, ordered by real part, then imaginary part, as JAX lowers
+    them (mlir._minmax_hlo), from the real/imag rules above: JAX's lowering emits
+    stablehlo.real/imag itself, which the plugin cannot legalize. As in XLA, a NaN
+    comparison is false, so the second operand is chosen."""
+    import jax.numpy as jnp  # pylint: disable=import-outside-toplevel
+    shape = np.broadcast_shapes(x.shape, y.shape)  # a scalar operand, as in _nary_lower_hlo
+    x, y = jnp.broadcast_to(x, shape), jnp.broadcast_to(y, shape)
+    rx, ry = lax.real(x), lax.real(y)
+    pick_x = lax.select(lax.eq(rx, ry), compare(lax.imag(x), lax.imag(y)), compare(rx, ry))
+    return lax.select(pick_x, x, y)
 
 
 def _sort(*operands, dimension, is_stable, num_keys):
@@ -647,6 +683,9 @@ def register():
                                     (lax_internal.reduce_min_p, lax.reduce_min, np.inf)):
         _register_rule(primitive, _when_complex(primitive, partial(_reduce_chooser, reduce, init),
                                                 default=current_rule(primitive)))
+    for primitive, compare in ((lax_internal.max_p, lax.gt), (lax_internal.min_p, lax.lt)):
+        _register_rule(primitive, _when_complex(primitive, partial(_chooser, compare),
+                                                default=current_rule(primitive)))
     _register_rule(lax_internal.sort_p, _sort_rule())
     _register_rule(lax_internal.dot_general_p, _dot_general_rule())
     from jax._src.lax.control_flow import loops  # pylint: disable=import-outside-toplevel
@@ -661,5 +700,6 @@ ELEMENTWISE = {
     lax_internal.cosh_p: cosh, lax_internal.expm1_p: expm1, lax_internal.log1p_p: log1p,
     lax_internal.sign_p: sign, lax_internal.asin_p: asin, lax_internal.acos_p: acos,
     lax_internal.atan_p: atan, lax_internal.asinh_p: asinh, lax_internal.acosh_p: acosh,
-    lax_internal.atanh_p: atanh,
+    lax_internal.atanh_p: atanh, lax_internal.exp2_p: exp2, lax_internal.log2_p: log2,
+    lax_internal.square_p: square,
 }

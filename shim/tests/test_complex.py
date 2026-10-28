@@ -61,6 +61,7 @@ for name, fn in [("exp", jnp.exp), ("log", jnp.log), ("sqrt", jnp.sqrt), ("sin",
                  ("cos", jnp.cos), ("tan", jnp.tan), ("tanh", jnp.tanh), ("sinh", jnp.sinh),
                  ("cosh", jnp.cosh), ("expm1", jnp.expm1), ("log1p", jnp.log1p),
                  ("sign", jnp.sign), ("reciprocal sqrt", jax.lax.rsqrt),
+                 ("exp2", jnp.exp2), ("log2", jnp.log2), ("square", jnp.square),
                  ("power", lambda v: jnp.power(v, 1.5 + 0.5j))]:
     check(f"complex {name}", lambda x, y, fn=fn: parts(fn(z(small(x), small(y)))), x, y, tol=1e-4)
 
@@ -115,6 +116,75 @@ check_complex_io("fori_loop with complex carry",
 check_complex_io("grad wrt complex parameter",
                  jax.grad(lambda z: jnp.sum(jnp.abs(z * (1 + 2j)) ** 2)), zc)
 check_complex_io("empty complex array", lambda z: z * 2, zc[:0])
+
+
+def check_exact(name, fn, *args):
+    """METAL and CPU agree exactly, NaN positions included."""
+    try:
+        got, want = on(METAL, fn, *args), on(CPU, fn, *args)
+        for g, w in zip(jax.tree.leaves(got), jax.tree.leaves(want)):
+            np.testing.assert_array_equal(g, w)
+        ok, detail = True, "exact"
+    except Exception as error:  # report and continue
+        ok, detail = False, (str(error).strip().splitlines() or [repr(error)])[0][:150]
+    print(f"{'PASS' if ok else 'FAIL'} {name:40} {detail}")
+    if not ok:
+        failures.append(name)
+
+
+def boundary_exact(*arrays):
+    """Mask of elements that complex64 program inputs/outputs carry exactly: the boundary
+    builds and splits complex values with multiplications by +-i, which turn a non-finite
+    component into NaN in the other one and drop the sign of -0 (a known limitation, see
+    re/findings/jax-suite-gpu-fixes.md)."""
+    ok = np.ones(np.shape(arrays[0]), bool)
+    for a in arrays:
+        for part in (np.real(a), np.imag(a)):
+            ok &= np.isfinite(part) & ~((part == 0) & np.signbit(part))
+    return ok
+
+
+# Complex max/min order by real part, then imaginary part; JAX lowers them with
+# stablehlo.real/imag, which the plugin cannot legalize (_complex._chooser).
+ties = (RNG.integers(-2, 3, 64) + 1j * RNG.integers(-2, 3, 64)).astype(np.complex64)
+ties_b = (RNG.integers(-2, 3, 64) + 1j * RNG.integers(-2, 3, 64)).astype(np.complex64)
+parts_grid = np.array([0.0, 1, -1, 3e38, -3e38, 1e-30], np.float32)
+values = np.zeros(parts_grid.size ** 2, np.complex64)  # all (re, im) pairs: real-part ties
+values.real, values.imag = np.repeat(parts_grid, parts_grid.size), np.tile(parts_grid, parts_grid.size)
+special, special_b = np.repeat(values, values.size), np.tile(values, values.size)
+check_exact("complex maximum/minimum, real-part ties", lambda a, b: (jnp.maximum(a, b), jnp.minimum(a, b)),
+            ties, ties_b)
+keep = boundary_exact(special, special_b)
+check_exact("complex maximum/minimum, all pairs of a grid",
+            lambda a, b: (jax.lax.max(a, b), jax.lax.min(a, b), jax.lax.max(b, a), jax.lax.min(b, a)),
+            special[keep], special_b[keep])
+check_exact("complex maximum with a scalar", lambda a: (jnp.maximum(a, 0), jnp.minimum(1j, a)), ties)
+check_exact("complex max/min with initial", lambda a: (jnp.max(a, initial=1 + 0j), jnp.min(a, initial=0j)),
+            ties)
+check_exact("complex max with where and initial",
+            lambda a: jnp.max(a.reshape(8, 8), axis=1, where=a.reshape(8, 8).real > 0, initial=-5 + 0j), ties)
+check_exact("complex maximum inside a loop",
+            lambda a, b: jax.lax.fori_loop(0, 3, lambda i, v: jnp.maximum(v * 1j, b), a), ties, ties_b)
+# exp2, log2, square: JAX's lowerings emit stablehlo.real/imag (directly, or through a
+# complex exp or chlo.square that XLA's serializer expands). square follows the CPU's CHLO
+# formula exactly (checked where program inputs/outputs carry values exactly).
+grid = np.array([0.0, 1, -1, 2, -2.5, 1e-30, 3e38, -3e38, 0.5, 1e19, -1e-20], np.float32)
+square_in = np.zeros(grid.size ** 2, np.complex64)
+square_in.real, square_in.imag = np.repeat(grid, grid.size), np.tile(grid, grid.size)
+square_out = on(CPU, jnp.square, square_in)
+check_exact("complex square, special values", jnp.square,
+            square_in[boundary_exact(square_in, square_out)])
+check_exact("complex square, |re| == |im|", jnp.square,
+            (ties.real + 1j * ties.real * np.sign(ties.imag + 0.5)).astype(np.complex64))
+check_complex_io("complex exp2/log2 at the boundary", lambda z: (jnp.exp2(z * 0.5), jnp.log2(z)), zc)
+check_complex_io("second derivative of complex tan",
+                 jax.grad(lambda z: jax.grad(lambda w: jnp.tan(w * 0.3).real)(z).real), zc[0])
+check_exact("complex -> bfloat16/float16/float32", lambda z: (z.astype(jnp.bfloat16), z.astype(jnp.float16),
+                                                              z.astype(jnp.float32)), zc)
+check_complex_io("complex logaddexp", jnp.logaddexp, zc, wc)
+check_complex_io("complex logaddexp2", jnp.logaddexp2, zc, wc)
+check_complex_io("grad of complex logaddexp",
+                 jax.grad(lambda a, b: jnp.sum(jnp.logaddexp(a, b)).real, holomorphic=False), zc, wc)
 
 
 def chained_and_eager():

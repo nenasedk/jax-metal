@@ -358,5 +358,101 @@ and final teardown logs one MetalClient destruction
 (`shim/build/runtime-api-regressions.log`). The C++ fake-plugin test verifies
 that five create/destroy cycles allocate exactly one native client.
 
-A combined rerun of all 106 original crash cases is in progress. Later baseline
-failure groups have not yet been taken up.
+The combined rerun of all **106 original crash cases passes**
+(`shim/build/crash-final-verification.log`; peak footprint 0.41 GB, worst GPU
+probe latency 32 ms).
+
+## Complex values in ops that emit real/imag directly — resolved (96 of 97)
+
+The next group is 97 `failed to legalize operation 'mhlo.real'` failures. The
+plugin has no `real`/`imag`/`complex` patterns, so `_complex.py` builds them
+from converts and multiplications by ±i. Those rules replace the
+`real_p`/`imag_p`/`complex_p` primitives, but some JAX lowerings emit
+`stablehlo.real`/`imag` themselves, or emit complex ops that XLA's serializer
+expands into them. Lowering representative cases for METAL (no compilation, no
+GPU work) and reading the debug locations of the `real`/`imag` ops found five
+sources:
+
+- `max_p`/`min_p`: `mlir._minmax_hlo` orders complex values by real part, then
+  imaginary part, with `hlo.real`/`imag`. This covers `jnp.maximum`/`minimum`,
+  `logaddexp` (which uses `max`) and reductions with `initial` or `where` (the
+  reduction is combined with the initial value by `max`). 45 cases.
+- `exp2_p`: lowered to a complex exponential, which the serializer expands into
+  `real`/`imag`.
+- `log2_p`: `_log2_lower` scales the parts of the complex log with
+  `hlo.real`/`imag`.
+- `square_p`: `chlo.square`, whose complex decomposition uses `real`/`imag`.
+  The second derivative of `tan` (`1 + tan²`) and the derivative of `sinc` also
+  reach it.
+- complex→bfloat16 `convert` (`nanmean`, `cumprod` with `dtype=bfloat16`): the
+  shim's convert rule recognized real targets by `kind in "biuf"`, which
+  excludes ml_dtypes' bfloat16 (kind `V`), so JAX's rule ran instead.
+
+`_complex._chooser` implements complex `max`/`min` with the METAL `real`/`imag`,
+comparisons and selects, following `_minmax_hlo` exactly. On real-part ties it
+compares imaginary parts, and a NaN comparison is false, so it picks the second
+operand. Real inputs keep the NaN-propagating rule. Complex `exp2` and `log2`
+follow JAX's formulas. Complex `square` follows CHLO's decomposition, which XLA's
+CPU backend matches bit for bit on about 60,000 checked inputs (finite ones,
+signed zeros and infinities, with subnormal results flushed as on the CPU):
+
+- real part: 0 where `|a| = |b|` and `a` is finite, else `(a − b)(a + b)`;
+- imaginary part: `2(ab)`.
+
+Plain `(a − b)(a + b)` disagrees on 12% of those inputs. The convert rule
+splits any complex→non-complex conversion through the METAL `real`.
+
+Verification:
+
+- On the CPU with the METAL rules, all 97 cases pass.
+- On the M3, 96 of 97 pass in guarded batches of eight
+  (`shim/build/real-verification/`; peak footprint 0.32 GB, worst GPU probe
+  latency 3 ms).
+- `shim/tests/test_complex.py` gains exact METAL-vs-CPU checks:
+  - complex `max`/`min` over all 1,296 pairs of a value grid, real-part ties,
+    scalar operands, `initial`, `where` and loops;
+  - `square` over a special-value grid and at `|re| = |im|`;
+  - complex → bfloat16/float16/float32 converts;
+  - tolerance checks for `exp2`, `log2`, `logaddexp`, `logaddexp2`, their
+    gradients and the second derivative of `tan`.
+
+  All pass, as do the other permanent regression files
+  (`shim/build/regressions-real-fix.log`).
+
+### Remaining: complex values with non-finite or negative-zero components
+
+`testSincInfinities` now compiles, but returns NaN for `sinc(±inf + bj)`
+instead of 0. `jnp.sinc` tests `|re(x)| = inf` and `isfinite(im(x))`. On METAL,
+`imag(inf + 0j)` is NaN, because the shim computes it as `real(z·(−i))`, whose
+real part is `a·0 + b`.
+
+This is the known limitation recorded under ordering above, and it is broader
+than recorded:
+
+- Construction `convert(x) + convert(y)·i` computes `y·0`, so `complex(1, inf)`
+  gets a NaN real part.
+- Construction and extraction both drop the sign of a zero component.
+- Program inputs and outputs use the same rules. An identity function on
+  complex64 changes 77 of 144 grid values; all of them have a −0 or non-finite
+  component.
+
+Probes on the M3, with complex constants made inside the program and only real
+outputs, show which operations MPS keeps exact:
+
+- complex→real `convert` (the real part, NaN and infinities included);
+- real→complex `convert`, negation, addition and `select` on complex values.
+
+Every multiplication that isolates a component computes some `a·0`. StableHLO's
+verifier rejects bitcasts between complex and real types ("cannot convert
+between real and complex types"), so no exact data movement is available
+either.
+
+Exact construction appears feasible from the exact operations. For example,
+`(x, −0) = −convert(−x)` plus `(−0, y) = −((−y, −0)·i)` for finite `y`, plus
+constants `(−0, ±inf/NaN)` selected for non-finite `y`, since `−0` is the
+additive identity. Extraction of the imaginary part cannot be exact when the
+real part is infinite or NaN, unless the components are still available. That
+is true at the program boundary, where inputs arrive as float32 pairs. This
+remains open and is the natural next step for complex edge cases. Later
+baseline failure groups (`reduce_window`, token arguments, multi-op reductions,
+`mhlo.map`, ...) have not yet been taken up.
