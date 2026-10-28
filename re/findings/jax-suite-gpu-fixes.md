@@ -453,6 +453,99 @@ constants `(−0, ±inf/NaN)` selected for non-finite `y`, since `−0` is the
 additive identity. Extraction of the imaginary part cannot be exact when the
 real part is infinite or NaN, unless the components are still available. That
 is true at the program boundary, where inputs arrive as float32 pairs. This
-remains open and is the natural next step for complex edge cases. Later
-baseline failure groups (`reduce_window`, token arguments, multi-op reductions,
-`mhlo.map`, ...) have not yet been taken up.
+remains open and is the natural next step for complex edge cases.
+
+## Window reductions — resolved
+
+The next group is 80 `failed to legalize operation 'mhlo.reduce_window'`
+failures. They cover:
+
+- generic, variadic and custom-body windows, and their JVPs;
+- dilation;
+- `select_and_gather_add` (the JVP of max pooling);
+- batched pooling and stax pooling shapes.
+
+The plugin has a `ReduceWindowConverter` (`0x5b700`), so a matrix of small
+probes on the M3, each in its own process under the guard, mapped what it
+accepts. It is MPS's 4-D pooling:
+
+- **Refused:** 2-D, 3-D, 5-D and rank-0 windows, even a plain sum with a
+  constant init; `min`, `mul`, custom and variadic bodies; and base dilation.
+- **Correct:** float32/float16 sums and maxima, with any window position,
+  strides, SAME padding of sums, window dilation and a runtime init equal to
+  the identity.
+- **Wrong:**
+  - max pooling with explicit padding: it pads with 0 instead of −inf;
+  - a sum with a non-zero init: the init is ignored;
+  - int32 sums;
+  - max pooling of a window holding only −inf: it returns 0.
+
+Ten more failures (`'mps.pooling_max_gradient' op attribute 'window_sizes'`)
+are the same limit in `select_and_scatter_add`, the max-pool gradient. It
+lowers to MPS's 4-D `pooling_max_gradient`, which also refuses min-pool
+gradients. Four of the 80 window tests reach it once their windows lower.
+
+`_windows.py` replaces the rules for `reduce_window_sum`/`max`/`min`,
+`reduce_window` and `select_and_scatter_add`:
+
+- **Native pooling** is kept for float32/float16 sums and maxima of operands up
+  to rank 4, reshaped to rank 4 with unit dimensions. Padding and base dilation
+  are applied first with `pad`, holding the identity. One extra pooling of
+  per-element flags (2 for NaN, 1 above −inf) restores NaN propagation and
+  windows of −inf.
+- **Other monoid windows** (the three primitives, or a generic body of one
+  `add`, `max`, `min`, `mul`, `and` or `or`) combine strided slices one
+  dimension at a time. Blocks of taps are doubled and selected by the bits of
+  the window size: O(log w) ops per dimension.
+- **Custom and variadic bodies** fold `body(acc, element)` over the window
+  positions, with the scalar body mapped elementwise by `vmap`.
+- **`select_and_scatter_add`** keeps the native gradient only for rank-4 max
+  gradients without padding. Otherwise it selects each window's first max (min)
+  by a row-major fold and adds the source back with one strided `pad` per
+  window position.
+
+Two semantic details came from comparing with XLA's CPU backend rather than the
+StableHLO text:
+
+- XLA leaves padding and base-dilation holes out of a window instead of
+  treating them as init values. A sum with init 1.5 counts the init once, and a
+  window over padding and holes only returns the init.
+- XLA folds custom bodies in row-major order, accumulator first. A probe with
+  the non-commutative body `a·0.5 + b` matches only that order.
+
+On tied maxima, XLA's CPU `select_and_gather_add` does not always keep the
+row-major first element. It differed at one tie in a 5-D SAME, stride-2
+window. These rules keep the first element; the gradient
+(`select_and_scatter_add`) matches the CPU on ties.
+
+`max`, `min` and `reduce_max` on bfloat16 dropped NaN on METAL before this
+change. The NaN rules tested floating point with NumPy's `issubdtype`, which
+does not count ml_dtypes' bfloat16. JAX's `dtypes.issubdtype` fixes it for
+every NaN rule. float16 was not affected.
+
+Verification:
+
+- On the CPU with the METAL rules, all 80 window cases and all 10 gradient
+  cases pass, and no issues are predicted for the plugin.
+- On the M3, all 90 pass, and all 218 previously passing upstream window,
+  pooling and cumulative tests still pass. One combined guarded run of the 308
+  tests is in `shim/build/windows-final-verification/` (peak 0.37 GB, worst
+  GPU probe latency 4 ms).
+- `shim/tests/test_windows.py` adds 132 exact (or, for float sums,
+  tolerance-based) METAL-vs-CPU comparisons, and all pass:
+  - sum/max/min over 9 window layouts × 4 dtypes, covering ranks 1 to 5,
+    strides, SAME and asymmetric padding, base and window dilation, NaN, ±inf
+    and −0;
+  - windows of −inf only;
+  - runtime and non-identity inits;
+  - bool/integer bitwise windows;
+  - non-commutative custom bodies;
+  - a variadic argmax window;
+  - pooling JVPs and gradients with ties, in rank 2, 4 and 5 and under `vmap`;
+  - a 100-tap window and empty operands and outputs.
+
+All other permanent regression files pass on the M3 against the source tree.
+The exception is `test_narrow.py`'s unsigned 4- and 2-bit shift checks, which
+already failed before these changes and in the GPU session's `narrow` step.
+Later baseline groups (token arguments, multi-op reductions, `mhlo.map`,
+`mhlo.dot_general` legalization, ...) have not yet been taken up.

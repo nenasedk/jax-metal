@@ -12,6 +12,7 @@ import numpy as np
 import jax
 from jax import lax
 from jax._src import core
+from jax._src import dtypes
 from jax._src.interpreters import mlir
 from jax._src.lax import ann
 from jax._src.lax import lax as lax_internal
@@ -114,7 +115,8 @@ def _with_nan_passthrough(primitive):
 # integer inputs are left alone.
 
 def _is_floating_aval(aval):
-    return isinstance(aval.dtype, np.dtype) and np.issubdtype(aval.dtype, np.floating)
+    # dtypes.issubdtype, unlike NumPy's, counts ml_dtypes' bfloat16 as floating.
+    return isinstance(aval.dtype, np.dtype) and dtypes.issubdtype(aval.dtype, np.floating)
 
 
 def _scatter_nan_propagating(primitive):
@@ -152,7 +154,7 @@ def _scatter_nan_propagating(primitive):
     return rule
 
 
-# Region bodies (the combiner of a reduce, reduce_window, scatter or all-reduce) must stay a
+# Region bodies (the combiner of a reduce, scatter or all-reduce) must stay a
 # single max or min: the plugin's converters recognize the reduction by that op and reject a
 # compare-and-select body. Lowering such a primitive marks its body as inside a region, where
 # the NaN rules keep JAX's plain lowering.
@@ -173,10 +175,10 @@ def _marking_region_bodies(rule):
     return wrapped
 
 
-_REGION_PRIMITIVES = (
-    lax_internal.reduce_p, windowed_reductions.reduce_window_p,
-    windowed_reductions.select_and_scatter_p, slicing.scatter_p, slicing.scatter_add_p,
-    slicing.scatter_sub_p, slicing.scatter_mul_p, slicing.scatter_min_p, slicing.scatter_max_p,
+_REGION_PRIMITIVES = (  # not reduce_window: _windows.py emits no region from its body
+    lax_internal.reduce_p, windowed_reductions.select_and_scatter_p, slicing.scatter_p,
+    slicing.scatter_add_p, slicing.scatter_sub_p, slicing.scatter_mul_p, slicing.scatter_min_p,
+    slicing.scatter_max_p,
     parallel.psum_p, parallel.pmax_p, parallel.pmin_p,
 )
 
@@ -229,31 +231,6 @@ _NAN_PROPAGATING = (
     (lax_internal.reduce_max_p, _reduction_nan), (lax_internal.reduce_min_p, _reduction_nan),
     (lax_internal.argmax_p, _arg_reduction_nan), (lax_internal.argmin_p, _arg_reduction_nan),
 )
-
-
-def _window_nan_propagating(primitive):
-    """Max/min pooling, then NaN for every window that holds one: the max pooling of the
-    0/1 NaN mask (NaN-free, so MPS's max is exact), lowered directly so that it does not
-    come back to this rule."""
-    default = _default_rule(primitive)
-    max_pool = _default_rule(windowed_reductions.reduce_window_max_p)
-    nan_mask = mlir.lower_fun(lambda x: lax.convert_element_type(lax.ne(x, x), x.dtype),
-                              multiple_results=False)
-    with_nan = mlir.lower_fun(
-        lambda has_nan, out: lax.select(lax.gt(has_nan, lax.full_like(has_nan, 0)),
-                                        lax.full_like(out, np.nan), out),
-        multiple_results=False)
-
-    def rule(ctx, x, **window):
-        out = default(ctx, x, **window)
-        if _in_region() or not _is_floating_aval(ctx.avals_in[0]):
-            return out
-        mask = nan_mask(ctx.replace(avals_out=ctx.avals_in, tokens_out=None), x)
-        has_nan = max_pool(ctx, *mask, **window)
-        pooled = ctx.avals_out[0]
-        return with_nan(ctx.replace(avals_in=[pooled, pooled], tokens_out=None), *has_nan, *out)
-
-    return rule
 
 
 # --- CHLO ops serialized as composites -----------------------------------------
@@ -1219,9 +1196,8 @@ def register():
     _register(lax_internal.composite_p, _inline_composite, multiple_results=True)
     for primitive, fix_fn in _NAN_PROPAGATING:
         _register_rule(primitive, _nan_propagating(primitive, fix_fn))
-    for primitive in (windowed_reductions.reduce_window_max_p,
-                      windowed_reductions.reduce_window_min_p):
-        _register_rule(primitive, _window_nan_propagating(primitive))
+    from jax_plugins.metal_shim import _windows  # pylint: disable=import-outside-toplevel
+    _windows.register(_register_rule)
     for primitive in (slicing.scatter_max_p, slicing.scatter_min_p):
         _register_rule(primitive, _scatter_nan_propagating(primitive))
     _collectives.register(_register_rule)

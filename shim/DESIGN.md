@@ -192,7 +192,23 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     `maximum`/`minimum`/`clamp` (`re/findings/mps-nan-semantics.md`, from the disassembly);
     `cond` of a singular matrix came out 0 instead of inf. For floating-point inputs the rules
     keep JAX's lowering and put NaN back where an input has one (a compare and a select, or
-    one extra reduction).
+    one extra reduction). bfloat16 counts as floating point here (NumPy's `issubdtype` does
+    not count ml_dtypes types, which had left bfloat16 `max`/`min` dropping NaN).
+  - Windows (`_windows.py`): the plugin's `reduce_window` converter maps onto MPS's 4-D pooling
+    and legalizes only rank-4 operands with one `add` or `max` body (no other rank, `min`,
+    `mul`, custom or variadic body, or base dilation). Inside that set max pooling pads with 0
+    instead of −inf and returns 0 for a window of −inf only, a sum ignores a non-zero init, and
+    integer sums are wrong. Float32/float16 sums and maxima up to rank 4 keep the native
+    pooling, with padding and base dilation applied by `pad` first and one extra pooling of
+    NaN/−inf flags. Other monoid windows (`sum`/`max`/`min`, or a body of one `add`, `max`,
+    `min`, `mul`, `and`, `or`) combine strided slices one dimension at a time, doubling the
+    blocks of taps (O(log w) ops per dimension). Custom and variadic bodies, including
+    `select_and_gather_add` (the JVP of max/min pooling), fold `body(acc, element)` over the
+    window positions in row-major order, accumulator first. As in XLA, padding and dilation
+    holes are left out of windows, so the init value counts once. `select_and_scatter_add`
+    (the pooling gradient) keeps MPS's `pooling_max_gradient` for rank-4 max gradients
+    without padding; otherwise it selects each window's first max (min) the same way and adds
+    the source values back with one strided `pad` per window position.
   - Collectives on one device (`_collectives.py`): the plugin has one device and patterns for
     almost no collectives, so `psum`/`pmax`/`pmin`, `all_gather`, `all_to_all`,
     `reduce_scatter`, `ppermute`, `pbroadcast`, `axis_index` and `ragged_all_to_all` become
@@ -206,7 +222,7 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     `tridiagonal_solve` (Gaussian elimination with partial pivoting, as `gtsv`, plus the
     `dlagts` perturbation JAX requests). Checked against LAPACK: same packed outputs, pivots
     and residuals.
-  - NaN rules never apply inside reduction, window, scatter or all-reduce bodies: the plugin's
+  - NaN rules never apply inside reduction, scatter or all-reduce bodies: the plugin's
     converters recognize those by a single combining op. `scatter_max`/`scatter_min` propagate
     NaN with a scattered mask instead.
   - Every rule traces with standard dtype promotion and without varying manual axes, so rules
