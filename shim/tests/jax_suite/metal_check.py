@@ -12,6 +12,8 @@ re/findings/mps-op-coverage.md:
   integer values outside the converts at a program's inputs and outputs (the METAL rules
   rewrite the rest, see _narrow.py; the shim passes the older narrow types' bytes across
   the program boundary, and the newer ones cannot cross it);
+- reductions and windows over several operands, and scatters that index no operand
+  dimension (MHLO canonicalizes them to mhlo.map, which the plugin cannot lower);
 - reductions, windows, scatters and all-reduces over one operand whose body is more than
   one op: the plugin's converters recognize the reduction by its single op;
 - complex values in ops whose MPS kernels or compiler fail on them (the METAL rules split
@@ -133,6 +135,14 @@ def program_issues(module):
                     if op.operation.name != "stablehlo.return"]
             if len(body) > 1:
                 issues.add(f"{name} body of {len(body)} ops ({', '.join(sorted(set(body)))})")
+        if name in ("stablehlo.reduce", "stablehlo.reduce_window") and len(operation.results) > 1:
+            issues.add(f"{name} over {len(operation.results)} operands")
+        if name == "stablehlo.scatter":
+            numbers = str(operation.attributes["scatter_dimension_numbers"])
+            if not any(field in numbers for field in ("scatter_dims_to_operand_dims",
+                                                      "inserted_window_dims",
+                                                      "input_batching_dims")):
+                issues.add("stablehlo.scatter indexing no operand dimension (becomes mhlo.map)")
     return sorted(issues)
 
 

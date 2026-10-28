@@ -212,5 +212,58 @@ def test_boolean_scan_result_updates(values):
     np.testing.assert_array_equal(accumulated, np.bitwise_or.accumulate(x))
 
 
+
+# A scatter that indexes no operand dimension (empty index vectors) becomes mhlo.map in the
+# plugin's MHLO canonicalizer, which it cannot lower (jnp.polyadd, scipy.signal segments).
+def _on_cpu(fn, *args):
+    return jax.jit(fn)(*jax.device_put(args, jax.devices("cpu")[0]))
+
+
+@pytest.mark.parametrize("operation", [lax.scatter, lax.scatter_add, lax.scatter_sub,
+                                       lax.scatter_mul, lax.scatter_min, lax.scatter_max])
+@pytest.mark.parametrize("dtype", [np.float32, np.int32, np.bool_, np.complex64])
+@pytest.mark.parametrize("window,batch", [((4, 6), ()), ((2, 3), ()), ((4, 6), (3,)),
+                                          ((1, 6), (2, 2))])
+def test_indexless_scatter(operation, dtype, window, batch):
+    if dtype == np.bool_ and operation in (lax.scatter_add, lax.scatter_sub, lax.scatter_mul):
+        return  # JAX has no boolean add, sub or mul
+    if dtype == np.complex64 and operation in (lax.scatter_min, lax.scatter_max):
+        return  # no order on complex values in XLA's scatter
+    rng = np.random.default_rng(0)
+    values = lambda shape: (rng.integers(-3, 4, shape).astype(dtype) if dtype != np.bool_
+                            else rng.random(shape) < 0.5)
+    operand = values((4, 6))
+    updates = values((*batch, *window))
+    if dtype == np.float32 and operation in (lax.scatter_min, lax.scatter_max):
+        operand[0, 0], updates.reshape(-1)[1] = np.nan, np.nan  # NaN propagates as in XLA
+    indices = np.zeros((*batch, 0), np.int32)
+    dnums = lax.ScatterDimensionNumbers(
+        update_window_dims=tuple(range(len(batch), len(batch) + 2)), inserted_window_dims=(),
+        scatter_dims_to_operand_dims=())
+    if operation is lax.scatter and batch:
+        updates = np.broadcast_to(updates[(0,) * len(batch)], updates.shape).copy()  # one winner
+    fn = lambda o, i, u: operation(o, i, u, dnums, mode=lax.GatherScatterMode.FILL_OR_DROP)
+    np.testing.assert_array_equal(jax.jit(fn)(operand, indices, updates),
+                                  _on_cpu(fn, operand, indices, updates))
+
+
+def test_indexless_scatter_custom_combiner():
+    # Applied once per update of the same window, in order (here twice).
+    operand = np.arange(24, dtype=np.float32).reshape(4, 6)
+    dnums = lax.ScatterDimensionNumbers(update_window_dims=(1, 2), inserted_window_dims=(),
+                                        scatter_dims_to_operand_dims=())
+    fn = lambda o: lax.scatter_apply(o, np.zeros((2, 0), np.int32), lambda x: x * 0.5 + 1,
+                                     dnums, update_shape=(2, 4, 6))
+    np.testing.assert_array_equal(jax.jit(fn)(operand), _on_cpu(fn, operand))
+
+
+@pytest.mark.parametrize("shape", [(12,), (5,)])
+def test_polynomial_add_and_sub(shape):
+    a = np.arange(np.prod(shape), dtype=np.float32).reshape(shape)
+    b = np.ones(7, np.float32)
+    for fn in (jnp.polyadd, jnp.polysub):
+        np.testing.assert_array_equal(jax.jit(fn)(a, b), _on_cpu(fn, a, b))
+
+
 if __name__ == "__main__":
     raise SystemExit(pytest.main([__file__, "-q", "--tb=short", "-p", "no:cacheprovider"]))

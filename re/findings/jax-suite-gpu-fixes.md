@@ -603,5 +603,77 @@ Verification:
   earlier unsigned narrow-shift checks in `test_narrow.py`. The C++ load tests
   (`make test`) pass on the M3, and `make unit-test` passes.
 
-Later baseline groups (multi-op `reduce`, `mhlo.map`, `mhlo.dot_general`
-legalization, ...) have not yet been taken up.
+## Multi-operand reductions and index-free scatters — resolved
+
+The next two groups are 58 `failed to legalize operation 'mhlo.reduce'` and 53
+`failed to legalize operation 'mhlo.map'` failures. Against the current code,
+108 of the 111 still failed on the M3. Yet all 111 passed on the CPU with the
+METAL rules, and `metal_check.py` predicted nothing. Some of these failures
+also depend on which tests ran earlier: `testPolyAdd0` and
+`testReducerNoDtype0` passed alone. Dumping the plugin's IR
+(`JAX_METAL_DUMP=1`) for failing cases showed three forms:
+
+- **Variadic reductions.** jnp's `_reduce_minmax` (behind `ptp`), reductions
+  over pytrees, `testReducePairGrad`'s `(add, mul)` pairs and argmax-style
+  pairs emit one `stablehlo.reduce` over several operands. Apple's
+  `ReduceConverter` takes one operand with one combining op.
+- **Index-free scatters.** `jnp.polyadd` lowers to a scatter whose index
+  vectors are empty (indices `i32[0]`) and whose update window is the whole
+  operand. scipy.signal's segment updates and static slices of sparse arrays
+  do the same. MHLO's canonicalizer turns such a scatter into
+  `mhlo.map(operand, updates)` with the combiner as its body. The plugin has
+  MHLO's map converters linked in but no pattern lowering `map` to MPS. JAX
+  itself never emits `map`.
+- **Degenerate boolean reductions.** A `reduce_and`/`reduce_or` over a mask
+  that is constant after folding is left by the canonicalizer as a reduction
+  whose body only returns the outer init value (`"mhlo.return"(%3)`). The
+  converter rejects that. The mask comes from the shim's own gather index
+  checks on constant indices (`jnp.repeat`, `rankdata`, BCOO), or from a
+  constant `where=` mask in jnp reductions.
+
+Fixes:
+
+- `_reductions.py` splits a variadic body that combines each accumulator with
+  its own element by one monoid op into per-operand reductions, through the
+  METAL rules of `reduce_sum`/`reduce_max`/... so NaN propagation and integer
+  semantics carry over. Any other body is applied pairwise in a log-depth tree,
+  which XLA's associativity contract allows. Single-op complex reductions take
+  the split path too.
+- Boolean `and`/`or`/`xor` reductions use the existing integer tree of
+  elementwise ops, which folds cleanly.
+- `_indexing.py` computes index-free scatters directly. Each update window
+  starts at the origin, so the updates (merged first when several share it) are
+  combined with the operand's leading window. Custom combiners are applied once
+  per update, in order, as XLA's CPU backend does.
+- These rules run inside the region marking of `reduce` and `scatter`, so they
+  lower under `outside_region()`, keeping the NaN rules in force.
+- `metal_check.py` now predicts multi-operand reductions and index-free
+  scatters. Against the old rules it flags all sampled cases.
+
+Verification:
+
+- On the CPU with the METAL rules, all 111 pass.
+- On the M3, all 111 pass (`shim/build/reduce-map-verification/`, then the 12
+  boolean-reduction cases).
+- `test_reductions.py` adds variadic min/max with NaN, mixed monoid
+  pairs with a gradient, coupled argmax-style trees (including empty), pytree
+  and complex reductions, and boolean reductions of constants.
+- `test_indexing.py` adds index-free scatters for all six combiners over four
+  dtypes, with full and partial windows and batches of updates, plus a custom
+  combiner and `polyadd`/`polysub`.
+- 2,931 previously passing upstream tests touching reductions, scatters,
+  indexing, sparse arrays, set operations or `where=` still pass, with the 111
+  targets: 3,090 passing results in total (`shim/build/reduce-map-final-
+  verification*/`, peak footprint 2.38 GB, worst GPU probe latency 175 ms).
+  44 tests whose ids contain newlines could not be selected by id and were not
+  rerun.
+- That run found one regression from an earlier fix. `_scatter_bounds_rule`
+  computed `np.minimum(int32 bounds, uint32 max)`, which NumPy 2 refuses, so
+  scatters with uint32 indices raised `OverflowError` (`testScatterMin6`). The
+  comparison now runs in int64. All 45 upstream `testScatter*` cases pass.
+- All permanent regression files pass against the source tree (`test_indexing`
+  183, `test_reductions` 64), apart from the earlier unsigned narrow-shift
+  checks. `make test` passes on the M3.
+
+Later baseline groups (`mhlo.dot_general` legalization, `Unable to serialize
+MPS module`, `mhlo.iota`, integer convolution, ...) have not yet been taken up.

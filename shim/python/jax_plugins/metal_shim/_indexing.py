@@ -214,7 +214,8 @@ def _scatter_bounds_rule(primitive):
 
         def drop_partial(i):
             # Compare in the source type before conversion, for uint32 max.
-            upper = np.minimum(bounds, np.iinfo(i.dtype).max).astype(i.dtype)
+            # (in int64: NumPy 2 refuses uint32's maximum next to the int32 bounds)
+            upper = np.minimum(bounds.astype(np.int64), np.iinfo(i.dtype).max).astype(i.dtype)
             valid = lax.full(i.shape[:-1], True, np.bool_)
             for component in range(i.shape[-1]):
                 start = lax.index_in_dim(i, component, axis=i.ndim - 1, keepdims=False)
@@ -295,6 +296,76 @@ def _scatter_apply_rule():
     return rule
 
 
+# Elementwise combiners of the scatter primitives, and the reduction that merges several
+# updates of the same element first (bool: add/max are OR, mul/min are AND).
+_COMBINERS = {
+    slicing.scatter_add_p: (lax.add, lax.reduce_sum, lax.bitwise_or, lax.reduce_or),
+    slicing.scatter_sub_p: (lax.sub, lax.reduce_sum, None, None),
+    slicing.scatter_mul_p: (lax.mul, lax.reduce_prod, lax.bitwise_and, lax.reduce_and),
+    slicing.scatter_min_p: (lax.min, lax.reduce_min, lax.bitwise_and, lax.reduce_and),
+    slicing.scatter_max_p: (lax.max, lax.reduce_max, lax.bitwise_or, lax.reduce_or),
+}
+_MAX_INDEXLESS_UPDATES = 64  # sequential custom-combiner updates of the same window
+
+
+def _indexless_scatter(primitive, operand, indices, updates, *, dimension_numbers,
+                       update_jaxpr=None, update_consts=(), **_):
+    """A scatter that indexes no operand dimension: every update window starts at the
+    origin, so combine the updates with the operand's leading window directly."""
+    del indices  # its index vectors are empty
+    window_dims = list(dimension_numbers.update_window_dims)
+    window = [updates.shape[d] for d in window_dims]
+    batch = [d for d in range(updates.ndim) if d not in window_dims]
+    count = int(np.prod([updates.shape[d] for d in batch]))
+    if count == 0 or 0 in window:
+        return operand
+    updates = lax.reshape(lax.transpose(updates, (*batch, *window_dims)), (count, *window))
+    zeros = [0] * operand.ndim
+    region = operand if tuple(window) == operand.shape else lax.slice(operand, zeros, window)
+    boolean = operand.dtype == np.bool_
+    if primitive in _COMBINERS:
+        combine, merge, bool_combine, bool_merge = _COMBINERS[primitive]
+        if boolean and bool_combine is not None:
+            combine, merge = bool_combine, bool_merge
+        region = combine(region, merge(updates, (0,)))
+    elif _is_replacement(update_jaxpr):  # scatter: the last update of an element wins
+        region = lax.index_in_dim(updates, count - 1, keepdims=False)
+    else:  # a custom combiner (x.at[...].apply, ...), elementwise and in order
+        if count > _MAX_INDEXLESS_UPDATES:
+            raise NotImplementedError(f"METAL: scatter with a custom combiner over {count} "
+                                      f"updates of the same window (at most "
+                                      f"{_MAX_INDEXLESS_UPDATES})")
+        def apply(x, u):
+            return core.eval_jaxpr(update_jaxpr, update_consts, x, u)[0]
+
+        for _ in window:
+            apply = jax.vmap(apply)
+        for k in range(count):
+            region = apply(region, lax.index_in_dim(updates, k, keepdims=False))
+    if region.shape == operand.shape:
+        return region
+    return lax.dynamic_update_slice(operand, region, zeros)
+
+
+def _indexless_scatter_rule(primitive):
+    """MHLO canonicalizes a scatter that indexes no operand dimension (jnp.polyadd,
+    scipy.signal's segments, static slices of sparse arrays) into mhlo.map, which the
+    plugin cannot lower."""
+    default = _complex.current_rule(primitive)
+    direct = mlir.lower_fun(partial(_indexless_scatter, primitive), multiple_results=False)
+
+    def rule(ctx, *args, dimension_numbers, **params):
+        dnums = dimension_numbers
+        if (dnums.scatter_dims_to_operand_dims or dnums.inserted_window_dims
+                or dnums.operand_batching_dims):
+            return default(ctx, *args, dimension_numbers=dnums, **params)
+        from jax_plugins.metal_shim._lowerings import outside_region  # pylint: disable=import-outside-toplevel
+        with outside_region():  # computed without a scatter region body
+            return direct(ctx, *args, dimension_numbers=dnums, **params)
+
+    return rule
+
+
 def register(register_rule):
     register_rule(lax_internal.pad_p, _pad_rule())
     register_rule(lax_internal.broadcast_in_dim_p, _broadcast_rule())
@@ -310,3 +381,5 @@ def register(register_rule):
                       slicing.scatter_min_p, slicing.scatter_max_p, slicing.scatter_sub_p):
         register_rule(primitive, _scatter_bounds_rule(primitive))
     register_rule(slicing.scatter_p, _scatter_apply_rule())
+    for primitive in (slicing.scatter_p, *_COMBINERS):
+        register_rule(primitive, _indexless_scatter_rule(primitive))

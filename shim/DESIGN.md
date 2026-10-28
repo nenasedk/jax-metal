@@ -222,9 +222,28 @@ registered twice. The shim's `initialize()` detects that case and raises an erro
     `tridiagonal_solve` (Gaussian elimination with partial pivoting, as `gtsv`, plus the
     `dlagts` perturbation JAX requests). Checked against LAPACK: same packed outputs, pivots
     and residuals.
+  - Reductions (`_reductions.py`): the plugin's `ReduceConverter` takes one operand and a
+    body of one combining op. A variadic `reduce` (jnp's `_reduce_minmax` behind `ptp`,
+    reductions over pytrees) whose body combines each accumulator with its own element by one
+    monoid op (`add`, `mul`, `max`, `min`, `and`, `or`, `xor`) splits into one reduction per
+    operand through the METAL rules of `reduce_sum`/`reduce_max`/..., so NaN propagation and
+    integer semantics carry over. Any other body (argmax-style pairs, custom combiners) is
+    applied pairwise in a log-depth tree over the reduced elements, then to the init values;
+    XLA's reduce semantics take the body as associative and commutative. Boolean `and`/`or`
+    reductions use the same tree of elementwise ops as integer ones: on a mask that is
+    constant after folding (gather index checks, a constant `where=`), the plugin's MHLO
+    canonicalizer leaves a native reduction whose body only returns the init value, which the
+    converter rejects.
+  - Scatters that index no operand dimension (empty index vectors: `jnp.polyadd`/`polysub`,
+    scipy.signal's segment updates, static slices of sparse arrays): MHLO canonicalizes them
+    to `mhlo.map`, which the plugin cannot lower. Every update window then starts at the
+    origin, so the rule combines the updates with the operand's leading window directly
+    (several updates of it are merged first: summed, multiplied, min/max, or the last for
+    `scatter`; a custom combiner is applied once per update, in order).
   - NaN rules never apply inside reduction, scatter or all-reduce bodies: the plugin's
     converters recognize those by a single combining op. `scatter_max`/`scatter_min` propagate
-    NaN with a scattered mask instead.
+    NaN with a scattered mask instead. Rules that compute a reduction or scatter without a region
+    body lower outside that marking (`outside_region`), so the NaN rules do apply there.
   - Every rule traces with standard dtype promotion and without varying manual axes, so rules
     work under `jax_numpy_dtype_promotion="strict"` and inside `shard_map`; JAX's generic `lu`,
     `lu_pivots_to_permutation` and `cholesky_update` go through the same wrapper.
