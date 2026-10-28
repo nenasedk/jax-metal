@@ -1,5 +1,9 @@
 # Changelog
 
+For a full, maintained JAX backend on Apple GPUs, use
+[jax-mps](https://github.com/tillahoffmann/jax-mps); see
+[PLAN.md](PLAN.md#status-jax-mps-is-the-full-solution).
+
 ## 0.1.0 (unreleased)
 
 First release: current JAX on Apple GPUs through Apple's unmodified `jax-metal` 0.1.1 plugin.

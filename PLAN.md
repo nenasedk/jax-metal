@@ -3,6 +3,49 @@
 Goal: get current JAX running on the Apple GPU of a modern Mac by reverse engineering
 Apple's abandoned `jax-metal` PJRT plugin with REA (Reverse Engineer Anything).
 
+## Status: jax-mps is the full solution
+
+[jax-mps](https://github.com/tillahoffmann/jax-mps) already achieves this project's goal,
+and as a maintainable codebase. It is the recommended way to run JAX on Apple GPUs. The two
+compare as follows (as of 2026-10-28: jax-mps 0.11.1; this repository from
+source, never released):
+
+| | jax-metal-shim (this repository) | jax-mps |
+|---|---|---|
+| Engine | Apple's closed jax-metal 0.1.1 (MPSGraph), behind a PJRT shim and JAX lowering rules | Its own open-source C++ PJRT plugin, which runs StableHLO through MLX |
+| Fixing a backend bug | Only from outside the binary: program rewrites, IR repairs, buffer relabeling | In the op handler |
+| Frozen at | PJRT 0.47 and StableHLO 0.19.4 (XLA of March 2024); newer JAX features cannot be serialized | Pins jaxlib (0.11.x) and moves with releases |
+| complex64, bfloat16 | Emulated; non-finite complex components are not exact | Native in MLX |
+| Extras | None | Fused attention, norms, RoPE, quantized matmul, buffer donation, memory statistics |
+| Upstream JAX tests | About 97% of 56 files, estimated from the baseline plus verified fixes (`shim/build/gpu-session/`, `re/findings/jax-suite-gpu-fixes.md`) | 95.8% of the full suite (its README); the two measures differ, so the figures are not comparable |
+| Common limits | No float64, one device | No float64, one device |
+
+What remains useful here, and could be offered to jax-mps:
+
+- **Machine safety for GPU test runs.** `shim/tests/guard.py` caps memory using the
+  physical footprint, which includes Metal allocations. It kills a job when a trivial Metal
+  command buffer stops completing (`gpu_probe.m`) and runs one GPU job at a time. The suite
+  runner resumes after crashes and restarts pytest before its memory grows. A full test-suite
+  run kernel-panicked this 8 GB machine before these existed.
+- **Predicting failures without a GPU.** `shim/tests/jax_suite/cpu_rules_plugin.py` and
+  `metal_check.py` run JAX's tests on the CPU, lowering each program as the backend will, and
+  list the ops it would reject. Pointed at a backend's op table, this gives coverage in CI
+  without an Apple GPU, which jax-mps's CI lacks.
+- **XLA semantics found by comparing against the CPU backend**
+  (`re/findings/jax-suite-gpu-fixes.md`, `shim/tests/test_*.py`), each needing checking
+  against jax-mps:
+  - windows leave padding and dilation holes out, so the init counts once;
+  - custom window bodies fold row-major, accumulator first;
+  - pooling gradients select the first maximum;
+  - reductions with arbitrary bodies can be done as a log-depth tree;
+  - scatters with empty index vectors;
+  - the bit-exact complex `square` formula and lexicographic complex max/min;
+  - NaN propagation in max/min, pooling and argmax.
+- **Reverse-engineering notes on Apple's plugin** (`re/`). These are of historical interest
+  only.
+
+The phases, limitations and next steps below describe this repository as of 2026-10-28.
+
 ## Environment
 
 | Item | Value |

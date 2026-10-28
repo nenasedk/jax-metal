@@ -11,6 +11,24 @@ print(jax.devices())                                     # [METAL(id=0)]
 print(jax.jit(lambda x: jnp.sin(x) @ x.T)(jnp.ones((4, 4))))
 ```
 
+> **Looking for a maintained JAX backend for Apple GPUs? Use
+> [jax-mps](https://github.com/tillahoffmann/jax-mps)** (`pip install jax-mps`). It is an
+> open-source PJRT plugin, Apache-2.0, that runs StableHLO through
+> [MLX](https://github.com/ml-explore/mlx). It has native complex64 and bfloat16, fused
+> attention and normalization kernels, and regular releases that follow jaxlib.
+>
+> This repository works around Apple's closed, abandoned plugin, which is frozen at PJRT 0.47
+> and StableHLO 0.19.4. Its defects can only be patched from outside the binary, and that
+> ceiling rises no further. It is mainly useful as a reference for:
+>
+> - its reverse-engineering notes;
+> - the XLA semantics it pinned down against the CPU backend
+>   ([re/findings/jax-suite-gpu-fixes.md](re/findings/jax-suite-gpu-fixes.md));
+> - its GPU test harness, which guards memory and stalls (`shim/tests/guard.py`) and
+>   predicts unsupported ops without a GPU (`shim/tests/jax_suite/`).
+>
+> [PLAN.md](PLAN.md#status-jax-mps-is-the-full-solution) compares the two projects.
+
 **Status: alpha.** Tested on one machine (M3, macOS 26.7.1) with jax 0.12.0.1.
 
 - Works: jit, grad, control flow, convolutions, sorting, scatter/gather, random numbers,

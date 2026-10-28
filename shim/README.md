@@ -4,6 +4,10 @@ Runs current JAX (tested with jax/jaxlib 0.12.0.1) on Apple GPUs using Apple's u
 `jax-metal` 0.1.1 plugin, which is otherwise stuck on JAX 0.4.34. How it works and why:
 [DESIGN.md](DESIGN.md).
 
+**For a full, maintained JAX backend on Apple GPUs, use
+[jax-mps](https://github.com/tillahoffmann/jax-mps)**; see the top-level
+[README](../README.md) and [PLAN.md](../PLAN.md#status-jax-mps-is-the-full-solution).
+
 ## Install
 
 Requires macOS 14.4 or later on Apple silicon and Python 3.12+. Apple's `jax-metal` package
