@@ -185,6 +185,22 @@ def test_pad_runtime_fill(dtype):
     np.testing.assert_array_equal(fn(x, fill), np.pad(x, (1, 2), constant_values=fill))
 
 
+@pytest.mark.parametrize("dtype", [np.float16, jnp.bfloat16, np.float32])
+@pytest.mark.parametrize("edges", [(1, 2), (-1, 2), (3, -3)])
+def test_edge_pad_preserves_bits(dtype, edges):
+    width = np.dtype(dtype).itemsize * 8
+    uint = np.dtype(f"uint{width}")
+    sign = 1 << (width - 1)
+    raw = np.array([0, 1, sign, (0x7fc12345 if width == 32 else 0x7fc1), sign + 1], uint)
+    fill = np.array(sign, uint).view(dtype)
+    low, high = edges
+    expected = np.concatenate([np.full(max(0, low), sign, uint),
+                               raw[max(0, -low):min(raw.size, raw.size + high)],
+                               np.full(max(0, high), sign, uint)])
+    actual = jax.jit(lambda x, fill: lax.pad(x, fill, [(low, high, 0)]))(raw.view(dtype), fill)
+    np.testing.assert_array_equal(np.asarray(actual).view(uint), expected)
+
+
 @pytest.mark.parametrize("values", [[True], [False], [True, False, True], [False, True, False]])
 def test_boolean_scan_result_updates(values):
     x = np.array(values, bool)

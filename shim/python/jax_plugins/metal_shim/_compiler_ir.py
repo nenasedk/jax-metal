@@ -8,6 +8,11 @@ The plugin also canonicalizes trivial scf.if branches into arith.select, which
 its serializer cannot handle. Unary barriers on branch results keep these
 branches in the supported control-flow dialect without evaluating both sides.
 
+SCF canonicalization can also discard a loop result whose corresponding body
+argument is unused (for example a convergence flag only read by the condition).
+The resulting loop has different input/output arities and crashes MPSGraph.
+Keeping these results linked to the consumed state prevents that rewrite.
+
 Rewrite a compilation copy, including barriers emitted directly by remat's
 lowering. The public lowered module retains JAX's original structure.
 """
@@ -52,6 +57,36 @@ def _unprotected_returns(operation):
 def _cases(operation):
     return (op for op in _walk(operation)
             if op.name == "stablehlo.case" and any(_unprotected_returns(op)))
+
+
+def _loops(operation):
+    for op in _walk(operation):
+        if op.name != "stablehlo.while":
+            continue
+        body = op.regions[1].blocks[0]
+        returned = list(body.operations)[-1].operands
+        if (any(list(result.uses) for result in op.results)
+                and any(arg != ret and not list(result.uses)
+                        for arg, ret, result in zip(body.arguments, returned, op.results))):
+            yield op
+
+
+def _protect_loop_results(operation):
+    body = operation.regions[1].blocks[0]
+    returned = list(body.operations)[-1].operands
+    # Invariant captures can be removed safely and need not be copied. Changed
+    # state includes the otherwise-unused status and a result consumed outside.
+    values = [r for r, arg, ret in zip(operation.results, body.arguments, returned)
+              if arg != ret]
+    if not any(list(value.uses) for value in values):
+        values = list(operation.results)
+    uses = [list(value.uses) for value in values]
+    with ir.InsertionPoint(operation), operation.location:
+        barrier = hlo.OptimizationBarrierOp(values)
+    barrier.operation.move_after(operation)
+    for old_uses, value in zip(uses, barrier.results):
+        for use in old_uses:
+            use.owner.operands[use.operand_number] = value
 
 
 def _tensor(shape, element):
@@ -113,10 +148,13 @@ def _rewrite_barrier(operation):
 
 def prepare_module(module):
     """Return a private compilation module with supported IR, if needed."""
-    if not any(_barriers(module.operation)) and not any(_cases(module.operation)):
+    if (not any(_barriers(module.operation)) and not any(_cases(module.operation))
+            and not any(_loops(module.operation))):
         return module
     with module.context:
         result = ir.Module.parse(mlir.module_to_bytecode(module))
+        for operation in list(_loops(result.operation)):
+            _protect_loop_results(operation)
         for operation in list(_barriers(result.operation)):
             _rewrite_barrier(operation)
         for operation in list(_cases(result.operation)):

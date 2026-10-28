@@ -130,18 +130,16 @@ def _edge_pad(operand, padding_value, *, padding_config):
 
 
 def _pad_rule():
-    default = _complex.current_rule(lax_internal.pad_p)
     interleaved = mlir.lower_fun(_interior_pad, multiple_results=False)
+    edges = mlir.lower_fun(_edge_pad, multiple_results=False)
 
     def rule(ctx, operand, padding_value, *, padding_config):
-        dtype = ctx.avals_in[0].dtype
-        if dtype.kind in "biu" and dtype.itemsize < 4:
-            fn = _interior_pad if any(i for _, _, i in padding_config) else _edge_pad
-            return mlir.lower_fun(fn, multiple_results=False)(
-                ctx, operand, padding_value, padding_config=padding_config)
         if any(interior for _, _, interior in padding_config):
             return interleaved(ctx, operand, padding_value, padding_config=padding_config)
-        return default(ctx, operand, padding_value, padding_config=padding_config)
+        # Besides losing narrow runtime fills, native edge pad followed by an
+        # update inside complex QDWH loops crashes the driver's encodeEndWhile.
+        # Concatenation/cropping computes the same tensor without that path.
+        return edges(ctx, operand, padding_value, padding_config=padding_config)
 
     return rule
 

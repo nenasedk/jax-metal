@@ -89,5 +89,74 @@ def test_preparation_is_idempotent_and_keeps_lazy_branches():
     assert not list(_compiler_ir._cases(prepared.operation))
 
 
+@pytest.mark.parametrize("limit", [0, 1, 4])
+@pytest.mark.parametrize("dtype", [np.float32, np.complex64])
+def test_unused_convergence_flag(limit, dtype):
+    def fn(x, limit):
+        def cond(state):
+            i, _, running = state
+            return (i < limit) & running
+
+        def body(state):
+            i, x, _ = state
+            x = lax.fori_loop(0, 2, lambda _, x: x * 0.5, x)
+            return i + 1, x, jnp.max(jnp.abs(x)) > 0.2
+
+        return lax.while_loop(cond, body, (np.int32(0), x, True))[1]
+
+    x = np.arange(1, 7).reshape(2, 3).astype(dtype)
+    with jax.default_device(jax.devices("cpu")[0]):
+        expected = np.asarray(jax.jit(fn)(x, np.int32(limit)))
+    np.testing.assert_array_equal(jax.jit(fn)(x, np.int32(limit)), expected)
+
+
+@pytest.mark.parametrize("dtype", [np.float32, np.complex64])
+@pytest.mark.parametrize("shape", [(8, 4), (6, 6)])
+@pytest.mark.parametrize("keep_status", [False, True])
+def test_nested_qdwh_loops(dtype, shape, keep_status):
+    from jax._src.tpu.linalg import qdwh
+
+    rng = np.random.default_rng(41)
+    x = rng.normal(size=shape).astype(dtype)
+    if dtype == np.complex64:
+        x += 1j * rng.normal(size=shape).astype(np.float32)
+    x += 2 * np.eye(*shape, dtype=dtype)
+
+    def fn(x):
+        result = qdwh.qdwh(x)
+        return result if keep_status else result[:2]
+
+    compiled = jax.jit(fn).lower(x).compile()
+    result = compiled(jax.device_put(x, jax.devices("METAL")[0]))
+    u, h = map(np.asarray, result[:2])
+    # Unique polar factors for this full-rank input, evaluated in double precision.
+    wide = x.astype(np.complex128 if dtype == np.complex64 else np.float64)
+    left, singular, right = np.linalg.svd(wide, full_matrices=False)
+    np.testing.assert_allclose(u, left @ right, rtol=1e-5, atol=2e-6)
+    np.testing.assert_allclose(h, (right.T.conj() * singular) @ right,
+                               rtol=1e-5, atol=2e-6)
+    if keep_status:
+        assert 0 < int(result[2]) <= 10
+        assert bool(result[3])
+
+
+def test_loop_preparation_is_idempotent():
+    from jax_plugins.metal_shim import _compiler_ir
+
+    def fn(x):
+        def body(state):
+            x, _ = state
+            return x + 1, x < 3
+        return lax.while_loop(lambda state: state[1], body, (x, True))[0]
+
+    module = jax.jit(fn).lower(np.float32(0)).compiler_ir()
+    before = str(module)
+    prepared = _compiler_ir.prepare_module(module)
+    assert _compiler_ir.prepare_module(prepared) is prepared
+    assert str(module) == before
+    assert prepared.operation.verify()
+    assert not list(_compiler_ir._loops(prepared.operation))
+
+
 if __name__ == "__main__":
     raise SystemExit(pytest.main([__file__, "-q", "--tb=short", "-p", "no:cacheprovider"]))
