@@ -5,6 +5,7 @@ re/findings/mps-op-coverage.md for what the plugin can lower and
 re/findings/jax-op-probe.md for what fails without these rules.
 """
 
+import contextlib
 import threading
 from functools import partial
 
@@ -163,6 +164,18 @@ _region = threading.local()
 
 def _in_region():
     return getattr(_region, "depth", 0) > 0
+
+
+@contextlib.contextmanager
+def outside_region():
+    """Lower ops as ordinary ops inside a region primitive's rule: for rules that compute
+    a reduction or scatter without a region body, where the NaN rules must apply."""
+    depth = getattr(_region, "depth", 0)
+    _region.depth = 0
+    try:
+        yield
+    finally:
+        _region.depth = depth
 
 
 def _marking_region_bodies(rule):
